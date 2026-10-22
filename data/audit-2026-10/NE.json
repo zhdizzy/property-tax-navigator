@@ -1,0 +1,120 @@
+{
+  "state": "NE",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0144,
+    "sourceValue": 0.0144,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation 'Property Taxes by State' table (Mar 2026): Nebraska 1.44% for 2024 (1.48% for 2023), total real taxes paid / total owner-occupied value (ACS B25082, B25090). Exact match."
+  },
+  "programs": [
+    {
+      "name": "Wartime Veteran/Surviving Spouse Homestead Exemption — Non-SC Totally Disabled",
+      "status": "confirmed",
+      "fields": {
+        "wartimeRequired": {
+          "current": null,
+          "correct": true,
+          "quote": "Veterans who served on active duty during a recognized war of the U.S. and who are totally disabled by a non-service-connected accident or illness (Category 2)",
+          "source": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/Form%20458%202026.pdf"
+        },
+        "incomeLimit": {
+          "current": null,
+          "correct": "unverified",
+          "quote": "Category 2 is income-tested (Schedule I required each year); the 2026 income/value tables live in the Homestead Exemption Information Guide, which was not read in this pass",
+          "source": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/Form%20458%202026.pdf"
+        },
+        "summary": {
+          "current": "... Category 4V (100% exemption, no income/value limits) also covers veterans rated below 100% who receive 100% Individual Unemployability; 4V filing is one-time.",
+          "correct": "Same, confirmed: 4V covers '(ii) assignment of total disability rating for compensation pursuant to 38 C.F.R. 4.16' and is a one-time filing.",
+          "quote": "have a disability rating of less than 100% but have an Individual Unemployability (IU) Rating that was certified on or before January 1, 2026",
+          "source": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/Form%20458%202026.pdf"
+        }
+      },
+      "effectiveChanges": "None for the veteran categories. LB826 (eff. April 15, 2026) added a late-filing route when the VA certification arrives after June 30 (77-3512(1)(d)); LB803 §21 (operative July 18, 2026) re-enacted 77-3506 with the same categories.",
+      "note": "This row mixes an income-tested Category 2 program (no dollar value in the file) with 4V commentary; structurally harmless because exemptionValue is null."
+    },
+    {
+      "name": "SC Totally Disabled Veterans and Surviving Spouses — 100% Exempt",
+      "status": "confirmed",
+      "fields": {
+        "type": {
+          "current": "full",
+          "correct": "full",
+          "quote": "there shall be exempt from taxation, on any homestead described in subsection (2) of this section, one hundred percent of the exempt amount",
+          "source": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-3506"
+        },
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "quote": "(i) one hundred percent service-connected permanent disability or (ii) assignment of total disability rating for compensation pursuant to 38 C.F.R. 4.16",
+          "source": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-3506"
+        },
+        "ptRequired": {
+          "current": null,
+          "correct": "true for 4V (permanent) with IU as alternate; temporary 100% is Category 7 (same exemption, annual refile)",
+          "quote": "A veteran ... drawing compensation ... because of one hundred percent service-connected temporary disability (Category 7) ... Application ... shall be required annually",
+          "source": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-3506"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "An unremarried surviving spouse of a veteran described in subdivision (2)(a) of this section or a surviving spouse of such a veteran who remarries after attaining the age of fifty-seven years",
+          "source": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-3506"
+        },
+        "details": {
+          "current": "100% exempt regardless of homestead value and income level.",
+          "correct": "100% exempt regardless of homestead value and income; discharge must be honorable or general (under honorable conditions); one-time filing for 4V/4S (Category 7 temporary-100% refiles annually with a fresh VA certification). No Schedule I.",
+          "quote": "Application for exemption under subdivision (2)(a), (b), (d), (e), or (f) of this section shall not be required in any subsequent year",
+          "source": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-3506"
+        }
+      },
+      "effectiveChanges": "LB803 (2026) §21, operative July 18, 2026, re-enacted 77-3506 keeping 4V/4S one-time filing and Category 7 annual filing; the current statute page carries 'Laws 2026, LB803, § 21. Operative Date: July 18, 2026'. LB826 (eff. April 15, 2026) lets a veteran whose VA certification arrived after June 30 file late under 77-3514.01. No dollar or threshold change for TY2026/2027.",
+      "note": "Lead resolved: LB826 is a filing-deadline relief bill, not a benefit change; Category 7 is the temporary-100% category and gets the identical 100% exemption. Veterans eligible for total exemption under 77-3526 to 77-3528 are excluded from 77-3506 (statutory cross-reference)."
+    },
+    {
+      "name": "VA-Purchased/Modified Home — 100% Exempt",
+      "status": "confirmed",
+      "fields": {
+        "type": {
+          "current": "full",
+          "correct": "full",
+          "quote": "Paraplegic or Multiple Amputee Veterans whose homestead is substantially contributed to by the Department of Veterans Affairs or the unremarried surviving spouse of such a veteran (Category 5)",
+          "source": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/Form%20458%202026.pdf"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "or the unremarried surviving spouse of such a veteran",
+          "source": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/Form%20458%202026.pdf"
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Category 5 (77-3526 to 77-3528). Not creditable to a rated veteran whose home was not VA-contributed; the engine should not add it on rating alone."
+    }
+  ],
+  "missingPrograms": [
+    {
+      "name": "Category 7 — 100% service-connected TEMPORARY disability (and surviving spouses)",
+      "what": "Same 100% exemption with no income or value limit as 4V, but the application 'shall be required annually and shall include certification of the status ... from the United States Department of Veterans Affairs'. Matters for the file because a 100% schedular non-permanent veteran gets the full exemption in Nebraska; the existing 4V row (ratingRequired 100, no ptRequired) already captures the dollar effect, so this is a note/row-split, not new money.",
+      "statute": "Neb. Rev. Stat. 77-3506(2)(c), (3) (as amended by Laws 2026, LB803 §21)",
+      "source": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-3506"
+    }
+  ],
+  "jurisdictionNote": {
+    "status": "unverified",
+    "correct": "",
+    "source": ""
+  },
+  "sources": [
+    { "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-3506", "title": "Neb. Rev. Stat. 77-3506 (veteran homestead categories; Laws 2026 LB803 §21, operative July 18, 2026)", "status": 200 },
+    { "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-3512", "title": "Neb. Rev. Stat. 77-3512 (filing window; LB826 late VA-certification route eff. April 15, 2026)", "status": 200 },
+    { "url": "https://nebraskalegislature.gov/FloorDocs/109/PDF/Slip/LB803.pdf", "title": "LB803 (2026) slip law, approved April 16, 2026, §21 (77-3506) and §23 (77-3512)", "status": 200 },
+    { "url": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/Form%20458%202026.pdf", "title": "Form 458, Nebraska Homestead Exemption Application (2026) with category list", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation, Property Taxes by State and County, 2026 (2024 ACS data)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "All three rows hold: 4V/4S (100% permanent SC or 38 CFR 4.16 IU, and surviving spouses) is a full exemption with no income or value test and one-time filing; Category 5 VA-contributed homes and income-tested Category 2 are correctly value-less. LB826 (April 2026) only adds a late-filing route for late VA letters and LB803 (July 2026) re-enacted the categories unchanged; Category 7 (temporary 100%, annual refile) should be noted, and the 1.44% tax rate matches Tax Foundation exactly."
+}

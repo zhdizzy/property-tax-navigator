@@ -1,0 +1,41 @@
+{
+  "state": "PA",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0153,
+    "sourceValue": 0.0126,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Tax Foundation Table 2 (Census ACS 2024 5-year): PA 1.26% (2023: 1.31%). File 1.53% is 0.27 pp high."
+  },
+  "programs": [
+    {
+      "name": "Disabled Veterans' Real Estate Tax Exemption",
+      "status": "confirmed",
+      "fields": {
+        "type": { "current": "full", "correct": "full", "quote": "shall be exempt from the payment of all real estate taxes levied upon any building, including the land upon which it stands, occupied by that person as a principal dwelling", "source": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=PDF&ttl=51&div=0&chapter=89" },
+        "ratingRequired": { "current": 100, "correct": 100, "quote": "is blind or paraplegic or has sustained the loss of two or more limbs, or has a service-connected disability declared by the United States Veterans' Administration or its successors to be a total or 100% permanent disability.", "source": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=PDF&ttl=51&div=0&chapter=89" },
+        "ptRequired": { "current": null, "correct": true, "quote": "100 percent permanent service-connected disability", "source": "https://www.pa.gov/agencies/dmva/pennsylvania-veterans/pa-vetconnect/state-veterans-programs/financial-assistance/retx" },
+        "requiresSchedular100": { "current": null, "correct": false, "quote": "The page also lists total disability individual unemployability (TDIU)", "source": "https://www.pa.gov/agencies/dmva/pennsylvania-veterans/pa-vetconnect/state-veterans-programs/financial-assistance/retx" },
+        "wartimeRequired": { "current": true, "correct": true, "quote": "for service in any war or armed conflict in which this nation was engaged.", "source": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=PDF&ttl=51&div=0&chapter=89" },
+        "incomeLimit": { "current": 114637, "correct": 114637, "quote": "On January 1, 2025, the State Veterans' Commission adjusted the presumptive need level ... Applicants with an annual income of $114,637 or less are given a presumption of need for the exemption.", "source": "https://www.pa.gov/agencies/dmva/pennsylvania-veterans/pa-vetconnect/state-veterans-programs/financial-assistance/retx" },
+        "incomeLimitIndexing": { "current": "indexed", "correct": "biennial CPI adjustment, Jan 1 of odd years, published in the Pennsylvania Bulletin", "quote": "Beginning on January 1, 2009, and every two years thereafter, the commission shall adjust the annual income level qualifying for the rebuttable presumption of need by an amount equal to the change in the Consumer Price Index in the preceding two years.", "source": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=PDF&ttl=51&div=0&chapter=89" },
+        "aboveLimitRule": { "current": "State Veterans' Commission reviews need case-by-case", "correct": "need is found when allowable monthly expenses exceed monthly household income", "quote": "Applicants whose gross annual income exceeds $114,637 will be considered to have a financial need for the exemption when their allowable monthly expenses exceed monthly household income.", "source": "https://www.pa.gov/agencies/dmva/pennsylvania-veterans/pa-vetconnect/state-veterans-programs/financial-assistance/retx" },
+        "survivingSpouse": { "current": true, "correct": true, "quote": "shall be extended to the unmarried surviving spouse upon the death of the eligible veteran provided that the State Veterans' Commission determines that such spouse is in need of an exemption.", "source": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=PDF&ttl=51&div=0&chapter=89" }
+      },
+      "effectiveChanges": "Resolves the lead: the presumptive-need income level is adjusted every TWO years (Jan 1, 2009 and every two years thereafter), so $114,637 (set Jan 1, 2025) remains the TY2026 figure; the next adjustment is due Jan 1, 2027 and will be published in the Pennsylvania Bulletin. No Bulletin notice for 2027 exists yet. No statutory change to chapter 89 found for 2025-26 (a constitutional-amendment idea discussed at the State Veterans' Commission in Dec 2025 was not researched).",
+      "note": "Row is correct. Ownership must be sole, with spouse, or tenants by the entireties; exemption attaches to taxes becoming due on or after the filing date (43 Pa. Code 5.25) and need is re-reviewed at least every five years. The summary's '(2025, indexed)' should read '2025-2026, next adjustment Jan 1, 2027'. Expeditionary/campaign medals satisfy the wartime test per DMVA."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": { "status": "confirmed", "correct": "", "source": "" },
+  "sources": [
+    { "url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=PDF&ttl=51&div=0&chapter=89", "title": "51 Pa.C.S. Chapter 89 Disabled Veterans' Real Estate Tax Exemption (PDF, sections 8901-8906)", "status": 200 },
+    { "url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=HTM&ttl=51&div=0&chapter=89", "title": "51 Pa.C.S. Chapter 89 (HTML landing)", "status": 200 },
+    { "url": "https://www.pa.gov/agencies/dmva/pennsylvania-veterans/pa-vetconnect/state-veterans-programs/financial-assistance/retx", "title": "PA DMVA: Real Estate Tax Exemption program page ($114,637 presumptive need eff. Jan 1, 2025; TDIU accepted)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 data)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "Pennsylvania's need-based full exemption is unchanged: 100% P&T (or TDIU, blind, paraplegic, two-limb loss) plus wartime service, with need presumed at $114,637 gross income, a figure the statute adjusts only every two years, so it holds for TY2026 and the next change lands Jan 1, 2027. Effective rate 1.53% is 0.27 pp above the Tax Foundation 2024 figure of 1.26%."
+}

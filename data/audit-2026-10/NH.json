@@ -1,0 +1,159 @@
+{
+  "state": "NH",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.015,
+    "sourceValue": 0.0150,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation 'Property Taxes by State' table (Mar 2026): New Hampshire 1.50% for 2024 (1.62% for 2023), total real taxes paid / total owner-occupied value (ACS B25082, B25090). Exact match."
+  },
+  "programs": [
+    {
+      "name": "Standard/Optional Wartime Veteran Tax Credit",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": {
+          "current": 500,
+          "correct": "500 (modeling choice; statutory range $50 standard, $51-$750 optional until April 1, 2027, then $51-$1,000)",
+          "quote": "I. The standard veterans' tax credit shall be $50. ... II. The optional veterans' tax credit, upon adoption by a city or town pursuant to RSA 72:27-a, shall be an amount from $51 up to $750.",
+          "source": "https://gc.nh.gov/rsa/html/V/72/72-28.htm"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "or the spouse or surviving spouse of such resident",
+          "source": "https://gc.nh.gov/rsa/html/V/72/72-28.htm"
+        },
+        "wartimeRequired": {
+          "current": true,
+          "correct": true,
+          "quote": "served not less than 90 days on active service in the armed forces of the United States in any qualifying war or armed conflict listed in this section",
+          "source": "https://gc.nh.gov/rsa/html/V/72/72-28.htm"
+        },
+        "summary": {
+          "current": "municipalities may adopt $51-$750 which REPLACES the $50 (RSA 72:28)",
+          "correct": "Add: from April 1, 2027 the optional range rises to $51-$1,000 (2026, 96:1). The All Veterans' Credit (RSA 72:28-b) pays the same amount as the town's 72:28 credit to any 90-day veteran not receiving 72:28 or 72:35.",
+          "quote": "[Paragraph II effective April 1, 2027] II. The optional veterans' tax credit ... shall be an amount from $51 up to $1,000.",
+          "source": "https://gc.nh.gov/rsa/html/V/72/72-28.htm"
+        }
+      },
+      "effectiveChanges": "RSA 72:28, II is amended effective April 1, 2027 (2026, 96:1): optional credit ceiling rises from $750 to $1,000 where a town adopts the higher amount. No change to the $50 standard credit. Also 2026, 252:7 (eff. Aug 31, 2026) touched 72:28, 72:28-b and 72:35 (conforming amendments; the dollar figures are unchanged).",
+      "note": "The $500 'typical' figure is a modeling assumption, not a statutory number; flagged as such, not corrected."
+    },
+    {
+      "name": "Surviving Spouse of Wartime Casualty Tax Credit",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": {
+          "current": 700,
+          "correct": 700,
+          "quote": "shall receive a tax credit in the amount of $700 for the taxes due upon the surviving spouse's real and personal property, whether residential or not",
+          "source": "https://gc.nh.gov/rsa/html/V/72/72-29-a.htm"
+        },
+        "summary": {
+          "current": "$700 standard; municipalities may adopt up to $2,000 (RSA 72:29-a).",
+          "correct": "$700 standard; municipalities may adopt $701-$2,000, rising to $701-$2,500 on April 1, 2027 (2026, 96:3).",
+          "quote": "[Paragraph II effective April 1, 2027] ... shall receive a tax credit in the amount from $701 up to $2,500",
+          "source": "https://gc.nh.gov/rsa/html/V/72/72-29-a.htm"
+        },
+        "nonVeteran": {
+          "current": null,
+          "correct": true,
+          "quote": "The surviving spouse of any person who was killed or died while on active duty",
+          "source": "https://gc.nh.gov/rsa/html/V/72/72-29-a.htm"
+        }
+      },
+      "effectiveChanges": "Optional cap $2,000 until April 1, 2027; $2,500 from April 1, 2027 (2026, 96:3). Standard $700 unchanged.",
+      "note": "Surviving-spouse-of-active-duty-death credit; never creditable to a living rated veteran. Row should carry nonVeteran/KIA-only flag so the engine excludes it."
+    },
+    {
+      "name": "Tax Credit for Total and Permanent Disabled Veterans",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": {
+          "current": 2000,
+          "correct": "2000 (modeling choice; statutory $700 standard, $701-$5,000 optional)",
+          "quote": "shall receive a standard yearly tax credit in the amount of $700 ... I-a. The optional tax credit ... shall be an amount from $701 up to $5,000.",
+          "source": "https://gc.nh.gov/rsa/html/V/72/72-35.htm"
+        },
+        "details": {
+          "current": "cities/towns may adopt $701-$4,000.",
+          "correct": "cities/towns may adopt $701-$5,000.",
+          "quote": "shall be an amount from $701 up to $5,000",
+          "source": "https://gc.nh.gov/rsa/html/V/72/72-35.htm"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "or who is a double amputee or paraplegic because of service-connected injury, or the surviving spouse of such a person, shall receive a standard yearly tax credit",
+          "source": "https://gc.nh.gov/rsa/html/V/72/72-35.htm"
+        },
+        "ptRequired": {
+          "current": null,
+          "correct": true,
+          "quote": "certification from the United States Department of Veterans' Affairs that the applicant is rated totally and permanently disabled from service connection",
+          "source": "https://gc.nh.gov/rsa/html/V/72/72-35.htm"
+        }
+      },
+      "effectiveChanges": "No dollar change for TY2026 or TY2027 ($700 / $701-$5,000 since 2018, 105:1). Amended 2025, 15:1 (eff. July 13, 2025) and 2026, 252:7 (eff. Aug 31, 2026); current text makes the optional 72:35 credit replace 72:28, 72:28-b, 72:28-c and 72:36-a 'in its entirety'. The $4,000 in `details` is the pre-2019 cap.",
+      "note": "Statute says 'total and permanent service-connected disability' (also double amputee/paraplegic); ptRequired should be true. The $2,000 typical amount is a modeling assumption."
+    },
+    {
+      "name": "Tax Exemption for T&P Disabled Veterans with VA Housing Assistance",
+      "status": "corrected",
+      "fields": {
+        "type": {
+          "current": "full",
+          "correct": "full",
+          "quote": "Qualifying homesteads are exempt from all taxation (RSA 72:36-a)",
+          "source": "https://gc.nh.gov/rsa/html/V/72/72-36-a.htm"
+        },
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "quote": "100 percent permanently and totally disabled as prescribed in 38 C.F.R. 3.340",
+          "source": "https://gc.nh.gov/rsa/html/V/72/72-36-a.htm"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "extends to the person's surviving spouse, as defined in RSA 72:29, V",
+          "source": "https://gc.nh.gov/rsa/html/V/72/72-36-a.htm"
+        },
+        "summary": {
+          "current": "Full property tax exemption for homes acquired or modified with VA assistance for 100% T&P/IU, SC blind, or paraplegic/double amputee veterans.",
+          "correct": "Full exemption for a homestead specially adapted under a VA SAH or SHA grant, or bought with the proceeds of selling such a home (2024, 13:1; 2026, 252:3 eff. Aug 31, 2026), for a veteran who is 100% P&T under 38 CFR 3.340, a service-connected double amputee or paraplegic, or 5/200 blind from service connection. 'IU' is not in the statute; 38 CFR 3.340 covers total disability ratings.",
+          "quote": "A home that was specially adapted and bought with proceeds from the sale of such an SAH or SHA home also qualifies",
+          "source": "https://gc.nh.gov/rsa/html/V/72/72-36-a.htm"
+        }
+      },
+      "effectiveChanges": "2026, 252:3 (eff. Aug 31, 2026) and 2024, 13:1 extended the exemption to homes acquired with proceeds from selling an SAH/SHA home. Requires an SAH/SHA grant, so not creditable on rating alone.",
+      "note": "Engine should gate this on SAH/SHA, not on rating; the row has no such flag."
+    }
+  ],
+  "missingPrograms": [
+    {
+      "name": "All Veterans' Tax Credit (RSA 72:28-b)",
+      "what": "Local-option credit equal to the town's 72:28 standard/optional amount for any resident veteran with 90+ days active service (no wartime test) who is not receiving 72:28 or 72:35; spouse/surviving spouse included. Mentioned in the 72:28 row summary but not its own row; non-wartime veterans in adopting towns get the same dollars.",
+      "statute": "RSA 72:28-b (2016, 217:1; amended 2026, 252:7)",
+      "source": "https://gc.nh.gov/rsa/html/V/72/72-28-b.htm"
+    }
+  ],
+  "jurisdictionNote": {
+    "status": "corrected",
+    "correct": "RSA 72:36-a: full exemption for 100% P&T, paraplegic, double amputee or 5/200 blind veterans whose homestead was adapted under a VA SAH/SHA grant (or bought with proceeds from selling one). RSA 72:35: $700 standard credit for total and permanent service-connected disability (surviving spouse included); towns may adopt $701-$5,000 instead. RSA 72:28 wartime credit $50 standard, $51-$750 optional, rising to $51-$1,000 on April 1, 2027. Credits apply to the principal residence only.",
+    "source": "https://gc.nh.gov/rsa/html/V/72/72-35.htm"
+  },
+  "sources": [
+    { "url": "https://gc.nh.gov/rsa/html/V/72/72-28.htm", "title": "RSA 72:28 Standard and Optional Veterans' Tax Credit ($50; $51-$750; $51-$1,000 from April 1, 2027)", "status": 200 },
+    { "url": "https://gc.nh.gov/rsa/html/V/72/72-28-b.htm", "title": "RSA 72:28-b All Veterans' Tax Credit", "status": 200 },
+    { "url": "https://gc.nh.gov/rsa/html/V/72/72-29-a.htm", "title": "RSA 72:29-a Surviving Spouse ($700; $701-$2,000; $2,500 cap from April 1, 2027)", "status": 200 },
+    { "url": "https://gc.nh.gov/rsa/html/V/72/72-35.htm", "title": "RSA 72:35 Tax Credit for Service-Connected Total Disability ($700; $701-$5,000)", "status": 200 },
+    { "url": "https://gc.nh.gov/rsa/html/V/72/72-36-a.htm", "title": "RSA 72:36-a Certain Disabled Veterans (full exemption, SAH/SHA homestead)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation, Property Taxes by State and County, 2026 (2024 ACS data)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "Statutory amounts confirmed: 72:28 $50 standard / $51-$750 optional (rising to $51-$1,000 on April 1, 2027), 72:35 $700 / $701-$5,000 (the row's `details` still says $4,000), 72:29-a $700 / $701-$2,000 (cap $2,500 from April 1, 2027), and 72:36-a is a full exemption that now also covers homes bought with SAH/SHA sale proceeds. The 72:35 row should carry survivingSpouse:true and ptRequired:true, the $500/$2,000 'typical' figures are modeling assumptions rather than statutory values, and the 1.50% tax rate matches Tax Foundation exactly."
+}

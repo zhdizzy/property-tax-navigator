@@ -1,0 +1,92 @@
+{
+  "state": "CT",
+  "officeType": "municipal (town) assessor",
+  "officeTypeNote": "Connecticut has no county government for tax purposes; every exemption is claimed with the ASSESSOR of the town where the home is located (169 municipalities). Two offices are involved: the honorable discharge (DD-214) is recorded with the TOWN CLERK (CGS 12-93), and the exemption claim and VA proof go to the ASSESSOR. Abatement/refund claims for prior years go to the TAX COLLECTOR (CGS 12-81(83)(D)(ii)).",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://portal.ct.gov/opm/igpp/directories/municipal-assessors",
+    "label": "Connecticut OPM: Municipal Assessors directory (all 169 towns; PDF list labeled October 2026)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://portal.ct.gov/opm/-/media/opm/igpp/municipal-directories/assessor-directory.pdf",
+    "note": "The OPM page links a 'Municipal Assessor Listing' PDF (town, assessor name, title, phone, email). fallbackUrl is the direct PDF (200 on 2026-10-21; the ?rev= query string changes with each update)."
+  },
+  "forms": [
+    {
+      "programRef": "Homestead Exemption",
+      "name": "Permanently and Totally Disabled Veteran 100% Service-Connected Disability Rating Tax Exemption Application",
+      "number": "Form D-2 (10.1.2025), CGS 12-93",
+      "url": "https://www.oldsaybrookct.gov/DocumentCenter/View/139/D-2-Permanently-and-Totally-Disabled-Veteran-100-Service-Connected-Disability-Application-for-Download-PDF",
+      "revision": "10.1.2025 (prescribed by OPM memo of September 8, 2025 for assessment years commencing on and after October 1, 2025)",
+      "filedWith": "municipal assessor",
+      "note": "OPM-prescribed statewide form under CGS 12-93 as amended by PA 25-168 sec. 235. OPM's own forms page (portal.ct.gov/opm/igpp/services-and-forms/municipal-official-and-taxpayer-forms) returned 404 to automated checks, so the URL is the Town of Old Saybrook's posted copy; the OPM transmittal memo is at https://www.oldsaybrookct.gov/DocumentCenter/View/138/D-2-OPM-Letter-PDF. Form text: 'Application is due annually not later than January 1st'; 'Attach copy of determination by the United States Department of Veterans Affairs.'"
+    },
+    {
+      "programRef": "Standard Disabled Veteran Exemption (CGS 12-81(20))",
+      "name": "Proof of VA disability rating filed with the assessor (no statewide form)",
+      "number": null,
+      "url": null,
+      "revision": null,
+      "filedWith": "municipal assessor",
+      "note": "CGS 12-81(20)(B) and 12-95: the veteran submits proof of the VA disability rating to the assessor for the initial year and again only when the VA modifies the rating. Many towns use a local form; the DD-214 must already be on record with the town clerk (12-93)."
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "01-01",
+    "text": "12-81(83) P&T exemption: CGS 12-93 as amended by PA 25-168 sec. 235: 'such claimant shall annually, not later than January first, submit such claim to the assessors for approval' on the OPM form, for the assessment year that began the preceding October 1 (so the Oct 1, 2025 grand list claim is due Jan 1, 2026). 12-81(20) rating-based exemption: proof may be filed 'at any time before the expiration of the time limited by law for the board of assessment appeals ... to complete its duties' and takes effect on the preceding assessment day (CGS 12-95). The DD-214 must be received by the town clerk 'before the assessment day' (October 1) of the town (CGS 12-93)."
+  },
+  "effective": "Assessment year beginning October 1 (grand list date); the exemption shows on the tax bill issued the following July. For (20) and (83) claims proved after October 1 but before the board of assessment appeals finishes, the exemption 'shall take effect on the assessment day next preceding the date of the proof' (CGS 12-95). Motor-vehicle supplemental list: January 1 following proof.",
+  "lateFiling": "A claim proved after the board of assessment appeals closes is handled as an abatement/refund: CGS 12-81(83)(D)(ii) lets the veteran 'make application to the tax collector not later than one year after such individual obtains such proof or not later than one year after the expiration of the time limited in section 12-95' for abatement (unpaid tax) or refund (paid tax), referred to the board of selectmen or equivalent, paid without interest.",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 3,
+    "text": "CGS 12-81(83)(D)(ii): abatement or refund 'may be granted retroactively to include the assessment day next succeeding the date as of which such individual was entitled to such determination ... but in no case shall any abatement or refund be made for a period greater than three years.' Apply to the tax collector within one year of obtaining the VA proof."
+  },
+  "renewal": {
+    "type": "annual",
+    "text": "P&T exemption (83): the CLAIM is annual ('shall annually, not later than January first, submit such claim,' CGS 12-93 as amended 2025) with an attestation that no claim is made in another town, but the VA PROOF is one-time: 'If there is no change to an individual's determination, such proof shall not be required for any assessment year following that for which the exemption ... is granted initially' (12-81(83)(D)(i)). Rating-based exemption (20): no annual filing; the assessors' certified list is prima facie evidence of continued entitlement (CGS 12-94), proof only on initial claim and on a VA rating modification."
+  },
+  "ratingChange": "CGS 12-81(83)(D)(i): if the VA 'modifies an individual's determination to other than permanently and totally disabled based on a service-connected disability rating of one hundred per cent, such modification shall be deemed a waiver of the right to the exemption'; the veteran may then claim the tiered (20) exemption. CGS 12-95 (2025) requires proof of any VA modification of a (20) rating or (83) determination. A later P&T award supports the three-year abatement/refund.",
+  "move": "File with the new town: the town clerk of the former residence will, on request and payment of a copying fee, forward the recorded discharge to the new town (CGS 12-93); then file Form D-2 (or (20) proof) with the new assessor. The D-2 attestation bars claiming the (83) exemption in two towns.",
+  "onlineFiling": {
+    "available": null,
+    "text": "Varies by town; Form D-2 is a fillable PDF generally returned to the assessor by mail, email or in person. No statewide portal."
+  },
+  "documents": [
+    "Honorable discharge (DD-214 or certified copy) recorded with the town clerk before October 1 (CGS 12-93)",
+    "Form D-2 with attached copy of the VA determination of permanent and total disability based on a 100% service-connected rating (12-81(83); 12-93)",
+    "Attestation on D-2 that no (83) claim has been or will be filed in another town",
+    "For the tiered (20) exemption: VA letter showing the disability rating (10% or more), or proof of federal compensation for loss of a limb",
+    "Proof of residency / primary residence occupancy of the dwelling (12-81(83)(A)(II)); evidence of trust or life-estate interest if title is held that way"
+  ],
+  "survivingSpouse": "CGS 12-81(83)(B): the dwelling or motor vehicle of the deceased veteran's surviving spouse 'while such spouse remains a widow or widower,' or held for minor children, 'shall be so exempt as that to which such resident was or would have been entitled at the time of such resident's death.' PA 25-168 sec. 233 added a municipal option (F) to extend this to spouses of qualifying veterans who died before October 1, 2024, and sec. 241 a municipal-option exemption for surviving spouses of service members killed in the line of duty.",
+  "appeal": "Denials are appealed to the town's board of assessment appeals (CGS 12-111; February/March session, written appeal typically due February 20), then to Superior Court under CGS 12-117a. Not separately verified for exemption denials in this pass.",
+  "statute": "CGS 12-81(20); 12-81(83) (PA 24-46, amended by PA 25-2 sec. 4 and PA 25-168 sec. 233); 12-93 (PA 25-168 sec. 235); 12-94 (sec. 236); 12-95 (sec. 237); PA 25-168 secs. 240-241 (municipal-option TDIU and line-of-duty surviving spouse exemptions)",
+  "sourceUrls": [
+    { "url": "https://www.cga.ct.gov/current/pub/chap_203.htm", "title": "CGS Chapter 203 (12-81, 12-93, 12-94, 12-95) current statutes", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.cga.ct.gov/2025/ACT/PA/PDF/2025PA-00168-R00HB-07287-PA.PDF", "title": "Public Act 25-168 (secs. 233-241: 12-81(83) rewrite, annual Jan 1 claim, median cap, TDIU option)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.cga.ct.gov/2024/ACT/PA/PDF/2024PA-00046-R00HB-05491-PA.PDF", "title": "Public Act 24-46 (created 12-81(83))", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.cga.ct.gov/2025/ACT/PA/PDF/2025PA-00002-R00HB-07067-PA.PDF", "title": "Public Act 25-2 (secs. 4-5 amended 12-81(83) and (20))", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://prdext2.cga.ct.gov/2025/rpt/pdf/2025-R-0131.pdf", "title": "OLR Report 2025-R-0131 Municipal-Option Property Tax Exemptions for Veterans (Sept 2025)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://portal.ct.gov/opm/igpp/directories/municipal-assessors", "title": "OPM Municipal Assessors directory page", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://portal.ct.gov/opm/-/media/opm/igpp/municipal-directories/assessor-directory.pdf", "title": "OPM Municipal Assessor Listing (PDF)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.oldsaybrookct.gov/DocumentCenter/View/139/D-2-Permanently-and-Totally-Disabled-Veteran-100-Service-Connected-Disability-Application-for-Download-PDF", "title": "OPM Form D-2 (10.1.2025), Town of Old Saybrook copy", "status": 200, "checked": "2026-10-21", "primary": false },
+    { "url": "https://www.oldsaybrookct.gov/DocumentCenter/View/138/D-2-OPM-Letter-PDF", "title": "OPM memo of Sept 8, 2025 prescribing Form D-2", "status": 200, "checked": "2026-10-21", "primary": false }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "propertyTax.programs[Homestead Exemption].summary / note",
+      "issue": "Three items to review against PA 25-168 sec. 233 (eff. Oct 1, 2025 grand list): (1) the statute now exempts the dwelling 'that fractional share' owned, excluding any portion used commercially or producing rental income; new subparagraph (E) lets a town limit the exemption to 'not more than two acres of the lot upon which such dwelling sits,' which implies the lot (not just the structure) is within the exemption unless a town votes the 2-acre cap, so the 'land continues to be taxed / 0.75 fraction' modeling should be re-checked; (2) the median-assessed-value cap is confirmed as a municipal option under (G); (3) PA 25-168 sec. 240 created a MUNICIPAL-OPTION exemption for service-connected TDIU veterans, so the note 'a plain TDIU award does not qualify' is now town-dependent.",
+      "source": "https://www.cga.ct.gov/2025/ACT/PA/PDF/2025PA-00168-R00HB-07287-PA.PDF"
+    },
+    {
+      "field": "propertyTax.programs[Homestead Exemption].summary",
+      "issue": "Statute text since PA 25-2/25-168 reads 'determined by the United States Department of Veterans Affairs to be permanently and totally disabled based on a service-connected disability rating of one hundred per cent'; consistent with the data's P&T requirement.",
+      "source": "https://www.cga.ct.gov/2025/ACT/PA/PDF/2025PA-00168-R00HB-07287-PA.PDF"
+    }
+  ],
+  "notes": "cga.ct.gov 'current' chapter 203 text (read via curl, 1 MB) still shows the PA 24-46 version of 12-81(83) and 12-93 without the 2025 amendments, so the 2025 rules were taken from the enrolled PA 25-168 PDF (secs. 233-237, read with pdftotext) and the OPM Form D-2 memo. WebFetch could not open cga.ct.gov (certificate error); curl worked. OPM's forms page and its older igpp-main directory URLs return 404; the directories page under /opm/igpp/directories/ is live. OPM-set income thresholds and the Additional Veterans (income-based, biennial Feb 1 to Oct 1) program are separate from the two programs in the dollar layer and were not researched."
+}

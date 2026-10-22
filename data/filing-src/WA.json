@@ -1,0 +1,83 @@
+{
+  "state": "WA",
+  "officeType": "county assessor",
+  "officeTypeNote": "Washington has no flat veteran exemption; the disabled-veteran route is the income-tested Senior Citizens and People with Disabilities exemption (RCW 84.36.381), administered by the county assessor where the home sits. Form 64 0002: \"Complete this application in its entirety and file along with all supporting documents with your county assessor.\" The Department of Revenue prescribes the forms and thresholds but takes no applications; the county treasurer only issues refunds.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://dor.wa.gov/taxes-rates/property-tax/county-assessor-and-treasurer-websites",
+    "label": "Washington DOR: County assessor and treasurer websites (all 39 counties; short link dor.wa.gov/countycontacts printed on the form)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://dor.wa.gov/taxes-rates/property-tax/property-tax-exemptions-and-deferrals",
+    "note": "The DOR page links each county's own assessor site; no state-hosted per-county pages. Income Threshold 3 by county: https://dor.wa.gov/taxes-rates/property-tax/senior-citizens-and-people-disabilities-exemption-and-deferred-income-thresholds"
+  },
+  "forms": [
+    {
+      "programRef": "Veteran Exemption",
+      "name": "Senior Citizen and People with Disabilities Exemption from Real Property Taxes (check the box 'I am a veteran with an 80% service-connected evaluation or compensated at 100% rate due to service-connected disability')",
+      "number": "REV 64 0002",
+      "url": "https://dor.wa.gov/sites/default/files/2022-02/64-0002.pdf",
+      "revision": "REV 64 0002 (9/17/24)",
+      "filedWith": "county assessor (with the Combined Disposable Income Worksheet, REV 63 0036, and proof documents); counties may distribute their own DOR-approved version or an electronic form (WAC 458-16A-135)"
+    },
+    {
+      "programRef": "Surviving Spouse Program",
+      "name": "Same form 64 0002, box 'I am the surviving spouse/domestic partner of a person who was previously receiving this exemption and I was at least 57 years of age in the year my spouse/domestic partner passed away'",
+      "number": "REV 64 0002",
+      "url": "https://dor.wa.gov/sites/default/files/2022-02/64-0002.pdf",
+      "revision": "REV 64 0002 (9/17/24)",
+      "filedWith": "county assessor"
+    }
+  ],
+  "deadline": {
+    "type": "calendar-year",
+    "date": "12-31",
+    "text": "RCW 84.36.385(1): a claim \"may be made and filed at any time during the year\" for exemption from taxes payable the following year. DOR brochure PT0017: \"Applications and supporting documents for each qualification are due by December 31 of the assessment year. The county assessor may accept late applications.\" Qualifications (age, disability/rating, ownership, occupancy, income) are measured as of December 31 of the assessment year, i.e. the year before the taxes are due."
+  },
+  "effective": "Two-year cycle: an application filed in the assessment year reduces the taxes due the following year (tax year). If approved under Income Threshold 3, the taxable value is frozen at the assessed value in the first qualifying assessment year (RCW 84.36.381(6)). Relief: Threshold 3 exempts all excess levies, the state school levy (RCW 84.52.065) and certain voter-approved regular levies; Threshold 2 also exempts regular levies on the greater of $70,000 or 45% of value (cap $200,000 of value); Threshold 1 on the greater of $80,000 or 80% of value.",
+  "lateFiling": "Late applications are accepted at the assessor's discretion (brochure). Prior years: WAC 458-16A-135 and DOR brochure: a claimant who did not apply when first eligible \"may apply for the exemption in any subsequent year\" and claim prior years \"by applying with separate applications for each year,\" with refunds \"for only up to three years after the taxes were due.\"",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 3,
+    "text": "RCW 84.69.030(1)(b)/(2)(c): refund is made without a separate claim when based on \"a decision by the assessor or department approving an exemption application that is filed under chapter 84.36 RCW\" within \"three years after the due date of the payment to be refunded.\" DOR brochure: \"you must file the applications within three years of the date the taxes were due. Refunds will not be made beyond the three year period.\" Form 64 0002 includes a request for refund under RCW 84.69.020."
+  },
+  "renewal": {
+    "type": "varies",
+    "text": "RCW 84.36.385(1): the exemption continues \"for no more than six years unless a renewal application is filed\"; (3)-(4): the assessor notifies recipients at least once every six years and renewals are due \"not later than December 31st of the year the assessor notifies\" the person; the assessor may also require renewal when income thresholds change. DOR: \"Renewal required at least once every six years as determined by local assessor.\" Recipients must report any change in status (income, ownership, occupancy, rating) on DOR forms (84.36.385(2)); erroneous exemptions are recovered with penalties for up to five years."
+  },
+  "ratingChange": "Veteran route: \"combined service-connected evaluation rating of 80% or higher\" or \"total disability rating for a service-connected disability without regard to evaluation percent\" (DOR, for taxes through 2026). RCW 84.36.381 as amended by 2025 c 200 (EHB 1106) and 2026 c 163 reads \"40 percent or higher\" and applies \"to taxes levied for collection in 2027 and thereafter,\" so veterans rated 40-79% can first apply during 2026 for 2027 taxes. A rating increase does not change the relief amount (income-tiered), but a drop below the threshold must be reported. VA disability compensation and DIC are excluded from disposable income (RCW 84.36.383).",
+  "move": "Exemption attaches to the principal residence; a change of residence is a reportable change in status, and a new application is filed with the assessor of the county where the new home is located. Gain on sale of a principal residence reinvested in a new home within the same year is excluded from disposable income (form instructions).",
+  "onlineFiling": {
+    "available": null,
+    "text": "WAC 458-16A-135: applications \"are filed in person, by mail, or by electronic means\" if the county offers an approved electronic form; several counties (e.g. King, Pierce, Snohomish) run online portals, others are paper only. RCW 84.36.385(7) authorizes electronic filing."
+  },
+  "documents": [
+    "Form 64 0002 plus Combined Disposable Income Worksheet with proof of ALL income of the applicant, spouse/domestic partner and co-tenants (tax return, 1099s, SSA statement, VA award letter) and receipts for deductible expenses (Medicare/insurance premiums, prescriptions, in-home care, etc.)",
+    "Proof of disability/veteran status: VA disability award letter showing the combined service-connected rating or compensation at the 100% rate (or SSA disability award letter / physician Proof of Disability Statement for non-veteran disability)",
+    "Proof of age and identity: driver's license or state photo ID, voter registration, or birth certificate",
+    "Proof of ownership and occupancy as principal residence (deed/contract; trust documents in full if the home is held in trust)",
+    "Surviving spouse: proof of age 57+ in the year of death and that the deceased was receiving the exemption"
+  ],
+  "survivingSpouse": "A surviving spouse or domestic partner of a person receiving the exemption keeps it if at least 57 years old in the year of death and otherwise meeting ownership, occupancy and income requirements (RCW 84.36.381(1); form box). DIC is excluded from disposable income. Washington has no separate veteran-widow exemption.",
+  "appeal": "DOR brochure: a denial can be appealed to the county Board of Equalization, which \"must receive your appeal by July 1, or within 30 days of when the denial was mailed,\" whichever is later (RCW 84.36.385(5), 84.48.010, 84.40.038).",
+  "statute": "RCW 84.36.379-84.36.389 (esp. 84.36.381 qualifications, 84.36.383 definitions, 84.36.385 claims and renewals), RCW 84.69.030 (three-year refunds), WAC 458-16A-100 through 458-16A-150 (esp. 458-16A-135 application procedures)",
+  "sourceUrls": [
+    { "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=84.36.381", "title": "RCW 84.36.381 Residences: property tax exemptions, qualifications (current text incl. 2025 c 200 / 2026 c 163 effective for 2027 collections)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=84.36.385", "title": "RCW 84.36.385 Residences: claim for exemption, forms, change of status, renewals", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=84.69.030", "title": "RCW 84.69.030 Refunds: claims, three-year limit, no claim required for exemption approvals", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=458-16A-135", "title": "WAC 458-16A-135 Senior citizen, people with disabilities, and veterans exemption: application procedures", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dor.wa.gov/sites/default/files/2022-02/64-0002.pdf", "title": "Form REV 64 0002 (9/17/24) Senior Citizen and People with Disabilities Exemption from Real Property Taxes, with instructions", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.dor.wa.gov/sites/default/files/2022-02/PTExemption_Senior.pdf", "title": "DOR brochure PT0017 (09/23/2024): Property Tax Exemption for Senior Citizens and People with Disabilities (deadline, renewals, refunds, appeals)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dor.wa.gov/taxes-rates/property-tax/property-tax-exemptions-and-deferrals", "title": "DOR: Property tax exemptions and deferrals (program summary, 80%/total rating, six-year renewal)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dor.wa.gov/taxes-rates/property-tax/property-tax-exemption-seniors-people-retired-due-disability-and-veterans-disabilities", "title": "DOR: Property tax exemption for seniors, people retired due to disability, and veterans with disabilities (apply through county assessor)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dor.wa.gov/taxes-rates/property-tax/senior-citizens-and-people-disabilities-exemption-and-deferred-income-thresholds", "title": "DOR: Income thresholds by county", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dor.wa.gov/taxes-rates/property-tax/county-assessor-and-treasurer-websites", "title": "DOR: County assessor and treasurer websites (dor.wa.gov/countycontacts)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    { "field": "programs[0].ratingRequired / note", "note": "Confirmed: 80% (or compensation at the 100% rate) for taxes payable through 2026; the codified RCW 84.36.381 already reads 40% with the amendment applying to taxes levied for collection in 2027 and thereafter (2025 c 200, plus 2026 c 163). The DOR web page and 9/17/24 form still show 80%; expect a form revision for 2026 applications.", "source": "https://app.leg.wa.gov/RCW/default.aspx?cite=84.36.381" },
+    { "field": "programs[1] (Surviving Spouse Program)", "note": "Empty summary. There is no separate veteran surviving-spouse program; the surviving spouse/domestic partner aged 57+ in the year of death continues the same 84.36.381 exemption if income-qualified. Consider merging into program 0 or filling the summary.", "source": "https://app.leg.wa.gov/RCW/default.aspx?cite=84.36.381" }
+  ],
+  "notes": "Deadline type set to calendar-year because the statute allows filing any time during the assessment year and DOR frames December 31 as the due date for the next year's taxes; assessors accept late filings and the three-year refund rule covers missed years. RCW page text does not label which clauses come from 2025 c 200 vs 2026 c 163; the 40% figure is in the current codified text with the 2027 applicability note."
+}

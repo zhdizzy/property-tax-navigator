@@ -1,0 +1,98 @@
+{
+  "state": "MI",
+  "officeType": "local assessor (city or township where the home is located)",
+  "officeTypeNote": "Form 5107 goes to the ASSESSOR of the city or township, not the county and not the state. STC Bulletin 19 of 2023: 'Do not file with the Department of Treasury or the State Tax Commission.' Since the 2023 amendments the assessor (not the Board of Review) grants or denies the claim. The separate Homestead Property Tax Credit is an income-tax credit filed with the Michigan Department of Treasury on the MI-1040CR family of forms.",
+  "officeLocator": {
+    "tier": 2,
+    "url": null,
+    "label": "Michigan State Tax Commission: Disabled Veterans Exemption Information",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.michigan.gov/treasury/local/stc/ppe/detail/disabled-veterans-exemption-information",
+    "note": "Michigan has ~1,500 assessing units and the state publishes no public assessor-contact directory (the STC 'Assessor of Record' report lists names and certification levels only). Direct the user to the assessing office on their city or township website. State Tax Commission: 517-335-3429, State-Tax-Commission@michigan.gov."
+  },
+  "forms": [
+    {
+      "programRef": "Disabled Veteran Exemption",
+      "name": "State Tax Commission Affidavit for Disabled Veterans Exemption",
+      "number": "Form 5107",
+      "url": "https://www.michigan.gov/treasury/-/media/Project/Websites/treasury/Forms/Local-Government/PSD/STC/5107.pdf",
+      "revision": "Rev. 03-26 (approved by the STC April 7, 2026)",
+      "filedWith": "local assessor of the city or township where the property is located"
+    },
+    {
+      "programRef": "Disabled Veteran Exemption",
+      "name": "Request to Rescind Disabled Veterans Exemption",
+      "number": "Form 6054",
+      "url": "https://www.michigan.gov/treasury/-/media/Project/Websites/treasury/Forms/Local-Government/PSD/STC/6054.pdf?rev=6a0e303431f34ecebd56512f7d4359b4&hash=507499C83945FBF2A42397379372B6AB",
+      "revision": null,
+      "filedWith": "local assessor, within 45 days of ceasing to qualify or moving"
+    },
+    {
+      "programRef": "Disabled Veteran Exemption",
+      "name": "Notice of Denial of Disabled Veterans Exemption (issued by the assessor; starts the 35-day Tax Tribunal appeal clock)",
+      "number": "Form 6055",
+      "url": "https://www.michigan.gov/treasury/-/media/Project/Websites/treasury/Forms/Local-Government/PSD/STC/6055.pdf?rev=e6f3772efeca4b76a6961172728bb73c&hash=4F9792C12C92D55CC33CE95E8072945A",
+      "revision": null,
+      "filedWith": "n/a (assessor-issued)"
+    },
+    {
+      "programRef": "Homestead Property Tax Credit",
+      "name": "Michigan Homestead Property Tax Credit Claim (MI-1040CR; veterans with a service-connected disability and surviving spouses use the MI-1040CR-2 and file whichever yields the larger credit)",
+      "number": "MI-1040CR / MI-1040CR-2",
+      "url": null,
+      "revision": null,
+      "filedWith": "Michigan Department of Treasury, with the MI-1040 income tax return (or alone if no return is required)"
+    }
+  ],
+  "deadline": {
+    "type": "calendar-year",
+    "date": "12-31",
+    "text": "Bulletin 19 of 2023: 'Form 5107 may be submitted to the local assessing unit after January 1 and before December 31 during the year in which the exemption is requested.' MCL 211.7b(2): filed 'after January 1 and before December 31' of the year claimed. One-time filing for taxes levied on or after Jan 1, 2025."
+  },
+  "effective": "Applies to all property taxes for the current calendar year, including taxes already paid (refunded) and taxes still owed (MCL 211.7b(3)). If the veteran did not own and occupy the home for the whole year, the exemption is prorated: by the tax proration in the closing documents if they are attached to Form 5107; otherwise by (days owned and occupied / 365). No refund of prior-year taxes paid to the seller at closing. From Jan 1, 2025 the exemption stays in place in later years without reapplication (MCL 211.7c).",
+  "lateFiling": "An affidavit not filed within the calendar year cannot be granted for that year by the assessor, and 'the March, July, and December Boards of Review have no authority to hear claims for the disabled veterans exemption for the current year.' Exception: the July or December Board of Review may grant the exemption as a 'qualified error' under MCL 211.53b for the current and immediately preceding year when (1) the local unit mis-processed a timely affidavit, or (2) the VA was late issuing the 100% P&T determination.",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 1,
+    "text": "Only through the MCL 211.53b qualified-error route at the July or December Board of Review: 'for the current year and immediately preceding tax year', and only for a processing error on a timely affidavit or 'a delay in the determination by the United States Department of Veterans Affairs'. No general look-back refund."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "Form 5107 instructions: 'Under MCL 211.7c, beginning January 1, 2025, the exemption, once granted, remains in effect without subsequent annual reapplication.' It continues until rescinded by the owner (Form 6054, due within 45 days of ceasing to qualify) or denied by the assessor. Local units must audit, no more than once every 3 years absent cause. (Before 2025 the affidavit had to be refiled every year.)"
+  },
+  "ratingChange": "Qualification is 100% P&T, or VA individual unemployability, or receipt of SAH/SHA specially adapted housing assistance (Bulletin 19 of 2023 confirms either grant qualifies). If the veteran stops meeting any of these, Form 6054 must be filed with the assessor within 45 days; otherwise the assessor can deny for the current year plus the 3 preceding years with taxes, interest at 1%/month and penalty (MCL 211.7c). A newly-rated veteran files Form 5107 within the calendar year; if the VA decision was delayed, the July/December Board of Review can reach back one year.",
+  "move": "File Form 6054 (rescission) within 45 days of ceasing to own and occupy the old home, and a new Form 5107 with the assessor of the new city or township, attaching closing documents so the first-year proration follows the closing tax split. The exemption on the old home is removed as of the conveyance date and prorated daily (MCL 211.7b(3)(c)).",
+  "onlineFiling": {
+    "available": null,
+    "text": "Form 5107 is a fillable PDF submitted to the local assessor; acceptance by email or portal varies by city/township. No state e-file for the exemption. The Homestead Property Tax Credit (MI-1040CR) can be e-filed with the Michigan income tax return."
+  },
+  "documents": [
+    "Form 5107, signed by the veteran or legal designee (designee attaches a letter of authority)",
+    "A copy of the U.S. Department of Veterans Affairs letter showing permanent and total disability at the 100% rate, OR the VA certificate of pecuniary assistance for specially adapted housing (SAH or SHA), OR the VA letter rating the veteran individually unemployable. A county veterans office letter is NOT sufficient (Bulletin 19 of 2023)",
+    "For a newly purchased home: closing statement or other purchase documents, so the first-year proration follows the closing tax split (otherwise prorated by days owned/365)",
+    "Parcel ID, local unit (city/township/village), county, school district, date acquired",
+    "Surviving spouse: proof the veteran was eligible immediately before death; must hold title solely for after-acquired homesteads"
+  ],
+  "survivingSpouse": "Unremarried surviving spouse of a veteran who was eligible immediately before death keeps the exemption 'as long as the surviving spouse does not remarry', and it 'applies to any property used and owned as a homestead by the surviving spouse, including homestead property acquired after the decedent's death' (MCL 211.7b(1)(b), 2023 PA 150). Same Form 5107.",
+  "appeal": "A written denial by the assessor (Form 6055) may be appealed by petition to the Michigan Tax Tribunal (residential and small claims division) within 35 days of the denial notice; a July or December Board of Review decision is likewise appealable to the Tax Tribunal within 35 days (MCL 211.7c; Bulletin 19 of 2023). Tax Tribunal: https://www.michigan.gov/taxtrib",
+  "statute": "MCL 211.7b (exemption; 2013 PA 161 as amended by 2023 PA 150); MCL 211.7c (continuation without reapplication, rescission, audit, denial and appeal; 2023 PA 151); MCL 211.53b (qualified error at July/December Board of Review; 2023 PA 152); MCL 206.520 et seq. (Homestead Property Tax Credit)",
+  "sourceUrls": [
+    { "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-211-7b", "title": "MCL 211.7b Disabled veteran homestead exemption (Michigan Legislature)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-211-7c", "title": "MCL 211.7c Continuation, rescission, audit, denial and appeal (Michigan Legislature)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.michigan.gov/treasury/local/stc/ppe/detail/disabled-veterans-exemption-information", "title": "Michigan State Tax Commission: Disabled Veterans Exemption Information", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.michigan.gov/treasury/-/media/Project/Websites/treasury/Forms/Local-Government/PSD/STC/5107.pdf", "title": "Form 5107, STC Affidavit for Disabled Veterans Exemption (Rev. 03-26)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.michigan.gov/treasury/-/media/Project/Websites/treasury/STC/Bulletins/2023/Bulletin-19-of-2023---Disabled-Veterans-Exemption-Final.pdf?rev=722758eebaa241abb2c5bfb181008e73&hash=44EF03445E4220EC498AD0BF9CAC2DE5", "title": "STC Bulletin 19 of 2023, Disabled Veterans Exemption (Nov 14, 2023)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.michigan.gov/treasury/-/media/Project/Websites/treasury/STC/2026/Memo-2---Regarding-Form-5107-STC-Affidavit-for-DVE.pdf?rev=b86d50a255f6437a9ec50430dce9ad0a&hash=91BB56052CAE1B46763AA09F915A8224", "title": "STC Memo, Form 5107 Updates and Proration Examples (April 7, 2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.michigan.gov/treasury/-/media/Project/Websites/treasury/STC/2023/Disabled-Veterans-Exemption-FAQ-w-samples---Revised-1424.pdf?rev=91f5746aab58418d9293a4f69991c4e3&hash=E2623BD754877CEA7C284D505098DFC1", "title": "STC Disabled Veterans Exemption FAQ (updated Feb 15, 2024)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.michigan.gov/taxes/iit/tax-guidance/credits-exemptions/hptc", "title": "Michigan Treasury: Homestead Property Tax Credit Information", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.michigan.gov/taxtrib", "title": "Michigan Tax Tribunal", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    "The 'Disabled Veteran Exemption' summary says '100% rating'; the statute requires 'permanently and totally disabled ... entitled to veterans' benefits at the 100% rate' (P&T), or IU, or SAH assistance. A 100% schedular rating that is not P&T is not listed in MCL 211.7b(4)(a), so `ptRequired` should arguably be true with IU/SAH as alternates.",
+    "Homestead Property Tax Credit `details` still says 'up to $1,800'; summary says $1,900 (TY2025). Align the strings."
+  ],
+  "notes": "The Form 5107 link was verified both with and without the ?rev= query string (both 200); the clean URL is used in `forms`. The FAQ PDF and Forms 6054/6055 were verified 200 but not opened. The homestead-credit (MI-1040CR-2) PDF URL was not pinned because michigan.gov form URLs change yearly; the hptc landing page is the stable entry point. Michigan residency is required for the exemption (MCL 211.7b(4)(a))."
+}

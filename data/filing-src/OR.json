@@ -1,0 +1,80 @@
+{
+  "state": "OR",
+  "officeType": "county assessor",
+  "officeTypeNote": "File with the assessor of the county where the home is located (the county tax collector only bills). Oregon has no state-level filing; the Department of Revenue prescribes the form and publishes the rules.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://www.oregon.gov/dor/programs/property/Pages/county-contact.aspx",
+    "label": "Oregon Department of Revenue: County assessor and tax collector contact information (all 36 counties)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.oregon.gov/dor/programs/property/Pages/exemptions.aspx",
+    "note": "Single DOR page listing each county's assessor office; no per-county DOR sub-pages."
+  },
+  "forms": [
+    {
+      "programRef": "Veteran Exemption",
+      "name": "Disabled Veteran or Surviving Spouse Exemption Claim (includes Physician's Certificate page)",
+      "number": "150-303-086",
+      "url": "https://www.oregon.gov/dor/forms/FormsPubs/veteran-exemption-claim_303-086.pdf",
+      "revision": "02-29-24",
+      "filedWith": "county assessor"
+    },
+    {
+      "programRef": "Veteran Exemption",
+      "name": "Disabled Veteran or Surviving Spouse Property Tax Exemption (DOR publication explaining eligibility, due dates, late filing, documents)",
+      "number": "150-310-676",
+      "url": "https://www.oregon.gov/dor/forms/FormsPubs/veteran-spouse-exemption_310-676.pdf",
+      "revision": "11-07-25 (January 2026 edition)",
+      "filedWith": null
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "04-01",
+    "text": "Pub 150-310-676: \"File your claim, with attached documentation, on or before April 1 preceding the tax year for which you're claiming the exemption.\" \"If you acquire property after March 1 and before July 1, file your claim ... within 30 days after the date of acquisition.\" You must own and live in the home before July 1 to qualify for the tax year beginning July 1."
+  },
+  "effective": "Applies to the tax year beginning July 1 after a timely April 1 (or 30-day post-acquisition) filing; appears on the October tax statement. If you sell before July 1 the property is disqualified for that tax year.",
+  "lateFiling": "Physician-certified veterans who received the exemption the prior year and are notified by the assessor that no new claim was filed may file \"no later than May 1\" with a $10 late fee. Late VA certification: a veteran notified of a qualifying 40%+ rating effective as of a prior date may file \"within six months of the date the federal government notifies you\" and claim prior tax years, but \"not ... more than three tax years prior to the tax year during which you file your claim.\" No other late-filing provision.",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 3,
+    "text": "Only in the late-VA-certification case: claim filed within six months of the VA notice can reach back up to three prior tax years, each of which must begin after the certified disability date (ORS 307.260 as described in DOR Pub 150-310-676)."
+  },
+  "renewal": {
+    "type": "on-change",
+    "text": "VA- or Armed-Forces-certified veterans and surviving spouses \"don't have to file a claim every year\"; a new claim is required by April 1 \"if there are changes in ownership or use of your homestead property\" (e.g., transfer to a trust or life estate, adding/removing owners). Veterans certified by an independent licensed physician must file every year by April 1 with a physician's certificate dated within one year and meet the 185%-of-poverty income test."
+  },
+  "ratingChange": "The VA/Armed Forces disability certificate attached to a claim \"must be dated within three years prior to the date of your claim\"; once filed after age 65 or with a permanent-disability certification it need not be re-attached. If the rating falls below 40 percent, contact the county assessor (exemption ends). A rating increase to 40%+ service-connected triggers the larger exemption amount with a new claim.",
+  "move": "\"This property tax exemption isn't 'automatic' and doesn't transfer from one property to another. If you buy and move to a different home, you need to file a new claim form for your new home\" (by April 1, or within 30 days if acquired March 1 to July 1).",
+  "onlineFiling": {
+    "available": false,
+    "text": "Form is a fillable PDF filed with the county assessor (mail or in person); some counties accept email. No state portal."
+  },
+  "documents": [
+    "DD-214 or other military-issued documentation showing discharge or release under honorable conditions and the period of active service",
+    "Disability certificate from the VA or a branch of the Armed Forces showing 40 percent or more disability (dated within three years of the claim), or an independent licensed physician's certificate (page 3 of the form, dated within one year; annual refiling and income limit apply)",
+    "Proof of ownership/occupancy of the homestead (recorded contract of purchase or life estate counts as ownership); revocable trust documentation if held in trust",
+    "Surviving spouse/partner: veteran's DD-214, death certificate, and marriage certificate or certificate of registered domestic partnership"
+  ],
+  "survivingSpouse": "Surviving spouse or registered domestic partner of a qualifying veteran who has not remarried or re-partnered qualifies, even if the veteran was not disabled or never claimed; receives the larger ($32,512 for 2026-27) amount if the veteran died of service-connected injury/illness or had received at least one year of the maximum exemption. A surviving spouse of a veteran who died during the prior tax year (or within 30 days of acquiring the home) may elect to continue the existing exemption by notifying the assessor without a new claim. Remarriage disqualifies.",
+  "appeal": "Denial of an exemption claim by the county assessor is appealed to the Oregon Tax Court Magistrate Division (per the DOR exemptions page framework; not re-verified for this record).",
+  "statute": "ORS 307.250 to 307.283 (disabled veteran / surviving spouse exemption; ORS 307.260 claim procedure and late filing); ORS 307.286 to 307.289 (reserve component / active duty exemption, separate form)",
+  "sourceUrls": [
+    { "url": "https://www.oregon.gov/dor/forms/FormsPubs/veteran-exemption-claim_303-086.pdf", "title": "Form 150-303-086 Disabled Veteran or Surviving Spouse Exemption Claim (Rev. 02-29-24) with instructions", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.oregon.gov/dor/forms/FormsPubs/veteran-spouse-exemption_310-676.pdf", "title": "Pub 150-310-676 Disabled Veteran or Surviving Spouse Property Tax Exemption (Rev. 11-07-25)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.oregon.gov/dor/programs/property/pages/exemptions.aspx", "title": "Oregon DOR: Property tax exemptions", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.oregon.gov/dor/programs/property/Pages/county-contact.aspx", "title": "Oregon DOR: County assessor contact information", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.oregon.gov/odva/benefits/pages/taxes.aspx", "title": "Oregon Department of Veterans' Affairs: Taxes (property tax exemption overview)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "Veteran Exemption.survivingSpouse",
+      "issue": "Row shows false; ORS 307.250 and DOR Pub 150-310-676 extend the exemption to the un-remarried surviving spouse or registered domestic partner of a qualifying veteran, with the larger amount in service-connected death cases.",
+      "source": "https://www.oregon.gov/dor/forms/FormsPubs/veteran-spouse-exemption_310-676.pdf"
+    }
+  ],
+  "notes": "The official ORS text host (oregonlegislature.gov) did not respond to automated requests on 2026-10-21, so statutory wording is taken from the Department of Revenue's form and publication, which paraphrase ORS 307.260. The Reserve Component (active-duty) exemption under ORS 307.286 uses a different DOR form (150-303-084) that was not researched here. Appeal path not re-verified."
+}

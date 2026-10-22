@@ -1,0 +1,70 @@
+{
+  "state": "MN",
+  "officeType": "county assessor",
+  "officeTypeNote": "Apply to the county assessor's office for the county where the home is located (a few cities, e.g. Minneapolis, run their own assessor's office). The property must already be classified as homestead, which is also handled by the assessor. The Department of Revenue administers the program statewide but does not take applications. The county veterans service officer (CVSO) supplies the VA rating documentation and must certify each recipient's rating and address to the assessor by July 1 each year.",
+  "officeLocator": {
+    "tier": 2,
+    "url": null,
+    "label": "Minnesota Department of Revenue: Market Value Exclusion for Veterans with a Disability",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.revenue.state.mn.us/market-value-exclusion-veterans-disability",
+    "note": "The DOR program page's 'county assessor' link points only to the generic mn.gov county portal (https://mn.gov/portal/government/local/counties/), and DOR publishes no assessor contact directory (its 'Assessors Licensed' PDFs list names and license levels by county, not contacts). Direct the user to '<county> assessor' on the county website; DOR Property Tax Division 651-556-6922."
+  },
+  "forms": [
+    {
+      "programRef": "Disabled Veterans Homestead",
+      "name": "Homestead Exclusion for a Veteran with a Disability (Minnesota DOR form distributed through county assessors; older county copies are split into CR-DVHE70 and CR-DVHE100)",
+      "number": "CR-HEV",
+      "url": null,
+      "revision": null,
+      "filedWith": "county assessor"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "12-31",
+    "text": "Minn. Stat. 273.13, subd. 34(h): 'a property owner must apply to the assessor by December 31 of the first assessment year for which the exclusion is sought.' DOR: apply 'by December 31 to qualify for taxes payable the following year.' Own and occupy as homestead by December 31."
+  },
+  "effective": "Applies to the assessment year in which the application is filed (by Dec 31), reducing taxes payable the FOLLOWING year. Manufactured homes assessed and taxed in the same year should apply as early as possible. The veteran must be honorably discharged and must own and occupy the home as a homestead by December 31 of the assessment year.",
+  "lateFiling": "An application received after December 31 is treated as an application for the next assessment year; the statute gives the assessor no authority to accept a late application for the year that has closed, and there is no refund mechanism for a missed year.",
+  "retroactivity": {
+    "type": "none",
+    "years": 0,
+    "text": "No look-back. The exclusion starts with the assessment year in which the application is filed (taxes payable the next year); prior years cannot be reopened. Surviving spouses of service members who died in active service have a 2-year window after the death to file a first-time application (subd. 34(i))."
+  },
+  "renewal": {
+    "type": "on-change",
+    "text": "The statute requires one application 'by December 31 of the first assessment year' and then notice to the assessor of any change in ownership or homestead use (subd. 34(h)); the CVSO re-certifies each recipient's rating and address to the assessor by July 1 annually (subd. 34(m)). In practice several counties still ask 70-99% (non-permanent) veterans to reapply each year because their rating is subject to VA re-examination, so check the county's instructions."
+  },
+  "ratingChange": "Report any VA rating change to the county assessor and CVSO. The CVSO's annual July 1 certification of each recipient's rating is how the county catches changes. A veteran who moves from 70-99% to 100% permanent and total should file a new CR-HEV so the exclusion increases from $150,000 to $300,000 for the next assessment year; a veteran who drops below 70% loses the exclusion.",
+  "move": "The exclusion does not follow the veteran automatically. The owner must notify the assessor of the change in ownership/homestead use, then apply (homestead first, then CR-HEV) with the assessor for the new county/home by December 31 of the first assessment year there. A surviving spouse may carry the exclusion to ONE replacement home if they apply by Dec 31, hold title and live there, the new home's EMV is no higher than the old home's EMV at sale, and they have not used this portability before (subd. 34(n)). DOR: contact the assessor before moving.",
+  "onlineFiling": {
+    "available": null,
+    "text": "Varies by county. The form is a paper/PDF application returned to the county assessor; some counties accept it by email or through their homestead portals."
+  },
+  "documents": [
+    "Homestead Exclusion for a Veteran with a Disability application (CR-HEV), signed by all owners (married joint owners both sign)",
+    "DD-214 or other official military discharge papers showing an honorable discharge (subd. 34(a))",
+    "U.S. Department of Veterans Affairs documentation certifying the service-connected disability rating: 70% or more, or 100% total and permanent (obtain through the county veterans service officer)",
+    "Property must already have homestead classification (file the homestead application first if not)",
+    "Surviving spouse: DIC verification or benefit letters; for an active-duty death, DD-1300 or DD-2064 plus proof of the date of death",
+    "Primary family caregiver: VA certification under the Program of Comprehensive Assistance for Family Caregivers plus the veteran's discharge and rating documents"
+  ],
+  "survivingSpouse": "If a 100% P&T veteran dies, the $300,000 exclusion carries over to the spouse who holds title and permanently resides there 'until such time as the spouse remarries, or sells, transfers, or otherwise disposes of the property' (subd. 34(c)); the spouse must apply and report changes in marital status, ownership or residence. A spouse whose veteran never applied (or died before the exclusion existed) can file a first-time application if the VA certifies the veteran was 100% P&T or the spouse receives DIC (subd. 34(k)). Spouses of service members who died from a service-connected cause get the $300,000 tier (subd. 34(d)) but must file within 2 years of the death (subd. 34(i)). One-time portability to a replacement home under subd. 34(n). The 70-99% tier does not carry over to a spouse.",
+  "appeal": null,
+  "statute": "Minn. Stat. § 273.13, subd. 34",
+  "sourceUrls": [
+    { "url": "https://www.revisor.mn.gov/statutes/cite/273.13", "title": "Minn. Stat. 273.13 Classification of property (subd. 34, homestead of veteran with a disability)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.revenue.state.mn.us/market-value-exclusion-veterans-disability", "title": "MN Department of Revenue: Market Value Exclusion for Veterans with a Disability", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.revenue.state.mn.us/homestead-classification", "title": "MN Department of Revenue: Homestead Classification (prerequisite)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.revenue.state.mn.us/property-tax-programs", "title": "MN Department of Revenue: Property Tax Programs", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    "The 'Disabled Veterans Homestead MVE — 100% P&T tier' row says 'Extends to surviving spouse w/ DIC and primary family caregiver'; per subd. 34(c)-(d) and (k) the spouse carry-over is tied to the veteran's 100% P&T status (or DIC), and the surviving-spouse continuation is until remarriage or sale, not a fixed number of years.",
+    "The $150,000 tier row says 'own/occupy by Dec 31' (correct) and should also note the application deadline is Dec 31 of the FIRST assessment year, with taxes payable the following year."
+  ],
+  "notes": "The CR-HEV form is a Department of Revenue form (title 'Homestead Exclusion for a Veteran with a Disability') but DOR does not host it on revenue.state.mn.us; every copy found is on a county or city site (Minneapolis Rev. 7/21, Rice County Rev. 7/23), so `forms[].url` is null rather than linking a county copy. Older county copies (CR-DVHE70 / CR-DVHE100) still show a July 1 deadline from the pre-2016 law; the current statute is December 31. The statute does not spell out an appeal route for a denied exclusion; `appeal` left null."
+}

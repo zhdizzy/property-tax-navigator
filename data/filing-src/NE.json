@@ -1,0 +1,105 @@
+{
+  "state": "NE",
+  "officeType": "county assessor",
+  "officeTypeNote": "Form 458 is filed with the county assessor of the county where the homestead is located; the assessor examines it and forwards approved applications to the Nebraska Tax Commissioner (Department of Revenue), who makes the final income/eligibility determination and reimburses the county. Do not send the form to the Department of Revenue.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://revenue.nebraska.gov/PAD/county-assessors-and-parcel-search",
+    "label": "Nebraska DOR Property Assessment Division: County Assessors and Parcel Search (every county with assessor website and parcel-search links; complete address listing PDF/Excel)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://revenue.nebraska.gov/PAD/homestead-exemption",
+    "note": "Per-county entries are anchors on one page (no separate URLs). Complete assessor address/phone list: https://revenue.nebraska.gov/sites/default/files/doc/pad/assessor/updated_assessor_phone_list.pdf. Homestead Helpline (888) 475-5101."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Nebraska Homestead Exemption Application (2026)",
+      "number": "Form 458",
+      "url": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/Form%20458%202026.pdf",
+      "revision": "2026",
+      "filedWith": "county assessor, after February 1 and on or before June 30"
+    },
+    {
+      "programRef": "*",
+      "name": "Physician's Certification for Late Homestead Exemption Filing (2026)",
+      "number": "Form 458L",
+      "url": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/Form%20458L%202026.pdf",
+      "revision": "2026",
+      "filedWith": "county assessor, with a late Form 458 (medical-condition late filing)"
+    },
+    {
+      "programRef": "Wartime Veteran/Surviving Spouse Homestead Exemption",
+      "name": "Certification of Disability for Homestead Exemption (2026) (Category 2 non-service-connected disabled veterans may use Form 458B or a VA certification)",
+      "number": "Form 458B",
+      "url": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/Form%20458B_2026.pdf",
+      "revision": "2026",
+      "filedWith": "county assessor, with the first Form 458"
+    },
+    {
+      "programRef": "*",
+      "name": "Application for Transfer of Nebraska Homestead Exemption (when moving within Nebraska between Jan 1 and Aug 15)",
+      "number": "Form 458T",
+      "url": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/Form%20458T%202026.pdf",
+      "revision": "2026",
+      "filedWith": "county assessor of the new county, by August 15"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "06-30",
+    "text": "Neb. Rev. Stat. 77-3512(1): file 'with the county assessor ... after February 1 and on or before June 30 of each year'. Form 458 (2026): 'Failure to timely file is a waiver of the homestead exemption.' The county board may by majority vote extend an individual applicant's deadline to July 20 (not in consecutive years)."
+  },
+  "effective": "Applies to the current year's taxes (assessed Jan 1, due the following year). The applicant must own and occupy the homestead from January 1 through August 15 of the application year; eligibility for the veteran categories is measured as of January 1 (e.g., 100% permanent disability 'certified on or before January 1, 2026'). Approved exemptions are deducted from the assessment roll after the Tax Commissioner certifies determinations by November 1.",
+  "lateFiling": "Three statutory late-filing routes, each only for the current tax year and each filed with the assessor 'on or before June 30 of the year in which the real estate taxes levied on the property for the current year become delinquent' (i.e., June 30 of the NEXT year): (1) medical condition that impaired timely filing, with Form 458L; (2) death of a spouse during the year, with the death certificate; (3) NEW under LB826 (eff. April 15, 2026): the VA 'certification of status ... was received from the United States Department of Veterans Affairs after June 30', with documentation of the receipt date (77-3512(1)(b)-(d); 77-3514.01). The assessor must approve or reject a late filing within 30 days; rejection is appealable to the county board of equalization.",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 1,
+    "text": "Only the prior tax year, and only through the late-filing routes in 77-3514.01 (medical, death of spouse, or late VA certification), filed by June 30 of the following year. Otherwise 'Failure to file ... shall constitute a waiver of the exemption for the year in which the failure occurred' (77-3512(2)). Separately, the Tax Commissioner may review an application within 3 years and order a refund if an exemption 'should have been approved or increased' (77-3517(2))."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "Categories 4V (100% SC permanently disabled or 38 CFR 4.16 total rating), 4S (qualified surviving spouses) and 5 (VA-contributed homes) file once: 77-3512(1)(e) 'shall not be required to file an application in any subsequent year'; the 2026 Category Table marks Form 458 'No, but required with 1st application', and again 'the year after filing a late application'. EXCEPTIONS that must refile every year: Category 7 (100% SC TEMPORARY disability, with annual VA certification) and Category 2 (non-service-connected totally disabled wartime veteran, income-tested, Schedule I each year). Surviving spouses must notify the assessor within 30 days of remarriage before age 57."
+  },
+  "ratingChange": "A category change requires a new Form 458 with a new VA certification (Category Table note: 'If medical status changes, then a new Form 458 ... must be completed and submitted to your county assessor accompanied by a new Form 458B or VA Certificate'). Category 7 (temporary 100%) veterans file annually until the VA makes the rating permanent, then file once more as 4V. Category 4V also covers a total disability rating for compensation under 38 CFR 4.16 (IU), so TDIU qualifies for the full exemption without income or value limits. Veterans below 100% with a non-service-connected total disability fall to income-tested Category 2.",
+  "move": "A homestead exemption does not follow the owner automatically. If you move to a new Nebraska homestead acquired between January 1 and August 15, file Form 458T (Application for Transfer) with the county assessor by August 15 (77-3509.01/.02); notify the assessor by August 15 of the change (77-3514). Otherwise file a new Form 458 in the Feb 1 to June 30 window the next year. The applicant must own and occupy the homestead Jan 1 to Aug 15 of the year claimed.",
+  "onlineFiling": {
+    "available": null,
+    "text": "Form 458 is a paper/PDF form filed with the county assessor; many assessors mail pre-printed applications to prior recipients who must refile. Some counties accept email submissions; no statewide e-file."
+  },
+  "documents": [
+    "Form 458 (2026), signed, filed Feb 1 to June 30 with the county assessor",
+    "Category 4V / 4S / 5 / 7: VA certification letter showing compensation for 100% service-connected permanent disability (or a 38 CFR 4.16 total/IU rating, or 100% temporary for Category 7, or VA-contributed home for Category 5), certified on or before January 1 of the year; required with the first application (4V, 4S, 5) or every year (7)",
+    "Category 2 (non-service-connected totally disabled wartime veteran): Form 458B or VA certification with the first application, plus Form 458 Schedule I Income Statement every year",
+    "Proof of honorable or general (under honorable conditions) discharge; the veteran must have been discharged with that characterization (Form 458 note)",
+    "Surviving spouse (4S): proof of marriage/death and of VA compensation drawn as the spouse of a 4V veteran, a veteran who died of a service-connected disability, or a service member who died on active duty",
+    "Schedule I Income Statement is NOT required for categories 4V, 4S, 5 and 7",
+    "Late filers: Form 458L physician's certification, spouse's death certificate, or documentation of when the VA certification was received"
+  ],
+  "survivingSpouse": "Category 4S: unremarried surviving spouses (or spouses who remarried after age 57) drawing VA compensation because of (a) marriage to a deceased 4V veteran, (b) the death of any honorably discharged veteran from a service-connected disability, or (c) the death of a service member on active duty, get the 100% exemption with no income or value limit and file once (77-3506(2)(b),(d)-(f); 77-3512(1)(e)). A spouse who remarries before 57 loses it and must notify the assessor within 30 days (77-3506(4)).",
+  "appeal": "Assessor rejection (including of a late filing): hearing before the county board of equalization under 77-3519. Tax Commissioner denial or partial approval (notice mailed after the Nov 1 certification): appeal under 77-3520 (to the Tax Equalization and Review Commission). Form 458R is the assessor's Notice of Reduction/Rejection; Form 458RQ requests a redetermination.",
+  "statute": "Neb. Rev. Stat. §§ 77-3506 (veteran categories; no annual re-application), 77-3512 (Feb 1 to June 30 filing; late-filing routes incl. LB826 2026), 77-3513 (assessor's April 1 refile notice), 77-3514 (change notice by Aug 15), 77-3514.01 (late applications), 77-3517 (Tax Commissioner review, 3-year refund), 77-3519/77-3520 (appeals); Title 350 Neb. Admin. Code ch. 45",
+  "sourceUrls": [
+    { "url": "https://revenue.nebraska.gov/PAD/homestead-exemption", "title": "Nebraska DOR: Nebraska Homestead Exemption (forms, guide, calendar)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/Form%20458%202026.pdf", "title": "Form 458, Nebraska Homestead Exemption Application (2026) with instructions", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/2026%20Homestead%20Category%20Table%20Requirements.pdf", "title": "2026 Homestead Category Requirement Table (annual filing and certification by category)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/Form%20458L%202026.pdf", "title": "Form 458L, Physician's Certification for Late Homestead Exemption Filing (2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/Form%20458B_2026.pdf", "title": "Form 458B, Certification of Disability for Homestead Exemption (2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/Form%20458T%202026.pdf", "title": "Form 458T, Application for Transfer of Nebraska Homestead Exemption (2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.nebraska.gov/sites/default/files/doc/pad/homestead/Homestead%20Exemption%20Information%20Guide.pdf", "title": "Nebraska Homestead Exemption Information Guide", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.nebraska.gov/PAD/county-assessors-and-parcel-search", "title": "Nebraska DOR: County Assessors and Parcel Search", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.nebraska.gov/sites/default/files/doc/pad/assessor/updated_assessor_phone_list.pdf", "title": "Nebraska county assessor address and phone list (PDF)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-3506", "title": "Neb. Rev. Stat. 77-3506 (veterans and surviving spouses; one-time application)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-3512", "title": "Neb. Rev. Stat. 77-3512 (filing window, late filing, waiver; LB826 2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-3514.01", "title": "Neb. Rev. Stat. 77-3514.01 (late applications; VA certification received after June 30)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-3517", "title": "Neb. Rev. Stat. 77-3517 (Tax Commissioner determination, 3-year review and refund)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-3513", "title": "Neb. Rev. Stat. 77-3513 (assessor refile notice by April 1)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    "The 'SC Totally Disabled Veterans and Surviving Spouses' row should note the discharge test is 'honorable or general (under honorable conditions)' (77-3506(2)(a)) and that Category 7 (100% SC TEMPORARY disability) gets the same 100% exemption but must refile annually with a fresh VA certification.",
+    "The 'Wartime Veteran ... Non-SC Totally Disabled' row's summary already notes 4V covers IU; the statute's wording is 'assignment of total disability rating for compensation pursuant to 38 C.F.R. 4.16' (77-3506(2)(a)(ii))."
+  ],
+  "notes": "Nebraska Legislature statute pages carry a note that LB826 (effective April 15, 2026) added the late-VA-certification route; the 2026 Form 458 instructions read here did not yet describe it, so the late-filing text quotes the statute. The Information Guide PDF was verified 200 but not opened. Appeal detail beyond the statutory cross-references (77-3519 county board of equalization; 77-3520) was not read."
+}

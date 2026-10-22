@@ -1,0 +1,53 @@
+{
+  "state": "ND",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0098,
+    "sourceValue": 0.0092,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation Table 2 (Census ACS 2024 5-year): ND 0.92% (2023: 0.92%). File 0.98% is within 0.06 pp."
+  },
+  "programs": [
+    {
+      "name": "Disabled Veterans Property Tax Credit",
+      "status": "confirmed",
+      "fields": {
+        "ratingRequired": { "current": 50, "correct": 50, "quote": "A disabled veteran of the United States armed forces with an armed forces service-connected disability of fifty percent or greater", "source": "https://ndlegis.gov/cencode/t57c02.pdf" },
+        "requiresSchedular100": { "current": null, "correct": false, "quote": "or a disabled veteran who has an extra-schedular rating to include individual unemployability which results in the veteran being paid at the one hundred percent rate", "source": "https://ndlegis.gov/cencode/t57c02.pdf" },
+        "tiers": { "current": "6 bands, $100,000 to $200,000 market-equivalent", "correct": "credit = exact rating % x first $9,000 of taxable valuation (= $200,000 true value at 4.5%); proportional at every percentage, not banded", "quote": "is eligible for a credit applied against the first nine thousand dollars of taxable valuation of the homestead owned and occupied by the disabled veteran or surviving spouse equal to the percentage of the disabled veteran's disability compensation rating", "source": "https://ndlegis.gov/cencode/t57c02.pdf" },
+        "survivingSpouse": { "current": true, "correct": true, "quote": "A surviving spouse who is receiving United States department of veterans affairs dependency and indemnity compensation receives a one hundred percent credit as described in this subsection.", "source": "https://ndlegis.gov/cencode/t57c02.pdf" },
+        "coOwnerRule": { "current": null, "correct": "two married disabled veterans capped at 100% of $9,000; non-family co-owners limited to the veteran's interest", "quote": "If two disabled veterans are married to each other and living together, their combined credits may not exceed one hundred percent of nine thousand dollars of taxable valuation of the homestead.", "source": "https://ndlegis.gov/cencode/t57c02.pdf" },
+        "specialAssessments": { "current": null, "correct": "not reduced", "quote": "This section does not reduce the liability of a person for special assessments levied upon property.", "source": "https://ndlegis.gov/cencode/t57c02.pdf" }
+      },
+      "effectiveChanges": "None. The 2026 edition of SFN 24770 and the Tax Commissioner's credit page and guideline all carry the $9,000 taxable-valuation cap (table: 50% = $4,500 ... 90% = $8,100, 100% = $9,000). Deadline April 1 of the assessment year. No 2027 change found.",
+      "note": "Row's $200,000 market-equivalent at 100% is right ($9,000 / 0.045). The 10-point bands understate intermediate ratings (a 75% veteran gets 75% x $9,000, i.e. $150,000 equivalent, not the 70-79 band's $140,000); model as fraction = rating/100 of $200,000. Credit is portable mid-year and prorated by month (guideline item 18). Surviving spouse gets the veteran's percentage, or 100% if receiving DIC; credit ends at the end of the year of the applicant's death."
+    },
+    {
+      "name": "Paraplegic Veterans Property Tax Exemption",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": { "current": 120000, "correct": "120000 of true and full value of BUILDINGS/improvements only; land stays taxable (max $5,400 taxable value)", "quote": "for the first one hundred twenty thousand dollars of true and full valuation of the fixtures, buildings, and improvements.", "source": "https://ndlegis.gov/cencode/t57c02.pdf" },
+        "summary": { "current": "Partial exemption for paraplegic disabled veterans or those awarded VA SAH grant", "correct": "Exempts the first $120,000 of true and full value of the home's buildings and improvements (land remains taxable; maximum benefit $5,400 of taxable value) for paraplegic veterans or veterans awarded VA specially adapted housing, and their unremarried surviving spouses. No rating, income or service-connection test.", "quote": "The maximum benefit may not exceed $5,400 taxable value, because the exemption is limited to the first $120,000 of true and full value of fixtures, buildings, and improvements.", "source": "https://www.tax.nd.gov/sites/www/files/documents/guidelines/property-tax/disabledvetsconfinedtowheelchair.pdf" },
+        "survivingSpouse": { "current": true, "correct": true, "quote": "or the unremarried surviving spouse if such veteran is deceased", "source": "https://ndlegis.gov/cencode/t57c02.pdf" },
+        "ratingRequired": { "current": null, "correct": null, "quote": "The paraplegic disability does not have to be service connected.", "source": "https://www.tax.nd.gov/sites/www/files/documents/guidelines/property-tax/disabledvetsconfinedtowheelchair.pdf" },
+        "landTaxable": { "current": null, "correct": true, "quote": "The land is taxable.", "source": "https://www.tax.nd.gov/sites/www/files/documents/guidelines/property-tax/disabledvetsconfinedtowheelchair.pdf" }
+      },
+      "effectiveChanges": "Guideline 24877 was revised 6-2026; the veteran paragraph is unchanged at $120,000 (the asterisked change raised the separate non-veteran wheelchair homestead cap to $150,000 of buildings). Nothing scheduled for TY2027.",
+      "note": "Confirms the lead: the $120,000 is a building-only cap. For a dollar model, apply the effective rate to the lesser of $120,000 or the improvement value, never to land. Special assessments are not reduced. Only reaches paraplegic or SAH-grant veterans, so it should not be credited to a generic rated veteran's home."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": { "status": "confirmed", "correct": "", "source": "" },
+  "sources": [
+    { "url": "https://ndlegis.gov/cencode/t57c02.pdf", "title": "N.D.C.C. ch. 57-02 (57-02-08(20)(a) paraplegic exemption; 57-02-08.8 disabled veterans credit)", "status": 200 },
+    { "url": "https://www.tax.nd.gov/property-tax-exemptions-credits/property-tax-credits/disabled-veterans-property-tax-credit", "title": "ND Tax Commissioner: Disabled Veteran's Property Tax Credit (table 50% $4,500 to 100% $9,000; April 1 deadline)", "status": 200 },
+    { "url": "https://www.tax.nd.gov/sites/www/files/documents/forms/property-tax/property-tax-general/guideline-property-tax-credit-for-disabled-veterans.pdf", "title": "Tax Commissioner Guideline: Property Tax Credit for Disabled Veterans ($9,000 examples, portability)", "status": 200 },
+    { "url": "https://www.tax.nd.gov/sites/www/files/documents/forms/property-tax/property-tax-general/application-for-disabled-veterans-property-tax-credit.pdf", "title": "SFN 24770 Application for Disabled Veterans Property Tax Credit (2026)", "status": 200 },
+    { "url": "https://www.tax.nd.gov/sites/www/files/documents/guidelines/property-tax/disabledvetsconfinedtowheelchair.pdf", "title": "Guideline 24877 (rev. 6-2026): Exemption for Qualifying Veterans and Disabled Persons Confined to a Wheelchair", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 data)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "ND's credit is unchanged at rating % x $9,000 of taxable valuation ($200,000 true-value equivalent at 100%), TDIU paid at 100% qualifies, and surviving spouses (100% if on DIC) are covered, so the row stands apart from banding that should be exact-percentage; the paraplegic/SAH row's $120,000 is confirmed but is a buildings-only cap with land taxable (max $5,400 taxable value), which the summary must say. Effective rate 0.98% vs 0.92% is within tolerance."
+}

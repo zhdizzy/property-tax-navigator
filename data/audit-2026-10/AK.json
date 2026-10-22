@@ -1,0 +1,34 @@
+{
+  "state": "AK",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0119,
+    "sourceValue": 0.0094,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Tax Foundation 2024 effective rate (ACS 5-year) is 0.94%; the file's 1.19% is 0.25 points high. Note that a large share of Alaska (unorganized borough outside taxing cities) levies no property tax at all, which pulls the statewide ACS figure down; the taxing municipalities (Anchorage, Fairbanks, Mat-Su, Kenai) run higher. The Office of the State Assessor's 'Alaska Taxable 2025' report (January 2026) would give a taxing-jurisdiction-only figure but commerce.alaska.gov returned 403/404 to every automated attempt."
+  },
+  "programs": [
+    {
+      "name": "Veteran Exemption",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": { "current": 150000, "correct": 150000, "quote": "AS 29.45.030 (e)-(i) Exemption up to $150,000 of valuation", "source": "https://www.commerce.alaska.gov/web/Portals/4/pub/OSA/2023%20Senior%20Exemption.pdf" },
+        "ratingRequired": { "current": 50, "correct": 50, "quote": "Disabled Veteran must provide a current VA letter (dated within one year) stating at least a 50% service-connected disability.", "source": "https://www.commerce.alaska.gov/web/Portals/4/pub/OSA/2023%20Senior%20Exemption.pdf" },
+        "survivingSpouse": { "current": false, "correct": true, "quote": "Widow/Widower: Upon attaining 60 years of age, the widow/widower, of a previous program participant, may obtain an exemption under the above requirements.", "source": "https://www.commerce.alaska.gov/web/Portals/4/pub/OSA/2023%20Senior%20Exemption.pdf" },
+        "type": { "current": "partial", "correct": "partial", "quote": "To qualify for tax exemption, property must be applicant's primary residence and permanent place of abode", "source": "https://www.commerce.alaska.gov/web/Portals/4/pub/OSA/2023%20Senior%20Exemption.pdf" }
+      },
+      "effectiveChanges": "None confirmed. HB 169 (34th Legislature, introduced 4/2/25) would raise the $150,000 cap to $250,000; akleg.gov returned HTTP 403 to every automated check, so its status could not be read on a primary source. Third-party trackers (leads only) show no action after the 4/2/25 referral to Community & Regional Affairs and Finance. Treat $150,000 as current law for TY2026 and TY2027.",
+      "note": "Surviving-spouse rule is conditional: the widow/widower must be 60+ (AS 29.45.030(e)); a municipality may by voter-approved ordinance extend it to a younger surviving spouse of a disabled veteran. Recommend survivingSpouse: true with minAge 60 for the spouse. Also worth adding to the summary: mandatory municipal exemption, primary residence only, and no benefit where no municipality levies property tax (most of the unorganized borough). The statute text itself (AS 29.45.030) was not readable on akleg.gov (403); the OSA-hosted Anchorage application is the state-hosted primary document used."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": { "status": "confirmed", "correct": "", "source": "" },
+  "sources": [
+    { "url": "https://www.commerce.alaska.gov/web/Portals/4/pub/OSA/2023%20Senior%20Exemption.pdf", "title": "Office of the State Assessor hosted copy: Municipality of Anchorage Senior Citizen / Disabled Veteran Exemption Application (AS 29.45.030(e)-(i))", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 effective rates)", "status": 200 }
+  ],
+  "confidence": "partial",
+  "summary": "The $150,000 / 50%-plus row is correct, but survivingSpouse should be true (widow or widower 60+ keeps it) and the file's 1.19% effective rate is 0.25 points above the 2024 ACS-based figure. HB 169's $250,000 proposal could not be status-checked because akleg.gov blocks automated requests; no primary source shows it enacted."
+}

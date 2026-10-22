@@ -1,0 +1,110 @@
+{
+  "state": "IA",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0157,
+    "sourceValue": 0.0139,
+    "source": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Census ACS 2020-2024 5-year: median real estate taxes $2,897 / median value $208,000 (acsdt5y2024-b25077.dat) = 1.393%. File 1.57% is 0.18 pp high."
+  },
+  "programs": [
+    {
+      "name": "Military Property Tax Exemption",
+      "status": "confirmed",
+      "fields": {
+        "exemptionValue": {
+          "current": 8600,
+          "correct": 8600,
+          "quote": "The property, not to exceed four thousand dollars in taxable value for the assessment years beginning on or after January 1, 2023, of an honorably separated, retired, furloughed to a reserve, placed on inactive status, or discharged veteran",
+          "source": "https://www.legis.iowa.gov/docs/code/426A.11.pdf",
+          "note": "$4,000 of TAXABLE value (post-rollback). The file's $8,600 market-equivalent is a modeling conversion, not a statutory number; at the 2025 residential rollback it is plausible but unverified."
+        },
+        "ratingRequired": {
+          "current": null,
+          "correct": null,
+          "quote": "veteran, as defined in section 35.1, subsection 2, paragraph a or b",
+          "source": "https://www.legis.iowa.gov/docs/code/426A.11.pdf"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": null,
+          "quote": "",
+          "source": "",
+          "note": "unverified: surviving-spouse continuation sits in Iowa Code 426A.12 (not opened this pass); 426A.11 itself is silent."
+        }
+      },
+      "effectiveChanges": "None since 2023 HF 718 ($1,852 to $4,000, retroactive to assessment years on or after 1/1/2023). Not indexed. Cannot be held together with the disabled veteran credit (425.15(3)).",
+      "note": ""
+    },
+    {
+      "name": "Disabled Veteran's Homestead Tax Credit",
+      "status": "confirmed",
+      "fields": {
+        "type": {
+          "current": "full",
+          "correct": "full",
+          "quote": "the credit allowed on the homestead from the homestead credit fund shall be the entire amount of the tax levied on the homestead",
+          "source": "https://www.legis.iowa.gov/docs/code/425.15.pdf"
+        },
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "quote": "a permanent service-connected disability rating of one hundred percent ... or a permanent and total disability rating based on individual unemployability that is compensated at the one hundred percent disability rate",
+          "source": "https://www.legis.iowa.gov/docs/code/425.15.pdf"
+        },
+        "ptRequired": {
+          "current": true,
+          "correct": true,
+          "quote": "a permanent service-connected disability rating of one hundred percent, as certified by the United States department of veterans affairs",
+          "source": "https://www.legis.iowa.gov/docs/code/425.15.pdf"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "the credit allowed shall be continued to the estate of an owner who is deceased or the surviving spouse and any child ... so long as the surviving spouse remains unmarried.",
+          "source": "https://www.legis.iowa.gov/docs/code/425.15.pdf",
+          "note": "Separately, a surviving spouse or child receiving DIC qualifies in their own right (425.15(1)(d)), even on a new homestead and even after remarriage per DOR form 54-049."
+        },
+        "details": {
+          "current": "Homestead is the dwelling plus up to one-half acre regardless of location for applications on or after July 1, 2026 (SF 2472).",
+          "correct": "Homestead is the dwelling plus up to one-half acre regardless of location for applications on or after July 1, 2026 (SF 2472).",
+          "quote": "for applications filed on or after July 1, 2026, the homestead that the credit is calculated on is limited to one-half acre and does not include appurtenances.",
+          "source": "https://revenue.iowa.gov/media/2347/download?inline"
+        }
+      },
+      "effectiveChanges": "Applications filed on or after July 1, 2026: credit limited to the dwelling plus one-half acre (SF 2472, reflected on DOR form 54-049 rev 07/14/2026). The Iowa Code 2026 text of 425.15 (printed Dec 2025) predates SF 2472, so the acreage rule is confirmed from the DOR form only. Also: beginning assessment year 2026 the general homestead credit became a 10% homestead exemption (form 54-028), unrelated to veteran rows.",
+      "note": "Temporary 100% does not qualify; 'permanent' rating is required."
+    }
+  ],
+  "missingPrograms": [
+    {
+      "name": "DIC surviving spouse/child disabled veteran credit (425.15(1)(d))",
+      "what": "A surviving spouse or child 'receiving dependency and indemnity compensation pursuant to 38 U.S.C. §1301 et seq.' gets the full-tax credit in their own right (ends when DIC ends); DOR form: 'A surviving spouse who receives DIC payments is eligible for the credit' even upon remarriage.",
+      "statute": "Iowa Code 425.15(1)(d), (2)(b)",
+      "source": "https://www.legis.iowa.gov/docs/code/425.15.pdf"
+    },
+    {
+      "name": "SAH-acquired homestead disabled veteran credit (425.15(1)(a))",
+      "what": "Veteran who 'acquired the homestead under 38 U.S.C. §21.801, 21.802, prior to August 6, 1991, or under 38 U.S.C. §2101, 2102' (Specially Adapted Housing grant) gets the full-tax credit regardless of rating.",
+      "statute": "Iowa Code 425.15(1)(a)",
+      "source": "https://www.legis.iowa.gov/docs/code/425.15.pdf"
+    }
+  ],
+  "jurisdictionNote": {
+    "status": "confirmed",
+    "correct": "",
+    "source": ""
+  },
+  "sources": [
+    { "url": "https://www.legis.iowa.gov/docs/code/425.15.pdf", "title": "Iowa Code 2026 §425.15 Disabled veteran tax credit", "status": 200 },
+    { "url": "https://www.legis.iowa.gov/docs/code/426A.11.pdf", "title": "Iowa Code 2026 §426A.11 Military service exemptions ($4,000 taxable value from AY2023)", "status": 200 },
+    { "url": "https://revenue.iowa.gov/media/2347/download?inline", "title": "Iowa DOR Form 54-049 Disabled Veteran Homestead Property Tax Credit (07/14/2026) with half-acre rule and fact sheet", "status": 200 },
+    { "url": "https://revenue.iowa.gov/media/2353/download?inline", "title": "Iowa DOR Form 54-146 Military Service Property Tax Exemption", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat", "title": "Census ACS 2024 5-year summary file, table B25103", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25077.dat", "title": "Census ACS 2024 5-year summary file, table B25077", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "Both Iowa rows are confirmed from the 2026 Code and DOR's July 2026 form: the $4,000 taxable-value military exemption and the full-tax credit for permanent 100%/P&T-IU veterans, with the half-acre limit applying to applications filed on or after July 1, 2026. The DIC-spouse and SAH-grant branches of 425.15 are not modeled, the military exemption's surviving-spouse flag is unverified (426A.12 not opened), and the 1.57% rate is 0.18 pp above ACS 2024 (1.39%)."
+}

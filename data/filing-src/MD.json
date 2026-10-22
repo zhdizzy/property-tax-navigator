@@ -1,0 +1,86 @@
+{
+  "state": "MD",
+  "officeType": "SDAT local assessment office (Supervisor of Assessments for the county)",
+  "officeTypeNote": "Maryland assessment is a STATE function. The §7-208 exemption is filed with the State Department of Assessments and Taxation (SDAT) local office for the county where the home sits (24 offices: 23 counties + Baltimore City), not with the county treasurer/finance office that mails the bill. The local-option §9-265 county CREDIT is the opposite: it is filed with the county or municipality on its own form.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://dat.maryland.gov/realproperty/pages/maryland-assessment-offices.aspx",
+    "label": "SDAT: Maryland Assessment Offices (all 24 local offices with address, phone, fax, email)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://dat.maryland.gov/realproperty/Pages/default.aspx",
+    "note": "Single directory page; no per-county office pages. The per-county links on the page go to reassessment-area maps, not office pages. The same 24-office list (with emails of the form sdat.<code>@maryland.gov) is printed as page 2 of the exemption application PDF."
+  },
+  "forms": [
+    {
+      "programRef": "Disabled Veteran Exemption",
+      "name": "Application for Exemption for Disabled Veterans (100 Percent Disabled Veteran Exemption Application)",
+      "number": null,
+      "url": "https://dat.maryland.gov/SiteAssets/Pages/sdatforms/100%20Percent%20Disabled%20Veteran%20Exemption%20Application_0726-A.pdf",
+      "revision": "Rev Feb 2025",
+      "filedWith": "Supervisor of Assessments at the SDAT local assessment office for the county"
+    },
+    {
+      "programRef": "Disabled Veteran Exemption",
+      "name": "Surviving Spouse of a 100 Percent Disabled Veteran Exemption application",
+      "number": null,
+      "url": "https://dat.maryland.gov/SiteAssets/Pages/sdatforms/Surviving%20Spouse%20of%20a%20100%20Percent%20Disabled%20Veteran%20Exemption_0726-A.pdf",
+      "revision": null,
+      "filedWith": "Supervisor of Assessments at the SDAT local assessment office for the county"
+    },
+    {
+      "programRef": "County Credits",
+      "name": "County/municipal disabled-veteran property tax credit application (form varies by county)",
+      "number": null,
+      "url": null,
+      "revision": null,
+      "filedWith": "county or municipal finance/tax office (not SDAT)"
+    }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "date": null,
+    "text": "No annual deadline. The exemption is prorated for the remainder of the taxable year after the application date (§7-208(f)(1)). A buyer who applies within 30 days after settlement gets the tax abated from the settlement date (§7-208(f)(2))."
+  },
+  "effective": "Prorated from the application date for the rest of the taxable year (July 1 to June 30); from settlement date if a purchaser applies within 30 days after settlement. A veteran may also apply for a specific dwelling BEFORE buying it; SDAT issues a preliminary approval or denial within 15 business days and the exemption applies on purchase without a new application (§7-208(d)).",
+  "lateFiling": "No late-filing penalty as such; the exemption simply starts on the application date, with a refund available for prior eligible years under §7-208(g) if claimed within the 3-year window. The application has a checkbox: 'Check to apply for a refund of any property tax paid for which you may be eligible under Tax Property Article 7-208.'",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 3,
+    "text": "Mandatory refund of state, county, and municipal tax for years the exemption was authorized but not granted, if the veteran applies within a 3-year period beginning with the calendar year the veteran first became eligible (§7-208(g), as amended 2021). Interest is owed if the refund is not paid within 60 days (§7-208(h)). Earlier years were refundable only at local discretion."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "No annual re-file for the §7-208 exemption. The form has a 'Check if transferring an exemption & provide an address' box for moves. (The separate disabled ACTIVE-DUTY exemption does require an annual Certification of Active Duty Status.)"
+  },
+  "ratingChange": "The exemption requires a final VA rating of 100% permanent and total or permanent unemployability. A veteran whose rating is later reduced below that no longer qualifies; the statute does not provide a grace period. Veterans rated 50-99% may instead qualify for the local-option §9-265 county credit (25% of county/municipal tax at 50-74%, 50% at 75%+ where the county has adopted it).",
+  "move": "File a new application for the new dwelling and check the 'transferring an exemption' box on the form; the new exemption is prorated from the application date (or settlement date if filed within 30 days). The pre-purchase application route in §7-208(d) lets a veteran get the new home approved before closing.",
+  "onlineFiling": {
+    "available": false,
+    "text": "SDAT's forms page lists the disabled-veteran applications as PDFs only; online filing is offered only for the Homestead and Homeowners'/Renters' credits. File by mail or email to the local assessment office (each office lists an sdat.<code>@maryland.gov address)."
+  },
+  "documents": [
+    "Copy of honorable discharge or DD-214",
+    "Most recent VA rating notification packet showing a FINAL service-connected rating of 100% permanent and total or permanent unemployability, including the rating's effective date and the decision date (if unavailable, the VA completes the certification section of the form)",
+    "Proof of Maryland residency: current Maryland driver's license, voter registration, or redacted prior-year Maryland income tax return (contract of sale if the purchase is pending)",
+    "Property account number and address; Social Security number on the form"
+  ],
+  "survivingSpouse": "Unremarried surviving spouse of a disabled veteran (or of a service member who died in the line of duty, or a spouse receiving DIC) keeps or claims the exemption on the dwelling if they own and reside there; a later-acquired dwelling may carry an exemption equal to the prior one (§7-208(b)-(c)). Separate SDAT form: 'Surviving Spouse of a 100 Percent Disabled Veteran Exemption'.",
+  "appeal": null,
+  "statute": "Md. Code, Tax-Property §7-208 (exemption); §9-265 (local-option county/municipal credit)",
+  "sourceUrls": [
+    { "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=7-208&enactments=false", "title": "Md. Code, Tax-Property §7-208 (General Assembly statute text)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=9-265&enactments=false", "title": "Md. Code, Tax-Property §9-265 (local-option disabled veteran credit)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dat.maryland.gov/SiteAssets/Pages/sdatforms/100%20Percent%20Disabled%20Veteran%20Exemption%20Application_0726-A.pdf", "title": "SDAT Application for Exemption for Disabled Veterans (Rev Feb 2025, with office list)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dat.maryland.gov/SiteAssets/Pages/sdatforms/Surviving%20Spouse%20of%20a%20100%20Percent%20Disabled%20Veteran%20Exemption_0726-A.pdf", "title": "SDAT Surviving Spouse of a 100 Percent Disabled Veteran Exemption application", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dat.maryland.gov/Pages/sdatforms.aspx", "title": "SDAT Forms & Applications (Exemptions Applications section)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dat.maryland.gov/realproperty/pages/maryland-assessment-offices.aspx", "title": "SDAT Maryland Assessment Offices directory", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    "The 'Disabled Veteran Exemption' row's `details` field still says '$5,000 assessed value exemption'; the `summary` already corrects this to a complete exemption under §7-208. The `details` string should be updated to match.",
+    "§9-265(c) conditions the 50% tier on the veteran NOT qualifying under §7-208 and sets 25% at 50-74% rating; the summary's '75-99%' phrasing is consistent with that but the surviving-spouse flag (false) should be checked against §9-265(a), which this research did not confirm either way."
+  ],
+  "notes": "The SDAT Assessment Procedure Manual page on §7-208 refunds (ProcedureDetails LID=269) returned 404 on 2026-10-21, so the refund rule is sourced from the statute text itself. The surviving-spouse form PDF was verified live (200) but not opened; its revision date is unknown. No appeal route for an exemption denial appears on the form or forms page, so `appeal` is null."
+}

@@ -1,0 +1,90 @@
+{
+  "state": "AK",
+  "officeType": "municipal assessor (borough or city)",
+  "officeTypeNote": "Alaska has no counties and no statewide form. The exemption is a mandatory municipal exemption (AS 29.45.030(e)) administered by the assessor of the borough or city that levies property tax; roughly a third of the state (the unorganized borough outside taxing cities) levies no property tax at all, so there is nothing to claim there. File with the assessor's or finance office of the taxing municipality (e.g. Municipality of Anchorage Property Appraisal, Fairbanks North Star Borough Assessing, Kenai Peninsula Borough Assessing).",
+  "officeLocator": {
+    "tier": 2,
+    "url": null,
+    "label": "Alaska DCCED Office of the State Assessor: Tax Jurisdictions (municipal assessor contacts)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://dcra-cdo-dcced.opendata.arcgis.com/",
+    "note": "The state DOES publish an official directory: DCCED Office of the State Assessor 'Tax Jurisdictions' (https://www.commerce.alaska.gov/web/dcra/OfficeoftheStateAssessor/TaxJurisdictions) lists every property-taxing municipality's assessor with phone and email. Every commerce.alaska.gov HTML page returned HTTP 403 to automated checks on 2026-10-21 (bot protection), so per the sourcing rules it is not placed in url; a human browser should load it. The fallbackUrl is DCCED's Community Database Online (200), which carries local-government contacts per community but is not assessor-specific."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Senior Citizen / Disabled Veteran Property Tax Exemption Application (municipal form; each municipality issues its own)",
+      "number": null,
+      "url": "https://www.commerce.alaska.gov/web/Portals/4/pub/OSA/2023%20Senior%20Exemption.pdf",
+      "revision": "Anchorage form rev 3.15.22 (2023 tax year), hosted by the Office of the State Assessor as a sample",
+      "filedWith": "municipal assessor",
+      "note": "AS 29.45.030(f): 'An exemption may not be granted under (e) of this section except upon written application for the exemption. Each municipality shall, by ordinance, establish procedures and deadlines for filing the application.' The linked PDF is the Municipality of Anchorage application as posted on the State Assessor's site; use the current form from your own municipality."
+    }
+  ],
+  "deadline": {
+    "type": "varies-by-county",
+    "date": null,
+    "text": "Set by each municipality by ordinance (AS 29.45.030(f)). The state regulation uses January 15 as the default: 3 AAC 135.040(a) 'Exemption applications filed after January 15 of the assessment year, or after a date provided by ordinance as specified in AS 29.45.030(f), must be accompanied by an affidavit stating the reason for the late filing.' Municipal examples seen on municipal forms: Anchorage March 15 (OSA-hosted form: 'received or postmarked on or before March 15'); North Slope Borough January 15; Dillingham February 15; Unalaska and Haines March 31; Mat-Su Borough April 30 (the non-Anchorage dates come from municipal PDFs surfaced in search and were not individually re-verified)."
+  },
+  "effective": "Assessment year for which the application is filed; the applicant must own and occupy the home as primary residence and permanent place of abode as of January 1 of that year (Anchorage form; AS 29.45.110 assessment date). Not prorated. AS 29.45.030(f): if approved 'after taxes have been paid, the amount of tax that the claimant has already paid for the property exempted shall be refunded.'",
+  "lateFiling": "AS 29.45.030(f): 'The governing body of the municipality for good cause shown may waive the claimant's failure to make timely application for exemption and authorize the assessor to accept the application as if timely filed.' A late application must carry an affidavit stating the reason (3 AAC 135.040(a)). Municipal codes narrow 'good cause' (Anchorage: serious medical condition of the applicant or immediate family; Haines: medical condition or extraordinary event, with a July 31 hard stop).",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "No statewide provision for prior-year refunds. The statute refunds only the current year's tax if the application is approved after payment (AS 29.45.030(f)); a late application for a past year depends entirely on the municipal governing body's good-cause waiver."
+  },
+  "renewal": {
+    "type": "varies",
+    "text": "Statute is silent on annual re-filing but lets the assessor 'require proof under this subsection at any time' (AS 29.45.030(f)); each municipality sets the rule by ordinance. Anchorage: 'A qualified senior citizen or disabled veteran need not file an application for successive tax years if there is no change in ownership, in residency or permanent place of abode, status of disability, or other factor affecting qualification.' Some municipalities (e.g. Unalaska per its form) require annual receipt. Anchorage requires a VA letter dated within one year on initial application."
+  },
+  "ratingChange": "Eligibility requires a rating of 50 percent or more (AS 29.45.030(i)(1)). The owner must 'notify the assessor of any change in ... status of disability or other factor affecting qualification' (Anchorage form); a drop below 50% ends the exemption, and failure to notify can mean back taxes, penalties and interest.",
+  "move": "The exemption attaches to the primary residence and permanent place of abode; a new home means a new application with the assessor of the municipality where it sits, by that municipality's deadline. Only one exemption per property and (in Anchorage) the applicant may not hold a residential exemption on another property.",
+  "onlineFiling": {
+    "available": null,
+    "text": "Varies by municipality. Anchorage accepts the application by mail, in person, or by email (propappcs@muni.org); no statewide portal exists."
+  },
+  "documents": [
+    "Evidence of the VA (or branch-of-service) disability rating of 50 percent or more; statute requires the assessor to 'require a disabled veteran ... to provide evidence of the disability rating' (AS 29.45.030(f)); Anchorage wants a VA letter dated within one year",
+    "Proof of separation 'under a condition that is not dishonorable' (AS 29.45.030(i)(1)(A)), typically DD-214",
+    "Proof of Alaska residency / Permanent Fund Dividend eligibility if the municipality has adopted the PFD test under AS 29.45.030(f)",
+    "Proof of ownership and occupancy as primary residence on January 1 (parcel ID; trust pages if held in trust, per Anchorage)",
+    "Widow/widower claimants: marriage and death certificates (Anchorage)"
+  ],
+  "survivingSpouse": "AS 29.45.030(e): the widow or widower 'at least 60 years of age' of a person who qualified keeps the $150,000 exemption until remarriage. A municipality 'may by ordinance approved by the voters' extend it to a widow/widower under 60 of a disabled veteran, or of a service member who died from a service-connected cause. Statute does not require the veteran to have been receiving the exemption, only to have qualified.",
+  "appeal": "AS 29.45.030(e): an assessor's determination that property was conveyed primarily to obtain the exemption 'may be appealed under AS 44.62.560 - 44.62.570' (superior court review). Denials on other grounds follow the municipality's board of equalization procedure (not verified here).",
+  "statute": "AS 29.45.030(e)-(i); 3 AAC 135.040; AS 29.45.050 (optional municipal exemptions)",
+  "sourceUrls": [
+    {
+      "url": "https://www.commerce.alaska.gov/web/Portals/4/pub/OSA/2023%20Senior%20Exemption.pdf",
+      "title": "Office of the State Assessor hosted copy: Municipality of Anchorage Senior Citizen / Disabled Veteran Exemption Application (2023)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://www.muni.org/Departments/finance/property_appraisal/Pages/default.aspx",
+      "title": "Municipality of Anchorage Property Appraisal (current forms)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": false
+    },
+    {
+      "url": "https://dcra-cdo-dcced.opendata.arcgis.com/",
+      "title": "DCCED Community Database Online",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "propertyTax.programs[Veteran Exemption].summary",
+      "issue": "Rating basis is correct ($150,000; 50%+). Could add that the exemption is municipal-only (no tax in most of the unorganized borough), applies to the primary residence only, and that a widow/widower 60+ keeps it (survivingSpouse currently false). HB 169 (2025) to raise the cap to $250,000 had not advanced past committee referral as of the last action found.",
+      "source": null
+    }
+  ],
+  "notes": "Statute and regulation text pulled from the Legislature's print endpoint (the normal statutes.asp page is JS-rendered). The akleg 'basis' human-facing URLs are https://www.akleg.gov/basis/statutes.asp#29.45.030 and https://www.akleg.gov/basis/aac.asp#3.135.040 (both 200). All commerce.alaska.gov HTML pages, including the Office of the State Assessor and its Tax Jurisdictions directory, returned 403 to curl and WebFetch; only the Portals PDF path served 200. The 2026 Anchorage veteran application URL indexed by search (muni.org ... UPDATED 2026 Veteran Exemption.pdf) returned 404; the Property Appraisal landing page is 200. The only state-hosted municipal form found is the 2023 Anchorage form, so municipal deadline examples other than Anchorage are from search snippets of municipal PDFs and should be re-checked before display. Link note 2026-10-21: akleg.gov (AS 29.45.030, 3 AAC 135.040, HB 169) returns HTTP 403 to automated checks, so those three links were removed from this row; the statute cites stay in the text."
+}

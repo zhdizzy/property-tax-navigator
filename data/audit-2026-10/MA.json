@@ -1,0 +1,218 @@
+{
+  "state": "MA",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0123,
+    "sourceValue": 0.0100,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Tax Foundation 'Property Taxes by State' table (Mar 2026): Massachusetts 1.00% for 2024 (1.03% for 2023), total real taxes paid / total owner-occupied value (ACS B25082, B25090). File value 1.23% is 0.23 pp above."
+  },
+  "programs": [
+    {
+      "name": "Clause 22 — $400 Exemption",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": {
+          "current": 400,
+          "correct": 400,
+          "quote": "two thousand dollars of the assessed taxable valuation ... or the sum of four hundred dollars, whichever would result in an abatement of the greater amount of actual taxes due",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        },
+        "ratingRequired": {
+          "current": 10,
+          "correct": 10,
+          "quote": "veterans who ... have a disability rating of 10 per cent or more as determined by the Veterans Administration",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "Spouses of soldiers and sailors entitled to exemption ... and surviving spouses ... provided such spouses have remained unmarried",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        },
+        "details": {
+          "current": "All clauses require MA residency (6 months before entering service, or 2-5 consecutive years before filing).",
+          "correct": "Residency test: domiciled in MA at least 6 months before entering service, OR resided in MA for 2 consecutive years before filing (the 5-year test applies only to Clause 22H parents/guardians).",
+          "quote": "domiciled in Massachusetts for at least six months prior to entering such service, or who have resided in the commonwealth for 2 consecutive years next prior to date of filing",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        }
+      },
+      "effectiveChanges": "HERO Act (Ch. 178 of 2024, approved Aug 8, 2024) added local-option Clauses 22I (annual CPI increase) and 22J (additional exemption up to 100% of the clause amount) for Clauses 22, 22A, 22B, 22C, 22E and 22F, effective only in cities/towns that accept them and are certified at full and fair cash value.",
+      "note": "The row models the statutory minimum, which is correct for a statewide estimate; the 22J doubling is local."
+    },
+    {
+      "name": "Clause 22A — $750 Exemption",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": {
+          "current": 750,
+          "correct": 750,
+          "quote": "four thousand dollars of taxable valuation ... or the sum of seven hundred and fifty dollars",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "shall continue unchanged for the benefit of the surviving spouse",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        },
+        "details": {
+          "current": "2-5 consecutive years before filing",
+          "correct": "2 consecutive years before filing (or 6 months MA domicile before entering service)",
+          "quote": "domiciled in Massachusetts for at least six months prior to entering such service or who have resided in the commonwealth for 2 consecutive years",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        }
+      },
+      "effectiveChanges": "Subject to local-option 22I/22J increases (HERO Act 2024).",
+      "note": "Eligibility is loss or permanent loss of use of one foot/hand (or other listed statuses such as former POW); the row has no condition text, which is fine for a credit the engine cannot score by rating."
+    },
+    {
+      "name": "Clause 22B — $1,250 Exemption",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": {
+          "current": 1250,
+          "correct": 1250,
+          "quote": "eight thousand dollars of taxable valuation ... or the sum of twelve hundred and fifty dollars",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "shall continue unchanged for the benefit of the surviving spouse",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        },
+        "details": {
+          "current": "2-5 consecutive years before filing",
+          "correct": "2 consecutive years before filing (or 6 months MA domicile before entering service)",
+          "quote": "resided in the commonwealth for 2 consecutive years next prior to date of filing for exemption under this clause",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        }
+      },
+      "effectiveChanges": "Subject to local-option 22I/22J increases (HERO Act 2024).",
+      "note": "Loss of both feet/hands/one of each, or sight in both eyes."
+    },
+    {
+      "name": "Clause 22C — $1,500 (100% P&T + Specially Adapted Housing grant)",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": {
+          "current": 1500,
+          "correct": 1500,
+          "quote": "ten thousand dollars of taxable valuation ... or the sum of fifteen hundred dollars",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        },
+        "ptRequired": {
+          "current": true,
+          "correct": true,
+          "quote": "permanent and total disability ... and who received assistance in acquiring 'specially adapted housing'",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "shall continue unchanged for the benefit of the surviving spouse",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        }
+      },
+      "effectiveChanges": "Subject to local-option 22I/22J increases (HERO Act 2024).",
+      "note": ""
+    },
+    {
+      "name": "Clause 22D — Total Exemption (Surviving Spouse)",
+      "status": "confirmed",
+      "fields": {
+        "type": {
+          "current": "partial",
+          "correct": "full (surviving spouse only; not creditable to a living rated veteran)",
+          "quote": "the full amount of the taxable valuation of real property ... until such time as the surviving spouse remarries or dies",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Row correctly carries no rating and no value; it should not be credited to a rated veteran's home. The `type` label 'partial' is misleading for a full exemption, but the engine behavior (exemptionValue null) is right."
+    },
+    {
+      "name": "Clause 22E — $1,000 Exemption",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": {
+          "current": 1000,
+          "correct": 1000,
+          "quote": "six thousand dollars of taxable valuation ... or the sum of one thousand dollars",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        },
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "quote": "a 100 per cent disability rating as determined by the Veterans Administration",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "shall continue unchanged for the benefit of the surviving spouse",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        }
+      },
+      "effectiveChanges": "Subject to local-option 22I/22J increases (HERO Act 2024).",
+      "note": "No P&T requirement in the statute (100% schedular qualifies); requires an annual certification that the rating is still 100%."
+    },
+    {
+      "name": "Clause 22F — Total Exemption (Paraplegic or 100% SC Blind)",
+      "status": "confirmed",
+      "fields": {
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "paraplegics, or veterans with a 100 per cent disability rating for service-connected blindness ... and their spouses ... for the benefit of the surviving spouse",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        }
+      },
+      "effectiveChanges": "Listed in 22I/22J as eligible for the local-option increases.",
+      "note": "Row correctly keeps exemptionValue null and warns that this is not for any 100% veteran."
+    },
+    {
+      "name": "Clause 22H — Total Exemption (Parents/Guardians)",
+      "status": "confirmed",
+      "fields": {
+        "type": {
+          "current": "partial",
+          "correct": "full (parents/guardians only; not creditable to a rated veteran)",
+          "quote": "surviving parents or guardians ... the full amount of the taxable valuation",
+          "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Only clause with the 5-consecutive-year residency test; applies to tax years beginning Jan 1, 2019 or later."
+    }
+  ],
+  "missingPrograms": [
+    {
+      "name": "Clause 22G — fiduciary-held domicile (local acceptance)",
+      "what": "Extends clauses 22-22F to a domicile owned by a trustee, conservator or other fiduciary for the veteran's benefit, in cities/towns that accept it. No separate dollar value; informational only.",
+      "statute": "M.G.L. c.59 §5 cl. 22G",
+      "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+    },
+    {
+      "name": "Clauses 22I / 22J — HERO Act local options",
+      "what": "22I: in accepting municipalities the clause 22/22A/22B/22C/22E/22F abatement 'shall be increased annually by an amount equal to the increase in the cost of living as determined by the Consumer Price Index'. 22J: an additional exemption 'the amount of which shall not exceed 100 per cent of the exemption for which the taxpayer qualifies', set uniformly by the local legislative body. Both require acceptance and full-and-fair-cash-value certification. Already mentioned in row details; not a separate row.",
+      "statute": "M.G.L. c.59 §5 cl. 22I, 22J (St. 2024, c.178, §23)",
+      "source": "https://malegislature.gov/Laws/SessionLaws/Acts/2024/Chapter178"
+    }
+  ],
+  "jurisdictionNote": {
+    "status": "corrected",
+    "correct": "Exemptions are tax credits (off the bill, not assessed value). Amounts shown are state minimums; cities and towns that accept HERO Act Clause 22J may add up to 100% more, and Clause 22I towns index the amounts to CPI annually. Full exemption only for service-connected paraplegia or 100% SC blindness (22F), surviving spouses of service-connected deaths (22D) and surviving parents (22H).",
+    "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5"
+  },
+  "sources": [
+    { "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5", "title": "M.G.L. c.59 §5, Clauses Twenty-second through Twenty-second J", "status": 200 },
+    { "url": "https://malegislature.gov/Laws/SessionLaws/Acts/2024/Chapter178", "title": "St. 2024, c.178 (HERO Act), §23 inserting Clauses 22I and 22J", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation, Property Taxes by State and County, 2026 (2024 ACS data)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "All eight clause amounts ($400/$750/$1,250/$1,500/$1,000 and the three full exemptions) match the statute, and the HERO Act 22I/22J local options are correctly described as optional. Every veteran clause (22, 22A, 22B, 22C, 22E, 22F) carries surviving-spouse continuation, so survivingSpouse:false is wrong on six rows, and the '2-5 consecutive years' residency text should read 2 years (5 only for 22H); the effective tax rate is 0.23 pp above the Tax Foundation 2024 figure."
+}

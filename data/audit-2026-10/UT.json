@@ -1,0 +1,110 @@
+{
+  "propertyTaxRate": {
+    "fileValue": 0.0058,
+    "sourceValue": 0.0048,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation Table 2 (ACS 2024): Utah 0.48% (0.50% in 2023). File is exactly 0.10 pp high, at the edge of tolerance; consider 0.0048-0.0050. Utah's 45% primary-residence exemption is already baked into the ACS effective rate."
+  },
+  "programs": [
+    {
+      "name": "Veteran Exemption",
+      "status": "corrected",
+      "fields": {
+        "tiers / exemptionValue (TY2026)": {
+          "current": "100% tier 535459; summary says $535,459",
+          "correct": 535459,
+          "quote": "The exemption is up to $535,459 of taxable value of a residence, based on the percentage of disability incurred in the line of duty and on the unemployability classification.",
+          "source": "https://tax.utah.gov/forms-pubs/pub-36/",
+          "note": "Pub 36 (Rev. 09/26, marked draft pending public meeting) is the Tax Commission's current figure; it pairs with the 'as of Jan. 1, 2026' deferral tests on the same page, so it is the TY2026 adjusted taxable value limit. Tier values in the file are the limit times the rating percentage, which matches 59-2a-501(2)(a)."
+        },
+        "details": {
+          "current": "Property tax exemption of up to $521,620 of taxable value",
+          "correct": "up to $535,459 (TY2026); indexed annually to CPI",
+          "quote": "the amount of the adjusted taxable value limit for the previous year plus an amount calculated by multiplying the amount of the adjusted taxable value limit for the previous year by the actual percent change in the consumer price index during the previous calendar year",
+          "source": "https://le.utah.gov/xcode/Title59/Chapter2A/C59-2a-S101_2026010120250507.html"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "the amount of taxable value of eligible property that is exempt under Subsection (1) is equal to the total taxable value of the veteran claimant's eligible property if the property is owned by: (a) the unmarried surviving spouse of a veteran who was killed in action or died in the line of duty",
+          "source": "https://le.utah.gov/xcode/Title59/Chapter2A/C59-2a-S501_2026010120250507.html",
+          "note": "Pub 36: 'available to veterans disabled in military service (at least 10 percent disability), their unmarried surviving spouse or minor orphans.' KIA/line-of-duty survivors get the TOTAL taxable value exempt."
+        },
+        "ratingRequired": {
+          "current": 10,
+          "correct": 10,
+          "quote": "A county may not allow an exemption claimed under this section if the percentage of disability listed on the statement of disability is less than 10%.",
+          "source": "https://le.utah.gov/xcode/Title59/Chapter2A/C59-2a-S501_2026010120250507.html"
+        },
+        "IU": {
+          "current": "not stated",
+          "correct": "IU treated as 100%",
+          "quote": "A county shall consider a veteran with a disability to have a 100% disability, regardless of the percentage of disability described on the statement of disability, if the United States Department of Veterans Affairs certifies the veteran in the classification of individual unemployability.",
+          "source": "https://le.utah.gov/xcode/Title59/Chapter2A/C59-2a-S501_2026010120250507.html"
+        },
+        "statute cite": {
+          "current": "none / legacy 59-2-1903-1904",
+          "correct": "Utah Code 59-2a-501 and 59-2a-502 (renumbered by Laws 2025 ch. 172, effective 1/1/2026)",
+          "quote": "Renumbered and Amended by Chapter 172, 2025 General Session",
+          "source": "https://le.utah.gov/xcode/Title59/Chapter2A/C59-2a-S501_2026010120250507.html"
+        }
+      },
+      "effectiveChanges": "TY2026 limit $535,459 (Pub 36). TY2027 limit = $535,459 x (1 + CPI change during 2026) per 59-2a-101(3)(b); not yet published. 2026 H.B. 124 (1st Sub.) proposed one-time-application clarifications to 59-2a-501/502 effective 5/6/2026; le.utah.gov still lists only the 1/1/2026 version of 59-2a-501, so treat it as not enacted.",
+      "note": "Exemption is capped at the property's taxable value (59-2a-501(2)(b)); the taxable value of a primary residence is already 55% of market value."
+    },
+    {
+      "name": "Active Duty Exemption",
+      "status": "confirmed",
+      "fields": {
+        "existence": {
+          "current": "full; 200+ days outside Utah",
+          "correct": true,
+          "quote": "This exemption is available to active or reserve members of the US Armed Forces on active duty outside the state 200 days in a continuous 365-day period beginning in the prior year.",
+          "source": "https://tax.utah.gov/forms-pubs/pub-36/"
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Active-duty only (Utah Code 59-2a Part 6); must not be credited to a rated veteran's home. Annual filing (PT-22)."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "unverified",
+    "correct": "",
+    "source": "",
+    "note": "No propertyTax.note in the file for UT."
+  },
+  "sources": [
+    {
+      "url": "https://le.utah.gov/xcode/Title59/Chapter2A/C59-2a-S501_2026010120250507.html",
+      "title": "Utah Code 59-2a-501 Veteran armed forces exemption amount (effective 1/1/2026)",
+      "status": 200
+    },
+    {
+      "url": "https://le.utah.gov/xcode/Title59/Chapter2A/C59-2a-S101_2026010120250507.html",
+      "title": "Utah Code 59-2a-101 Definitions: adjusted taxable value limit ($479,504 for 2023, CPI-indexed)",
+      "status": 200
+    },
+    {
+      "url": "https://tax.utah.gov/forms-pubs/pub-36/",
+      "title": "Utah State Tax Commission Pub 36 (Rev. 09/26): Veterans with a Disability Exemption up to $535,459",
+      "status": 200
+    },
+    {
+      "url": "https://le.utah.gov/Session/2026/bills/introduced/HB0124S01.pdf",
+      "title": "2026 H.B. 124 1st Substitute, Veterans Amendments (application-only changes to 59-2a-501/502)",
+      "status": 200
+    },
+    {
+      "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+      "title": "Tax Foundation, Property Taxes by State and County, 2026 (Table 2: Property Taxes Paid as a Percentage of Owner-Occupied Housing Value, 2024, Census ACS)",
+      "status": 200
+    }
+  ],
+  "confidence": "verified",
+  "summary": "Utah's TY2026 adjusted taxable value limit is $535,459 (Pub 36 Rev. 09/26), matching the file's tiers and summary but not its stale $521,620 details text; the statute is now 59-2a-501/502 after the 1/1/2026 renumbering. survivingSpouse should be true (same percentage for survivors of disabled veterans; total exemption for KIA/line-of-duty survivors), and the TY2027 figure will be CPI-indexed and is not yet published.",
+  "state": "UT",
+  "checkedDate": "2026-10-21"
+}

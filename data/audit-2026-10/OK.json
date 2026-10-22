@@ -1,0 +1,37 @@
+{
+  "state": "OK",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.009,
+    "sourceValue": 0.0079,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Tax Foundation Table 2 (Census ACS 2024 5-year): OK 0.79% (2023: 0.80%). File 0.90% is 0.11 pp high, just outside tolerance."
+  },
+  "programs": [
+    {
+      "name": "Veteran Exemption",
+      "status": "confirmed",
+      "fields": {
+        "type": { "current": "full", "correct": "full", "quote": "shall be entitled to claim an exemption for the full amount of the fair cash value of the homestead.", "source": "https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/ad-valorem/current/998.pdf" },
+        "ratingRequired": { "current": 100, "correct": 100, "quote": "certified by the United States Department of Veterans Affairs or its successor to have a one hundred percent (100%) permanent disability sustained through military action or accident or resulting from disease contracted while in such military service", "source": "https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/ad-valorem/current/998.pdf" },
+        "ptRequired": { "current": null, "correct": true, "quote": "Is the applicant certified by the U.S.D.V.A. to have 100% permanent disability sustained through military action or accident?", "source": "https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/ad-valorem/current/998.pdf" },
+        "requiresSchedular100": { "current": null, "correct": false, "quote": "certifies the 100% service related disability, or the applicant is in receipt of compensation at the 100% rate.", "source": "https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/ad-valorem/current/998.pdf" },
+        "survivingSpouse": { "current": true, "correct": true, "quote": "or the surviving spouse of such head of household shall be entitled to claim an exemption for the full amount of the fair cash value of the homestead.", "source": "https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/ad-valorem/current/998.pdf" },
+        "homesteadPrerequisite": { "current": "Must be OK resident, owner of homestead", "correct": true, "quote": "must have previously qualified for the homestead exemption authorized by law or be eligible for the homestead exemption pursuant to law.", "source": "https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/ad-valorem/current/998.pdf" }
+      },
+      "effectiveChanges": "None. Form 998 was reissued Rev. 11-2025 for tax year 2026 with the same Const. art. 10 sec. 8E text and the 'compensation at the 100% rate' alternative. No 2025 or 2026 enacted bill or state question changing sec. 8E was found (HJR 1033, 2023, a rating-proportional proposal, did not advance). Nothing scheduled for TY2027.",
+      "note": "Resolves the lead: the surviving-spouse rule in sec. 8E has no remarriage clause in the constitutional text printed on Form 998; the remarriage cutoff appears only in OTC/assessor guidance and in the separate sec. 8F (line-of-duty death, SQ 771, 2014). Treat 'ends on remarriage' as unverified for 8E. Honorable discharge from active service in any branch or the Oklahoma National Guard (row's 'AD or OK NG' is right). Must own and occupy on Jan 1 with deed recorded by Feb 1 of the first year; exemption covers the whole year if the 100% rating is effective by the application date (OAC 710:10-14-5). The full fair cash value of the homestead is exempt, so the dollar model should be the entire bill, not a capped amount."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": { "status": "confirmed", "correct": "", "source": "" },
+  "sources": [
+    { "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/ad-valorem/current/998.pdf", "title": "OTC Form 998 (Rev. 11-2025, tax year 2026) with Okla. Const. art. 10 sec. 8E and 68 O.S. 2888 text", "status": 200 },
+    { "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/rules-and-policies/agency-rules/2026/Chapter_10_Ad_Valorem_2026.pdf", "title": "OAC Title 710 Chapter 10 (2026), Subchapter 14: 100% Disabled Veterans Exemption (link-verified; text per filing-layer record)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 data)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "Oklahoma's full fair-cash-value exemption for veterans with a VA-certified 100% permanent disability (or paid at the 100% rate) and their surviving spouses is unchanged for TY2026, with the 2026 Form 998 reissued on the same constitutional text; the only open point is that the remarriage cutoff for 8E spouses is guidance, not constitutional text. Effective rate 0.90% is 0.11 pp above the Tax Foundation 2024 figure of 0.79%."
+}

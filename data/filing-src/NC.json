@@ -1,0 +1,85 @@
+{
+  "state": "NC",
+  "officeType": "county tax assessor",
+  "officeTypeNote": "Two-step: (1) take Form NCDVA-9 to a State Veterans Service Center or County Veterans Service Office, where a Veterans Service Officer / NC Dept of Military and Veterans Affairs certifies the disability (Section 4); (2) file the certified NCDVA-9 together with Form AV-9 with the county tax assessor where the home is located. AV-9 instructions: \"DO NOT submit this application to the North Carolina Department of Revenue.\"",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://www.ncdor.gov/taxes-forms/property-tax/north-carolina-county-assessors-list",
+    "label": "NCDOR: North Carolina County Assessors List (address, phone, fax for all 100 counties; the URL printed on Form AV-9)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.ncdor.gov/taxes-forms/property-tax",
+    "note": "Landing page links a dated PDF (current edition: https://www.ncdor.gov/assessors-list-7-20-26pdf/open, revised July 20, 2026). Veterans Service Offices that certify NCDVA-9: https://www.milvets.nc.gov/benefits-services/benefits-claims"
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Application for Property Tax Relief (Elderly or Disabled Exclusion, Disabled Veteran Exclusion, Circuit Breaker)",
+      "number": "AV-9",
+      "url": "https://www.ncdor.gov/2026-av-9-securedpdf/open",
+      "revision": "Web 5-25 (tax year 2026); 2027 edition Web 6-26 at https://www.ncdor.gov/2027-av-9-securedpdf/open",
+      "filedWith": "county tax assessor"
+    },
+    {
+      "programRef": "*",
+      "name": "Certification for Disabled Veteran's Property Tax Exclusion (G.S. 105-277.1C)",
+      "number": "NCDVA-9",
+      "url": "https://www.ncdor.gov/ncdva-9-and-instructions-rev-4-22pdf/open",
+      "revision": "Rev. 4-22",
+      "filedWith": "certified by a Veterans Service Officer (NCDMVA), then filed with the county tax assessor alongside AV-9"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "06-01",
+    "text": "AV-9: \"This application must be filed by June 1st to be timely filed.\" G.S. 105-277.1C(f): the application \"should be filed during the regular listing period\" (January) but \"may be filed and must be accepted at any time up to and through June 1 preceding the tax year for which the exclusion is claimed.\" Eligibility is measured as of January 1."
+  },
+  "effective": "Applies to the tax year (fiscal year beginning July 1) following the June 1 deadline, for owners who were disabled, owned and occupied the residence as of January 1 of that year. Bills issued in August reflect the exclusion.",
+  "lateFiling": "G.S. 105-282.1(a1): an application filed after the deadline \"may be approved\" by the board of equalization and review or board of county commissioners (or municipal governing body) \"upon a showing of good cause by the applicant for failure to make a timely application\"; approval \"applies only to property taxes levied by the county or municipality in the calendar year in which the untimely application is filed.\"",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "No refund for prior years; a late application approved for good cause reaches only the taxes levied in the calendar year it is filed (G.S. 105-282.1(a1))."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "G.S. 105-282.1(a)(2) lists 105-277.1C among single-application exclusions: \"Once the application has been approved, the owner does not need to file an application in subsequent years\" unless the property changes or the owner no longer qualifies. Counties may send periodic compliance-review forms."
+  },
+  "ratingChange": "Eligibility requires a VA certification of permanent and total service-connected disability (100% P&T), receipt of specially adapted housing benefits under 38 U.S.C. 2101, or a surviving-spouse basis, as of January 1. A veteran newly reaching P&T obtains a new NCDVA-9 certification and files AV-9 by June 1; a veteran who no longer qualifies must notify the assessor (G.S. 105-282.1 notice duty).",
+  "move": "The exclusion applies to the permanent residence; after moving within NC, file a new AV-9 (with NCDVA-9 certification) with the new county's assessor by June 1 of the first year of ownership/occupancy as of January 1.",
+  "onlineFiling": {
+    "available": null,
+    "text": "State forms are fillable PDFs filed with the county; some counties accept online or emailed submissions."
+  },
+  "documents": [
+    "Form NCDVA-9 certified in Section 4 by NCDMVA / Veterans Service Officer (veteran brings the VA Annual Tax Abatement Letter or rating decision to the VSO; DD-214 character of service is checked on the form)",
+    "Form AV-9 Part 3 completed and signed by each owner",
+    "G.S. 105-277.1C(f): \"a copy of the veteran's disability certification or evidence of benefits received under 38 U.S.C. § 2101\"",
+    "Surviving spouse: VA documentation that the veteran had a P&T service-connected disability at death, received 38 U.S.C. 2101 benefits, or died of a service-connected condition (NCDVA-9 Section 4 D/E)"
+  ],
+  "survivingSpouse": "Available to the surviving spouse who has not remarried of (1) a disabled veteran as defined, (2) a veteran who died as a result of a service-connected condition, or (3) a servicemember who died in the line of duty, with honorable or under-honorable-conditions character of service; same AV-9 + NCDVA-9 route (Section 3 and Section 4 D/E).",
+  "appeal": "The assessor sends a notice of decision that \"will also explain the procedures to appeal\"; appeals go to the county Board of Equalization and Review (or board of county commissioners when the BOER has adjourned) and then to the NC Property Tax Commission.",
+  "statute": "G.S. 105-277.1C (disabled veteran property tax homestead exclusion; $45,000 of appraised value); G.S. 105-282.1 (applications, late applications, single-application rule)",
+  "sourceUrls": [
+    { "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-277.1C.html", "title": "G.S. 105-277.1C Disabled veteran property tax homestead exclusion", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-282.1.html", "title": "G.S. 105-282.1 Applications for property tax exemption or exclusion; late applications", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.ncdor.gov/2026-av-9-securedpdf/open", "title": "Form AV-9 Application for Property Tax Relief, tax year 2026 (Web 5-25)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.ncdor.gov/2027-av-9-securedpdf/open", "title": "Form AV-9 tax year 2027 (Web 6-26)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.ncdor.gov/ncdva-9-and-instructions-rev-4-22pdf/open", "title": "Form NCDVA-9 and NCDMVA instructions (Rev. 4-22)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.ncdor.gov/documents/files/ncdva-9-certification-disabled-veterans-property-tax-exclusion", "title": "NCDOR NCDVA-9 form landing page", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.ncdor.gov/taxes-forms/property-tax/property-tax-forms", "title": "NCDOR Property Tax Forms (exemption and exclusion forms)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.ncdor.gov/taxes-forms/property-tax/north-carolina-county-assessors-list", "title": "NCDOR North Carolina County Assessors List", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.ncdor.gov/assessors-list-7-20-26pdf/open", "title": "NC County Assessors list PDF (rev. 7-20-26)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.milvets.nc.gov/benefits-services/benefits-claims", "title": "NCDMVA Benefits & Claims (State Veterans Service Centers and County VSO list)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "Disabled Vet Exemption.survivingSpouse",
+      "issue": "Row shows false but details text, G.S. 105-277.1C(b) and AV-9 Part 3 all extend the exclusion to the un-remarried surviving spouse.",
+      "source": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-277.1C.html"
+    }
+  ],
+  "notes": "Current ncleg.gov text of 105-277.1C still reads $45,000 (session-law history ends 2010-96); 2025-26 bills to raise it (H118 $61,000, S128 $76,500, S143/H1122 full exemption) were found only as bill texts with no enacted version located, so the $45,000 dollar row stands. The 2027 AV-9 (Web 6-26) also shows $45,000. Appeal path beyond the assessor's notice of decision is summarized from G.S. 105-282.1 approving bodies, not from a dedicated NCDOR appeals page."
+}

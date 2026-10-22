@@ -1,0 +1,176 @@
+{
+  "state": "VI",
+  "officeType": "Office of the Tax Assessor (Real Property Tax Division, Office of the Lieutenant Governor), with a prerequisite eligibility form from the V.I. Office of Veterans Affairs",
+  "officeTypeNote": "Two agencies, one filing. Step 1: the V.I. Office of Veterans Affairs (OVA) issues a 'Veteran Tax Exemption Eligibility Form' signed by its Director (OVA Policy Letter #6): St. Croix (340) 773-8387, St. Thomas/St. John (340) 774-8387, info_va@va.vi.gov, hours 9:00-3:30. Step 2: file with the Tax Assessor, which has two offices: St. Croix, 1131 King Street, Suite 101, Christiansted VI 00820, (340) 773-6449, fax (340) 719-2355; St. Thomas/St. John, 5049 Kongens Gade, Charlotte Amalie VI 00802, (340) 774-2991, fax (340) 779-7825. The Tax Collector (also under the Lt. Governor) collects the bill; exemptions and credits are filed with the Tax Assessor.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://ltg.gov.vi/departments/office-of-tax-assesment/",
+    "label": "Office of the Lieutenant Governor: Office of the Tax Assessor (both island offices, forms, portal)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://veterans.vi.gov/contact-2/",
+    "note": "No county layer. The Tax Assessor page lists both offices, the Homestead Tax Credit Requirements sheet, the fillable application, and links the USVI Citizen Access Portal (propertytax.vi.gov redirects to usvi.capturecama.com) for tax bill and parcel search and payment. The fallback is the Office of Veterans Affairs contact page, which is where a veteran starts under OVA Policy Letter #6."
+  },
+  "forms": [
+    {
+      "programRef": "Veteran Exemption",
+      "name": "Veteran Tax Exemption Eligibility Form, signed by the Director of Veterans Affairs or representative (obtained from the Office of Veterans Affairs; not posted online)",
+      "number": null,
+      "url": "https://veterans.vi.gov/wp-content/uploads/2020/04/Policy-Letter-6-Veterans-Homestead-Tax-Exemptions-.pdf",
+      "revision": "OVA Policy Letter #6, April 15, 2020",
+      "filedWith": "Office of Veterans Affairs issues it; it accompanies the homestead affidavit filed with the Office of the Tax Assessor"
+    },
+    {
+      "programRef": "*",
+      "name": "Application for Homestead and Other Tax Credits (the sworn affidavit required by 33 V.I.C. § 2305(c); lists General Homestead plus one other credit, including 'A Veteran tax credit of $650'; no checkbox for the P&T full exemption)",
+      "number": null,
+      "url": "https://ltg.gov.vi/wp-content/uploads/2025/01/FILLABLE-TAX-CREDIT-APPLICATION.pdf",
+      "revision": "Revised as of June 1, 2022",
+      "filedWith": "Office of the Tax Assessor"
+    },
+    {
+      "programRef": "Veteran Homestead Tax Credit",
+      "name": "Homestead Tax Credit Requirements (one-page checklist of documents per credit)",
+      "number": null,
+      "url": "https://ltg.gov.vi/wp-content/uploads/2025/01/Homestead-Tax-Credit-Requirements.pdf",
+      "revision": null,
+      "filedWith": "Office of the Tax Assessor"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "03-01",
+    "text": "Application form header: 'Permanent United States Virgin Islands residency required on January 1; Application due to the Office of the Tax Assessor by March 1'. The Lt. Governor's 2 Mar 2023 release refers to 'the March 1, 2023, deadline for Homestead tax credits.' The deadline is administrative, not in § 2305; § 2305(k) requires the Lt. Governor to announce the program in local newspapers each January."
+  },
+  "effective": "33 V.I.C. § 2305(f): the credit 'shall take effect during the taxable year corresponding to the date of assessment following the date on which the application was filed.' In practice: residency tested January 1, application due March 1, credit applied to that year's bill. The form also requires six months of VI residence. Credits cannot reduce the bill below the $180 minimum tax (Requirements sheet).",
+  "lateFiling": "No late-filing rule on the form, requirements sheet, or in § 2305. Under § 2305(f) an application filed after the assessment date takes effect in the following taxable year. The Lt. Governor's annual notices describe March 1 as the deadline to apply for that tax year.",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "§ 2305(f) makes the credit prospective from the assessment date following filing. No refund or prior-year provision exists in § 2305 or on the Tax Assessor's form, requirements sheet, or notices."
+  },
+  "renewal": {
+    "type": "varies",
+    "text": "Official sources say no re-file unless circumstances change: § 2305(f) continues the credit until 'the conditions and requirements prescribed in this section cease to exist', and the Lt. Governor's 2 Mar 2023 release says prior recipients 'do not need to submit a new application unless there has been a change' in residence or ownership. News reports of the Lt. Governor's Feb 2025 announcement add that the General Homestead and Veterans credits 'must be renewed every five years' and the Disability credit every three; that cycle appears in no official document found."
+  },
+  "ratingChange": "The $650 credit (§ 2305(b)(2)) does not depend on a rating. The full exemption (§ 2305(b)(2)(B)) applies while the VA determination 'entitle[s] the veteran to receive compensation for permanent and total disability'; under § 2305(f) the benefit ceases when the qualifying conditions cease, and the form requires changes in homestead status to be reported by March 1. No agency guidance on a rating reduction was found.",
+  "move": "Homestead credits require the property to be the applicant's principal residence ('You cannot have homestead tax credit on more than one residence or claim homestead in any other district'). Changes to homestead status must be reported by March 1; a new affidavit is filed for the new home. § 2305(a) defines the homestead as the abode 'owned by, and actually occupied by, the property owner'; renting part of it does not defeat the exemption.",
+  "onlineFiling": {
+    "available": false,
+    "text": "The Tax Assessor posts the fillable PDF on ltg.gov.vi and hands out paper copies at the St. Thomas, St. Croix and St. John offices; § 2305(c) requires a sworn affidavit before a notary or authorized Tax Assessor staff, so there is no electronic submission channel. The OVA eligibility form is obtained in person or by contacting OVA. The Citizen Access Portal handles bill search and payment only."
+  },
+  "documents": [
+    "Veteran Tax Exemption Eligibility Form signed by the Director of Veterans Affairs or representative (OVA Policy Letter #6; request from OVA, St. Croix (340) 773-8387 or St. Thomas/St. John (340) 774-8387)",
+    "Completed Application for Homestead and Other Tax Credits, sworn before a notary or authorized Tax Assessor staff (§ 2305(c); notarial service at the Tax Assessor is free)",
+    "Copy of DD-214 showing a discharge other than dishonorable (National Guard members qualify with 20+ years of service or more than 30 consecutive days deployed in a war zone)",
+    "For the full exemption: VA documentation that the veteran is entitled to compensation for permanent and total disability (the statutory test in § 2305(b)(2)(B); the Tax Assessor's checklist does not name a specific VA document)",
+    "Valid Virgin Islands ID: driver's license or voter registration card (a passport is accepted only with a current stamped USVI income tax return)",
+    "Current WAPA electric bill or other utility bill showing the legal address (proof of occupancy)",
+    "Current income tax return filed and stamped by the VI Bureau of Internal Revenue, or a notarized statement explaining why none was filed plus other income evidence",
+    "Parcel ID number and legal description"
+  ],
+  "survivingSpouse": "The $650 credit is expressly for 'veterans or the widowed spouse of a veteran' (§ 2305(b)(2)); the application reads 'veteran (or the widow(er) of a veteran)'. The full P&T exemption text in § 2305(b)(2)(B) names only the disabled veteran, but § 2305(d) continues the homestead protection and tax credit 'to the favor of the surviving spouse while the latter continues to occupy the said homestead', and the OVA summary (Mar 2025) lists the homestead exemption for 'Veterans or the widowed spouse of a Veteran'. Widow(er)s file the same affidavit with the veteran's DD-214.",
+  "appeal": null,
+  "statute": "33 V.I.C. § 2305(b)(2)(B) (full exemption for a veteran the VA has determined is entitled to compensation for permanent and total disability); § 2305(b)(2) ($650 veteran credit); § 2305(c) (sworn affidavit in the form prescribed by the Lt. Governor); § 2305(d) (surviving spouse); § 2305(f) (effective date; credit ceases when conditions cease); § 2305(k) (annual January newspaper notice). Text from the 2019 V.I. Code as published by Justia, read via the Internet Archive (16 Jan 2025 capture).",
+  "sourceUrls": [
+    {
+      "url": "https://web.archive.org/web/20250116105058/https://law.justia.com/codes/virgin-islands/2019/title-33/subtitle-2/chapter-81/subchapter-i/2305/",
+      "title": "2019 U.S. Virgin Islands Code, 33 V.I.C. § 2305 Homestead exemption (Justia; archived copy, Internet Archive capture 16 Jan 2025; live Justia page returns 403)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://veterans.vi.gov/wp-content/uploads/2020/04/Policy-Letter-6-Veterans-Homestead-Tax-Exemptions-.pdf",
+      "title": "V.I. Office of Veterans Affairs Policy Letter #6, Veterans Homestead Tax Exemption (15 Apr 2020): veteran must obtain a Veteran Tax Exemption Eligibility Form from OVA",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://veterans.vi.gov/wp-content/uploads/2025/03/Summary-of-Local-Benefits-Revised-March-14-2025-.pdf",
+      "title": "V.I. Office of Veterans Affairs, Summary of Local Benefits (rev. 14 Mar 2025), items 7 and 8: homestead exemption and full P&T exemption",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://veterans.vi.gov/contact-2/",
+      "title": "V.I. Office of Veterans Affairs: contact page (phones, email, hours)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://ltg.gov.vi/departments/office-of-tax-assesment/",
+      "title": "Office of the Lieutenant Governor: Office of the Tax Assessor",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://ltg.gov.vi/wp-content/uploads/2025/01/FILLABLE-TAX-CREDIT-APPLICATION.pdf",
+      "title": "Application for Homestead and Other Tax Credits (Rev. June 1, 2022)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://ltg.gov.vi/wp-content/uploads/2025/01/Homestead-Tax-Credit-Requirements.pdf",
+      "title": "Homestead Tax Credit Requirements (scanned checklist; read by OCR)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://ltg.gov.vi/press-release/lieutenant-governor-roach-addresses-concerns-regarding-homestead-tax-credits/",
+      "title": "Lt. Governor Roach addresses concerns regarding Homestead tax credits (posted 2 Mar 2023): March 1 deadline; prior recipients need not reapply absent a change",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://legvi.org/",
+      "title": "Legislature of the Virgin Islands: 'VI CODE' link to the current LexisNexis-hosted Virgin Islands Code (requires JavaScript; not readable by curl)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://usvi.capturecama.com/",
+      "title": "U.S. Virgin Islands Citizen Access Portal (propertytax.vi.gov redirects here)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://viconsortium.com/vi-government/virgin-islands-roach-announces-homestead-tax-credit-requirements-for-2025",
+      "title": "VI Consortium, 14 Feb 2025: Lt. Governor announces 2025 homestead tax credit requirements (five-year veteran renewal, $180 minimum)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": false
+    },
+    {
+      "url": "https://viconsortium.com/vi-community_center/virgin-islands-usvi-property-owners-reminded-of-march-3-deadline-for-2025-tax-credit-applications",
+      "title": "VI Consortium, 2025: March 3 deadline reminder, two-credit limit, office phones",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": false
+    }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "propertyTax.programs[Veteran Exemption].survivingSpouse",
+      "issue": "Currently false. § 2305(b)(2)(B) names only the disabled veteran, but § 2305(d) continues 'the homestead protection and tax credit provided in this section' to a surviving spouse who keeps occupying the homestead, and the OVA benefits summary lists the homestead exemption for the widowed spouse. Consider true-with-caveat or a note; the dollar row otherwise stands.",
+      "source": "https://web.archive.org/web/20250116105058/https://law.justia.com/codes/virgin-islands/2019/title-33/subtitle-2/chapter-81/subchapter-i/2305/"
+    },
+    {
+      "field": "propertyTax.programs[Veteran Exemption] filing path",
+      "issue": "The Tax Assessor's application (Rev. June 2022) and requirements sheet list only the $650 credit, with no checkbox for the full exemption. The claim path is OVA Policy Letter #6: obtain the Veteran Tax Exemption Eligibility Form from the Office of Veterans Affairs, then file the sworn homestead affidavit with the Tax Assessor. No Tax Assessor document describes the exemption itself.",
+      "source": "https://veterans.vi.gov/wp-content/uploads/2020/04/Policy-Letter-6-Veterans-Homestead-Tax-Exemptions-.pdf"
+    }
+  ],
+  "notes": "Retry 2026-10-21. Statute text now pinned: Justia's 2019 V.I. Code page for § 2305 is at chapter-81 (the earlier attempts used chapter-87, which never existed), and the Internet Archive holds a 16 Jan 2025 capture that returns 200; the live Justia page is behind a Cloudflare challenge (403), casetext is gone (410), and the current official code is the LexisNexis site linked from legvi.org, which needs a JavaScript session, so amendments after the 2019 edition cannot be ruled out. The OVA Summary of Local Benefits (rev. 14 Mar 2025) reproduces the (b)(2)(B) language, and the Tax Assessor's 2022 form matches § 2305(b) on the $400 and $650 amounts and the one-additional-credit rule, so the provision is treated as current. Claim path: OVA Policy Letter #6 (15 Apr 2020) requires a Veteran Tax Exemption Eligibility Form signed by the OVA Director; the form is not posted on veterans.vi.gov/forms, so it must be requested from OVA. The one piece still resting on news is the five-year renewal cycle announced for 2025: the Lt. Governor's press-release archive (39 pages, checked pages 1-5 covering Aug 2022 to Jun 2026) and a site search for 'homestead' hold no 2024, 2025 or 2026 homestead notice, and the only official homestead release (2 Mar 2023) says no reapplication is needed absent a change. § 2305(k) routes the annual announcement to local newspapers, which is why these notices surface only in press. The Requirements sheet is a Xerox scan read with OCR. va.vi.gov returns 404; the Office of Veterans Affairs site is veterans.vi.gov. Property owners may hold at most two credits (General Homestead $400 plus one other), so the $650 credit stacks only with the general homestead credit; the P&T exemption removes the whole bill."
+}

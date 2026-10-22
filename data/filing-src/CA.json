@@ -1,0 +1,76 @@
+{
+  "state": "CA",
+  "officeType": "county assessor",
+  "officeTypeNote": "File with the COUNTY ASSESSOR of the county where the home is located. The State Board of Equalization (BOE) prescribes the form and sets the indexed amounts but does not take claims; the BOE says the form 'must be obtained from your local county assessor's office.' Not the tax collector (bills) or auditor-controller (refunds).",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://www.boe.ca.gov/proptaxes/countycontacts.htm",
+    "label": "California State Board of Equalization: Listing of County Assessors (all 58 counties)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.boe.ca.gov/proptaxes/dv_exemption.htm",
+    "note": "Single page listing each county assessor with address, phone and website link."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Claim for Disabled Veterans' Property Tax Exemption",
+      "number": "BOE-261-G",
+      "url": "https://www.boe.ca.gov/proptaxes/pdf/sample-boe261g.pdf",
+      "revision": "REV. 36 (07-25)",
+      "filedWith": "county assessor",
+      "note": "BOE posts this as a SAMPLE 'for information only' and says to 'Contact Assessor for actual form' (each county prints its own copy with county contact info). Used for both the Basic and Low-Income tiers; check the Low-Income box to file the annual low-income claim."
+    },
+    {
+      "programRef": "*",
+      "name": "Disabled Veterans' Exemption Change of Eligibility Report",
+      "number": "BOE-261-GNT",
+      "url": "https://www.boe.ca.gov/proptaxes/pdf/sample-boe261gnt.pdf",
+      "revision": null,
+      "filedWith": "county assessor",
+      "note": "Mailed by the assessor on or shortly after January 1 each year to prior-year recipients; used to report a move, death, remarriage or other loss of eligibility."
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "01-01",
+    "text": "Initial claim (Basic or Low-Income): the full exemption, prorated to the date of eligibility, 'if the filing is made on or before January 1 of the year next following the year in which 1) the disability rating was received, or 2) residency is established' (BOE-261-G instructions; R&TC 277); BOE summarizes it as within 90 days of the qualifying event or by the following January 1, 'whichever is later.' Annual Low-Income claim: 'The full exemption is available ... if the filing is made by 5 p.m. on February 15 of each year.'"
+  },
+  "effective": "Prorated from the date of qualification: 'the effective date, as determined by the USDVA, of a disability rating' or the date residency is established at a property already owned, and thereafter as of 12:01 a.m. January 1 each year (BOE-261-G instructions; BOE: 'prorated as of the date of qualification to the remainder of the fiscal year').",
+  "lateFiling": "Late initial claims are still allowed at a reduced amount: 90 percent or 85 percent of the exemption depending on when filed (R&TC 277). Low-Income annual claim filed after February 15 'but by 5 p.m. on December 10, 90 percent of the exemption is available. For claims filed after that time, 85 percent' (BOE-261-G instructions).",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 8,
+    "text": "BOE: under R&TC 276.1, when the USDVA issues a delayed or retroactive rating, the full exemption may be granted for prior years and taxes 'may be cancelled or refunded,' 'subject to an eight-year statute of limitation' under R&TC 5097(a)(4); refunds allowed 'for up to eight years after the date the taxes were paid.'"
+  },
+  "renewal": {
+    "type": "none",
+    "text": "Basic tier: 'Once granted, the Basic Exemption remains in effect without annual filing until terminated' (BOE-261-G). Low-Income tier: 'Separate claims are required for each fiscal year when filing the Low-Income Exemption' (annual, by February 15 for the full amount). The assessor mails BOE-261-GNT each January; the claimant must report loss of eligibility by June 30 to avoid the 25 percent penalty on the escape assessment under R&TC 279.5."
+  },
+  "ratingChange": "Eligibility requires a 100 percent service-connected rating, 100 percent compensation for unemployability, blindness in both eyes, or loss of use of two or more limbs. A reduction below those thresholds is a change in eligibility to be reported on BOE-261-GNT; a later retroactive 100 percent rating supports a R&TC 276.1 refund claim back up to eight years.",
+  "move": "The exemption follows the veteran to a new principal residence but requires a new BOE-261-G with the assessor of the new county (or same county) and termination at the old property; the form asks for the address where the exemption was previously claimed. Filing on or before January 1 following the year residency is established preserves the full prorated amount.",
+  "onlineFiling": {
+    "available": null,
+    "text": "Varies by county; the form accepts an electronic signature under penalty of perjury and many assessors offer e-file or email submission. BOE itself does not take claims."
+  },
+  "documents": [
+    "USDVA rating letter: 'proof of rating' showing the 100 percent rating (or 100 percent compensation for unemployability), with the effective date and the notice date (BOE-261-G items 2a-2b)",
+    "Proof of service and discharge 'other than dishonorable,' such as DD-214 (BOE)",
+    "For the Low-Income tier: total household income for the prior calendar year, including veterans' benefits (2026 limit $81,131 per LTA 2026/019)",
+    "Unmarried surviving spouse: marriage certificate and death certificate; if the veteran did not qualify in life, also proof the death was service-connected and dates of service (BOE)"
+  ],
+  "survivingSpouse": "An unmarried surviving spouse qualifies if the veteran qualified in life, would have qualified under the laws effective January 1, 1977 (1979 for disease), or died from a service-connected injury or disease; a USDVA finding of service-connected death is accepted without further proof. Remarriage ends eligibility, which can be regained after divorce or death of the new spouse (BOE).",
+  "appeal": "Not addressed on the BOE exemption page. Exemption denials are handled by the county assessor; refund claims under R&TC 5097 go to the county board of supervisors (not verified in this pass).",
+  "statute": "Cal. Const. art. XIII, sec. 4(a); Rev. & Tax. Code 205.5, 276.1, 277, 279, 279.5, 5097(a)(4); SB 296 (2026) restructures the exemption from the January 1, 2027 lien date",
+  "sourceUrls": [
+    { "url": "https://www.boe.ca.gov/proptaxes/dv_exemption.htm", "title": "BOE: Disabled Veterans' Exemption (program page with FAQ)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.boe.ca.gov/proptaxes/pdf/sample-boe261g.pdf", "title": "BOE-261-G sample, REV. 36 (07-25)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.boe.ca.gov/proptaxes/pdf/sample-boe261gnt.pdf", "title": "BOE-261-GNT sample", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.boe.ca.gov/proptaxes/pdf/lta26019.pdf", "title": "BOE Letter to Assessors 2026/019 (2026 and 2027 indexed amounts)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.boe.ca.gov/proptaxes/countycontacts.htm", "title": "BOE Listing of County Assessors", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [],
+  "notes": "leginfo.legislature.ca.gov statute pages returned 403 to automated checks, so R&TC 205.5/276.1/277/5097 were not opened directly; the BOE page and the BOE-261-G instructions quote the operative deadlines and the eight-year refund rule. The BOE's earlier 'assessors.htm' URL is dead (404); countycontacts.htm is the live directory. LTA 2026/019 returned 200 and was not re-read here (its amounts are already in the dollar layer). SB 296's 2027 restructuring may change the form; re-check BOE-261-G revision after the January 1, 2027 lien date."
+}

@@ -1,0 +1,40 @@
+{
+  "state": "NC",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0084,
+    "sourceValue": 0.0066,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Tax Foundation Table 2 (Census ACS 2024 5-year): NC 0.66% (2023: 0.69%). File 0.84% is 0.18 pp high."
+  },
+  "programs": [
+    {
+      "name": "Disabled Vet Exemption",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": { "current": 45000, "correct": 45000, "quote": "The first forty-five thousand dollars ($45,000) of appraised value of the residence is excluded from taxation.", "source": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-277.1C.html" },
+        "survivingSpouse": { "current": false, "correct": true, "quote": "The surviving spouse of a disabled veteran who has not remarried.", "source": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-277.1C.html" },
+        "ptRequired": { "current": null, "correct": true, "quote": "a service-connected, permanent, and total disability", "source": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-277.1C.html" },
+        "ratingRequired": { "current": 100, "correct": 100, "quote": "a service-connected, permanent, and total disability", "source": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-277.1C.html" },
+        "altQualifier": { "current": null, "correct": "SAH grant recipients (38 U.S.C. 2101) also qualify regardless of rating", "quote": "had received benefits under 38 U.S.C. § 2101", "source": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-277.1C.html" },
+        "dischargeStandard": { "current": null, "correct": "honorable or under honorable conditions", "quote": "honorable or under honorable conditions", "source": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-277.1C.html" }
+      },
+      "effectiveChanges": "None enacted for TY2026 or TY2027. The statute's session-law history still ends at 2010-96 and the current text reads $45,000. 2025-26 bills to raise or replace it were all still in committee on 10/21/26: H118 'Disabled Veterans Tax Relief Bill' (= S228; re-referred to House Rules 9/23/2025), S128 'Heroes Homestead Act' ($76,500; referred to Senate Rules 2/24/2025), H1122 'Expand Disabled Veteran Prop. Tax Exclusion' (full value; referred to House Rules 4/30/2026). None chaptered. The TY2027 Form AV-9 (Web 6-26) is posted and the exclusion remains $45,000 per the filing-layer record.",
+      "note": "Row is correct on amount and type; only survivingSpouse was wrong (the row's own details text already says the unremarried surviving spouse qualifies, including the spouse of a veteran who died of a service-connected condition or in the line of duty). No income or age test. Eligibility measured Jan 1; apply by June 1; single application."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": { "status": "confirmed", "correct": "", "source": "" },
+  "sources": [
+    { "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-277.1C.html", "title": "G.S. 105-277.1C Disabled veteran property tax homestead exclusion (current text, history through 2010-96)", "status": 200 },
+    { "url": "https://www.ncleg.gov/BillLookUp/2025/H118", "title": "H118 Disabled Veterans Tax Relief Bill: last action re-ref House Rules 9/23/2025, not chaptered", "status": 200 },
+    { "url": "https://www.ncleg.gov/BillLookUp/2025/S128", "title": "S128 Heroes Homestead Act: referred to Senate Rules 2/24/2025, not chaptered", "status": 200 },
+    { "url": "https://www.ncleg.gov/BillLookUp/2025/H1122", "title": "H1122 Expand Disabled Veteran Prop. Tax Exclusion: referred to House Rules 4/30/2026, not chaptered", "status": 200 },
+    { "url": "https://www.ncdor.gov/2027-av-9-securedpdf/open", "title": "Form AV-9 tax year 2027 (Web 6-26)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 data)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "NC's single row is right at $45,000 of appraised value for 100% P&T (or SAH recipients) and the 2025-26 bills to raise it (H118/S228, S128, H1122) remain unenacted, so nothing changes for TY2026 or TY2027; the only field fix is survivingSpouse to true. Effective rate should drop from 0.84% to about 0.66% (Tax Foundation, 2024 data)."
+}

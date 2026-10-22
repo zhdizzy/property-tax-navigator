@@ -1,0 +1,96 @@
+{
+  "propertyTaxRate": {
+    "fileValue": 0.008,
+    "sourceValue": 0.0078,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation Table 2 (ACS 2024): Virginia 0.78% (0.79% in 2023). Within tolerance."
+  },
+  "programs": [
+    {
+      "name": "Homestead Exemption",
+      "status": "corrected",
+      "fields": {
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "ptRequired": true,
+          "quote": "any veteran who has been rated by the U.S. Department of Veterans Affairs or its successor agency pursuant to federal law to have a 100 percent service-connected, permanent, and total disability, and who occupies the real property as his principal place of residence",
+          "source": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3219.5/",
+          "note": "Add ptRequired: true; a non-permanent 100% rating does not qualify. IU is not mentioned in the statute."
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "The surviving spouse of a veteran eligible for the exemption set forth in this article shall also qualify for the exemption, so long as the death of the veteran occurs on or after January 1, 2011, and the surviving spouse does not remarry. The exemption applies without any restriction on the spouse's moving",
+          "source": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3219.5/",
+          "note": "Resolves the brief's lead: as of the 10/21/2026 LIS text the surviving-spouse rules are unchanged (death on/after 1/1/2011, no remarriage, may move). History line ends at 2020 c. 900; no 2026 act is codified."
+        },
+        "acreage": {
+          "current": "up to 1 acre of land",
+          "correct": "at least 1 acre; localities exempting more acreage for elderly/disabled must match it",
+          "quote": "if a county, city, or town provides for an exemption from or deferral of real property taxes of more than one acre of land pursuant to Article 2 (§ 58.1-3210 et seq.), then the county, city, or town shall also provide an exemption for the same number of acres",
+          "source": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3219.5/"
+        },
+        "effective date": {
+          "current": "not stated",
+          "correct": "Exemption starts on the VA rating date (refund of taxes paid after that date, no interest)",
+          "quote": "If the veteran's disability rating occurs after January 1, 2011, and he has a qualified primary residence on the date of the rating, then the exemption for him under this section begins on the date of such rating.",
+          "source": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3219.5/"
+        }
+      },
+      "effectiveChanges": "None. No 2026 session amendment to 58.1-3219.5 appears in the LIS text dated 10/21/2026 (history ends 2020 c. 900). Watch for any constitutional amendment on surviving spouses in the 2026-2027 sessions; none found enacted.",
+      "note": "Name 'Homestead Exemption' is informal; Virginia calls it the disabled veteran real property tax exemption (Va. Const. art. X, sec. 6-A; Va. Code 58.1-3219.5). type full confirmed."
+    },
+    {
+      "name": "Specially Adapted Housing",
+      "status": "confirmed",
+      "fields": {
+        "existence": {
+          "current": "type none",
+          "correct": "No separate Virginia program",
+          "quote": "the General Assembly hereby exempts from taxation the real property ... of any veteran who has been rated ... to have a 100 percent service-connected, permanent, and total disability",
+          "source": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3219.5/"
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Placeholder row; harmless but could be dropped."
+    }
+  ],
+  "missingPrograms": [
+    {
+      "name": "Surviving spouse of a service member killed in action or who died in the line of duty",
+      "what": "Real property tax exemption for the dwelling (up to the locality's average assessed value; excess taxable) of the unremarried surviving spouse of a member of the armed forces killed in action or who died in the line of duty (DoD determination). Survivor-only; not creditable to a living rated veteran.",
+      "statute": "Va. Code 58.1-3219.9 and 58.1-3219.10; Va. Const. art. X, sec. 6-B",
+      "source": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3219.9/"
+    }
+  ],
+  "jurisdictionNote": {
+    "status": "unverified",
+    "correct": "",
+    "source": "",
+    "note": "No propertyTax.note in the file for VA."
+  },
+  "sources": [
+    {
+      "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3219.5/",
+      "title": "Va. Code 58.1-3219.5 Exemption from taxes on property for disabled veterans (LIS text dated 10/21/2026)",
+      "status": 200
+    },
+    {
+      "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3219.9/",
+      "title": "Va. Code 58.1-3219.9 Exemption for surviving spouses of members of the armed forces killed in action / died in the line of duty",
+      "status": 200
+    },
+    {
+      "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+      "title": "Tax Foundation, Property Taxes by State and County, 2026 (Table 2: Property Taxes Paid as a Percentage of Owner-Occupied Housing Value, 2024, Census ACS)",
+      "status": 200
+    }
+  ],
+  "confidence": "verified",
+  "summary": "Virginia's full exemption on the principal residence (minimum one acre) for 100% P&T veterans and their unremarried surviving spouses (death on/after 1/1/2011, free to move) is confirmed with no 2026 amendment codified. The row needs ptRequired: true, and the survivor-only KIA/line-of-duty exemption (58.1-3219.9) is missing.",
+  "state": "VA",
+  "checkedDate": "2026-10-21"
+}

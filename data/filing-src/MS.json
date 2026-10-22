@@ -1,0 +1,80 @@
+{
+  "state": "MS",
+  "officeType": "county tax assessor",
+  "officeTypeNote": "The disabled-veteran benefit is a TIER of Mississippi's homestead exemption, so it is claimed on the regular homestead exemption application filed in person at the county Tax Assessor's office (in the 23 counties with a combined office, the Tax Assessor/Collector). The county Board of Supervisors allows or disallows applications; the Department of Revenue audits and reimburses the counties. DOR does not take applications.",
+  "officeLocator": {
+    "tier": 2,
+    "url": null,
+    "label": "Mississippi Department of Revenue: Homestead Exemption (County Services)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.dor.ms.gov/county-services/homestead-exemption",
+    "note": "DOR publishes no county assessor directory on dor.ms.gov. Direct the user to '<county> Tax Assessor' on the county website. DOR Property Tax (County Services) contact page: https://www.dor.ms.gov/contact-us/property-tax."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Application for Homestead Exemption (multi-copy DOR form completed and signed at the county Tax Assessor's office; not distributed online)",
+      "number": null,
+      "url": null,
+      "revision": null,
+      "filedWith": "county Tax Assessor (in person, January 1 to April 1)"
+    },
+    {
+      "programRef": "*",
+      "name": "Veteran's Consent of Release (DOR form used as proof of service-connected total disability under 35 Miss. Admin. Code Pt. VI, R. 3.03)",
+      "number": "Form 72-042",
+      "url": null,
+      "revision": null,
+      "filedWith": "county Tax Assessor, with the homestead application"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "04-01",
+    "text": "DOR: 'Homestead Exemption Applications are only accepted in the county Tax Assessor's office during normal business hours between January 1 and April 1 of each year.' Rule 35.VI.3.03: 'The applicant who does not file his application during this period forfeits all his homestead exemption rights for that year.' Eligibility is determined as of January 1."
+  },
+  "effective": "Applies to the current year's taxes (billed in December) if the veteran owned and occupied the home on January 1 of that year, with the deed recorded with the Chancery Clerk before January 7, and the application filed January 1 to April 1. A veteran who buys or becomes 100% rated after January 1 waits for the next filing window.",
+  "lateFiling": "Not permitted. Rule 35.VI.3.03(5): the Tax Assessor 'shall accept all applications from January 1 through April 1, both dates inclusive. The applicant who does not file his application during this period forfeits all his homestead exemption rights for that year.' An amended application is allowed after April 1 only to correct errors in a timely application.",
+  "retroactivity": {
+    "type": "none",
+    "years": 0,
+    "text": "No refunds for prior years; a missed filing window forfeits that year's exemption (35 Miss. Admin. Code Pt. VI, R. 3.03). An existing allowed application rolls forward automatically, so there is no annual re-file to miss unless status changes."
+  },
+  "renewal": {
+    "type": "on-change",
+    "text": "DOR: 'Once an applicant has a valid, allowed homestead application on file, the applicant is credited with that exemption each year without the need to refile unless' there is a change in property description, ownership, use or occupancy since January 1 of the preceding year, or the applicant qualifies under a different tier. A newly-established 100% rating is a tier change: re-file between Jan 1 and April 1 to move to the total exemption. Marriage, divorce, death, deed changes and VA benefit eligibility changes all trigger a new application."
+  },
+  "ratingChange": "A veteran already on homestead (Tier 1 or Tier 2) who is newly rated service-connected totally disabled must file a NEW application between January 1 and April 1 with VA proof to move to Tier 3 (total exemption). Partial ratings do not qualify for the veteran tier (the DOR tier requires 'service-connected, total disability'); a veteran whose rating is reduced must re-file, and 'change of eligibility status for ... Veterans Affairs benefits' is listed by DOR as a trigger to reapply. Failure to re-file after a status change is a listed ground for disallowance and repayment.",
+  "move": "A change in ownership or the homestead itself requires a new application at the Tax Assessor's office for the new county/home during the January 1 to April 1 window, with ownership established before January 1 and the deed filed with the Chancery Clerk before January 7 of the year sought. Only one homestead may be claimed; claiming on more than one property is a disallowance ground.",
+  "onlineFiling": {
+    "available": false,
+    "text": "DOR: applications 'are only accepted in the county Tax Assessor's office during normal business hours'; the applicant signs an affidavit in person. No state or county online filing."
+  },
+  "documents": [
+    "Proof of service-connected TOTAL disability of an honorably discharged veteran: Veteran's Consent of Release (Form 72-042) or a U.S. Department of Veterans Affairs letter stating 100% service-connected total disability (DOR rule lists Form 72-042; counties commonly accept the VA benefits letter)",
+    "DD-214 or other proof of honorable discharge (required for the veteran tiers; counties ask for it)",
+    "Social Security numbers, dates of birth, phone and email for all applicants (ITIN only if no SSN)",
+    "Physical address of the property (no P.O. box); recorded warranty deed or other ownership instrument filed with the Chancery Clerk before January 7",
+    "Total purchase price, down payment, HUD closing statement or other transaction documents",
+    "Current Mississippi tag numbers of all vehicles owned or in the applicant's possession (including company vehicles)",
+    "Applicant and spouse must be in compliance with Mississippi income tax and road and bridge privilege (vehicle tag) tax laws",
+    "Unremarried surviving spouse: proof of the veteran's eligibility and death"
+  ],
+  "survivingSpouse": "Unremarried surviving spouses of veterans with a service-connected total disability receive the same total exemption (Tier 3), as do unremarried surviving spouses of service members killed or who died on active duty (or reserve/Guard members on active duty for training). From January 1, 2026 the rule also extends the total-disability and age-90 veteran tiers to unremarried surviving spouses. A surviving spouse who remains eligible generally does not need a new application, but any ownership/occupancy change requires re-filing.",
+  "appeal": "The county Board of Supervisors allows or disallows all applications by its August meeting and must give written notice by mail to disallowed applicants; the Board may also disallow on DOR's instruction and must notify the applicant. Correction of errors: a new application before April 1, an amended application after April 1, and no corrections after the Board's final action (35 Miss. Admin. Code Pt. VI, R. 3.09). Further appeal is to the Board of Supervisors / circuit court under general ad valorem procedures; not detailed in the DOR rule.",
+  "statute": "Miss. Code Ann. §§ 27-33-31 (application, Jan 1 to Apr 1), 27-33-67(2) (total exemption for service-connected totally disabled veterans and unremarried surviving spouses), 27-33-75 (additional exemption); 35 Miss. Admin. Code Pt. VI, Subpart 3 (Homestead Exemption rules)",
+  "sourceUrls": [
+    { "url": "https://www.dor.ms.gov/county-services/homestead-exemption", "title": "Mississippi DOR: Homestead Exemption (filing window, documents, tiers, renewal triggers)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.sos.ms.gov/adminsearch/ACCode/00000161c.pdf", "title": "35 Miss. Admin. Code Part VI, Property (Subpart 3, Homestead Exemption rules), via MS Secretary of State", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.dor.ms.gov/forms-resources/mississippi-tax-laws-rules-and-regulations", "title": "Mississippi DOR: Laws, Rules and Regulations (links the Title 35 Part VI PDF)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.dor.ms.gov/county-services/property-tax-exemptions", "title": "Mississippi DOR: Property Tax Exemptions (Board of Supervisors determines eligibility)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.dor.ms.gov/contact-us/property-tax", "title": "Mississippi DOR: Property Tax (County Services) contact", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    "The program row is named 'Homestead Exemption' with ratingRequired 100; DOR's rule language is 'service-connected, total disability', which an April 2025 AG opinion reads as total disability documentation plus honorable discharge (no unemployability test). Consider renaming the row 'Homestead Exemption — Total (service-connected totally disabled veteran)' and noting the 90+-year-old veteran total exemption and the active-duty-death surviving spouse tier that share the same filing."
+  ],
+  "notes": "The Mississippi Code text (27-33-31, -67, -75) could not be opened from a primary source: the Legislature publishes the Code through LexisNexis and law.justia.com returns 403 to automated requests, so statute cites rest on the DOR page and the DOR rule (which cites them). The homestead application itself is a multi-copy DOR form (original, duplicate, triplicate, quadruplicate) executed at the assessor's counter and is not posted online; Form 72-049 found in searches is 'Election to File One Homestead' (heirs), NOT the application. Form 72-042 'Veteran's Consent of Release' is named in Rule 3.03 as acceptable proof but no DOR-hosted PDF was found."
+}

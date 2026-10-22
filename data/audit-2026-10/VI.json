@@ -1,0 +1,105 @@
+{
+  "propertyTaxRate": {
+    "fileValue": 0.00377,
+    "sourceValue": 0.00377,
+    "source": "https://web.archive.org/web/20240223005918id_/https://law.justia.com/codes/virgin-islands/2019/title-33/subtitle-2/chapter-81/subchapter-i/2301/",
+    "sourceYear": 2019,
+    "withinTolerance": true,
+    "note": "Statutory rate: 33 V.I.C. 2301(b)(2) 'residential real property, at .003770' of fair market value (assessed at 100%, 2301(a)). Source is the 2019 Virgin Islands Code as mirrored by Justia, read through the Internet Archive because law.justia.com (403), casetext (410) and legvi.org (404) block or lack the text. Exact match."
+  },
+  "programs": [
+    {
+      "name": "Veteran Exemption",
+      "status": "confirmed",
+      "fields": {
+        "existence": {
+          "current": "full exemption at VA P&T determination",
+          "correct": true,
+          "quote": "any veteran of the Armed Services of the United States of America who has a service-related disability that has been determined by the Veterans Administration to entitle the veteran to receive compensation for permanent and total disability is exempt from the payment of all real property taxes levied by the Tax Assessor against the disabled veteran's homestead.",
+          "source": "https://web.archive.org/web/20250116105058id_/https://law.justia.com/codes/virgin-islands/2019/title-33/subtitle-2/chapter-81/subchapter-i/2305/",
+          "note": "Resolves the brief's lead: 33 V.I.C. 2305(b)(2)(B) exists (2019 code text). Discharge must be other than dishonorable (2305(b)(2)(A))."
+        },
+        "ptRequired": {
+          "current": true,
+          "correct": true,
+          "quote": "entitle the veteran to receive compensation for permanent and total disability",
+          "source": "https://web.archive.org/web/20250116105058id_/https://law.justia.com/codes/virgin-islands/2019/title-33/subtitle-2/chapter-81/subchapter-i/2305/"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": "unverified",
+          "quote": "The homestead protection and tax credit provided in this section shall continue to attach to the property after the death of the owner thereof, and shall inure to the favor of the surviving spouse while the latter continues to occupy the said homestead",
+          "source": "https://web.archive.org/web/20250116105058id_/https://law.justia.com/codes/virgin-islands/2019/title-33/subtitle-2/chapter-81/subchapter-i/2305/",
+          "note": "2305(d) continues the 'homestead protection and tax credit' to the occupying surviving spouse; whether that carries the (b)(2)(B) full exemption (worded as an exemption, not a credit) is ambiguous. Leave false but flag."
+        }
+      },
+      "effectiveChanges": "None found. The 2019 code text is the latest obtainable; the Tax Assessor's current application (Rev. June 2022) and 2025 requirements sheet list only the $650 credit, so the filing path for the full exemption still has to be confirmed with the Tax Assessor.",
+      "note": "Statute confirmed; agency filing path unconfirmed (see property-tax filing-src VI.json)."
+    },
+    {
+      "name": "Veteran Homestead Tax Credit",
+      "status": "confirmed",
+      "fields": {
+        "exemptionValue": {
+          "current": 650,
+          "correct": 650,
+          "quote": "A tax credit of $650 to property owners who are veterans or the widowed spouse of a veteran of the Armed Services of the United States of America.",
+          "source": "https://web.archive.org/web/20250116105058id_/https://law.justia.com/codes/virgin-islands/2019/title-33/subtitle-2/chapter-81/subchapter-i/2305/"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "veterans or the widowed spouse of a veteran",
+          "source": "https://web.archive.org/web/20250116105058id_/https://law.justia.com/codes/virgin-islands/2019/title-33/subtitle-2/chapter-81/subchapter-i/2305/"
+        },
+        "stacking": {
+          "current": "the full P&T exemption supersedes it",
+          "correct": "Credits are exclusive: General Homestead ($400) plus ONE other credit; the P&T exemption removes the whole bill so the credit is moot",
+          "quote": "The tax credits are exclusive, not cumulative, and with the exception of the Homestead Exemption, whereby individuals may have one additional tax credit to the homestead tax credit for each tax year",
+          "source": "https://web.archive.org/web/20250116105058id_/https://law.justia.com/codes/virgin-islands/2019/title-33/subtitle-2/chapter-81/subchapter-i/2305/",
+          "note": "Credits cannot reduce the bill below the $180 minimum tax (Tax Assessor requirements sheet)."
+        }
+      },
+      "effectiveChanges": "None. Application due March 1 with permanent VI residency on January 1; veteran credit renews every five years per the Lt. Governor's 2025 notice.",
+      "note": "type credit confirmed; any veteran with an other-than-dishonorable discharge (DD-214)."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "unverified",
+    "correct": "",
+    "source": "",
+    "note": "No propertyTax.note in the file for VI."
+  },
+  "sources": [
+    {
+      "url": "https://web.archive.org/web/20250116105058id_/https://law.justia.com/codes/virgin-islands/2019/title-33/subtitle-2/chapter-81/subchapter-i/2305/",
+      "title": "33 V.I.C. § 2305 Homestead exemption (2019 Virgin Islands Code via Justia, Internet Archive capture 2025-01-16)",
+      "status": 200
+    },
+    {
+      "url": "https://web.archive.org/web/20240223005918id_/https://law.justia.com/codes/virgin-islands/2019/title-33/subtitle-2/chapter-81/subchapter-i/2301/",
+      "title": "33 V.I.C. § 2301 Imposition and rate of tax (residential .003770) (2019 code via Justia, Internet Archive capture 2024-02-23)",
+      "status": 200
+    },
+    {
+      "url": "https://ltg.gov.vi/wp-content/uploads/2025/01/FILLABLE-TAX-CREDIT-APPLICATION.pdf",
+      "title": "VI Office of the Tax Assessor: Application for Homestead and Other Tax Credits (Rev. June 1, 2022; $650 veteran credit)",
+      "status": 200
+    },
+    {
+      "url": "https://ltg.gov.vi/wp-content/uploads/2025/01/Homestead-Tax-Credit-Requirements.pdf",
+      "title": "VI Office of the Tax Assessor: Homestead Tax Credit Requirements",
+      "status": 200
+    },
+    {
+      "url": "https://ltg.gov.vi/departments/office-of-tax-assesment/",
+      "title": "Office of the Lieutenant Governor: Office of the Tax Assessor",
+      "status": 200
+    }
+  ],
+  "confidence": "partial",
+  "summary": "The Virgin Islands full homestead exemption for veterans the VA has rated permanently and totally disabled is confirmed in 33 V.I.C. 2305(b)(2)(B), and the $650 veteran/widowed-spouse credit and 0.377% residential rate match the code; the only text available is the 2019 compilation read through an archive mirror, so later amendments cannot be excluded. The Tax Assessor's forms still show no filing path for the full exemption, and spouse carry-over of the full exemption is ambiguous.",
+  "state": "VI",
+  "checkedDate": "2026-10-21"
+}

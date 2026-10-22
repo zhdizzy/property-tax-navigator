@@ -1,0 +1,79 @@
+{
+  "state": "DC",
+  "officeType": "D.C. Office of Veterans Affairs (certifies) and Office of Tax and Revenue, Real Property Tax Administration (applies the deduction)",
+  "officeTypeNote": "Unlike the regular Homestead Deduction (filed with OTR on MyTax.DC.gov, form ASD-100), the Disabled Veterans Homestead Deduction application is filed with the Mayor's Office of Veterans Affairs, which 'certifies disability status to the Office of Tax and Revenue' (D.C. Code 47-850(a-2)(3)). OTR then applies the $445,000 deduction to the tax bill. Cancellations (ASD-105) go to OTR through MyTax.DC.gov.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://otr.cfo.dc.gov/am/page/real-property-tax-reliefs-credits-and-deductions",
+    "label": "DC Office of Tax and Revenue: Real Property Tax Reliefs, Credits and Deductions (single jurisdiction)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://communityaffairs.dc.gov/node/4111",
+    "note": "Single jurisdiction, so no county lookup. The OTR page carries the program rules; the Mayor's Office of Veterans Affairs page (communityaffairs.dc.gov) carries the online application. MOVA: (202) 724-5454; OTR Customer Service: (202) 727-4TAX."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Veterans Homestead Tax Deduction Application (online)",
+      "number": null,
+      "url": "https://app.smartsheet.com/b/form/897d57eff53f4e6e803e26682254db5e",
+      "revision": null,
+      "filedWith": "D.C. Office of Veterans Affairs (Mayor's Office of Community Affairs)",
+      "note": "Online form linked from communityaffairs.dc.gov; screening questions precede the application. OTR says a paper form is available on request through a waiver of the electronic-filing requirement (Customer Service (202) 727-4TAX). Active-duty members must attach Form DD-2058 (State of Legal Residence Certificate) showing DC domicile."
+    },
+    {
+      "programRef": "*",
+      "name": "Cancellation of Homestead Deduction",
+      "number": "ASD-105",
+      "url": "https://mytax.dc.gov/",
+      "revision": null,
+      "filedWith": "Office of Tax and Revenue via MyTax.DC.gov",
+      "note": "Required within 30 days of losing eligibility (move, sale, loss of rating, income over the limit)."
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "03-31",
+    "text": "Rolling, with a half-year cutoff. D.C. Code 47-850(c): a properly completed and approved application filed 'during the period October 1 through March 31' receives the deduction for the entire tax year (Oct 1 to Sep 30); an application filed April 1 through September 30 receives '1/2 of the deduction for the second installment only.' OTR restates the same windows for the Disabled Veterans deduction."
+  },
+  "effective": "Full tax year if filed October 1 to March 31; second-half installment only if filed April 1 to September 30. D.C. Code 47-850(a-2)(2): the deduction 'shall not be carried forward or carried back.' Continues in later years while the property stays eligible.",
+  "lateFiling": "No penalty and no separate late-filing process: an application filed after March 31 simply earns only the second-half deduction for that tax year and the full deduction thereafter (47-850(c)).",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "D.C. Code 47-850(a-2)(2): the deduction 'shall not be carried forward or carried back'; no refund of prior tax years is available for a late application."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "One-time filing. D.C. Code 47-850.02(a): the application 'shall apply to the initial tax year' and to later years for which the deduction is allowed. The owner must notify the Mayor of any change in eligibility within 30 days (47-850.02(b)(1)); failure means the deduction 'shall be rescinded without limitation for each tax year' with penalty and interest. OTR may audit eligibility and 47-850(b) lets the Mayor request information to confirm continued eligibility. Income is tested annually against the 47-863 household limit ($163,500 for TY2026, 2024 federal AGI per OTR)."
+  },
+  "ratingChange": "Eligibility requires a VA classification of 'total and permanent disability as a result of a service-incurred condition or service-aggravated condition,' or payment at the 100% rate for unemployability (47-850(a-2)(1)(A)). Loss of that status is a change in eligibility: file ASD-105 within 30 days or face rescission, penalty and interest (47-850.02(b)).",
+  "move": "The deduction attaches to the principal residence. Cancel on the old property with ASD-105 within 30 days and file a new application with the Office of Veterans Affairs for the new home; the Oct 1 to Mar 31 / Apr 1 to Sep 30 timing rule governs how much of that year's deduction applies.",
+  "onlineFiling": {
+    "available": true,
+    "text": "Application is online (Smartsheet form on communityaffairs.dc.gov); paper only by waiver. Cancellation and the regular Homestead Deduction are on MyTax.DC.gov."
+  },
+  "documents": [
+    "VA letter establishing total and permanent service-connected disability or payment at the 100% rate for individual unemployability (certified by the Office of Veterans Affairs to OTR, 47-850(a-2)(3))",
+    "Deed showing at least 50% ownership by the veteran (MOVA/OTR eligibility rule)",
+    "Proof of DC domicile; active-duty members attach Form DD-2058 State of Legal Residence Certificate",
+    "Household federal adjusted gross income for the look-back year (2024 AGI for TY2026; limit $163,500) for all household members other than tenants paying fair-market rent under a written lease",
+    "Property must have five or fewer dwelling units and not be a cooperative, held by a business entity (other than an all-occupant partnership), or in an irrevocable trust other than a special needs trust"
+  ],
+  "survivingSpouse": "D.C. Code 47-850(a-2)(1) and (4): an 'eligible spouse,' the surviving spouse or domestic partner of a deceased veteran whose property was receiving (or would have qualified for) the deduction, may claim the same $445,000 deduction; OTR lists this as the Disabled Veterans' Spouse Homestead Deduction effective October 1, 2025. Contact MOVA at (202) 724-5454 for the spouse application.",
+  "appeal": "OTR posts a 'Homestead and Senior Citizen Tax Benefit Appeal Application' on its Real Property Tax Forms page for denied homestead-type benefits; general real property assessment appeals run to the Real Property Tax Appeals Commission. Not verified specifically for the veterans deduction.",
+  "statute": "D.C. Code 47-850(a-2), 47-850(b)-(c), 47-850.02, 47-863(a)(1A)(A) (household income test)",
+  "sourceUrls": [
+    { "url": "https://code.dccouncil.gov/us/dc/council/code/sections/47-850", "title": "D.C. Code 47-850 Residential property tax relief: Homestead deduction (incl. (a-2) disabled veterans)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://code.dccouncil.gov/us/dc/council/code/sections/47-850.02", "title": "D.C. Code 47-850.02 One-time filing; notification of change in eligibility", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://otr.cfo.dc.gov/am/page/real-property-tax-reliefs-credits-and-deductions", "title": "OTR: Real Property Tax Reliefs, Credits and Deductions", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://communityaffairs.dc.gov/node/4111", "title": "Mayor's Office of Veterans Affairs: Disabled Veterans Homestead Deduction (application)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://app.smartsheet.com/b/form/897d57eff53f4e6e803e26682254db5e", "title": "Veterans Homestead Tax Deduction Application (online form)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://otr.cfo.dc.gov/release/veterans-homestead-deduction-starts-october-1-2022", "title": "OTR release: Veterans Homestead Deduction starts October 1, 2022", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://mytax.dc.gov/", "title": "MyTax.DC.gov (ASD-100 / ASD-105)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [],
+  "notes": "The statutory timing rule in 47-850(c) is written for the homestead deduction generally; OTR's page applies the same Oct 1 to Mar 31 / Apr 1 to Sep 30 windows to the veterans deduction. The 50% ownership and five-unit rules come from OTR/MOVA pages, not from the (a-2) text as read. otr.cfo.dc.gov/node/409562 (an older OTR page on this deduction) returned 403 to automated checks and was not used. D.C. Code 47-850.05 does not exist (404); the deduction lives in 47-850(a-2)."
+}

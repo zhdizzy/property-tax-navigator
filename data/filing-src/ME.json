@@ -1,0 +1,98 @@
+{
+  "state": "ME",
+  "officeType": "municipal assessor (town/city); State Tax Assessor (Maine Revenue Services Property Tax Division) for the Unorganized Territory",
+  "officeTypeNote": "Application form: 'You must file this application along with any supporting documents with the municipal assessor by April 1. If you live in the unorganized territory, file this application with the State Tax Assessor at: Maine Revenue Services, Property Tax Division, P.O. Box 9106, Augusta, ME 04332-9106.' Maine has no county-level property tax office.",
+  "officeLocator": {
+    "tier": 2,
+    "url": null,
+    "label": null,
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.maine.gov/revenue/taxes/tax-relief-credits-programs/property-tax-relief-programs/property-tax-exemptions",
+    "note": "Maine Revenue Services publishes no directory of municipal assessors (its 'Assessor Agents' page lists only MRS field staff). The exemptions page says 'All of the above exemptions require completion of an application to the local town office where the property is located.' MRS Property Tax Division contact page: https://www.maine.gov/revenue/taxes/property-tax/contact-information."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Property Tax Exemption Application for veterans of the Armed Forces of the United States (36 M.R.S. §653 and Property Tax Bulletin No. 7); covers the $6,000 exemption, the $7,000 WWI exemption and the $50,000 specially adapted housing exemption",
+      "number": null,
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/2024-10/veterans_application_form.pdf",
+      "revision": "Rev 05/24",
+      "filedWith": "municipal assessor of the town of residence (State Tax Assessor for the Unorganized Territory), by April 1"
+    },
+    {
+      "programRef": "*",
+      "name": "Veteran exemption application for a widowed spouse, parent or minor child of a deceased veteran",
+      "number": null,
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/2024-10/veterans_WPMC.application_form.pdf",
+      "revision": "2024-10 posting",
+      "filedWith": "municipal assessor, by April 1"
+    },
+    {
+      "programRef": "*",
+      "name": "Property Tax Bulletin No. 7, Tax Exemptions for Veterans (MRS guidance: eligibility, application, proof of entitlement)",
+      "number": "Bulletin No. 7",
+      "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/bull7.pdf",
+      "revision": "October 14, 2025 (replaces October 6, 2022)",
+      "filedWith": "n/a (guidance)"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "04-01",
+    "text": "36 M.R.S. §653(1)(G): 'make written application and file written proof of entitlement on or before the first day of April, in the year in which the exemption is first requested, with the assessors of the place in which the person resides.' Bulletin 7: file 'by April 1 of the year the applicant first requests an exemption.' April 1 is also Maine's assessment date."
+  },
+  "effective": "Property tax year beginning April 1 of the year the application is filed (taxes committed that summer/fall). The exemption is applied at the municipality's certified ratio: 'the assessor must multiply the full amount of the exemption by the certified ratio.'",
+  "lateFiling": "An application after April 1 takes effect the following April 1. Exception (Bulletin 7): 'An assessor may abate taxes for a qualifying spouse or child who misses the April 1 application deadline, if that qualifying individual applies within one year of the commitment date and the related veteran died during the 12-month period preceding April 1.'",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "No refund of prior years for a late veteran application, other than the surviving spouse/child abatement window described under lateFiling (36 M.R.S. §841 abatement discretion otherwise)."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "§653(1)(G): 'The assessors shall thereafter grant the exemption to any person who is so qualified and remains a resident of that place or until they are notified of reason or desire for discontinuance.' Bulletin 7: 'Once the veteran or other qualifying individual is approved for an exemption, an annual application for exemption is not necessary unless specifically requested by the assessor.'"
+  },
+  "ratingChange": "Under §653 the only disability test is receipt of federal pension or compensation for TOTAL disability (service-connected total disability qualifies at any age; non-service-connected total disability needs wartime service or an expeditionary medal). A veteran who becomes 100% files the application with the VA benefit summary letter by the next April 1. Starting with the April 1, 2027 tax year the new §683-A tiers the add-on by rating (60% $10K up to 100% $50K), so a rating change will change the amount; the owner 'shall notify the assessor promptly when ... status of the owner changes' (§684(4)).",
+  "move": "The exemption is tied to the town of permanent residence; a veteran who moves files a new application with the new town's assessor by April 1 (§653(1)(G) requires filing 'with the assessors of the place in which the person resides'). Property conveyed to obtain the exemption is not exempt except transfers between spouses (§653(1)(I)).",
+  "onlineFiling": {
+    "available": null,
+    "text": "Varies by municipality; MRS provides fillable PDFs only. Many towns accept the signed PDF by email or mail; some require originals."
+  },
+  "documents": [
+    "DD Form 214 (Report of Separation / Certificate of Release or Discharge from Active Duty) or similar DoD form",
+    "VA benefit summary letter (or other VA certificate/letter) showing receipt of compensation or pension for total disability; Bulletin 7: 'the applicant may provide other proof of compensation or pension payment for total disability or service-connected disability' if the letter is unavailable",
+    "Proof of age (birth certificate, driver's license or state ID) if claiming as a 62+ wartime veteran",
+    "For the $50,000 specially adapted housing exemption: VA letter verifying total and permanent disability and the SAH grant",
+    "Surviving spouse/parent/minor child: VA or federal letter showing the pension or compensation based on the veteran's death; applications are confidential (not public records)"
+  ],
+  "survivingSpouse": "§653(1)(D): $6,000 (or $7,000 WWI) exemption for 'the unremarried surviving spouse or minor child of any veteran who would be entitled to the exemption if living, or who is in receipt of a pension or compensation from the Federal Government as the surviving spouse or minor child'; also an unremarried surviving-spouse parent 62+ receiving a pension based on a child's service-connected death. SAH $50,000 exemption also extends to unremarried surviving spouses (§653(1)(D-1)). Separate WPMC application form. From April 1, 2027, §683-A(2): the survivor 'is eligible for the additional exemption that the deceased veteran would be eligible for ... if living.'",
+  "appeal": "Denial of a §653 exemption is contested by an abatement request to the assessor under 36 M.R.S. §841 (within 185 days of commitment), then the local board of assessment review or county commissioners and the State Board of Property Tax Review/Superior Court. Not detailed in the sources read.",
+  "statute": "36 M.R.S. §653 (through tax year beginning April 1, 2026); 36 M.R.S. §683-A(2) and §684 (new veteran homestead add-on from April 1, 2027, PL 2025 c. 650 Pt. M); 36 M.R.S. §5219-KK (Property Tax Fairness Credit, veteran expansion)",
+  "sourceUrls": [
+    { "url": "https://legislature.maine.gov/statutes/36/title36sec653.html", "title": "36 M.R.S. §653 Estates of veterans (incl. §653(3) discontinuance from April 1, 2027)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://legislature.maine.gov/statutes/36/title36sec683-A.html", "title": "36 M.R.S. §683-A Homestead exemption (new general $25,000 exemption plus veteran tiers, effective tax years beginning April 1, 2027)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://legislature.maine.gov/statutes/36/title36sec684.html", "title": "36 M.R.S. §684 Forms; application (April 1 filing, proof of entitlement for veteran add-on, no reapplication)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.maine.gov/revenue/taxes/tax-relief-credits-programs/property-tax-relief-programs/property-tax-exemptions", "title": "Maine Revenue Services: Property Tax Exemptions (Veteran Exemption, SAH exemption, application links)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/2024-10/veterans_application_form.pdf", "title": "MRS Property Tax Exemption Application for veterans (Rev 05/24)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/2024-10/veterans_WPMC.application_form.pdf", "title": "MRS veteran exemption application for widowed spouse, parent or minor child", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/bull7.pdf", "title": "MRS Property Tax Bulletin No. 7, Tax Exemptions for Veterans (Oct 14, 2025)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.maine.gov/revenue/tax-return-forms/property-tax", "title": "MRS Property Tax Forms", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.maine.gov/revenue/taxes/property-tax/municipal-services", "title": "MRS Property Tax Division: Municipal Services", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "propertyTax.programs[0] (Veteran Property Tax Exemption, $6,000)",
+      "issue": "MAJOR UPCOMING CHANGE: PL 2025 c. 650 Part M discontinues the §653 veteran exemption 'beginning with property tax years beginning on or after April 1, 2027' (§653(3)) and replaces it with 36 M.R.S. §683-A: a $25,000 general homestead exemption plus a veteran add-on tiered by VA rating: under 60% (or no rating) $5,000 if under 62 / $6,000 if 62+ / $7,000 WWI; 60% $10,000; 70% $20,000; 80% $30,000; 90% $40,000; 100% $50,000; SAH grant $50,000 (one paragraph only). Wartime service is no longer required for the rating-based tiers and the age-62/total-disability gate disappears. The current data row ($6,000 at 100%, wartimeRequired) is correct only through the April 1, 2026 tax year.",
+      "source": "https://legislature.maine.gov/statutes/36/title36sec683-A.html"
+    },
+    {
+      "field": "propertyTax.programs[0].summary",
+      "issue": "Summary says Maine has no full veteran exemption and models $50,000 only for SAH; from 4/1/2027 a 100%-rated veteran's homestead gets $25,000 + $50,000 = $75,000 of just value exempt (still partial). Also note the 2022 Property Tax Fairness Credit expansion for veterans (income-tax-administered), which MRS flags on the exemptions page.",
+      "source": "https://www.maine.gov/revenue/taxes/tax-relief-credits-programs/property-tax-relief-programs/property-tax-exemptions"
+    }
+  ],
+  "notes": "maine.gov returns 403/404 to most automated user agents; pages were retrieved with a Safari desktop UA over HTTP/1.1. MRS has not yet posted guidance or a form for the §683-A veteran add-on that starts with the April 1, 2027 tax year; applications for 2027 will presumably run through the homestead exemption application under §684 (written application plus proof of entitlement by April 1, 2027, then automatic continuation). The existing §653 application (Rev 05/24) and Bulletin 7 (Oct 2025) remain the filing path for the April 1, 2026 tax year. Veterans in the Unorganized Territory file with MRS directly."
+}

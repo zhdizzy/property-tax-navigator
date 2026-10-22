@@ -1,0 +1,71 @@
+{
+  "state": "RI",
+  "officeType": "municipal tax assessor (city or town)",
+  "officeTypeNote": "Rhode Island has no county government for property tax; each of the 39 cities and towns sets its own exemption amount (or flat tax credit), its own application form, and its own filing date within the statutory rule. File with the tax assessor of the city or town where you live.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://www.ri.gov/towns/landtaxdata/",
+    "label": "RI.gov: Municipal land records and tax assessment sites index (links each city/town's tax assessor page)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://municipalfinance.ri.gov/sites/g/files/xkgbur546/files/documents/data/exemptions/Veterans-Senior-Exemptions-Report.pdf",
+    "note": "The Division of Municipal Finance 'Blue Book' Directory of City & Town Officials (municipalfinance.ri.gov/resources/directory) is the fuller directory but returned 403 to automated checks on 2026-10-21 and is omitted. The DMF Veterans/Senior Exemptions Report lists each municipality's veteran exemption amounts and assessor contact details (self-reported, assessment date 12/31/21)."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Municipal veteran exemption application (each city/town prescribes its own; e.g. Johnston 'Veteran Exemption Application', East Providence veterans/widow exemption form)",
+      "number": null,
+      "url": null,
+      "revision": null,
+      "filedWith": "city/town tax assessor"
+    }
+  ],
+  "deadline": {
+    "type": "varies-by-county",
+    "date": null,
+    "text": "RIGL 44-3-4(a)(2): evidence of eligibility must be \"presented to the assessors, on or before the last day on which sworn statements may be filed\" (the municipality's annual account/declaration date, commonly December 31 or January 31 for the December 31 assessment date). Towns set and publish their own dates (examples found: Johnston April 15; East Providence May 25 for the next roll; South Kingstown at least five days before tax roll certification). Confirm with the assessor."
+  },
+  "effective": "Applies to the tax roll following timely filing (assessment date December 31 in all municipalities; bills issued the following summer).",
+  "lateFiling": "Not provided by statute; a late application is held for the next roll unless the municipality's ordinance says otherwise.",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "No statutory refund for prior years; the exemption attaches prospectively to the next roll after proof is presented."
+  },
+  "renewal": {
+    "type": "on-change",
+    "text": "RIGL 44-3-4(a)(2): evidence of eligibility, once presented, \"shall stand so long as the person's legal residence remains unchanged.\" No annual refile under state law; some towns require a new application after a move within town or periodic affirmation. The totally-disabled ($10,000+) tier requires VA certification of total disability, which assessors may ask to see updated."
+  },
+  "ratingChange": "The base $1,000 wartime exemption needs no rating. The $10,000 statutory tier (RIGL 44-3-4(c)) requires a VA determination of total (100%) service-connected disability; many towns adopt larger amounts for that tier (DMF report: $90 to $250,000 in assessed value, median $10,000). A veteran newly rated totally disabled presents the VA letter to the assessor by the filing date; a rating drop below total disability must be reported.",
+  "move": "Proof of eligibility stands only while \"legal residence remains unchanged\"; on moving to another RI city or town, file a new application with that assessor (an applicant may not receive the exemption in more than one community or state).",
+  "onlineFiling": {
+    "available": null,
+    "text": "Varies by municipality; several towns post fillable or online forms, most accept mail or in-person filing."
+  },
+  "documents": [
+    "DD-214 or other proof of honorable discharge and wartime (or qualifying conflict/medal) service under RIGL 44-3-4 and 44-3-4.2",
+    "Proof of Rhode Island legal residence at the property (and that no exemption is claimed in another community or state)",
+    "Totally disabled tier: VA letter certifying total (100%) service-connected disability",
+    "Specially adapted housing tier: VA documentation of the housing grant (RIGL 44-3-4(b) 'satisfactory proof')",
+    "Unmarried widow/widower: veteran's death certificate and marriage certificate"
+  ],
+  "survivingSpouse": "RIGL 44-3-4(a)(1) extends the exemption to the unmarried widow or widower of a qualifying veteran; subsection (d) provides that remarriage does not bar benefits if the remarriage was void, ended by death, or annulled/dissolved by a court. Gold Star parents have a separate exemption under RIGL 44-3-5.",
+  "appeal": "Denials are appealed under the municipality's assessment appeal process (appeal to the assessor, then the local Board of Assessment Review, then Superior Court under RIGL 44-5-26); not re-verified for this record.",
+  "statute": "RIGL 44-3-4 (veterans' exemptions; last amended P.L. 2025 ch. 189 and ch. 220, effective July 1, 2025); RIGL 44-3-4.2 (qualifying conflicts/medals); RIGL 44-3-5 (Gold Star parents)",
+  "sourceUrls": [
+    { "url": "https://webserver.rilegislature.gov/Statutes/TITLE44/44-3/44-3-4.htm", "title": "RIGL 44-3-4 Veterans' exemptions (current text with 2025 amendments)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://municipalfinance.ri.gov/sites/g/files/xkgbur546/files/documents/data/exemptions/Veterans-Senior-Exemptions-Report.pdf", "title": "RI Division of Municipal Finance: Report on the Veteran, Senior, and Other Tax Exemption Programs (Sept 2022, assessment date 12/31/21)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.ri.gov/towns/landtaxdata/", "title": "RI.gov: Rhode Island Land Records / municipal tax assessment links", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "Veterans Exemption.survivingSpouse",
+      "issue": "Row shows false; RIGL 44-3-4(a)(1) extends the exemption to the unmarried widow or widower.",
+      "source": "https://webserver.rilegislature.gov/Statutes/TITLE44/44-3/44-3-4.htm"
+    }
+  ],
+  "notes": "Everything beyond the statute is municipal: forms, exact dates and amounts differ across 39 cities and towns, so form fields are null by design. The DMF report is the state's only consolidated listing but is self-reported and dated (12/31/21 assessment); a newer edition was not found. municipalfinance.ri.gov HTML pages and vets.ri.gov returned 403 to automated requests and are omitted. The 'last day on which sworn statements may be filed' is tied to each town's annual account deadline under RIGL 44-5-15, which was not opened for this record. Appeal path not re-verified."
+}

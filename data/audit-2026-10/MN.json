@@ -1,0 +1,100 @@
+{
+  "state": "MN",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0112,
+    "sourceValue": 0.0100,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Tax Foundation 'Property Taxes by State' table (Mar 2026): Minnesota 1.00% for 2024 (1.01% for 2023), total real taxes paid / total owner-occupied value (ACS B25082, B25090). File value 1.12% is 0.12 pp above, just outside tolerance."
+  },
+  "programs": [
+    {
+      "name": "Market Value Exclusion",
+      "status": "confirmed",
+      "fields": {
+        "nonVeteran": {
+          "current": true,
+          "correct": true,
+          "quote": "General homestead market value exclusion under Minn. Stat. 273.13 subd. 35 (not subd. 34); not a veteran benefit",
+          "source": "https://www.revisor.mn.gov/statutes/cite/273.13"
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Correctly excluded from veteran savings. The '$38,000 for homes <= $95,000' figure in the summary was not re-verified in this pass (subd. 35 not read); it is informational only."
+    },
+    {
+      "name": "Disabled Veterans Homestead Market Value Exclusion",
+      "status": "confirmed",
+      "fields": {
+        "ratingRequired": {
+          "current": 70,
+          "correct": 70,
+          "quote": "a service-connected disability of 70 percent or more as certified by the United States Department of Veterans Affairs",
+          "source": "https://www.revisor.mn.gov/statutes/cite/273.13"
+        },
+        "tiers": {
+          "current": [ { "minRating": 70, "maxRating": 100, "value": 150000 } ],
+          "correct": [ { "minRating": 70, "maxRating": 100, "value": 150000 } ],
+          "quote": "For a disability rating of 70 percent or more, $150,000 of market value is excluded",
+          "source": "https://www.revisor.mn.gov/statutes/cite/273.13"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": false,
+          "quote": "Paragraph (c) carry-over applies only to 'a veteran ... who qualifies for the exclusion under paragraph (b), clause (2)' (the $300,000 tier)",
+          "source": "https://www.revisor.mn.gov/statutes/cite/273.13"
+        }
+      },
+      "effectiveChanges": "No change for TY2026. H.F. 3727 (2026) would have raised the tiers to $225,000 / $450,000 for assessment year 2026; its last action is 'Author added Warwas' (05/12/2026) with no floor vote or chapter, so it did not pass. Senate companions (S.F. 615 $200K/$400K, S.F. 772 $250K/$500K) likewise did not pass. The revisor's current 273.13 history shows no 2024-2026 amendment to subd. 34.",
+      "note": "Amounts confirmed. Application is due Dec 31 of the first assessment year; exclusion reduces taxes payable the following year."
+    },
+    {
+      "name": "Disabled Veterans Homestead MVE — 100% P&T tier",
+      "status": "confirmed",
+      "fields": {
+        "exemptionValue": {
+          "current": 300000,
+          "correct": 300000,
+          "quote": "for a total (100 percent) and permanent disability, $300,000 of market value is excluded",
+          "source": "https://www.revisor.mn.gov/statutes/cite/273.13"
+        },
+        "ptRequired": {
+          "current": true,
+          "correct": true,
+          "quote": "total (100 percent) and permanent disability",
+          "source": "https://www.revisor.mn.gov/statutes/cite/273.13"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "the exclusion shall carry over to the benefit of the veteran's spouse ... until such time as the spouse remarries, or sells, transfers, or otherwise disposes of the property",
+          "source": "https://www.revisor.mn.gov/statutes/cite/273.13"
+        },
+        "summary": {
+          "current": "Extends to surviving spouse w/ DIC and primary family caregiver.",
+          "correct": "Carries over to the surviving spouse who holds title and lives there until remarriage or sale (subd. 34(c)); a spouse receiving DIC or a spouse of a service member who died in service may apply directly (subd. 34(d), (k)); a primary family caregiver may claim it only if the veteran owns no Minnesota homestead (subd. 34(e)).",
+          "quote": "the primary family caregiver's homestead 'is eligible for the exclusion' that the veteran would otherwise qualify for under paragraph (b)",
+          "source": "https://www.revisor.mn.gov/statutes/cite/273.13"
+        }
+      },
+      "effectiveChanges": "Same as the 70% tier: no 2026 change; the H.F. 3727 increase to $450,000 did not pass.",
+      "note": "The lead on 'any 2026 change' resolves to no enactment. Re-check after the 2027 session, since the bills had bipartisan co-authors."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "unverified",
+    "correct": "",
+    "source": ""
+  },
+  "sources": [
+    { "url": "https://www.revisor.mn.gov/statutes/cite/273.13", "title": "Minn. Stat. 273.13, subd. 34 (homestead of veteran with a disability or family caregiver)", "status": 200 },
+    { "url": "https://www.revisor.mn.gov/bills/94/2026/0/HF/3727/?body=house", "title": "Minnesota Legislature bill status, H.F. 3727 (2026): last action 05/12/2026, not enacted", "status": 200 },
+    { "url": "https://www.revenue.state.mn.us/market-value-exclusion-veterans-disability", "title": "MN Department of Revenue: Market Value Exclusion for Veterans with a Disability", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation, Property Taxes by State and County, 2026 (2024 ACS data)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "The $150,000 (70%+) and $300,000 (100% P&T) exclusions are confirmed in Minn. Stat. 273.13 subd. 34 with no 2024-2026 amendment; the 2026 bills to raise them (H.F. 3727 and Senate companions) did not pass. Rows are structurally right; the P&T row's spouse/caregiver sentence could be tightened, and the 1.12% tax rate sits 0.12 pp above the Tax Foundation 2024 figure."
+}

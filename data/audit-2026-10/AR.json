@@ -1,0 +1,40 @@
+{
+  "state": "AR",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0062,
+    "sourceValue": 0.0056,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation 2024 effective rate (ACS 5-year) 0.56%; file is 0.06 points high, within tolerance."
+  },
+  "programs": [
+    {
+      "name": "Homestead Exemption",
+      "status": "corrected",
+      "fields": {
+        "ratingRequired": { "current": 100, "correct": 100, "quote": "for the loss of, or the loss of use of, one or more limbs, for total blindness in one or both eyes, or for service-connected 100% total and permanent disability is exempt from payment of all state taxes on the homestead and personal property", "source": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=/Assembly/2025/2025R/Fiscal+Impacts/HB1129-DFA2.pdf" },
+        "ptRequired": { "current": null, "correct": true, "quote": "service-connected 100% total and permanent disability", "source": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=/Assembly/2025/2025R/Fiscal+Impacts/HB1129-DFA2.pdf" },
+        "survivingSpouse": { "current": true, "correct": true, "quote": "Generally, a surviving spouse and minor dependent child of a deceased disabled veteran are also exempt from payment of all state taxes on the homestead.", "source": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=/Assembly/2025/2025R/Fiscal+Impacts/HB1129-DFA2.pdf" },
+        "details ('Must be recertified annually')": { "current": "Must be recertified annually.", "correct": "One-time VA letter to the county collector (Act 876 of 2025, assessment years from Jan 1, 2025)", "quote": "A letter from the department required under this subsection is required to be submitted only one (1) time to establish eligibility ... Annual submission of a letter from the department is not required.", "source": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2FACT876.pdf" },
+        "homestead acreage": { "current": "not stated", "correct": "dwelling plus up to 160 contiguous non-commercial acres (Act 407 of 2025)", "quote": "Up to one hundred sixty (160) acres of real property contiguous to the dwelling ... if the contiguous property is not being used for a commercial purpose", "source": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2FACT407.pdf" }
+      },
+      "effectiveChanges": "Three 2025 acts, all effective for assessment years beginning on or after January 1, 2025 and so already governing TY2026/TY2027 bills: Act 407 (HB1129, approved 3/25/25) raises the homestead land allowance from 40 to 160 contiguous acres; Act 876 (HB1072, approved 4/17/25) makes the VA letter a one-time filing with the county collector and adds a 3-year clawback for erroneous exemptions; Act 880 (HB1809, approved 4/17/25) lets a home held in the veteran's revocable trust, an irrevocable trust of which the veteran is beneficiary, or a veteran/spouse-only LLC qualify, and limits exempt personal property to items registered in the veteran's name.",
+      "note": "Eligibility also reaches veterans with loss or loss of use of one or more limbs or total blindness in one or both eyes (special monthly compensation), which the row does not mention. The base text of Ark. Code 26-3-306(a)-(f) is published only through a LexisNexis viewer and was not opened; eligibility wording is taken from the 2025 DFA fiscal impact statement (state agency) and the 2023/2025 acts. The exemption covers 'all state taxes' on homestead and personal property; the exempt personal property is the veteran's non-commercial, veteran-registered items (Act 880). The Arkansas DVA 'Guide to AR Property Taxes' page remains 404."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": { "status": "confirmed", "correct": "", "source": "" },
+  "sources": [
+    { "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2FACT876.pdf", "title": "Act 876 of 2025 (HB1072): one-time VA letter; collector notification; 3-year clawback", "status": 200 },
+    { "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2FACT407.pdf", "title": "Act 407 of 2025 (HB1129): homestead = dwelling + up to 160 contiguous acres", "status": 200 },
+    { "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2FACT880.pdf", "title": "Act 880 of 2025 (HB1809): trust/LLC-held homes qualify; personal property registered to the veteran", "status": 200 },
+    { "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2023R%2FPublic%2FACT395.pdf", "title": "Act 395 of 2023 (HB1143): definition of 'homestead' and 'personal property' in 26-3-306(a)(2)", "status": 200 },
+    { "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=/Assembly/2025/2025R/Fiscal+Impacts/HB1129-DFA2.pdf", "title": "Arkansas DFA Fiscal Impact Statement, HB1129 (2025): restates 26-3-306 eligibility and scope", "status": 200 },
+    { "url": "https://arkleg.state.ar.us/Bills/Detail?id=HB1129&ddBienniumSession=2025%2F2025R", "title": "HB1129 (2025) bill detail: now Act 407", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 effective rates)", "status": 200 }
+  ],
+  "confidence": "partial",
+  "summary": "Arkansas's full homestead-and-personal-property exemption for 100% P&T (and limb-loss/blindness SMC) veterans and their unremarried spouses is confirmed, but the `details` string still says 'recertified annually' (Act 876 of 2025 made the VA letter one-time) and the row should carry ptRequired: true plus the Act 407 land allowance of 160 acres. Confidence is partial because the codified 26-3-306 text is behind a LexisNexis viewer; the 2025 acts and the DFA fiscal statement supplied the operative language."
+}

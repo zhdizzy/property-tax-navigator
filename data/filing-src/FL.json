@@ -1,0 +1,98 @@
+{
+  "state": "FL",
+  "officeType": "county property appraiser",
+  "officeTypeNote": "File with the COUNTY PROPERTY APPRAISER (an elected constitutional officer), not the tax collector (who bills and collects). The Florida Department of Revenue prescribes the forms and oversees, but does not take applications.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://floridarevenue.com/property/Pages/LocalOfficials.aspx",
+    "label": "Florida Department of Revenue: Property Appraisers, Tax Collectors and VAB clerks by county",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://floridarevenue.com/property/Pages/Taxpayers_Exemptions.aspx",
+    "note": "Single page with each county's property appraiser website link and contact details."
+  },
+  "forms": [
+    {
+      "programRef": "Homestead Exemption",
+      "name": "Original Application for Homestead and Related Tax Exemptions",
+      "number": "DR-501",
+      "url": "https://floridarevenue.com/property/Documents/dr501.pdf",
+      "revision": "R. 01/26 (Rule 12D-16.002, effective 02/26)",
+      "filedWith": "county property appraiser",
+      "note": "One form covers homestead plus the service-connected total and permanent disability exemption (s. 196.081), the $5,000 disabled veteran exemption (s. 196.24), the wheelchair-confined veteran exemption (s. 196.091), the surviving spouse of a veteran who died on active duty (s. 196.081(4)), and the deployed-military exemption checkbox. Also use it to claim the related exemption when homestead is already on file."
+    },
+    {
+      "programRef": "Wartime Veteran 10%+ Disability Discount",
+      "name": "Original Application for Homestead and Related Tax Exemptions",
+      "number": "DR-501",
+      "url": "https://floridarevenue.com/property/Documents/dr501.pdf",
+      "revision": "R. 01/26",
+      "filedWith": "county property appraiser",
+      "note": "Check 'Veteran disabled 10% or more' (s. 196.24)."
+    },
+    {
+      "programRef": "Disabled Veteran Age 65+ Property Tax Discount",
+      "name": "Application and Return for Homestead Tax Discount, Veterans Age 65 and Older with a Combat-Related Disability and Surviving Spouse",
+      "number": "DR-501DV",
+      "url": "https://floridarevenue.com/property/Documents/dr501dv.pdf",
+      "revision": "R. 11/21",
+      "filedWith": "county property appraiser",
+      "note": "s. 196.082 discount. Requires copy of honorable discharge (e.g. DD-214), the VA rating decision letter, and evidence of the combat-related portion if not in the rating letter; submit by March 1."
+    },
+    {
+      "programRef": "Surviving Spouse of KIA Service Member",
+      "name": "Original Application for Homestead and Related Tax Exemptions",
+      "number": "DR-501",
+      "url": "https://floridarevenue.com/property/Documents/dr501.pdf",
+      "revision": "R. 01/26",
+      "filedWith": "county property appraiser",
+      "note": "Check 'Surviving spouse of veteran who died while on active duty' (s. 196.081(4)); attach the official letter from the U.S. Government or VA."
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "03-01",
+    "text": "F.S. 196.011(1)(a): application must be filed with the county property appraiser 'on or before March 1 of each year'; failure to do so 'shall constitute a waiver of the exemption privilege for that year,' subject to the late-filing provisions in subsections (8) and (9). DR-501: 'Application due to property appraiser by March 1.' Qualification (ownership, permanent residency, disability status) is measured as of January 1."
+  },
+  "effective": "Tax year beginning January 1 of the year of application (status measured on January 1). Not prorated, except the s. 196.081(1)(b) refund: a totally and permanently disabled veteran who acquires a new homestead between January 1 and November 1 and is granted the exemption the next year may receive a prorated refund of that first year's tax on the new property.",
+  "lateFiling": "F.S. 196.011(9): a person who misses March 1 may file 'on or before the 25th day following the mailing' of the TRIM notices under s. 194.011(1) (typically mid-August to early September); the property appraiser may grant the exemption for 'extenuating circumstances judged by the property appraiser to warrant granting the exemption,' otherwise the applicant may petition the value adjustment board within the same 25-day window with a $15 nonrefundable fee. F.S. 196.011(8): the VAB must grant the exemption where failure to apply by March 1 is documented as 'the result of postal error.'",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 4,
+    "text": "Limited. F.S. 196.081(5): a veteran may apply BEFORE receiving the VA documentation; once the letter arrives the exemption is granted 'as of the date of the original application' and excess taxes paid are refunded, limited to the 4-year period in s. 197.182(1)(e). The same rule applies to the 65+ combat discount (s. 196.082(7)). No refund is available for years in which no application was on file."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "F.S. 196.011(6)-(7): once the original application is granted the property appraiser mails a renewal application by February 1 each year, which 'shall be accepted as evidence of exemption' unless denied; F.S. 196.011(10) lets a county waive the annual renewal entirely (most do, so the exemption renews automatically). The owner must notify the property appraiser of any change in use, ownership, or (for the veteran discount) percentage of disability (s. 196.011(10)(d)); unpaid back taxes can be assessed for up to 10 years with 15 percent interest and a 50 percent penalty."
+  },
+  "ratingChange": "s. 196.081 requires a VA letter certifying total and permanent service-connected disability; loss of that status must be reported (s. 196.011(10)). For s. 196.082 the discount equals the combat-related percentage, and the veteran 'must notify the property appraiser promptly whenever ... the percentage of disability' changes. A veteran upgraded to 100% P&T files the new VA letter with DR-501 by March 1 (or applies early and gets the s. 196.081(5) refund).",
+  "move": "File a new DR-501 with the property appraiser of the new county by March 1. s. 196.081(1)(b): a veteran already receiving the total exemption who acquires a new homestead between January 1 and November 1 can get a prorated refund of taxes paid on the new property for that year once the exemption is granted the following year.",
+  "onlineFiling": {
+    "available": null,
+    "text": "Most county property appraisers offer online homestead/exemption filing on their own sites; DR-501 is also accepted by mail or in person. No statewide portal."
+  },
+  "documents": [
+    "s. 196.081: 'letter from the United States Government or United States Department of Veterans Affairs' certifying total and permanent service-connected disability (or that the veteran is confined to a wheelchair / SAH grant for s. 196.091)",
+    "s. 196.24: VA letter showing the 10% or greater service-connected disability",
+    "s. 196.082 (DR-501DV): VA rating decision letter stating the percentage, evidence the disability is combat-related, copy of honorable discharge (DD-214), proof of age 65+ as of January 1",
+    "Proof of Florida permanent residency on January 1 (DR-501 lists Florida driver license or ID, voter registration, vehicle registration, declaration of domicile) and Social Security numbers (s. 196.011(1)(b))",
+    "Surviving spouse: death certificate; for s. 196.081(4), the official letter attesting the service member's death while on active duty"
+  ],
+  "survivingSpouse": "s. 196.081(3): the surviving spouse of a totally and permanently disabled veteran keeps the exemption while holding title and living there; on sale, the exemption amount (up to the most recent tax roll value) transfers to a new primary residence until remarriage. s. 196.082(3): the 65+ combat discount 'carries over to the benefit of the veteran's spouse' until remarriage or disposal. s. 196.081(4): surviving spouse of a veteran who died while on active duty is fully exempt.",
+  "appeal": "Denial notices issue by July 1; petition the county value adjustment board (s. 194.011; s. 196.011(9) for late-filing petitions, $15 fee), then circuit court.",
+  "statute": "F.S. 196.011, 196.081, 196.082, 196.24, 196.091, 196.173 (deployed), 197.182(1)(e); Rule 12D-16.002, F.A.C.",
+  "sourceUrls": [
+    { "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.011.html", "title": "F.S. 196.011 Annual application required for exemption", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.081.html", "title": "F.S. 196.081 Exemption for certain permanently and totally disabled veterans and surviving spouses", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.082.html", "title": "F.S. 196.082 Discounts for disabled veterans 65+", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.24.html", "title": "F.S. 196.24 Exemption for disabled ex-servicemember", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://floridarevenue.com/property/Documents/dr501.pdf", "title": "Form DR-501 (R. 01/26)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://floridarevenue.com/property/Documents/dr501dv.pdf", "title": "Form DR-501DV (R. 11/21)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://floridarevenue.com/property/Pages/Forms.aspx", "title": "Florida DOR Property Tax Oversight forms index", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://floridarevenue.com/property/Pages/LocalOfficials.aspx", "title": "Florida DOR local officials directory", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [],
+  "notes": "Statutes read via WebFetch of leg.state.fl.us; forms read with pdftotext. The 196.24 statute page returned 200 but was not opened (its filing is the generic DR-501/March 1 process). The deployed-military exemption (s. 196.173) uses a separate form (DR-501M); it was not verified in this pass and is omitted from forms. The DR-501 program checkbox for 196.24 is labeled 'Veteran disabled 10% or more'."
+}

@@ -1,0 +1,130 @@
+{
+  "state": "IN",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0085,
+    "sourceValue": 0.0074,
+    "source": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Census ACS 2020-2024 5-year: median real estate taxes $1,614 / median value $218,200 (acsdt5y2024-b25077.dat) = 0.740%. File 0.85% is 0.11 pp high (just outside tolerance)."
+  },
+  "programs": [
+    {
+      "name": "Totally Disabled Veteran Full Exemption (IC 6-1.1-12-14, HEA 1210-2026)",
+      "status": "confirmed",
+      "fields": {
+        "type": {
+          "current": "full",
+          "correct": "full",
+          "quote": "Section 14 provides a deduction equal to 100% of the assessed value of real property, a mobile home ... Beginning with the 2026 assessment date (2026 Pay 2027), there is no maximum assessed value",
+          "source": "https://www.in.gov/dlgf/files/2026-memos/Veterans-Deductions-FAQ_DLGF_08122026-1.pdf"
+        },
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "quote": "IC 6-1.1-12-14 does not state that the veteran's total disability must be service-connected. Section 14 requires a total disability evidenced by a VA pension certificate or award of compensation, or an IDVA certificate of eligibility.",
+          "source": "https://www.in.gov/dlgf/files/2026-memos/Veterans-Deductions-FAQ_DLGF_08122026-1.pdf",
+          "note": "Total disability need NOT be service-connected (VA pension suffices). Also requires 90+ days service, honorable discharge, and one year of Indiana residency before the assessment date; trusts are not eligible (FAQ Q3)."
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "if the veteran satisfied IC 6-1.1-12-14(a)(1) through (a)(4) at the time of death and the surviving spouse owns or is buying the property",
+          "source": "https://www.in.gov/dlgf/files/2026-memos/Veterans-Deductions-FAQ_DLGF_08122026-1.pdf"
+        }
+      },
+      "effectiveChanges": "Effective 2026 assessment date (2026-pay-2027 bills). Transition: anyone who held the old $14,000 deduction is auto-converted to the $250 credit and 'must file a new application to receive the amended 100% deduction' (Form 12662 R20/6-26) by January 15, 2027. Receiving the 100% deduction bars the $250/$350 credits (IC 6-1.1-12-14(d)).",
+      "note": "Deduction covers the homestead parcel only (FAQ Q6: not property that is not part of or used with the home)."
+    },
+    {
+      "name": "Wartime Disabled Veteran Credit (IC 6-1.1-51.3-6)",
+      "status": "confirmed",
+      "fields": {
+        "exemptionValue": {
+          "current": 350,
+          "correct": 350,
+          "quote": "$350 Service-Connected Disability Credit (IC § 6-1.1-51.3-6) ... have a service-connected disability of at least 10%.",
+          "source": "https://www.in.gov/dlgf/files/2026-memos/Veterans-Deductions-FAQ_DLGF_08122026-1.pdf"
+        },
+        "wartimeRequired": {
+          "current": true,
+          "correct": true,
+          "quote": "Wartime service is not required for the 100% deduction under IC 6-1.1-12-14, and it is not required for the $250 credit under IC 6-1.1-51.3-5. The $350 credit ...",
+          "source": "https://www.in.gov/dlgf/files/2026-memos/Veterans-Deductions-FAQ_DLGF_08122026-1.pdf"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "For the $350 credit, the deceased veteran must have satisfied IC 6-1.1-51.3-6(a)(1) through (a)(4) at death, and the surviving spouse must satisfy the ownership or qualifying-contract requirement",
+          "source": "https://www.in.gov/dlgf/files/2026-memos/Veterans-Deductions-FAQ_DLGF_08122026-1.pdf"
+        }
+      },
+      "effectiveChanges": "2026-pay-2027: DLGF recommends counties auto-convert the former $24,960 deduction to the $350 credit; no Indiana-residency requirement; credit may be split across properties; unused credit is not refunded or carried.",
+      "note": ""
+    },
+    {
+      "name": "Deduction for Property Received from Tax Exempt Organization",
+      "status": "corrected",
+      "fields": {
+        "ratingRequired": {
+          "current": 50,
+          "correct": 50,
+          "quote": "Form 12662 Section V (IC 6-1.1-12-14.5): deduction equal to the veteran's disability percentage of assessed value for a homestead donated by a 501(c)(3); requires 90 days service, honorable discharge, 50%+ rating (per filing-layer read of the form).",
+          "source": "https://forms.in.gov/Download.aspx?id=16787",
+          "note": "DLGF 5/27/2026 memo table lists 'Deduction for Homestead Donated to Veteran' and bars combining it with the 100% deduction ('A person may not claim this deduction with the Deduction for Homestead Donated to Veteran')."
+        },
+        "summary": {
+          "current": "",
+          "correct": "Homestead donated at no charge by a 501(c)(3): deduction equals the veteran's VA disability percentage (50% to 100%) of assessed value (IC 6-1.1-12-14.5). Rare; not combinable with the 100% total-disability deduction.",
+          "quote": "A person may not claim this deduction with the Deduction for Homestead Donated to Veteran.",
+          "source": "https://www.in.gov/dlgf/files/2026-memos/260527-Cockerill-Memo-Legislation-Affecting-Deductions-Credits-and-Exemptions.pdf"
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Niche program; should not be added to a typical rated veteran's savings."
+    },
+    {
+      "name": "Disabled Veteran 62+ Credit (IC 6-1.1-51.3-5)",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": {
+          "current": 250,
+          "correct": 250,
+          "quote": "$250 Age-62 + ≥10% Disability Credit (IC § 6-1.1-51.3-5)",
+          "source": "https://www.in.gov/dlgf/files/2026-memos/Veterans-Deductions-FAQ_DLGF_08122026-1.pdf"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "For the $250 credit, a surviving spouse may qualify if the deceased veteran satisfied IC 6-1.1-51.3-5(a)(1) through (a)(4) at death",
+          "source": "https://www.in.gov/dlgf/files/2026-memos/Veterans-Deductions-FAQ_DLGF_08122026-1.pdf",
+          "note": "Filing layer adds: also if the veteran was killed in action, died on active duty, or died during inactive duty training."
+        },
+        "minAge": {
+          "current": 62,
+          "correct": 62,
+          "quote": "A 33-year old veteran with a 10% disability does not qualify for the $250 credit because IC 6-1.1-51.3-5 requires the veteran to be at least 62 years old.",
+          "source": "https://www.in.gov/dlgf/files/2026-memos/Veterans-Deductions-FAQ_DLGF_08122026-1.pdf"
+        }
+      },
+      "effectiveChanges": "2026-pay-2027: applied automatically (one-time) to anyone converted from the old $14,000 deduction; the $250 and $350 credits may be combined with each other but not with the 100% deduction.",
+      "note": ""
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "corrected",
+    "correct": "HEA 1210-2026 (effective the Jan 1, 2026 assessment date, 2026-pay-2027 bills) replaced the old deductions ($24,960 wartime; $14,000 total disability/62+; $240K home cap) with: a 100% deduction of assessed value for totally disabled veterans (no service-connection or value cap; one year Indiana residency; no trusts), a $350 credit for wartime veterans rated 10%+, and a $250 credit for veterans 62+ rated 10%+. The credits stack with each other but not with the 100% deduction. New Form 12662 due January 15; veterans converted from the old $14,000 deduction must refile by Jan 15, 2027.",
+    "source": "https://www.in.gov/dlgf/files/2026-memos/Veterans-Deductions-FAQ_DLGF_08122026-1.pdf"
+  },
+  "sources": [
+    { "url": "https://www.in.gov/dlgf/files/2026-memos/Veterans-Deductions-FAQ_DLGF_08122026-1.pdf", "title": "DLGF FAQ: 2026 Legislative Update, Veterans Deductions and Credits (June 17, 2026)", "status": 200 },
+    { "url": "https://www.in.gov/dlgf/files/2026-memos/260527-Cockerill-Memo-Legislation-Affecting-Deductions-Credits-and-Exemptions.pdf", "title": "DLGF memo 5/27/2026: Legislation Affecting Deductions, Credits and Exemptions (HEA 1210-2026 table)", "status": 200 },
+    { "url": "https://forms.in.gov/Download.aspx?id=16787", "title": "State Form 12662 (R20/6-26) Application for Property Tax Benefits for Disabled Veterans and Surviving Spouses", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat", "title": "Census ACS 2024 5-year summary file, table B25103", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25077.dat", "title": "Census ACS 2024 5-year summary file, table B25077", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "Indiana's four HEA 1210-2026 rows are confirmed against DLGF's June 2026 FAQ: 100% deduction (not required to be service-connected, no value cap), $350 wartime credit, $250 age-62 credit, all effective 2026-pay-2027 with a Jan 15, 2027 refile for converted $14,000-deduction holders. Corrections: the $250 credit does pass to surviving spouses, the donated-home row needs its summary, the jurisdiction note still describes the repealed tiers, and the 0.85% rate is 0.11 pp above ACS 2024 (0.74%)."
+}

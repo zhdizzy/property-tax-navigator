@@ -1,0 +1,137 @@
+{
+  "state": "WY",
+  "officeType": "county assessor",
+  "officeTypeNote": "W.S. 39-13-105(c): the claimant \"shall file a sworn claim on or before the fourth Monday in May with the county assessor of the county in which the property against which the exemption is sought is located.\" The exemption may be claimed in only one county per year. If applied to motor vehicle registration fees instead of the home, the assessor still approves it and the county treasurer applies it at registration (W.S. 31-3-101(b)(iii)).",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://wyo-prop-div.wyo.gov/contacts/assessor-contacts",
+    "label": "Wyoming Department of Revenue, Property Tax Division: Assessor Contacts (all 23 counties; assessor name, phone, email, county website)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://wyo-prop-div.wyo.gov/tax-relief",
+    "note": "The DOR Tax Relief page describes the Veterans Property Tax Exemption and links the state claim form, the VA verification form, the qualifying-medals list, and Chapter 14 rules (all hosted as Google Drive downloads). Wyoming Veterans Commission (DD-214 corrections): 800-833-5987."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Veterans Property Tax Exemption Application (state form; Sections 1-4, certification; initial applicants complete Section 1, returning applicants Section 2)",
+      "number": "PTD-100",
+      "url": "https://drive.google.com/uc?export=download&id=1bCeUFUjrsHO_s1C6r2sRLjegR4bX-9pG",
+      "revision": "03/2025",
+      "filedWith": "county assessor (counties also post their own copies, e.g. Fremont County)"
+    },
+    {
+      "programRef": "*",
+      "name": "Veterans Administration Verification Form (authorizes VA to certify the service-connected disability rating or unemployability status directly to the county assessor)",
+      "number": null,
+      "url": "https://drive.google.com/uc?export=download&id=1hdRymZ6fs2f6SW_FuiXpY-aELY5sB6ZO",
+      "revision": null,
+      "filedWith": "county assessor (routed to VA Cheyenne regional office)"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": null,
+    "text": "Fourth Monday in May each year (W.S. 39-13-105(c)): \"the claimant shall file a sworn claim on or before the fourth Monday in May with the county assessor.\" DOR Tax Relief page: \"Fourth Monday in May for property tax exemption.\" (2026: May 25; 2027: May 24.) After the first sworn claim, later years only require the claimant to contact the assessor by phone, mail or other method by the same date to confirm continued eligibility (39-13-105(k)).",
+    "floating": {
+      "nth": 4,
+      "weekday": 1,
+      "month": 5,
+      "label": "fourth Monday in May"
+    }
+  },
+  "effective": "Applies to the tax year (calendar year, assessment date January 1) in which the claim is filed by the fourth Monday in May; $6,000 of ASSESSED value (W.S. 39-13-105(b)), roughly $175 of tax on a home at typical mill levies (Fremont County estimate), or applied to motor vehicle registration fees (about $90 per Fremont County). For vehicles the 'tax year' is the enrollment period ending the fourth Monday in May (DOR Rules ch. 14 sec. 17(a)(iii)).",
+  "lateFiling": "W.S. 39-13-105(d): an honorably discharged claimant \"who files a claim after the fourth Monday in May is entitled to receive the exemption for that taxable year in addition to the exemption allowed during the ensuing tax year if a claim is filed on or before the fourth Monday in May of the ensuing calendar year\" (i.e. the missed year is recovered by filing before the next deadline). 39-13-105(g): a late claim filed within the same year can otherwise be used only to reduce motor vehicle registration fees. 39-13-105(e): the assessor may waive the filing for a claimant who re-entered the armed services before the deadline, or accept a claim from the spouse.",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 1,
+    "text": "One prior tax year only, via 39-13-105(d): file by the fourth Monday in May of the following year to receive both the missed year's exemption and the current year's. No broader refund lookback in the statute."
+  },
+  "renewal": {
+    "type": "annual",
+    "text": "Annual, but lightweight after year one. 39-13-105(k): \"in subsequent years the claimant shall remain qualified ... if the claimant contacts the assessor's office by telephone, mail or other communication method on or before the fourth Monday in May and confirms that the claimant continues to meet the requirements.\" 39-13-105(m): assessors must include exemption instructions and timelines with the annual assessment schedule. PTD-100: returning applicants whose status is unchanged complete Section 2 only; full documentation again if status changed or applying in a different county."
+  },
+  "ratingChange": "Eligibility for disabled veterans is any \"compensable service connected disability certified by the veterans administration or a branch of the armed forces\" (39-13-105(a)(vii)); the exemption is a flat $6,000 of assessed value regardless of percentage, so rating changes do not alter the amount. (The DOR VA verification form's reference to 'proportion of their rating' is legacy wording; the statute sets a flat amount.) A rating reduced to 0% ends eligibility unless another criterion (wartime service, expeditionary/campaign medal) applies.",
+  "move": "Claim may be made in only one county per tax year (39-13-105(c)(v)); a move to a new county requires a new initial application with full documentation in that county (PTD-100 instructions). Applies only to the principal residence (39-13-105(c)(iv)) or, alternatively, to motor vehicle registration.",
+  "onlineFiling": {
+    "available": null,
+    "text": "Varies by county: the sworn claim is a signed paper form at most assessors' offices; some counties (e.g. Fremont) accept renewal confirmation by phone or an online renewal form. The state hosts the PDF only."
+  },
+  "documents": [
+    "Sworn claim on Form PTD-100 (or county equivalent) attesting to the right to the exemption, ownership (deed, trust, or recorded contract for deed), principal residence, expected tax benefit, and single-county claim (39-13-105(c))",
+    "DD Form 214 or other written evidence of separation showing an honorable discharge (39-13-105(f)); PTD-100: 'adequate documentation of their military service, discharge information, and Wyoming residency' with the initial application",
+    "Proof of bona fide Wyoming residency for at least three years at the time of claiming (39-13-105(a))",
+    "Disabled-veteran route: VA (or service branch) certification of a compensable service-connected disability, via the DOR Veterans Administration Verification Form or a VA rating letter",
+    "Medal route: discharge documents showing the Armed Forces Expeditionary Medal or other authorized campaign/service medal (DOR qualifying-medals list)",
+    "Surviving spouse / Gold Star parent: proof of the veteran's qualifying service, death, Wyoming residency of both at time of death, three-year residency of the claimant, and (spouse) no remarriage (39-13-105(h); PTD-100 Section 4)"
+  ],
+  "survivingSpouse": "W.S. 39-13-105(a)(v) and (h): the surviving spouse \"during widowhood or widower hood\" (or surviving parents if no spouse; divorced parents may each qualify) receives the exemption if both veteran and spouse were Wyoming residents at the veteran's death, the spouse has three years' Wyoming residency when claiming, and the veteran would have qualified; same assessor filing by the fourth Monday in May. Ends on remarriage (DOR Tax Relief page).",
+  "appeal": "Assessor determinations are contested through the county board of equalization under W.S. 39-13-109(b) (general property tax appeal route); not verified for this exemption specifically.",
+  "statute": "W.S. 39-11-105(a)(xxiv) (exemption), W.S. 39-13-105 (eligibility, $6,000 assessed value, fourth Monday in May, late claims, annual confirmation), W.S. 31-3-101(b)(iii) (vehicle fee alternative); Wyoming Department of Revenue Rules, Chapter 14, Section 17",
+  "sourceUrls": [
+    {
+      "url": "https://wyoleg.gov/statutes/compress/title39.pdf",
+      "title": "Wyoming Statutes Title 39 (current compilation; W.S. 39-13-105 Exemptions)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://wyo-prop-div.wyo.gov/tax-relief",
+      "title": "Wyoming DOR Property Tax Division: Tax Relief (Veterans Property Tax Exemption, forms, rules)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://wyo-prop-div.wyo.gov/contacts/assessor-contacts",
+      "title": "Wyoming DOR Property Tax Division: Assessor Contacts (23 counties)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://drive.google.com/uc?export=download&id=1bCeUFUjrsHO_s1C6r2sRLjegR4bX-9pG",
+      "title": "DOR Form PTD-100 (03/2025) Veterans Property Tax Exemption Application (final URL drive.usercontent.google.com/download?id=1bCeUFUjrsHO_s1C6r2sRLjegR4bX-9pG&export=download)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://drive.google.com/uc?export=download&id=1hdRymZ6fs2f6SW_FuiXpY-aELY5sB6ZO",
+      "title": "DOR Veterans Administration Verification Form (final URL drive.usercontent.google.com/download?id=1hdRymZ6fs2f6SW_FuiXpY-aELY5sB6ZO&export=download)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://drive.google.com/uc?export=download&id=1uXCMibWYTLDM1tCGt7tDNLNzk60o9dLx",
+      "title": "Wyoming DOR Rules Chapter 14 (Section 17 Veterans' Exemption) (final URL drive.usercontent.google.com/download?id=1uXCMibWYTLDM1tCGt7tDNLNzk60o9dLx&export=download)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://fremontcountywy.gov/government/elected_officials/assessor/veteran_exemption.php",
+      "title": "Fremont County Assessor: Veteran Exemption ($6,000 from 2025, phone renewal, dollar estimates)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": false
+    }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "programs[0].wartimeRequired",
+      "note": "Should be false for disabled veterans: W.S. 39-13-105(a)(vii) qualifies 'a disabled veteran with a compensable service connected disability certified by the veterans administration or a branch of the armed forces' with no era or medal requirement (the summary already says this; the boolean contradicts it). Also surviving PARENTS (Gold Star) qualify when there is no surviving spouse (39-13-105(a)(v), (h)).",
+      "source": "https://wyoleg.gov/statutes/compress/title39.pdf"
+    },
+    {
+      "field": "programs[0].summary",
+      "note": "'Annual re-application' overstates it: after the first sworn claim, later years require only contacting the assessor by phone/mail by the fourth Monday in May to confirm eligibility (39-13-105(k), added by the 2024-25 amendments). The $6,000 figure (up from $3,000) is confirmed in the current statute text.",
+      "source": "https://wyoleg.gov/statutes/compress/title39.pdf"
+    }
+  ],
+  "notes": "Wyoming's DOR hosts its forms and rules as Google Drive downloads; the drive.google.com/uc links redirect (302) to drive.usercontent.google.com and return 200 application/octet-stream, so the PDFs were downloaded and read (PTD-100 03/2025, VA verification form, Rules ch. 14 sec. 17). Laramie and Natrona county assessor pages returned 403 to automated requests and were dropped; Fremont County's page (200) is the county second source. The fixed deadline is a floating date (fourth Monday in May), so 'date' is left null."
+}

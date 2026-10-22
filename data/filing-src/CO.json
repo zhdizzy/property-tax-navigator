@@ -1,0 +1,75 @@
+{
+  "state": "CO",
+  "officeType": "county assessor",
+  "officeTypeNote": "Since January 1, 2024 (SB 23-036) the disabled veteran exemption application is filed with the COUNTY ASSESSOR of the county where the home sits, not with the Colorado Division of Veterans Affairs as before. DPT: 'Completed veteran and Gold Star spouse applications must be postmarked or delivered to the County Assessor in which the property is located by July 1.' Veterans who qualified through the Division before 2024 keep the exemption without re-filing (C.R.S. 39-3-205(1)(b)). The Reserve Component deferral in the dollar layer is a separate program run by the county treasurer and is not covered here.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://dpt.colorado.gov/localities",
+    "label": "Colorado Division of Property Taxation: Find Your County Assessor and Treasurer (all 64 counties)",
+    "countyUrlPattern": "https://dpt.colorado.gov/locality/{county}-county-assessor",
+    "slugRule": "lowercase county name, spaces replaced with hyphens, followed by '-county-assessor' (e.g. adams-county-assessor, el-paso-county-assessor; verified 200 for both). Broomfield and Denver are city-and-county; check the directory for their slug.",
+    "fallbackUrl": "https://dpt.colorado.gov/veteran-with-a-disability-and-gold-star-exemptions",
+    "note": "Per-county pages carry the assessor's address, phone and website."
+  },
+  "forms": [
+    {
+      "programRef": "Homestead Exemption",
+      "name": "Veteran with a Disability Property Tax Exemption Application",
+      "number": "15-DPT-AR (SVE 005)",
+      "url": "https://drive.google.com/file/d/120rbtwHnZvPCXnPq4I6B-peJJ4ZubiAj/view?usp=drive_link",
+      "revision": "1/26",
+      "filedWith": "county assessor",
+      "note": "DPT hosts the form and its instructions as Google Drive files linked from https://dpt.colorado.gov/veteran-with-a-disability-and-gold-star-exemptions (both links returned 200 on 2026-10-21). Instructions: https://drive.google.com/file/d/12CtKyWtMBDdgfdx1JadAXMM5C9e-iN73/view?usp=drive_link. Separate forms exist for the Veteran with a Disability Surviving Spouse and for Gold Star Spouses. Counties also hand out the same form."
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "07-01",
+    "text": "C.R.S. 39-3-205(1)(b): file with the county assessor 'no later than July 1 of the first property tax year for which the exemption is claimed.' DPT instructions: 'Completed applications must be postmarked or delivered no later than July 1 of the year for which the exemption is requested,' including 'a copy of your VA Summary of Benefits letter.' Ownership and occupancy are measured as of January 1 of that year."
+  },
+  "effective": "Property tax year of application (taxes payable the following year); the applicant must own and occupy the home as primary residence as of January 1 of that year. Not prorated.",
+  "lateFiling": "DPT brochure: 'Late applications may be accepted through August 1 if the applicant can show good cause for missing the July 1 deadline.' The assessor must mail any denial with reasons by August 1 (C.R.S. 39-3-206). Nothing is accepted for that year after the good-cause window.",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "DPT: 'Under no circumstances shall an exemption be allowed for property taxes assessed during any tax year prior to the year in which the veteran first files an exemption application.'"
+  },
+  "renewal": {
+    "type": "none",
+    "text": "DPT instructions: once approved 'the assessor will place the exemption on your property and it will remain in place for future years until a' disqualifying event occurs. The owner must report a change in ownership or occupancy to the assessor within 60 days (C.R.S. 39-3-205(3) penalties). No annual re-filing."
+  },
+  "ratingChange": "Eligibility requires a VA rating of 100 percent permanent service-connected disability or individual unemployability status (treated 'equivalently' since tax year 2025, C.R.S. 39-3-202(3.5)). A later VA reduction below those thresholds is a disqualifying change that must be reported; a newly qualified veteran files by the next July 1.",
+  "move": "The exemption does not follow the veteran. File a new application with the assessor of the new county by July 1 of the first year the new home is owned and occupied as of January 1; the exemption on the old property ends and only one exemption per owner is allowed statewide (the Property Tax Administrator cross-checks for duplicates by November 1).",
+  "onlineFiling": {
+    "available": null,
+    "text": "Varies by county. The DPT form is a fillable PDF filed by mail or in person with the assessor; several large counties (e.g. Denver, Jefferson, El Paso) accept it online through their own portals."
+  },
+  "documents": [
+    "VA Summary of Benefits letter showing a 100 percent permanent service-connected disability rating or individual unemployability status (download at va.gov/records/download-va-letters)",
+    "Proof of honorable discharge (the form asks the veteran to attest; counties may request DD-214)",
+    "Name and Social Security number of the applicant and every other occupant of the property (C.R.S. 39-3-205(2)(a)(III))",
+    "If title is held by a trust, corporate partnership or other legal entity, or as a life estate: the entity/trust details on the back of the form (sections 6-7)",
+    "Surviving spouse applicants: the separate Surviving Spouse application; the veteran must have been receiving the exemption at death"
+  ],
+  "survivingSpouse": "The surviving spouse of a qualifying veteran who 'received the veteran's exemption before they passed away' may continue it by filing the Surviving Spouse application with the county assessor by July 1. Gold Star spouses (spouse of a service member who died in the line of duty or a veteran whose death resulted from a service-related injury or disease) file the separate Gold Star Spouse application.",
+  "appeal": "If the assessor denies the application, the denial letter explains how to appeal to the county board of equalization: request a hearing by August 15; the hearing is held between August 1 and September 1; the county board's decision is final. Denials by the Property Tax Administrator for duplicate claims may be protested by November 15 and then appealed to the Board of Assessment Appeals within 30 days (C.R.S. 39-2-125(1)(b)).",
+  "statute": "Colo. Const. art. X, sec. 3.5 (Amendment G, 2024); C.R.S. 39-3-202(3.5), 39-3-203(1.5), 39-3-205, 39-3-206, 39-3-207; SB 23-036 (filing moved to county assessor)",
+  "sourceUrls": [
+    { "url": "https://dpt.colorado.gov/veteran-with-a-disability-and-gold-star-exemptions", "title": "Colorado DPT: Veteran with a Disability and Gold Star Exemptions (forms and instructions)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dpt.colorado.gov/property-tax-exemption-for-senior-citizens-and-veterans-with-a-disability", "title": "Colorado DPT: Property Tax Exemption for Senior Citizens and Veterans with a Disability", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://drive.google.com/file/d/120rbtwHnZvPCXnPq4I6B-peJJ4ZubiAj/view?usp=drive_link", "title": "Form 15-DPT-AR Veteran with a Disability Application (SVE 005, 1/26)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://drive.google.com/file/d/12CtKyWtMBDdgfdx1JadAXMM5C9e-iN73/view?usp=drive_link", "title": "DPT Veteran with a Disability Application Instructions", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://drive.google.com/file/d/1nFLfEniWeqEvQy1DrJaqyJ_j3CmB9Z69/view?usp=drive_link", "title": "DPT brochure: Property Tax Exemption for Disabled Veterans in Colorado", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dpt.colorado.gov/localities", "title": "DPT county assessor and treasurer directory", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "propertyTax.programs[Homestead Exemption].details",
+      "issue": "Details say 'Apply to county assessor Jan 1 - Jul 1'; DPT confirms July 1 to the county assessor and adds a good-cause late window to August 1. Also note the exemption does not transfer on a move (new application required).",
+      "source": "https://drive.google.com/file/d/1nFLfEniWeqEvQy1DrJaqyJ_j3CmB9Z69/view?usp=drive_link"
+    }
+  ],
+  "notes": "DPT's form, instructions and brochure are hosted on Google Drive and linked from dpt.colorado.gov; the Drive viewer URLs return 200 and the PDFs were downloaded and read with pdftotext. Statute text was not opened on a legislature-hosted page (Colorado publishes the CRS through a LexisNexis viewer); C.R.S. cites come from the DPT instructions and brochure, with 39-3-205(1)(b) wording confirmed on a statute mirror used as a lead only. The brochure's August 1 good-cause window is DPT guidance; the statute itself (39-3-205) was reported to contain no late-filing clause, so treat August 1 as administrative practice."
+}

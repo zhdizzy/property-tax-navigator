@@ -1,0 +1,89 @@
+{
+  "state": "GU",
+  "officeType": "territorial Real Property Tax Division (Dept. of Revenue and Taxation)",
+  "officeTypeNote": "Guam has one filing office for the whole territory: the Real Property Tax Division (RPTD) of the Department of Revenue and Taxation, PO Box 23607, Barrigada GU 96921 (physical office listed on DRT notices as 1240 Army Drive, Barrigada). The form is addressed to 'the assessor's office'; the Tax Assessor sits inside RPTD. Phone (671) 635-7653 / 635-1892; email realproperty@revtax.guam.gov.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://www.guamtax.com/about/rpt.html",
+    "label": "Guam DRT: Real Property Tax Division (single territorial office)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.guamtax.com/forms/index.html",
+    "note": "No county layer. The RPT Division page lists the administrator, assessment and appraisal supervisors, phone, and email; the forms page (fallbackUrl) hosts every RPT application under 'Real Property Tax Applications & Forms'."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Application for Veteran Exemption (100% Disabled or unemployable due to military service-connected injuries / Surviving Spouse / Gold Star Spouse or Parent)",
+      "number": null,
+      "url": "https://www.guamtax.com/forms/RPT_apps_forms/APPLICATIONFORVETERANEXEMPTION(2).pdf",
+      "revision": null,
+      "filedWith": "Dept. of Revenue and Taxation, Real Property Tax Division (assessor's office)"
+    },
+    {
+      "programRef": "*",
+      "name": "Application for Veteran Exemption (older fillable version with Print/Clear buttons; same content)",
+      "number": null,
+      "url": "https://www.guamtax.com/forms/ApplicationforVeteranExemption.pdf",
+      "revision": null,
+      "filedWith": "Dept. of Revenue and Taxation, Real Property Tax Division (assessor's office)"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "03-15",
+    "text": "Form: 'Application for veteran exemption must be filed with the assessor's office ... on or before the fifteenth (15th) day of March.' DRT reminder notices: 'Deadline to submit tax credit and exemption application is March 15.' Note: the statutory March 15 rule in 11 GCA § 24409(a) by its terms governs §§ 24401(c), 24401(d), 24402 and 24408; DRT applies the same date to the § 24401.1 veteran exemption on its form."
+  },
+  "effective": "Not stated in the statute or on the form. Exemptions apply to the tax year for which the claim is filed; the assessor must act on every claim 'on or before the first day of August' (§ 24412). Guam property tax is paid in two installments (notices: first installment due Feb 20, second Apr 20).",
+  "lateFiling": "Not addressed for the veteran exemption. § 24409(a): 'No exemption shall be allowed unless the claim therefor is filed on or before the fifteenth (15th) day of March of each year for which the exemption is claimed' (text applies to the home exemption and §§ 24401(c)/(d)/24408).",
+  "retroactivity": {
+    "type": "unverified",
+    "years": null,
+    "text": "No provision grants the veteran exemption for prior years. Refunds exist only under § 24906 for taxes 'Paid more than once', 'Erroneously or illegally collected', or paid on improvements that did not exist, with a written application within three years of payment (§ 24907). Whether a late-claimed exemption qualifies is not stated."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "DRT notices (2016, 2018): 'If you have already applied, you do not need to resubmit an application.' § 24409(a): 'once a claim is filed it shall have continuing effect as a new claim for the exemption for each subsequent year, unless it is disallowed or voided.' Any change in ownership, occupancy, or use must be reported within 30 days (§ 24409(b); $25 civil penalty plus back taxes)."
+  },
+  "ratingChange": "§ 24401.1(a)(2): the exemption 'shall be granted only as long as the Veteran claiming exemption remains one hundred percent (100%) disabled or individually unemployable, the surviving spouse is not remarried, and the legal guardian is lawfully vested with the power.' Report the change to RPTD within 30 days (§ 24409(b) as cited on DRT notices).",
+  "move": "Exemption attaches to the residence owned and occupied; 'the exemption shall not be allowed on more than one (1) residence for any one (1) person' (§ 24401.1(a)(3)). Ceasing to own or occupy must be reported within 30 days and voids the prior claim; file a new application for the new home by March 15.",
+  "onlineFiling": {
+    "available": null,
+    "text": "guamtax.com hosts fillable PDF applications; no online submission channel for exemption claims was found. Payments are taken at pay.guam.gov. Mail to PO Box 23607, Barrigada GU 96921 or file in person at RPTD."
+  },
+  "documents": [
+    "Completed Application for Veteran Exemption, signed under penalty of law, with the parcel's Primary Identification Number (PIN) and municipality",
+    "VA 'letter of VA Benefit Information' showing 100% service-connected disability or individual unemployability (form instructs applicants to obtain it from the VA office in Tiyan, tel. 648-0090)",
+    "The form's 'Office of U.S. Department of Veterans Affairs Certification' block completed and signed by a VA official",
+    "Last four digits of SSN, mailing and residence address (form fields)",
+    "Disclosure of any rental or commercial use of part of the property (that portion is not exempt)"
+  ],
+  "survivingSpouse": "Covered. § 24401.1 exempts the residence of a 'surviving spouse, as defined in § 67101(e) of Chapter 67, Title 10 GCA' while not remarried, and of a 'legal guardian' as defined in § 67101(g). § 24401.2 separately exempts Gold Star spouses and parents eligible under 16 GCA § 7120.3(b). The same form covers all three categories (checkbox).",
+  "appeal": "§ 24411: assessor serves a notice of disapproval with reasons. § 24413: applicant may file the notice with the Board of Equalization 'on or before September 15 of the same year'; the Board's decision is final unless either side files for review in the Superior Court within 15 days.",
+  "statute": "11 GCA § 24401.1 (100% disabled veterans, surviving spouses, legal guardians; added by P.L. 34-106:1, June 5, 2018) and § 24401.2 (Gold Star spouses and parents); procedure §§ 24409-24413; refunds §§ 24906-24907",
+  "sourceUrls": [
+    { "url": "https://col.guamcourts.gov/sites/default/files/11gc024_Q.pdf", "title": "11 GCA Chapter 24, Real Property Tax (Guam Compiler of Laws, COL 2026-05-05)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.guamtax.com/forms/RPT_apps_forms/APPLICATIONFORVETERANEXEMPTION(2).pdf", "title": "DRT Real Property Tax Division: Application for Veteran Exemption", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.guamtax.com/forms/ApplicationforVeteranExemption.pdf", "title": "DRT: Application for Veteran Exemption (fillable version)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.guamtax.com/forms/index.html", "title": "guamtax.com Forms: Real Property Tax Applications & Forms", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.guamtax.com/about/rpt.html", "title": "DRT: Real Property Tax Division (contacts, phone, email)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.guamtax.com/notices/2018DUEDATEANDEXEMPTIONREMINDERNOTICE.pdf", "title": "DRT Real Property Tax Reminder Notice: Tax Credit, Exemption Application and Due Dates (Tax Year 2018)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.guamtax.com/notices/2016DUEDATEANDEXEMPTIONREMINDERNOTICE.pdf", "title": "DRT Real Property Tax Reminder Notice (Tax Year 2016)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.guamtax.com/frontpagenotices/DRTRealProptertyTax2015.pdf", "title": "DRT 2015 Real Property Tax Delinquency notice (RPTD street address, 1240 Army Drive, Barrigada)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "propertyTax.programs[Veteran Exemption].survivingSpouse",
+      "issue": "Set to false, but 11 GCA § 24401.1(a) exempts the residence of the veteran's unremarried 'surviving spouse, as defined in § 67101(e) of Chapter 67, Title 10 GCA', and § 24401.2 exempts Gold Star spouses and parents. Should be true.",
+      "source": "https://col.guamcourts.gov/sites/default/files/11gc024_Q.pdf"
+    },
+    {
+      "field": "propertyTax.programs[Veteran Exemption].details",
+      "issue": "Cites 'Guam Code 10-3-67101' as the exemption authority. 10 GCA § 67101 only supplies the surviving-spouse and legal-guardian definitions; the exemption itself is 11 GCA § 24401.1 (P.L. 34-106, June 5, 2018).",
+      "source": "https://col.guamcourts.gov/sites/default/files/11gc024_Q.pdf"
+    }
+  ],
+  "notes": "The 2018 and 2016 DRT reminder notices are the only official statements on renewal ('do not need to resubmit'); no 2025 or 2026 notice was found on guamtax.com (the /notices/ index page returns 200 but renders no links). The newer form drops the Print/Clear buttons and asks for SSN last four only; both versions carry identical statutory text. guamtax.com/rpt/ and /forms/rpt.html return 200 but render a server template error; use /about/rpt.html and /forms/index.html instead. The Guam Legislature PDF of P.L. 34-106 returned an HTML consent page, so the compiled statute (COL 2026-05-05) is the statutory source."
+}

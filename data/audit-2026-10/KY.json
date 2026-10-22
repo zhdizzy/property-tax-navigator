@@ -1,0 +1,64 @@
+{
+  "state": "KY",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0086,
+    "sourceValue": 0.0075,
+    "source": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Census ACS 2020-2024 5-year: median real estate taxes $1,544 / median value $205,600 (acsdt5y2024-b25077.dat) = 0.751%. File 0.86% is 0.11 pp high (just outside tolerance)."
+  },
+  "programs": [
+    {
+      "name": "Homestead Exemption for Disabled Veterans",
+      "status": "confirmed",
+      "fields": {
+        "exemptionValue": {
+          "current": 49100,
+          "correct": 49100,
+          "quote": "The value of the homestead exemption for the 2025-2026 assessment years is $49,100.",
+          "source": "https://revenue.ky.gov/Property/Residential-Farm-Commercial-Property/Pages/Homestead-Exemption.aspx",
+          "note": "2027-2028 amount not yet published; KRS 132.810(2)(e) requires DOR to recompute the $6,500 constitutional base for CPI every two years."
+        },
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "quote": "A service-connected totally disabled veteran of the United States Armed Forces ... shall not be required to apply for the homestead exemption on an annual basis.",
+          "source": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=39641",
+          "note": "Eligibility is 'classified as totally disabled' under a federal program with payments received for the entire assessment period (132.810(2)(c)); VA 100% schedular or IU qualifies."
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": false,
+          "quote": "the applicant must own, occupy and maintain the subject property ... as of January 1 (and be 65 or totally disabled)",
+          "source": "https://revenue.ky.gov/Property/Residential-Farm-Commercial-Property/Pages/Homestead-Exemption.aspx",
+          "note": "No veteran-specific survivor rule; a spouse keeps it only by qualifying on age or own disability."
+        },
+        "details": {
+          "current": "Must have been receiving disability compensation for entire assessment period.",
+          "correct": "Must have been receiving disability compensation for the entire assessment period; service-connected totally disabled veterans are exempt from the annual re-application other under-65 disabled owners face; one exemption per residential unit.",
+          "quote": "The homeowner must apply annually to continue to receive the exemption based upon a total disability, unless: They are a veteran of the United States Armed Forces and have a service connected disability;",
+          "source": "https://revenue.ky.gov/Property/Residential-Farm-Commercial-Property/Pages/Homestead-Exemption.aspx"
+        }
+      },
+      "effectiveChanges": "TY2026: $49,100 (second year of the 2025-2026 cycle). TY2027-2028: new CPI-adjusted amount to be set by DOR in late 2026 (not yet published). HB 245 (2026 RS), a constitutional amendment to raise the exemption to $75,000 indexed annually from 1/1/2027, died in House committee (last action 1/15/2026 referral), so nothing is on the Nov 2026 ballot.",
+      "note": "This is the general Section 170 age/disability homestead; the veteran row is correct but the exemption is not veteran-specific (also available to all 65+ and totally disabled owners)."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "confirmed",
+    "correct": "",
+    "source": ""
+  },
+  "sources": [
+    { "url": "https://revenue.ky.gov/Property/Residential-Farm-Commercial-Property/Pages/Homestead-Exemption.aspx", "title": "Kentucky DOR: Homestead Exemption ($49,100 for 2025-2026; veteran annual-filing exception)", "status": 200 },
+    { "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=39641", "title": "KRS 132.810 Homestead exemption, application, qualification (service-connected totally disabled veterans)", "status": 200 },
+    { "url": "https://apps.legislature.ky.gov/record/26rs/hb245.html", "title": "Kentucky HB 245 (2026 RS) constitutional amendment to $75,000 homestead exemption; last action 1/15/26 committee referral", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat", "title": "Census ACS 2024 5-year summary file, table B25103", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25077.dat", "title": "Census ACS 2024 5-year summary file, table B25077", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "Kentucky's single row ($49,100 off assessed value for 2025-2026, totally disabled with payments all year, no survivor carryover) is confirmed from DOR and KRS 132.810; the 2027-2028 CPI figure is not yet set and the $75,000 amendment (HB 245) died. The 0.86% rate is 0.11 pp above ACS 2024 (0.75%)."
+}

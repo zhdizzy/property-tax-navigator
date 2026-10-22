@@ -1,0 +1,57 @@
+{
+  "state": "AL",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.004,
+    "sourceValue": 0.0037,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation 'Property Taxes Paid as a Percentage of Owner-Occupied Housing Value, 2024' (ACS 5-year). Census API now requires a key, so the ACS figure was taken from the Tax Foundation table."
+  },
+  "programs": [
+    {
+      "name": "Homestead Exemption",
+      "status": "confirmed",
+      "fields": {
+        "type": { "current": "full", "correct": "full", "quote": "The principal residence of any taxpayer in this state who is permanently and totally disabled regardless of age or income is exempt from all property taxes levied by the state, any county or any municipality.", "source": "https://admincode.legislature.state.al.us/api/rule/810-4-1-.23" },
+        "ptRequired": { "current": true, "correct": true, "quote": "determined to be permanently and totally disabled by the United States Department of Veterans Affairs ... shall not be required to annually claim the exemption nor verify eligibility", "source": "https://alison.legislature.state.al.us/files/pdf/SearchableInstruments/2026RS/HB155-enr.pdf" },
+        "acreage": { "current": "160 acres", "correct": "160 acres", "quote": "Homestead - A single family, owner occupied residential dwelling and the land thereto, not exceeding 160 acres.", "source": "https://admincode.legislature.state.al.us/api/rule/810-4-1-.23" },
+        "survivingSpouse": { "current": false, "correct": false, "quote": "The exemption is personal to the permanently and totally disabled taxpayer; neither the ADOR rule nor Ala. Code 40-9-21 extends it to a surviving spouse.", "source": "https://admincode.legislature.state.al.us/api/rule/810-4-1-.23" }
+      },
+      "effectiveChanges": "HB155 (2026 Regular Session, enrolled, effective October 1, 2026) amends Ala. Code 40-9-21.1: a veteran the VA has determined permanently and totally disabled no longer files the annual verification affidavit after initial qualification; the release ends at death or on establishing a new homestead. Dollar layer unchanged.",
+      "note": "This is Alabama's general permanent-and-total-disability principal residence exemption (local 'H-3'), not a VA-rating program; the VA P&T letter is accepted as proof ('receipt of a pension or annuity due to disability from ... a state or federal governmental agency'). A plain 100% schedular rating is not a P&T determination, so the summary's reading holds. Code text itself could not be opened (alison.legislature.state.al.us renders client-side); the ADOR rule and the enrolled HB155 carry the operative language."
+    },
+    {
+      "name": "Specially Adapted Housing",
+      "status": "confirmed",
+      "fields": {
+        "type": { "current": "full", "correct": "full", "quote": "The home of any veteran which is or was acquired by him/her pursuant to the provisions of Public Law 702 ... regardless of its value, shall be exempt", "source": "https://va.alabama.gov/wp-content/uploads/2026/03/AL-Laws-Affecting-Veterans-Act-2025-37-Draft.pdf" },
+        "survivingSpouse": { "current": true, "correct": true, "quote": "as long as the same is owned and occupied as a home by the veteran or his/her unremarried widow/er. (ALA. CODE 40-9-20)", "source": "https://va.alabama.gov/wp-content/uploads/2026/03/AL-Laws-Affecting-Veterans-Act-2025-37-Draft.pdf" }
+      },
+      "effectiveChanges": null,
+      "note": "Applies only to a home acquired with a VA Specially Adapted Housing grant (38 U.S.C. ch. 21); not creditable to a rated veteran's home generally. Source is the Alabama Department of Veterans Affairs statutory compilation (state agency); the Code page itself is JS-rendered."
+    },
+    {
+      "name": "Va Grant Vehicle",
+      "status": "confirmed",
+      "fields": {
+        "type": { "current": "full", "correct": "full (vehicle only)", "quote": "is entitled to exemptions from all license fees and ad valorem taxes on such motor vehicle provided the veteran keeps the vehicle only for private use. (ALA. CODE 40-12-254)", "source": "https://va.alabama.gov/wp-content/uploads/2026/03/AL-Laws-Affecting-Veterans-Act-2025-37-Draft.pdf" }
+      },
+      "effectiveChanges": null,
+      "note": "Still law (ADOR plate page: vehicles 'all or partly paid for by U.S. Department of Veteran Affairs' are exempt from registration fees and ad valorem taxes, Section 40-12-254), but it is a motor-vehicle exemption and must not be credited to a rated veteran's home in the property-tax dollar layer. Recommend tagging as vehicle / excluding from real-property totals."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": { "status": "confirmed", "correct": "", "source": "" },
+  "sources": [
+    { "url": "https://www.revenue.alabama.gov/property-tax/homestead-exemptions/", "title": "Alabama Department of Revenue: Homestead Exemptions (H-3 'permanently and totally disabled - exempt from all ad valorem taxes')", "status": 200 },
+    { "url": "https://admincode.legislature.state.al.us/api/rule/810-4-1-.23", "title": "Ala. Admin. Code r. 810-4-1-.23 Homestead and Principal Residence Exemptions From Property Tax", "status": 200 },
+    { "url": "https://alison.legislature.state.al.us/files/pdf/SearchableInstruments/2026RS/HB155-enr.pdf", "title": "HB155 (2026 RS) Enrolled: P&T veterans released from annual verification, eff. Oct 1, 2026", "status": 200 },
+    { "url": "https://va.alabama.gov/wp-content/uploads/2026/03/AL-Laws-Affecting-Veterans-Act-2025-37-Draft.pdf", "title": "Alabama Department of Veterans Affairs: Alabama Laws Affecting Veterans (40-9-19/40-9-21, 40-9-20, 40-12-254)", "status": 200 },
+    { "url": "https://www.revenue.alabama.gov/license-plates/disabled-veteran-us-air-force/", "title": "ADOR license plates: Disabled Veteran (Section 40-12-254 fee and ad valorem exemption)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 effective rates)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "All three Alabama rows hold: the P&T principal-residence exemption is a full state/county/municipal exemption on the home plus 160 acres, the SAH-home exemption carries to the unremarried spouse, and the VA-grant vehicle break is still law but is a vehicle exemption that should be excluded from home-dollar math. The only 2026 change is procedural: HB155 ends annual re-verification for VA-P&T veterans from October 1, 2026."
+}

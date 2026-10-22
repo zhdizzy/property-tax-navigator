@@ -1,0 +1,94 @@
+{
+  "state": "NV",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0053,
+    "sourceValue": 0.0050,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation 'Property Taxes by State' table (Mar 2026): Nevada 0.50% for 2024 (0.51% for 2023), total real taxes paid / total owner-occupied value (ACS B25082, B25090). File value 0.53% is 0.03 pp above, within tolerance."
+  },
+  "programs": [
+    {
+      "name": "Wartime Veteran's Property Tax Exemption",
+      "status": "confirmed",
+      "fields": {
+        "exemptionValue": {
+          "current": 10400,
+          "correct": 10400,
+          "quote": "VETERAN ... 2026-27 EXEMPTION 3,640 (assessed value; CPI adjustment 1.82 on $2,000 base)",
+          "source": "https://tax.nv.gov/wp-content/uploads/2025/09/2026-2027-CPI-Adjustment-AB209.pdf"
+        },
+        "wartimeRequired": {
+          "current": true,
+          "correct": true,
+          "quote": "NRS 361.090 wartime veterans exemption, $2,000 base, CPI-indexed; 90+ continuous days of active duty in a listed period or campaign medal",
+          "source": "https://www.leg.state.nv.us/NRS/NRS-361.html"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": false,
+          "quote": "The wartime veteran exemption (361.090) does not pass to a surviving spouse; NRS 361.080 is the separate, non-veteran surviving-spouse exemption ($1,820 FY2026-27)",
+          "source": "https://www.leg.state.nv.us/NRS/NRS-361.html"
+        }
+      },
+      "effectiveChanges": "FY2027-28 (from July 1, 2027): $3,760 assessed (CPI adjustment 1.88), about $10,743 market-equivalent at the 35% ratio. Department of Taxation schedule dated Sept 25, 2026.",
+      "note": "$3,640 / 0.35 = $10,400 market-equivalent; row is right for FY2026-27 (July 1, 2026 to June 30, 2027). Can be applied to the vehicle Governmental Services Tax instead; any GST use reduces the property exemption (NRS 361.1565)."
+    },
+    {
+      "name": "Disabled Veteran's Property Tax Exemption",
+      "status": "confirmed",
+      "fields": {
+        "tiers": {
+          "current": [
+            { "minRating": 60, "maxRating": 79, "value": 52000 },
+            { "minRating": 80, "maxRating": 99, "value": 78000 },
+            { "minRating": 100, "maxRating": 100, "value": 104000 }
+          ],
+          "correct": [
+            { "minRating": 60, "maxRating": 79, "value": 52000 },
+            { "minRating": 80, "maxRating": 99, "value": 78000 },
+            { "minRating": 100, "maxRating": 100, "value": 104000 }
+          ],
+          "quote": "2026-27 EXEMPTION: 100% DISABLED 36,400; 80% DISABLED 27,300; 60% DISABLED 18,200 (assessed value)",
+          "source": "https://tax.nv.gov/wp-content/uploads/2025/09/2026-2027-CPI-Adjustment-AB209.pdf"
+        },
+        "ratingRequired": {
+          "current": 60,
+          "correct": 60,
+          "quote": "NRS 361.091: permanent service-connected disability of 60 percent or more; amount depends on 'the total percentage of permanent service-connected disability'",
+          "source": "https://www.leg.state.nv.us/NRS/NRS-361.html"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "surviving spouse ... married to and living with the veteran for the 5 years preceding death, the veteran was eligible, the spouse has not remarried and is a Nevada resident (NRS 361.091(6))",
+          "source": "https://www.leg.state.nv.us/NRS/NRS-361.html"
+        },
+        "schedularTiered": {
+          "current": true,
+          "correct": true,
+          "quote": "the total percentage of permanent service-connected disability",
+          "source": "https://www.leg.state.nv.us/NRS/NRS-361.html"
+        }
+      },
+      "effectiveChanges": "FY2027-28 (from July 1, 2027): $18,800 / $28,200 / $37,600 assessed (CPI adjustment 1.88), about $53,714 / $80,571 / $107,429 market-equivalent at the 35% ratio. Department of Taxation FY2027-28 schedule already posted (Sept 25, 2026); swap the row values at the July 1, 2027 refresh.",
+      "note": "FY2026-27 assessed amounts $18,200 / $27,300 / $36,400 confirmed; market-equivalents $52,000 / $78,000 / $104,000 are exact at 35%. The summary's '5+ years married' should read 'married to and living with the veteran for the 5 years before death'. TDIU note is correct: tier follows combined permanent rating."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "unverified",
+    "correct": "",
+    "source": ""
+  },
+  "sources": [
+    { "url": "https://tax.nv.gov/wp-content/uploads/2025/09/2026-2027-CPI-Adjustment-AB209.pdf", "title": "Nevada Department of Taxation, CPI Adjustment for Exemptions, Fiscal Year 2026-2027", "status": 200 },
+    { "url": "https://tax.nv.gov/wp-content/uploads/2026/09/2027-2028-CPI-Adjustment-AB209.pdf", "title": "Nevada Department of Taxation, CPI Adjustment for Exemptions, Fiscal Year 2027-2028 (Sept 25, 2026)", "status": 200 },
+    { "url": "https://www.leg.state.nv.us/NRS/NRS-361.html", "title": "NRS Chapter 361 (361.080, 361.090, 361.091, 361.155, 361.1565)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation, Property Taxes by State and County, 2026 (2024 ACS data)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "Both rows match the Department of Taxation's FY2026-27 CPI schedule exactly ($3,640 wartime; $18,200 / $27,300 / $36,400 disabled, i.e. $10,400 / $52,000 / $78,000 / $104,000 market-equivalent). The FY2027-28 schedule is already published ($3,760; $18,800 / $28,200 / $37,600, CPI factor 1.88) for the July 1, 2027 refresh, and the 0.53% tax rate is within tolerance."
+}

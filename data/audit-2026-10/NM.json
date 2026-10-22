@@ -1,0 +1,54 @@
+{
+  "state": "NM",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0073,
+    "sourceValue": 0.0063,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation Table 2 (Census ACS 2024 5-year): NM 0.63% (2023: 0.62%). File 0.73% sits exactly at the 0.10 pp boundary; treat as borderline and refresh to 0.63%."
+  },
+  "programs": [
+    {
+      "name": "Veterans Property Tax Exemption",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": { "current": 30000, "correct": 30000, "quote": "for tax year 2025, ten thousand dollars ($10,000); and (3) for tax year 2026 and subsequent tax years, the amount provided in Paragraph (2) of this subsection, adjusted for inflation", "source": "https://www.nmlegis.gov/Sessions/25%20Regular/final/HB0047.pdf" },
+        "survivingSpouse": { "current": false, "correct": true, "quote": "if the property is owned by a veteran or the veteran's unmarried surviving spouse if the veteran or surviving spouse is a New Mexico resident", "source": "https://www.nmlegis.gov/Sessions/25%20Regular/final/HB0047.pdf" },
+        "summary": { "current": "inflation-indexed from 2025", "correct": "$10,000 of taxable value for TY2025; indexed to CPI for TY2026 and later (rounded down to the nearest $100, never decreases). TRD publishes the indexed amount to assessors by Dec 1 of the prior year.", "quote": "For tax year 2026 and subsequent tax years, the amount of exemption shall be adjusted to account for inflation.", "source": "https://www.nmlegis.gov/Sessions/25%20Regular/final/HB0047.pdf" },
+        "minService": { "current": null, "correct": "90 continuous days active duty (or fewer if discharged for service-connected disability)", "quote": "served in the armed forces of the United States on active duty continuously for ninety days.", "source": "https://www.nmlegis.gov/Sessions/25%20Regular/final/HB0047.pdf" }
+      },
+      "effectiveChanges": "TY2026 and TY2027 amounts are the $10,000 base indexed to CPI (TY2026 = $10,000 x CPI(2025)/CPI(2024), rounded down to $100). The published TY2026 figure could not be located on tax.newmexico.gov, dvs.nm.gov, or county assessor pages (DVS Form 1 Rev. March 2025 and the dvs.nm.gov benefits page still print 'Up to $10,000'); mark the 2026 dollar amount unverified rather than assume $10,000.",
+      "note": "The $30,000 market-equivalent (1/3 assessment ratio) is right for the $10,000 base. Indexing starts TY2026, not 2025 as the summary says. Both exemptions stack: the disabled veteran percentage is applied to taxable value 'after the amount that may be exempted pursuant to Section 7-37-5 NMSA 1978 is deducted.'"
+    },
+    {
+      "name": "Disabled Veteran Property Tax Exemption",
+      "status": "corrected",
+      "fields": {
+        "tiers": { "current": "10 tiers, fraction = rating/100", "correct": "proportional: exempt fraction = exact VA percentage (10%-100%)", "quote": "is exempt from property taxation in an amount equal to the percentage of the veteran's disability as determined by federal law multiplied by the taxable value of the property", "source": "https://www.nmlegis.gov/Sessions/26%20Regular/final/HB0285.pdf" },
+        "survivingSpouse": { "current": false, "correct": true, "quote": "The property of the surviving spouse of a disabled veteran is exempt from property taxation if: (1) the surviving spouse and the disabled veteran were married at the time of the disabled veteran's death", "source": "https://www.nmlegis.gov/Sessions/26%20Regular/final/HB0285.pdf" },
+        "ptRequired": { "current": null, "correct": "unverified", "quote": "has been determined pursuant to federal law to have a permanent service-connected disability", "source": "https://www.nmlegis.gov/Sessions/26%20Regular/final/HB0285.pdf" },
+        "ratingRequired": { "current": 10, "correct": 10, "quote": "New Mexico offers the nation's only directly proportional property tax exemption tied to a veteran's federal disability rating between 10% to 100%", "source": "https://www.tax.newmexico.gov/wp-content/uploads/2026/08/20260813_New-Mexico-Veterans-Benefit-from-Expanded-Property-Tax-Exemptions.pdf" },
+        "coOwnerRule": { "current": null, "correct": "highest rating among eligible veteran co-owners", "quote": "If two or more disabled veterans qualify for the disabled veteran exemption on the same property, the exemption shall be determined using the highest disability percentage among the eligible disabled veteran owners.", "source": "https://www.nmlegis.gov/Sessions/26%20Regular/final/HB0285.pdf" },
+        "portability": { "current": null, "correct": true, "quote": "remove the exemption for that residence and apply it to the disabled veteran's or the disabled veteran's surviving spouse's new principal place of residence, regardless of whether the exemption was applied for and claimed within thirty days", "source": "https://www.nmlegis.gov/Sessions/26%20Regular/final/HB0285.pdf" }
+      },
+      "effectiveChanges": "Proportional exemption first applies TY2026 (HB 47, 2025, implementing the Nov 5, 2024 constitutional amendment). HB 285 (2026, emergency clause) added: surviving-spouse continuity, mid-year portability outside the 30-day window, the highest-rating co-owner rule, a protest route for claims pending at the 30-day mark, and a TRD-prescribed owner-occupancy certification presented with the NMDVS certificate. TRD/NMDVS reported 7,096 partially disabled veterans claimed it March-June 2026. No change scheduled for TY2027.",
+      "note": "Tiers in the file use 10-point bands with fraction = lower bound (e.g. 70-79% -> 0.7); the statute uses the exact percentage, so a 75% veteran gets 75%, not 70%. Statute defines 'disabled veteran' by a 'permanent service-connected disability'; DVS Form 1 only asks for the VA rating and date, so whether a non-permanent rating is ever refused is not settled in the sources (ptRequired left unverified, keep false in the model). The surviving spouse must have been married at death and continuously occupy the home; the spouse gets the exemption even if the veteran never applied (DVS Form 1)."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": { "status": "confirmed", "correct": "", "source": "" },
+  "sources": [
+    { "url": "https://www.nmlegis.gov/Sessions/26%20Regular/final/HB0285.pdf", "title": "HB 285 (2026) final: 7-37-5.1, 7-38-17, 7-38-21, 7-38-24 as amended", "status": 200 },
+    { "url": "https://www.nmlegis.gov/Sessions/25%20Regular/final/HB0047.pdf", "title": "HB 47 (2025) final: 7-37-5 $10,000 + CPI indexing; 7-37-5.1 proportional exemption", "status": 200 },
+    { "url": "https://www.nmlegis.gov/Sessions/26%20Regular/firs/HB0285.PDF", "title": "HB 285 Fiscal Impact Report (eligible population 16.5k -> 51k+)", "status": 200 },
+    { "url": "https://www.dvs.nm.gov/wp-content/uploads/2026/04/100023_DVS_DVS1_VeteransExemption_Fillable.pdf", "title": "NMDVS DVS Form 1 (Rev. March 2025) eligibility and surviving spouse rules", "status": 200 },
+    { "url": "https://www.dvs.nm.gov/benefits/", "title": "NMDVS Benefits page (still prints 'Up to $10,000')", "status": 200 },
+    { "url": "https://www.tax.newmexico.gov/wp-content/uploads/2026/08/20260813_New-Mexico-Veterans-Benefit-from-Expanded-Property-Tax-Exemptions.pdf", "title": "TRD/NMDVS joint release Aug 13, 2026", "status": 200 },
+    { "url": "https://www.santafecountynm.gov/news/detail/santa-fe-county-assessors-office-unveils-key-updates-for-property-owners-in-2026", "title": "Santa Fe County Assessor, May 5, 2026: notices of value mailed May 1, 30-day window (lead only)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 data)", "status": 200 }
+  ],
+  "confidence": "partial",
+  "summary": "Both NM rows need survivingSpouse flipped to true, the standard exemption's indexing starts TY2026 (not 2025) and its published 2026 dollar figure could not be found, and the disabled-veteran tiers should be exact-percentage rather than 10-point bands; HB 285 (2026) added portability, a highest-rating co-owner rule and spouse continuity, all confirmed from the enacted text. Effective rate is at the tolerance edge (0.73% vs 0.63%)."
+}

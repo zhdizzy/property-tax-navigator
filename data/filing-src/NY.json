@@ -1,0 +1,134 @@
+{
+  "state": "NY",
+  "officeType": "municipal (city/town) assessor",
+  "officeTypeNote": "File with the assessor of the city or town where the home sits (in New York City, the Department of Finance). If the property is in a village that assesses separately, file a second application with the village assessor. Nassau County and Tompkins County assess at the county level. Each taxing jurisdiction (county, city/town, village, school district) decides separately whether to offer the alternative, Cold War and 458-a(11) exemptions, so ask the assessor which apply to your bill.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://www.tax.ny.gov/pit/property/munidataportal.htm",
+    "label": "NYS Tax Department: Municipal Profiles / Municipal Data Portal (assessor contact and taxable status date for every city, town and village)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.tax.ny.gov/research/property/directory.htm",
+    "note": "Browse by county or municipality on the map or use the search icon; the profile lists the assessor, taxable status date and which exemptions the municipality has adopted. The legacy MuniPro host orps1.orpts.ny.gov did not respond on 2026-10-21 and is not included."
+  },
+  "forms": [
+    {
+      "programRef": "Alternative Veterans Property Tax Exemption",
+      "name": "Application for Alternative Veterans and Veterans with a Permanent and Total Disability Exemptions from Real Property Taxation",
+      "number": "RP-458-a",
+      "url": "https://www.tax.ny.gov/pdf/current_forms/orpts/rp458a_fill_in.pdf",
+      "revision": "9/26",
+      "filedWith": "city/town assessor (and village assessor if the village assesses)"
+    },
+    {
+      "programRef": "Full Exemption for 100% P&T Disabled Veterans (RPTL 458-a(11), NEW 2026)",
+      "name": "Application for Alternative Veterans and Veterans with a Permanent and Total Disability Exemptions from Real Property Taxation (same form; Line 8/Line 10 cover the full exemption)",
+      "number": "RP-458-a",
+      "url": "https://www.tax.ny.gov/pdf/current_forms/orpts/rp458a_fill_in.pdf",
+      "revision": "9/26",
+      "filedWith": "city/town assessor (and village assessor if the village assesses)"
+    },
+    {
+      "programRef": "Alternative Veterans Property Tax Exemption",
+      "name": "Instructions for Form RP-458-a",
+      "number": "RP-458-a-I",
+      "url": "https://www.tax.ny.gov/pdf/current_forms/orpts/rp458ai.pdf",
+      "revision": "9/26",
+      "filedWith": null
+    },
+    {
+      "programRef": "Alternative Veterans Property Tax Exemption",
+      "name": "Renewal Application for Alternative Veterans Exemption from Real Property Taxation Based on Change in Service-Connected Disability Compensation Rating",
+      "number": "RP-458-a-Dis",
+      "url": "https://www.tax.ny.gov/pdf/current_forms/orpts/rp458adis_fill_in.pdf",
+      "revision": "1/16",
+      "filedWith": "assessor (both village and town assessors where the village assesses)"
+    },
+    {
+      "programRef": "Cold War Veterans Property Tax Exemption",
+      "name": "Application for Cold War Veterans Exemption from Real Property Taxation",
+      "number": "RP-458-b",
+      "url": "https://www.tax.ny.gov/pdf/current_forms/orpts/rp458b_fill_in.pdf",
+      "revision": null,
+      "filedWith": "city/town assessor"
+    },
+    {
+      "programRef": "Cold War Veterans Property Tax Exemption",
+      "name": "Renewal Application for Cold War Veterans Exemption Based on Change in Service-Connected Disability Compensation Rating",
+      "number": "RP-458-b-Dis",
+      "url": "https://www.tax.ny.gov/pdf/current_forms/orpts/rp458bdis_fill_in.pdf",
+      "revision": null,
+      "filedWith": "city/town assessor"
+    },
+    {
+      "programRef": "Eligible Funds Veterans Property Tax Exemption",
+      "name": "Application for Veterans Exemption from Real Property Taxation (eligible funds, RPTL 458)",
+      "number": "RP-458",
+      "url": "https://www.tax.ny.gov/pdf/current_forms/orpts/rp458_fill_in.pdf",
+      "revision": null,
+      "filedWith": "city/town assessor"
+    }
+  ],
+  "deadline": {
+    "type": "taxable-status-date",
+    "date": "03-01",
+    "text": "RP-458-a-I (9/26): \"The application must be filed on or before taxable status date. Taxable status date for most towns is March 1. In Nassau County, the taxable status date for towns is January 2. Westchester County towns have either a May 1, or June 1 taxable status date\"; most assessing villages January 1; cities per charter; New York City applications \"filed on or before March 15.\" Look up your municipality in Municipal Profiles."
+  },
+  "effective": "Exemption first appears on the assessment roll whose taxable status date follows a timely filing, so it reduces the school bill issued that fall and the county/town bill the following January (most March 1 towns). The 458-a(11) full exemption first applies to assessment rolls based on taxable status dates on or after October 1, 2026, and only where the municipality or school district has adopted it.",
+  "lateFiling": "No statutory late-filing or hardship extension for veterans exemptions; an application received after the taxable status date is held for the next roll. RPTL 458-a(3) requires filing \"on or before the appropriate taxable status date.\"",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "No refund for years the exemption was not applied for; exemptions attach prospectively to the next assessment roll."
+  },
+  "renewal": {
+    "type": "on-change",
+    "text": "RPTL 458-a(3): once granted the exemption \"shall continue in full force and effect for all appropriate subsequent tax years\" and owners \"shall not be required to refile each year.\" Refile by the taxable status date if the disability percentage changes (Form RP-458-a-Dis) or if you move (new RP-458-a)."
+  },
+  "ratingChange": "Any increase or decrease in the VA service-connected rating must be reported on Form RP-458-a-Dis (Cold War: RP-458-b-Dis), filed with the assessor \"prior to taxable status date in order for the exemption to be properly adjusted,\" attaching written evidence of the new rating. A veteran newly documented as permanently and totally disabled files a new RP-458-a to claim the 458-a(11) full exemption where offered.",
+  "move": "File a new RP-458-a with the new municipality's assessor by its taxable status date. Where the municipality has adopted the RPTL 458-a(8) local option, a veteran who sells and buys within the same county (or city/town/village) may have the former exemption transferred and prorated for the rest of the fiscal year from the date title is obtained, but must still reapply by the following taxable status date.",
+  "onlineFiling": {
+    "available": null,
+    "text": "No statewide e-file; forms are PDFs filed with the local assessor. Some municipalities (e.g. NYC Department of Finance) offer their own online submission."
+  },
+  "documents": [
+    "DD-214 (or other discharge/separation papers) showing discharge or release under honorable conditions; or a NYS Department of Veterans' Services letter that the veteran meets the Restoration of Honor Act character-of-discharge criteria",
+    "Proof of dates and places of active service and, if claimed, proof of wartime service, expeditionary medal, or combat-zone service (if not shown on the DD-214)",
+    "Career members with no DD-214: reenlistment documents or chain-of-command statement showing completion of the initial contract and at least 10 years' service",
+    "VA documentation of the service-connected disability rating (for the disability component); for the 458-a(11) full exemption, VA documentation that must \"specifically\" state the veteran is permanently and totally disabled as a result of service",
+    "Proof of ownership and primary residence (deed; the form asks for date of purchase and tax map section/block/lot)",
+    "Surviving spouse: veteran's death certificate and proof the spouse has not remarried"
+  ],
+  "survivingSpouse": "The unremarried surviving spouse of a qualifying veteran may receive the alternative exemption (and, where adopted, the 458-a(11) full exemption) on the primary residence; a surviving spouse who is also a veteran may claim the deceased spouse's entitlement. Gold Star parents at local option. RP-458-a-Dis asks for the veteran's rating at date of death.",
+  "appeal": "A denial is contested through the ordinary assessment grievance: file Form RP-524 with the Board of Assessment Review on or before Grievance Day (the fourth Tuesday in May in most towns), then Small Claims Assessment Review or an RPTL Article 7 proceeding (per the Tax Department's 'Contest your assessment' guidance, not re-read for this record).",
+  "statute": "RPTL 458-a (alternative veterans; subd. 11 full exemption for permanently and totally disabled veterans, added L.2025 ch.672, amended L.2026 ch.77 and L.2026 ch.59 Part EE); RPTL 458-b (Cold War); RPTL 458 (eligible funds)",
+  "sourceUrls": [
+    { "url": "https://www.tax.ny.gov/pit/property/exemption/vetexempt.htm", "title": "NYS Tax Dept: Veterans exemptions overview (lists 458-a(11) as local option, rolls with taxable status dates on/after Oct 1, 2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.ny.gov/pit/property/exemption/altvetoverview.htm", "title": "NYS Tax Dept: Alternative veterans exemption and Veterans with a permanent and total disability exemption (updated Oct 9, 2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.ny.gov/pdf/current_forms/orpts/rp458a_fill_in.pdf", "title": "Form RP-458-a (9/26)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.ny.gov/pdf/current_forms/orpts/rp458ai.pdf", "title": "Form RP-458-a-I Instructions (9/26): taxable status dates, 458-a(11) eligibility and documentation", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.ny.gov/pdf/current_forms/orpts/rp458adis_fill_in.pdf", "title": "Form RP-458-a-Dis (1/16)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.ny.gov/pdf/publications/orpts/pub1093.pdf", "title": "Publication 1093 Veterans Exemption Q&A (9/24)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.ny.gov/forms/orpts/exemption.htm", "title": "ORPTS Exemption forms index (RP-458 series)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.ny.gov/research/property/acw/2026/02232026.htm", "title": "Assessment Community Weekly 02/23/2026: Chapter 77 of 2026 signed Feb 13; delays 458-a(11) to rolls with taxable status dates on/after Oct 1, 2026", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.ny.gov/research/property/acw/2026/06012026.htm", "title": "Assessment Community Weekly 06/01/2026: 2026-27 budget (S.9009-C Part EE) amends 458-a(11) to a full exemption at local option", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.nysenate.gov/legislation/laws/RPT/458-A", "title": "RPTL 458-a current text (subd. 3 filing/continuation, subd. 8 transfer on move, subd. 11 local-option full exemption)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.ny.gov/pit/property/munidataportal.htm", "title": "Municipal Profiles / Municipal Data Portal", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.ny.gov/pit/property/exemption/vetexemptproof.htm", "title": "NYS Tax Dept: Proof of eligibility for veterans exemptions", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "Full Exemption for 100% P&T Disabled Veterans (RPTL 458-a(11), NEW 2026).summary / details and propertyTax.note",
+      "issue": "Row says the exemption is 'now MANDATORY STATEWIDE' and that 'no city, town, county or school district can decline it.' That was true only between Feb 13, 2026 (ch.77) and the 2026-27 state budget: L.2026 ch.59 Part EE (S.9009-C) re-amended subdivision 11 so the full exemption is again a LOCAL OPTION that each county, city, town, village and school district must adopt by local law or resolution (and notify the Dept of Veterans' Services within 30 days). The Tax Department's veterans pages (updated Oct 2026) and the current statute text both say 'may adopt' / 'local option.' Effective-roll language (taxable status dates on/after Oct 1, 2026) is still correct. Also the exemption uses the VA 'permanently and totally disabled' standard, not literally '100%'; the 9/26 RP-458-a is the application form (no separate form).",
+      "source": "https://www.tax.ny.gov/research/property/acw/2026/06012026.htm"
+    },
+    {
+      "field": "Alternative Veterans Property Tax Exemption.survivingSpouse and Cold War Veterans Property Tax Exemption.survivingSpouse",
+      "issue": "Rows show false; RPTL 458-a and RP-458-a extend the exemption to the unremarried surviving spouse.",
+      "source": "https://www.nysenate.gov/legislation/laws/RPT/458-A"
+    }
+  ],
+  "notes": "Whether TDIU-based P&T qualifies for 458-a(11) remains unaddressed in RP-458-a-I; the instructions only require VA documentation that 'specifically' states permanent and total disability. NYC Department of Finance veterans page returned 403/404 to automated checks and is omitted. The RP-458-b, RP-458-b-Dis and RP-458 revision dates were not read (links verified 200 only). Appeal paragraph is from general knowledge of the RP-524 grievance process, not re-verified for this record."
+}

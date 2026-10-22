@@ -1,0 +1,63 @@
+{
+  "state": "NJ",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0223,
+    "sourceValue": 0.0188,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Tax Foundation Table 2 'Property Taxes Paid as a Percentage of Owner-Occupied Housing Value, 2024' (Census ACS 2024 5-year estimates): NJ 1.88% (2023: 1.98%). File value 2.23% is 0.35 pp high; it matches the Tax Foundation 2021-data figure. NJ still ranks first nationally."
+  },
+  "programs": [
+    {
+      "name": "Disabled Veterans' Full Property Tax Exemption",
+      "status": "confirmed",
+      "fields": {
+        "type": { "current": "full", "correct": "full", "quote": "are granted a full property tax exemption on their dwelling house and the lot on which it is situated.", "source": "https://www.nj.gov/treasury/taxation/pdf/lpt/vetproptaxprogrambrochure.pdf" },
+        "ratingRequired": { "current": 100, "correct": 100, "quote": "Active Duty Military Service, Honorable Discharge, and VA Certification of 100% permanent & total disability are still required.", "source": "https://www.nj.gov/treasury/taxation/pdf/other_forms/lpt/dvsse.pdf" },
+        "ptRequired": { "current": null, "correct": true, "quote": "Service-connected disability declared to be a total or 100% permanent disability", "source": "https://www.nj.gov/treasury/taxation/pdf/other_forms/lpt/dvsse.pdf" },
+        "requiresSchedular100": { "current": null, "correct": false, "quote": "Service-connected disability rated unemployable with payment of 100% and stated to be totally and permanently disabling.", "source": "https://www.nj.gov/treasury/taxation/pdf/other_forms/lpt/dvsse.pdf" },
+        "wartimeRequired": { "current": null, "correct": false, "quote": "After December 3, 2020 wartime service is not required.", "source": "https://www.nj.gov/treasury/taxation/pdf/other_forms/lpt/dvsse.pdf" },
+        "survivingSpouse": { "current": true, "correct": true, "quote": "Surviving spouse/civil union or domestic partner of honorably discharged 100% permanently and totally disabled veteran with active duty service", "source": "https://www.nj.gov/treasury/taxation/pdf/other_forms/lpt/dvsse.pdf" }
+      },
+      "effectiveChanges": null,
+      "note": "Row is correct. TDIU rated permanent qualifies (form checkbox C). Filed any time during the tax year, prorated from date of title. Pending but NOT enacted as of 10/21/26: A1118 and A637 (2026-27) would add a proportional exemption for veterans rated below 100%; SCR84 would require State reimbursement to municipalities. None changes TY2026 or TY2027 law."
+    },
+    {
+      "name": "Veteran Deduction",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": { "current": 250, "correct": 250, "quote": "no longer need to serve during a specific war period or other emergency to receive the annual $250 property tax deduction.", "source": "https://www.nj.gov/treasury/taxation/pdf/other_forms/lpt/vss.pdf" },
+        "survivingSpouse": { "current": false, "correct": true, "quote": "Surviving spouse/civil union or domestic partner of honorably discharged veteran with active duty service in the United States Armed Forces; and I have not remarried", "source": "https://www.nj.gov/treasury/taxation/pdf/other_forms/lpt/vss.pdf" },
+        "wartimeRequired": { "current": null, "correct": false, "quote": "Constitutional Amendment, effective December 4, 2020, to eliminate the wartime service requirement for both the $250 Veteran Property Tax Deduction and the Disabled Veteran Property Tax Exemption.", "source": "https://www.nj.gov/treasury/taxation/pdf/other_forms/lpt/vss.pdf" },
+        "type": { "current": "partial", "correct": "credit", "quote": "Two hundred fifty dollars ($250) may be deducted each year from taxes due on the real or personal property of qualified active duty veterans or their un-remarried surviving spouse.", "source": "https://www.nj.gov/treasury/taxation/pdf/lpt/vetproptaxprogrambrochure.pdf" }
+      },
+      "effectiveChanges": "None enacted. ACR129 (2026-27, introduced) would raise the deduction from $250 to $2,500 over four years but requires voter approval of a constitutional amendment; not on the Nov 2026 ballot per sources found.",
+      "note": "The $250 is a deduction from the tax bill, not from assessed value, so `type` should be `credit` (exemptionValue 250 = dollars of tax). Surviving spouse eligibility is explicit on Form V.S.S. box B and C; the row's own details text already says so. Deceased veteran must have been a NJ resident at death."
+    },
+    {
+      "name": "Active Service Deferment",
+      "status": "confirmed",
+      "fields": {
+        "survivingSpouse": { "current": false, "correct": false, "quote": "An active serviceperson who is deployed or mobilized for active service in time of war, may qualify for a deferment of a property tax bill.", "source": "https://www.nj.gov/treasury/taxation/pdf/lpt/vetproptaxprogrambrochure.pdf" },
+        "exemptionValue": { "current": null, "correct": null, "quote": "Once your deployment/mobilization is over, you have 90 days to pay your deferred property taxes", "source": "https://www.nj.gov/treasury/taxation/lpt/lpt-activemilitary.shtml" }
+      },
+      "effectiveChanges": null,
+      "note": "Not a rated veteran's benefit and has no dollar value (it is a deferral with interest assessed back to the due date). It should not be credited to a rated veteran's home in any dollar model; keep as informational only or set a flag so it never scores."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": { "status": "confirmed", "correct": "", "source": "" },
+  "sources": [
+    { "url": "https://www.nj.gov/treasury/taxation/lpt/lpt-disabledvet.shtml", "title": "NJ Division of Taxation: 100% Disabled Veteran Property Tax Exemption (updated 08/12/25)", "status": 200 },
+    { "url": "https://www.nj.gov/treasury/taxation/pdf/other_forms/lpt/dvsse.pdf", "title": "Form D.V.S.S.E. with General Guidelines (Rev. March 2025)", "status": 200 },
+    { "url": "https://www.nj.gov/treasury/taxation/pdf/other_forms/lpt/vss.pdf", "title": "Form V.S.S. $250 Veteran Property Tax Deduction (Rev. Nov 2020)", "status": 200 },
+    { "url": "https://www.nj.gov/treasury/taxation/pdf/lpt/vetproptaxprogrambrochure.pdf", "title": "NJ Property Tax Programs for Veterans brochure (Rev. 05/2022)", "status": 200 },
+    { "url": "https://www.nj.gov/treasury/taxation/lpt/lpt-activemilitary.shtml", "title": "NJ Division of Taxation: Active Military Service Property Tax Deferment", "status": 200 },
+    { "url": "https://pub.njleg.gov/bills/2018/PL19/413_.HTM", "title": "P.L.2019, c.413 (removed wartime requirement; operative Dec 4, 2020)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 data)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "All three NJ rows are still law; the only field errors are the $250 deduction's survivingSpouse (should be true) and its type (a bill credit, not an assessed-value reduction), and the deferment row should never be scored as a rated veteran's dollar benefit. The effective tax rate is stale: Tax Foundation 2024 data puts NJ at 1.88%, not 2.23%."
+}

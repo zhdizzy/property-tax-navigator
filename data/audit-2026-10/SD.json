@@ -1,0 +1,109 @@
+{
+  "propertyTaxRate": {
+    "fileValue": 0.01,
+    "sourceValue": 0.01,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation Table 2 (ACS 2024): South Dakota 1.00% (1.03% in 2023). Exact match."
+  },
+  "programs": [
+    {
+      "name": "Paraplegic Veterans Property Tax Exemption",
+      "status": "corrected",
+      "fields": {
+        "summary": {
+          "current": "",
+          "correct": "Full exemption of a dwelling (designed for wheelchair use per 10-4-24.9) owned and occupied for the full calendar year by a paraplegic veteran or a veteran with loss or loss of use of both lower extremities, or the unremarried widow/widower. Discretionary county refund up to four prior years.",
+          "quote": "A dwelling or part of a dwelling designed as provided in § 10-4-24.9 that is owned and occupied for the full calendar year in which a tax is to be levied by a paraplegic veteran, a veteran with the loss or loss of use of both lower extremities, or the unremarried widow or widower of the veteran is exempt from taxation.",
+          "source": "https://sdlegislature.gov/api/Statutes/10-4-24.10.html"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "or the unremarried widow or widower of the veteran is exempt from taxation",
+          "source": "https://sdlegislature.gov/api/Statutes/10-4-24.10.html"
+        },
+        "type": {
+          "current": "full",
+          "correct": "full",
+          "quote": "is exempt from taxation",
+          "source": "https://sdlegislature.gov/api/Statutes/10-4-24.10.html"
+        }
+      },
+      "effectiveChanges": "SL 2026 ch 39 (effective 7/1/2026) added the four-year discretionary refund petition for missed deadlines; no dollar change.",
+      "note": "Condition-based (paraplegia / bilateral lower-extremity loss), not rating-based; ratingRequired null is right but the tool should gate it on the condition, not credit it to every 100% veteran."
+    },
+    {
+      "name": "Disabled Veterans Property Tax Exemption",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": {
+          "current": 200000,
+          "correct": 200000,
+          "quote": "Two hundred thousand dollars of the full and true value of the total amount of a dwelling or portion thereof classified as owner-occupied ... which is owned and occupied by a veteran who is rated as permanently and totally disabled from a service-connected disability, is exempt from property taxation.",
+          "source": "https://sdlegislature.gov/api/Statutes/10-4-40.html",
+          "note": "Confirmed in the codified text as amended by SL 2026 ch 40 (HB 1193 enrolled keeps $200,000). The $225,000 figure circulating online was HB 1241 (2026), which did not become law. 'Full and true value' = market value, not assessed value."
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "Two hundred thousand dollars of the full and true value ... is exempt from property taxation if owned and occupied by: (1) The surviving spouse of a veteran who was rated as permanently and totally disabled from a service-connected disability; or (2) The surviving spouse of a veteran, who receives dependency and indemnity compensation",
+          "source": "https://sdlegislature.gov/api/Statutes/10-4-41.html",
+          "note": "Resolves the brief's lead: the spouse amount is $200,000 (not $150,000) and ends on remarriage."
+        },
+        "ptRequired": {
+          "current": true,
+          "correct": true,
+          "quote": "rated as permanently and totally disabled from a service-connected disability",
+          "source": "https://sdlegislature.gov/api/Statutes/10-4-40.html"
+        }
+      },
+      "effectiveChanges": "SL 2026 ch 40 (HB 1193, effective 7/1/2026): when the Nov 1 deadline is missed because of a pending VA P&T claim, the county 'must abate or refund the difference in taxes accumulated since the effective date of the claim, but not exceeding the previous four years.' No change to the $200,000 amount for TY2026/TY2027.",
+      "note": "Row otherwise correct. Summary text is accurate (apply by Nov 1 with the director of equalization)."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "unverified",
+    "correct": "",
+    "source": "",
+    "note": "No propertyTax.note in the file for SD."
+  },
+  "sources": [
+    {
+      "url": "https://sdlegislature.gov/api/Statutes/10-4-40.html",
+      "title": "SDCL 10-4-40 (as amended SL 2026 ch 40)",
+      "status": 200
+    },
+    {
+      "url": "https://sdlegislature.gov/api/Statutes/10-4-41.html",
+      "title": "SDCL 10-4-41 surviving spouses (as amended SL 2026 ch 40)",
+      "status": 200
+    },
+    {
+      "url": "https://sdlegislature.gov/api/Statutes/10-4-24.10.html",
+      "title": "SDCL 10-4-24.10 paraplegic/amputee veteran dwelling exemption (as amended SL 2026 ch 39)",
+      "status": 200
+    },
+    {
+      "url": "https://mylrc.sdlegislature.gov/api/Documents/305690.pdf",
+      "title": "HB 1193 (2026) enrolled: modifies refund provisions, keeps $200,000",
+      "status": 200
+    },
+    {
+      "url": "https://dor.sd.gov/media/jzbhdtzr/disabled-veteran-property-tax-exemption-brochure.pdf",
+      "title": "SD DOR Disabled Veteran Property Tax Exemption brochure (Dec 2025)",
+      "status": 200
+    },
+    {
+      "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+      "title": "Tax Foundation, Property Taxes by State and County, 2026 (Table 2: Property Taxes Paid as a Percentage of Owner-Occupied Housing Value, 2024, Census ACS)",
+      "status": 200
+    }
+  ],
+  "confidence": "verified",
+  "summary": "SD's $200,000 full-and-true-value exemption for P&T veterans is confirmed in the codified text as amended by SL 2026 ch 40, and the surviving spouse gets the same $200,000 (file wrongly says false). The paraplegic veteran row needs its empty summary filled and survivingSpouse set true; the 2026 amendments add a mandatory four-year refund for pending P&T claims but change no dollar amounts.",
+  "state": "SD",
+  "checkedDate": "2026-10-21"
+}

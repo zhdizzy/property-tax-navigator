@@ -1,0 +1,98 @@
+{
+  "propertyTaxRate": {
+    "fileValue": 0.0052,
+    "sourceValue": 0.0052,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation Table 2 (ACS 2024): Tennessee 0.52% (0.56% in 2023). Exact match."
+  },
+  "programs": [
+    {
+      "name": "Disabled Veteran Exemption",
+      "status": "confirmed",
+      "fields": {
+        "exemptionValue": {
+          "current": 175000,
+          "correct": 175000,
+          "quote": "Such reimbursement shall be paid on the first one hundred seventy-five thousand dollars ($175,000) of the full market value of such property.",
+          "source": "https://www.comptroller.tn.gov/content/dam/cot/pa/documents/tax-relief/TCA%2067-5-701%20through%2067-5-704.pdf",
+          "note": "2026 brochure: '$175,000 Maximum market value on which tax relief is calculated.' HB 1687 / SB 1798 (2026) would raise it to $200,000; both bills show only committee assignments (last actions 1/22/2026 and 2/18/2026) and no passage, so $175,000 stands for TY2026."
+        },
+        "ptRequired": {
+          "current": true,
+          "correct": true,
+          "quote": "Acquired service-connected permanent and total disability or disabilities, as determined by the United States department of veterans' affairs.",
+          "source": "https://www.comptroller.tn.gov/content/dam/cot/pa/documents/tax-relief/TCA%2067-5-701%20through%2067-5-704.pdf"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "Property tax relief shall also be extended to the surviving spouse of a disabled veteran who, at the time of the disabled veteran's death, was eligible",
+          "source": "https://www.comptroller.tn.gov/content/dam/cot/pa/documents/tax-relief/TCA%2067-5-701%20through%2067-5-704.pdf"
+        },
+        "type": {
+          "current": "partial",
+          "correct": "credit",
+          "quote": "There shall be paid from the general funds of the state to certain disabled veterans the amount necessary to pay or reimburse such taxpayers for all or part of the local property taxes paid",
+          "source": "https://www.comptroller.tn.gov/content/dam/cot/pa/documents/tax-relief/TCA%2067-5-701%20through%2067-5-704.pdf",
+          "note": "This is a state reimbursement claimed annually through the trustee (35 days after delinquency), not an exemption; dollar modeling as 'tax on first $175,000 of market value' is still right."
+        }
+      },
+      "effectiveChanges": "No enacted change for TY2026. Watch HB 1687 / SB 1798 ($200,000 cap) if the 114th General Assembly revives them; as of 10/21/2026 the bill pages show no action after committee referral.",
+      "note": "Additional paths confirmed: paraplegia/permanent paralysis, legal blindness, loss of use of two or more limbs from a service-connected cause, and 100% P&T from POW service (67-5-704(b))."
+    },
+    {
+      "name": "Specially Adapted Housing",
+      "status": "obsolete",
+      "fields": {
+        "existence": {
+          "current": "type none, empty summary",
+          "correct": "No separate Tennessee program; paraplegia is one of the 67-5-704(b)(1) eligibility routes for the same $175,000 relief",
+          "quote": "Acquired in connection with such service a disability from paraplegia or permanent paralysis of both legs and lower part of the body resulting from traumatic injury or disease to the spinal cord or brain",
+          "source": "https://www.comptroller.tn.gov/content/dam/cot/pa/documents/tax-relief/TCA%2067-5-701%20through%2067-5-704.pdf"
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Row has no statutory basis in 67-5-701 to 704; safe to delete or fold into the main row's eligibility text."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "unverified",
+    "correct": "",
+    "source": "",
+    "note": "No propertyTax.note in the file for TN."
+  },
+  "sources": [
+    {
+      "url": "https://www.comptroller.tn.gov/content/dam/cot/pa/documents/tax-relief/TCA%2067-5-701%20through%2067-5-704.pdf",
+      "title": "T.C.A. 67-5-701 through 67-5-704 (Comptroller compilation)",
+      "status": 200
+    },
+    {
+      "url": "https://www.comptroller.tn.gov/content/dam/cot/pa/documents/tax-relief/TaxReliefBrochure.pdf",
+      "title": "TN Comptroller 2026 Property Tax Relief brochure ($175,000 cap, F-16/F-16S)",
+      "status": 200
+    },
+    {
+      "url": "https://www.tn.gov/veteran/veteran-benefits/tn-state-benefits/homeowners/property-tax-relief-for-disabled-veterans.html",
+      "title": "TN Dept of Veterans Services: Property Tax Relief for Disabled Veterans ($175,000)",
+      "status": 200
+    },
+    {
+      "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default.aspx?BillNumber=HB1687&GA=114",
+      "title": "TN General Assembly: HB 1687 (114th GA) raise cap to $200,000; last action 2/18/2026 committee assignment",
+      "status": 200
+    },
+    {
+      "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+      "title": "Tax Foundation, Property Taxes by State and County, 2026 (Table 2: Property Taxes Paid as a Percentage of Owner-Occupied Housing Value, 2024, Census ACS)",
+      "status": 200
+    }
+  ],
+  "confidence": "verified",
+  "summary": "Tennessee's disabled-veteran relief remains tax on the first $175,000 of full market value for 2026 bills; the 2026 bills to raise it to $200,000 (HB 1687/SB 1798) died in committee as far as the legislature's pages show. The 'Specially Adapted Housing' row has no statutory basis and should be removed; the main row should be labeled a state reimbursement with annual filing.",
+  "state": "TN",
+  "checkedDate": "2026-10-21"
+}

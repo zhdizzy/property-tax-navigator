@@ -1,0 +1,70 @@
+{
+  "state": "VT",
+  "officeType": "Vermont Office of Veterans Affairs (state agency, Montpelier)",
+  "officeTypeNote": "Vermont is centralized: the veteran files with the STATE Office of Veterans Affairs (OVA), not the town listers or clerk. 32 V.S.A. 3802(11)(A): the application and the VA/military statement must be \"filed with the Office of Veterans Affairs\" before May 1. OVA then gives the Department of Taxes and the town only the name, address and SPAN of approved applicants; the town listers apply the reduction to the grand list. Contact the town clerk only for your SPAN, your town's exemption amount ($10,000 to $40,000), and the bill itself.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://veterans.vermont.gov/benefits-and-services/veteran-benefits/tax-exemptions-veterans",
+    "label": "Vermont Office of Veterans Affairs: Tax Exemptions for Veterans (single statewide filing office)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://tax.vermont.gov/property-owners/exemptions",
+    "note": "Mail: Office of Veterans Affairs, 118 State Street, Montpelier, VT 05620-4401; email mil.ovainfo@vermont.gov; fax 802-828-5932; phone 802-828-3379 or 888-666-9844 (in-state). For the town-level amount and SPAN, the Secretary of State's town clerk directory is https://sos.vermont.gov/elections/town-clerks (200) and the Dept of Taxes lister/assessor page is https://tax.vermont.gov/lister-assessor (200)."
+  },
+  "forms": [
+    {
+      "programRef": "Veteran Property Tax Exemption",
+      "name": "Property Tax Exemption for Eligible Veterans and Their Survivors (application)",
+      "number": null,
+      "url": "https://veterans.vermont.gov/sites/ova/files/documents/Property%20Tax%20Application.pdf",
+      "revision": "State of Vermont, Office of Veterans Affairs Form January 2025 (2025 program year; OVA reissues the form each year)",
+      "filedWith": "Vermont Office of Veterans Affairs by mail, email or fax"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "05-01",
+    "text": "32 V.S.A. 3802(11)(A): exemption applies \"if, before May 1 of each year, there is filed with the Office of Veterans Affairs: (I) a written application ... and (II) a written statement from the Military Department or the Veterans Administration showing that the compensation or pension is being paid.\" Form header: \"MAY 1st Deadline by State Law.\" OVA: the 2026 application period closed as of May 1, so the next window is for the 2027 grand list."
+  },
+  "effective": "Applies to the grand list (April 1 assessment) of the tax year for which the application is filed before May 1; reduces appraised value by the town's amount ($10,000 statutory minimum, up to $40,000 if the town has voted it) on the home owned in fee simple and occupied as the established residence. No proration language in the statute.",
+  "lateFiling": "Statute is silent on late applications; OVA treats May 1 as a hard cutoff (\"application period ... is closed as of May 1\"). Missing it forfeits that year's reduction; refile for the following year. No late window verified.",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "No statutory refund for prior years; the exemption is granted only for years in which the application and VA statement were on file with OVA before May 1."
+  },
+  "renewal": {
+    "type": "annual",
+    "text": "Form: \"Applicants must submit this form and documentation every year by May 1st, except for individuals meeting the One-Time Filing criteria.\" One-time filing (statute 3802(11)(A)(ii): an application \"based upon permanent disability is only required to be filed ... before May 1 of the first year ... and the exemption shall remain on the grand list until title to the property is transferred\"). OVA's one-time list: veterans rated totally and permanently disabled by VA; veterans rated 50%+ for 10 consecutive years; permanent medical retirees; surviving spouses (until remarriage). One-time status must be approved by OVA with written VA proof."
+  },
+  "ratingChange": "Eligibility is a 50%+ VA disability compensation rating (or VA Improved Pension, or permanent medical military retirement); the amount is fixed by the town, not the rating. A drop below 50% ends eligibility and the applicant must notify OVA (form attestation). Reaching P&T lets the veteran request one-time filing status.",
+  "move": "Form: applicant must notify OVA \"if the property above is no longer my primary residence.\" One-time filers who move to a home in a different town must provide proof again (OVA page); the exemption stays on the grand list only \"until title to the property is transferred\" (3802(11)(A)(ii)). File a new application with the new SPAN before May 1.",
+  "onlineFiling": {
+    "available": true,
+    "text": "No web portal, but the completed PDF and documentation may be emailed to mil.ovainfo@vermont.gov or faxed to 802-828-5932, as well as mailed."
+  },
+  "documents": [
+    "OVA Property Tax Exemption application (signed), including the 11-digit School Parcel Account Number (SPAN) from the tax bill or town clerk",
+    "Current-year VA Summary of Benefits letter showing disability compensation rated 50% or higher, or Improved Pension (OVA: call VA no later than April 1 or download from va.gov/records/download-va-letters); payment amounts may be blacked out",
+    "Permanent medical retirement route: DD Form 214 showing medical retirement, or the medical retirement letter",
+    "Survivors: proof of unremarried spouse or minor child status of a veteran who met the criteria at death (DIC or death compensation statement from VA)",
+    "One-time filing: written VA proof of total and permanent disability (or 10 consecutive years at 50%+), approved by OVA"
+  ],
+  "survivingSpouse": "32 V.S.A. 3802(11)(C): \"An unremarried widow or widower of a previously qualified veteran shall be entitled to the exemption ... whether or not the individual is receiving government compensation or pension.\" Minor children of a qualifying veteran also qualify (form). Surviving spouses may file once; they must notify OVA if they remarry.",
+  "appeal": "Not addressed by OVA or the statute for this exemption; grand-list valuation grievances go to the town listers and Board of Civil Authority under 32 V.S.A. chapter 131, but eligibility is decided by OVA. Unverified.",
+  "statute": "32 V.S.A. 3802(11)",
+  "sourceUrls": [
+    { "url": "https://legislature.vermont.gov/statutes/section/32/125/03802", "title": "32 V.S.A. 3802 Property tax exemptions (subdivision (11) veterans)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://veterans.vermont.gov/benefits-and-services/veteran-benefits/tax-exemptions-veterans", "title": "Vermont Office of Veterans Affairs: Tax Exemptions for Veterans", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://veterans.vermont.gov/sites/ova/files/documents/Property%20Tax%20Application.pdf", "title": "OVA Property Tax Exemption application and instructions (January 2025 form)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.vermont.gov/property-owners/exemptions", "title": "Vermont Department of Taxes: Property tax exemptions", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://sos.vermont.gov/elections/town-clerks", "title": "Vermont Secretary of State: Town Clerks directory", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    { "field": "programs[0].survivingSpouse", "note": "Should be true: 3802(11)(C) extends the exemption to the unremarried widow/widower regardless of VA payments, and the OVA form covers minor children. The summary text already says spouses qualify; the boolean flag does not.", "source": "https://legislature.vermont.gov/statutes/section/32/125/03802" },
+    { "field": "programs[0].summary", "note": "Statute's qualifying routes are 50%+ disability compensation, death compensation, DIC, or 'pension for disability' (VA Improved Pension); OVA adds permanent medical military retirement via 3802(11)(B)(ii). Consistent with the summary; no dollar change.", "source": "https://veterans.vermont.gov/benefits-and-services/veteran-benefits/tax-exemptions-veterans" }
+  ],
+  "notes": "The hosted application PDF is the January 2025 version; the 2026 form (same content, '2026 Summary of Benefits') circulates on town sites but the state URL still serves 2025. The old veterans.vermont.gov/node/103 and /benefits-services/... paths redirect or 404; the current page is /benefits-and-services/veteran-benefits/tax-exemptions-veterans. Statute text contains a duplicated 'Only one exemption ... one-time filing' sentence in (A)(i) and (A)(ii) as published."
+}

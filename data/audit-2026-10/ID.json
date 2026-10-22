@@ -1,0 +1,97 @@
+{
+  "state": "ID",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0055,
+    "sourceValue": 0.0049,
+    "source": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Census ACS 2020-2024 5-year: median real estate taxes $2,038 / median value $418,600 (acsdt5y2024-b25077.dat) = 0.487%. File 0.55% is 0.06 pp high, within tolerance."
+  },
+  "programs": [
+    {
+      "name": "Property Tax Benefit for Disabled Veterans (Idaho Code 63-705A)",
+      "status": "confirmed",
+      "fields": {
+        "exemptionValue": {
+          "current": 1500,
+          "correct": 1500,
+          "quote": "The special tax reduction shall be in the amount of one thousand five hundred dollars ($1,500) or for the amount of the veteran's actual property taxes or occupancy taxes, as applicable, whichever is less.",
+          "source": "https://legislature.idaho.gov/statutesrules/idstat/title63/t63ch7/sect63-705a/"
+        },
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "quote": "a veteran with a service-connected disability of one hundred percent (100%) or a disability rating based on individual unemployability rating that is compensated at the one hundred percent (100%) disability rate",
+          "source": "https://legislature.idaho.gov/statutesrules/idstat/title63/t63ch7/sect63-705a/"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "the veteran's surviving spouse is entitled to receive the special tax reduction in that year and subsequent years, until such time as the surviving spouse remarries, dies, or no longer has property tax levied on the homestead.",
+          "source": "https://legislature.idaho.gov/statutesrules/idstat/title63/t63ch7/sect63-705a/",
+          "note": "Only if the veteran had applied; Tax Commission: 'The benefit isn't transferable to a new property after the death of the veteran.'"
+        },
+        "type": {
+          "current": "credit",
+          "correct": "credit",
+          "quote": "could reduce the property taxes on your home and up to one acre of land by as much as $1,500",
+          "source": "https://tax.idaho.gov/taxes/property/homeowners/veteran-benefit/"
+        }
+      },
+      "effectiveChanges": "None. 2027 program page is live: apply Jan 1 to Apr 15, 2027, rating as of Jan 1, 2027; $1,500 cap unchanged (last amended 2023 ch. 137). No income limit. P&T veterans auto-renew (63-705A(4)).",
+      "note": "Stackable with the circuit breaker, but 'the combined tax reduction amount may not exceed the actual amount of the veteran's property taxes'."
+    },
+    {
+      "name": "General Reduction Program",
+      "status": "corrected",
+      "fields": {
+        "incomeLimit": {
+          "current": 39130,
+          "correct": 40030,
+          "quote": "Your total 2026 income, after deducting medical expenses, was $40,030 or less.",
+          "source": "https://tax.idaho.gov/taxes/property/homeowners/reduction/",
+          "note": "$40,030 is the 2027-program limit (2026 income). $39,130 was the 2026-program limit (2025 income); the page now shows only the 2027 cycle."
+        },
+        "exemptionValue": {
+          "current": 1500,
+          "correct": 1500,
+          "quote": "The program could reduce your property taxes by $250 to $1,500 on your home and up to one acre of land.",
+          "source": "https://tax.idaho.gov/taxes/property/homeowners/reduction/"
+        },
+        "summary": {
+          "current": "income $39,130 or less (2026, after medical-expense deduction)",
+          "correct": "income $40,030 or less (2027 program, 2026 income after medical-expense deduction; $39,130 for the 2026 program)",
+          "quote": "You must apply between January 1 and April 15, 2027, for a reduction to 2027 property taxes.",
+          "source": "https://tax.idaho.gov/taxes/property/homeowners/reduction/"
+        }
+      },
+      "effectiveChanges": "TY2027: income limit indexed to $40,030 (from $39,130). Eligibility categories unchanged (65+, blind, widowed, disabled, former POW/hostage, fatherless/motherless child under 18); a disabled veteran qualifies under 'disabled' regardless of rating.",
+      "note": "Idaho Code 63-701 et seq. also caps eligibility by home value (statutory assessed-value test) that the Tax Commission page did not state; not verified in this pass."
+    },
+    {
+      "name": "Deferral Program",
+      "status": "confirmed",
+      "fields": {},
+      "effectiveChanges": null,
+      "note": "Program exists (tax.idaho.gov deferral page, Pub 67 09-22-2026; apply Jan 1 to Sept 7). No dollar figures in the row to check; it is a loan against the home, not savings, and should not add to annual savings."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "confirmed",
+    "correct": "",
+    "source": ""
+  },
+  "sources": [
+    { "url": "https://legislature.idaho.gov/statutesrules/idstat/title63/t63ch7/sect63-705a/", "title": "Idaho Code 63-705A special property tax reduction for disabled veterans ($1,500; 100%/IU; surviving spouse; P&T auto-renew)", "status": 200 },
+    { "url": "https://tax.idaho.gov/taxes/property/homeowners/veteran-benefit/", "title": "Idaho State Tax Commission: Property Tax Benefit for Veterans with 100% Service-Connected Disability (2027 cycle)", "status": 200 },
+    { "url": "https://tax.idaho.gov/taxes/property/homeowners/reduction/", "title": "Idaho State Tax Commission: Property Tax Reduction ($40,030 income limit for 2027; $250-$1,500)", "status": 200 },
+    { "url": "https://tax.idaho.gov/taxes/property/homeowners/deferral/", "title": "Idaho State Tax Commission: Property Tax Deferral", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat", "title": "Census ACS 2024 5-year summary file, table B25103", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25077.dat", "title": "Census ACS 2024 5-year summary file, table B25077", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "Idaho's $1,500 disabled-veteran credit (63-705A) is confirmed from statute with surviving-spouse continuation and no change for 2027. The circuit-breaker income limit moves to $40,030 for the 2027 program (file has the 2026 figure $39,130); the 0.55% rate is within tolerance of ACS 2024 (0.49%)."
+}

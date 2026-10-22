@@ -1,0 +1,99 @@
+{
+  "propertyTaxRate": {
+    "fileValue": 0.008,
+    "sourceValue": 0.0075,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation Table 2 (ACS 2024): Washington 0.75% (0.77% in 2023). Within tolerance."
+  },
+  "programs": [
+    {
+      "name": "Veteran Exemption",
+      "status": "corrected",
+      "fields": {
+        "ratingRequired": {
+          "current": 80,
+          "correct": "80% (or total disability rating) for taxes payable through 2026; 40% for taxes collected 2027 and after",
+          "quote": "A veteran of the armed forces of the United States entitled to and receiving compensation from the United States department of veterans affairs at: (A) A combined service-connected evaluation rating of 40 percent or higher; or (B) A total disability rating for a service-connected disability without regard to evaluation percent.",
+          "source": "https://app.leg.wa.gov/RCW/default.aspx?cite=84.36.381",
+          "note": "Codified text already reads 40 percent; applicability note: 'This act applies to taxes levied for collection in 2027 and thereafter.' [2025 c 200 s 3; 2026 c 163 s 402]. Veterans rated 40-79% apply during 2026 (assessment year) for 2027 taxes."
+        },
+        "incomeLimit": {
+          "current": 89000,
+          "correct": "King County Income Threshold 3: $84,000 for TY2024-2026; $101,000 for TY2027-2029 (county-specific)",
+          "quote": "King $ 60,000 $ 72,000 $ 84,000 $ 88,998",
+          "source": "https://dor.wa.gov/sites/default/files/2023-08/Income_ThreshTY24-26.pdf",
+          "note": "File's $89,000 matches none of the exemption tiers (it is close to the 2024-26 DEFERRAL threshold $88,998). For 2027-2029 the DOR page lists King: Threshold 1 $76,000, Threshold 2 $89,000, Threshold 3 $101,000, deferral $113,512 (ESSB 6162, 2026). Store per-tax-year or label as King County Threshold 3."
+        },
+        "fraction": {
+          "current": 0.5,
+          "correct": "unverified",
+          "quote": "A person who otherwise qualifies under this section and has a combined disposable income equal to or less than income threshold 3 is exempt from all excess property taxes, the state property tax imposed under RCW 84.52.065, and the portion of the regular property taxes authorized pursuant to RCW 84.55.050 and approved by the voters",
+          "source": "https://app.leg.wa.gov/RCW/default.aspx?cite=84.36.381",
+          "note": "Relief is tiered: Threshold 3 = excess levies + state school levy; Threshold 2 adds regular levies on the greater of $70,000 or 45% of value (cap $200,000); Threshold 1 on the greater of $80,000 or 80% of value; plus a frozen valuation. The 50% modeling factor is a house estimate, not a statutory figure."
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "any surviving spouse or surviving domestic partner of a person who was receiving an exemption at the time of the person's death will qualify if the surviving spouse or surviving domestic partner is 57 years of age or older and otherwise meets the requirements of this section",
+          "source": "https://app.leg.wa.gov/RCW/default.aspx?cite=84.36.381"
+        }
+      },
+      "effectiveChanges": "TY2027: rating threshold drops from 80% to 40% (2025 c 200 / EHB 1106, plus 2026 c 163); income thresholds reset for TY2027-2029 under ESSB 6162 (King Threshold 3 $84,000 -> $101,000). TY2026 taxes still use 80%/total rating and the 2024-2026 thresholds.",
+      "note": "Program remains the income-tested RCW 84.36.381 senior/disabled exemption; VA compensation and DIC are excluded from disposable income (RCW 84.36.383)."
+    },
+    {
+      "name": "Surviving Spouse Program",
+      "status": "corrected",
+      "fields": {
+        "summary": {
+          "current": "",
+          "correct": "Not a separate program: the surviving spouse/domestic partner aged 57+ in the year of death continues the same 84.36.381 exemption if income-qualified. Merge into the Veteran Exemption row.",
+          "quote": "will qualify if the surviving spouse or surviving domestic partner is 57 years of age or older and otherwise meets the requirements of this section",
+          "source": "https://app.leg.wa.gov/RCW/default.aspx?cite=84.36.381"
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Empty row; no independent dollar value."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "corrected",
+    "correct": "Income-based program (not a flat exemption) under RCW 84.36.381. 80%+ rating (or total disability rating) for taxes through 2026; 40%+ for taxes collected 2027 and after (2025 c 200 / EHB 1106; 2026 c 163). Relief = frozen assessed value + exemption from excess levies and the state school levy, with regular-levy relief at lower income tiers. Income thresholds are set per county: King Threshold 3 is $84,000 for TY2024-2026 and $101,000 for TY2027-2029 (ESSB 6162). VA disability compensation excluded from income.",
+    "source": "https://app.leg.wa.gov/RCW/default.aspx?cite=84.36.381",
+    "note": "The note's 'SB5398 still in committee' claim was not re-verified; drop it or confirm."
+  },
+  "sources": [
+    {
+      "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=84.36.381",
+      "title": "RCW 84.36.381 Residences: property tax exemptions, qualifications (incl. 2025 c 200 and 2026 c 163 applicability notes)",
+      "status": 200
+    },
+    {
+      "url": "https://dor.wa.gov/taxes-rates/property-tax/senior-citizens-and-people-disabilities-exemption-and-deferred-income-thresholds",
+      "title": "WA DOR: income thresholds page (2027-2029 posted per ESSB 6162; 2024-2026 PDF)",
+      "status": 200
+    },
+    {
+      "url": "https://dor.wa.gov/taxes-rates/property-tax/senior-citizens-and-people-disabilities-exemption-and-deferred-income-thresholds/income-thresholds-senior-citizen-and-disabled-persons-property-tax-exemption-and-deferral-tax-years",
+      "title": "WA DOR: Income Thresholds for Tax Years 2027-2029 (King: $76,000 / $89,000 / $101,000; deferral $113,512)",
+      "status": 200
+    },
+    {
+      "url": "https://dor.wa.gov/sites/default/files/2023-08/Income_ThreshTY24-26.pdf",
+      "title": "WA DOR: Income Thresholds for Tax Years 2024-2026 (King: $60,000 / $72,000 / $84,000; deferral $88,998)",
+      "status": 200
+    },
+    {
+      "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+      "title": "Tax Foundation, Property Taxes by State and County, 2026 (Table 2: Property Taxes Paid as a Percentage of Owner-Occupied Housing Value, 2024, Census ACS)",
+      "status": 200
+    }
+  ],
+  "confidence": "verified",
+  "summary": "Washington's rating gate is confirmed at 80% (or total rating) for 2026 taxes and 40% for 2027 collections under the codified RCW 84.36.381; the file's $89,000 King County income limit is wrong for both periods (Threshold 3 is $84,000 for TY2024-26 and $101,000 for TY2027-29 after ESSB 6162). The surviving-spouse row is empty and should be merged (57+ continuation), and the 50% relief fraction is a modeling estimate, not a statutory figure.",
+  "state": "WA",
+  "checkedDate": "2026-10-21"
+}

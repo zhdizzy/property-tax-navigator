@@ -1,0 +1,71 @@
+{
+  "state": "AZ",
+  "officeType": "county assessor",
+  "officeTypeNote": "File with the COUNTY ASSESSOR of the county where the home is located (ARS 42-11152(A); ADOR: 'Property tax exemptions are administered by the County Assessor'). Not the county treasurer, which bills and collects.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://azdor.gov/sites/default/files/2023-03/PROPERTY_AssessorContacts.pdf",
+    "label": "Arizona Department of Revenue: County Assessor Contact Information (PDF, all 15 counties)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://azdor.gov/business/property-tax",
+    "note": "ADOR's Property Tax page links this PDF directory of county assessors (address, phone, website) plus a companion County Treasurer list and a county map."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Affidavit of Individual Tax Exemption for Veterans",
+      "number": "DOR Form 82514V",
+      "url": "https://www.mohave.gov/media/tbfdphzf/veterans-exemption-affidavit-82514v.pdf",
+      "revision": "Revised 12/2024",
+      "filedWith": "county assessor",
+      "note": "State ADOR form, but ADOR says the forms 'are available from the County Assessor'; azdor.gov does not host 82514V itself. The URL is Mohave County's copy of the DOR form; every county assessor distributes the same form (Maricopa wraps it in its own 'Personal Exemption' application packet). Non-veteran disabled persons and widows/widowers use Form 82514 instead."
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "03-01",
+    "text": "ARS 42-11153(A): failure to file the initial affidavit 'between the first Monday in January and March 1' of the tax year 'constitutes a waiver of the exemption.' ADOR (April 2024): 'Applications must be filed between the first Monday in January and March 1.' Some assessors publish an earlier working cutoff (Maricopa's 2026 packet says February 28)."
+  },
+  "effective": "Tax year in which the affidavit is filed (filing window is Jan to Mar 1 of that year). ARS 42-11111 treats property as taxable from the date of any later disqualifying event.",
+  "lateFiling": "ARS 42-11153(B): a person with a disability or widow/widower whose property is exempt under 42-11111 may petition the county board of supervisors after March 1; if approved the board may 'redeem the waiver.' Counties implement this with an 'Exemption Deadline Waiver' filed with the assessor (Maricopa: waiver plus completed application by September 1). Taxes already due and payable before the petition cannot be refunded or abated.",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "ARS 42-11153(B): a redeemed waiver does not reach taxes already 'due and payable' before the petition; no prior-year refund mechanism exists for a missed exemption."
+  },
+  "renewal": {
+    "type": "varies",
+    "text": "ADOR (April 2024): 'Once the exemption is approved by the County Assessor, the claimant is not required to submit an affidavit for subsequent years,' but the assessor 'may require annual or intermittent reapplication.' Form 82514V instructions repeat that 'Some Assessors still require the filing of an annual affidavit.' The claimant must notify the assessor in writing of any disqualifying event (death, conveyance, income over the limit for the income-tested tier). The 100% tier under ARS 42-11111(C) has no income test."
+  },
+  "ratingChange": "ADOR: 'if there is a change in the veteran's disability rating, as determined by the VA, the claimant should file an updated affidavit, including a copy of the updated VA Benefit Summary Letter.' Below 100% the exemption is the base amount multiplied by the disability percentage (42-11111(D)); at 100% or TDIU the primary residence is fully exempt (42-11111(C)).",
+  "move": "ARS 42-11111: when a new primary residence is established, a completed exemption transfer form must be filed with the assessor within sixty days. A home in a different county means a new initial affidavit with that county's assessor.",
+  "onlineFiling": {
+    "available": null,
+    "text": "ARS 42-11152(C) lets each assessor accept the affidavit electronically and requires an electronic acknowledgment of receipt. Availability varies by county (Maricopa accepts online, email, mail, or in person; Pinal requires first-time applicants in person). The affidavit must be notarized if not signed in front of an assessor's representative."
+  },
+  "documents": [
+    "DOR Form 82514V affidavit, signed before an assessor's representative or notarized",
+    "VA disability award / Benefit Summary letter showing the combined rating (the form says 'Please submit a copy'; ADOR says the assessor 'may require' it)",
+    "Proof of discharge under honorable conditions (DD-214 may be requested by the assessor; required for veteran status under 42-11111)",
+    "For the under-100% income-tested tier: household income for the prior calendar year and total Arizona assessed value (limits printed on the current-year form)",
+    "Parcel number / situs address of the primary residence"
+  ],
+  "survivingSpouse": "ARS 42-11111(F): the primary residence of the widow or widower of a veteran eligible under subsection C (100%/TDIU) is fully exempt until remarriage; (G) the widow/widower of a partially rated veteran gets the base amount prorated by the veteran's percentage. The spouse must give the assessor evidence of the veteran's rating. Remarriage is a disqualifying event that must be reported.",
+  "appeal": "Not located on a primary source in this pass. ARS 42-11153(B) routes missed-deadline relief to the county board of supervisors; denial appeals were not researched.",
+  "statute": "Ariz. Const. art. IX, sec. 2; ARS 42-11111 (as amended by HB 2792, Laws 2026 ch. 2, and HB 2120, ch. 82); ARS 42-11152; ARS 42-11153",
+  "sourceUrls": [
+    { "url": "https://www.azleg.gov/ars/42/11111.htm", "title": "ARS 42-11111 Exemption for property of widows and widowers and persons with disabilities; veterans", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.azleg.gov/ars/42/11152.htm", "title": "ARS 42-11152 Affidavit; electronic submission", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.azleg.gov/ars/42/11153.htm", "title": "ARS 42-11153 Deadline for filing affidavit; waiver; redemption", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://azdor.gov/sites/default/files/2023-03/PROPERTY_AZPropertyTaxExemptions.pdf", "title": "ADOR publication: Arizona Property Tax Exemptions (April 2024)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://azdor.gov/business/property-tax", "title": "ADOR Property Tax page (links County Assessor contact PDF)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://azdor.gov/sites/default/files/2023-03/PROPERTY_AssessorContacts.pdf", "title": "ADOR County Assessor Contact Information (PDF)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.mohave.gov/media/tbfdphzf/veterans-exemption-affidavit-82514v.pdf", "title": "DOR Form 82514V (Mohave County Assessor copy, rev. 12/2024)", "status": 200, "checked": "2026-10-21", "primary": false },
+    { "url": "https://mcassessor.maricopa.gov/valuation-relief/exemptions/", "title": "Maricopa County Assessor: Exemptions (Feb 28 / Sep 1 waiver practice)", "status": 200, "checked": "2026-10-21", "primary": false }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [],
+  "notes": "Statute text read via WebFetch of azleg.gov (current text already includes subsection C for 100%/TDIU veterans). ADOR publication and Form 82514V read with pdftotext; the ADOR County Assessor Contacts PDF returned 200 but its text layer did not extract cleanly, so it was not read. azdor.gov's property-tax forms index does not list 82514/82514V (distributed through assessors), so no azdor.gov form URL exists to cite. Rev. 12/2024 82514V still prints the 2025 income limits; counties will reissue for 2026. Maricopa's Feb 28 date is county practice, the statute says March 1."
+}

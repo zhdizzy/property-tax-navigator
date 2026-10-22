@@ -1,0 +1,38 @@
+{
+  "state": "CA",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0071,
+    "sourceValue": 0.007,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation 2024 effective rate (ACS 5-year) 0.70%."
+  },
+  "programs": [
+    {
+      "name": "Disabled Veterans' Exemption",
+      "status": "confirmed",
+      "fields": {
+        "exemptionValue": { "current": 180671, "correct": 180671, "quote": "Applying this factor to the 2026 exemption amounts of $180,671 and $271,009 results in 2027 exemption amounts of $185,889 for the basic exemption and $278,836 for the low-income exemption.", "source": "https://www.boe.ca.gov/proptaxes/pdf/lta26019.pdf" },
+        "incomeLimit (low-income tier)": { "current": "$81,131 (2026) / $83,474 (2027) in summary; incomeLimit field null", "correct": "81131 for 2026, 83474 for 2027 (low-income tier only; basic tier has no income test)", "quote": "Applying this factor to the 2026 household income limit of $81,131 results in a 2027 household income limit of $83,474 for those claiming the low-income exemption.", "source": "https://www.boe.ca.gov/proptaxes/pdf/lta26019.pdf" },
+        "ratingRequired": { "current": 100, "correct": 100, "quote": "rates the veteran's disability at 100 percent or (2) rates the veteran's disability compensation at 100 percent because the veteran is unable to secure and maintain gainful employment", "source": "https://www.boe.ca.gov/legdiv/pdf/0296sb081326ml.pdf" },
+        "survivingSpouse": { "current": true, "correct": true, "quote": "surviving spouses of veterans with specified injuries or a 100 percent disability rating during their lifetime can continue to receive the exemption after the veteran's death so long as they do not remarry", "source": "https://www.boe.ca.gov/legdiv/pdf/0296sb081326ml.pdf" },
+        "SB 296 signed 9/28/26": { "current": "SB 296 (signed 9/28/26)", "correct": "confirmed", "quote": "SB 296 by Senator Bob Archuleta (D-Pico Rivera) - Property taxation: exemption: disabled veteran homeowners.", "source": "https://www.gov.ca.gov/2026/09/28/governor-newsom-signs-legislation-supporting-veterans-servicemembers/" }
+      },
+      "effectiveChanges": "TY2026 (Jan 1, 2026 lien date): basic $180,671, low-income $271,009, income limit $81,131. From the Jan 1, 2027 lien date through lien dates before Jan 1, 2032, SB 296 (signed Sept 28, 2026; adds RTC 205.5.1) suspends most of the 205.5 exemption and substitutes: 50% of the full value of the principal residence up to $1,000,000 (max $500,000 exempt) for a veteran rated 100% (or blind in both eyes / loss of use of two or more limbs / totally disabled from service), and 100% exemption where household income does not exceed $83,474 (indexed). Per the BOE analysis of the July 1, 2026 amendments, the existing 205.5 exemption applies instead where assessed value does not exceed $371,778 and income exceeds the threshold; the August 13 amendment added the $1M cap. Unmarried surviving spouses are covered under conditions. BOE will issue updated BOE-261-G/GNT forms for the 2027 lien date. The 2027 inflation-indexed 205.5 amounts ($185,889 / $278,836 / $83,474) remain relevant for the carve-out and for the sunset after 2031.",
+      "note": "Dollar modeling for TY2027+: exemptionValue becomes 50% of value capped at $500,000 (fraction 0.5 with a $1M value cap), or 100% for low-income claimants; the current flat $180,671 understates most 2027 claims. SB 296's chapter number could not be read (leginfo.legislature.ca.gov returns 403 to automated checks); the Governor's Sept 28, 2026 release and the BOE analysis of the enrolled text are the primary sources used. Row `type: partial` is right through 2026 and for most claimants from 2027; low-income claimants will be 'full' up to $1M of value."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": { "status": "confirmed", "correct": "", "source": "" },
+  "sources": [
+    { "url": "https://www.boe.ca.gov/proptaxes/pdf/lta26019.pdf", "title": "BOE Letter to Assessors 2026/019 (May 22, 2026): Disabled Veterans' Exemption increases for 2027, with 2026 and prior-year table", "status": 200 },
+    { "url": "https://www.boe.ca.gov/proptaxes/dv_exemption.htm", "title": "BOE: Disabled Veterans' Exemption program page", "status": 200 },
+    { "url": "https://www.boe.ca.gov/legdiv/pdf/0296sb081326ml.pdf", "title": "BOE Legislative Bill Analysis, SB 296 (Archuleta) as amended 07/01/26 and 08/13/26, dated Aug 21, 2026", "status": 200 },
+    { "url": "https://www.gov.ca.gov/2026/09/28/governor-newsom-signs-legislation-supporting-veterans-servicemembers/", "title": "Office of the Governor, Sept 28, 2026: Governor Newsom signs legislation supporting veterans (lists SB 296)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 effective rates)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "The California row is current: 2026 basic/low-income amounts and income limit match LTA 2026/019, the 2027 indexed figures are right, and SB 296's September 28, 2026 signing is confirmed by the Governor's office. The model will need a structural change for the January 1, 2027 lien date, when the exemption becomes 50% of value up to $1 million (100% at household income of $83,474 or less) through 2031."
+}

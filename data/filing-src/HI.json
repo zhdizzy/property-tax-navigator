@@ -1,0 +1,299 @@
+{
+  "state": "HI",
+  "officeType": "county real property assessment office (Department of Finance / Budget & Fiscal Services of each of the four counties)",
+  "officeTypeNote": "Hawaii has no state-level property tax; each county writes and administers its own veteran exemption. File with the county's Real Property Assessment office: Honolulu RPAD (ROH 8-10.5), Maui RPA Division (MCC 3.48.475), Kauai Real Property Assessment Section (KCC 5A-11.6), Hawaii County Real Property Tax Division (Hilo/Kona). The state Department of Taxation does not take these claims.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://dod.hawaii.gov/ovs/benefits-and-services/",
+    "label": "Hawaii Office of Veterans' Services: Benefits and Services (links each county's real property tax office under 'Tax exemptions on real property')",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://tax.hawaii.gov/",
+    "note": "County office pages: Honolulu https://realproperty.honolulu.gov/tax-relief-and-forms/exemptions/totally-disabled-veterans/ (live) ; Kauai https://www.kauai.gov/Government/Departments-Agencies/Finance/Real-Property-Tax (live) ; Maui https://www.mauicounty.gov/1952/Real-Property-Assessment-Division (county page; HTTP 403 to automated checks, archived copy of 2026-08-13 at https://web.archive.org/web/20260813083256/https://www.mauicounty.gov/1952/Real-Property-Assessment-Division ; the county's own form points to www.mauipropertytax.com, which resolves to the qpublic records/forms portal) ; Hawaii County https://hawaiipropertytax.com/exemptions-programs/ (county page; Cloudflare-blocked to automated checks, archived copy of 2025-08-22 at https://web.archive.org/web/20250822200417/https://hawaiipropertytax.com/exemptions-programs/). The OVS page itself has no form numbers or deadlines; it only links the four county offices. The state DOTAX fallback is the state tax agency homepage only; it has no property-tax role."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Honolulu: Claim for Exemption, Homes of Totally Disabled Veterans (ROH 8-10.5). Also fileable online at realproperty.honolulu.gov/exemption/file-a-homes-of-totally-disabled-veterans-exemption/",
+      "number": "BFS-RP-E-8-10.5",
+      "url": "https://realproperty.honolulu.gov/media/00zfugyp/totally-disabled-va-exemption-e-8-105-rev-08_2026-fillable.pdf",
+      "revision": "REV 08/2026",
+      "filedWith": "City and County of Honolulu, Real Property Assessment Division (842 Bethel St Basement, Honolulu 96813, or 1000 Ulu'ohi'a St #206, Kapolei 96707); in person, mail, or online"
+    },
+    {
+      "programRef": "*",
+      "name": "Honolulu: Claim for Continuance of Home Exemption, Notice of Temporary Relocation to a Care Home or Facility, Totally Disabled Veterans (only if the veteran moves to a licensed care facility)",
+      "number": "BFS-RP-E-8-10.5A",
+      "url": "https://realproperty.honolulu.gov/media/capcyp2o/e-8-105a-rev-july-2026-fillable-final-v2.pdf",
+      "revision": "July 2026",
+      "filedWith": "City and County of Honolulu, Real Property Assessment Division; due on or before September 30 each year; no fax or email"
+    },
+    {
+      "programRef": "*",
+      "name": "Maui: Claim for Disability Exemption, Severely Disabled Veteran (Chapter 3.48.475 MCC; 70%+ VA rating). Live copy: https://www.mauicounty.gov/DocumentCenter/View/102703/Disability-Exemption-for-Disabled-Veterans (HTTP 403 to automated checks); URL below is the Wayback Machine's newest capture (2025-10-16) of that same county PDF, cited as archived.",
+      "number": "DFT-475",
+      "url": "https://web.archive.org/web/20251016174937/https://www.mauicounty.gov/DocumentCenter/View/102703/Disability-Exemption-for-Disabled-Veterans",
+      "revision": "Archived copy: 'DFT-475 Revised 12/31/2025, Effective 2026 Assessment Year', deadline printed 'DECEMBER 31, 2025'. The live county file (read on the first pass; also indexed by search engines) is the next edition: Revised 12/10/2025, Effective 2027 Assessment Year, 'Deadline for Filing: DECEMBER 31, 2026'.",
+      "filedWith": "County of Maui, Department of Finance, Real Property Assessment Division, 110 'Ala'ihi St Suite 110, Kahului 96732 (808-270-7297; RPA@co.maui.hi.us); Molokai office 100 Ainoa St, Kaunakakai 96748. Archived 2025 edition: 'we recommend mailing this application via certified mail with return receipt requested'; the current edition recommends emailing the claim and proof to RPA@co.maui.hi.us.",
+      "note": "Listed on the county's RPA Forms and Instructions page as 'Disability Exemption for Disabled Veteran Application' (archived 2025-03-05: https://web.archive.org/web/20250305184645/https://www.mauicounty.gov/1953/RPA-Forms-and-Instructions). mauicounty.gov returns 403 to every automated method, so the form could not be re-read live on this pass."
+    },
+    {
+      "programRef": "*",
+      "name": "Kauai: Claim for Homes of Disabled Veteran Exemption (80% to 100% Disability), KCC 5A-11.6; requires an existing home exemption",
+      "number": null,
+      "url": "https://www.kauai.gov/files/assets/public/v/1/finance/rpa/2027-tax-relief-exemption-forms/veteran-disability-exemption-form-80-to-100-disability-_-rev-10.01.2025-fillable.pdf",
+      "revision": "Rev. 10/01/2025",
+      "filedWith": "County of Kauai, Real Property Assessment Section, 4444 Rice St Suite 454, Lihue 96766; rpassessment@kauai.gov"
+    },
+    {
+      "programRef": "*",
+      "name": "Kauai: Claim for Disability Exemption (veterans less than 80% disabled; up to $50,000 off assessed value, KCC 5A-11.8)",
+      "number": null,
+      "url": "https://www.kauai.gov/files/assets/public/v/1/finance/rpa/2027-tax-relief-exemption-forms/claim-for-disability-ex_less-than-80-disabled-veteran_-rev_07.07.2026-fillable.pdf",
+      "revision": "Rev 07/07/2026",
+      "filedWith": "County of Kauai, Real Property Assessment Section"
+    },
+    {
+      "programRef": "*",
+      "name": "Hawaii County: Claim for Totally Disabled Veterans (listed on the county exemptions page as 'RP Form 19-73 (Veterans Exemption)'). Live copy: https://hawaiipropertytax.com/forms/RP%20Form%2019-73%20Veterans%20Exemption%20(Dec%202023).pdf (Cloudflare-blocked to automated checks); URL below is the Wayback Machine's capture (2024-07-15) of that county PDF, cited as archived.",
+      "number": "RP Form 19-73",
+      "url": "https://web.archive.org/web/20240715021904/https://hawaiipropertytax.com/forms/RP%20Form%2019-73%20Veterans%20Exemption%20(Dec%202023).pdf",
+      "revision": "REV. 12/2023 (newest capture in the Wayback index; the county's exemptions page still linked this edition on 2025-04-15. The county moved to a new WordPress site in mid-2025 whose exemption subpages have no archived capture, so a later revision cannot be ruled out; the form number is stable since at least REV. 09/2014)",
+      "filedWith": "County of Hawaii, Department of Finance, Real Property Tax Division: Aupuni Center, 101 Pauahi St Suite 4, Hilo 96720 (clerical 808-961-8201, fax 808-961-8415) or West Hawaii Civic Center, 74-5044 Ane Keohokalole Hwy Bldg D 2nd Floor, Kailua-Kona 96740 (clerical 808-323-4880, fax 808-327-3538); 'Deliver or mail the claim form with certification by the Department of Veterans Affairs'; the form's receipt box also has an 'Email' option",
+      "note": "Form instructions: 'For certification of total service connected disability, form must be mailed to the Department of Veterans Affairs, Evidence Intake Center, PO Box 4444, Janesville, WI 53547-4444, or ... by email at PCTC.VBAHON@VA.GOV'; alternatively the claimant signs an authorization for the Division to contact VA directly."
+    }
+  ],
+  "deadline": {
+    "type": "varies-by-county",
+    "date": null,
+    "text": "Honolulu: no annual deadline; 'The exemption will take effect beginning with the next tax payment date, either August 20 or February 20, provided that the claimant has filed ... before the applicable payment date' (form E-8-10.5 instructions). Maui: 'Deadline for Filing: DECEMBER 31' each year for the following assessment year (form DFT-475: Dec 31, 2025 for 2026 AY on the archived edition; Dec 31, 2026 for 2027 AY on the current edition; owner-occupied as of the following Jan 1). Kauai: 'FILING DEADLINE SEPTEMBER 30TH' for the following tax year (Sept 30, 2025 for TY2026). Hawaii County: December 31 for the following tax year, per the county's own legal notice (Dec 18/21/25, 2025): 'The deadline for filing an application ... is December 31, 2025', filed or postmarked by that date, with ownership recorded at the Bureau of Conveyances by the deadline; the county's older Disability Exemptions brochure (rev 10/2020) stated 'on or before June 30 for the first half payment or December 31 for the second half payment'."
+  },
+  "effective": "Honolulu: next semiannual tax payment date (Aug 20 or Feb 20) after a complete claim is filed. Maui: assessment year following the Dec 31 deadline (tax year beginning July 1). Kauai: tax year following the Sept 30 deadline. Hawaii County: tax year following the Dec 31 deadline (county legal notice); the form's VA block certifies disability 'as of January 1' of the claim year.",
+  "lateFiling": "Honolulu: file any time; the exemption simply starts with the next payment date. Maui, Kauai, Hawaii County: a claim after the deadline applies to the next assessment/tax year (Maui press coverage: 'no exceptions will be made for late filings'; not confirmed in code text).",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "No county ordinance, form or notice read provides refunds for prior years; exemptions are prospective from the next payment date (Honolulu) or next tax year (other counties)."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "Honolulu ROH 8-10.5(b)(2): 'The home exemption will be granted only as long as the veteran claiming exemption remains totally disabled, and the director may require proof'; no annual re-file, but the claimant 'must notify RPAD within 30 days of any change in status.' Kauai KCC 5A-11.6: 'granted only as long as the disabled veteran claiming the exemption remains eighty percent (80%) to totally disabled'; report changes within 30 days. Hawaii County brochure (rev 10/2020): 'Once filed and granted, permanent disability exemptions do not have to be re-filed annually as long as all requirements continue to be met'; Form 19-73: 'duty to report to the assessor within 30 days after he/she ceases to qualify', failure is 'cause for disqualification and penalty' (brochure: $100 civil penalty). Maui: form DFT-475 has no annual re-file instruction; the county 'will verify the total service connected disability with the Veterans Administration'."
+  },
+  "ratingChange": "If the rating drops below the county threshold (Honolulu/Hawaii County: total; Maui: 70%; Kauai: 80%) the owner must report it (Honolulu, Kauai and Hawaii County: within 30 days; Honolulu threatens rollback taxes, penalties and interest under ROH 8-10.1(d)-(e); Hawaii County a $1,000 fine for a fraudulent claim). A veteran newly rated at the threshold files a fresh claim; counties verify the rating directly with VA when authorized on the form.",
+  "move": "Exemption attaches to one owner-occupied home per veteran; a new home requires a new claim in the county where it sits (Hawaii County form 19-73 and Maui DFT-475 both ask whether a home exemption is claimed elsewhere and authorize cancelling the previous one). Honolulu continues the exemption if the veteran moves to a licensed Hawaii care facility and files form E-8-10.5A by Sept 30 each year (home must not be rented or sold).",
+  "onlineFiling": {
+    "available": true,
+    "text": "Honolulu: yes, 'CLICK HERE TO FILE ONLINE' portal at realproperty.honolulu.gov/exemption/file-a-homes-of-totally-disabled-veterans-exemption/ (paper claims cannot be faxed or emailed). Maui: no portal; the current form asks you to email the claim and proof to RPA@co.maui.hi.us (the archived 2025 edition recommended certified mail). Kauai: email rpassessment@kauai.gov or deliver in person; some submissions via connect.kauai.gov per county notice. Hawaii County: no portal; Form 19-73 is delivered or mailed to the Hilo or Kona office (the receipt box lists 'U.S. Postmark / Email / OTC', so emailed claims appear to be accepted; no address published on the form)."
+  },
+  "documents": [
+    "Honolulu: official ID; VA certification of total service-connected disability (or authorize RPAD on the form to verify with VA); ordinance also cites 'a certificate of disability issued by a licensed physician'; marriage certificate and veteran's death certificate for widow(er) claims; plot plan if more than one living unit; copy of trust if held in trust",
+    "Maui: proof of age (driver's license, state ID, or birth certificate); the county 'will verify the total service connected disability with the Veterans Administration' (VA certification block on the form); Social Security number and TMK on the form",
+    "Kauai: an approved home exemption must already exist on the parcel; VA claim number; authorize the Real Property Assessment Section to verify disability with VA or obtain VA certification yourself; 'may be required to submit a physician's report'",
+    "Hawaii County (Form 19-73): VA certification block completed by the VA Regional Office (Evidence Intake Center, PO Box 4444, Janesville, WI 53547-4444, or PCTC.VBAHON@VA.GOV) certifying 'total service connected disability ... as of January 1', with the VA claim number; or sign the form's authorization for the Division to contact VA 'for the limited purpose of verifying the dates of entry, discharge, injury, and total disability'; last four digits of SSN; tax map key; plot plan on the back if more than one dwelling; ownership recorded at the Bureau of Conveyances by the deadline (county notice)"
+  ],
+  "survivingSpouse": "Honolulu: unmarried widow(er) who continues to own and occupy keeps the exemption and 'may apply even if the veteran never did' by proving the veteran would have qualified at death. Kauai KCC 5A-11.6(b): surviving spouse, civil union partner or reciprocal beneficiary may continue or apply posthumously if the veteran was 80%+ at death; ends on death, remarriage or new partnership. Hawaii County: 'The home exemption will be valid as long as the veteran claiming the exemption remains totally disabled or the widow or widower of the totally disabled veteran remains unmarried' (county Disability Exemptions brochure, rev 10/2020; Form 19-73 itself has no widow(er) box). Maui: form has no surviving-spouse box; the 2022 council press release says the amended 3.48.475 supports 'severely disabled veterans and their surviving spouses' but the enacted text was not read.",
+  "appeal": "Assessment/exemption disputes go to each county's Board of Review (Honolulu: realproperty.honolulu.gov/appeals/file-an-appeal/; Maui: Real Property Board of Review via RPA Division; Hawaii County: 'Notice of Appeal to Tax Board of Review' form on hawaiipropertytax.com). Appeal windows are tied to the annual notice of assessment and were not researched here.",
+  "statute": "No state statute. Revised Ordinances of Honolulu 8-10.5; Maui County Code 3.48.475 (amended by Bill 110 (2022), 70% threshold); Kauai County Code 5A-11.6 (80-100%) and 5A-11.8 (<80%); Hawaii County Code ch. 19 (Real Property Tax), article 6 exemptions (section number not confirmed; the county's exemptions page says 'All exemptions and programs allowed under Real Property Tax are in the Hawai'i County Code')",
+  "sourceUrls": [
+    {
+      "url": "https://dod.hawaii.gov/ovs/benefits-and-services/",
+      "title": "Hawaii Office of Veterans' Services: Benefits and Services (county real property tax office links; no county-level summaries)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://realproperty.honolulu.gov/tax-relief-and-forms/exemptions/totally-disabled-veterans/",
+      "title": "Honolulu RPAD: Totally Disabled Veterans exemption page",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://realproperty.honolulu.gov/media/00zfugyp/totally-disabled-va-exemption-e-8-105-rev-08_2026-fillable.pdf",
+      "title": "Honolulu Form BFS-RP-E-8-10.5 (REV 08/2026) with instructions and ROH 8-10.5 text",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://realproperty.honolulu.gov/media/capcyp2o/e-8-105a-rev-july-2026-fillable-final-v2.pdf",
+      "title": "Honolulu Form BFS-RP-E-8-10.5A continuance (July 2026)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://realproperty.honolulu.gov/exemption/file-a-homes-of-totally-disabled-veterans-exemption/",
+      "title": "Honolulu RPAD online filing portal for the totally disabled veterans exemption",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://realproperty.honolulu.gov/media/a0onfffn/information-guide-rev-2026-06-26-85x14-v2.pdf",
+      "title": "Honolulu RPAD Information Guide (rev 2026-06-26): exemption deadlines and forms",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://www.kauai.gov/Government/Departments-Agencies/Finance/Real-Property-Tax/Assessment",
+      "title": "Kauai County Real Property Tax: Assessment Section (exemption list, forms, deadline); answers only to a plain curl UA",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://www.kauai.gov/files/assets/public/v/1/finance/rpa/2027-tax-relief-exemption-forms/veteran-disability-exemption-form-80-to-100-disability-_-rev-10.01.2025-fillable.pdf",
+      "title": "Kauai Claim for Homes of Disabled Veteran Exemption (80-100%) Rev 10/01/2025 with KCC 5A-11.6 text",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://www.kauai.gov/files/assets/public/v/1/finance/rpa/2027-tax-relief-exemption-forms/claim-for-disability-ex_less-than-80-disabled-veteran_-rev_07.07.2026-fillable.pdf",
+      "title": "Kauai Claim for Disability Exemption (<80% veteran) Rev 07/07/2026",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://web.archive.org/web/20251016174937/https://www.mauicounty.gov/DocumentCenter/View/102703/Disability-Exemption-for-Disabled-Veterans",
+      "title": "ARCHIVED (Wayback 2025-10-16): Maui Form DFT-475 Claim for Disability Exemption, Severely Disabled Veteran (Revised 12/31/2025, Effective 2026 AY); live county URL returns 403 to automated checks",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true,
+      "archived": true
+    },
+    {
+      "url": "https://web.archive.org/web/20250305184645/https://www.mauicounty.gov/1953/RPA-Forms-and-Instructions",
+      "title": "ARCHIVED (Wayback 2025-03-05): Maui RPA Forms and Instructions page listing 'Disability Exemption for Disabled Veteran Application' (DocumentCenter/View/102703)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true,
+      "archived": true
+    },
+    {
+      "url": "https://web.archive.org/web/20260813083256/https://www.mauicounty.gov/1952/Real-Property-Assessment-Division",
+      "title": "ARCHIVED (Wayback 2026-08-13): Maui Real Property Assessment Division page (Kahului and Molokai office addresses)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true,
+      "archived": true
+    },
+    {
+      "url": "https://www.mauipropertytax.com/",
+      "title": "Maui County real property tax portal named on Form DFT-475 (redirects to https://qpublic.net/hi/maui/; its 'Forms' link points back to the blocked mauicounty.gov forms page)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://mauicounty.us/council-meeting/press-release-molina-proposes-changes-to-veterans-homeowner-exemption-to-help-maui-countys-severely-disabled-veterans/",
+      "title": "Maui County Council press release (June 16, 2022): Bill 110 (2022) amending MCC 3.48.475 to a 70% threshold; 'apply before Dec. 31 of this year for next year's tax cycle'",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://web.archive.org/web/20240715021904/https://hawaiipropertytax.com/forms/RP%20Form%2019-73%20Veterans%20Exemption%20(Dec%202023).pdf",
+      "title": "ARCHIVED (Wayback 2024-07-15): Hawaii County RP Form 19-73 Claim for Totally Disabled Veterans (REV. 12/2023) with instructions, offices, VA certification block; live county URL is Cloudflare-blocked",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true,
+      "archived": true
+    },
+    {
+      "url": "https://web.archive.org/web/20250415010044/https://www.hawaiipropertytax.com/exemptions.html",
+      "title": "ARCHIVED (Wayback 2025-04-15): Hawaii County Real Property Tax Division exemptions page (old site) listing 'RP Form 19-73 (Veterans Exemption)', 19-75, 19-75A and the Disability Exemptions Brochure",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true,
+      "archived": true
+    },
+    {
+      "url": "https://web.archive.org/web/20250822200417/https://hawaiipropertytax.com/exemptions-programs/",
+      "title": "ARCHIVED (Wayback 2025-08-22): Hawaii County Exemptions/Programs page (new site): 'Each exemption and program requires an application to be submitted by the statutory deadline'; Hilo/Kona office addresses and hours",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true,
+      "archived": true
+    },
+    {
+      "url": "https://web.archive.org/web/20260814162140/https://www.hawaiicounty.gov/departments/finance/real-property-tax",
+      "title": "ARCHIVED (Wayback 2026-08-14): Hawaii County Finance, Real Property Tax Division page (links out to hawaiipropertytax.com; no forms hosted on hawaiicounty.gov)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true,
+      "archived": true
+    },
+    {
+      "url": "https://statelegals.staradvertiser.com/?p=10063",
+      "title": "Hawaii County Real Property Tax Division legal notice (Hawaii Tribune-Herald, Dec 18/21/25 2025; final URL /2025/12/18/0001514122-01/): Dec 31, 2025 exemption deadline, 'fifty percent of the minimum tax', Hilo/Kona addresses and phones",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://www.lincolninst.edu/sites/default/files/gwipp/upload/sources/Hawaii/2019/hi_hawaii_disability_exemption_brochure_real_property_tax_office_2019.pdf",
+      "title": "Hawaii County Real Property Tax Division 'Explanation of the Real Property Tax: Disability Exemptions' brochure (county-authored, rev 10/2020), mirrored by the Lincoln Institute; final URL /app/uploads/legacy-files/...; used for renewal, widow(er) and penalty wording only",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": false
+    },
+    {
+      "url": "https://library.municode.com/hi/hawaii_county/codes/code_of_ordinances",
+      "title": "Hawaii County Code on Municode (returns 200 but only a JavaScript shell; the content API is Cloudflare-challenged, so chapter 19 text could not be read)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://library.municode.com/hi/maui_county/codes/code_of_ordinances",
+      "title": "Maui County Code on Municode (returns 200 but only a JavaScript shell; 3.48.475 text could not be read)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://tax.hawaii.gov/",
+      "title": "Hawaii Department of Taxation (state fallback only; no property-tax role)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "propertyTax.note",
+      "issue": "Note says Honolulu minimum tax ~$300 and Kauai minimum $150: confirmed (Honolulu guide: 'minimum real property tax (currently $300), per ROH 8-11.1(g)'; Kauai page: minimum tax $150). Hawaii County's exemption leaves 'fifty percent of the minimum tax' payable, not the full minimum, per the county's Dec 2025 notice (the county's older rev 10/2020 brochure said 'the annual minimum tax').",
+      "source": "https://statelegals.staradvertiser.com/?p=10063"
+    }
+  ],
+  "wafBlockedUrls": [
+    {
+      "url": "https://hawaiipropertytax.com/exemptions-programs/",
+      "note": "Hawaii County Real Property Tax Division exemptions/forms page; Cloudflare 'Just a moment' challenge returned 403 to every automated check (curl with Safari/Firefox/plain UAs and full browser headers, WebFetch). Loads in a normal browser. Archived copy used instead."
+    },
+    {
+      "url": "https://hawaiipropertytax.com/forms/RP%20Form%2019-73%20Veterans%20Exemption%20(Dec%202023).pdf",
+      "note": "Live Form 19-73 PDF; 403 (Cloudflare). Archived 2024-07-15 copy used instead."
+    },
+    {
+      "url": "https://www.hawaiicounty.gov/departments/finance/real-property-tax",
+      "note": "Hawaii County Finance real property tax page; 403 to automated checks on every host path tried (/departments/finance, /i-want-to/read/county-code, /home/showpublisheddocument). Archived copy shows it only links out to hawaiipropertytax.com. records.hawaiicounty.gov (Laserfiche WebLink) answers 200 but requires a cookie/login session and exposes no browsable code folder."
+    },
+    {
+      "url": "https://www.mauicounty.gov/1952/Real-Property-Assessment-Division",
+      "note": "Maui County RPA page, /1953/RPA-Forms-and-Instructions and /DocumentCenter/View/102703 (Form DFT-475): 403 to curl (Safari, Firefox, plain UAs, full headers) and WebFetch on 2026-10-21; the Firefox UA that worked on the first pass no longer does. Archived copies used instead."
+    },
+    {
+      "url": "https://api.municode.com/",
+      "note": "Municode content API (needed to read Hawaii County Code ch. 19 and Maui County Code 3.48.475) returns a Cloudflare challenge; library.municode.com HTML is a JS shell; codelibrary.amlegal.com returns 403 and does not host either county anyway."
+    }
+  ],
+  "notes": "Second pass 2026-10-21. Confidence raised from 'reported' to 'verified': every filing field for all four counties now comes from a county-authored form, page or legal notice that was opened, with the Hawaii County and Maui documents read from Wayback Machine captures of the counties' own files (flagged 'archived' in sourceUrls) because hawaiipropertytax.com, hawaiicounty.gov and mauicounty.gov block all automated access. Hawaii County: form number confirmed as RP Form 19-73 'Claim for Totally Disabled Veterans' (REV. 12/2023; earlier REV. 09/2014 mirrored by the Lincoln Institute), offices/phones/fax confirmed from the form, deadline Dec 31 from the county's Dec 2025 legal notice, no-annual-refile and unmarried-widow(er) rules from the county brochure. Remaining gaps for Hawaii County: (1) the current revision of 19-73 on the county's post-2025 WordPress site cannot be confirmed (no capture of the new exemption subpages exists; CDX shows no 19-73 capture after REV. 12/2023), (2) Hawaii County Code ch. 19 section text was not read (Municode blocked; county clerk code page blocked; Laserfiche portal not browsable), so the section number stays unconfirmed and the brochure's older 'June 30 / December 31' semiannual rule versus the notice's single Dec 31 deadline cannot be reconciled against the ordinance. Maui: Form DFT-475 confirmed from the county PDF (archived 2026-AY edition; current 2027-AY edition read on the first pass), office addresses from the archived RPA page (adds the Molokai office), forms-page listing confirmed. Remaining gap for Maui: MCC 3.48.475 enacted text not read; news reports (lead only, not cited) say the enacted CD1 of Bill 110 (2022) set the veteran's bill at 50% of the county minimum tax rather than the $150 originally proposed, which is consistent with the dollar layer's 'minimum tax per county form' wording but should be checked against the code when it is reachable. OVS county benefit summaries do not exist; the OVS page only links the four county offices. Honolulu and Kauai unchanged from the first pass and re-verified live (kauai.gov answers only to a plain 'curl/8.4.0' UA). Honolulu's generic exemption deadline (Sept 30) does NOT apply to the veteran exemption; the June 2026 guide says 'There is NO annual filing deadline' for it. Kauai requires an approved home exemption on the parcel before the veteran exemption can be granted. www.kauaipropertytax.com did not resolve on the check date. Internet Archive CDX/availability endpoints were intermittently 'Temporarily Offline' during this pass; all archived URLs cited were re-fetched with a final 200."
+}

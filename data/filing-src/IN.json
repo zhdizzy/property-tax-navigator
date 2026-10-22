@@ -1,0 +1,86 @@
+{
+  "state": "IN",
+  "officeType": "county auditor",
+  "officeTypeNote": "All veteran deductions and credits are filed with the county auditor of the county where the property sits (State Form 12662: 'File with the county auditor of the county where the property is located'). County Veteran Service Officers help complete the form and can sign the IDVA certificate in Section VIII, but the auditor is the filing office. The assessor and treasurer do not take these applications.",
+  "officeLocator": {
+    "tier": 2,
+    "url": null,
+    "label": null,
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.in.gov/dlgf/deductions-and-credits/",
+    "note": "DLGF publishes no statewide auditor directory: its 'Contact Your Local Officials' page is 'currently under construction' and its 'County Auditors' and per-county 'County Specific Information' pages (https://www.in.gov/dlgf/county-specific-information/{county}) carry budget/assessment documents only, no contacts. The DLGF deductions page says 'County auditors are the best point of contact.' For help filing, the Indiana DVA page points to County Veteran Service Officers."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Application for Property Tax Benefits for Disabled Veterans and Surviving Spouses of Certain Veterans (one form; check Section I for the 100% total-disability deduction, II for the $350 service-connected credit, III for the $250 age-62 credit, V for the donated-homestead deduction). Section VIII is the optional IDVA/CVSO certificate of eligibility.",
+      "number": "State Form 12662",
+      "url": "https://forms.in.gov/Download.aspx?id=16787",
+      "revision": "R20 / 6-26",
+      "filedWith": "county auditor of the county where the property is located (mail must be postmarked by the deadline)"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "01-15",
+    "text": "Form 12662 (R20/6-26): 'This form must be completed, signed, and filed by January 15 of the calendar year in which the property taxes are first due and payable.' DLGF FAQ (6/17/2026): 'If the application is mailed, it must be postmarked on or before the filing deadline.' (Replaces the old 'signed by December 31, filed by January 5' rule.)"
+  },
+  "effective": "Applies to the assessment date preceding the deadline, i.e. the bill first due the year of the January 15 deadline. DLGF example: a veteran who buys a qualifying home on September 1, 2026 'may file ... on or before January 15, 2027, for taxes first due and payable in 2027.' HEA 1210-2026 changes start with the 2026 assessment date (2026-pay-2027 bills).",
+  "lateFiling": "DLGF FAQ: 'A person who fails to apply by the statutory deadline may not apply for the deduction or credit retroactively.' A late filing applies to the next assessment date.",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "No retroactive application (DLGF FAQ Section 4, Q5). Unused credit amounts 'may not be carried forward, carried back, or refunded' (IC 6-1.1-51.3)."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "DLGF FAQ: 'A taxpayer who receives the IC 6-1.1-12-14 deduction and remains eligible is not required to refile annually, and the $250 and $350 credits likewise continue without a new annual application.' DLGF deductions page: 'Taxpayers do not need to reapply for deductions or credits annually. Reapplication should only occur if the property is sold or the title is changed.' ONE-TIME EXCEPTION for 2026-pay-2027: anyone who held the old $14,000 deduction (IC 6-1.1-12-14, pre-HEA 1210) is converted automatically to the $250 credit and 'must file a new application to receive the amended 100% deduction.' DLGF recommends (not mandates) that counties auto-convert the old $24,960 deduction to the new $350 credit."
+  },
+  "ratingChange": "A veteran who becomes totally disabled files a new Form 12662 (Section I) by the next January 15; the 100% deduction need not be service-connected ('evidenced by a VA pension certificate or award of compensation, or an IDVA certificate of eligibility'). Receiving the 100% deduction bars any IC 6-1.1-51.3 credit for the same assessment date (IC 6-1.1-12-14(d)). Report loss of eligibility to the auditor (HEA 1210 amended IC 6-1.1-36-17 on recovery of ineligible deductions with interest and penalties).",
+  "move": "File a new 12662 with the new county's auditor by January 15 after acquiring the new principal residence. IC 6-1.1-12-45 keeps the deduction on the old home for the assessment already made despite a sale (one-year carryover), so both homes may show it for one payable year. The 100% deduction requires one year of Indiana residency before the assessment date; the $250/$350 credits have no Indiana-residency requirement and a single credit may be split across multiple Indiana properties.",
+  "onlineFiling": {
+    "available": null,
+    "text": "DLGF provides the PDF only; many counties accept the signed form by mail or email and some (e.g. Hamilton, Allen) run their own online deduction portals. Check the county auditor."
+  },
+  "documents": [
+    "DD-214 (proof of 90+ days of service and honorable discharge)",
+    "Disability evidence: VA 'pension certificate or award of compensation' (VA award/rating letter; for the $350 credit a VA disability compensation check is also accepted), OR an IDVA certificate of eligibility completed in Section VIII of Form 12662 by accredited IDVA staff or a County Veteran Service Officer (IDVA says: 'If we need to complete Section VIII ... you NEED to send us your DD214 and a VA award letter showing your combined percentage')",
+    "Proof of ownership or a recorded contract purchase of the principal residence (trusts are NOT eligible for the 100% deduction; they may receive the credits)",
+    "For the 100% deduction: proof of Indiana residency for at least one year before the assessment date",
+    "Surviving spouse: veteran's death certificate and marriage proof, plus the veteran's DD-214 and VA evidence showing the veteran met the requirements at death"
+  ],
+  "survivingSpouse": "100% deduction: keeps it 'if the veteran satisfied IC 6-1.1-12-14(a)(1) through (a)(4) at the time of death and the surviving spouse owns or is buying the property' when filed; lost on remarriage (IC 6-1.1-12-14(b)). $350 credit: spouse qualifies if the veteran met the requirements at death. $250 credit: also if the veteran was killed in action, died on active duty, or died during inactive duty training. State Form 51186 (old IDVA certificate) 'is no longer used.'",
+  "appeal": "Not addressed in the DLGF materials read; auditor determinations on deductions may be appealed to the county Property Tax Assessment Board of Appeals under IC 6-1.1-15 (not verified here).",
+  "statute": "IC 6-1.1-12-14 (100% total-disability deduction, as amended by HEA 1210-2026); IC 6-1.1-12-15 (filing); IC 6-1.1-51.3-5 ($250 credit); IC 6-1.1-51.3-6 ($350 credit); IC 6-1.1-12-14.5 (donated homestead); IC 6-1.1-12-45 (carryover on conveyance)",
+  "sourceUrls": [
+    { "url": "https://forms.in.gov/Download.aspx?id=16787", "title": "State Form 12662 (R20/6-26) Application for Property Tax Benefits for Disabled Veterans and Surviving Spouses", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.in.gov/dlgf/files/2026-memos/Veterans-Deductions-FAQ_DLGF_08122026-1.pdf", "title": "DLGF FAQ: 2026 Legislative Update, Veterans Deductions and Credits (June 17, 2026 sessions; posted 8/12/2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.in.gov/dlgf/files/2026-memos/260527-Cockerill-Memo-Legislation-Affecting-Deductions-Credits-and-Exemptions.pdf", "title": "DLGF Memo 5/27/2026: Legislation Affecting Deductions, Credits and Exemptions (HEA 1210-2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.in.gov/dlgf/deductions-and-credits/", "title": "DLGF: Deductions and Credits (forms list, no annual reapplication)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.in.gov/dva/divisions/training-and-services/disabled-veteran-property-tax-deduction/", "title": "Indiana Department of Veterans Affairs: Disabled Veteran Property Tax Deduction (where to apply, documents, SF 51186 retired)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.in.gov/dva/home/indiana-veteran-benefit-forms/", "title": "Indiana DVA: Indiana Veteran Benefit Forms", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.in.gov/dlgf/county-specific-information/", "title": "DLGF: County Specific Information (92 county pages, budget/assessment documents only)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.in.gov/dlgf/contact-your-local-officials/", "title": "DLGF: Contact Your Local Officials (under construction as of check date)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "propertyTax.note",
+      "issue": "Note still describes the repealed pre-2026 tiers ($24,960 wartime deduction, $14,000 total-disability/62+ deduction, $38,960 combined, $240K cap). HEA 1210-2026 replaced these effective the 2026 assessment date; the programs array is already updated, so the note should be rewritten or removed.",
+      "source": "https://www.in.gov/dlgf/files/2026-memos/Veterans-Deductions-FAQ_DLGF_08122026-1.pdf"
+    },
+    {
+      "field": "propertyTax.programs[0].summary",
+      "issue": "DLGF FAQ Q10: the 100% deduction under IC 6-1.1-12-14 'does not state that the veteran's total disability must be service-connected' (VA pension certificate suffices). Summary says 'total disability rating' which is fine, but the tool should not require service connection for this program. Also: trusts cannot hold the 100% deduction (FAQ Q3).",
+      "source": "https://www.in.gov/dlgf/files/2026-memos/Veterans-Deductions-FAQ_DLGF_08122026-1.pdf"
+    },
+    {
+      "field": "propertyTax.programs[2] (Deduction for Property Received from Tax Exempt Organization)",
+      "issue": "Form 12662 Section V / IC 6-1.1-12-14.5: deduction equals the veteran's disability percentage (50% to 100%) of assessed value for a homestead donated at no charge by a 501(c)(3); requires 90 days service, honorable discharge, 50%+ rating. Summary field is empty.",
+      "source": "https://forms.in.gov/Download.aspx?id=16787"
+    }
+  ],
+  "notes": "Indiana is mid-transition: HEA 1210-2026 (signed 3/12/2026, retroactive to the 1/1/2026 assessment date) replaced the old deductions with a 100% deduction plus $250/$350 credits, and Form 12662 was re-issued as R20 (6-26) with the new January 15 deadline. Veterans who held the old $14,000 deduction are being auto-switched to the $250 credit and MUST file a new 12662 by January 15, 2027 to get the 100% deduction for 2026-pay-2027; counties (e.g. Boone) are running registration drives July-December 2026. The forms.in.gov 'id=5460' link found in older pages now returns an HTML page, not the form; id=16787 is the live PDF. iga.in.gov statute pages load (200) but are JavaScript-rendered, so statute wording is quoted via DLGF's memo and FAQ rather than directly."
+}

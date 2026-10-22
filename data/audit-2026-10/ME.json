@@ -1,0 +1,86 @@
+{
+  "state": "ME",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0136,
+    "sourceValue": 0.0102,
+    "source": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Census ACS 2020-2024 5-year: median real estate taxes $3,036 / median value $296,600 (acsdt5y2024-b25077.dat) = 1.024%. File 1.36% is 0.34 pp high, the largest gap in this batch. Tax Foundation 2024 county table ranges 0.78% (Piscataquis) to 1.19% (Androscoggin), all below the file."
+  },
+  "programs": [
+    {
+      "name": "Veteran Property Tax Exemption",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": {
+          "current": 6000,
+          "correct": 6000,
+          "quote": "The estates up to the just value of $6,000, having a taxable situs in the place of residence, of veterans who served in the Armed Forces of the United States",
+          "source": "https://legislature.maine.gov/statutes/36/title36sec653.html",
+          "note": "Correct for property tax years beginning April 1, 2026 and earlier. Replaced from April 1, 2027 by §683-A(2): $50,000 at a 100% rating ($10K/$20K/$30K/$40K at 60/70/80/90%), on top of a new $25,000 general homestead exemption."
+        },
+        "wartimeRequired": {
+          "current": true,
+          "correct": true,
+          "quote": "During any federally recognized war period ... or who were awarded an expeditionary medal ... when they have reached the age of 62 years or when they are receiving any form of pension or compensation from the United States Government for total disability",
+          "source": "https://legislature.maine.gov/statutes/36/title36sec653.html",
+          "note": "True through TY2026 only. §683-A(2)(D) drops the wartime and age/total-disability gates for the rating-based tiers from April 1, 2027."
+        },
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "quote": "receiving any form of pension or compensation from the United States Government for total disability, service-connected or nonservice-connected, as a veteran",
+          "source": "https://legislature.maine.gov/statutes/36/title36sec653.html",
+          "note": "Through TY2026 the test is total-disability compensation (or age 62+), not a rating. From TY2027 tiers start at 60%."
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "of the unremarried surviving spouse or minor child of any veteran who would be entitled to the exemption if living, or who is in receipt of a pension or compensation from the Federal Government as the surviving spouse or minor child",
+          "source": "https://legislature.maine.gov/statutes/36/title36sec653.html",
+          "note": "§653(1)(D) gives the same $6,000 to the unremarried surviving spouse (and $50,000 SAH exemption to unremarried spouses under (D-1)); §683-A(2) continues this from 4/1/2027: the survivor 'is eligible for the additional exemption that the deceased veteran would be eligible for'."
+        },
+        "summary": {
+          "current": "$6,000 of just (market) value exempt ... Paraplegic veterans with a federal SAH grant get a $50,000 just-value exemption (not a full exemption).",
+          "correct": "Through the April 1, 2026 tax year: $6,000 of just value exempt (wartime service or expeditionary medal, plus age 62+ or federal compensation for total disability); SAH-grant veterans $50,000. From the April 1, 2027 tax year (PL 2025 c. 650 Pt. M): $25,000 general homestead exemption plus a veteran add-on tiered by VA rating, $50,000 at 100% ($10K-$40K at 60-90%), $5,000/$6,000/$7,000 for veterans under 60% (by age/WWI), $50,000 for SAH-grant veterans; wartime service no longer required for rated tiers; unremarried surviving spouses get the veteran's tier. Maine still has no full veteran exemption.",
+          "quote": "The exemptions provided in this section are discontinued beginning with property tax years beginning on or after April 1, 2027.",
+          "source": "https://legislature.maine.gov/statutes/36/title36sec653.html"
+        }
+      },
+      "effectiveChanges": "TY2026 (April 1, 2026): unchanged, $6,000 under §653. TY2027 (April 1, 2027): §653 discontinued (§653(3)); §683-A(1) $25,000 general homestead (owned 12 months) plus §683-A(2) veteran add-on: <60% or unrated $5,000 (under 62) / $6,000 (62+) / $7,000 (WWI); 60% $10,000; 70% $20,000; 80% $30,000; 90% $40,000; 100% $50,000; SAH grant $50,000; one paragraph only; survivors get the veteran's tier. Applied at the municipality's certified assessment ratio (§683-A(5)). MRS has not yet posted the 2027 application.",
+      "note": "For a 100%-rated veteran the April 1, 2027 exemption becomes $75,000 of just value ($25,000 + $50,000), still partial. The paraplegic/SAH $50,000 noted in the summary is §653(1)(D-1) today and §683-A(2)(E) from 2027."
+    }
+  ],
+  "missingPrograms": [
+    {
+      "name": "§683-A(2) veteran homestead add-on tiers (effective tax years beginning April 1, 2027)",
+      "what": "Rating-tiered exemption of just value on top of the $25,000 homestead: 60% $10,000; 70% $20,000; 80% $30,000; 90% $40,000; 100% $50,000; SAH grant $50,000; under 60%/unrated $5,000-$7,000. No wartime requirement for rated tiers. Should be modeled as tiers[] once the file's TY2027 layer is built.",
+      "statute": "36 M.R.S. §683-A(2), PL 2025 c. 650 Pt. M §8",
+      "source": "https://legislature.maine.gov/statutes/36/title36sec683-A.html"
+    },
+    {
+      "name": "Specially adapted housing exemption (§653(1)(D-1))",
+      "what": "$50,000 of just value for wartime/expeditionary veterans under 38 USC 2101 who received an SAH grant, and their unremarried surviving spouses; mentioned in the row summary but not a separate row. Continues as §683-A(2)(E) from 4/1/2027 (no wartime test).",
+      "statute": "36 M.R.S. §653(1)(D-1); §683-A(2)(E)",
+      "source": "https://legislature.maine.gov/statutes/36/title36sec653.html"
+    }
+  ],
+  "jurisdictionNote": {
+    "status": "confirmed",
+    "correct": "",
+    "source": ""
+  },
+  "sources": [
+    { "url": "https://legislature.maine.gov/statutes/36/title36sec653.html", "title": "36 M.R.S. §653 Estates of veterans ($6,000/$7,000/$50,000; surviving spouse; discontinued from April 1, 2027)", "status": 200 },
+    { "url": "https://legislature.maine.gov/statutes/36/title36sec683-A.html", "title": "36 M.R.S. §683-A Homestead exemption ($25,000 plus veteran tiers, tax years beginning April 1, 2027)", "status": 200 },
+    { "url": "https://legislature.maine.gov/statutes/36/title36sec684.html", "title": "36 M.R.S. §684 Forms; application (April 1 filing for the homestead and veteran add-on)", "status": 200 },
+    { "url": "https://www.maine.gov/revenue/taxes/tax-relief-credits-programs/property-tax-relief-programs/property-tax-exemptions", "title": "Maine Revenue Services: Property Tax Exemptions (veteran and SAH exemptions, current filing path)", "status": 200 },
+    { "url": "https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/bull7.pdf", "title": "MRS Property Tax Bulletin No. 7, Tax Exemptions for Veterans (Oct 14, 2025)", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat", "title": "Census ACS 2024 5-year summary file, table B25103", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25077.dat", "title": "Census ACS 2024 5-year summary file, table B25077", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "Maine's $6,000 wartime/total-disability exemption is confirmed for the April 1, 2026 tax year, but §653 is discontinued from April 1, 2027 and replaced by §683-A: a $25,000 general homestead plus a rating-tiered veteran add-on reaching $50,000 at 100% with no wartime test, so the row's survivingSpouse flag should be true now and the tiers need a TY2027 layer. The 1.36% rate is 0.34 pp above ACS 2024 (1.02%)."
+}

@@ -1,0 +1,84 @@
+{
+  "state": "UT",
+  "officeType": "county auditor or treasurer (tax relief office) of the county of residence",
+  "officeTypeNote": "Utah Code 59-2a-502(2)(a): file \"with the county in which the veteran claimant resides on September 1 of that calendar year.\" The Tax Commission's County Tax Relief Contact List: \"Tax relief is administered by the County Auditors or Treasurers\" (varies by county; most route through the clerk/auditor's abatement office, a few through the treasurer). The county assessor values the property but does not take this application.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://files.tax.utah.gov/propertytax/media/county-tax-relief.pdf",
+    "label": "Utah State Tax Commission: County Tax Relief Contact List (all 29 counties, web page and phone of the office that administers tax relief)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://tax.utah.gov/propertytax/tax-relief/",
+    "note": "Single PDF, no per-county state URL pattern; it links each county's own tax-relief/abatement page. Tax Commission Property Tax Division also publishes a County Treasurers list (https://files.tax.utah.gov/propertytax/media/county-treasurers.pdf) for billing questions."
+  },
+  "forms": [
+    {
+      "programRef": "Veteran Exemption",
+      "name": "Veteran with a Disability Property Tax Exemption Application",
+      "number": "PT-025 (PT-25)",
+      "url": "https://files.tax.utah.gov/propertytax/form/pt-025.pdf",
+      "revision": "Rev. 01/23 (still cites the pre-2026 numbering UCA 59-2-1903 and 1904)",
+      "filedWith": "county auditor/treasurer tax relief office of the county of residence; many counties also provide their own version of the form"
+    },
+    {
+      "programRef": "Active Duty Exemption",
+      "name": "Active Duty Armed Forces Property Tax Exemption",
+      "number": "PT-022 (PT-22)",
+      "url": "https://files.tax.utah.gov/propertytax/form/pt-022.pdf",
+      "revision": null,
+      "filedWith": "county of residence, with military orders; annual"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "09-01",
+    "text": "Utah Code 59-2a-502(2)(a) (eff. 1/1/2026): \"a veteran claimant shall file, on or before September 1 of the calendar year for which the veteran claimant is applying for the exemption, an application ... with the county in which the veteran claimant resides on September 1.\" PT-025: \"The deadline for filing this application with your county of residence is September 1.\" Extension: 59-2a-108(1)(a): \"The commission or a county may extend the time for filing an application until December 31 of the year ... if ... good cause exists.\""
+  },
+  "effective": "Applies to the calendar/tax year of application (taxes billed in October/November of that year) if the claimant owns the eligible property \"at any time during the calendar year\" (59-2a-502(1)); the exemption equals disability percentage x the adjusted taxable value limit ($535,459 per Pub 36 Rev. 09/26 draft), capped at the property's taxable value. 59-2a-501(2)(c): a veteran certified by VA as individually unemployable is treated as 100%. Qualifying P&T veterans may pre-file before closing on a home with a purchase contract (59-2a-502(5)); the county issues a preliminary approval receipt within 15 business days.",
+  "lateFiling": "Good-cause extension to December 31 of the same year (59-2a-108(1)). Mandatory one-additional-year extension (59-2a-502(3)) when a military entity's written disability decision \"takes effect in a year before the current calendar year,\" or the county finds illness/injury, a death in the immediate family, six-plus months out of state, or that denial \"would be against equity or good conscience\" and the failure \"was beyond the reasonable control of the veteran claimant.\" Refunds of overpaid tax of $1 or more are mandatory once granted (59-2a-108(2)).",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 1,
+    "text": "59-2a-502(3): \"A county shall extend the September 1 application deadline by one additional year\" for a VA/military disability decision effective in a prior year or for the listed hardship grounds; 59-2a-502(4): an amended application is allowed after the deadline when a decision changes the disability percentage with a prior-year effective date. 59-2a-108(2): the county \"shall refund to the recipient ... an amount equal to the amount by which the property taxes paid exceed the property taxes due, if that amount is $1 or more.\" No general multi-year lookback."
+  },
+  "renewal": {
+    "type": "on-change",
+    "text": "59-2a-502(6): after issuing the receipt, \"a county may not require a veteran claimant to file another application\" except when the claimant applies part of the exemption to personal property, the disability percentage changes, the veteran dies, ownership or occupancy of the primary residence changes, or (for survivor claims) the claimant differs from last year's. 59-2a-502(2)(d): no new statement of disability unless the percentage changed or the claimant changed. Note: the Active Duty exemption (PT-22) IS annual."
+  },
+  "ratingChange": "File an amended application with the military entity's statement giving the effective date of the new percentage (59-2a-502(4)); the county must accept it after the deadline when the decision's effective date falls in a prior year. The exemption scales linearly with the percentage; IU = 100% (59-2a-501(2)(c)); below 10% no exemption. Unused exemption may be applied to personal-use tangible personal property (e.g. vehicles) but is not refundable (PT-025 county instructions).",
+  "move": "Ownership or occupancy change triggers a new application in the new county of residence (59-2a-502(6)(d)-(e)); residence is measured on September 1. The county may verify primary residence (59-2a-502(7)). P&T veterans may pre-apply in the destination county with a purchase contract (59-2a-502(5)).",
+  "onlineFiling": {
+    "available": null,
+    "text": "Varies by county; the state provides the PDF form only and the County Tax Relief Contact List links each county's own abatement/tax-relief page (several large counties, e.g. Salt Lake, Utah, Davis, run online portals)."
+  },
+  "documents": [
+    "Copy of the veteran's Certificate of Discharge (DD-214) or other satisfactory evidence of eligible military service (59-2a-502(2)(b)(i); PT-025: 'with initial application only')",
+    "Statement of disability issued by a military entity (VA rating/benefits letter) listing the percentage of disability (59-2a-502(2)(c)); VA individual unemployability certification if claiming 100% via IU",
+    "For a disability decision effective in a prior year: the military entity's statement giving the date the decision takes effect (59-2a-502(2)(b)(ii))",
+    "Property tax serial/account number from the prior valuation notice and the primary residence value (PT-025)",
+    "Surviving spouse/minor orphan: proof of the veteran's death, that the veteran was a veteran with a disability (or KIA/died in line of duty), and unmarried status",
+    "Pre-purchase filers (P&T only): real estate purchase contract or similar documentation (59-2a-502(5))",
+    "Honorable/general discharge is presumptive proof of U.S. citizenship; no further citizenship proof may be required (59-2a-501(4))"
+  ],
+  "survivingSpouse": "Unmarried surviving spouse or minor orphan of a veteran with a disability claims the same percentage-based exemption; the unmarried surviving spouse or minor orphan of a veteran killed in action or who died in the line of duty gets the TOTAL taxable value of the primary residence and personal-use tangible personal property exempt (59-2a-501(3)). PT-025 has a checkbox for this status; same September 1 deadline.",
+  "appeal": "59-2a-501(5): disputes over \"an individual's status as a veteran with a disability\" are resolved by the Utah Department of Veterans and Military Affairs through an informal hearing under the Administrative Procedures Act. Other denials follow county board of equalization / Tax Commission appeal routes under Title 59 Chapter 2 (not verified in detail).",
+  "statute": "Utah Code 59-2a-501 (amount), 59-2a-502 (application, deadline, extensions, no re-filing), 59-2a-108 (Dec 31 good-cause extension, refunds); renumbered from 59-2-1903/1904 by Laws 2025 ch. 172 effective 1/1/2026",
+  "sourceUrls": [
+    { "url": "https://le.utah.gov/xcode/Title59/Chapter2A/C59-2a-S502_2026010120250507.html", "title": "Utah Code 59-2a-502 Application (effective 1/1/2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://le.utah.gov/xcode/Title59/Chapter2A/C59-2a-S501_2026010120250507.html", "title": "Utah Code 59-2a-501 Veteran armed forces exemption amount (effective 1/1/2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://le.utah.gov/xcode/Title59/Chapter2A/C59-2a-S108_2026010120250507.html", "title": "Utah Code 59-2a-108 Extension of time for filing application; refunds", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://le.utah.gov/~2023/bills/hbillenr/HB0539.htm", "title": "H.B. 539 (2023) enrolled, amending former 59-2-1904 (one-time filing, pre-purchase application)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://files.tax.utah.gov/propertytax/form/pt-025.pdf", "title": "Form PT-025 Veteran with a Disability Property Tax Exemption Application (Rev. 01/23)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.utah.gov/forms-pubs/pub-36/", "title": "Utah State Tax Commission Pub 36 Property Tax Abatement, Deferral, and Exemption Programs for Individuals (Rev. 09/26, marked draft pending public meeting)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://files.tax.utah.gov/propertytax/media/county-tax-relief.pdf", "title": "Utah State Tax Commission: County Tax Relief Contact List (29 counties)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.utah.gov/propertytax/tax-relief/", "title": "Utah State Tax Commission: Property Tax Relief", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.utah.gov/propertytax/forms/", "title": "Utah State Tax Commission: Property Tax Forms (PT-22, PT-25, PT-32)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    { "field": "programs[0].survivingSpouse", "note": "Should be true: 59-2a-501 covers the unmarried surviving spouse and minor orphans of a veteran with a disability (same percentage) and gives a TOTAL exemption to survivors of veterans killed in action or who died in the line of duty.", "source": "https://le.utah.gov/xcode/Title59/Chapter2A/C59-2a-S501_2026010120250507.html" },
+    { "field": "programs[0].details", "note": "Stale $521,620 figure in 'details' (summary already says $535,459 for TY2026, matching Pub 36 Rev. 09/26). Also the statute was renumbered 1/1/2026 from 59-2-1903/1904 to 59-2a-501/502; any statute citation in the tool should be updated.", "source": "https://tax.utah.gov/forms-pubs/pub-36/" }
+  ],
+  "notes": "propertytax.utah.gov now redirects to tax.utah.gov/propertytax and returns 403 to plain curl HEAD; GET with a browser user agent returns 200, and the files.tax.utah.gov PDFs return 200 either way. The le.utah.gov /xcode/.../59-2-S190x.html pages are a JavaScript shell; the versioned C59-2a-S50x_2026010120250507.html URLs serve static text. Pub 36 online is labeled 'DRAFT PENDING PUBLIC MEETING' (Rev. 09/26) and does not restate the September 1 deadline for this exemption, which comes from the statute and PT-025."
+}

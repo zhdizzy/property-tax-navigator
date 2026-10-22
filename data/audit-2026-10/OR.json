@@ -1,0 +1,51 @@
+{
+  "state": "OR",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0097,
+    "sourceValue": 0.0081,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Tax Foundation Table 2 (Census ACS 2024 5-year): OR 0.81% (2023: 0.83%). File 0.97% is 0.16 pp high. Note Oregon exemptions reduce ASSESSED value (Measure 50 MAV, typically well below market), so an effective-rate-on-market model understates the tax saved per dollar of exemption unless a market-equivalent gross-up is applied."
+  },
+  "programs": [
+    {
+      "name": "Veteran Exemption",
+      "status": "corrected",
+      "fields": {
+        "ratingRequired": { "current": 40, "correct": 40, "quote": "Be a veteran who is officially certified by the U.S. Department of Veterans Affairs or any branch of the U.S. Armed Forces as having service-connected disabilities of 40 percent or more", "source": "https://www.oregon.gov/dor/forms/FormsPubs/veteran-spouse-exemption_310-676.pdf" },
+        "tiers": { "current": null, "correct": "TY2026-27: $32,512 of assessed value at 40%+ service-connected; $27,092 at 40%+ non-service-connected or physician-certified (income-tested)", "quote": "you may be entitled to exempt $27,092 or $32,512 of your homestead property's assessed value from property taxes. The exemption amount increases by 3 percent each year.", "source": "https://www.oregon.gov/dor/forms/FormsPubs/veteran-spouse-exemption_310-676.pdf" },
+        "indexing": { "current": "indexed +3%/yr", "correct": true, "quote": "shall equal 103 percent of the amount of the exemption for the prior tax year.", "source": "https://www.oregonlegislature.gov/bills_laws/ors/ors307.html" },
+        "survivingSpouse": { "current": false, "correct": true, "quote": "Be a veteran's surviving spouse/partner who hasn't entered into a new marriage or partnership and the veteran died due to service-connected injury or illness, or the veteran received at least one year of the maximum exemption.", "source": "https://www.oregon.gov/dor/forms/FormsPubs/veteran-spouse-exemption_310-676.pdf" },
+        "incomeLimit": { "current": null, "correct": "only for the physician-certified route: 185% of federal poverty guidelines; none for VA-certified veterans", "quote": "In the year before the exemption year, your total gross income can't be more than 185 percent of the annual Federal Poverty Level Guidelines.", "source": "https://www.oregon.gov/dor/forms/FormsPubs/veteran-spouse-exemption_310-676.pdf" },
+        "exemptionValue": { "current": 45000, "correct": "unverified (modeling gross-up of $32,512 assessed value to market)", "quote": "exempt $27,092 or $32,512 of your homestead property's assessed value", "source": "https://www.oregon.gov/dor/forms/FormsPubs/veteran-spouse-exemption_310-676.pdf" }
+      },
+      "effectiveChanges": "TY2026-27 (July 1, 2026 to June 30, 2027): $32,512 / $27,092 (DOR Pub 150-310-676, January 2026 edition). TY2027-28 will be 103% of those: $33,487 / $27,905 by statute (derived, not yet published by DOR). Claims due April 1, 2027 for TY2027-28.",
+      "note": "Row's statutory figures and 3% indexing are confirmed; only survivingSpouse was wrong (surviving spouse or registered domestic partner qualifies even if the veteran was never disabled, at the lower amount, or at the higher amount if the veteran died of service-connected causes or had a year of the maximum exemption). The $45,000 'market-equivalent' is an assumption about the assessed-to-market ratio and cannot be sourced; keep it labeled as a model. Oregon also requires a qualifying service period (91/179 consecutive days, combat zone, or campaign medal, or a VA rating with under 179 days). Late VA certification can reach back up to three tax years."
+    },
+    {
+      "name": "Reserve Component Exemption",
+      "status": "confirmed",
+      "fields": {
+        "exemptionValue": { "current": 111618, "correct": "111618 (derived: $60,000 x 1.03^21 for TY2026-27; DOR does not publish the current figure)", "quote": "there shall be exempt from taxation up to $60,000 of the assessed value of the homestead", "source": "https://www.oregonlegislature.gov/bills_laws/ors/ors307.html" },
+        "indexing": { "current": "+3%/yr", "correct": true, "quote": "began at $60,000 of assessed value in 2005 and increases 3 percent each year.", "source": "https://www.oregon.gov/DOR/forms/FormsPubs/active-military-exemption_303-084.pdf" },
+        "ratingRequired": { "current": null, "correct": null, "quote": "the amount of the exemption allowed under subsection (1) of this section shall equal 103 percent", "source": "https://www.oregonlegislature.gov/bills_laws/ors/ors307.html" },
+        "survivingSpouse": { "current": false, "correct": "unverified", "quote": "", "source": "" }
+      },
+      "effectiveChanges": "TY2026-27 derived amount $111,618 of assessed value; TY2027-28 derived $114,967. Claimed per tax year of qualifying service, due August 1 after the tax year.",
+      "note": "This is an exemption for Oregon National Guard / reserve members with 179+ consecutive days of Title 10 (or EMAC) service during the tax year, filed on Form 150-303-084 each year served. It is not a rated-veteran benefit and should not be credited to a rated veteran's home by default; it only applies for the tax year(s) of the deployment. The DOR form in circulation is Rev. 01-12 and states the $60,000 base and 3%/yr rule but not the current dollar figure, so $111,618 is arithmetic from statute, not a published number."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": { "status": "confirmed", "correct": "", "source": "" },
+  "sources": [
+    { "url": "https://www.oregon.gov/dor/forms/FormsPubs/veteran-spouse-exemption_310-676.pdf", "title": "DOR Pub 150-310-676 Disabled Veteran or Surviving Spouse Property Tax Exemption (Rev. 11-07-25, January 2026): $27,092 / $32,512", "status": 200 },
+    { "url": "https://www.oregon.gov/dor/forms/FormsPubs/veteran-exemption-claim_303-086.pdf", "title": "Form 150-303-086 Disabled Veteran or Surviving Spouse Exemption Claim (Rev. 02-29-24)", "status": 200 },
+    { "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors307.html", "title": "ORS chapter 307 (307.250 base $15,000/$18,000 at 40%+, 103%/yr; 307.286 $60,000 base, 103%/yr)", "status": 200 },
+    { "url": "https://www.oregon.gov/DOR/forms/FormsPubs/active-military-exemption_303-084.pdf", "title": "Form 150-303-084 Active Duty Military Service Member's Exemption Claim (Rev. 01-12)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 data)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "Oregon's TY2026-27 amounts are confirmed from the DOR's January 2026 publication ($32,512 service-connected / $27,092 other, 40%+ rating, +3% per year), with survivingSpouse needing to flip to true; the Reserve Component row's $111,618 is correct arithmetic from ORS 307.286 but is a deployment-year Guard/Reserve benefit that should not score for a rated veteran. Effective rate 0.97% vs Tax Foundation 0.81% (2024) is outside tolerance."
+}

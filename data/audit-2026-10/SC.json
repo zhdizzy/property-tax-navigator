@@ -1,0 +1,103 @@
+{
+  "propertyTaxRate": {
+    "fileValue": 0.0057,
+    "sourceValue": 0.0049,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation Table 2 (ACS 2024): South Carolina 0.49% (0.51% in 2023). File 0.57% is 0.08 pp high but within tolerance; the owner-occupied 4% ratio plus the school-operating exemption keep SC's effective rate low."
+  },
+  "programs": [
+    {
+      "name": "Veteran Exemption",
+      "status": "corrected",
+      "fields": {
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "ptRequired": true,
+          "quote": "a veteran of the Armed Forces of the United States who is permanently and totally disabled as a result of a service-connected disability and who files with the Department of Revenue a certificate signed by the county service officer certifying this disability",
+          "source": "https://www.scstatehouse.gov/code/t12c037.php",
+          "note": "Statute keys on P&T (as certified by VA or the county service officer), not a 100% schedular rating alone; add ptRequired: true. Statute's own P&T definition is the SGA-style test, not the VA 'permanent' label, but SCDOR requires the certificate."
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "Qualified surviving spouse also means the surviving spouse of an individual described in subsubitem (i) whose deceased spouse met the requirements to obtain the exemption allowed by this item regardless of whether the deceased spouse applied",
+          "source": "https://www.scstatehouse.gov/code/t12c037.php"
+        },
+        "summary/acreage": {
+          "current": "Home and land up to 5 acres",
+          "correct": "the house and the lot on which it is situated, as classified at the 4% owner-occupied ratio under 12-43-220(c) (no 5-acre figure in the statute)",
+          "quote": "\"house\" means a dwelling and the lot on which it is situated classified in the hands of the current owner for property tax purposes pursuant to Section 12-43-220(c).",
+          "source": "https://www.scstatehouse.gov/code/t12c037.php",
+          "note": "The '5 acres' figure appears nowhere in 12-37-220(B)(1); the exempt lot is whatever the 4% legal-residence classification covers. Treat 5 acres as unverified legacy text."
+        },
+        "vehicles": {
+          "current": "Also exempts 2 private passenger vehicles",
+          "correct": true,
+          "quote": "two private passenger vehicles owned or leased by any disabled veteran, or the spouse of the disabled veteran if the spouse resides with the veteran",
+          "source": "https://www.scstatehouse.gov/code/t12c037.php",
+          "note": "Vehicle exemption (B)(3) is real but should not be converted into home-value dollars."
+        }
+      },
+      "effectiveChanges": "None found for TY2026/TY2027. 2024 Act No. 116 (effective 3/11/2024) already in force: surviving spouses qualify whether or not the veteran applied, and refunds reach back for open periods under 12-54-85(F) (two years from payment).",
+      "note": "type full confirmed: the house is 'exempt from all property taxation'. Eligibility is binary; exemptionValue null is correct."
+    },
+    {
+      "name": "POW Medal Of Honor Exemption",
+      "status": "confirmed",
+      "fields": {
+        "eligibility": {
+          "current": "ratingRequired null",
+          "correct": "Medal of Honor recipients (any era) or POWs of WWI, WWII, Korea, or Vietnam only",
+          "quote": "a lot not to exceed one acre of land owned in fee or for life or jointly with a spouse by a resident of this State who is a recipient of the Medal of Honor regardless of when it was awarded or the conflict involved, or who was a prisoner of war in World War I, World War II, the Korean Conflict, or the Vietnam Conflict",
+          "source": "https://www.scstatehouse.gov/code/t12c037.php"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "The exemption is allowed to the surviving spouse under the same terms and conditions governing the exemption for surviving spouses pursuant to item (1)",
+          "source": "https://www.scstatehouse.gov/code/t12c037.php"
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Should NOT be credited to a rated veteran's home: it is MoH/POW-only and a rated veteran who is not MoH/POW gets nothing from it. Flag nonRecurring/eligibility gate in the tool so it does not stack on the P&T row."
+    }
+  ],
+  "missingPrograms": [
+    {
+      "name": "Paraplegic/hemiplegic dwelling exemption",
+      "what": "Full exemption of the dwelling and up to one acre for a paraplegic or hemiplegic person (statute includes Parkinson's Disease, Multiple Sclerosis, ALS); passes to the unremarried surviving spouse. Not veteran-specific but a 100% P&T veteran with these conditions qualifies on either path.",
+      "statute": "S.C. Code 12-37-220(B)(2)",
+      "source": "https://www.scstatehouse.gov/code/t12c037.php"
+    }
+  ],
+  "jurisdictionNote": {
+    "status": "unverified",
+    "correct": "",
+    "source": "",
+    "note": "No propertyTax.note in the file for SC."
+  },
+  "sources": [
+    {
+      "url": "https://www.scstatehouse.gov/code/t12c037.php",
+      "title": "S.C. Code Title 12 Chapter 37, 12-37-220(B)(1), (B)(2), (B)(3), (B)(43)",
+      "status": 200
+    },
+    {
+      "url": "https://dor.sc.gov/property/property-tax-exemptions",
+      "title": "SCDOR Property Tax Exemptions (filing-layer source, live-checked 2026-10-21)",
+      "status": 200
+    },
+    {
+      "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+      "title": "Tax Foundation, Property Taxes by State and County, 2026 (Table 2: Property Taxes Paid as a Percentage of Owner-Occupied Housing Value, 2024, Census ACS)",
+      "status": 200
+    }
+  ],
+  "confidence": "verified",
+  "summary": "SC's P&T veteran home exemption, two-vehicle exemption, surviving-spouse continuation and the MoH/POW one-acre exemption all match current 12-37-220; the only textual issues are the unsourced '5 acres' figure and the missing ptRequired flag. The MoH/POW row must not be credited to an ordinary rated veteran, and the (B)(2) paraplegic/hemiplegic exemption is absent from the file.",
+  "state": "SC",
+  "checkedDate": "2026-10-21"
+}

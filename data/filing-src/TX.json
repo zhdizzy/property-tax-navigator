@@ -1,0 +1,168 @@
+{
+  "state": "TX",
+  "officeType": "county appraisal district (chief appraiser)",
+  "officeTypeNote": "File with the county APPRAISAL DISTRICT, not the county tax assessor-collector (that office registers vehicles and collects the bill) and not the Comptroller. Tax Code 11.43(a): \"a person must file an exemption application form with the chief appraiser for each appraisal district in which the property subject to the claimed exemption has situs.\" Both Comptroller forms say: \"Do not file this document with the Texas Comptroller of Public Accounts.\"",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/",
+    "label": "Texas Comptroller: County Directory of appraisal districts and tax assessor-collectors (all 254 counties)",
+    "countyUrlPattern": "https://comptroller.texas.gov/taxes/property-tax/county-directory/{county}.php",
+    "slugRule": "lower-nospace",
+    "fallbackUrl": "https://comptroller.texas.gov/taxes/property-tax/exemptions/",
+    "note": "Form 50-114 instructions: 'A directory with contact information for appraisal district offices is on the Comptroller's website.' Most appraisal districts also post their own copy of 50-114/50-135 and many accept online filing through their own portals. Slug rule: County name lowercased with spaces and punctuation removed, no hyphens: travis.php, fortbend.php, elpaso.php, deafsmith.php, jeffdavis.php (fort-bend.php and el-paso.php return 404). Each county page lists the appraisal district's chief appraiser, taxpayer liaison, phone, email, website, mailing and street address, then the tax assessor-collector block."
+  },
+  "forms": [
+    {
+      "programRef": "Homestead Tax Exemption for 100% Disabled or Unemployable Veterans",
+      "name": "Residence Homestead Exemption Application (check the '100 Percent Disabled Veteran (or Surviving Spouse)' box, Tax Code 11.131; also covers 11.132 donated homestead and 11.133 KIA spouse)",
+      "number": "50-114",
+      "url": "https://comptroller.texas.gov/forms/50-114.pdf",
+      "revision": "Rev. 02-26/39",
+      "filedWith": "county appraisal district"
+    },
+    {
+      "programRef": "Surviving Spouse of SM Killed in Line of Duty",
+      "name": "Residence Homestead Exemption Application (Surviving Spouse of Member of Armed Services Killed in Line of Duty box, Tax Code 11.133)",
+      "number": "50-114",
+      "url": "https://comptroller.texas.gov/forms/50-114.pdf",
+      "revision": "Rev. 02-26/39",
+      "filedWith": "county appraisal district"
+    },
+    {
+      "programRef": "Partial Exemption for Partially Disabled Veterans",
+      "name": "Disabled Veteran's or Survivor's Exemption Application (Tax Code 11.22; applies to any one property the veteran designates, not only the homestead; stackable with 11.131)",
+      "number": "50-135",
+      "url": "https://comptroller.texas.gov/forms/50-135.pdf",
+      "revision": null,
+      "filedWith": "county appraisal district"
+    },
+    {
+      "programRef": "*",
+      "name": "Residence Homestead Exemption Affidavits (supplement for heir property, manufactured homes, or when the applicant is not on the deed)",
+      "number": "50-114-A",
+      "url": "https://comptroller.texas.gov/forms/50-114-a.pdf",
+      "revision": null,
+      "filedWith": "county appraisal district (attach to 50-114 when required)"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "04-30",
+    "text": "Tax Code 11.43(d): \"a person required to claim an exemption must file a completed exemption application form before May 1 ... For good cause shown the chief appraiser may extend the deadline ... for a single period not to exceed 60 days.\" Comptroller forms: file \"generally between Jan. 1 and April 30 of the year for which you are requesting the exemption.\" Late windows below make the April 30 date soft for disabled veterans."
+  },
+  "effective": "11.131 (100% DV homestead): Tax Code 11.42(e): \"A person who qualifies for an exemption under Section 11.131 ... after January 1 of a tax year may receive the exemption for the applicable portion of that tax year immediately on qualification\" (prorated from the qualification date, e.g. the VA 100%/IU award date or move-in date). 11.22 (partial DV): eligibility is fixed by qualifications on January 1 (11.42(a)); a veteran rated mid-year starts the following tax year. 11.132/11.133: effective as of January 1 of the year of qualification for the whole year (11.42(c)).",
+  "lateFiling": "Chief appraiser must accept late applications: 100% DV homestead (11.131) and donated homestead (11.132) for the VETERAN up to five years after the delinquency date (11.439(a), as amended by S.B. 611 eff. Jan 1 2022); partial DV exemption 11.22 up to five years after the delinquency date (11.439(a)); SURVIVING SPOUSE claims under 11.131/11.132/11.133 only up to two years after the delinquency date (11.431(a)). Delinquency date is normally February 1 of the year after the tax year, so a veteran can reach back roughly five tax years.",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 5,
+    "text": "Tax Code 11.439(a): the chief appraiser \"shall accept and approve or deny an application for an exemption under Section 11.131 or 11.132 for the residence homestead of a disabled veteran but not the surviving spouse ... or Section 11.22 ... if the application is filed not later than five years after the delinquency date.\" 11.439(b): if paid, \"the collector shall pay ... a refund of the tax imposed on the exempted portion ... and the corresponding portion of any related penalties and interest paid.\" Surviving spouses: two years (11.431(a)). No separate refund application is required (11.431(b))."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "Tax Code 11.43(c): exemptions under 11.13, 11.131, 11.132, 11.133 and 11.22, \"once allowed, need not be claimed in subsequent years, and ... the exemption applies to the property until it changes ownership or the person's qualification for the exemption changes.\" The chief appraiser may send a written notice requiring a new application to confirm qualification, EXCEPT 11.43(r): may not require a new application from a 11.131 veteran who \"has a permanent total disability determined by the United States Department of Veterans Affairs under 38 C.F.R. Section 4.15.\" Owner must notify the chief appraiser in writing before May 1 of the year after eligibility ends (form instructions)."
+  },
+  "ratingChange": "11.22 amount follows the rating tier ($5,000 at 10-29%, $7,500 at 30-49%, $10,000 at 50-69%, $12,000 at 70%+ or age 65 with 10%+, blind, or loss of use of a limb); file an updated 50-135 with the new VA rating letter, effective the next January 1 (11.42(a)). Reaching 100% schedular or IU: file 50-114 for 11.131, effective immediately for the remainder of that year (11.42(e)). If the 100% rating is later reduced, qualification 'changes' and the exemption ends; notify the appraisal district before May 1.",
+  "move": "11.131 moves with the veteran: Comptroller FAQ: on the old homestead \"tax is due on the homestead for the portion of the year after the date the exemption ends\"; on the new one \"The exemption may start immediately when the 100 percent disabled veteran qualifies the new residence homestead.\" File a new 50-114 with the appraisal district for the new county. 11.22 attaches to one designated property; re-designate on a new 50-135.",
+  "onlineFiling": {
+    "available": null,
+    "text": "Varies by appraisal district: many large CADs (e.g. Travis, Harris, Dallas) run online homestead-exemption portals; others take mail/in-person. The Comptroller provides the PDF forms only. Driver's license address must match the homestead address (11.43(j)) unless a waiver applies (form Section 4)."
+  },
+  "documents": [
+    "Copy of each owner's Texas driver's license or state-issued personal ID with an address matching the homestead (Tax Code 11.43(j); waivers for active-duty members/spouses, residents of care facilities, and 521.121(c)/521.1211 license holders)",
+    "11.131: documentation from the VA (or its successor) showing 100% service-connected disability compensation with a 100% rating OR individual unemployability (VA award/benefits summary letter); form asks whether the disability is a permanent total disability",
+    "11.22 (50-135): \"documentation indicating the percentage of disability certified by the Veterans Administration or its successor or the branch of the armed services\"; \"Attach documentation from the VA or service branch identifying the most recent disability rating\"; a driver's license is not proof of rating (Comptroller FAQ)",
+    "Heir property / owner not on deed: Form 50-114-A affidavit, prior owner's death certificate, most recent utility bill, citation of any court record (50-114 instructions)",
+    "Manufactured home: statement of ownership or title/purchase contract/payment receipt plus 50-114-A affidavit",
+    "Surviving spouse: veteran's death certificate and proof the veteran qualified (or would have qualified) for 11.131 at death; proof of no remarriage (form attestation)"
+  ],
+  "survivingSpouse": "11.131(c)-(d): unremarried surviving spouse keeps the total exemption if the property was the spouse's residence homestead when the veteran died and remains so; the dollar amount may transfer to a subsequent homestead (11.131(d)). Comptroller FAQ: \"A surviving spouse does not qualify if the surviving spouse has remarried since the death of the disabled veteran.\" 11.133: total homestead exemption for the unremarried spouse of a service member killed or fatally injured in the line of duty. 11.22(c)-(d): spouse (and children under 18 if no spouse) of a 11.22 veteran keep the veteran's dollar amount; spouse of a member who died on active duty gets $5,000. Late filing for spouses limited to two years (11.431).",
+  "appeal": "Form 50-135: \"If the chief appraiser denies the application, you may protest that determination to the county appraisal review board under Tax Code chapter 41.\" Chief appraiser may request more information; owner must respond within 30 days or the application is denied (11.45; form instructions).",
+  "statute": "Tex. Tax Code 11.131 (100% DV homestead), 11.22 (partial DV), 11.132 (donated homestead), 11.133 (KIA spouse), 11.42(e) (mid-year qualification), 11.43 (application, (c) one-time, (d) before May 1, (r) no reapplication for P&T), 11.431 (late homestead, 2 years), 11.439 (late DV, 5 years)",
+  "sourceUrls": [
+    {
+      "url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-297-25.pdf",
+      "title": "Texas Property Tax Code, 2025 edition (Comptroller publication 96-297; Secs. 11.42, 11.43, 11.431, 11.439, 26.1127 read)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://comptroller.texas.gov/forms/50-114.pdf",
+      "title": "Form 50-114 Residence Homestead Exemption Application (Rev. 02-26/39) with filing instructions",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://comptroller.texas.gov/forms/50-135.pdf",
+      "title": "Form 50-135 Disabled Veteran's or Survivor's Exemption Application with filing instructions",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://comptroller.texas.gov/forms/50-114-a.pdf",
+      "title": "Form 50-114-A Residence Homestead Exemption Affidavits",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://comptroller.texas.gov/taxes/property-tax/exemptions/disabledvet-100-faq.php",
+      "title": "Comptroller: 100 Percent Disabled Veterans and Surviving Spouses FAQ",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://comptroller.texas.gov/taxes/property-tax/exemptions/disabledvet-faq.php",
+      "title": "Comptroller: Disabled Veterans and Surviving Spouses Exemptions FAQ (11.22)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/",
+      "title": "Comptroller: County Directory (appraisal districts and tax assessor-collectors)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/travis.php",
+      "title": "Comptroller county directory example page (Travis)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://capitol.texas.gov/tlodocs/87R/billtext/html/SB00611F.htm",
+      "title": "S.B. 611 (87R) enrolled: amendments to Tax Code 11.431 and 11.439 effective Jan 1 2022",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://comptroller.texas.gov/taxes/property-tax/exemptions/",
+      "title": "Comptroller: Property Tax Exemptions overview",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "programs[1].summary (Partial Exemption)",
+      "note": "Summary leads with the age-65 $12,000 rule; the general 11.22 schedule is $5,000/$7,500/$10,000/$12,000 by rating tier for any disabled veteran, on ANY one property the veteran designates (not restricted to the homestead), and it STACKS with 11.131 on a different property. The existing summary 'Only one exemption allowed, choose greatest' under program 0 conflicts with the Comptroller FAQ: 'An eligible disabled veteran may receive both exemptions.'",
+      "source": "https://comptroller.texas.gov/taxes/property-tax/exemptions/disabledvet-100-faq.php"
+    },
+    {
+      "field": "programs[0].ratingRequired",
+      "note": "11.131 qualifies on 100% schedular OR individual unemployability (IU) compensation at the 100% rate; P&T is not required for the exemption, only for the 11.43(r) protection against re-application requests.",
+      "source": "https://comptroller.texas.gov/forms/50-114.pdf"
+    }
+  ],
+  "notes": "statutes.capitol.texas.gov is now a JavaScript app and its Docs/TX/htm/TX.11.htm URL returns only an app shell to curl; the Comptroller's 2025 Property Tax Code PDF (publication 96-297-25) was used as the statute source and the S.B. 611 enrolled text confirms the current 11.431/11.439 wording. The brief's open question is settled: VETERANS get five years after the delinquency date for 11.131/11.132/11.22 (11.439); SURVIVING SPOUSES get two years (11.431). The 50-135 PDF revision string did not extract cleanly from pdftotext. The disabled-veterans info pack PDF (comptroller.texas.gov/taxes/property-tax/info-pack/disabled-veterans-exemptions.pdf) is a sample press release for chief appraisers, not taxpayer guidance."
+}

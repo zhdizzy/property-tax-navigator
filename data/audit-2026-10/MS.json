@@ -1,0 +1,79 @@
+{
+  "state": "MS",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0081,
+    "sourceValue": 0.0058,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Tax Foundation 'Property Taxes by State' table (Mar 2026): Mississippi 0.58% for 2024 (0.60% for 2023), total real taxes paid / total owner-occupied value (ACS B25082, B25090). File value 0.81% is 0.23 pp above."
+  },
+  "programs": [
+    {
+      "name": "Homestead Exemption",
+      "status": "corrected",
+      "fields": {
+        "name": {
+          "current": "Homestead Exemption",
+          "correct": "Homestead Exemption — Total (service-connected totally disabled veteran, Tier 3)",
+          "quote": "Applicants classified as service-connected, total disability as an American veteran who has been honorably discharged",
+          "source": "https://www.dor.ms.gov/county-services/homestead-exemption"
+        },
+        "type": {
+          "current": "full",
+          "correct": "full",
+          "quote": "the amount of the exemption is increased to include all ad valorem taxes for that property, not just the amount determined by the table found in Miss. Code Ann. Section 27-33-75",
+          "source": "https://www.sos.ms.gov/adminsearch/ACCode/00000161c.pdf"
+        },
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "quote": "an honorably discharged veteran with a service-connected total disability or is the unremarried surviving spouse of such a veteran",
+          "source": "https://www.sos.ms.gov/adminsearch/ACCode/00000161c.pdf"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "or is the unremarried surviving spouse of such a veteran",
+          "source": "https://www.sos.ms.gov/adminsearch/ACCode/00000161c.pdf"
+        },
+        "details": {
+          "current": "Exempt from all property taxes on assessed value of homestead property.",
+          "correct": "Exempt from all ad valorem taxes on the homestead, subject to the homestead limits of $7,500 assessed value and 160 acres (the dollar limit is lifted for the total-exemption tiers but the acreage cap remains). File in person at the county Tax Assessor between Jan 1 and April 1.",
+          "quote": "The limits of seven thousand five hundred dollars ($7,500) of assessed value and one hundred sixty (160) total acres still apply; however, the amount of the exemption is increased to include all ad valorem taxes",
+          "source": "https://www.sos.ms.gov/adminsearch/ACCode/00000161c.pdf"
+        }
+      },
+      "effectiveChanges": "From January 1, 2026 the DOR rule (35 Miss. Admin. Code Pt. VI) extends two neighbouring total-exemption tiers to unremarried surviving spouses: the non-veteran 'total disability' tier and the honorably-discharged-veteran-age-90 tier. The service-connected totally disabled veteran tier already covered the unremarried surviving spouse, so no change to this row's dollar value or eligibility for TY2026. HB 714 (2025), which would have amended §§27-33-67/-75 for surviving spouses of totally disabled homeowners, died in committee 02/26/2025; the 2026 extension rests on the administrative rule.",
+      "note": "DOR rule language is 'service-connected total disability' with no P&T or unemployability test; the row's ratingRequired:100 is the right proxy. Mississippi has no partial-rating tier, so veterans below total disability get only the general homestead credit (up to $300) or the 65+/disabled $7,500 tier."
+    }
+  ],
+  "missingPrograms": [
+    {
+      "name": "Homestead Exemption — Total (honorably discharged veteran age 90+)",
+      "what": "Total exemption of ad valorem taxes on the homestead for an honorably discharged veteran who is 90 or older on Jan 1; from Jan 1, 2026 the unremarried surviving spouse also qualifies. Age-based, not rating-based, so it would need minAge:90 and no ratingRequired.",
+      "statute": "35 Miss. Admin. Code Pt. VI, Subpart 3 (homestead rules), implementing Miss. Code Ann. §27-33-67",
+      "source": "https://www.sos.ms.gov/adminsearch/ACCode/00000161c.pdf"
+    },
+    {
+      "name": "Homestead Exemption — Total (unremarried surviving spouse of service member killed on active duty)",
+      "what": "Total exemption for the unremarried surviving spouse of a member of the Armed Forces killed or who died on active duty, or a reserve/Guard member who died on active duty for training. Not creditable to a living rated veteran; informational row only.",
+      "statute": "35 Miss. Admin. Code Pt. VI, Subpart 3",
+      "source": "https://www.dor.ms.gov/county-services/homestead-exemption"
+    }
+  ],
+  "jurisdictionNote": {
+    "status": "unverified",
+    "correct": "",
+    "source": ""
+  },
+  "sources": [
+    { "url": "https://www.dor.ms.gov/county-services/homestead-exemption", "title": "Mississippi DOR: Homestead Exemption (tiers, filing window Jan 1 to April 1)", "status": 200 },
+    { "url": "https://www.sos.ms.gov/adminsearch/ACCode/00000161c.pdf", "title": "35 Miss. Admin. Code Part VI (Property), Subpart 3 Homestead Exemption rules incl. Jan 1, 2026 surviving-spouse extensions", "status": 200 },
+    { "url": "https://billstatus.ls.state.ms.us/2025/pdf/history/HB/HB0714.xml", "title": "Mississippi Legislature bill history, HB 714 (2025): Died In Committee 02/26/2025", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation, Property Taxes by State and County, 2026 (2024 ACS data)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "The service-connected totally disabled veteran tier is a full exemption of all ad valorem taxes on the homestead with unremarried-surviving-spouse coverage, as the row says; the row name and details should say which tier it is and carry the 160-acre cap. The Jan 1, 2026 rule change extends surviving-spouse coverage to the age-90 veteran and non-veteran total-disability tiers (not to this row), and the age-90 veteran total exemption is missing from the file; the 0.81% tax rate is 0.23 pp above the Tax Foundation 2024 figure."
+}

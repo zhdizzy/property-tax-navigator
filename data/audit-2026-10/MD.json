@@ -1,0 +1,101 @@
+{
+  "state": "MD",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0109,
+    "sourceValue": 0.0092,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Tax Foundation 'Property Taxes by State' table (published Mar 16, 2026): Maryland 0.92% for 2024 (0.95% for 2023), computed as total real taxes paid / total owner-occupied home value from Census ACS B25082 and B25090. File value 1.09% is 0.17 pp above the 2024 figure. The file figure appears to come from an older median-based series; decide which series the tool standardizes on before changing it."
+  },
+  "programs": [
+    {
+      "name": "Disabled Veteran Exemption",
+      "status": "corrected",
+      "fields": {
+        "details": {
+          "current": "100% disabled veterans: $5,000 assessed value exemption on primary residence.",
+          "correct": "Full exemption of the dwelling house from state, county and municipal property tax for a veteran with a permanent 100% service-connected disability (Tax-Property §7-208); unremarried surviving spouse keeps it.",
+          "quote": "a dwelling house is exempt from property tax if: (1) the dwelling house is owned by: (i) a disabled veteran ... (ii) a surviving spouse",
+          "source": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=7-208&enactments=false"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "'Surviving spouse' means an individual who has not remarried and who: (i) is the surviving spouse of a disabled veteran; (ii) ... died in the line of duty; or (iii) receives Dependency and Indemnity Compensation",
+          "source": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=7-208&enactments=false"
+        },
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "quote": "has been declared by the U.S. Department of Veterans Affairs to have a permanent 100% service connected disability",
+          "source": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=7-208&enactments=false"
+        },
+        "ptRequired": {
+          "current": true,
+          "correct": true,
+          "quote": "a permanent 100% service connected disability ... reasonably certain to continue for the life of the veteran",
+          "source": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=7-208&enactments=false"
+        },
+        "type": {
+          "current": "full",
+          "correct": "full",
+          "quote": "The page contains no dollar cap; 'a dwelling house is exempt from property tax'",
+          "source": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=7-208&enactments=false"
+        }
+      },
+      "effectiveChanges": null,
+      "note": "The statute text contains no 'unemployability' wording; the SDAT application form accepts 'permanent unemployability' as qualifying, so TDIU-at-100% veterans should check with SDAT rather than rely on the statute alone. No 2025 or 2026 amendment to §7-208 was found on mgaleg.maryland.gov. The $5,000 figure in `details` is wrong and should be replaced."
+    },
+    {
+      "name": "County Credits",
+      "status": "corrected",
+      "fields": {
+        "incomeLimit": {
+          "current": null,
+          "correct": 100000,
+          "quote": "the disabled veteran's federal adjusted gross income for the immediately preceding taxable year does not exceed $100,000",
+          "source": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=9-265&enactments=false"
+        },
+        "tiers": {
+          "current": null,
+          "correct": [
+            { "minRating": 50, "maxRating": 74, "fraction": 0.25, "appliesTo": "county or municipal tax only, where adopted" },
+            { "minRating": 75, "maxRating": 99, "fraction": 0.5, "appliesTo": "county or municipal tax only, where adopted; not available if the veteran qualifies under §7-208" }
+          ],
+          "quote": "50% of the county or municipal corporation property tax ... if the disabled veteran's service-connected disability rating is at least 75% and the disabled veteran does not qualify for a property tax exemption under § 7-208",
+          "source": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=9-265&enactments=false"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": "local option",
+          "quote": "the governing body of a county or municipal corporation may, by law, continue to provide the property tax credit under this section to the surviving spouse of the disabled veteran",
+          "source": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=9-265&enactments=false"
+        },
+        "summary": {
+          "current": "25% of county/municipal tax at 50-74% rating, 50% at 75-99%",
+          "correct": "Same tiers, plus: FAGI cap $100,000; the 50% tier is for veterans at 75%+ who do NOT qualify under §7-208 (so a non-permanent 100% rating lands here); surviving-spouse continuation is a local option.",
+          "quote": "25% of the county or municipal corporation property tax imposed on the dwelling house if the disabled veteran's service-connected disability rating is at least 50% but not more than 74%",
+          "source": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=9-265&enactments=false"
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Statute confirms the credit is a local option (Baltimore City, counties, municipalities 'may grant, by law'), so continuing to list it without adding it to the dollar estimate is right. The $100,000 FAGI cap is missing from the row."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "unverified",
+    "correct": "",
+    "source": ""
+  },
+  "sources": [
+    { "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=7-208&enactments=false", "title": "Md. Code, Tax-Property §7-208 (dwelling house of disabled veteran or surviving spouse)", "status": 200 },
+    { "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtp&section=9-265&enactments=false", "title": "Md. Code, Tax-Property §9-265 (local-option disabled veteran credit)", "status": 200 },
+    { "url": "https://dat.maryland.gov/SiteAssets/Pages/sdatforms/100%20Percent%20Disabled%20Veteran%20Exemption%20Application_0726-A.pdf", "title": "SDAT Application for Exemption for Disabled Veterans (Rev Feb 2025)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation, Property Taxes by State and County, 2026 (2024 ACS data)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "The §7-208 exemption is a complete exemption with surviving-spouse coverage; the row's $5,000 `details` string and survivingSpouse:false are both wrong. The §9-265 county credit tiers are right but the row omits the $100,000 FAGI cap and the rule that the 50% tier is only for veterans who do not qualify under §7-208; the effective tax rate is 0.17 pp above the Tax Foundation 2024 figure."
+}

@@ -1,0 +1,88 @@
+{
+  "state": "HI",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0028,
+    "sourceValue": 0.0027,
+    "source": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Census ACS 2020-2024 5-year: median real estate taxes $2,239 / median value $839,100 (acsdt5y2024-b25077.dat) = 0.267%. Tax Foundation 2024 county table: Honolulu 0.31%, Hawaii 0.35%, Kauai 0.25%, Maui 0.22%."
+  },
+  "programs": [
+    {
+      "name": "Veteran Exemption",
+      "status": "corrected",
+      "fields": {
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "quote": "Honolulu ROH 8-10.5: 'Owned and occupied by a veteran who is totally disabled due to injuries received while serving in the U.S. Armed Forces'",
+          "source": "https://realproperty.honolulu.gov/media/00zfugyp/totally-disabled-va-exemption-e-8-105-rev-08_2026-fillable.pdf",
+          "note": "Honolulu and Hawaii County: totally disabled. Kauai KCC 5A-11.6: 'eighty percent (80%) to totally disabled'. Maui MCC 3.48.475: 70%+ ('severely disabled') per the county form (Rev 12/10/2025) live-checked in the filing layer and the 2022 council press release; mauicounty.gov returned 403 on this check."
+        },
+        "type": {
+          "current": "full",
+          "correct": "full",
+          "quote": "Kauai: 'shall be exempted from all property taxes, other than special assessment'; Honolulu guide: 'subject to the minimum real property tax (currently $300), per ROH § 8-11.1(g)'",
+          "source": "https://realproperty.honolulu.gov/media/a0onfffn/information-guide-rev-2026-06-26-85x14-v2.pdf"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "Owned and occupied by the unmarried widow or widower of such a veteran, as long as they continue to live there.",
+          "source": "https://realproperty.honolulu.gov/media/00zfugyp/totally-disabled-va-exemption-e-8-105-rev-08_2026-fillable.pdf",
+          "note": "Honolulu (unmarried widow/widower; may apply even if the veteran never did), Kauai KCC 5A-11.6(b) (surviving spouse, civil union partner or reciprocal beneficiary until death, remarriage or new partnership), Hawaii County brochure ('widow or widower of the totally disabled veteran remains unmarried'). Maui form has no surviving-spouse box (unverified)."
+        },
+        "summary": {
+          "current": "All four counties ... only the county minimum tax remains (Honolulu $300/yr, others ~$150-$350).",
+          "correct": "All four counties exempt the owner-occupied home of a qualifying service-connected disabled veteran from all property tax except special assessments and a minimum tax: Honolulu 100% (min $300/yr), Hawaii County 100% (half of the county minimum tax), Maui 70%+ (min tax per county form), Kauai 80%+ (min $150; under 80% gets up to $50,000 off assessed value).",
+          "quote": "Hawaii County: 'you may qualify for an exemption from property taxes, except for fifty percent of the minimum tax.'",
+          "source": "https://statelegals.staradvertiser.com/2025/12/18/0001514122-01/"
+        }
+      },
+      "effectiveChanges": "No county ordinance change found for TY2026/2027. Kauai's 2027-tax-year forms (deadline Sept 30, 2026) and Maui's 2027 assessment-year form (deadline Dec 31, 2026) are already posted; Honolulu's form was revised 08/2026 with no eligibility change.",
+      "note": "Maui minimum-tax amount for 70%+ veterans is unverified (2022 Bill 110 proposed a $150 flat bill; committee report version cited half the county minimum). Hawaii County site is Cloudflare-blocked; its rule comes from the county's Dec 2025 legal notice and 2019 county brochure (Form 19-73)."
+    },
+    {
+      "name": "Vehicle Tax Exemption",
+      "status": "unverified",
+      "fields": {},
+      "effectiveChanges": null,
+      "note": "HRS 249-6 (exemption of VA-furnished specially adapted vehicles from county vehicle weight tax) not opened in this pass; row is a vehicle item and should not be credited to the home. Not a property-tax row."
+    }
+  ],
+  "missingPrograms": [
+    {
+      "name": "Kauai Disability Exemption for veterans under 80% (KCC 5A-11.8)",
+      "what": "Veterans less than 80% disabled 'due to injuries while on duty' (and other totally disabled/blind/deaf owners) are exempt up to $50,000 of assessed value; file by Sept 30; requires an existing home exemption.",
+      "statute": "Kauai County Code 5A-11.8",
+      "source": "https://www.kauai.gov/Government/Departments-Agencies/Finance/Real-Property-Tax/Assessment"
+    },
+    {
+      "name": "Hawaii County general disability exemption (Form 19-75)",
+      "what": "Totally disabled persons (any cause) may claim a $50,000 real property tax exemption in addition to the home exemption; a 100% veteran takes the full veteran exemption instead.",
+      "statute": "Hawaii County Code ch. 19 (section not confirmed; county site bot-blocked)",
+      "source": "https://www.lincolninst.edu/app/uploads/legacy-files/gwipp/upload/sources/Hawaii/2019/hi_hawaii_disability_exemption_brochure_real_property_tax_office_2019.pdf"
+    }
+  ],
+  "jurisdictionNote": {
+    "status": "corrected",
+    "correct": "Exemptions vary by county. Kauai: 80%+ full (min $150 tax), <80% up to $50K off assessed (KCC 5A-11.6/5A-11.8). Maui: 70%+ (MCC 3.48.475; minimum tax applies). Honolulu: totally (100%) disabled only, min tax $300 (ROH 8-10.5, 8-11.1(g)). Hawaii County: totally disabled only, pays 50% of the minimum tax. Unmarried surviving spouses keep the exemption in Honolulu, Kauai and Hawaii County. Showing most common threshold (100%).",
+    "source": "https://realproperty.honolulu.gov/media/a0onfffn/information-guide-rev-2026-06-26-85x14-v2.pdf"
+  },
+  "sources": [
+    { "url": "https://realproperty.honolulu.gov/tax-relief-and-forms/exemptions/totally-disabled-veterans/", "title": "Honolulu RPAD: Totally Disabled Veterans exemption", "status": 200 },
+    { "url": "https://realproperty.honolulu.gov/media/00zfugyp/totally-disabled-va-exemption-e-8-105-rev-08_2026-fillable.pdf", "title": "Honolulu Form BFS-RP-E-8-10.5 (REV 08/2026) with ROH 8-10.5 eligibility and widow(er) rule", "status": 200 },
+    { "url": "https://realproperty.honolulu.gov/media/a0onfffn/information-guide-rev-2026-06-26-85x14-v2.pdf", "title": "Honolulu RPAD Information Guide (rev 2026-06-26): minimum tax $300 per ROH 8-11.1(g)", "status": 200 },
+    { "url": "https://www.kauai.gov/Government/Departments-Agencies/Finance/Real-Property-Tax/Assessment", "title": "Kauai Real Property Assessment: exemptions (80-100% full except $150 minimum; <80% up to $50,000)", "status": 200 },
+    { "url": "https://www.kauai.gov/files/assets/public/v/1/finance/rpa/2027-tax-relief-exemption-forms/veteran-disability-exemption-form-80-to-100-disability-_-rev-10.01.2025-fillable.pdf", "title": "Kauai Claim for Homes of Disabled Veteran Exemption with KCC 5A-11.6 text (Rev 10/01/2025)", "status": 200 },
+    { "url": "https://statelegals.staradvertiser.com/2025/12/18/0001514122-01/", "title": "Hawaii County Real Property Tax Division legal notice (Dec 2025): exemption except fifty percent of the minimum tax; Dec 31 deadline", "status": 200 },
+    { "url": "https://www.lincolninst.edu/app/uploads/legacy-files/gwipp/upload/sources/Hawaii/2019/hi_hawaii_disability_exemption_brochure_real_property_tax_office_2019.pdf", "title": "Hawaii County Real Property Tax Office disability exemption brochure (2019; Form 19-73; widow/widower rule)", "status": 200 },
+    { "url": "https://mauicounty.us/council-meeting/press-release-molina-proposes-changes-to-veterans-homeowner-exemption-to-help-maui-countys-severely-disabled-veterans/", "title": "Maui County Council press release: Bill 110 (2022) amending MCC 3.48.475 to a 70% threshold", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat", "title": "Census ACS 2024 5-year summary file, table B25103", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25077.dat", "title": "Census ACS 2024 5-year summary file, table B25077", "status": 200 }
+  ],
+  "confidence": "partial",
+  "summary": "The four-county structure in the file is right (Honolulu and Hawaii County 100%, Kauai 80%+, Maui 70%+), but survivingSpouse should be true (Honolulu, Kauai and Hawaii County continue it for an unmarried spouse) and Hawaii County pays half the minimum tax, not the full minimum. Maui's current minimum-tax amount and Hawaii County's code section remain unverified because both county sites block automated checks; the 0.28% rate is within tolerance of ACS 2024 (0.27%)."
+}

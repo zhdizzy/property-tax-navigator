@@ -1,0 +1,111 @@
+{
+  "state": "KS",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0141,
+    "sourceValue": 0.0129,
+    "source": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Census ACS 2020-2024 5-year: median real estate taxes $2,798 / median value $217,200 (acsdt5y2024-b25077.dat) = 1.288%. File 1.41% is 0.12 pp high."
+  },
+  "programs": [
+    {
+      "name": "Homestead Refund for Disabled Veterans",
+      "status": "corrected",
+      "fields": {
+        "incomeLimit": {
+          "current": 43389,
+          "correct": 43389,
+          "quote": "You must have household income of $43,389 or less;",
+          "source": "https://www.ksrevenue.gov/perstaxtypeshs.html",
+          "note": "TY2025 claim (filed Jan 1 to Apr 15, 2026). 2026 claim-year figure not yet posted."
+        },
+        "exemptionValue": {
+          "current": 700,
+          "correct": 700,
+          "quote": "The maximum refund is $700.",
+          "source": "https://www.ksrevenue.gov/perstaxtypeshs.html"
+        },
+        "ratingRequired": {
+          "current": 50,
+          "correct": 50,
+          "quote": "has a service-connected evaluation percentage equal to or greater than 50%, pursuant to 38 U.S.C. § 1101 et seq. or 10 U.S.C. § 1201 et seq.",
+          "source": "https://www.ksrevenue.gov/faqs-SVR.html"
+        },
+        "details": {
+          "current": "Household income cannot exceed $56,450.",
+          "correct": "Household income cannot exceed $43,389 (TY2025 claim); home appraised value cannot exceed $350,000.",
+          "quote": "Your house cannot be valued at more than $350,000",
+          "source": "https://www.ksrevenue.gov/perstaxtypeshs.html",
+          "note": "$56,450 was the 2024 K-40SVR limit, not a K-40H figure."
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "the surviving spouse of a disabled veteran ... eligible to receive benefits until you remarry",
+          "source": "https://www.ksrevenue.gov/pdf/k-40hbook25.pdf"
+        }
+      },
+      "effectiveChanges": "No 2026 statutory change: HB 2632 (raise SVR income cap to $75,000 and value cap to $500,000) died in committee; SB 402 (single claim form, higher thresholds, higher max refund) passed Senate and House committee but died without final passage; SB 397 not enacted. TY2026 claim forms post around January 2027.",
+      "note": ""
+    },
+    {
+      "name": "Property Tax Deferral for Service Members",
+      "status": "unverified",
+      "fields": {},
+      "effectiveChanges": null,
+      "note": "No KDOR page or form found; statute (K.S.A. 79-2004 area / deployment deferral) not opened. Deferral only, no savings; leave out of dollar estimate."
+    },
+    {
+      "name": "SVR Property Tax Freeze (K-40SVR, SB 15)",
+      "status": "corrected",
+      "fields": {
+        "incomeLimit": {
+          "current": null,
+          "correct": 58041,
+          "quote": "you must have household income of $58,041 or less for 2025;",
+          "source": "https://www.ksrevenue.gov/faqs-SVR.html",
+          "note": "Summary text says $53,600 (older). For 2025+ household income means total Kansas AGI of all household members (Social Security excluded)."
+        },
+        "ratingRequired": {
+          "current": 50,
+          "correct": 50,
+          "quote": "A disabled veteran, including those groups and individuals listed under 38 C.F.R. 3.7, for the entire base year",
+          "source": "https://www.ksrevenue.gov/faqs-SVR.html"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "Surviving spouses of deceased disabled veterans are also eligible to claim a Property Tax Relief Claim for Seniors and Disabled Veterans refund and remain eligible until such time as they remarry.",
+          "source": "https://www.ksrevenue.gov/faqs-SVR.html"
+        },
+        "summary": {
+          "current": "income ≤ $53,600, home ≤ $350,000",
+          "correct": "household income ≤ $58,041 (2025 claim year, indexed; Kansas AGI basis), home appraised ≤ $350,000 in the base year",
+          "quote": "your house cannot be valued at more than $350,000 in the base year.",
+          "source": "https://www.ksrevenue.gov/faqs-SVR.html"
+        }
+      },
+      "effectiveChanges": "No enacted change for 2026. Refund = current-year homestead tax minus base-year tax; base year deemed 2021 if earlier; cannot combine with K-40H or K-40PT in the same year.",
+      "note": ""
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "confirmed",
+    "correct": "",
+    "source": ""
+  },
+  "sources": [
+    { "url": "https://www.ksrevenue.gov/perstaxtypeshs.html", "title": "Kansas Department of Revenue: Homestead Refund Programs (K-40H $43,389 / $700; K-40SVR $58,041 for 2025)", "status": 200 },
+    { "url": "https://www.ksrevenue.gov/faqs-SVR.html", "title": "KDOR FAQ: Property Tax Relief for Seniors and Disabled Veterans (50% rating, $350,000, surviving spouse)", "status": 200 },
+    { "url": "https://www.ksrevenue.gov/pdf/k-40hbook25.pdf", "title": "2025 Homestead Instructions booklet (K-40H, K-40PT, K-40SVR)", "status": 200 },
+    { "url": "https://www.kslegislature.gov/b2025_26/bills/hb2632/", "title": "Kansas Legislature HB 2632 (2026): raise SVR thresholds; Died", "status": 200 },
+    { "url": "https://www.kslegislature.gov/b2025_26/bills/sb402/", "title": "Kansas Legislature SB 402 (2025-26): homestead refund overhaul; Died", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat", "title": "Census ACS 2024 5-year summary file, table B25103", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25077.dat", "title": "Census ACS 2024 5-year summary file, table B25077", "status": 200 }
+  ],
+  "confidence": "partial",
+  "summary": "Kansas's K-40H ($700 max, $43,389 income, 50%+ rating, $350,000 home) is confirmed for the TY2025 claim, the SVR freeze's income cap is $58,041 (file says $53,600) and the K-40H details text carries a stray $56,450. The 2026 session enacted nothing (HB 2632 and SB 402 died), the deployment deferral row stays unverified, and the 1.41% rate is 0.12 pp above ACS 2024 (1.29%)."
+}

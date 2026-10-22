@@ -1,0 +1,102 @@
+{
+  "state": "GA",
+  "officeType": "county tax commissioner (some counties delegate to the board of tax assessors)",
+  "officeTypeNote": "Georgia DOR: applications are filed with the county tax commissioner's office, 'or in some counties the tax assessor's office has been delegated to receive applications for homestead exemption.' The vehicle ad valorem/TAVT exemption is a separate filing at the county tag office (MV-30).",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://dor.georgia.gov/county-property-tax-facts-links",
+    "label": "Georgia DOR: County Property Tax Facts (per-county pages list the Tax Commissioner and Board of Tax Assessors and say which office takes homestead applications)",
+    "countyUrlPattern": "https://dor.georgia.gov/county-property-tax-facts-{county}",
+    "slugRule": "county name lowercased, spaces replaced with hyphens (e.g. ben-hill, jeff-davis, dekalb, mcduffie); verified for dougherty, fulton, ben-hill",
+    "fallbackUrl": "https://dor.georgia.gov/property-tax-homestead-exemptions",
+    "note": "The per-county page states the local return window (Jan 1 to Apr 1 in most counties) and whether the tax commissioner or board of assessors receives homestead applications."
+  },
+  "forms": [
+    {
+      "programRef": "Homestead Exemption",
+      "name": "LGS-Homestead: Application for Homestead Exemption (state form; question 2 covers the 100% disabled veteran and unremarried surviving spouse). Many counties use their own local application instead.",
+      "number": "LGS-Homestead",
+      "url": "https://dor.georgia.gov/document/form/lgs-homestead-application-homestead-exemption/download",
+      "revision": "Rev 10-08",
+      "filedWith": "county tax commissioner or tax receiver (board of tax assessors in delegated counties)"
+    },
+    {
+      "programRef": "Killed In Action Survivor Exemption",
+      "name": "LGS-Homestead: Application for Homestead Exemption (question 3: unremarried surviving spouse of a US service member killed in action)",
+      "number": "LGS-Homestead",
+      "url": "https://dor.georgia.gov/document/form/lgs-homestead-application-homestead-exemption/download",
+      "revision": "Rev 10-08",
+      "filedWith": "county tax commissioner or tax receiver"
+    },
+    {
+      "programRef": "Vehicle Ad Valorem",
+      "name": "MV-30: Georgia Veteran's Affidavit for Relief of State and Local Title Ad Valorem Tax Fees (check 'Military Disabled - Constitutional Exemption', O.C.G.A. 48-5-478; attach VA letter)",
+      "number": "MV-30",
+      "url": "https://dor.georgia.gov/document/form/mv-30-georgia-veterans-affidavit-relief-state-and-local-title-ad-valorem-tax-feespdf/download",
+      "revision": "Revised 06/2025",
+      "filedWith": "county tag office"
+    },
+    {
+      "programRef": "Sales Tax Vehicle",
+      "name": "MV-30 (check 'Military Disabled - Service Connected', O.C.G.A. 48-8-3(30); attach the VA grant letter for the specially adapted vehicle)",
+      "number": "MV-30",
+      "url": "https://dor.georgia.gov/document/form/mv-30-georgia-veterans-affidavit-relief-state-and-local-title-ad-valorem-tax-feespdf/download",
+      "revision": "Revised 06/2025",
+      "filedWith": "county tag office"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "04-01",
+    "text": "DOR: to receive the exemption for the current year the owner must have owned and occupied the home on January 1 and file by the county's property-tax-return deadline (April 1 in most counties). DOR also says taxpayers 'may apply up to the end of their 45-day window to appeal their notice of assessment' beyond 'the historic deadline of April 1st.'"
+  },
+  "effective": "Tax year in which the application is timely filed; owner must have owned and occupied the homestead on January 1 of that year. Not prorated.",
+  "lateFiling": "An application filed after the deadline (and after the 45-day assessment-appeal window) is applied to the following tax year. Per the LGS-Homestead affidavit, the applicant must have occupied the home on Jan 1 of the year applied for.",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 3,
+    "text": "O.C.G.A. 48-5-48(g)(1): if the VA issues a final determination 'containing a retroactive period of eligibility,' the veteran (or surviving spouse/minor children) 'shall be entitled to a refund of the ad valorem taxes paid during such period,' limited to 'the three tax years preceding ... application.' Otherwise no refund of prior years."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "O.C.G.A. 48-5-48(d): 'Each disabled veteran shall file for the exemption only once in the county of his or her residence. Once filed, the exemption shall automatically be renewed from year to year.' Subsection (e): the board of tax assessors may require substantiation of continuing eligibility 'not more often than once every three years.'"
+  },
+  "ratingChange": "A veteran who reaches 100%/IU (or a qualifying statutory award) after already holding the standard homestead exemption must file a new application with the VA or GDVS letter; if the VA rating is retroactive, the 3-year refund in 48-5-48(g) applies. Loss of eligibility must be reported to the county (board may re-verify every 3 years).",
+  "move": "File only once 'in the county of his or her residence'; a new homestead requires a new application in the new county. Only one person may hold the exemption on the basis of any one veteran (48-5-48(b)).",
+  "onlineFiling": {
+    "available": null,
+    "text": "Varies by county. DOR's page notes some counties accept online filing; several counties require disability exemptions to be filed in person or with the supporting letter attached. Check the County Property Tax Facts page."
+  },
+  "documents": [
+    "Letter from the US Department of Veterans Affairs or the Georgia Department of Veterans Service 'stating the qualifying disability' (O.C.G.A. 48-5-48(c)(1)); GDVS field offices will verify eligibility and issue this letter, and VA's 'Summary of Benefits' letter also works",
+    "DD-214 plus a Georgia-licensed physician's letter for veterans qualifying under the constitutional (non-VA) categories (48-5-48(c)(2)-(3))",
+    "Georgia residency: the LGS-Homestead form asks the county of voter registration and vehicle registration",
+    "Proof of ownership and occupancy on January 1 (deed book/page, purchase date are fields on the form)",
+    "Social Security numbers and year of birth for applicant and spouse (form fields)",
+    "For MV-30 (vehicle): letter from the VA; for the sales-tax exemption, the VA grant letter for the specially adapted vehicle"
+  ],
+  "survivingSpouse": "The unremarried surviving spouse or minor children keep the exemption 'so long as they continue to occupy the home as a residence and homestead' (48-5-48(d)); it does not currently follow them to a new home. HB 52 (2025-2026, Senate Finance substitute LC 59 0472S, adopted by the Senate 4/2/2026) would extend it to 'any future homestead' effective 1/1/2027 only if approved at the November 2026 statewide referendum; not yet law as of the check date. Minor child's exemption ends in the tax year they turn 18.",
+  "appeal": "LGS-Homestead form: 'If this application is denied an appeal may be filed in accordance with O.C.G.A. § 48-5-311' (appeal to the county board of equalization within 45 days of the denial notice).",
+  "statute": "O.C.G.A. 48-5-48 (disabled veteran homestead); 48-5-52.1 (KIA surviving spouse); 48-5-45 (application deadline); 48-5-478 (vehicle ad valorem); 48-8-3(30) (vehicle sales tax)",
+  "sourceUrls": [
+    { "url": "https://dor.georgia.gov/property-tax-homestead-exemptions", "title": "Georgia DOR: Property Tax Homestead Exemptions", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dor.georgia.gov/document/form/lgs-homestead-application-homestead-exemption/download", "title": "LGS-Homestead Application for Homestead Exemption (PDF, Rev 10-08)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dor.georgia.gov/county-property-tax-facts-links", "title": "Georgia DOR: County Property Tax Facts links", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dor.georgia.gov/county-property-tax-facts-fulton", "title": "Georgia DOR: County Property Tax Facts Fulton (example county page)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.legis.ga.gov/api/legislation/document/20172018/165168", "title": "Georgia General Assembly SB 167 (2017) bill text reproducing O.C.G.A. 48-5-48 subsections (a)-(f)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.legis.ga.gov/api/legislation/document/20252026/247743", "title": "Georgia General Assembly HB 52 Senate Finance substitute LC 59 0472S (2026) reproducing 48-5-48 (b),(d),(e),(g)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://veterans.georgia.gov/disabled-veteran-homestead-tax-exemption", "title": "Georgia Department of Veterans Service: Disabled Veteran Homestead Tax Exemption", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://veterans.georgia.gov/tax-exemptions", "title": "Georgia Department of Veterans Service: Tax Exemptions (vehicle ad valorem)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dor.georgia.gov/document/form/mv-30-georgia-veterans-affidavit-relief-state-and-local-title-ad-valorem-tax-feespdf/download", "title": "MV-30 Georgia Veteran's Affidavit for Relief of TAVT (Revised 06/2025)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "propertyTax.programs[0].details",
+      "issue": "Details text still says 'up to $121,812' (the 2025 figure); summary already carries the TY2026 $126,526 figure. DOR page itself still shows $121,812 for 2025 as of check date, so the 2026 figure in the summary could not be confirmed on dor.georgia.gov.",
+      "source": "https://dor.georgia.gov/property-tax-homestead-exemptions"
+    }
+  ],
+  "notes": "Statute text was read from Georgia General Assembly bill PDFs (legis.ga.gov returns 405 to HEAD requests but 200 to GET; the official O.C.G.A. is on LexisNexis and Justia blocked fetches). The LGS-Homestead PDF is the generic state form dated Rev 10-08; most metro counties (DeKalb, Fulton, Cobb, Gwinnett) use their own online/local applications, so the tool should send users to the county page first. HB 1498 (2025-2026) proposing automatic homestead grants at closing was not confirmed as enacted. The vehicle exemption (48-5-478) is handled by the county tag office, not the property tax office."
+}

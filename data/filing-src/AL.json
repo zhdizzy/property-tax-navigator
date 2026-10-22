@@ -1,0 +1,82 @@
+{
+  "state": "AL",
+  "officeType": "county tax assessing official (Revenue Commissioner or Tax Assessor)",
+  "officeTypeNote": "Alabama has no VA-rating-based homestead break; a 100% P&T veteran claims the general permanent-and-total-disability principal residence exemption (Ala. Code 40-9-21, local 'H-3' homestead). File with the tax assessing official of the county where the home sits (in most counties the Revenue Commissioner; a few still split Tax Assessor / Tax Collector). The Specially Adapted Housing exemption (40-9-20) is claimed with the same office; the VA-grant vehicle exemption is a license-plate matter handled by the county license plate issuing official and is not covered by this filing block.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://www.revenue.alabama.gov/property-tax/county-offices-appraisal-assessment-records/",
+    "label": "Alabama Department of Revenue: County Offices (appraisal and assessment records), all 67 counties",
+    "countyUrlPattern": "https://www.revenue.alabama.gov/property-tax/county-offices-appraisal-assessment-records/#{county}",
+    "slugRule": "Single page with per-county anchors; {county} is the county name in Title Case with spaces removed (e.g. #Jefferson, #Mobile, #StClair as shown in the page anchors; verify multi-word anchors before relying on them).",
+    "fallbackUrl": "https://www.revenue.alabama.gov/division/property-tax/",
+    "note": "One page listing each county's Revenue Commissioner / Tax Assessor with address, phone, and links to the county's own assessment portal."
+  },
+  "forms": [
+    {
+      "programRef": "Homestead Exemption",
+      "name": "Homestead / principal residence exemption form affidavit (county-issued; no statewide application form)",
+      "number": null,
+      "url": null,
+      "revision": null,
+      "filedWith": "county tax assessing official",
+      "note": "Ala. Code 40-9-21.1(a): the claimant 'shall initially claim the exemption in person or by mail on a form affidavit provided by the tax assessing official,' who may also accept it electronically. Each county issues its own affidavit."
+    },
+    {
+      "programRef": "Homestead Exemption",
+      "name": "Physician's Affidavit of Permanent and Total Disability",
+      "number": "PT-PA-1",
+      "url": "https://www.revenue.alabama.gov/wp-content/uploads/2022/05/PhysiciansAffidavit_PT-PA-1.pdf",
+      "revision": null,
+      "filedWith": "county tax assessing official",
+      "note": "Only needed when the claimant is NOT receiving a disability pension or annuity. A veteran drawing VA disability compensation documents disability with the VA award letter instead (Rule 810-4-1-.23(7)(c): proof 'may include the receipt of a pension or annuity due to disability from ... a state or federal governmental agency'). Requires two Alabama-licensed physicians, one actively treating the disability."
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "12-31",
+    "text": "Ala. Admin. Code r. 810-4-1-.23(8): 'Application may be made between October 1 and December 31 for the exemption to be applied for the current year or application may be made at any time during the year for the exemption to be applied for the following year.' Owner must hold and occupy the homestead as of the October 1 lien date. Ala. Code 40-7-2.1(b) also lets the assessor accept homestead applications Jan 1 to Sep 30, effective the following Oct 1."
+  },
+  "effective": "Tax year beginning October 1 of the year in which the claim is filed (Oct 1 to Dec 31 filings apply to the current tax year; filings at any other time apply to the following tax year). Not prorated.",
+  "lateFiling": "A claim filed after December 31 simply applies to the following tax year (Rule 810-4-1-.23(8)). No separate late-filing petition or penalty process was found in the statute or ADOR rule.",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "Neither Ala. Code 40-9-21 / 40-9-21.1 nor Rule 810-4-1-.23 provides for refunds of prior-year taxes; the rule only allows application 'for the current year' or 'for the following year.'"
+  },
+  "renewal": {
+    "type": "none",
+    "text": "HB155 (2026 Regular Session, enrolled, effective October 1, 2026) amended Ala. Code 40-9-21.1(b)(2): a veteran 'determined to be permanently and totally disabled by the United States Department of Veterans Affairs ... shall not be required to annually claim the exemption nor verify eligibility for the exemption after the initial qualification.' The release 'shall terminate immediately upon the death of the qualifying ... veteran or upon the establishment of a new homestead.' Before Oct 1, 2026 (and still for non-veteran P&T claimants) the county mails an annual verification affidavit to sign and return (40-9-21.1(b)(1); 40-7-2.1(b))."
+  },
+  "ratingChange": "The 40-9-21 exemption turns on permanent-and-total disability, not a percentage. If the VA removes P&T status the qualifying condition ceases and the exemption ends; the statute does not spell out a notice procedure for veterans, but 40-7-2.1(b) ties the exemption to continued eligibility ('until the eligibility ceases').",
+  "move": "The HB155 release from annual verification ends 'upon the establishment of a new homestead'; a new claim must be filed with the assessing official of the county where the new home is located, by December 31 for that tax year.",
+  "onlineFiling": {
+    "available": null,
+    "text": "Ala. Code 40-9-21.1(a) and (c) authorize each tax assessing official to 'establish a process to receive the form affidavit electronically' using a form approved by the Department of Revenue; availability varies by county."
+  },
+  "documents": [
+    "VA award or rating letter establishing permanent and total disability (HB155 keys the no-reverification release to a VA P&T determination; VA disability compensation also satisfies the rule's 'pension or annuity due to disability from ... a federal governmental agency' proof)",
+    "Form PT-PA-1 from two Alabama-licensed physicians, only if not receiving a disability pension or annuity",
+    "Evidence the home is the owner-occupied single-family principal residence as of October 1 (county affidavit; counties set their own proof requirements, e.g. driver's license at the property address)",
+    "Deed or other proof of ownership (county practice; not spelled out in the state rule)"
+  ],
+  "survivingSpouse": "The 40-9-21 P&T exemption is personal to the disabled taxpayer; HB155 ends the veteran's verification release at death. The Specially Adapted Housing exemption (Ala. Code 40-9-20) extends to the unremarried surviving spouse per the existing data layer; statute text not opened in this pass.",
+  "appeal": "Not addressed in the ADOR rule or 40-9-21.1. Alabama assessment appeals generally run through the county Board of Equalization; not verified for exemption denials in this pass.",
+  "statute": "Ala. Code 40-9-19, 40-9-21, 40-9-21.1 (as amended by HB155, 2026 RS, eff. 10/1/2026), 40-7-2.1; Ala. Admin. Code r. 810-4-1-.23; SAH: 40-9-20",
+  "sourceUrls": [
+    { "url": "https://www.revenue.alabama.gov/property-tax/homestead-exemptions/", "title": "Alabama Department of Revenue: Homestead Exemptions", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://admincode.legislature.state.al.us/api/rule/810-4-1-.23", "title": "Ala. Admin. Code r. 810-4-1-.23 Homestead and Principal Residence Exemptions From Property Tax (PDF)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://alison.legislature.state.al.us/files/pdf/SearchableInstruments/2026RS/HB155-enr.pdf", "title": "HB155 (2026 RS) Enrolled: P&T disabled veterans released from annual homestead verification", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.revenue.alabama.gov/wp-content/uploads/2022/05/PhysiciansAffidavit_PT-PA-1.pdf", "title": "ADOR Form PT-PA-1 Physician's Affidavit", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.revenue.alabama.gov/property-tax/county-offices-appraisal-assessment-records/", "title": "ADOR County Offices directory", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "propertyTax.programs[Homestead Exemption].summary",
+      "issue": "Summary could add that, effective Oct 1, 2026, VA-rated P&T veterans no longer get the annual mail-in verification affidavit (HB155, 2026 RS). Dollar layer unchanged.",
+      "source": "https://alison.legislature.state.al.us/files/pdf/SearchableInstruments/2026RS/HB155-enr.pdf"
+    }
+  ],
+  "notes": "Deadline and renewal were read directly from the ADOR rule PDF and the enrolled HB155 PDF (both extracted with pdftotext). The alison.legislature.state.al.us Code of Alabama pages return 200 but render client-side, so the current 40-9-20 and 40-9-21 statute text was not read; the rule and bill quote the operative language. HB155 shows House passage 2/10/26 and Senate passage 4/7/26 on the enrolled copy; an act number was not located on a primary source. PT-PA-1 PDF returned 200 but was not opened. No statewide homestead application form exists; the form is county-issued."
+}

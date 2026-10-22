@@ -1,0 +1,78 @@
+{
+  "propertyTaxRate": {
+    "fileValue": 0.0028,
+    "sourceValue": 0.0028,
+    "source": "https://col.guamcourts.gov/sites/default/files/11gc024_Q.pdf",
+    "sourceYear": 2026,
+    "withinTolerance": true,
+    "note": "Derived from statute, not a survey figure: 11 GCA 24103(a) levies 7/72% (0.0972%) on land value and 7/18% (0.3889%) on improvements, and 24102(f) defines value as 90% of appraised value. A home whose appraisal is roughly 30% land / 70% improvements yields 0.9 x (0.3 x 0.000972 + 0.7 x 0.003889) = 0.0027, so 0.0028 is consistent; a pure-improvement bound is 0.0035. Improvements of $1,000,000+ carry an extra 7/18% (24103(b))."
+  },
+  "programs": [
+    {
+      "name": "Veteran Exemption",
+      "status": "corrected",
+      "fields": {
+        "ratingRequired": {
+          "current": 100,
+          "correct": "100% or individual unemployability",
+          "ptRequired": false,
+          "quote": "Real property owned and occupied as a residence by a person who is rated by the U.S. Department of Veterans Affairs (USDVA) as one hundred percent (100%) disabled or individually unemployable due to injuries received while on duty with the Armed Forces of the United States ... is hereby exempted from all property taxes",
+          "source": "https://col.guamcourts.gov/sites/default/files/11gc024_Q.pdf"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "surviving spouse, as defined in § 67101(e) of Chapter 67, Title 10 GCA, and legal guardian, as defined in § 67101(g) of Chapter 67, Title 10 GCA, is hereby exempted from all property taxes; provided: ... the surviving spouse is not remarried",
+          "source": "https://col.guamcourts.gov/sites/default/files/11gc024_Q.pdf",
+          "note": "Resolves the brief's lead. Gold Star spouses and parents have a separate full exemption at 11 GCA 24401.2."
+        },
+        "statute cite": {
+          "current": "Guam Code 10-3-67101 (details); 11 GCA 24401.1 (summary)",
+          "correct": "11 GCA § 24401.1 (added by P.L. 34-106:1, June 5, 2018); 10 GCA § 67101 only supplies the surviving-spouse and legal-guardian definitions",
+          "quote": "SOURCE: Added by P.L. 34-106:1 (June 5, 218).",
+          "source": "https://col.guamcourts.gov/sites/default/files/11gc024_Q.pdf",
+          "note": "Compiler's typo '218' is in the source; the act date is June 5, 2018."
+        },
+        "type": {
+          "current": "full",
+          "correct": "full",
+          "quote": "is hereby exempted from all property taxes",
+          "source": "https://col.guamcourts.gov/sites/default/files/11gc024_Q.pdf",
+          "note": "Commercial-use portions excluded; one residence per person; exemption continues only while the veteran remains 100%/IU."
+        }
+      },
+      "effectiveChanges": "None for TY2026/TY2027 in the COL 2026-05-05 compilation. Filing by March 15 (DRT form); continuing effect once granted.",
+      "note": "Statute text is at 11 GCA 24401.1, Compiler of Laws edition dated 2026-05-05."
+    }
+  ],
+  "missingPrograms": [
+    {
+      "name": "Gold Star Spouses and Parents Exemption",
+      "what": "Full real property tax exemption for the owner-occupied residence of a Gold Star spouse or parent eligible under 16 GCA 7120.3(b). Survivor-only; not creditable to a living rated veteran.",
+      "statute": "11 GCA § 24401.2",
+      "source": "https://col.guamcourts.gov/sites/default/files/11gc024_Q.pdf"
+    }
+  ],
+  "jurisdictionNote": {
+    "status": "unverified",
+    "correct": "",
+    "source": "",
+    "note": "No propertyTax.note in the file for GU."
+  },
+  "sources": [
+    {
+      "url": "https://col.guamcourts.gov/sites/default/files/11gc024_Q.pdf",
+      "title": "11 GCA Chapter 24 Real Property Tax (Guam Compiler of Laws, COL 2026-05-05): 24102(f), 24103, 24401.1, 24401.2",
+      "status": 200
+    },
+    {
+      "url": "https://www.guamtax.com/forms/RPT_apps_forms/APPLICATIONFORVETERANEXEMPTION(2).pdf",
+      "title": "Guam DRT Real Property Tax Division: Application for Veteran Exemption (100% disabled/IU, surviving spouse, Gold Star)",
+      "status": 200
+    }
+  ],
+  "confidence": "verified",
+  "summary": "Guam's full exemption for veterans rated 100% or IU is confirmed at 11 GCA 24401.1 (P.L. 34-106, 2018) and expressly covers the unremarried surviving spouse and legal guardian, so survivingSpouse should be true and the details' '10-3-67101' cite corrected. The 0.28% rate is consistent with the statutory 7/72% land and 7/18% improvement levies on 90% of appraised value; the Gold Star exemption (24401.2) is survivor-only and missing.",
+  "state": "GU",
+  "checkedDate": "2026-10-21"
+}

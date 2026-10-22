@@ -1,0 +1,92 @@
+{
+  "state": "PR",
+  "officeType": "CRIM (Centro de Recaudación de Ingresos Municipales) regional office",
+  "officeTypeNote": "Puerto Rico's property tax is administered island-wide by CRIM, not by the municipality or by Hacienda. The statute directs the 50%+ service-connected filing to 'la Oficina Regional del Centro de Recaudación de Ingresos Municipales correspondiente' (the CRIM regional office for the property). CRIM lists a central office plus regional offices in Aguada, Arecibo, Bayamón, Caguas, Carolina, Humacao, Mayagüez, Ponce and San Juan. Central office: Carretera Estatal #1, km 17.3, San Juan; call center 787-625-CRIM; crimcallcenter@crimpr.net. The live CRIM web domain is crimpr.net (served from portal.crim360.com); crim.pr.gov did not resolve on the check date.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://portal.crim360.com/crimpr/CMS/11.html",
+    "label": "CRIM: Oficinas (central and regional offices)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://portal.crim360.com/crimpr/index.htm",
+    "note": "The Oficinas page lists the ten offices by name; addresses and phones are loaded dynamically and did not render in a plain fetch. Contact page (CMS/13.html) gives the central office address, hours (Mon-Fri 8:00-4:30) and call center."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Exoneración Contributiva para Fines Residenciales / Veteranos (Modelo AS-38)",
+      "number": "AS-38",
+      "url": "https://portal.crim360.com/crimpr/CMS/DOCUMENTOS/download/166.pdf",
+      "revision": "Abril 2018 (Rev.)",
+      "filedWith": "CRIM regional office (or electronically through the CRIM taxpayer portal)"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "01-31",
+    "text": "AS-38 'Fecha de radicación' sets three timings by tier. (1) Veteranos (regular, $5,000): 'No más tarde del día 1ro de enero del año siguiente a la fecha en que se adquirió o edificó la residencia.' (2) Veteranos incapacitados o con impedimentos (full exemption): 'En o antes del 31 de enero del año que antecede al año fiscal objeto de la solicitud.' (3) 50%+ service-connected ($50,000): 'Anualmente, al momento del pago de la contribución'; once only if the rating is permanent. Occupancy as the veteran's residence is tested 'al 1ro de enero del año contributivo'."
+  },
+  "effective": "Occupancy and disability rating are measured as of January 1 of the tax year (Ley 203-2007 Art. 4 Sec. C Segundo (c)(2)-(3)). CRIM's fiscal year runs July 1 to June 30; the full disabled-veteran exemption filed by January 31 applies to the following fiscal year per AS-38. The $5,000 exemption, once approved, is retroactive up to three years.",
+  "lateFiling": "For the $5,000 veteran exemption, approval is retroactive 'hasta un máximo de tres (3) años' (statute (a)(2); AS-38). AS-38 also describes a late residential exoneration ('Exoneración tardía', Art. 8C) granted retroactively with AAA and AEE service-start certifications plus a sworn statement explaining the delay; that procedure is written for the residential exoneration, not expressly for the veteran tiers.",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 3,
+    "text": "Ley 203-2007 Art. 4 Sec. C Segundo (a)(2): 'una vez aprobadas su efecto será retroactivo, hasta un máximo de tres (3) años'. AS-38: 'Su efecto será retroactivo hasta un máximo de tres (3) años.' Applies to the $5,000 all-veterans exemption; the statute is silent on retroactivity for the 50%+ and full-disability tiers."
+  },
+  "renewal": {
+    "type": "varies",
+    "text": "50%+ service-connected tier: 'deberá ser reclamada por el interesado anualmente al momento del pago de la contribución', but 'De ser el grado de incapacidad permanente no será necesario que radique una solicitud de exención anual' (file once). The DD-214 need not be re-filed if a copy is left in CRIM's file. The $5,000 exemption is 'permanentemente'; the full disabled-veteran exemption has no annual re-file language and ends when the home stops being the residence."
+  },
+  "ratingChange": "The partial exemption is set by the disability grade the VA certifies 'al 1ro de enero de cada año'. It 'cesará tan pronto ... su grado de incapacidad se reduzca a menos de cincuenta por ciento (50%)' and is recoverable if the veteran again reaches 50% or more. A rating made permanent lets the veteran stop annual re-filing by filing a VA certification that the grade is permanent.",
+  "move": "The exemption 'cesará tan pronto la propiedad deje de ser utilizada como vivienda de él o de su familia inmediata', but 'el derecho a la exención es recobrable' once the veteran rebuilds on the property or 'adquiera otra propiedad y establezca en ella su hogar' (statute (b)(2), (c)(4)(c)). A new AS-38 is filed for the new home; the regular exemption must be requested by January 1 of the year after acquisition.",
+  "onlineFiling": {
+    "available": true,
+    "text": "CRIM's Servicios page lists 'Exoneración contributiva o Exención de veterano' among requests that can be filed electronically after registering for the taxpayer portal (Mi CRIM / Servicios al Contribuyente login). Paper filing at any CRIM regional office remains available."
+  },
+  "documents": [
+    "Modelo AS-38 completed and signed (the owner certifies residence and eligibility on the form)",
+    "Evidence of title and possession: escritura pública, Registro de la Propiedad certification, notarized contract, or usufruct/possession document (all tiers)",
+    "Military discharge (licenciamiento) from the branch served (regular and 50%+ tiers); a copy may be left on file so it need not be re-presented each year",
+    "Evidence of veteran status, DD-214 (regular and 50%+ tiers)",
+    "Full-disability tier only: disability determination from the Social Security Administration or the Commonwealth/U.S. retirement systems",
+    "50%+ tier only: written certification signed by a VA official of the disability grade as of January 1 of the tax year",
+    "50%+ tier only: sworn statement (declaración jurada) that the property was the veteran's or immediate family's residence on January 1 of the tax year",
+    "CRIM debt certification (Certificación de deuda, todos los conceptos); any debt must be paid or placed on a payment plan before the exemption is processed (all tiers)",
+    "Modelo AS-74 owner-information sheet if the property is held in a pro-indiviso or hereditary community",
+    "Death certificate if the applicant is the veteran's widow(er)"
+  ],
+  "survivingSpouse": "The $5,000 exemption applies to 'todos los veteranos y/o a sus cónyuges supérstites' and is permanent for the surviving spouse's principal residence; AS-38 lists 'Los veteranos y/o sus cónyuges supérstites (viudo/a)' for the regular tier and requires a death certificate. Art. 6 of Ley 203-2007 continues benefits to the surviving spouse until remarriage. The 50%+ tier text (as amended) also references the 'veterano y/o cónyuge supérstite'.",
+  "appeal": null,
+  "statute": "Ley 203-2007 (Carta de Derechos del Veterano Puertorriqueño del Siglo XXI), Art. 4, Sec. C 'Segundo: Contribución sobre la propiedad', as amended through Ley 145-2026; residential exoneration on the same form: Art. 2.02, Ley 83-1991 (Ley de Contribución Municipal sobre la Propiedad)",
+  "sourceUrls": [
+    { "url": "https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/Derechos%20Civiles/203-2007/203-2007.pdf", "title": "OGP Biblioteca Virtual: Ley 203-2007 según enmendada (Rev. 03 de agosto de 2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://portal.crim360.com/crimpr/CMS/DOCUMENTOS/download/166.pdf", "title": "CRIM Modelo AS-38: Exoneración Contributiva para Fines Residenciales / Veteranos (Rev. Abril 2018), with instructions", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://portal.crim360.com/crimpr/index.htm", "title": "CRIM home page (crimpr.net redirects here)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://portal.crim360.com/crimpr/CMS/9.html", "title": "CRIM Servicios: electronic filing of 'Exoneración contributiva o Exención de veterano'", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://portal.crim360.com/crimpr/CMS/11.html", "title": "CRIM Oficinas (central and regional offices)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://portal.crim360.com/crimpr/CMS/13.html", "title": "CRIM Contáctenos (central office address, hours, call center)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.opv.pr.gov/", "title": "Oficina del Procurador del Veterano (links the Nov 2025 consolidated text of Ley 203-2007)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.elvocero.com/economia/instan-a-veteranos-a-reclamar-exenci-n-contributiva-en-el-crim-antes-del-31-de/article_dab2793d-f6fc-4b8f-a1b1-9b7593ae7c85.html", "title": "El Vocero, 22 Jul 2026: Procurador del Veterano urges filing the CRIM exemption before July 31 (secondary; reports an OPV statement)", "status": 200, "checked": "2026-10-21", "primary": false },
+    { "url": "https://www.primerahora.com/noticias/gobierno-politica/notas/veteranos-ojo-se-acaba-el-tiempo-para-solicitar-esta-exencion-de-vivienda/", "title": "Primera Hora, 30 Jul 2026: same OPV deadline notice, lists AS-38 and documents (secondary)", "status": 200, "checked": "2026-10-21", "primary": false }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "propertyTax.programs[Veteran Exemption].tiers[minRating 100].value = 'full'",
+      "issue": "The full exemption in Ley 203-2007 Art. 4 Sec. C Segundo (b) is for a 'veterano incapacitado o impedido' and is not keyed to a 100% VA rating; CRIM's AS-38 documents it with a Social Security Administration or government retirement-system disability determination, not a VA rating letter. The 50%+ tier is the only one tied to VA compensation. Consider labeling the top tier 'disabled/impaired veteran (SSA or retirement disability determination)' rather than '100% VA'.",
+      "source": "https://portal.crim360.com/crimpr/CMS/DOCUMENTOS/download/166.pdf"
+    },
+    {
+      "field": "propertyTax.programs[Veteran Exemption].survivingSpouse",
+      "issue": "Set to false, but the $5,000 exemption expressly covers 'veteranos y/o a sus cónyuges supérstites' and AS-38 lists the viudo/a as an eligible applicant for the regular tier. Should be true (at least for the $5,000 tier).",
+      "source": "https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/Derechos%20Civiles/203-2007/203-2007.pdf"
+    },
+    {
+      "field": "propertyTax.programs[Veteran Exemption].summary",
+      "issue": "Dollar amounts ($5,000 / $50,000 / full) match the current statute. The temporary enhanced amounts ($50,000 and $500,000) applied only to fiscal years 2009-10 through 2018-19 and have lapsed; nothing to change, noted so nobody re-imports the lapsed figures.",
+      "source": "https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/Derechos%20Civiles/203-2007/203-2007.pdf"
+    }
+  ],
+  "notes": "Deadline conflict to resolve with CRIM: the AS-38 instructions (Rev. Apr 2018) give the tiered dates above, while the Procurador del Veterano's July 2026 public notice (El Vocero 22 Jul 2026, Primera Hora 30 Jul 2026) told veterans to file 'antes del 31 de julio' so the exemption shows on the next fiscal year's bill; no CRIM page states a July 31 date. The AS-38 is the only form found; CRIM's Documentos and Preguntas Frecuentes pages load their content dynamically and did not render, so the current revision could be newer than April 2018. OPV's own consolidated copy of Ley 203-2007 (Rev. Nov 2025) is on a SharePoint link and was not fetched; the OGP compilation (Rev. 3 Aug 2026) was used instead and is labeled by OGP as a non-official compilation. The OGP text in Segundo (b)(1) cites 'Ley del Congreso 06-89 [sic]' for the disabled-veteran definition. No appeal procedure specific to the veteran exemption was found."
+}

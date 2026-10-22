@@ -1,0 +1,34 @@
+{
+  "propertyTaxRate": {
+    "fileValue": 0,
+    "sourceValue": 0,
+    "source": "https://asbar.org/legal-resources/code-annotated/code-annotated-by-title-and-chapter/",
+    "sourceYear": 2026,
+    "withinTolerance": true,
+    "note": "American Samoa levies no territorial real property tax; A.S.C.A. Title 11 (Revenue) has no real property tax chapter and the ASG Tax Office administers income tax only. Rate 0 is correct."
+  },
+  "programs": [],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "confirmed",
+    "correct": "",
+    "source": "https://asbar.org/legal-resources/code-annotated/code-annotated-by-title-and-chapter/",
+    "note": "Empty programs array is correct; no program exists. Absence is established from the structure of Title 11 and the Tax Office page, not from a statute stating it in words."
+  },
+  "sources": [
+    {
+      "url": "https://asbar.org/legal-resources/code-annotated/code-annotated-by-title-and-chapter/",
+      "title": "American Samoa Code Annotated by Title and Chapter (ASBA): Title 11 Revenue chapter list, no real property tax chapter",
+      "status": 200
+    },
+    {
+      "url": "https://www.americansamoa.gov/tax-office",
+      "title": "American Samoa Government Tax Office (income tax only)",
+      "status": 200
+    }
+  ],
+  "confidence": "verified",
+  "summary": "American Samoa has no real property tax and therefore no veteran property tax exemption; the file's empty program list and zero rate are correct. Nothing changes for TY2026 or TY2027.",
+  "state": "AS",
+  "checkedDate": "2026-10-21"
+}

@@ -1,0 +1,38 @@
+{
+  "state": "DC",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0056,
+    "sourceValue": 0.006,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation 2024 effective rate (ACS 5-year) 0.60%; file is 0.04 points low. DC's Class 1 rate is $0.85 per $100, with the homestead deduction and 10% assessment cap pulling the effective rate below that."
+  },
+  "programs": [
+    {
+      "name": "Homestead Exemption",
+      "status": "confirmed",
+      "fields": {
+        "exemptionValue": { "current": 445000, "correct": 445000, "quote": "is eligible for reduction in assessed value of $445,000", "source": "https://otr.cfo.dc.gov/am/page/real-property-tax-reliefs-credits-and-deductions" },
+        "incomeLimit": { "current": 163500, "correct": 163500, "quote": "The total household federal adjusted gross income for 2024 must be less than $163,500.00 for tax year 2026.", "source": "https://otr.cfo.dc.gov/am/page/real-property-tax-reliefs-credits-and-deductions" },
+        "ratingRequired / ptRequired": { "current": "ratingRequired 100; ptRequired not set", "correct": "ptRequired true, with 100%-rate IU as the alternative", "quote": "a total and permanent disability as a result of a service-incurred condition ... or [paid] at the 100% rating level due to unemployability", "source": "https://code.dccouncil.gov/us/dc/council/code/sections/47-850" },
+        "survivingSpouse": { "current": true, "correct": true, "quote": "Effective October 1, 2025, residential real property owned by a disabled veteran's eligible surviving spouse ... may qualify for a $445,000 reduction in assessed value.", "source": "https://otr.cfo.dc.gov/am/page/real-property-tax-reliefs-credits-and-deductions" },
+        "ownership": { "current": "own 50%+", "correct": "confirmed", "quote": "The disabled veteran must have at least 50% ownership of the property as shown by the deed;", "source": "https://otr.cfo.dc.gov/am/page/real-property-tax-reliefs-credits-and-deductions" }
+      },
+      "effectiveChanges": "TY2026 (Oct 1, 2025 to Sep 30, 2026): deduction $445,000, household income limit $163,500 (2024 federal AGI). D.C. Law 26-83 (Veteran Spouse Homestead Deduction Amendment Act of 2025, effective Feb 3, 2026, applicable as of Oct 1, 2025) extends the deduction to an 'eligible spouse' (surviving spouse or domestic partner). The $445,000 figure is not indexed in 47-850(a-2); the income limit is the 47-863 threshold ($125,000 base, raised annually by the senior/disabled cost-of-living adjustment and rounded down to $50), so expect a new TY2027 limit from OTR.",
+      "note": "Row is accurate. Only the regular homestead deduction ($91,950 for TY2026) is indexed by statute; the veterans' $445,000 is a flat statutory amount. The 50% ownership and five-unit limits come from OTR/MOVA rules rather than the (a-2) text."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": { "status": "confirmed", "correct": "", "source": "" },
+  "sources": [
+    { "url": "https://code.dccouncil.gov/us/dc/council/code/sections/47-850", "title": "D.C. Code 47-850 (a-2) Disabled veterans homestead deduction, incl. eligible spouse (as amended by D.C. Law 26-83)", "status": 200 },
+    { "url": "https://code.dccouncil.gov/us/dc/council/laws/26-83", "title": "D.C. Law 26-83, Veteran Spouse Homestead Deduction Amendment Act of 2025 (eff. Feb 3, 2026; applies as of Oct 1, 2025)", "status": 200 },
+    { "url": "https://code.dccouncil.gov/us/dc/council/code/sections/47-863", "title": "D.C. Code 47-863(a)(1A)(A) household income threshold and cost-of-living indexing", "status": 200 },
+    { "url": "https://otr.cfo.dc.gov/am/page/real-property-tax-reliefs-credits-and-deductions", "title": "DC Office of Tax and Revenue: Real Property Tax Reliefs, Credits and Deductions (TY2026 figures)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 effective rates)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "DC's $445,000 disabled-veteran homestead deduction, the TY2026 $163,500 household-income limit, the 50% ownership rule and the October 1, 2025 surviving-spouse extension (D.C. Law 26-83) are all confirmed on OTR and the D.C. Code. The only suggested tweak is to set ptRequired: true (with 100%-rate IU as the alternative) to match 47-850(a-2)."
+}

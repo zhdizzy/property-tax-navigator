@@ -1,0 +1,94 @@
+{
+  "propertyTaxRate": {
+    "fileValue": 0.019,
+    "sourceValue": 0.0151,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Tax Foundation Table 2 (ACS 2024): Vermont 1.51% (1.58% in 2023). File 1.90% is 0.39 pp high. Vermont's homestead education tax is income-sensitized, which pulls the realized effective rate well under nominal municipal+education rates; recommend 0.0151."
+  },
+  "programs": [
+    {
+      "name": "Veteran Property Tax Exemption",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": {
+          "current": 10000,
+          "correct": 10000,
+          "quote": "Real and personal property to the extent of $10,000.00 of appraisal value, except any part used for business or rental, occupied as the established residence of and owned in fee simple by a veteran",
+          "source": "https://legislature.vermont.gov/statutes/section/32/125/03802"
+        },
+        "town option": {
+          "current": "towns may vote to raise it to $40,000",
+          "correct": true,
+          "quote": "By majority vote of those present and voting at an annual or special meeting warned for the purpose, a town may increase the veterans' exemption under this subdivision (11) to up to $40,000.00 of appraisal value.",
+          "source": "https://legislature.vermont.gov/statutes/section/32/125/03802"
+        },
+        "ratingRequired": {
+          "current": 50,
+          "correct": 50,
+          "quote": "if one or more of them are receiving disability compensation for at least 50 percent disability, death compensation, dependence and indemnity compensation, or pension for disability paid through any military department or the Veterans Administration",
+          "source": "https://legislature.vermont.gov/statutes/section/32/125/03802"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "An unremarried widow or widower of a previously qualified veteran shall be entitled to the exemption provided in this subdivision (11) whether or not the individual is receiving government compensation or pension.",
+          "source": "https://legislature.vermont.gov/statutes/section/32/125/03802"
+        },
+        "one-time filing (P&T)": {
+          "current": "not flagged",
+          "correct": "Permanent-disability applicants file once; exemption stays on the grand list until title transfers",
+          "quote": "Application for an exemption under this section based upon permanent disability is only required to be filed with the Office of Veterans Affairs before May 1 of the first year for which the exemption is sought, and the exemption shall remain on the grand list until title to the property is transferred.",
+          "source": "https://legislature.vermont.gov/statutes/section/32/125/03802",
+          "note": "OVA applies one-time status to VA P&T, 50%+ for 10 consecutive years, permanent medical retirees, and surviving spouses; everyone else refiles by May 1 each year."
+        }
+      },
+      "effectiveChanges": "None found. Statutory $10,000 floor and $40,000 town-vote ceiling unchanged; no 2026 act amending 32 V.S.A. 3802(11) located on the legislature's site. Modeled at the statutory minimum; the actual reduction is set town by town.",
+      "note": "Exemption reduces appraised value (not tax), so dollars = amount x the town's combined rate; the $10,000 floor applies to both municipal and education grand lists per OVA."
+    },
+    {
+      "name": "Combat Zone Benefits",
+      "status": "confirmed",
+      "fields": {
+        "nature": {
+          "current": "partial, exemptionValue null",
+          "correct": "Filing-deadline relief only (180-day extensions, late homestead-declaration abatement); no dollar value",
+          "quote": "180-day extension for property tax filing without penalty/interest (must be approved by local municipality)",
+          "source": "https://veterans.vermont.gov/benefits-and-services/veteran-benefits/tax-exemptions-veterans",
+          "note": "Quote is the OVA program description as summarized in the file; OVA page lists the combat-zone extensions. Should carry no exemption dollars and should not be credited to a rated veteran's home."
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Active-duty/combat-zone relief, not a veteran exemption; type should be 'none' or excluded from dollar totals."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "unverified",
+    "correct": "",
+    "source": "",
+    "note": "No propertyTax.note in the file for VT."
+  },
+  "sources": [
+    {
+      "url": "https://legislature.vermont.gov/statutes/section/32/125/03802",
+      "title": "32 V.S.A. 3802(11) Property tax exemptions: veterans",
+      "status": 200
+    },
+    {
+      "url": "https://veterans.vermont.gov/benefits-and-services/veteran-benefits/tax-exemptions-veterans",
+      "title": "Vermont Office of Veterans Affairs: Tax Exemptions for Veterans",
+      "status": 200
+    },
+    {
+      "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+      "title": "Tax Foundation, Property Taxes by State and County, 2026 (Table 2: Property Taxes Paid as a Percentage of Owner-Occupied Housing Value, 2024, Census ACS)",
+      "status": 200
+    }
+  ],
+  "confidence": "verified",
+  "summary": "Vermont's $10,000 appraisal-value reduction at 50%+ (town-votable to $40,000) is confirmed with no 2026 change, and P&T veterans file once. Two corrections: survivingSpouse must be true (unremarried widow/widower qualifies regardless of VA payments), and the 1.90% effective rate is far above the 1.51% ACS 2024 figure.",
+  "state": "VT",
+  "checkedDate": "2026-10-21"
+}

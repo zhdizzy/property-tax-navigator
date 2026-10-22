@@ -1,0 +1,112 @@
+{
+  "state": "IL",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0227,
+    "sourceValue": 0.0201,
+    "source": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Census ACS 2020-2024 5-year: median real estate taxes $5,298 / median value $263,300 (acsdt5y2024-b25077.dat) = 2.012%. File 2.27% is 0.26 pp high. Tax Foundation's older figure (2.05%, 2020 data) is also below the file."
+  },
+  "programs": [
+    {
+      "name": "Returning Veterans' Homestead Exemption (RVHE)",
+      "status": "confirmed",
+      "fields": {
+        "exemptionValue": {
+          "current": 5000,
+          "correct": 5000,
+          "quote": "the reduction is $5,000 for the taxable year in which the veteran returns from active duty in an armed conflict ... Beginning in taxable year 2010, the reduction shall also be allowed for the taxable year after",
+          "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K15-167.htm"
+        },
+        "nonRecurring": {
+          "current": true,
+          "correct": true,
+          "quote": "the reduction shall also be allowed for the taxable year after the taxable year in which the veteran returns from active duty",
+          "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K15-167.htm"
+        }
+      },
+      "effectiveChanges": null,
+      "note": "$5,000 is an EAV reduction (about $15,000 market-equivalent at the 33 1/3% statutory level); other rows in this block use market-equivalents, this one uses EAV."
+    },
+    {
+      "name": "Disabled Veterans' Standard Homestead Exemption (DVSHE)",
+      "status": "confirmed",
+      "fields": {
+        "tiers": {
+          "current": [{"minRating":30,"maxRating":49,"value":7500},{"minRating":50,"maxRating":69,"value":15000},{"minRating":70,"maxRating":100,"value":750000}],
+          "correct": [{"minRating":30,"maxRating":49,"value":7500},{"minRating":50,"maxRating":69,"value":15000},{"minRating":70,"maxRating":100,"value":750000}],
+          "quote": "of 30% or more but less than 50% ... the annual exemption is $2,500; ... 50% or more but less than 70% ... $5,000; ... 70% or more ... the first $250,000 in equalized assessed value of the property is exempt",
+          "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K15-169.htm",
+          "note": "Market-equivalents at 3x EAV (35 ILCS 200/9-145: 'valued at 33 1/3% of its fair cash value'). Since TY2023 there is no $250,000 EAV cap on eligibility; homes above it get the first $250,000 EAV exempt."
+        },
+        "ratingRequired": {
+          "current": 30,
+          "correct": 30,
+          "quote": "service-connected disability of 30% or more but less than 50%, as certified by the United States Department of Veterans Affairs as of the date the application is submitted",
+          "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K15-169.htm"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "carries over to the benefit of the veteran's surviving spouse as long as the spouse holds the legal or beneficial title to the homestead, permanently resides thereon, and does not remarry.",
+          "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K15-169.htm",
+          "note": "Also: spouse of a veteran killed in the line of duty, or who would have qualified but never applied, or a DIC-receiving spouse of a service-connected death (first $250,000 EAV exempt) per 15-169(b-3.1)(4) and (c)."
+        }
+      },
+      "effectiveChanges": "No amendment after P.A. 103-596 (eff. 7-1-24). Rules in force for TY2026/2027: 100% P&T veterans need not reapply annually (P.A. 102-895); WWII veterans fully exempt regardless of rating from TY2024 (15-169(b-4)); monthly proration for mid-year occupancy (15-169(e-1)).",
+      "note": "Tier value 750000 is a cap on exempt value, not a full exemption; type 'partial' is right."
+    },
+    {
+      "name": "Specially Adapted Housing Exemption",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": {
+          "current": 100000,
+          "correct": 300000,
+          "quote": "Property up to an assessed value of $100,000, owned and used exclusively by a veteran with a disability, or the spouse or unmarried surviving spouse of the veteran, as a home, is exempt.",
+          "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K15-165.htm",
+          "note": "$100,000 is ASSESSED value; at the 33 1/3% statutory level (9-145) the market-equivalent is about $300,000. The file's other IL rows carry market-equivalents, so 100000 understates this one by 3x. If the file intends assessed dollars here, label it as such instead."
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "or the spouse or unmarried surviving spouse of the veteran",
+          "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K15-165.htm"
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Requires federal SAH authorization under 38 USC 2101; certified annually by IDVA, not rating-based. Not combinable with DVSHE on the same property in practice (one homestead exemption per 15-169(a) 'limited as provided')."
+    }
+  ],
+  "missingPrograms": [
+    {
+      "name": "World War II veterans full exemption (15-169(b-4))",
+      "what": "For taxable years on or after 2024, 'if the veteran was a member of the United States Armed Forces during World War II, then the property is exempt from taxation under this Code regardless of the veteran's level of disability.' No annual reapplication.",
+      "statute": "35 ILCS 200/15-169(b-4), (e)",
+      "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K15-169.htm"
+    },
+    {
+      "name": "DIC surviving spouse $250,000 EAV exemption (15-169(b-3.1)(4))",
+      "what": "Surviving spouse of a veteran whose death was service-connected and who receives VA dependency and indemnity compensation gets 'the first $250,000 in equalized assessed value of the property' exempt, even if the veteran never held the exemption.",
+      "statute": "35 ILCS 200/15-169(b-3.1)(4), (c)",
+      "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K15-169.htm"
+    }
+  ],
+  "jurisdictionNote": {
+    "status": "confirmed",
+    "correct": "",
+    "source": ""
+  },
+  "sources": [
+    { "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K15-169.htm", "title": "35 ILCS 200/15-169 Homestead exemption for veterans with disabilities and veterans of World War II", "status": 200 },
+    { "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K15-167.htm", "title": "35 ILCS 200/15-167 Returning Veterans' Homestead Exemption", "status": 200 },
+    { "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K15-165.htm", "title": "35 ILCS 200/15-165 Veterans with disabilities (Specially Adapted Housing, $100,000 assessed value)", "status": 200 },
+    { "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K9-145.htm", "title": "35 ILCS 200/9-145 Statutory level of assessment (33 1/3% of fair cash value)", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat", "title": "Census ACS 2024 5-year summary file, table B25103", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25077.dat", "title": "Census ACS 2024 5-year summary file, table B25077", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "Illinois tiers ($2,500 / $5,000 EAV, first $250,000 EAV at 70%+, no eligibility cap since TY2023) and the two-year $5,000 RVHE are confirmed from statute with no 2026/2027 amendments. The SAH row's $100,000 is assessed value (about $300,000 market), the WWII full exemption and DIC-spouse $250,000 EAV rule are missing, and the 2.27% rate is 0.26 pp above ACS 2024 (2.01%)."
+}

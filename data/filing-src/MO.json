@@ -1,0 +1,90 @@
+{
+  "state": "MO",
+  "officeType": "county assessor (POW homestead exemption); Missouri Department of Revenue (MO-PTC property tax credit)",
+  "officeTypeNote": "Missouri has two unrelated filings. (1) The former-POW 100% service-connected homestead EXEMPTION (Mo. Const. art. X, §6) is claimed with the COUNTY ASSESSOR (St. Louis City Assessor inside the city), on whatever form that assessor uses; the State Tax Commission oversees assessors but takes no applications. (2) The Property Tax CREDIT for 100% service-connected disabled veterans (RSMo 135.010-135.030) is an income-tax-type claim filed with the Department of Revenue on Form MO-PTC (or MO-PTS attached to the MO-1040), not with the county.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://stc.mo.gov/directories/",
+    "label": "Missouri State Tax Commission: Directories (Assessors PDF/XLS, County Clerks, County Collectors)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://dor.mo.gov/taxation/individual/tax-types/property-tax-credit/",
+    "note": "The STC directory is a downloadable statewide list of all 114 county assessors plus St. Louis City (current file: https://stc.mo.gov/wp-content/uploads/sites/5/2026/10/Assessors.pdf, dated Oct 2026; the file path changes with each update, so link the Directories page). DOR's Property Tax Credit page links the same STC directories page as 'County Assessor's Office'. For the MO-PTC credit the filing office is DOR: P.O. Box 2800, Jefferson City, MO 65105-2800 (address printed on the form)."
+  },
+  "forms": [
+    {
+      "programRef": "Property Tax Exemption for Total SC Disabled POWs",
+      "name": "Application for Disabled POW Property Tax Exemption (county-designed form; no statewide STC form)",
+      "number": null,
+      "url": null,
+      "revision": null,
+      "filedWith": "county assessor of the county where the homestead is located"
+    },
+    {
+      "programRef": "Property Tax Credit for 100% Disabled Veterans",
+      "name": "2025 Property Tax Credit Claim (fillable, calculating)",
+      "number": "Form MO-PTC",
+      "url": "https://dor.mo.gov/forms/MO-PTC%20Fillable%20Calculating_2025.pdf",
+      "revision": "2025 tax year",
+      "filedWith": "Missouri Department of Revenue, P.O. Box 2800, Jefferson City, MO 65105-2800 (or e-file through approved software)"
+    },
+    {
+      "programRef": "Property Tax Credit for 100% Disabled Veterans",
+      "name": "2025 Form MO-PTC Instructions (Property Tax Credit Claim booklet)",
+      "number": "MO-PTC Instructions",
+      "url": "https://dor.mo.gov/forms/MO-PTC%20Instructions_2025.pdf",
+      "revision": "2025 tax year",
+      "filedWith": "n/a (instructions)"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "04-15",
+    "text": "MO-PTC credit: 'The 2025 Form MO-PTC is due April 15, 2026, but you may file up to three years from the due date and still receive your credit.' POW exemption: no statutory deadline is published by the STC; file with the assessor, and county practice ties the exemption to the January 1 assessment date for the tax year."
+  },
+  "effective": "MO-PTC: a refundable credit (up to $1,100 owner / $750 renter) for real estate taxes PAID in the claim year, paid by check or deposit after DOR processes the claim; income cap $30,000 single / $34,000 married (VA payments excluded from household income for 100% SC veterans). POW exemption: removes the homestead from the tax roll from the assessment year the assessor approves it; the STC says the constitutional exemption 'took effect thirty days after the election' (Dec 2010) without implementing legislation.",
+  "lateFiling": "MO-PTC: late claims are accepted 'up to three years from the due date' (e.g., the 2025 claim can be filed until April 15, 2029). POW exemption: no late-filing rule published; the STC and county pages describe it as a one-time application that continues while the veteran owns and occupies the home.",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 3,
+    "text": "MO-PTC only: a missed year can be claimed on that year's Form MO-PTC within 3 years of its original April 15 due date (2025 instructions: 'you may file up to three years from the due date and still receive your credit'). No refund mechanism is published for prior-year taxes under the POW exemption."
+  },
+  "renewal": {
+    "type": "annual",
+    "text": "MO-PTC is an annual claim filed each spring for the prior year's taxes paid (attach the paid real estate tax receipt(s) and the VA letter every year). The POW homestead exemption, once granted by the assessor, continues as long as the veteran owns and occupies the home (STC/county guidance); no annual re-file is described."
+  },
+  "ratingChange": "MO-PTC qualification box B requires the veteran to be '100% Disabled Veteran as a result of military service (Attach letter from Department of Veterans Affairs)'. A veteran rated below 100% may still qualify under another box (65+, 100% SSA-disabled, surviving spouse 60+), but must then count VA payments as household income; a 100% SC veteran excludes VA benefits from income. The POW exemption requires a 'total service-connected disability' letter; a reduction below total disability ends eligibility and the assessor should be notified.",
+  "move": "MO-PTC: no transfer needed; each year's claim covers the home(s) occupied that year (attach receipts; if the home was bought or sold during the year, attach the closing statement showing the tax proration, per the instructions). POW exemption: apply anew with the assessor of the new county; the exemption attaches to the homestead the veteran owns and occupies as a primary residence.",
+  "onlineFiling": {
+    "available": true,
+    "text": "MO-PTC can be filed electronically through DOR-approved tax software (the credit also rides on the MO-1040 as Form MO-PTS); the fillable-calculating PDF is otherwise mailed. The POW exemption is filed on paper with the county assessor (some counties accept email)."
+  },
+  "documents": [
+    "MO-PTC: letter from the U.S. Department of Veterans Affairs stating the veteran is 100% disabled as a result of military service (instructions: 'A letter from the Veterans Administration ... the disability is 100 percent from military service must be attached'); VA at (800) 827-1000",
+    "MO-PTC: copy of the paid 2025 real estate tax receipt(s) (Form 948 Assessor Certification if the home is on more than 5 acres or is a mobile home); Form 5674 Verification of Rent Paid for renters",
+    "MO-PTC: Forms SSA-1099 / RRB-1099 / W-2 / 1099 for all household income; Social Security number; address",
+    "POW exemption (per STC): documents or a sworn statement showing the home is the applicant's primary residence; a letter from the U.S. Government or the VA confirming a service-connected total disability; DD-214 showing ex-POW status OR a letter from the National Personnel Records Center (NARA) or the VA confirming former POW status; county records must show the applicant owns the homestead"
+  ],
+  "survivingSpouse": "MO-PTC: a surviving spouse may qualify under box D (age 60+ receiving surviving spouse Social Security benefits) or the 65+/100%-disabled boxes, not under the veteran box. POW exemption: Art. X §6 speaks only of the former POW citizen; the STC FAQ does not extend it to a spouse, and St. Louis City's instructions say it does not pass to a surviving spouse.",
+  "appeal": "MO-PTC: DOR denial or adjustment notice; appeal through DOR's protest/administrative hearing process (Administrative Hearing Commission) per the notice. POW exemption: an assessor's denial of exemption is appealed to the county Board of Equalization and then the State Tax Commission (STC 'File An Appeal'); STC phone 573-751-2414, stc@stc.mo.gov.",
+  "statute": "Mo. Const. art. X, §6(1) (POW homestead exemption, adopted Nov. 2, 2010, HJR 15); RSMo 135.010-135.030 (Property Tax Credit; 135.010 defines 100% SC disabled veteran eligibility and household income)",
+  "sourceUrls": [
+    { "url": "https://revisor.mo.gov/main/OneSection.aspx?section=X%20%20%206&constit=y", "title": "Missouri Constitution art. X §6 (Revisor of Statutes)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://stc.mo.gov/faq/are-veterans-or-former-pows-exempt-from-property-tax-2/", "title": "Missouri State Tax Commission FAQ: Are Veterans or Former POWs Exempt from Property Tax?", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://stc.mo.gov/directories/", "title": "Missouri State Tax Commission Directories (Assessors, Clerks, Collectors)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://stc.mo.gov/wp-content/uploads/sites/5/2026/10/Assessors.pdf", "title": "STC Assessor Directory PDF (Oct 2026 file)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dor.mo.gov/taxation/individual/tax-types/property-tax-credit/", "title": "Missouri DOR: Property Tax Credit", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dor.mo.gov/forms/MO-PTC%20Instructions_2025.pdf", "title": "2025 Form MO-PTC Instructions", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dor.mo.gov/forms/MO-PTC%20Fillable%20Calculating_2025.pdf", "title": "2025 Form MO-PTC (fillable, calculating)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dor.mo.gov/forms/PTC%20Qualification%20Chart.pdf", "title": "Missouri DOR Property Tax Credit Qualification Chart", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revisor.mo.gov/main/OneSection.aspx?section=135.010", "title": "RSMo 135.010 (Property tax credit definitions, 100% SC disabled veteran)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revisor.mo.gov/main/OneSection.aspx?section=135.030", "title": "RSMo 135.030 (Property tax credit amounts and income limits)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    "The POW row cites no statute; the authority is Mo. Const. art. X, §6(1) (2010), not RSMo 137.100 (which has no POW subdivision per the current Revisor text). Add the citation.",
+    "A 2025-26 bill (HB 1430 summary) proposed removing the MO-PTC income cap for 100% disabled veterans from Jan 1, 2026; not confirmed enacted and the 2025 instructions still show $30,000/$34,000. Re-check when the 2026 MO-PTC instructions post (early 2027)."
+  ],
+  "notes": "The POW exemption has no statewide form: each county assessor (e.g., Jackson, Boone, Phelps, St. Louis City) posts its own application, so `forms[].url` is null for that program and `appeal`/`move` for it rely on STC guidance plus county practice. The MO-PTC PDF URLs change annually (the 2025 files are current until the 2026 forms post in Jan 2027); the DOR Property Tax Credit page is the stable entry point. Form MO-PTC fillable PDF was verified 200 but not opened; the instructions booklet was read."
+}

@@ -1,0 +1,76 @@
+{
+  "state": "NV",
+  "officeType": "county assessor",
+  "officeTypeNote": "File the claim and affidavit with the ASSESSOR of the county where you reside (NRS 361.155(3)); the exemption may be claimed in only one Nevada county. The assessor also handles the choice to apply the same exemption to the vehicle Governmental Services Tax (NRS 371.103/371.104) instead of real property; the DMV then honors it at registration. The Department of Taxation sets the annual CPI-adjusted amounts but takes no applications.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://tax.nv.gov/wp-content/uploads/2024/04/County-Assessors-Contact-List-9-7-23.pdf",
+    "label": "Nevada Department of Taxation: County Assessors contact list (all 17 counties, address, phone, fax, email)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://tax.nv.gov/local-government-services/",
+    "note": "The state list is a PDF dated September 7, 2023 (a companion map PDF is at https://tax.nv.gov/wp-content/uploads/2024/04/Nevada_County_Assessors_Map.pdf); names may be stale, so confirm on the county assessor's website. No per-county state pages."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Veterans / Disabled Veterans exemption claim and affidavit (no statewide form number; each county assessor issues its own affidavit made before the assessor or a notary, per NRS 361.090(4) and 361.091(4))",
+      "number": null,
+      "url": null,
+      "revision": null,
+      "filedWith": "county assessor of the county of residence"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "06-15",
+    "text": "NRS 361.155(1)(a): 'All claims for personal tax exemptions on real property ... must be filed on or before June 15' for the fiscal year beginning July 1; real property acquired June 16-30 may be claimed by July 5 (361.155(1)(b)). Personal property or vehicle claims 'may be made at any time' before the tax is due (361.091(3); Carson City Assessor)."
+  },
+  "effective": "Exemptions 'apply on a fiscal year basis' (July 1 to June 30) and reduce assessed value (35% of taxable value) for the fiscal year for which the claim is filed by June 15. FY2026-27 CPI-adjusted amounts (Department of Taxation AB209 schedule; Carson City Assessor): veteran $3,640; disabled veteran 60-79% $18,200, 80-99% $27,300, 100% $36,400 (statutory base $2,000/$10,000/$15,000/$20,000 indexed from July 2003). The same amount may instead be applied to the vehicle Governmental Services Tax, and any GST exemption used reduces the property exemption (NRS 361.1565).",
+  "lateFiling": "NRS 361.155(6): if the claim and affidavit are not filed by the June 15 deadline, or are denied by the assessor, the claimant 'may, on or before January 15 of the fiscal year for which the claim of exemption is made, file the claim ... with the county board of equalization', which 'may grant or deny the claim for that fiscal year'. After January 15 the year is lost.",
+  "retroactivity": {
+    "type": "none",
+    "years": 0,
+    "text": "No refunds for prior fiscal years. The only recovery for a missed June 15 is the county board of equalization route for the SAME fiscal year, filed by January 15 (NRS 361.155(6)); denial there may be appealed to the State Board of Equalization."
+  },
+  "renewal": {
+    "type": "annual",
+    "text": "After the original affidavit, 'the county assessor shall ... mail a form for (a) The renewal of the exemption' each year following a year in which it was allowed (NRS 361.090(4), 361.091(4)); the renewal card/affidavit must be returned (by mail or electronically where the assessor allows it) to keep the exemption on real property or to designate it to the vehicle GST. Persons on active military service are excused from the annual renewal (361.090(5)). An exemption 'granted or renewed in error' is assessed back with a 10% penalty (361.155(5))."
+  },
+  "ratingChange": "The amount depends on 'the total percentage of permanent service-connected disability' (NRS 361.091(2)): 60-79%, 80-99%, 100% tiers. A veteran whose combined rating moves into a new tier should file a new affidavit with the updated VA rating document by June 15 for the next fiscal year; the rating must be PERMANENT and service-connected. A TDIU veteran rated below 100% combined falls in the tier of the combined rating, not the 100% tier. Ratings below 60% get only the wartime veteran exemption (if service qualifies under 361.090).",
+  "move": "The exemption is personal (follows the claimant, not the parcel) but may be claimed in only one county: moving to another Nevada county requires a new affidavit with that county's assessor by June 15 for the next fiscal year, stating 'that the exemption is not claimed in any other county in this State'. Within the same county, notify the assessor so the exemption is applied to the new parcel (or kept on the vehicle GST).",
+  "onlineFiling": {
+    "available": null,
+    "text": "The original affidavit must be 'made before the county assessor or a notary public' (NRS 361.091(4)), so the first claim is in person or notarized by mail; annual renewals may be returned electronically where the assessor authorizes it under NRS ch. 719 (361.091(4)). Some assessors (e.g., Clark, Washoe) offer online renewal portals."
+  },
+  "documents": [
+    "County assessor's exemption claim/affidavit, sworn before the assessor or a notary, stating bona fide Nevada residency and that the exemption is not claimed in another county (NRS 361.091(4))",
+    "Original or certified copy of the honorable discharge or other document of honorable separation (DD-214) or certificate of satisfactory service (NRS 361.091(5))",
+    "Document from the U.S. Department of Veterans Affairs (or other military document) showing a PERMANENT service-connected disability and its total percentage (60% minimum) (NRS 361.091(5)(c))",
+    "Wartime veteran exemption (361.090): separation papers showing honorable discharge, entry/discharge dates and 90+ continuous days of active duty in a listed period, Gulf War (PL 102-1) service, or a campaign/expedition medal; assessors may require an affidavit of direct support for some conflicts",
+    "Surviving spouse of a disabled veteran: additional affidavit that the spouse was married to and living with the veteran for the 5 years preceding death, the veteran was eligible (or would have been if a Nevada resident), the spouse has not remarried and is a Nevada resident (NRS 361.091(6)); death certificate; county pages also ask for 6 months' Nevada residency",
+    "Vehicle option: the exemption card/affidavit is presented at DMV registration (NRS 371.104 requires an annual affidavit filed in the county)"
+  ],
+  "survivingSpouse": "A surviving spouse of a veteran with a permanent service-connected disability keeps the disabled-veteran exemption at the veteran's tier if married to and living with the veteran for the 5 years preceding death, the veteran was eligible (or would have been if a Nevada resident), the spouse has not remarried, and the spouse is a Nevada resident; a separate affidavit is filed in addition to the regular one, and annual renewal cards follow (NRS 361.091(6)). The wartime veteran exemption (361.090) does not pass to a surviving spouse (the separate NRS 361.080 surviving-spouse exemption, $1,820 assessed for FY2026-27, is not veteran-specific). A veteran may also transfer the vehicle GST exemption to a current spouse (NRS 371.103(2), 371.104(2)).",
+  "appeal": "A claim denied by the assessor (or filed late) may be taken to the county board of equalization on or before January 15 of the fiscal year (NRS 361.155(6)); the board's denial is appealable to the State Board of Equalization under procedures the State Board adopts.",
+  "statute": "NRS 361.090 (wartime veterans exemption, $2,000 base, CPI-indexed), 361.091 (disabled veteran and surviving spouse, $10,000/$15,000/$20,000 base), 361.155 (June 15 filing, fiscal-year basis, late claim to county board by Jan 15), 361.1565 (reduction for GST exemption used); NRS 371.103, 371.104 (vehicle Governmental Services Tax exemptions)",
+  "sourceUrls": [
+    { "url": "https://www.leg.state.nv.us/NRS/NRS-361.html", "title": "NRS Chapter 361 Property Tax (361.090, 361.091, 361.155, 361.1565)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.leg.state.nv.us/NRS/NRS-371.html", "title": "NRS Chapter 371 Governmental Services Tax (371.103, 371.104 veteran vehicle exemptions)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.nv.gov/wp-content/uploads/2025/09/2026-2027-CPI-Adjustment-AB209.pdf", "title": "Nevada Department of Taxation: CPI Adjustment for Exemptions, Fiscal Year 2026-2027", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.nv.gov/wp-content/uploads/2026/09/2027-2028-CPI-Adjustment-AB209.pdf", "title": "Nevada Department of Taxation: CPI Adjustment for Exemptions, Fiscal Year 2027-2028", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.nv.gov/news-publications/local-government-services-publications/", "title": "Nevada Department of Taxation: Local Government Services Publications (exemption CPI schedules, guidance letters)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.nv.gov/wp-content/uploads/2024/09/16-006_Determination_of_Veterans_Eligibility_for_Exemption_from_Property_Tax.pdf", "title": "Department of Taxation Guidance Letter 16-006, Determination of Veterans Eligibility for Exemption from Property Tax", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.nv.gov/wp-content/uploads/2024/04/County-Assessors-Contact-List-9-7-23.pdf", "title": "Nevada Department of Taxation: County Assessors contact list (Sept 7, 2023)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.nv.gov/wp-content/uploads/2024/04/Nevada_County_Assessors_Map.pdf", "title": "Nevada County Assessors Map (Department of Taxation)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.nv.gov/local-government-services/", "title": "Nevada Department of Taxation: Local Government Services", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.carsoncity.gov/government/departments-a-f/assessor/general-information-services/personal-exemptions", "title": "Carson City Assessor: Personal Exemptions (FY2026-27 amounts, June 15 deadline, documents, vehicle option)", "status": 200, "checked": "2026-10-21", "primary": false }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    "FY2026-27 assessed-value amounts in the rows ($3,640; $18,200/$27,300/$36,400) match the Department of Taxation's AB209 CPI schedule and Carson City. The FY2027-28 schedule (posted Sept 2026) is already live at the URL above and should be used for the July 1, 2027 refresh.",
+    "The disabled-veteran row says 'surviving spouse eligible if married 5+ years'; the statute's test is married to AND living with the veteran for the 5 years preceding death, plus unremarried and Nevada resident (NRS 361.091(6))."
+  ],
+  "notes": "Nevada has no state-issued claim form; each assessor's affidavit differs, so `forms[].url` is null (Carson City, Washoe and others post PDFs). The Washoe County assessor pages return a WAF rejection page to automated requests and were not used. The Carson City page is a county (secondary) source and is marked primary:false. The FY2027-28 CPI PDF was verified 200 but not opened. The NRS 361.090 text extraction was cut at subsection 8 (CPI adjustment clause) and 361.091 at subsection 6; both were read far enough to source every field above."
+}

@@ -1,0 +1,96 @@
+{
+  "state": "MO",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0097,
+    "sourceValue": 0.0089,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation 'Property Taxes by State' table (Mar 2026): Missouri 0.89% for 2024 (0.91% for 2023), total real taxes paid / total owner-occupied value (ACS B25082, B25090). File value 0.97% is 0.08 pp above, within tolerance."
+  },
+  "programs": [
+    {
+      "name": "Property Tax Exemption for Total SC Disabled POWs",
+      "status": "confirmed",
+      "fields": {
+        "type": {
+          "current": "full",
+          "correct": "full",
+          "quote": "all property, real and personal, of any citizen of this state who is a former prisoner of war ... and who has a total service-connected disability, shall be exempt from taxation",
+          "source": "https://revisor.mo.gov/main/OneSection.aspx?section=X%20%20%206&constit=y"
+        },
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "quote": "total service-connected disability",
+          "source": "https://revisor.mo.gov/main/OneSection.aspx?section=X%20%20%206&constit=y"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": false,
+          "quote": "Art. X §6 speaks only of the former POW citizen; the STC FAQ does not extend it to a spouse",
+          "source": "https://stc.mo.gov/faq/are-veterans-or-former-pows-exempt-from-property-tax-2/"
+        }
+      },
+      "effectiveChanges": "HJR 115 (2026), which would have put a constitutional amendment on the November 2026 ballot extending the homestead exemption to all 100% service-connected veterans and their unremarried surviving spouses, was perfected by the House 4/20/2026 but its last action is 'referred: Select Committee on Property Taxes and the State Tax Commission (S)'; it did not pass the Senate and is not on the 2026 ballot. No change for TY2026 or TY2027.",
+      "note": "POW-only; the engine must not credit this to a non-POW rated veteran (row has no POW flag, so confirm the engine treats it as non-creditable). Statute citation should be added: Mo. Const. art. X, §6(1)."
+    },
+    {
+      "name": "Property Tax Credit for 100% Disabled Veterans",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": {
+          "current": 1100,
+          "correct": 1550,
+          "quote": "For all calendar years beginning on or after January 1, 2026 ... credit not to exceed $1,550 in actual property tax or rent equivalent paid up to $1,055, as adjusted for inflation",
+          "source": "https://revisor.mo.gov/main/OneSection.aspx?section=135.030"
+        },
+        "incomeLimit": {
+          "current": 30000,
+          "correct": 42200,
+          "quote": "For all calendar years beginning on or after January 1, 2026, the maximum upper limit shall be the sum of: (a) Thirty-eight thousand two hundred dollars for claimants with a filing status of single; (b) Forty-two thousand two hundred dollars ... single ... who owned and occupied a homestead for the entire year",
+          "source": "https://revisor.mo.gov/main/OneSection.aspx?section=135.030"
+        },
+        "incomeLimitMarried": {
+          "current": 34000,
+          "correct": 48000,
+          "quote": "(c) Forty-one thousand dollars ... married filing combined; and (d) Forty-eight thousand dollars ... married filing combined and who owned and occupied a homestead for the entire year",
+          "source": "https://revisor.mo.gov/main/OneSection.aspx?section=135.030"
+        },
+        "summary": {
+          "current": "MO-PTC: fixed credit up to $1,100 for owner-occupants ($750 renters) at 100% SC — household income ≤ $30,000 single / $34,000 married.",
+          "correct": "MO-PTC refundable credit. TY2025 claim (filed by April 15, 2026): up to $1,100 owner / $750 renter, income cap $30,000 single / $34,000 married homeowner. TY2026 claim (filed 2027) and later: up to $1,550 owner / $1,055 renter, income cap $42,200 single homeowner ($38,200 renter) / $48,000 married homeowner ($41,000 renter), indexed to CPI from Jan 1, 2027. 100% SC veterans exclude VA payments from household income.",
+          "quote": "The one hundred percent service-connected disabled veteran shall not be required to list veterans payments and benefits",
+          "source": "https://revisor.mo.gov/main/OneSection.aspx?section=135.010"
+        },
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "quote": "the claimant or spouse is a veteran ... who became one hundred percent disabled as a result of such service",
+          "source": "https://revisor.mo.gov/main/OneSection.aspx?section=135.010"
+        }
+      },
+      "effectiveChanges": "RSMo 135.030 as amended by H.B. 594 & 508 (2025), effective Aug 28, 2025: for calendar years beginning on or after Jan 1, 2026 the maximum credit rises to $1,550 (owners) / $1,055 (renters) and the income caps to $38,200 / $42,200 (single) and $41,000 / $48,000 (married), with annual CPI indexing from Jan 1, 2027. The 2025 MO-PTC instructions still show $1,100 / $30,000 / $34,000 because they cover the TY2025 claim. HB 1430 (2025), which would have removed the income cap entirely for 100% disabled veterans, died ('Referred: Emerging Issues (H)', no hearing) and its text is not in the current statute.",
+      "note": "Lead resolved: the HB 1430 income-cap repeal was NOT enacted, but a different 2025 bill (H.B. 594 & 508) raised the caps and the credit for TY2026+. The row should carry both year-sets or switch to the TY2026 figures with a note; the 'excludes most working households' sentence is still true but less so."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "unverified",
+    "correct": "",
+    "source": ""
+  },
+  "sources": [
+    { "url": "https://revisor.mo.gov/main/OneSection.aspx?section=135.030", "title": "RSMo 135.030 (property tax credit amounts and income limits; eff. 28 Aug 2025, A.L. 2025 H.B. 594 & 508)", "status": 200 },
+    { "url": "https://revisor.mo.gov/main/OneSection.aspx?section=135.010", "title": "RSMo 135.010 (definitions: 100% SC disabled veteran claimant; VA payments excluded from income)", "status": 200 },
+    { "url": "https://revisor.mo.gov/main/OneSection.aspx?section=X%20%20%206&constit=y", "title": "Mo. Const. art. X, §6 (former POW with total SC disability homestead exemption)", "status": 200 },
+    { "url": "https://stc.mo.gov/faq/are-veterans-or-former-pows-exempt-from-property-tax-2/", "title": "Missouri State Tax Commission FAQ: Are Veterans or Former POWs Exempt from Property Tax?", "status": 200 },
+    { "url": "https://archive.house.mo.gov/BillContent.aspx?bill=HB1430&year=2025&code=R", "title": "Missouri House, HB 1430 (2025): Last Action 'Referred: Emerging Issues (H)', hearing not scheduled", "status": 200 },
+    { "url": "https://house.mo.gov/BillContent.aspx?bill=HJR115&year=2026&code=R", "title": "Missouri House, HJR 115 (2026): perfected 4/20/2026; last action referred to Senate Select Committee on Property Taxes", "status": 200 },
+    { "url": "https://dor.mo.gov/forms/MO-PTC%20Instructions_2025.pdf", "title": "2025 Form MO-PTC Instructions (TY2025 limits $1,100 / $30,000 / $34,000)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation, Property Taxes by State and County, 2026 (2024 ACS data)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "The MO-PTC row is stale for TY2026: H.B. 594 & 508 (2025) raised the maximum credit to $1,550 owner / $1,055 renter and the income caps to $42,200 single / $48,000 married homeowners for calendar years from Jan 1, 2026, with CPI indexing from 2027; HB 1430's veteran income-cap repeal died. The POW-only full exemption is unchanged (HJR 115 to extend it to all 100% veterans died in the Senate), and the 0.97% tax rate is within tolerance of the Tax Foundation 2024 figure."
+}

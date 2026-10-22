@@ -1,0 +1,124 @@
+{
+  "state": "GA",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0092,
+    "sourceValue": 0.0077,
+    "source": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Census ACS 2020-2024 5-year: median real estate taxes paid (B25103_E001) $2,341 / median owner-occupied value (B25077_E001, acsdt5y2024-b25077.dat) $303,300 = 0.772%. File value 0.92% is 0.15 pp high."
+  },
+  "programs": [
+    {
+      "name": "Homestead Exemption",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": {
+          "current": 316315,
+          "correct": 316315,
+          "quote": "granted an exemption of the greater of $32,500.00 or the maximum amount which may be granted to a disabled veteran under Section 2102 of Title 38 of the United States Code, as amended",
+          "source": "https://www.legis.ga.gov/api/legislation/document/20252026/247743",
+          "note": "Assessed-value exemption = federal SAH maximum. VA: 'you can get up to $126,526 for FY 2026' (va.gov). $126,526 / 0.40 assessment ratio = $316,315 market-equivalent, matching the file. Georgia DOR and GDVS pages still show only the 2025 figure ('The amount for 2025 is $121,812'), so the 2026 figure is derived from statute + VA, not yet published by DOR."
+        },
+        "details": {
+          "current": "Homestead property tax exemption up to $121,812. Value above the exemption remains taxable.",
+          "correct": "Homestead property tax exemption of $126,526 of assessed value for 2026 ($121,812 for 2025); value above the exemption remains taxable.",
+          "quote": "If you qualify for an SAH grant, you can get up to $126,526 for FY 2026.",
+          "source": "https://www.va.gov/housing-assistance/disability-housing-grants/"
+        },
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "quote": "VA rating of 100% totally disabled; VA rating below 100% but paid at the 100% rate due to unemployability; or a VA statutory award for loss or loss of use of feet/hands/eyes",
+          "source": "https://veterans.georgia.gov/disabled-veteran-homestead-tax-exemption",
+          "note": "IU at the 100% rate qualifies; statutory-award veterans below 100% also qualify (not modeled)."
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "This exemption is extended to the unremarried surviving spouse or minor children ... as long as they continue to occupy the home as a residence.",
+          "source": "https://dor.georgia.gov/property-tax-homestead-exemptions"
+        }
+      },
+      "effectiveChanges": "TY2026: assessed exemption rises to $126,526 (FY2026 SAH max) from $121,812; DOR page not yet updated. HB 52 (surviving spouse keeps exemption on 'any future homestead' from 1/1/2027 subject to a Nov 2026 referendum) DID NOT pass: Senate adopted substitute LC 59 0472S 50-0 on 4/2/2026, House never agreed before adjournment, measure not on the Nov 3, 2026 ballot. No change for TY2027 from this bill.",
+      "note": "Ballotpedia: 'The state House did not take an action on the bill before the state legislature adjourned. As such, the measure was not placed on the 2026 ballot.' legis.ga.gov status page is JS-only and its API returns 401, so the final status rests on Ballotpedia/VoteGA plus the absence of a referendum act."
+    },
+    {
+      "name": "Killed In Action Survivor Exemption",
+      "status": "confirmed",
+      "fields": {
+        "exemptionValue": {
+          "current": 316315,
+          "correct": 316315,
+          "quote": "in the amount of $60,000 plus an additional sum ... The amount for 2025 is $121,812.",
+          "source": "https://dor.georgia.gov/property-tax-homestead-exemptions",
+          "note": "DOR lists the same $121,812 (2025) for 48-5-52.1 as for 48-5-48; 2026 figure tracks the same VA index, so $126,526 assessed / $316,315 market-equivalent. DOR describes eligibility as spouse of a member 'who was killed in or died as a result of any war or armed conflict', broader than KIA only."
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": false,
+          "quote": "The surviving spouse remains eligible as long as they do not remarry.",
+          "source": "https://dor.georgia.gov/property-tax-homestead-exemptions",
+          "note": "Program IS the surviving-spouse benefit; should not be credited to a living rated veteran's home."
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Not a rated-veteran benefit; exclude from a living veteran's savings estimate."
+    },
+    {
+      "name": "Vehicle Ad Valorem",
+      "status": "confirmed",
+      "fields": {
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "quote": "100 percent totally and permanently service-connected disabled and veterans rated unemployable ... The exemption is granted on ONLY one vehicle the veteran owns.",
+          "source": "https://veterans.georgia.gov/tax-exemptions"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": null,
+          "quote": "GDVS can only verify the status of a veteran's or surviving spouse's eligibility",
+          "source": "https://veterans.georgia.gov/tax-exemptions",
+          "note": "unverified: GDVS vehicle section does not state a surviving-spouse continuation; O.C.G.A. 48-5-478 text could not be opened (O.C.G.A. is on LexisNexis)."
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Vehicle TAVT exemption, not real property; should not be added to a home's property-tax savings."
+    },
+    {
+      "name": "Sales Tax Vehicle",
+      "status": "confirmed",
+      "fields": {
+        "ratingRequired": {
+          "current": null,
+          "correct": null,
+          "quote": "A disabled veteran who receives a VA grant for the purchase and special adapting of a vehicle is exempt from paying the state sales tax on the vehicle (original grant only).",
+          "source": "https://veterans.georgia.gov/tax-exemptions"
+        }
+      },
+      "effectiveChanges": null,
+      "note": "One-time sales tax exemption tied to a VA adaptive-vehicle grant (O.C.G.A. 48-8-3(30)); not a property tax item and nonRecurring."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "confirmed",
+    "correct": "",
+    "source": ""
+  },
+  "sources": [
+    { "url": "https://dor.georgia.gov/property-tax-homestead-exemptions", "title": "Georgia DOR: Property Tax Homestead Exemptions ($121,812 for 2025; KIA spouse $60,000 + VA index)", "status": 200 },
+    { "url": "https://veterans.georgia.gov/disabled-veteran-homestead-tax-exemption", "title": "GDVS: Disabled Veteran Homestead Tax Exemption (eligibility incl. IU and statutory awards)", "status": 200 },
+    { "url": "https://veterans.georgia.gov/tax-exemptions", "title": "GDVS: Tax Exemptions (vehicle ad valorem, vehicle sales tax)", "status": 200 },
+    { "url": "https://www.legis.ga.gov/api/legislation/document/20252026/247743", "title": "HB 52 Senate Finance substitute LC 59 0472S (reproduces O.C.G.A. 48-5-48(b) amount formula; referendum Nov 2026; effective 1/1/2027 if approved)", "status": 200 },
+    { "url": "https://www.va.gov/housing-assistance/disability-housing-grants/", "title": "VA: Disability housing grants (SAH maximum $126,526 for FY 2026)", "status": 200 },
+    { "url": "https://ballotpedia.org/Georgia_Homestead_Exemption_for_Surviving_Spouses_and_Children_of_Disabled_Veterans_Measure_(2026)", "title": "Ballotpedia: HB 52 measure, 'Not on the ballot' (House did not act on Senate substitute)", "status": 200 },
+    { "url": "https://www.votega.org/2026-09-16-2026-georgia-ballot-measures-explained/", "title": "VoteGA: 2026 Georgia ballot measures explained (HB 52 not on ballot; three constitutional amendments are)", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat", "title": "Census ACS 2024 5-year summary file, table B25103 median real estate taxes paid", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25077.dat", "title": "Census ACS 2024 5-year summary file, table B25077 median value owner-occupied units", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "All four Georgia rows hold; the TY2026 assessed exemption is $126,526 by statute (VA FY2026 SAH max) though DOR still publishes only the 2025 $121,812 figure, and the details text needs the update. HB 52 (spouse exemption follows to a new home, 2027) died when the House never agreed to the Senate substitute, so there is no Nov 2026 referendum; effective tax rate in file (0.92%) runs 0.15 pp above ACS 2024 (0.77%)."
+}

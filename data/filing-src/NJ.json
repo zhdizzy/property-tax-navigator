@@ -1,0 +1,103 @@
+{
+  "state": "NJ",
+  "officeType": "municipal tax assessor",
+  "officeTypeNote": "File with the tax assessor of the municipality where the home is located, not the county. The $250 Veteran Deduction (Form V.S.S.) may alternatively be filed with the municipal tax collector during the tax year itself. Denials are appealed to the County Board of Taxation.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://www.nj.gov/treasury/taxation/pdf/lpt/assessor/statewidebycounty.pdf",
+    "label": "NJ Division of Taxation: Tax Assessor Hours by County (every municipality's assessor, phone, email, office hours)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.nj.gov/treasury/taxation/lpt/localtax.shtml",
+    "note": "Single statewide PDF grouped by county; no per-county URLs. A by-last-name version is at https://www.nj.gov/treasury/taxation/pdf/lpt/TaxAssessorHoursbyLastName.pdf and the County Boards of Taxation directory (for appeals) at https://www.nj.gov/treasury/taxation/pdf/lpt/CountyBoardsofTaxation.pdf."
+  },
+  "forms": [
+    {
+      "programRef": "Disabled Veterans' Full Property Tax Exemption",
+      "name": "Claim for Property Tax Exemption on Dwelling of Disabled Veteran or Surviving Spouse/Civil Union or Domestic Partner of Disabled Veteran or Serviceperson",
+      "number": "D.V.S.S.E.",
+      "url": "https://www.nj.gov/treasury/taxation/pdf/other_forms/lpt/dvsse.pdf",
+      "revision": "March 2025",
+      "filedWith": "municipal tax assessor"
+    },
+    {
+      "programRef": "Veteran Deduction",
+      "name": "Property Tax Deduction Claim by Veteran or Surviving Spouse/Civil Union or Domestic Partner of Veteran or Serviceperson",
+      "number": "V.S.S.",
+      "url": "https://www.nj.gov/treasury/taxation/pdf/other_forms/lpt/vss.pdf",
+      "revision": "Nov 2020",
+      "filedWith": "municipal tax assessor (Oct 1 to Dec 31 of the pretax year) or municipal tax collector (Jan 1 to Dec 31 of the tax year)"
+    },
+    {
+      "programRef": "Active Service Deferment",
+      "name": "Active Military Service Property Tax Deferment Application",
+      "number": "AMSPTD",
+      "url": "https://www.nj.gov/treasury/taxation/pdf/other_forms/amsptd.pdf",
+      "revision": null,
+      "filedWith": "municipal tax collector (per Division of Taxation deferment page)"
+    },
+    {
+      "programRef": "*",
+      "name": "Petition of Appeal (appeal of assessor's denial to County Board of Taxation)",
+      "number": "A-1",
+      "url": "https://www.nj.gov/treasury/taxation/pdf/other_forms/lpt/petappl.pdf",
+      "revision": null,
+      "filedWith": "County Board of Taxation"
+    }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "date": null,
+    "text": "D.V.S.S.E.: \"File this form with the municipal tax assessor at any time during the tax year.\" V.S.S. ($250 deduction): file with the assessor Oct 1 to Dec 31 of the pretax year or with the collector Jan 1 to Dec 31 of the tax year; eligibility is measured as of Oct 1 of the pretax year."
+  },
+  "effective": "Full exemption is prorated for the remainder of the tax year from the date title to the dwelling was acquired (form example: home acquired Feb 14, claim filed June 1, 321/365 of the assessment exempt). N.J.S.A. 54:4-3.31: \"Such exemptions shall be allowed and prorated by the assessor for the remainder of any taxable year.\"",
+  "lateFiling": "n/a for the full exemption (no annual deadline). The $250 deduction for a given tax year must be claimed by Dec 31 of that tax year with the collector.",
+  "retroactivity": {
+    "type": "local-option",
+    "years": null,
+    "text": "N.J.S.A. 54:4-3.32: \"the governing body of each municipality, at its discretion, may return all taxes collected on property which would have been exempt had proper claim in writing been made.\" Refunds are by municipal resolution and discretionary; Division of Taxation notes retroactive refunds cannot predate Jan 16, 2018 (P.L.2017, c.367) unless the veteran had qualifying wartime/conflict-zone service, and cannot predate Dec 4, 2020 for veterans with only peacetime service."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "No annual re-file for the full exemption. Form: \"Claimants must inform the assessor of any change in status which may affect their continued entitlement to the exemption.\" The $250 deduction is likewise carried forward once allowed (same notice-of-change duty on Form V.S.S.)."
+  },
+  "ratingChange": "The exemption requires VA certification of 100% permanent and total service-connected disability (including 100% unemployability rated permanent). A drop below that must be reported to the assessor as a change in status; a veteran newly reaching 100% P&T files D.V.S.S.E. at any time and the exemption begins once all prerequisites are met.",
+  "move": "Exemption attaches to the dwelling owned and occupied as the principal residence. On a move within NJ, file a new D.V.S.S.E. with the new municipality's assessor; proration runs from the date title to the new home is acquired.",
+  "onlineFiling": {
+    "available": null,
+    "text": "No statewide e-file. The Division of Taxation form is a PDF filed with the municipal assessor; acceptance by mail, email or in person varies by municipality."
+  },
+  "documents": [
+    "DD-214 (Certificate of Release or Discharge) showing honorable discharge from active duty",
+    "VA certification of 100% permanent and total service-connected disability (rating decision or benefits summary letter)",
+    "Proof of ownership: deed, executory contract, proprietary lease (co-op/mutual housing) or probated will",
+    "Proof of NJ domicile: NJ driver's license or vehicle registration, voter registration, or NJ resident tax return",
+    "Surviving spouse: veteran's death certificate and marriage/civil union/domestic partnership certificate (or Military Notification of Death if the serviceperson died on active duty)"
+  ],
+  "survivingSpouse": "Un-remarried surviving spouse, civil union or domestic partner qualifies if the veteran was a NJ resident at death who met the service and disability requirements (or died on active duty), and the survivor owns and occupies the dwelling as principal residence and is NJ domiciled. Remarriage or a new civil union/domestic partnership ends eligibility. Same Form D.V.S.S.E.",
+  "appeal": "Appeal an unfavorable assessor determination to the County Board of Taxation on Form A-1 \"annually on or before April 1 or on or before January 15 for residents of Burlington, Monmouth or Gloucester counties only.\"",
+  "statute": "N.J.S.A. 54:4-3.30 et seq. (full exemption; P.L.1948, c.259 as amended by P.L.2017, c.367 and P.L.2019, c.413); N.J.S.A. 54:4-3.32 (refunds); N.J.S.A. 54:4-8.10 et seq. ($250 deduction); N.J.A.C. 18:28-1.1 et seq.",
+  "sourceUrls": [
+    { "url": "https://www.nj.gov/treasury/taxation/lpt/lpt-disabledvet.shtml", "title": "NJ Division of Taxation: 100% Disabled Veteran Property Tax Exemption", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.nj.gov/treasury/taxation/pdf/other_forms/lpt/dvsse.pdf", "title": "Form D.V.S.S.E. with General Guidelines (Rev. March 2025)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.nj.gov/treasury/taxation/pdf/other_forms/lpt/vss.pdf", "title": "Form V.S.S. $250 Veteran Property Tax Deduction (Rev. Nov 2020)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.nj.gov/treasury/taxation/pdf/lpt/vetproptaxprogrambrochure.pdf", "title": "NJ Property Tax Programs for Veterans brochure (Rev. 05/2022)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.nj.gov/treasury/taxation/lpt/lpt-activemilitary.shtml", "title": "NJ Division of Taxation: Active Military Service Property Tax Deferment", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.nj.gov/treasury/taxation/pdf/other_forms/amsptd.pdf", "title": "Form AMSPTD Active Military Service Property Tax Deferment", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.nj.gov/treasury/taxation/pdf/other_forms/lpt/petappl.pdf", "title": "Form A-1 Petition of Appeal", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://pub.njleg.gov/bills/2018/PL19/413_.HTM", "title": "P.L.2019, c.413 (amending N.J.S.A. 54:4-3.30 and 54:4-3.31)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.nj.gov/treasury/taxation/pdf/lpt/assessor/statewidebycounty.pdf", "title": "NJ Tax Assessor Hours by County (statewide assessor directory)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.nj.gov/treasury/taxation/pdf/lpt/CountyBoardsofTaxation.pdf", "title": "NJ County Boards of Taxation directory", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.nj.gov/treasury/taxation/lpt/localtax.shtml", "title": "NJ Division of Taxation: Local Property Tax (links to assessor directories)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "Veteran Deduction.survivingSpouse",
+      "issue": "Row says survivingSpouse false, but the details text and Form V.S.S. both allow the un-remarried surviving spouse/civil union/domestic partner to claim the $250 deduction.",
+      "source": "https://www.nj.gov/treasury/taxation/pdf/other_forms/lpt/vss.pdf"
+    }
+  ],
+  "notes": "AMSPTD form revision date and filing office were not read from the PDF itself (link verified 200 only); the brochure lists it under the deferment program. The 54:4-3.32 refund text is quoted from the Division of Taxation's D.V.S.S.E. guidelines; the official NJ Legislature statute database (lis.njleg.state.nj.us) did not render for direct verification. Pending bills S313/A941 (2024-25) to make refunds mandatory had not been enacted as of the sources found."
+}

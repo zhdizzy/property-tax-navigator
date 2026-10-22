@@ -1,0 +1,76 @@
+{
+  "state": "DE",
+  "officeType": "county assessment / billing office (receiver of taxes and county treasurer)",
+  "officeTypeNote": "The state Disabled Veterans School Property Tax Credit is a state-funded credit against the school portion of the county tax bill, but the application is filed with the COUNTY, not the Department of Finance: 14 Del. C. 1917(d)(2)a says the application is 'received by the receiver of taxes or county treasurer no later than April 30.' The DVP-TAX form routes it to New Castle County Assessment Division (87 Read's Way, New Castle; 302-395-5520), Kent County Levy Court Assessment Division (555 Bay Road, Dover; 302-744-2401), or Sussex County Billing Services (P.O. Box 589, Georgetown; 302-855-7871). Each county's own county-tax credit for disabled veterans is a separate county application.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://finance.delaware.gov/disabled-veterans/",
+    "label": "Delaware Department of Finance: Disabled Veterans School Tax Credit (lists all three county offices)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://finance.delaware.gov/disabled-veterans/disabled-veterans-school-tax-credit-faq/",
+    "note": "Only three counties; the state page and the form list each county's office, phone and website. County sites newcastlede.gov and kentcountyde.gov returned 403 to automated checks (bot protection); sussexcountyde.gov returned 200."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Application for Disabled Veteran School Property Tax Credit",
+      "number": "DVP-TAX",
+      "url": "https://financefiles.delaware.gov/docs/DVP-TAX_2021-01_2PaperInteractive.pdf",
+      "revision": "Revision 20211026",
+      "filedWith": "county assessment / billing office (receiver of taxes and county treasurer)",
+      "note": "Form says: 'STATEWIDE DEADLINE IS APRIL 30TH FOR THE UPCOMING TAX YEAR. THIS CREDIT IS NOT PERMITTED RETROACTIVELY. SEND YOUR APPLICATION TO THE APPROPRIATE COUNTY.' Separate application per co-owner unless married/civil-union tenants by the entirety."
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "04-30",
+    "text": "14 Del. C. 1917(d)(2)a: application must be 'received by the receiver of taxes or county treasurer no later than April 30 immediately before the beginning of that tax year.' Department of Finance: 'Applications for the upcoming tax year are due April 30th.' County tax years begin July 1."
+  },
+  "effective": "The tax year (beginning July 1) following the April 30 deadline; the county applies the credit to that year's school tax on the bill. No proration.",
+  "lateFiling": "None for ordinary late filers; a late application is held for the following tax year. 14 Del. C. 1917(d)(3): the Secretary of Finance may waive the application date only for an individual who is 'financially disabled' (unable to manage financial affairs because of a medically determinable impairment expected to last 12 months or result in death) and has no spouse, guardian or other person authorized to act for them.",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "DVP-TAX form: 'THIS CREDIT IS NOT PERMITTED RETROACTIVELY.' No refund of prior years."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "Department of Finance FAQ: 'Once you qualify for the program, you do not need to re-apply each year.' Two conditions keep it alive: 14 Del. C. 1917(d)(4)d withdraws the credit for the next tax year from any taxpayer who 'has not paid in full such taxpayer's property tax bill by the end of the tax year' (restored after full payment of taxes and penalties), and the claimant 'must notify the receiver of taxes or county treasurer of any modification in status' that ends eligibility; the form adds a 60-day notice window for rating changes."
+  },
+  "ratingChange": "Eligibility is VA '100% disability compensation due to a service-connected, permanent and total disability based on individual unemployability or a 100% disability rating' (1917(d)(1)c.1). The form: 'I must notify the appropriate county of any change in disability rating within 60 days of such change.' A reduction ends the credit; a newly rated veteran files by the next April 30. (HB 349, 153rd GA, proposing an 80% threshold was in House Appropriations as of April 2026 and is not law.)",
+  "move": "Not transferable. Form: 'If you purchase a new principal residence or otherwise change your principal residence to another home that you own, a new application must be completed and filed. Applications may be filed in advance of relocation.' Still subject to the April 30 deadline for the new property.",
+  "onlineFiling": {
+    "available": false,
+    "text": "Paper/fillable PDF mailed or delivered to the county office listed on the form; no state online filing was found."
+  },
+  "documents": [
+    "Current copy of the VA determination of disability rating status (100% P&T or 100% rate for individual unemployability) for each applicant",
+    "Copy of Delaware driver's license or official Delaware state ID for each applicant",
+    "Social Security number (used by the Department of Finance to verify the three-consecutive-year Delaware domicile)",
+    "Date Delaware legal domicile began (at least 3 consecutive years; 12 months' absence is prima facie abandonment, 1917(d)(1)c.2)",
+    "If the home is in an irrevocable trust: names of beneficial owners and a copy of the complete trust agreement",
+    "Property tax bill must be paid in full each year to keep the credit"
+  ],
+  "survivingSpouse": "14 Del. C. 1917(d)(1)d (added by 83 Del. Laws c. 529, approved Nov 2, 2022): the credit continues for a surviving spouse if the veteran was claiming the credit at death, the spouse was a titled owner before the death, has not remarried, and owns and occupies the home as principal residence; it ends on remarriage, loss of title, or loss of occupancy. The Secretary of Finance must maintain the credit 'without disruption' for an eligible spouse notwithstanding the April 30 deadline (1917(d)(2)b).",
+  "appeal": "Not addressed on the state page or form. Denials are handled by the county office that received the application; no statutory appeal path for this credit was located.",
+  "statute": "14 Del. C. 1917(d) (83 Del. Laws c. 124, HB 214, signed Aug 10, 2021; amended by 83 Del. Laws c. 529, 2022)",
+  "sourceUrls": [
+    { "url": "https://finance.delaware.gov/disabled-veterans/", "title": "Delaware Department of Finance: Disabled Veterans School Tax Credit", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://finance.delaware.gov/disabled-veterans/disabled-veterans-school-tax-credit-faq/", "title": "Department of Finance FAQ", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://financefiles.delaware.gov/docs/DVP-TAX_2021-01_2PaperInteractive.pdf", "title": "Form DVP-TAX (Revision 20211026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://delcode.delaware.gov/title14/title14.pdf", "title": "Delaware Code Title 14 (PDF), sec. 1917(d)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://legis.delaware.gov/SessionLaws/Chapter?id=41596", "title": "83 Del. Laws c. 529 (SB 241, 2022) amending 14 Del. C. 1917(d) (surviving spouse)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://sussexcountyde.gov/sites/default/files/ordinances/o2811.pdf", "title": "Sussex County Ordinance 2811 (county disabled-veteran credit keyed to 14 Del. C. 1917)", "status": 200, "checked": "2026-10-21", "primary": false }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "propertyTax.programs[0].survivingSpouse",
+      "issue": "Currently false. 14 Del. C. 1917(d)(1)d (2022 amendment) continues the state school tax credit for a qualifying unremarried surviving spouse who was a titled owner.",
+      "source": "https://legis.delaware.gov/SessionLaws/Chapter?id=41596"
+    }
+  ],
+  "notes": "delcode.delaware.gov HTML pages are JS-rendered (empty to curl); the statute was read from the Title 14 PDF on the same site (1.9 MB, pdftotext). The county-level credits (New Castle 2022 ordinance, Kent, Sussex Ord. 2811) named in the dollar layer have their own county applications and were not researched here beyond confirming the Sussex ordinance exists; New Castle and Kent county sites block automated checks. The DVP-TAX form has not been revised since Oct 2021 and does not yet mention the 2022 surviving-spouse provision."
+}

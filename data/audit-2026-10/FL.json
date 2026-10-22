@@ -1,0 +1,90 @@
+{
+  "state": "FL",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0089,
+    "sourceValue": 0.0078,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Tax Foundation 2024 effective rate (ACS 5-year) 0.78%; the file's 0.89% is 0.11 points high, just outside tolerance. The ACS figure is depressed by Save Our Homes caps on long-held homesteads; a recent buyer pays closer to the millage on just value, so 0.89% is not unreasonable for a new purchaser, but it is not the ACS statewide figure."
+  },
+  "programs": [
+    {
+      "name": "Homestead Exemption",
+      "status": "confirmed",
+      "fields": {
+        "type": { "current": "full", "correct": "full", "quote": "Any real estate that is owned and used as a homestead by a veteran who was honorably discharged with a service-connected total and permanent disability ... is exempt from taxation", "source": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.081.html" },
+        "ptRequired": { "current": null, "correct": true, "quote": "a letter from the United States Government or United States Department of Veterans Affairs ... certifying that the veteran is totally and permanently disabled", "source": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.081.html" },
+        "survivingSpouse": { "current": true, "correct": true, "quote": "the exemption carries over to the surviving spouse who holds title and permanently resides on the homestead, until they remarry or sell ... not to exceed the amount granted from the most recent ad valorem tax roll", "source": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.081.html" },
+        "wheelchair / SAH alternative (196.091)": { "current": "confined to a wheelchair and received a VA SAH grant", "correct": "confirmed", "quote": "receiving or has received special pecuniary assistance due to disability requiring specially adapted housing ... required to use a wheelchair for his or her transportation", "source": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.091.html" }
+      },
+      "effectiveChanges": "No change for TY2026 or TY2027. The 2026 Florida Statutes show 196.081 last amended by ch. 2023-157. HB 393 / SB 450 (2026), which would have removed or raised to 120% the cap on the exemption a surviving spouse may carry to a new home, both died 3/13/2026. 196.081(1)(b) prorated refund for a new homestead acquired Jan 1 to Nov 1 and 196.081(5) four-year early-application refund remain in force.",
+      "note": "Add ptRequired: true. 196.081 also covers the surviving spouse of a veteran who died on active duty (subsection 4) and of a first responder (subsection 6); the file carries the former as its own row."
+    },
+    {
+      "name": "Wartime Veteran 10%+ Disability Discount",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": { "current": 5000, "correct": 5000, "quote": "Property to the value of $5,000 of every ex-servicemember ... is exempt from taxation", "source": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.24.html" },
+        "wartimeRequired": { "current": true, "correct": "ambiguous; statute reads 'by misfortune or while serving during a period of wartime service', so a 10%+ service-connected rating from any era is accepted in practice (DR-501 box: 'Veteran disabled 10% or more')", "quote": "who has been disabled to a degree of 10 percent or more by misfortune or while serving during a period of wartime service as defined in s. 1.01(14)", "source": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.24.html" },
+        "details ('combat-related')": { "current": "Veterans with a combat-related disability rating of 10%+", "correct": "No combat-related requirement; 10%+ disability, honorable discharge, Florida residency", "quote": "who was discharged under honorable conditions, and who has been disabled to a degree of 10 percent or more", "source": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.24.html" },
+        "survivingSpouse": { "current": false, "correct": true, "quote": "the exemption extends to the ex-servicemember's surviving spouse if the spouse has not remarried", "source": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.24.html" }
+      },
+      "effectiveChanges": "None for TY2026/TY2027; $5,000 is a fixed statutory amount, not indexed.",
+      "note": "The `summary` already says combat-related is not required; the `details` string still says it is and should be fixed. survivingSpouse should be true. Consider wartimeRequired: false or a note, since the 'misfortune' clause makes wartime service one of two alternative routes."
+    },
+    {
+      "name": "Disabled Veteran Age 65+ Property Tax Discount",
+      "status": "corrected",
+      "fields": {
+        "minAge": { "current": null, "correct": 65, "quote": "Each veteran who is age 65 or older and is partially or totally permanently disabled shall receive a discount", "source": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.082.html" },
+        "fraction": { "current": "discount on assessed value equal to disability rating %", "correct": "discount equals the combat-related permanent service-connected disability percentage, applied to the ad valorem tax after other exemptions", "quote": "The discount shall be in a percentage equal to the percentage of the veteran's permanent, service-connected disability", "source": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.082.html" },
+        "combat-related requirement": { "current": "combat-related SC disability", "correct": "confirmed", "quote": "The disability must be combat-related, and the veteran must have been honorably discharged.", "source": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.082.html" },
+        "survivingSpouse": { "current": false, "correct": true, "quote": "the discount continues for the spouse 'until such time as he or she remarries' ... a discount up to the amount from the most recent tax roll can move to a new primary residence", "source": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.082.html" }
+      },
+      "effectiveChanges": "None for TY2026/TY2027. Documentation (VA letter with percentage and combat-related evidence, DD-214, proof of age as of January 1) due to the property appraiser by March 1; DR-501DV.",
+      "note": "Add minAge: 65 and survivingSpouse: true. The discount applies only to the combat-related portion of the rating, so a 70% veteran with a 30% combat-related component gets a 30% discount."
+    },
+    {
+      "name": "Deployed Military Property Tax Exemption",
+      "status": "confirmed",
+      "fields": {
+        "type": { "current": "partial", "correct": "partial; not creditable to a rated veteran's home (active-duty deployment benefit)", "quote": "deployed during the preceding calendar year on active duty outside the continental United States, Alaska, or Hawaii in support of any of the following military operations", "source": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.173.html" }
+      },
+      "effectiveChanges": "Ch. 2026-239 (HB 7031-E) secs. 18-20: adds operations (including Operation Atlantic Resolve/Atlantic Sentry and Multinational Force and Observers duty), first applies to the 2026 property tax roll, and sets a one-time August 1, 2026 filing deadline for the 2026 roll ('the deadline for an applicant to file an application ... under s. 196.173, Florida Statutes, is August 1, 2026'); 2023-2025 deployment days may be counted for the 2026 exemption for the newly added operations.",
+      "note": "Keep as law but tag it so the dollar layer does not credit it to a rated veteran's home: it is computed from the prior-year days deployed of a current servicemember (including Guard/Reserve), not from a disability rating."
+    },
+    {
+      "name": "Surviving Spouse of KIA Service Member",
+      "status": "confirmed",
+      "fields": {
+        "nonVeteran": { "current": null, "correct": true, "quote": "the veteran died from service-connected causes while on active duty and a federal letter certifies the exemption ... the surviving spouse's production of the letter is 'prima facie evidence' of entitlement", "source": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.081.html" }
+      },
+      "effectiveChanges": null,
+      "note": "196.081(4). Full exemption for the spouse while unmarried, holding title and residing; transfers to a new home capped at the most recent roll amount. Not creditable to a living rated veteran's own home; recommend nonVeteran: true."
+    }
+  ],
+  "missingPrograms": [
+    { "name": "Totally and permanently disabled persons exemption (s. 196.101)", "what": "Full homestead exemption for any quadriplegic, and for paraplegic, hemiplegic, wheelchair-dependent or legally blind persons subject to a gross household income limit (indexed); available to veterans and non-veterans alike and can exceed 196.081 where the veteran is not rated 100% P&T. Statute page returned 200 but its current income limit was not read in this pass.", "statute": "F.S. 196.101", "source": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.101.html" }
+  ],
+  "jurisdictionNote": {
+    "status": "corrected",
+    "correct": "Pending ballot measure: CS/HJR 1-F 'Save our Homes from Excessive Property Taxes' (2026F special session; passed House 75-26 and Senate 30-9 on June 2, 2026; filed with the Secretary of State June 16, 2026) is on the November 3, 2026 ballot and needs 60% approval. It would raise the homestead exemption from non-school levies and change assessment caps effective January 1, 2027. It does not change the disabled-veteran exemptions but would lower the base bill against which the 196.24 $5,000 and 196.082 discounts are measured.",
+    "source": "https://www.flsenate.gov/Session/Bill/2026F/1F"
+  },
+  "sources": [
+    { "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.081.html", "title": "F.S. 196.081 (2026) Exemption for certain permanently and totally disabled veterans and surviving spouses", "status": 200 },
+    { "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.082.html", "title": "F.S. 196.082 (2026) Discounts for disabled veterans 65+; surviving spouse carryover", "status": 200 },
+    { "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.091.html", "title": "F.S. 196.091 (2026) Exemption for disabled veterans confined to wheelchairs", "status": 200 },
+    { "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.24.html", "title": "F.S. 196.24 (2026) Exemption for disabled ex-servicemember or surviving spouse ($5,000)", "status": 200 },
+    { "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.173.html", "title": "F.S. 196.173 (2026) Exemption for deployed servicemembers", "status": 200 },
+    { "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.101.html", "title": "F.S. 196.101 (2026) Exemption for totally and permanently disabled persons", "status": 200 },
+    { "url": "http://laws.flrules.org/2026/239", "title": "Laws of Florida ch. 2026-239 (HB 7031-E), secs. 18-20 amending s. 196.173", "status": 200 },
+    { "url": "https://www.flsenate.gov/Session/Bill/2026F/1F", "title": "CS/HJR 1-F (2026F) Save our Homes from Excessive Property Taxes: bill history", "status": 200 },
+    { "url": "https://floridarevenue.com/property/Documents/dr501.pdf", "title": "Florida DOR Form DR-501 (R. 01/26)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 effective rates)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "Florida's five rows are all still law and the dollar figures hold ($5,000 under 196.24, rating-percentage discount under 196.082, full exemption at T&P under 196.081/196.091), but three rows understate surviving-spouse rights (196.24, 196.082 and the T&P row's cap language), the 196.24 details wrongly say 'combat-related', and the 65+ row lacks minAge. The deployed-servicemember and KIA-spouse rows should be tagged as not creditable to a rated veteran's home, and the November 3, 2026 Amendment (CS/HJR 1-F) is a pending change to the base homestead exemption rather than to the veteran programs."
+}

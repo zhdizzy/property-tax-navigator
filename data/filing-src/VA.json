@@ -1,0 +1,68 @@
+{
+  "state": "VA",
+  "officeType": "commissioner of the revenue of the county, city, or town (or other officer designated by the local governing body)",
+  "officeTypeNote": "Virginia real estate tax is purely local. Va. Code 58.1-3219.6(A): the veteran files an affidavit or written statement \"with the commissioner of the revenue of the county, city, or town or such other officer as may be designated by the governing body\" on \"forms to be supplied by the county, city, or town.\" A few localities route it through a Director of Finance or Real Estate Assessor instead (e.g. Virginia Beach's Real Estate Assessor). The treasurer collects the bill and issues any refund; the Department of Taxation and the Department of Veterans Services do not take applications.",
+  "officeLocator": {
+    "tier": 2,
+    "url": null,
+    "label": "Virginia Department of Taxation (no state-published directory of local commissioners of the revenue was verified)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.tax.virginia.gov/",
+    "note": "Search '<locality> commissioner of the revenue' for the local office. The Virginia Department of Veterans Services program page (dvs.virginia.gov/benefits/real-estate-tax-exemption) and its 2023 administrative guidelines PDF exist but returned HTTP 403 to automated requests on 2026-10-21, so they are not listed as verified links. tax.virginia.gov/localities is a resource hub for local officials, not a public directory."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Affidavit or written statement for the disabled veteran real property tax exemption (locality-supplied form; names vary, e.g. 'Application for Real Estate Tax Exemption for Disabled Veterans')",
+      "number": null,
+      "url": null,
+      "revision": null,
+      "filedWith": "commissioner of the revenue (or designated officer) of the locality where the principal residence sits"
+    }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "date": null,
+    "text": "No statutory filing deadline. Va. Code 58.1-3219.6 sets only a processing clock for pre-purchase applications: the locality must \"process the application and provide the veteran with a letter stating whether the application is approved or denied\" within 20 business days. Localities may set administrative cutoffs for the current bill, so apply as soon as the VA rating letter is in hand."
+  },
+  "effective": "Va. Code 58.1-3219.5(A): for a rating issued after January 1, 2011 where the veteran already owns and occupies the qualifying residence, \"the exemption for him under this section begins on the date of such rating.\" Taxes paid for the period after the rating date are refunded, but \"no locality shall be liable for any interest on any refund due to the veteran for taxes paid prior to the veteran's filing\" of the affidavit. A pre-purchase approval takes effect \"only after the veteran becomes the owner of the property.\"",
+  "lateFiling": "No late-filing penalty; the exemption runs from the VA rating date (or ownership date) once the affidavit is filed, with refunds of over-collected tax but no interest. Whether a locality will refund more than the current year depends on its own refund ordinance and Va. Code 58.1-3990 (three-year refund window for erroneous assessments); not verified for this program.",
+  "retroactivity": {
+    "type": "local-option",
+    "years": null,
+    "text": "Statute makes the exemption effective from the VA rating date and contemplates refunds for taxes paid before filing (58.1-3219.5(A), interest-free), but sets no explicit lookback limit; localities generally apply their refund authority under Va. Code 58.1-3990 (three years). Confirm with the commissioner of the revenue and treasurer."
+  },
+  "renewal": {
+    "type": "on-change",
+    "text": "Va. Code 58.1-3219.6(A): the veteran \"shall be required to refile the information required by this section only if the veteran's principal place of residence changes.\" No annual re-certification. Surviving spouses likewise refile only on a change of residence."
+  },
+  "ratingChange": "Eligibility is binary: VA rating of \"100 percent service-connected, permanent, and total disability\" (58.1-3219.5(A)). A 100% rating that is not permanent and total does not qualify; once the P&T determination issues, the exemption begins on the date of that rating. Loss of the P&T rating ends eligibility; the locality may require documentation.",
+  "move": "File a new affidavit with the new locality's commissioner of the revenue (refiling is required when \"the veteran's principal place of residence changes,\" 58.1-3219.6(A)). Qualifying veterans may apply BEFORE purchasing with the purchase agreement attached and receive an approval letter stating the exemption amount within 20 business days (58.1-3219.6(B)). Surviving spouses keep the exemption \"without any restriction on the spouse's moving to a different principal place of residence\" (58.1-3219.5(B)).",
+  "onlineFiling": {
+    "available": null,
+    "text": "Varies by locality; many commissioners of the revenue post a PDF application and accept it by mail, email, or in person; a few large localities offer online portals."
+  },
+  "documents": [
+    "Locality's affidavit/written statement naming the veteran and any spouse occupying the property, stating whether the property is jointly owned by married co-owners, and certifying it is the veteran's principal place of residence (58.1-3219.6(A))",
+    "Documentation from the U.S. Department of Veterans Affairs showing a 100 percent service-connected, permanent, and total disability rating (VA benefit summary / rating decision letter), 58.1-3219.6(A)",
+    "Proof of ownership (deed) and residence (photo ID); trust-held property: trust document showing the veteran or veteran and spouse hold the power of revocation or a life estate (58.1-3219.5(D))",
+    "Pre-purchase applicants: real estate purchase agreement (58.1-3219.6(B))",
+    "Surviving spouse: veteran's death certificate and \"documentation that the veteran's death occurred on or after January 1, 2011\" (58.1-3219.6(A)); proof of no remarriage"
+  ],
+  "survivingSpouse": "Va. Code 58.1-3219.5(B): the surviving spouse of a qualifying veteran who died on or after January 1, 2011 keeps the exemption so long as the spouse \"does not remarry\" and occupies the home as a principal residence; the exemption moves with the spouse to a new principal residence. Separate exemption under 58.1-3219.9 for the surviving spouse of a service member who died in the line of duty (DoD Line of Duty determination): dwelling fully exempt up to the locality's average assessed value, excess taxable; affidavit under 58.1-3219.10.",
+  "appeal": "Denials are local determinations; Va. Code 58.1-3980 et seq. (application to the commissioner of the revenue for correction, then circuit court under 58.1-3984) is the general route. Not verified for this program specifically.",
+  "statute": "Va. Code 58.1-3219.5 (exemption), 58.1-3219.6 (application and refiling), 58.1-3219.9 and 58.1-3219.10 (surviving spouse of member who died in the line of duty); Va. Const. art. X, sec. 6-A",
+  "sourceUrls": [
+    { "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3219.5/", "title": "Va. Code 58.1-3219.5 Exemption from taxes on property for disabled veterans", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3219.6/", "title": "Va. Code 58.1-3219.6 Application for exemption", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3219.9/", "title": "Va. Code 58.1-3219.9 Exemption for surviving spouses of members of the armed forces killed in action / died in the line of duty", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.virginia.gov/", "title": "Virginia Department of Taxation (fallback; real estate tax is administered locally)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    { "field": "programs[0].ratingRequired / summary", "note": "Virginia requires a 100 percent service-connected PERMANENT AND TOTAL rating (58.1-3219.5(A)); a non-permanent 100% rating does not qualify. Consider ptRequired: true. Also the 'up to 1 acre' statement is a floor: localities that exempt or defer more than one acre for the elderly/disabled must exempt the same acreage for veterans (58.1-3219.5(C)).", "source": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3219.5/" }
+  ],
+  "notes": "Web search budget was exhausted before a state-published directory of commissioners of the revenue could be located; the Department of Veterans Services site (program page and 2023 guidelines PDF) blocks automated requests with HTTP 403, so it is referenced in notes only. Office, form, deadline, renewal, and refund rules all come directly from the statute. Statute history for 58.1-3219.6: 2011 cc. 769, 840; 2020 c. 900; 2023 c. 659."
+}

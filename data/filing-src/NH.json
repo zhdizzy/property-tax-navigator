@@ -1,0 +1,89 @@
+{
+  "state": "NH",
+  "officeType": "municipal assessing officials (selectmen or assessors of the city/town)",
+  "officeTypeNote": "Every NH veteran credit and the RSA 72:36-a exemption is granted by the city or town, and the OPTIONAL amounts (RSA 72:28 $51-$750; RSA 72:35 $701-$5,000; RSA 72:29-a $701-$2,000, rising to $2,500 on April 1, 2027) exist only where the municipality has adopted them under RSA 72:27-a. File the state Form PA-29 with the assessing officials of the town where the home is; the Department of Revenue Administration (DRA) only approves the form and does not take applications.",
+  "officeLocator": {
+    "tier": 2,
+    "url": null,
+    "label": "NH Department of Revenue Administration: Municipal and Property Division",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.revenue.nh.gov/about-dra/municipal-and-property-division",
+    "note": "DRA publishes no public directory of town assessing offices. Direct the user to '<town> assessing department' on the municipal website. DRA Municipal and Property Division (603) 230-5950. revenue.nh.gov returns 403 to HEAD/plain curl; pages verified 200 with a browser-header GET."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Permanent Application for Property Tax Credits/Exemptions (covers RSA 72:28 Veterans' Credit, 72:28-b All Veterans' Credit, 72:35 Service-Connected Total Disability Credit, 72:29-a Surviving Spouse Credit, 72:28-c Combat Service Credit, 72:36-a Certain Disabled Veterans Exemption)",
+      "number": "Form PA-29",
+      "url": "https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/documents/pa-29-permanent-appl-property-tax-credit-form.pdf",
+      "revision": "Version 5, 11/2025",
+      "filedWith": "municipal assessing officials of the city/town where the credit or exemption is requested"
+    },
+    {
+      "programRef": "*",
+      "name": "Statement of Qualification (required in addition to PA-29 when the home is held in a trust or life estate)",
+      "number": "Form PA-33",
+      "url": "https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/documents/pa-33-statement-qualification-form.pdf",
+      "revision": null,
+      "filedWith": "municipal assessing officials, with the PA-29"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "04-15",
+    "text": "RSA 72:33, I: filed 'with the selectmen or assessors, by April 15 preceding the setting of the tax rate, a permanent application'. PA-29: 'DUE DATE APRIL 15 PRECEDING THE SETTING OF THE TAX RATE'. Applicant must be qualified as of April 1 of the year claimed; filing date is hand-delivery, USPS postmark, or overnight-carrier receipt."
+  },
+  "effective": "Credit (or the 72:36-a exemption) is applied to the tax year beginning April 1 in which the applicant was qualified on April 1 and filed by April 15; it appears on that year's bill (final bills issued in the fall, due no earlier than December 1). Assessing officials must mail their decision by July 1 'prior to the date of notice of tax'; failure to respond is a denial (RSA 72:34). NH residency for at least one year preceding April 1 is required for the veterans' credits (PA-29 Step 4).",
+  "lateFiling": "Discretionary only. RSA 72:33, I-a: if the applicant 'was prevented by accident, mistake, or misfortune from filing ... on or before April 15', the officials 'may receive the application at a later date and grant an exemption or credit for that year; but no such application shall be received or exemption or credit granted after the local tax rate has been approved for that year.' (Tax rates are typically set in October-November by DRA.)",
+  "retroactivity": {
+    "type": "none",
+    "years": 0,
+    "text": "No refunds for prior tax years; the credit begins with the year of a timely (or accepted late) application. The only look-back is an appeal of a denial for that same year (RSA 72:34-a), which can order an abatement 'if a tax has been assessed'."
+  },
+  "renewal": {
+    "type": "on-change",
+    "text": "The PA-29 is a 'permanent application': RSA 72:33, II makes one filing 'sufficient' for subsequent years 'so long as the applicant does not change residence'. A move requires 'an amended permanent application on or before December 1 immediately following the change of residence'. Towns may request supporting documents under RSA 72:34, II and may re-verify eligibility; the credit is tied to the principal place of abode."
+  },
+  "ratingChange": "The RSA 72:35 credit requires VA certification of a 'total and permanent service-connected disability' (or double amputee/paraplegic from service connection); the certification 'shall be accepted as conclusive' absent specific contrary evidence (72:35, III). A veteran newly rated 100% T&P files a new PA-29 (checking 72:35) by April 15 of the year the higher credit is first claimed; a veteran whose rating falls below T&P reverts to the RSA 72:28 wartime credit (if eligible) and should notify the assessors. Only one of 72:28/72:28-b/72:35 is paid per veteran; 72:36-a (full exemption) additionally requires a VA SAH/SHA specially adapted home (or one bought with proceeds of selling such a home, per the 2024/2026 amendments).",
+  "move": "File an amended permanent PA-29 with the NEW town's assessing officials 'on or before December 1 immediately following the change of residence' (RSA 72:33, II). The credit applies only to the principal place of abode; the optional amount in the new town may differ. The former town's credit ends with the move.",
+  "onlineFiling": {
+    "available": null,
+    "text": "PA-29 is a fillable PDF signed in ink and delivered, mailed or sent by overnight carrier to the town; some cities (e.g., Dover, Keene, Enfield) post their own intake instructions or portals. No statewide e-file."
+  },
+  "documents": [
+    "Form PA-29 (Version 5, 11/2025), Step 2 Veterans' Tax Credits and Exemption, signed in ink by all property owners; Form PA-33 if the home is in a trust or life estate",
+    "DD-214 or other proof of qualifying service and discharge (RSA 21:50 definition of veteran; dates of entry and discharge are entered on the form)",
+    "RSA 72:35 credit: certification from the U.S. Department of Veterans Affairs of a total and permanent service-connected disability (or proof of service-connected double amputation/paraplegia); conclusive unless rebutted (72:35, III)",
+    "RSA 72:36-a exemption: proof of the VA SAH/SHA grant and of 100% P&T (38 CFR 3.340), double amputee/paraplegic, or 5/200 blindness from service connection; 'satisfactory proof of such service connection disability is furnished to the assessors'",
+    "Proof of NH residency for at least one year preceding April 1 of the year claimed (PA-29 Step 4; RSA 72:28/72:35 'resident of this state')",
+    "Surviving spouse: proof of the veteran's death/service and that the spouse has not remarried (RSA 72:29, V definition)"
+  ],
+  "survivingSpouse": "RSA 72:35 extends the credit to 'the surviving spouse of such a person' occupying the home as principal place of abode; RSA 72:28 wartime credit likewise covers the spouse or surviving spouse. RSA 72:29-a gives the surviving spouse of a person killed or who died on active duty $700 standard (optional $701-$2,000; $2,500 cap from April 1, 2027), on real and personal property whether residential or not, in the town of residence. RSA 72:36-a full exemption also passes to the surviving spouse as defined in RSA 72:29, V. All claimed on the same PA-29.",
+  "appeal": "RSA 72:34-a: if the selectmen/assessors refuse the credit or exemption, 'the applicant may appeal in writing, on or before September 1 following the date of notice of tax under RSA 72:1-d, to the board of tax and land appeals or the superior court'. PA-29 instructions: BTLA, 107 Pleasant Street, Concord NH 03301, (603) 271-2578, www.nh.gov/btla; specify 'EXEMPTION APPEAL'. A late or missing town response does not extend the appeal period.",
+  "statute": "RSA 72:28 (standard/optional veterans' credit), 72:28-b (all veterans' credit), 72:29-a (surviving spouse credit), 72:35 (total and permanent service-connected disability credit, $700 / $701-$5,000), 72:36-a (certain disabled veterans exemption), 72:33 (permanent application, April 15, late filing I-a, amended application on move), 72:34 (decision by July 1), 72:34-a (appeal by Sept 1 to BTLA or superior court), 72:27-a (local adoption of optional amounts)",
+  "sourceUrls": [
+    { "url": "https://gc.nh.gov/rsa/html/V/72/72-33.htm", "title": "RSA 72:33 Application for Exemption or Tax Credit (NH General Court)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://gc.nh.gov/rsa/html/V/72/72-34.htm", "title": "RSA 72:34 Investigation of Application and Decision by Town Officials", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://gc.nh.gov/rsa/html/V/72/72-34-a.htm", "title": "RSA 72:34-a Appeal From Refusal to Grant Exemption, Deferral, or Tax Credit", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://gc.nh.gov/rsa/html/V/72/72-35.htm", "title": "RSA 72:35 Tax Credit for Service-Connected Total Disability", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://gc.nh.gov/rsa/html/V/72/72-28.htm", "title": "RSA 72:28 Standard and Optional Veterans' Tax Credit", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://gc.nh.gov/rsa/html/V/72/72-28-b.htm", "title": "RSA 72:28-b All Veterans' Tax Credit", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://gc.nh.gov/rsa/html/V/72/72-29-a.htm", "title": "RSA 72:29-a Surviving Spouse (tax credit)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://gc.nh.gov/rsa/html/V/72/72-36-a.htm", "title": "RSA 72:36-a Certain Disabled Veterans (exemption)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/documents/pa-29-permanent-appl-property-tax-credit-form.pdf", "title": "NH DRA Form PA-29 Permanent Application for Property Tax Credits/Exemptions (Version 5, 11/2025)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/documents/pa-33-statement-qualification-form.pdf", "title": "NH DRA Form PA-33 Statement of Qualification", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.revenue.nh.gov/resource-center/current-year-forms-and-instructions", "title": "NH DRA Current Year Forms and Instructions (Municipal & Property forms)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.revenue.nh.gov/about-dra/municipal-and-property-division", "title": "NH DRA Municipal and Property Division", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.revenue.nh.gov/taxes-glance/property-tax", "title": "NH DRA Property Tax at a Glance", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    "The RSA 72:29-a surviving-spouse row says 'up to $2,000'; the statute now carries a second paragraph II effective April 1, 2027 raising the optional cap to $2,500 (2026, 96:3).",
+    "The 'Tax Credit for Total and Permanent Disabled Veterans' `details` string still says '$701-$4,000'; the statute and PA-29 say $701 up to $5,000 (summary already correct).",
+    "RSA 72:36-a was amended (2024, 13:1; 2026, 252:3, eff. Aug 31, 2026) to include homes 'acquired using proceeds from the sale of' an SAH/SHA home; the row summary should mention this.",
+    "The RSA 72:35 row has survivingSpouse: false but the statute expressly includes 'the surviving spouse of such a person'."
+  ],
+  "notes": "All revenue.nh.gov URLs return 403 to curl HEAD and plain GET (bot wall) but 200 with browser headers; the PA-29 PDF was downloaded and read in full. RSA 72:28 text was truncated in extraction (only paragraphs I-II read); the optional range is confirmed on the PA-29. No official state directory of municipal assessing offices exists on revenue.nh.gov, hence tier 2."
+}

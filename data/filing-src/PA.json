@@ -1,0 +1,85 @@
+{
+  "state": "PA",
+  "officeType": "County Director of Veterans Affairs (application intake) -> State Veterans' Commission (need determination) -> county Board for the Assessment and Revision of Taxes (grants exemption)",
+  "officeTypeNote": "Pennsylvania's exemption is need-based and state-adjudicated. The veteran starts with the County Director of Veterans Affairs in the county of residence, who assembles the package. Form MA-VA 41 is date-stamped by the county Tax Assessment Office; the notarized MA-VA 40 (or 40ss for a surviving spouse) with the MA-VA 41 receipt goes to the State Veterans' Commission (DMVA Bureau of Veterans Programs), which certifies need; the county assessment board then grants the exemption and notifies all taxing bodies and collectors (51 Pa.C.S. § 8903).",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://www.pa.gov/agencies/dmva/pennsylvania-veterans/county-director-of-veterans-affairs",
+    "label": "PA DMVA: County Directors of Veterans Affairs (all 67 counties; links the MA-VA 400 directory PDF)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.pa.gov/agencies/dmva/pennsylvania-veterans/pa-vetconnect/state-veterans-programs/financial-assistance/retx",
+    "note": "Current directory PDF: https://www.pa.gov/content/dam/copapwp-pagov/en/dmva/documents/veteransaffairs/documents/ma-va%20400%20county%20directors%2005.01.2026.pdf (County Directors of Veterans Affairs as of 05/01/2026). Program questions: Ra-retx@pa.gov."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Application for Determination of Need (veteran) / MA-VA 40ss (surviving spouse); notarized",
+      "number": "MA-VA 40 / MA-VA 40ss",
+      "url": null,
+      "revision": null,
+      "filedWith": "State Veterans' Commission via the County Director of Veterans Affairs"
+    },
+    {
+      "programRef": "*",
+      "name": "Information Needed by County Tax Assessment Office for Disabled Veterans Property Tax Exemption (three copies; assessment office returns two date-stamped)",
+      "number": "MA-VA 41",
+      "url": null,
+      "revision": null,
+      "filedWith": "county Tax Assessment Office"
+    },
+    {
+      "programRef": "*",
+      "name": "Periodic review form sent by the Commission to current recipients",
+      "number": "MA-VA 40A",
+      "url": null,
+      "revision": null,
+      "filedWith": "State Veterans' Commission"
+    }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "date": null,
+    "text": "No filing deadline; apply any time through the County Director of Veterans Affairs. 43 Pa. Code § 5.25: the exemption covers taxes becoming due on or after the filing date, and \"Applications filed after the commencement of a period shall apply to the next tax period.\" Filing early in the year (before county/municipal and school taxes are assessed) matters."
+  },
+  "effective": "43 Pa. Code § 5.25(a): exemption applies to real property taxes that become due on or after the date the applicant first files a written request; \"Requests are considered filed on the date received\" even if documentation is incomplete; taxes \"become due on the date when the taxes are assessed,\" not the billing date, so a request filed after a tax period began applies to the next period.",
+  "lateFiling": "n/a (rolling). Statute enacted 1988 retroactive to Jan 1, 1988; no provision for filing for earlier periods.",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "No refunds for periods before the written request was received (43 Pa. Code § 5.25)."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "No annual refiling, but the Commission re-examines need: 51 Pa.C.S. § 8904(3) requires review \"at least once every five years\"; 43 Pa. Code § 5.26 describes review at two-year intervals by letter with Form MA-VA 40A, evaluated like the original application, with findings forwarded to the taxing body. Recipients must report changes in income, ownership or residence."
+  },
+  "ratingChange": "Qualifying disability is a VA rating of total or 100% permanent service-connected disability (DMVA accepts TDIU rated permanent), or service-connected blindness, paraplegia, or loss of two or more limbs, plus wartime service (campaign/expeditionary medal qualifies). A veteran newly rated 100% P&T applies through the County Director; a rating reduction below the standard ends eligibility and must be reported. Previously denied applicants (on need) are encouraged to reapply.",
+  "move": "The exemption is tied to the principal dwelling owned solely, with spouse, or as tenants by the entireties; on moving, a new MA-VA 41 is filed with the new county's assessment office and the Commission re-certifies for the new parcel. Not spelled out in the regulation beyond the ownership/occupancy requirement; confirm with the County Director.",
+  "onlineFiling": {
+    "available": false,
+    "text": "Paper, notarized application assembled by the County Director of Veterans Affairs; DMVA warns not to email completed applications or personal information."
+  },
+  "documents": [
+    "DD-214 or discharge documents showing honorable (or under honorable conditions) discharge and wartime service or qualifying campaign/expeditionary medal",
+    "VA rating decision/benefits letter showing 100% permanent service-connected disability (or TDIU permanent), or VA documentation of service-connected blindness, paraplegia, or loss of two or more limbs; VA Form 3288 (release of information) is commonly required by county directors",
+    "Recorded deed showing ownership solely, with spouse, or as tenants by the entireties, and proof the dwelling is the principal residence",
+    "Income documentation for all household members and verified household expenses (Commission need test; presumptive need at gross annual income of $114,637 or less, effective Jan 1, 2025)",
+    "Surviving spouse (MA-VA 40ss): marriage certificate and veteran's death certificate; must be unmarried"
+  ],
+  "survivingSpouse": "51 Pa.C.S. § 8902(b): the exemption \"shall be extended to the unmarried surviving spouse upon the death of the eligible veteran provided that the State Veterans' Commission determines that such spouse is in need of an exemption.\" Files Form MA-VA 40ss through the County Director.",
+  "appeal": "43 Pa. Code § 5.27 (reconsideration and appeal); 51 Pa.C.S. § 8905: \"Any applicant aggrieved by a determination of the commission may appeal that determination to the Adjutant General under the provisions of Title 2 (relating to administrative law and procedure).\"",
+  "statute": "51 Pa.C.S. §§ 8901-8906 (Disabled Veterans' Real Estate Tax Exemption; § 8904 need standard, $75,000 base indexed biennially to CPI and published in the Pennsylvania Bulletin); 43 Pa. Code §§ 5.21-5.27; Pa. Const. art. VIII, § 2(c)",
+  "sourceUrls": [
+    { "url": "https://www.pa.gov/agencies/dmva/pennsylvania-veterans/pa-vetconnect/state-veterans-programs/financial-assistance/retx", "title": "PA DMVA: Real Estate Tax Exemption (Disabled Veterans) program page, presumptive need $114,637 eff. Jan 1, 2025", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=HTM&ttl=51&div=0&chapter=89", "title": "51 Pa.C.S. Chapter 89 Disabled Veterans' Real Estate Tax Exemption (PA General Assembly)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/043/chapter5/subchapCtoc.html&d=reduce", "title": "43 Pa. Code Chapter 5 Subchapter C: Disabled Veterans' Real Estate Tax Exemption Program (table of contents)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/043/chapter5/s5.24.html&d=reduce", "title": "43 Pa. Code § 5.24 Processing applications (MA-VA 40/40ss/41)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/043/chapter5/s5.25.html&d=reduce", "title": "43 Pa. Code § 5.25 Effective date of exemption", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.pa.gov/agencies/dmva/pennsylvania-veterans/county-director-of-veterans-affairs", "title": "PA DMVA: County Director of Veterans Affairs", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dmva/documents/veteransaffairs/documents/ma-va%20400%20county%20directors%2005.01.2026.pdf", "title": "MA-VA 400 County Directors and Staff directory (05/01/2026)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [],
+  "notes": "Form PDFs for MA-VA 40, 40ss, 41 and 40A are not posted on pa.gov (DMVA directs applicants to the County Director), so form URLs are null; county sites host older copies (e.g. a 2007 MA-VA 40). The regulation's two-year review interval (§ 5.26) differs from the statute's at-least-every-five-years minimum (§ 8904(3)) and from county pages saying every 5 years; recorded as stated. A State Veterans' Commission-discussed constitutional amendment to broaden eligibility (Dec 2025 minutes) was not researched. The statute's chapter 89 PDF link on palegis.us was downloaded and read but is not listed because its URL was not independently HEAD-verified."
+}

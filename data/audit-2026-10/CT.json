@@ -1,0 +1,54 @@
+{
+  "state": "CT",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.019,
+    "sourceValue": 0.0154,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Tax Foundation 2024 effective rate (ACS 5-year) 1.54%; the file's 1.90% is 0.36 points high. Connecticut taxes 70% of market value, so a 1.9% figure would imply a ~27 mill average on assessed value; the ACS-based 1.54% of market value is the comparable statewide figure."
+  },
+  "programs": [
+    {
+      "name": "Homestead Exemption",
+      "status": "corrected",
+      "fields": {
+        "ptRequired": { "current": true, "correct": true, "quote": "has been determined by the United States Department of Veterans Affairs to be permanently and totally disabled based on a service-connected disability rating of one hundred per cent", "source": "https://www.cga.ct.gov/2026/sup/chap_203.htm" },
+        "fraction (dwelling only, 0.75)": { "current": 0.75, "correct": "0.75 default is defensible; town may add up to 2 acres of the lot or cap at median assessed value", "quote": "exempt up to two acres of the lot the eligible dwelling sits on, and ... limit the total exemption amount to the median assessed value of residential real property in the municipality", "source": "https://prdext2.cga.ct.gov/2025/rpt/pdf/2025-R-0131.pdf" },
+        "survivingSpouse": { "current": false, "correct": true, "quote": "while such spouse remains a widow or widower ... shall be so exempt as that to which such resident was or would have been entitled at the time of such resident's death.", "source": "https://www.cga.ct.gov/2025/ACT/PA/PDF/2025PA-00168-R00HB-07287-PA.PDF" },
+        "TDIU ('plain TDIU does not qualify')": { "current": "A plain (non-P&T) TDIU award does not qualify", "correct": "Does not qualify for 12-81(83), but PA 25-168 sec. 240 lets a town adopt an equivalent exemption for service-connected TDIU veterans", "quote": "Any municipality, upon approval by its legislative body, may provide that, in lieu of the exemption prescribed under subdivision (20) ... a service-connected total disability based on individual unemployability shall be entitled to an exemption from property tax", "source": "https://www.cga.ct.gov/2025/ACT/PA/PDF/2025PA-00168-R00HB-07287-PA.PDF" },
+        "scope (commercial/rental portion)": { "current": "not stated", "correct": "fractional share owned; excludes any portion used commercially or producing rental income", "quote": "\"dwelling\" does not include any portion of the unit or structure used by such resident for commercial purposes or from which such resident derives any rental income.", "source": "https://www.cga.ct.gov/2025/ACT/PA/PDF/2025PA-00168-R00HB-07287-PA.PDF" }
+      },
+      "effectiveChanges": "PA 25-168 secs. 233-241 (effective Oct 1, 2025, assessment years from the Oct 1, 2025 grand list, i.e. July 2026 bills onward): (1) the claim is now filed annually on OPM Form D-2 by January 1 (12-93); (2) municipal options to exempt up to two acres of the lot (E), to extend the exemption to spouses of P&T veterans who died before Oct 1, 2024 (F), and to cap the exemption at the town's median assessed residential value (G); (3) a municipal-option exemption for service-connected TDIU veterans (sec. 240) and for surviving spouses of service members killed in action (sec. 241). No further change found for TY2027.",
+      "note": "The OLR reading supports the file's dwelling-only (0.75) default: the statute exempts the dwelling, and the two-acre lot exemption is something a town must vote to add. Where a town has adopted (E), the exemption effectively reaches the whole lot (model ~100%); where it has adopted (G), cap at median assessed value. survivingSpouse should be true (12-81(83)(B)). The `details` text 'effective Oct 1, 2024, reflected in 2026 tax bills' is loose: the Oct 1, 2024 grand list was billed July 2025; the PA 25-168 version governs July 2026 bills. The cga.ct.gov 2026 supplement (chap_203.htm) now carries the amended text and is the cleaner citation."
+    },
+    {
+      "name": "Standard Disabled Veteran Exemption (CGS 12-81(20))",
+      "status": "corrected",
+      "fields": {
+        "tiers": { "current": "$1,500 / $2,000 / $2,500 / $3,000 assessed (market-equivalent 2,143 / 2,857 / 3,571 / 4,286)", "correct": "$2,000 (10-25%) / $2,500 (>25-50%) / $3,000 (>50-75%) / $3,500 (>75% or age 65+) assessed; market-equivalent at 70% = 2,857 / 3,571 / 4,286 / 5,000", "quote": "two thousand dollars in any case in which such rating is between ten per cent and twenty-five per cent; two thousand five hundred dollars ... more than twenty-five per cent but not more than fifty per cent; three thousand dollars ... more than fifty per cent but not more than seventy-five per cent; and three thousand five hundred dollars in any case in which such resident has attained sixty-five years of age or such rating is more than seventy-five per cent", "source": "https://www.cga.ct.gov/2026/sup/chap_203.htm" },
+        "ratingRequired": { "current": 10, "correct": 10, "quote": "has a disability rating as determined by the United States Department of Veterans Affairs amounting to ten per cent or more of total disability", "source": "https://www.cga.ct.gov/2026/sup/chap_203.htm" },
+        "exclusion of P&T 100% and TDIU": { "current": "not stated", "correct": "P&T 100% veterans are excluded (they take 12-81(83)); TDIU veterans are excluded only in towns that adopted the sec. 240 option", "quote": "other than a determination of (I) being permanently and totally disabled based on a service-connected disability rating of one hundred per cent, or (II) in any municipality providing the exemption under section 240 of this act, having a service-connected total disability based on individual unemployability", "source": "https://www.cga.ct.gov/2025/ACT/PA/PDF/2025PA-00168-R00HB-07287-PA.PDF" },
+        "survivingSpouse": { "current": false, "correct": true, "quote": "property belonging to, or held in trust for, such deceased veteran's surviving spouse, while such spouse remains a widow or widower ... shall be exempt in the same aggregate amount", "source": "https://www.cga.ct.gov/2025/ACT/PA/PDF/2025PA-00168-R00HB-07287-PA.PDF" },
+        "minAge (65+ gets top tier)": { "current": null, "correct": "65 for the $3,500 tier regardless of rating", "quote": "three thousand five hundred dollars in any case in which such resident has attained sixty-five years of age", "source": "https://www.cga.ct.gov/2026/sup/chap_203.htm" }
+      },
+      "effectiveChanges": "PA 25-168 sec. 234 raised every tier by $500 of assessed value effective for assessment years commencing on or after October 1, 2025 (July 2026 bills). The file's $1,500-$3,000 schedule is the pre-October 2025 law.",
+      "note": "Top tier in the file (76-100) should become >75% through 99%, since P&T 100% veterans are routed to 12-81(83); a 100% schedular (non-P&T) veteran still takes this tier. The 65+ rule means any disabled veteran aged 65 or older gets $3,500 assessed regardless of rating."
+    }
+  ],
+  "missingPrograms": [
+    { "name": "Municipal-option TDIU exemption (PA 25-168 sec. 240)", "what": "In towns that adopt it, a service-connected TDIU veteran gets the same dwelling (or one vehicle) exemption as the 12-81(83) P&T exemption, in lieu of 12-81(20); same 2-acre and median-value options; surviving spouse continues.", "statute": "PA 25-168 sec. 240 (eff. Oct 1, 2025)", "source": "https://www.cga.ct.gov/2025/ACT/PA/PDF/2025PA-00168-R00HB-07287-PA.PDF" },
+    { "name": "Additional veterans' exemption (CGS 12-81g)", "what": "Income-tested add-on that doubles the 12-81(20) exemption (or triples at the state-set lower income threshold); OLR notes 100% disabled veterans have a lower income threshold ($18,000 unmarried / $21,000 married) and others use the higher OPM-set amount.", "statute": "CGS 12-81g", "source": "https://prdext2.cga.ct.gov/2025/rpt/pdf/2025-R-0131.pdf" },
+    { "name": "Municipal-option 10% assessed-value exemption (CGS 12-81kk)", "what": "Towns may exempt 10% of the assessed value of a veteran's primary residence for veterans with federal AGI up to $50,100; not subject to the one-exemption limit.", "statute": "CGS 12-81kk", "source": "https://prdext2.cga.ct.gov/2025/rpt/pdf/2025-R-0131.pdf" }
+  ],
+  "jurisdictionNote": { "status": "confirmed", "correct": "", "source": "" },
+  "sources": [
+    { "url": "https://www.cga.ct.gov/2026/sup/chap_203.htm", "title": "CGS Chapter 203, 2026 Supplement (12-81(20) and (83) as amended by PA 25-168)", "status": 200 },
+    { "url": "https://www.cga.ct.gov/2025/ACT/PA/PDF/2025PA-00168-R00HB-07287-PA.PDF", "title": "Public Act 25-168, secs. 233-241", "status": 200 },
+    { "url": "https://prdext2.cga.ct.gov/2025/rpt/pdf/2025-R-0131.pdf", "title": "OLR Report 2025-R-0131, Property Tax Exemptions for Veterans (Sept 10, 2025)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 effective rates)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "Connecticut's P&T dwelling exemption is confirmed (dwelling-only default with town options for two acres of lot or a median-value cap, surviving spouse continues, TDIU now qualifies only in towns adopting PA 25-168 sec. 240), but the 12-81(20) tiers in the file are the pre-October 2025 schedule and should rise to $2,000/$2,500/$3,000/$3,500 assessed ($2,857-$5,000 market-equivalent). Both rows need survivingSpouse: true, and the 1.90% effective rate is 0.36 points above the 2024 ACS-based figure."
+}

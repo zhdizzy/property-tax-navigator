@@ -1,0 +1,80 @@
+{
+  "state": "MT",
+  "officeType": "Montana Department of Revenue field office (state-run; counties do not take the application)",
+  "officeTypeNote": "Property assessment in Montana is a STATE function. Form MDV goes to the Department of Revenue's local field office for the county (or is filed electronically with DOR), not to the county treasurer or a county assessor. The county treasurer only bills the reduced tax.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://revenue.mt.gov/contact/field-office-locations/",
+    "label": "Montana Department of Revenue: Field Office Locations (by county, with email, phone, hours, address)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://revenue.mt.gov/property/property-tax-help/mdv",
+    "note": "Single page listing every county with the field office that serves it (e.g., Beaverhead County: Butte Field Office, DORPADButte@mt.gov, 406-691-7111). No per-county URLs. DOR call center (406) 444-6900."
+  },
+  "forms": [
+    {
+      "programRef": "Montana Disabled Veteran Assistance Program (MDV)",
+      "name": "Montana Disabled Veteran Property Tax Relief Application for Tax Year 2027",
+      "number": "Form MDV",
+      "url": "https://revenue.mt.gov/files/Forms/Montana_Disabled_Veteran_Property_Tax_Relief_Application_Form_MDV.pdf",
+      "revision": "V1 9/2026 (Tax Year 2027)",
+      "filedWith": "local Department of Revenue field office (postmarked or hand-delivered by April 15), or filed electronically"
+    },
+    {
+      "programRef": "Montana Disabled Veteran Assistance Program (MDV)",
+      "name": "Electronic Montana Disabled Veteran Property Tax Relief Application (DOR SmartFile)",
+      "number": "MDV (electronic)",
+      "url": "https://montanadorefile.tylerhost.net/MontanaDORsmartfile/Filing/FilingType/Info/MT_DOR_PROD_MDV",
+      "revision": null,
+      "filedWith": "Montana Department of Revenue (online)"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "04-15",
+    "text": "Form MDV: 'Your application must be postmarked or hand delivered by April 15.' DOR: 'Apply by April 15. If you miss the deadline, we will consider your application for the following year.' (In 2024 DOR extended the deadline to June 1 for hardship cases; that was a one-time extension.)"
+  },
+  "effective": "Applies to the tax year for which the April 15 application is filed (the current Form MDV is for Tax Year 2027, using 2025 federal AGI). The reduced rate (100%, 80%, 70% or 50% of the normal residential tax rate, by income tier) is applied to the primary residence (home + one-acre homesite on agricultural/forest land) for that year's bills.",
+  "lateFiling": "Not accepted for the current year: 'If you miss the deadline, apply as soon as possible to ensure you are included in the program's verification process for the following tax year.'",
+  "retroactivity": {
+    "type": "none",
+    "years": 0,
+    "text": "No refunds for prior tax years; a late application is simply rolled to the following tax year (Form MDV Part II; DOR MDV page)."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "One application. Form MDV: 'Once you have applied for the program, we will notify you each year whether you qualify. You will be included in the program's annual income verification as long as you own the home and it is your primary residence.' 'You only need to report your income one time.' DOR re-verifies income each year and mails a status letter; a temporary VA rating triggers periodic requests for an updated VA letter."
+  },
+  "ratingChange": "Eligibility requires a VA letter 'verifying that you are currently rated or paid at the 100% disabled rate for a service-connected disability' (so TDIU paid at the 100% rate qualifies). 'If your disability rating is temporary, we will periodically ask you to provide an updated verification letter from the VA.' A veteran whose rating drops below the 100% rate no longer qualifies; notify the field office. (A 2025 bill, SB 274, proposed extending MDV to 60-90% ratings; not confirmed enacted.)",
+  "move": "The benefit attaches to the primary residence you own (or are buying under contract for deed) and occupy at least 7 months of the year. A new home requires a new Form MDV with the field office for the new county by April 15; the annual verification continues only 'as long as you own the home and it is your primary residence.'",
+  "onlineFiling": {
+    "available": true,
+    "text": "DOR offers an electronic Montana Disabled Veteran Property Tax Relief Application through its SmartFile portal, or the paper Form MDV returned to the local field office."
+  },
+  "documents": [
+    "Form MDV signed by the owner (and spouse); SSN and date of birth for applicant and spouse",
+    "Letter from the U.S. Department of Veterans Affairs showing the veteran is currently rated or paid at the 100% disabled rate for a service-connected disability (the VA will not send it to DOR directly)",
+    "Income: nothing extra if you filed a 2025 Montana income tax return; otherwise a copy of the 2025 federal return (new residents) or Social Security statement / other income documentation if income is only Social Security, VA benefits, or other nontaxable sources",
+    "Mobile/manufactured home: geocode of the land if you own it",
+    "Unmarried surviving spouse: VA letter verifying the deceased spouse was rated or paid at the 100% disabled rate at death, died on active duty, or died of a service-connected disability"
+  ],
+  "survivingSpouse": "Unmarried surviving spouses of veterans who were rated or paid at the 100% disabled rate at death (or who died on active duty or from a service-connected disability) qualify under their own income table (TY2027: 100% reduction up to $41,379 FAGI, 50% up to $56,276) and sign Part V of Form MDV; they must remain unmarried.",
+  "appeal": null,
+  "statute": "MCA 15-6-302, 15-6-311 (MDV reduced tax rate), 15-6-312; ARM 42.19.401, 42.19.402",
+  "sourceUrls": [
+    { "url": "https://revenue.mt.gov/property/property-tax-help/mdv", "title": "Montana DOR: Montana Disabled Veteran Assistance Program (MDV), Tax Year 2027 tables and how to apply", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.mt.gov/files/Forms/Montana_Disabled_Veteran_Property_Tax_Relief_Application_Form_MDV.pdf", "title": "Form MDV, Montana Disabled Veteran Property Tax Relief Application for Tax Year 2027 (V1 9/2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.mt.gov/contact/field-office-locations/", "title": "Montana DOR Field Office Locations", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://montanadorefile.tylerhost.net/MontanaDORsmartfile/Filing/FilingType/Info/MT_DOR_PROD_MDV", "title": "Electronic Montana Disabled Veteran Property Tax Relief Application (DOR SmartFile)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://archive.legmt.gov/bills/mca/title_0150/chapter_0060/part_0030/section_0110/0150-0060-0030-0110.html", "title": "MCA 15-6-311 (Montana Legislature, redirects to mca.legmt.gov)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://archive.legmt.gov/bills/mca/title_0150/chapter_0060/part_0030/section_0020/0150-0060-0030-0020.html", "title": "MCA 15-6-302 (Montana Legislature, redirects to mca.legmt.gov)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    "Income ceilings are now one year newer than the dollar row: for Tax Year 2027 (applications due April 15, 2027, using 2025 FAGI) DOR lists single $64,551 / married-HoH $74,482 / surviving spouse $56,276, with the 100% tier at single $49,654 / MFJ-HoH $59,584 / spouse $41,379, 80% to $54,620/$64,551/$46,344, 70% to $59,584/$69,515/$51,310. The row's TY2026 figures ($62,598/$72,229/$54,573) are the prior year.",
+    "The row says '100% SC rating required'; the form's test is 'currently rated OR PAID at the 100% disabled rate', so TDIU qualifies in Montana.",
+    "The 'Veterans Clubhouse' and 'Incompetent Veteran Trust' rows are organizational/guardian exemptions with no veteran-homeowner filing; they are out of scope for the filing layer."
+  ],
+  "notes": "The electronic-application URL returns 405 to HEAD and 200 to GET. MCA statute links resolve via archive.legmt.gov to mca.legmt.gov (200) but the statute text was not read; program rules were taken from the DOR form and page. The statute does not describe an appeal route and DOR's page is silent, so `appeal` is null (DOR's general informal review process would apply)."
+}

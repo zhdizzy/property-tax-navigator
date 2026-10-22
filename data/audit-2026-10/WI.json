@@ -1,0 +1,75 @@
+{
+  "propertyTaxRate": {
+    "fileValue": 0.0135,
+    "sourceValue": 0.0132,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation Table 2 (ACS 2024): Wisconsin 1.32% (1.39% in 2023). Within tolerance."
+  },
+  "programs": [
+    {
+      "name": "Veterans and Surviving Spouses Property Tax Credit",
+      "status": "corrected",
+      "fields": {
+        "ratingRequired": {
+          "current": 100,
+          "correct": "100% schedular (38 USC 1114/1134) OR 100% IU; permanence not required",
+          "quote": "Has either a service-connected disability rating of 100 percent under 38 USC 1114 or 1134 or a 100 percent disability rating based on individual unemployability.",
+          "source": "https://docs.legis.wisconsin.gov/statutes/statutes/71/i/07/6e",
+          "note": "details text 'Requires 100% T&P or IU rating' should read '100% schedular or IU'; WDVA denies the credit for any year the rating lapsed for part of the year."
+        },
+        "residency": {
+          "current": "entered active duty as a WI resident OR lived in WI 5 consecutive years after entering active duty, and currently reside in WI",
+          "correct": true,
+          "quote": "Was a resident of this state at the time of entry into that active service or had been a resident of this state for any consecutive 5-year period after entry into that service.",
+          "source": "https://docs.legis.wisconsin.gov/statutes/statutes/71/i/07/6e",
+          "note": "Plus 71.07(6e)(a)3.c: 'Is currently a resident of this state for purposes of receiving veterans benefits under ch. 45.' Resolves the brief's lead; the file's wording is right."
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "and following the individual's death, his or her spouse began to receive, and continues to receive, dependency and indemnity compensation, as defined in 38 USC 101 (14).",
+          "source": "https://docs.legis.wisconsin.gov/statutes/statutes/71/i/07/6e",
+          "note": "Four survivor routes: died on active duty as WI resident; WI resident at death with 100%/IU; Guard/reserve line-of-duty training death; or spouse receives DIC. Unremarried only."
+        },
+        "type / acreage": {
+          "current": "full; up to 1 acre",
+          "correct": "refundable credit for 100% of property taxes on the principal dwelling and up to one acre",
+          "quote": "\"Property taxes\" means real property taxes, exclusive of special assessments, delinquent interest, and charges for service, paid by a claimant ... on the eligible veteran's or unremarried surviving spouse's principal dwelling in this state during the taxable year",
+          "source": "https://docs.legis.wisconsin.gov/statutes/statutes/71/i/07/6e"
+        }
+      },
+      "effectiveChanges": "None for TY2026/TY2027. Claimed on Form 1 (line 34 for 2025) within four years of the return's unextended due date (71.75(2)); one-time WDVA certification (Form WDVA 2097).",
+      "note": "Income-tax credit mechanics: pay the bill, claim 100% back on the Wisconsin return."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "confirmed",
+    "correct": "",
+    "source": "https://docs.legis.wisconsin.gov/statutes/statutes/71/i/07/6e",
+    "note": "Accurate. Optional precision: 'entered service as a WI resident or any consecutive 5-year WI residency after entry, and currently a WI resident'."
+  },
+  "sources": [
+    {
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/71/i/07/6e",
+      "title": "Wis. Stat. 71.07(6e) Veterans and surviving spouses property tax credit",
+      "status": 200
+    },
+    {
+      "url": "https://www.revenue.wi.gov/Pages/FAQS/ise-vetprop.aspx",
+      "title": "Wisconsin DOR FAQ: Veterans and Surviving Spouses Property Tax Credit (filing-layer source, live-checked 2026-10-21)",
+      "status": 200
+    },
+    {
+      "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+      "title": "Tax Foundation, Property Taxes by State and County, 2026 (Table 2: Property Taxes Paid as a Percentage of Owner-Occupied Housing Value, 2024, Census ACS)",
+      "status": 200
+    }
+  ],
+  "confidence": "verified",
+  "summary": "Wisconsin's refundable credit for 100% of property taxes on the principal dwelling (up to one acre) at a 100% schedular or IU rating is confirmed, including the residency gate (WI resident at entry or any consecutive 5 years after entry, and currently resident) and the four survivor routes. Only fix: 'T&P' in the details should be 'schedular'; no 2026/2027 changes found.",
+  "state": "WI",
+  "checkedDate": "2026-10-21"
+}

@@ -1,0 +1,80 @@
+{
+  "propertyTaxRate": {
+    "fileValue": 0.0057,
+    "sourceValue": 0.0053,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation Table 2 (ACS 2024): Wyoming 0.53% (0.52% in 2023). Within tolerance. Note the exemption is on ASSESSED value (9.5% of market for residential), so $6,000 assessed is about $63,000 of market value; dollar savings are roughly $6,000 x the mill levy (about $400 at a 65-70 mill levy)."
+  },
+  "programs": [
+    {
+      "name": "Veterans Property Tax Exemption",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": {
+          "current": 6000,
+          "correct": 6000,
+          "quote": "The exemption for veterans is limited to an annual exemption of six thousand dollars ($6,000.00) of assessed value.",
+          "source": "https://wyoleg.gov/statutes/compress/title39.pdf",
+          "note": "Resolves the brief's $3,000 lead: the current W.S. 39-13-105(b) reads $6,000 (raised from $3,000); the file already carries 6000."
+        },
+        "wartimeRequired": {
+          "current": true,
+          "correct": false,
+          "quote": "(vii) A disabled veteran with a compensable service connected disability certified by the veterans administration or a branch of the armed forces of the United States.",
+          "source": "https://wyoleg.gov/statutes/compress/title39.pdf",
+          "note": "Disabled-veteran route has no wartime or medal requirement; the wartime/medal routes (a)(i)-(iv), (vi) are alternatives. Boolean contradicts the summary."
+        },
+        "ratingRequired": {
+          "current": 10,
+          "correct": "any compensable service-connected disability (10% is the lowest compensable rating)",
+          "quote": "A disabled veteran with a compensable service connected disability",
+          "source": "https://wyoleg.gov/statutes/compress/title39.pdf"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "A surviving spouse, during widowhood or widower hood, of any person qualifying under this subsection or who died while serving honorably during the war, conflict or period described in this section or the surviving parents if there is no surviving spouse.",
+          "source": "https://wyoleg.gov/statutes/compress/title39.pdf"
+        },
+        "summary (annual re-application)": {
+          "current": "annual re-application with the county assessor by the fourth Monday in May",
+          "correct": "sworn claim once; later years only a phone/mail confirmation by the fourth Monday in May",
+          "quote": "in subsequent years the claimant shall remain qualified for the tax exemption ... if the claimant contacts the assessor's office by telephone, mail or other communication method on or before the fourth Monday in May and confirms that the claimant continues to meet the requirements",
+          "source": "https://wyoleg.gov/statutes/compress/title39.pdf"
+        }
+      },
+      "effectiveChanges": "None for TY2026/TY2027 found in the current Title 39 compilation; $6,000 assessed value and the three-year residency gate stand. Vehicle-fee alternative (W.S. 31-3-101(b)(iii)) unchanged.",
+      "note": "Gold Star parents qualify when there is no surviving spouse; residency: bona fide Wyoming resident for three years at the time of claiming."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "unverified",
+    "correct": "",
+    "source": "",
+    "note": "No propertyTax.note in the file for WY."
+  },
+  "sources": [
+    {
+      "url": "https://wyoleg.gov/statutes/compress/title39.pdf",
+      "title": "Wyoming Statutes Title 39 (current compilation): W.S. 39-13-105 Exemptions; 39-11-105(a)(xxiv)",
+      "status": 200
+    },
+    {
+      "url": "https://wyo-prop-div.wyo.gov/tax-relief",
+      "title": "Wyoming DOR Property Tax Division: Tax Relief (Veterans Property Tax Exemption)",
+      "status": 200
+    },
+    {
+      "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+      "title": "Tax Foundation, Property Taxes by State and County, 2026 (Table 2: Property Taxes Paid as a Percentage of Owner-Occupied Housing Value, 2024, Census ACS)",
+      "status": 200
+    }
+  ],
+  "confidence": "verified",
+  "summary": "Wyoming's veteran exemption is $6,000 of assessed value (current W.S. 39-13-105(b); the old $3,000 figure is superseded) for any compensable service-connected disability with three years' residency, and the file already carries $6,000. Fix wartimeRequired to false (the disabled-veteran route has no era or medal test) and soften 'annual re-application' to the statutory phone/mail confirmation; rate within tolerance.",
+  "state": "WY",
+  "checkedDate": "2026-10-21"
+}

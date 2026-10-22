@@ -1,0 +1,50 @@
+{
+  "state": "CO",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0051,
+    "sourceValue": 0.005,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation 2024 effective rate (ACS 5-year) 0.50%."
+  },
+  "programs": [
+    {
+      "name": "Homestead Exemption",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": { "current": 100000, "correct": 100000, "quote": "For veterans with a disability who qualify, 50 percent of the first $200,000 of actual value of the veteran's primary residence is exempted.", "source": "https://drive.google.com/file/d/12CtKyWtMBDdgfdx1JadAXMM5C9e-iN73/view?usp=drive_link" },
+        "ptRequired": { "current": true, "correct": true, "quote": "rated by the United States Department of Veterans Affairs as a one hundred percent permanent disability through disability retirement benefits or has been granted individual unemployability status", "source": "https://dpt.colorado.gov/veteran-with-a-disability-and-gold-star-exemptions" },
+        "TDIU alternative": { "current": "OR those with VA Individual Unemployability (Amendment G)", "correct": "confirmed", "quote": "a veteran who has individual unemployability status shall be treated equivalently to a veteran who has a service-connected disability that has been rated as one hundred percent permanent disability", "source": "https://drive.google.com/file/d/12CtKyWtMBDdgfdx1JadAXMM5C9e-iN73/view?usp=drive_link" },
+        "Amendment G first year": { "current": "effective property tax year 2025", "correct": "confirmed", "quote": "would be eligible for the exemption under this amendment in property tax year 2025", "source": "https://leg.colorado.gov/ballots/modify-property-tax-exemption-for-veterans-with-disabilities-2/files/final-draft-packet" },
+        "survivingSpouse": { "current": false, "correct": true, "quote": "If a qualifying veteran has an exemption and passes away, his or her surviving spouse may apply to keep the same exemption.", "source": "https://drive.google.com/file/d/1nFLfEniWeqEvQy1DrJaqyJ_j3CmB9Z69/view?usp=drive_link" }
+      },
+      "effectiveChanges": "No change to the amount for TY2026 or TY2027. HB25-1111 (would have reset the base to 50% of the state median home value) was postponed indefinitely by House Finance on 2/24/2025. Initiative 2025-2026 #49 (full exemption for 100% P&T/TDIU veterans from property tax year 2027) had titles set 4/16/2025 but is NOT among the statewide measures certified for the November 3, 2026 ballot (Amendments 81-87, Propositions NN and 132-137). No 2025 or 2026 enacted bill changing C.R.S. 39-3-203 for veterans was found on leg.colorado.gov; the 'SB 25-xxx' lead did not resolve to any chaptered law.",
+      "note": "survivingSpouse should be true: the surviving spouse of a veteran who was receiving the exemption may continue it (separate Surviving Spouse application; occupancy required), and Gold Star spouses have their own parallel exemption. Also note the exemption does not transfer on a move and has no income or age test. Deadline wording in `details` ('Jan 1 - Jul 1') is right; DPT allows good-cause late filing to August 1."
+    },
+    {
+      "name": "Reserve Component Deferral",
+      "status": "unverified",
+      "fields": {
+        "type": { "current": "partial", "correct": "deferral (loan), not an exemption; exclude from dollar totals", "quote": "Not verified this pass: treasury.colorado.gov/property-tax-deferral-program returned HTTP 403 to automated checks.", "source": "" }
+      },
+      "effectiveChanges": null,
+      "note": "This is the state Treasurer's active-military deferral under C.R.S. 39-3.5 (taxes are postponed and repaid with interest at sale or transfer), available to Guard/Reserve members called to federal active duty, not to rated veterans. It should not be credited as a dollar benefit to a rated veteran's home. Program text could not be re-read on the Treasurer's site (403); leaving the row's description unverified rather than restating it."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": { "status": "confirmed", "correct": "", "source": "" },
+  "sources": [
+    { "url": "https://dpt.colorado.gov/veteran-with-a-disability-and-gold-star-exemptions", "title": "Colorado Division of Property Taxation: Veteran with a Disability and Gold Star Exemptions", "status": 200 },
+    { "url": "https://drive.google.com/file/d/12CtKyWtMBDdgfdx1JadAXMM5C9e-iN73/view?usp=drive_link", "title": "DPT Veteran with a Disability Exemption Application Instructions (50% of first $200,000; IU treated equivalently)", "status": 200 },
+    { "url": "https://drive.google.com/file/d/1nFLfEniWeqEvQy1DrJaqyJ_j3CmB9Z69/view?usp=drive_link", "title": "DPT brochure: Property Tax Exemption for Veterans with a Disability and Gold Star Spouses (surviving spouse continuation)", "status": 200 },
+    { "url": "https://leg.colorado.gov/ballots/modify-property-tax-exemption-for-veterans-with-disabilities-2/files/final-draft-packet", "title": "Legislative Council Blue Book packet, Amendment G (2024): TDIU eligibility from property tax year 2025; text of Colo. Const. art. X sec. 3.5", "status": 200 },
+    { "url": "https://content.leg.colorado.gov/sites/default/files/documents/2025A/bills/fn/2025a_hb1111_00.pdf", "title": "Legislative Council fiscal note, HB25-1111 Expand Homestead Exemptions (bill postponed indefinitely 2/24/2025; bill page blocks automated checks)", "status": 200 },
+    { "url": "https://coloradosos.gov/pubs/elections/Initiatives/titleBoard/results/2025-2026/49Results.html", "title": "Colorado SOS Title Board results, Proposed Initiative 2025-2026 #49 (full exemption for disabled veterans)", "status": 200 },
+    { "url": "https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html", "title": "Colorado SOS: 2026 statewide ballot measures (Initiative #49 not listed)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 effective rates)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "Colorado's 50%-of-first-$200,000 exemption for 100% permanent or TDIU veterans is confirmed and unchanged for TY2026 and TY2027; survivingSpouse should flip to true, and the Reserve Component row is a deferral that should not count as a dollar benefit for a rated veteran. The full-exemption Initiative #49 did not reach the November 2026 ballot and HB25-1111 died in committee, so no pending change was found."
+}

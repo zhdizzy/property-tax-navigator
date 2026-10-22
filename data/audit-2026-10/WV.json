@@ -1,0 +1,79 @@
+{
+  "propertyTaxRate": {
+    "fileValue": 0.0049,
+    "sourceValue": 0.0051,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation Table 2 (ACS 2024): West Virginia 0.51% (0.51% in 2023). Within tolerance."
+  },
+  "programs": [
+    {
+      "name": "Disabled Veterans Residential Property Tax Credit (DVRPTC)",
+      "status": "corrected",
+      "fields": {
+        "ptRequired": {
+          "current": true,
+          "correct": false,
+          "quote": "\"Disabled veteran taxpayer\" means a person given an honorable discharge from any branch of the armed services of the United States and has been rated as having a 90 percent or greater service-connected disability by the United States Department of Veterans Affairs or meets the eligibility requirements for individual unemployability",
+          "source": "https://code.wvlegislature.gov/11-13MM-2/",
+          "note": "Statute (as amended 2025 HB 2121) requires 90%+ OR IU, not permanent and total. TSD-455 (Rev. Jan 2026) and the DV-1 still say '90-100% permanently and totally disabled'; keep that as an administrative caution in the summary, but the summary's 'a 90%+ combined rating alone does not qualify' overstates the law."
+        },
+        "ratingRequired": {
+          "current": 90,
+          "correct": 90,
+          "quote": "rated as having a 90 percent or greater service-connected disability",
+          "source": "https://code.wvlegislature.gov/11-13MM-2/"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "an eligible widowed spouse may continue to receive the tax credit until his or her death or remarriage",
+          "source": "https://code.wvlegislature.gov/11-13MM-4/",
+          "note": "'Eligible widowed spouse' = unmarried surviving spouse of a disabled veteran taxpayer who had previously received the credit (11-13MM-2(5))."
+        },
+        "type": {
+          "current": "full",
+          "correct": "credit (refundable, 100% of timely-paid homestead tax)",
+          "quote": "a refundable credit against the taxes imposed by §11-21-1 et seq. of this code equal to the amount of West Virginia ad valorem real property taxes timely paid a county sheriff on a homestead which is used or occupied exclusively for residential purposes",
+          "source": "https://code.wvlegislature.gov/11-13MM-4/",
+          "note": "Hard gate: 'in no case shall any credit be allowed under this article for any untimely real property tax paid, or any payment of delinquent real property tax'."
+        }
+      },
+      "effectiveChanges": "None for TY2026/TY2027. Credit first claimable for tax year 2024 (returns filed 2025); 2025 HB 2121 widened the definition to 90%+ or IU. TSD-455 Rev. January 2026 is current guidance.",
+      "note": "Statute cite in details should be W. Va. Code 11-13MM-4 (Property Tax Adjustment Act); DV-1 is the schedule filed with the IT-140."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "corrected",
+    "correct": "This is a refundable credit on your WV income tax return (Form DV-1 with the IT-140), not a direct property tax exemption. You must pay the county property tax on time (first half before Oct 1, second half before April 1), then claim it back. Requires an honorable discharge and a 90%+ service-connected rating OR individual unemployability (W. Va. Code 11-13MM-2; the Tax Division's TSD-455 describes it as 90-100% P&T), plus 6+ months occupancy as the homestead. The unmarried widowed spouse continues the credit until death or remarriage.",
+    "source": "https://code.wvlegislature.gov/11-13MM-2/"
+  },
+  "sources": [
+    {
+      "url": "https://code.wvlegislature.gov/11-13MM-2/",
+      "title": "W. Va. Code 11-13MM-2 Definitions (disabled veteran taxpayer: 90%+ or IU; eligible widowed spouse)",
+      "status": 200
+    },
+    {
+      "url": "https://code.wvlegislature.gov/11-13MM-4/",
+      "title": "W. Va. Code 11-13MM-4 Disabled veteran and eligible widowed spouse real property tax credit",
+      "status": 200
+    },
+    {
+      "url": "https://tax.wv.gov/Documents/TSD/tsd455.pdf",
+      "title": "WV Tax Division TSD-455 Disabled Veteran Real Property Tax Credit (Rev. January 2026)",
+      "status": 200
+    },
+    {
+      "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+      "title": "Tax Foundation, Property Taxes by State and County, 2026 (Table 2: Property Taxes Paid as a Percentage of Owner-Occupied Housing Value, 2024, Census ACS)",
+      "status": 200
+    }
+  ],
+  "confidence": "verified",
+  "summary": "West Virginia's credit refunds 100% of timely-paid homestead property tax through the IT-140/DV-1 for veterans rated 90%+ or IU; the file's ptRequired: true and 'combined rating alone does not qualify' contradict 11-13MM-2 as amended in 2025, though TSD-455 still uses P&T language. survivingSpouse should be true (widowed spouse continues until remarriage); rate within tolerance.",
+  "state": "WV",
+  "checkedDate": "2026-10-21"
+}

@@ -1,0 +1,76 @@
+{
+  "state": "OK",
+  "officeType": "county assessor",
+  "officeTypeNote": "Apply at the county assessor's office in the county where the homestead is located (OAC 710:10-14-5). The county treasurer only collects. The Oklahoma Tax Commission prescribes the forms but does not take applications.",
+  "officeLocator": {
+    "tier": 2,
+    "url": null,
+    "label": "No state-hosted assessor directory; the OTC Ad Valorem page links to the County Assessors Association of Oklahoma contact list",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://oklahoma.gov/tax/ad-valorem.html",
+    "note": "OTC Ad Valorem Division page links 'Oklahoma County Assessor Contacts' at caaok.org (an association site, not oklahoma.gov). Many counties also use the okcounties.org portal (e.g. <county>.okcounties.org/offices/county-assessor)."
+  },
+  "forms": [
+    {
+      "programRef": "Veteran Exemption",
+      "name": "Application for 100% Disabled Veterans Real Property Tax Exemption",
+      "number": "OTC 998",
+      "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/ad-valorem/current/998.pdf",
+      "revision": "11-2025 (tax year 2026)",
+      "filedWith": "county assessor"
+    },
+    {
+      "programRef": "Veteran Exemption",
+      "name": "Application for 100% Disabled Veterans Exemption Acquired Homestead Property (transfer to a new home)",
+      "number": "OTC 998-B",
+      "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/ad-valorem/current/998-B.pdf",
+      "revision": "11-2025 (tax year 2026)",
+      "filedWith": "county assessor"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "03-15",
+    "text": "OAC 710:10-14-5(a): \"The application should be made between January 1 and March 15th in the same manner as for homestead exemptions. However, if the county assessor becomes aware of an otherwise-qualified applicant at any time during the current tax year, the county assessor may ... make the appropriate adjustment.\" Form 998: must own and occupy on January 1 and have the deed recorded with the County Clerk by February 1 of the first exemption year."
+  },
+  "effective": "Exempts the full fair cash value of the homestead for the tax year of application. OAC 710:10-14-5(a): if the 100% rating is \"effective on or before the date of application, the property is exempt for the entire year regardless of the status of disability on January 1\"; applicants discovered after the tax roll is certified get a tax roll correction under 68 O.S. 2871(C)(2) (Board of Tax Roll Corrections after the Board of Equalization adjourns).",
+  "lateFiling": "Within the current tax year the assessor may still grant the exemption (and correct the roll) at any time; after the year closes nothing can be done. OAC 710:10-14-5(c): \"The exemption application must be filed in the year requested. Filing for previous years is prohibited pursuant to Oklahoma Constitution Article 10 § 22A.\"",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "Filing for previous years is prohibited by Okla. Const. art. 10, § 22A (OAC 710:10-14-5(c))."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "OAC 710:10-14-8: the exemption \"is valid on the property as long as the taxpayer or surviving spouse owns and occupies the property and remains eligible for homestead exemption.\" No annual refiling; the assessor may request documentation \"any time in subsequent years\" (710:10-14-6)."
+  },
+  "ratingChange": "OAC 710:10-14-5(a): if the VA reduces the rating below 100%, \"the veteran shall immediately notify the county assessor of the change in status. Failure to do so will result in loss of any future homestead exemption pursuant to 68 O.S. §§ 2892(K) and 2900.\" A veteran newly rated 100% P&T (or paid at the 100% rate) applies on Form 998 with the current VA benefits award letter; the exemption covers the whole year if the rating is effective on or before the application date.",
+  "move": "File Form 998-B with the new county's assessor. OAC 710:10-14-5(b): \"Beginning with the month the deed instrument is filed of public record and the application is approved the homestead property will be exempt to the same extent as the homestead property previously owned\" for that year and each year thereafter.",
+  "onlineFiling": {
+    "available": null,
+    "text": "Forms are OTC PDFs filed with the county assessor; some assessors (e.g. Oklahoma County, Tulsa County) accept online or emailed submission of Form 998."
+  },
+  "documents": [
+    "Current VA benefits award letter (or the VA document issued specifically for this exemption) certifying 100% permanent service-connected disability, or receipt of compensation at the 100% rate; the Oklahoma Dept of Veterans Affairs issues an eligibility letter many assessors ask for",
+    "Proof of honorable discharge (DD-214) and Oklahoma residency (e.g. Oklahoma driver license), which the assessor may request under OAC 710:10-14-6",
+    "Deed or other evidence of ownership recorded with the County Clerk by February 1 of the first exemption year",
+    "Existing or concurrent homestead exemption (Form 921) on the property, since the veteran must qualify for homestead exemption",
+    "Surviving spouse: VA certification as surviving spouse of a 100% compensated veteran"
+  ],
+  "survivingSpouse": "Okla. Const. art. 10, § 8E extends the full exemption to the surviving spouse of a qualifying veteran; Form 998 Part Three asks whether the applicant is \"the surviving spouse of such 100% compensated veteran.\" The spouse must continue to own and occupy the homestead; remarriage ends eligibility (per OTC/assessor guidance; the constitutional text itself does not state a remarriage rule).",
+  "appeal": "OAC 710:10-14-7: \"The taxpayer may appeal any denial of the exemption application by the county assessor to the county board of equalization in the same manner as an appeal of the denial of a homestead exemption. [See: 68 O.S. § 2895]\"",
+  "statute": "Okla. Const. art. 10, § 8E (adopted SQ 715, Nov 2, 2004); 68 O.S. § 2888 (homestead definition, incl. improvements on city-held land); 68 O.S. §§ 2892-2895 (homestead application, continuation, appeal); OAC 710:10-14-1 through 710:10-14-8",
+  "sourceUrls": [
+    { "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/ad-valorem/current/998.pdf", "title": "OTC Form 998 Application for 100% Disabled Veterans Real Property Tax Exemption (Rev. 11-2025) with Const. art. 10 § 8E text", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/ad-valorem/current/998-B.pdf", "title": "OTC Form 998-B Acquired Homestead Property (Rev. 11-2025)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/rules-and-policies/agency-rules/2026/Chapter_10_Ad_Valorem_2026.pdf", "title": "OAC Title 710 Chapter 10 Ad Valorem (2026), Subchapter 14: 100% Disabled Veterans Exemption", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://oklahoma.gov/tax/ad-valorem.html", "title": "Oklahoma Tax Commission: Ad Valorem Division", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://oklahoma.gov/tax/individuals/exemptions.html", "title": "Oklahoma Tax Commission: Exemptions (individuals)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://oklahoma.gov/tax/helpcenter/exemptions.html", "title": "OTC Help Center: Exemptions (DAV sales tax exemption; property exemption handled by county assessors)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [],
+  "notes": "The remarriage rule for surviving spouses is not in the constitutional text printed on Form 998; it is stated on OTC/assessor guidance and was not independently verified here. Official statute text for 68 O.S. 2892-2895 was not opened (oscn.net not fetched); references come from the OAC rule citations. The OTC exemptions page (oklahoma.gov/tax/individuals/exemptions.html) was link-verified only."
+}

@@ -1,0 +1,84 @@
+{
+  "state": "SD",
+  "officeType": "county director of equalization",
+  "officeTypeNote": "File with the county Director of Equalization (the county assessor's office in the courthouse of the county where the home sits). The Director investigates and recommends; the exemption takes effect November 1 following action by the county board of equalization. Note the separate Paraplegic REDUCTION program (SDCL 10-4-24.11, income-based, non-veteran) is filed annually with the county TREASURER by April 1; do not confuse it with the Paraplegic Veteran EXEMPTION, which goes to the Director of Equalization.",
+  "officeLocator": {
+    "tier": 2,
+    "url": null,
+    "label": "SD Department of Revenue: Property Tax Relief Programs",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://dor.sd.gov/individuals/taxes/property-tax/relief-programs/",
+    "note": "The SD DOR publishes no per-county directory of Directors of Equalization (its /government/director-of-equalization/ page and /contact/ page list only the Property Tax Division: 1-800-829-9188 option 2, (605) 773-3311, proptaxin@state.sd.us). DOR: 'Applications are available at your county courthouse.' Most counties use <county>.sdcounties.org (non-state)."
+  },
+  "forms": [
+    {
+      "programRef": "Disabled Veterans Property Tax Exemption",
+      "name": "Application for Disabled Veteran Property Tax Exemptions",
+      "number": "PT-46C",
+      "url": "https://sddor.seamlessdocs.com/f/pt46c",
+      "revision": "Revised July 1, 2022 (PDF copy hosted by SD Dept of Veterans Affairs: https://vetaffairs.sd.gov/veteransserviceofficers/forms/2023%20Forms/PT_46C_Disabled_Veteran_Property_Tax_Exemption%20(1).pdf, 200)",
+      "filedWith": "county director of equalization (DOR links the fillable SeamlessDocs version; paper copies at the county courthouse)"
+    },
+    {
+      "programRef": "Paraplegic Veterans Property Tax Exemption",
+      "name": "Application for Paraplegic Veteran Property Tax Exemption",
+      "number": "PT-46A",
+      "url": "https://sddor.seamlessdocs.com/f/pt46a",
+      "revision": null,
+      "filedWith": "county director of equalization"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "11-01",
+    "text": "DOR brochure (Dec 2025): \"Application must be submitted to your county director of equalization on or before November 1.\" Form PT-46C header: \"APPLICATION DUE ON OR BEFORE NOVEMBER 1 SDCL 10-4-40 & 10-4-41.\" Paraplegic veteran exemption also due November 1. Prerequisite: the dwelling must already carry the owner-occupied classification, whose certificate is due to the same office by March 15 (SDCL 10-13-40)."
+  },
+  "effective": "Form PT-46C: the Director certifies eligibility \"as of November 1, 20__\" and the exemption is \"effective November first, following action by the county board of equalization,\" i.e. it applies to the next assessment year (taxes payable the year after). Paraplegic veteran exemption requires the dwelling be owned and occupied \"for the full calendar year in which a tax is to be levied\" (SDCL 10-4-24.10).",
+  "lateFiling": "A veteran who misses the November 1 deadline (or the owner-occupied March 15 deadline) \"may petition the board of county commissioners to recalculate the taxes based upon the owner-occupied classification and this exemption, and the board may abate or refund the difference\" under SDCL ch. 10-18 (SDCL 10-4-40).",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 4,
+    "text": "SDCL 10-4-40 (as amended SL 2026 ch 40): if the deadline was missed because of a pending VA P&T claim, \"the board must abate or refund the difference in taxes accumulated since the effective date of the claim, but not exceeding the previous four years.\" Otherwise the board MAY abate/refund (discretionary). Surviving spouse (10-4-41) and paraplegic veteran (10-4-24.10): discretionary refund \"not exceeding the previous four years.\" Petition to the board of county commissioners, procedure per SDCL ch. 10-18."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "SDCL 10-4-40: once the director of equalization grants it, \"the veteran retains that exemption until the property ownership is transferred, the veteran does not occupy the dwelling, or the property has a change in use.\" DOR brochure: \"Once approved for the exemption, no further applications are needed.\" Exception: the Paraplegic Veteran Exemption (PT-46A) must be submitted annually by November 1 per the DOR relief-programs page."
+  },
+  "ratingChange": "Eligibility requires a VA rating of permanently and totally disabled from a service-connected disability; the exemption is a flat $200,000 of full-and-true value, so rating changes above that threshold do not alter the amount. If a P&T claim is pending at the deadline, file anyway and use the 10-4-40 petition route for refunds back to the claim's effective date (max four years).",
+  "move": "Exemption ends when ownership is transferred or the veteran no longer occupies the dwelling; a new PT-46C (and new owner-occupied certificate by March 15) is required for the new home. A legal-description change alone does not end it.",
+  "onlineFiling": {
+    "available": true,
+    "text": "DOR links a fillable SeamlessDocs PT-46C (sddor.seamlessdocs.com/f/pt46c); it is routed to the county director of equalization. Paper copies at the county courthouse. Not all counties confirm e-submission; the brochure still says 'submitted to your county director of equalization.'"
+  },
+  "documents": [
+    "Proof of permanent and total service-connected disability rating: DOR brochure says call the Sioux Falls VA Regional Office (1-800-827-1000) for \"a statement verifying that you are permanently and totally disabled as a result of a service-connected disability(ies)\" and bring a copy when applying",
+    "Owner-occupied classification already on file with the director of equalization (PT-46C question D); certificate due March 15 (SDCL 10-13-40)",
+    "Surviving spouse: proof of VA dependency and indemnity compensation (DIC) or of the veteran's P&T rating, and unremarried status (form questions B/C)",
+    "Paraplegic veteran exemption: evidence the dwelling is specifically designed for wheelchair use and of loss/loss of use of both lower extremities (SDCL 10-4-24.9, 10-4-24.10)"
+  ],
+  "survivingSpouse": "SDCL 10-4-41: $200,000 of full-and-true value exempt for the unremarried surviving spouse of a P&T-rated veteran OR a spouse receiving VA DIC for a service-connected death; same PT-46C form and November 1 deadline; ends on remarriage, transfer, non-occupancy, or change in use. Paraplegic veteran exemption also passes to the unremarried widow or widower (10-4-24.10).",
+  "appeal": "Denied or missed applications go to the board of county commissioners by petition for abatement/refund under SDCL ch. 10-18 (10-4-40, 10-4-41, 10-4-24.10). Assessment/classification disputes follow the county board of equalization process.",
+  "statute": "SDCL 10-4-40 (disabled veteran, $200,000), 10-4-41 (surviving spouse), 10-4-24.9 and 10-4-24.10 (paraplegic veteran full exemption), 10-13-40 (owner-occupied certificate by March 15), ch. 10-18 (abatement/refund)",
+  "sourceUrls": [
+    { "url": "https://dor.sd.gov/individuals/taxes/property-tax/relief-programs/", "title": "SD DOR: Property Tax Relief Programs (Disabled Veteran and Paraplegic Veteran exemptions, Nov 1 deadline, form links)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dor.sd.gov/media/jzbhdtzr/disabled-veteran-property-tax-exemption-brochure.pdf", "title": "SD DOR: Disabled Veteran Property Tax Exemption Program brochure (December 2025)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dor.sd.gov/media/tg2frgdv/paraplegic-tax-reductionexemption-brochure.pdf", "title": "SD DOR: Paraplegic Tax Reduction/Exemption brochure (December 2025)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://sddor.seamlessdocs.com/f/pt46c", "title": "Form PT-46C (fillable, linked from DOR)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://vetaffairs.sd.gov/veteransserviceofficers/forms/2023%20Forms/PT_46C_Disabled_Veteran_Property_Tax_Exemption%20(1).pdf", "title": "Form PT-46C PDF (Revised July 1, 2022) hosted by SD Dept of Veterans Affairs", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://sdlegislature.gov/api/Statutes/10-4-40.html", "title": "SDCL 10-4-40 Partial exemption, owner-occupied dwellings of certain disabled veterans (incl. SL 2026 ch 40)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://sdlegislature.gov/api/Statutes/10-4-41.html", "title": "SDCL 10-4-41 surviving spouses", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://sdlegislature.gov/api/Statutes/10-4-24.10.html", "title": "SDCL 10-4-24.10 paraplegic/amputee veteran dwelling exemption", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://sdlegislature.gov/api/Statutes/10-13-40.html", "title": "SDCL 10-13-40 owner-occupied classification certificate (March 15)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dor.sd.gov/government/director-of-equalization/", "title": "SD DOR: Directors of Equalization page (no county directory; Property Tax Division contacts)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://vetaffairs.sd.gov/benefits/State/Property%20Taxes.aspx", "title": "SD Dept of Veterans Affairs: Property Tax Exemption for Veterans (statute summary)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    { "field": "programs[1].survivingSpouse", "note": "Should be true: SDCL 10-4-41 gives the unremarried surviving spouse (of a P&T veteran, or any DIC recipient) the same $200,000 exemption (raised from $150,000 by SL 2024 ch 34 / SL 2026 ch 40). The SDDVA page still shows $150,000 for the spouse and is stale.", "source": "https://sdlegislature.gov/api/Statutes/10-4-41.html" },
+    { "field": "programs[0] (Paraplegic Veterans)", "note": "Empty summary. Statute: full exemption of a dwelling (up to 1 acre) specifically designed for wheelchair use, owned and occupied the full calendar year by a paraplegic veteran or veteran with loss/loss of use of both lower extremities, or the unremarried widow/widower. survivingSpouse should be true. Annual re-application by Nov 1 per DOR.", "source": "https://sdlegislature.gov/api/Statutes/10-4-24.10.html" },
+    { "field": "programs[1].exemptionValue", "note": "DOR brochure and statute say $200,000 of FULL AND TRUE value (market value), not assessed value; the DOR web page's 'assessed value' wording is loose. The 2026 amendment (SL 2026 ch 40) added the mandatory four-year refund for pending P&T claims.", "source": "https://sdlegislature.gov/api/Statutes/10-4-40.html" }
+  ],
+  "notes": "The November 1 deadline is not in the statute text itself; it comes from DOR's form and brochure (DOR prescribes the form under 10-4-40). The sdlegislature.gov/Statutes/<n> pages serve only a browser-compatibility shell to curl; the api/Statutes/<n>.html endpoints carry the text and were used. The DOR newsroom 'Nov 1 deadline' pages from prior years now 404 and were dropped. The PT-46C revision available is July 1, 2022 (the SeamlessDocs version could not be read as text)."
+}

@@ -1,0 +1,60 @@
+{
+  "state": "AZ",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0048,
+    "sourceValue": 0.0048,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation 2024 effective rate (ACS 5-year) 0.48%; exact match."
+  },
+  "programs": [
+    {
+      "name": "Homestead Exemption",
+      "status": "corrected",
+      "fields": {
+        "tiers": { "current": "2026 base $4,873 x rating%, market-equivalent at 10% assessment ratio", "correct": "same (confirmed)", "quote": "Tax Year 2026 Maximum Allowed ... Total Exemption $ 4,873", "source": "https://azdor.gov/sites/default/files/2023-03/PROPERTY_AnnualRatesAndAmounts.pdf" },
+        "incomeLimit": { "current": 39865, "correct": 39865, "quote": "Tax Year 2026 ... Total Income - no minor children $ 39,865 / Total Income - minor children or children with disability $ 47,826", "source": "https://azdor.gov/sites/default/files/2023-03/PROPERTY_AnnualRatesAndAmounts.pdf" },
+        "incomeLimitWithKids": { "current": null, "correct": 47826, "quote": "Total Income - minor children or children with disability $ 47,826", "source": "https://azdor.gov/sites/default/files/2023-03/PROPERTY_AnnualRatesAndAmounts.pdf" },
+        "details ($4,748 base)": { "current": "exemption up to $4,748 of assessed value", "correct": "$4,873 for TY2026 ($4,748 was TY2025)", "quote": "Tax Year 2025 Maximum Allowed ... Total Exemption $ 4,748 / Tax Year 2026 Maximum Allowed ... Total Exemption $ 4,873", "source": "https://azdor.gov/sites/default/files/2023-03/PROPERTY_AnnualRatesAndAmounts.pdf" },
+        "details (assessed-value cap $36,454)": { "current": "Total assessed value must not exceed $36,454", "correct": "No assessed-value cap for veterans from TY2026; $36,454 applies only to widows/widowers and persons with total and permanent disability", "quote": "This limitation has been eliminated for the veteran exemptions defined in A.R.S. 42-11111 (C) and (D).", "source": "https://azdor.gov/business/property-tax/property-tax-faqs" },
+        "proration": { "current": "x disability %", "correct": "x disability %", "quote": "The limit under this subsection is further limited by multiplying the total exemption amount by the percentage of the veteran's disability, as rated by the United States department of veterans affairs.", "source": "https://www.azleg.gov/ars/42/11111.htm" },
+        "income exclusions": { "current": "VA comp and SS excluded", "correct": "confirmed", "quote": "Does not include monies received from: ... Payments under the federal social security act ... Veterans disability payments due to the disability rating or status of total disability based on individual unemployability.", "source": "https://www.azleg.gov/ars/42/11111.htm" },
+        "survivingSpouse": { "current": false, "correct": true, "quote": "The primary residence of a widow or widower who is the surviving spouse of a veteran who was eligible for the exemption under subsection D of this section is exempt in the amount of $4,188 [indexed] ... multiplying ... by the percentage of that veteran's disability", "source": "https://www.azleg.gov/ars/42/11111.htm" }
+      },
+      "effectiveChanges": "TY2026: the indexed base is $4,873 and the total-assessed-value cap no longer applies to veteran claimants (ARS 42-11111(H) indexing; HB 2792 / HB 2120). TY2027 amounts will be published by ADOR by December 31, 2026 (statute: 'On or before December 31 of each year, the department shall increase the following amounts'). Pending 2026 bills on 42-11111 (SB1268, SB1365, HB2841, HB2973, SB1130) were introduced; no primary source shows any of them chaptered.",
+      "note": "The `details` string is stale (TY2025 base and a cap that no longer applies to veterans); the `summary` is current. Tiers use the lower bound of each 10-point band, so a 95% veteran is modeled at 90%; acceptable approximation, or compute 4,873 x rating / 0.10 directly."
+    },
+    {
+      "name": "100% T&P Disabled Veteran Full Exemption",
+      "status": "corrected",
+      "fields": {
+        "type": { "current": "full", "correct": "full", "quote": "The primary residence of a veteran with a service-connected disability whose disability rating by the United States department of veterans affairs is one hundred percent is fully exempt from taxation.", "source": "https://www.azleg.gov/legtext/57leg/2R/laws/0082.pdf" },
+        "requiresSchedular100": { "current": false, "correct": false, "quote": "is one hundred percent or whose disability status is total disability based on individual unemployability is fully exempt from taxation", "source": "https://www.azleg.gov/ars/42/11111.htm" },
+        "survivingSpouse": { "current": false, "correct": true, "quote": "The primary residence of a widow or widower who is the surviving spouse of a veteran who was eligible for the exemption under subsection C of this section is fully exempt from taxation.", "source": "https://www.azleg.gov/ars/42/11111.htm" },
+        "ptRequired": { "current": null, "correct": false, "quote": "whose disability rating by the United States department of veterans affairs is one hundred percent", "source": "https://www.azleg.gov/ars/42/11111.htm" },
+        "effective date": { "current": "Feb 12, 2026, tax years after 12/31/2025", "correct": "confirmed", "quote": "This act applies to tax years beginning from and after December 31, 2025. ... APPROVED BY THE GOVERNOR FEBRUARY 12, 2026.", "source": "https://www.azleg.gov/legtext/57Leg/2R/laws/0002.pdf" },
+        "primary residence limit": { "current": "HB 2120, ch. 82, June 2026", "correct": "confirmed; approved June 4, 2026", "quote": "a primary residence that is owned by a veteran who is eligible for the exemption under this subsection and the veteran's spouse shall be treated as if owned solely by the veteran. ... APPROVED BY THE GOVERNOR JUNE 4, 2026.", "source": "https://www.azleg.gov/legtext/57leg/2R/laws/0082.pdf" }
+      },
+      "effectiveChanges": "In force for TY2026 (tax years beginning after Dec 31, 2025). ADOR: existing claimants need no new application; new claimants file between the first Monday in January and March 1. Surviving-spouse continuation can first be claimed in January 2027 (veteran received the exemption in 2026 and died in 2026), per ADOR FAQ.",
+      "note": "Row name says 'T&P' but P&T status is not required (100% schedular or TDIU qualifies); consider renaming. survivingSpouse should be true: ARS 42-11111(F) and ADOR FAQ ('The surviving spouse must not remarry'). Income test does not apply to this tier."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "confirmed",
+    "correct": "",
+    "source": "https://www.azleg.gov/legtext/57leg/2R/laws/0082.pdf"
+  },
+  "sources": [
+    { "url": "https://www.azleg.gov/ars/42/11111.htm", "title": "ARS 42-11111 (current text incl. subsections C-G, H indexing, J income limits, income definition)", "status": 200 },
+    { "url": "https://www.azleg.gov/legtext/57Leg/2R/laws/0002.pdf", "title": "Laws 2026, Chapter 2 (HB 2792), approved Feb 12, 2026, emergency; applies to tax years after Dec 31, 2025", "status": 200 },
+    { "url": "https://www.azleg.gov/legtext/57leg/2R/laws/0082.pdf", "title": "Laws 2026, Chapter 82 (HB 2120), approved June 4, 2026: primary-residence limitation", "status": 200 },
+    { "url": "https://azdor.gov/sites/default/files/2023-03/PROPERTY_AnnualRatesAndAmounts.pdf", "title": "ADOR Annual Abstract of Published Rates and Amounts, Tax Year 2026 (revised April 2026): exemption $4,873, income $39,865 / $47,826, assessed value $36,454", "status": 200 },
+    { "url": "https://azdor.gov/business/property-tax/property-tax-faqs", "title": "ADOR Property Tax FAQs (2026 veteran exemption changes, assessed-value limit eliminated for veterans, surviving spouse timing)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 effective rates)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "Both Arizona rows are substantively right for TY2026 ($4,873 base x rating with a $39,865/$47,826 income test under 100%; full primary-residence exemption at 100% or TDIU under ARS 42-11111(C), HB 2792 ch. 2 and HB 2120 ch. 82 confirmed on azleg.gov). Corrections: survivingSpouse should be true on both rows, the `details` string still carries the TY2025 $4,748 base and a $36,454 assessed-value cap that ADOR says no longer applies to veterans, and incomeLimitWithKids ($47,826) is missing."
+}

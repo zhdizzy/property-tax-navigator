@@ -1,0 +1,86 @@
+{
+  "state": "OH",
+  "officeType": "county auditor",
+  "officeTypeNote": "File with the COUNTY AUDITOR of the county where the home is located (R.C. 323.153(A)). The county treasurer collects the bill and does not take applications. Most auditors require a mailed or in-person original (wet-signature) form.",
+  "officeLocator": {
+    "tier": 2,
+    "url": null,
+    "label": "No state-hosted directory; the Ohio Department of Taxation's 'Links to Other Government Agencies' page points to the County Auditors' Association of Ohio directory of all 88 auditors",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://tax.ohio.gov/government/other-agency-contacts",
+    "note": "The Department of Taxation real property page is https://tax.ohio.gov/individual/resources/real-property. The 88-county auditor directory the Department links to is maintained by the County Auditors' Association of Ohio (caao.org), an association site, so it is not listed as a tier-1 state directory."
+  },
+  "forms": [
+    {
+      "programRef": "Disabled Veteran Homestead Exemption",
+      "name": "Homestead Exemption Application for Disabled Veterans and Surviving Spouses",
+      "number": "DTE 105I",
+      "url": "https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/real_property/DTE_105I.pdf",
+      "revision": "10/19",
+      "filedWith": "county auditor"
+    },
+    {
+      "programRef": "Disabled Veteran Homestead Exemption",
+      "name": "Addendum to the Homestead Exemption Application for Senior Citizens, Disabled Persons and Surviving Spouses (continuing eligibility after a move)",
+      "number": "DTE 105G",
+      "url": "https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/real_property/DTE_DTE105G_FI.pdf",
+      "revision": "11/13",
+      "filedWith": "county auditor (with the new DTE 105I)"
+    },
+    {
+      "programRef": "Disabled Veteran Homestead Exemption",
+      "name": "Homestead Exemption and Owner-Occupancy Reduction Complaint (appeal of denial)",
+      "number": "DTE 106B",
+      "url": "https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/real_property/DTE_106B.pdf",
+      "revision": null,
+      "filedWith": "county auditor as secretary of the Board of Revision"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "12-31",
+    "text": "DTE 105I: \"Real property and manufactured or mobile homes: File with the county auditor on or before December 31.\" R.C. 323.153: original and late applications must be \"filed on or before the thirty-first day of December of the year for which the reduction is sought.\" The applicant must own and occupy the home and be 100% disabled (or paid at 100% for IU) on January 1 of that year."
+  },
+  "effective": "Reduces the tax year's bill (payable the following calendar year) for the year in which the application is filed by December 31, provided eligibility existed on January 1. Manufactured homes: applies to the following year.",
+  "lateFiling": "R.C. 323.153 / DTE 105I: \"A late application for a tax reduction for the year preceding the year in which an original application is filed\" may be filed with the current application by checking the Late application for prior year box, \"only ... for the same property for which you are filing a current application.\" Reaches one prior year only.",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 1,
+    "text": "One prior year via the late-application box on DTE 105I filed together with a current application; nothing earlier."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "R.C. 323.153: an approved application \"constitutes a continuing application for a reduction in taxes\" in subsequent years; no annual refiling. The owner must notify the auditor on ceasing to qualify. No income test for the disabled-veteran exemption."
+  },
+  "ratingChange": "Eligibility requires a VA total (100%) disability rating or 100% compensation based on individual unemployability for service-connected disability as of January 1. A veteran newly rated 100% files DTE 105I by December 31 of that year with the VA award letter. If the rating is reduced below 100% the owner must notify the county auditor (no longer qualified for the enhanced exemption; may still qualify for the standard age/disability homestead exemption with DTE 105A).",
+  "move": "The exemption attaches to the homestead; on moving within Ohio, file a new DTE 105I with the new county auditor by December 31 (eligibility measured January 1 of that year), attaching DTE 105G (continuing-eligibility addendum) if you had the exemption on the prior home.",
+  "onlineFiling": {
+    "available": null,
+    "text": "No state portal; county auditors generally require a mailed or in-person original signature on DTE 105I (several counties state scanned/emailed copies are not accepted). A few auditors offer their own online homestead filing."
+  },
+  "documents": [
+    "DD-214 showing discharge or release under honorable conditions",
+    "VA award letter showing a 100% disability rating; or, for IU cases, the award letter showing compensation at 100% plus the document approving individual unemployability",
+    "Proof of eligible ownership interest if title is held in a trust, life estate, land installment contract, or housing cooperative (DTE 105I ownership section; DTE 105A supplement for co-ops)",
+    "Surviving spouse: proof the veteran was receiving (or qualified for) the exemption in the year of death and that the spouse occupied the home at death and acquired ownership"
+  ],
+  "survivingSpouse": "Surviving spouse qualifies if the veteran was receiving the exemption (or qualified for it) for the year of death, the spouse occupied the homestead at the veteran's death, and acquires ownership or continues to occupy (co-op). No age or income test. Eligibility continues \"until the year following the year in which the surviving spouse remarries\" (DTE 105I).",
+  "appeal": "A denial may be contested with Form DTE 106B filed with the county auditor as secretary of the Board of Revision \"not later than sixty days after notification of the decision\" (R.C. 323.154), then to the Board of Tax Appeals.",
+  "statute": "R.C. 323.151 (definitions; disabled veteran enhanced exemption amount, indexed), 323.152(A)(1)(b), 323.153 (application, Dec 31 deadline, late application, continuing application), 323.154 (denial and appeal)",
+  "sourceUrls": [
+    { "url": "https://codes.ohio.gov/ohio-revised-code/section-323.153", "title": "R.C. 323.153 Application for reduction in real property taxes (eff. Sept 30, 2025)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://codes.ohio.gov/ohio-revised-code/section-323.151", "title": "R.C. 323.151 Homestead exemption definitions", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/real_property/DTE_105I.pdf", "title": "Form DTE 105I Homestead Exemption Application for Disabled Veterans and Surviving Spouses (Rev. 10/19)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/real_property/DTE_105A.pdf", "title": "Form DTE 105A Homestead Exemption Application (standard)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/real_property/DTE_DTE105G_FI.pdf", "title": "Form DTE 105G Addendum (continuing eligibility after move)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/real_property/DTE_106B.pdf", "title": "Form DTE 106B Homestead Exemption Complaint (R.C. 323.154 appeal)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.ohio.gov/help-center/faqs/real-property-tax-homestead-means-testing", "title": "Ohio Dept of Taxation FAQ: Real Property Tax - Homestead Means Testing", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.ohio.gov/individual/resources/real-property", "title": "Ohio Dept of Taxation: Real Property (individuals)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.ohio.gov/government/other-agency-contacts", "title": "Ohio Dept of Taxation: Links to Other Government Agencies (County Auditors directory link)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [],
+  "notes": "DTE 105I Rev. 10/19 still prints the pre-indexing $50,000 figure; the indexed amount (row says $58,000 for TY2026) comes from R.C. 323.151 as amended and was not re-verified here. tax.ohio.gov/static form links 301-redirect to dam.assets.ohio.gov; the final URLs are recorded. The Homestead Means Testing FAQ returned 200 to curl but could not be parsed by the fetch tool, so its wording is not quoted. DTE 105G revision (11/13) predates the 2019 forms; confirm the auditor still accepts it."
+}

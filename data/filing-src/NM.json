@@ -1,0 +1,85 @@
+{
+  "state": "NM",
+  "officeType": "county assessor",
+  "officeTypeNote": "Two-step process: (1) apply to the New Mexico Department of Veterans' Services (NMDVS) on DVS Form 1 for a Certificate of Eligibility (veteran exemption and/or disabled veteran exemption); (2) present the certificate, plus the assessor's TRD-prescribed owner-occupancy certification form, to the COUNTY ASSESSOR where the home sits. The county treasurer only collects the bill.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://www.tax.newmexico.gov/businesses/county-officials/",
+    "label": "NM Taxation & Revenue Dept: County Officials (assessor address, phone and fax for all 33 counties)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.tax.newmexico.gov/governments/2020/10/21/property-tax/",
+    "note": "Single page, plain-text entries, no per-county sub-pages. NMDVS field offices that issue the certificate: https://www.dvs.nm.gov/state-benefits-offices/"
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Application for Veteran Tax Exemption and Disabled Veteran Tax Exemption (issues the Certificate of Eligibility)",
+      "number": "DVS Form 1",
+      "url": "https://www.dvs.nm.gov/wp-content/uploads/2026/04/100023_DVS_DVS1_VeteransExemption_Fillable.pdf",
+      "revision": "March 2025",
+      "filedWith": "NM Department of Veterans' Services (mail: 407 Galisteo St. Rm 134, Santa Fe NM 87501-2641; email vet.benefits@dvs.nm.gov; or walk in at Santa Fe or Albuquerque office)"
+    },
+    {
+      "programRef": "Disabled Veteran Property Tax Exemption",
+      "name": "Disabled veteran owner-occupancy certification (form prescribed by TRD under NMSA 7-38-17(E); distributed by each county assessor)",
+      "number": null,
+      "url": null,
+      "revision": null,
+      "filedWith": "county assessor, together with the NMDVS Certificate of Eligibility"
+    }
+  ],
+  "deadline": {
+    "type": "varies-by-county",
+    "date": null,
+    "text": "NMSA 7-38-17(C): an exemption \"shall be applied for no later than thirty days after the mailing of the county assessor's notices of valuation ... in order for it to be allowed for that tax year.\" Notices of value are mailed by each county (counties report typically around April 1), so the deadline is roughly early May and varies by county."
+  },
+  "effective": "Allowed for the tax year in which it is claimed within 30 days of the notice-of-value mailing; a certificate presented later applies to the following tax year. HB 285 (2026): a veteran whose VA claim is still pending at the 30-day mark may file a protest and attach the VA notice of receipt of claim.",
+  "lateFiling": "A claim filed more than 30 days after the notice-of-value mailing is not allowed for that tax year (7-38-17(C)); it takes effect the next tax year. Exception: a veteran moving mid-year may transfer an existing exemption to the new residence \"regardless of whether the exemption was applied for and claimed within thirty days\" (7-37-5.1(D), as amended 2026).",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "Statute allows the exemption only \"for that tax year\" when timely claimed; no refund mechanism for prior years."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "NMSA 7-38-17(A): exemptions \"claimed and allowed in a tax year need not be claimed for subsequent tax years if there is no change in eligibility for the exemption nor any change in ownership.\" The disabled-veteran certification form must be re-presented on any change in ownership. A person who becomes ineligible must notify the assessor by the last day of February of the following tax year (7-38-17(D)); failure is a misdemeanor (up to $1,000 fine)."
+  },
+  "ratingChange": "Since tax year 2026 the exemption equals the veteran's VA service-connected rating percentage (10%-100%). DVS Form 1 records the rating and date awarded; a rating change requires a new/updated Certificate of Eligibility from NMDVS and presentation to the assessor. Not addressed in the statute text as a separate procedure; confirm with NMDVS.",
+  "move": "7-37-5.1(D) (2026): on transfer of the principal residence the veteran may either keep the exemption on the old home for the rest of the year or move it to the new principal residence, even outside the 30-day window. Benefits are forfeited on becoming a resident of another state (DVS Form 1).",
+  "onlineFiling": {
+    "available": false,
+    "text": "NMDVS accepts DVS Form 1 by mail, email or walk-in; no web portal. County assessor step is in person or by mail (varies by county)."
+  },
+  "documents": [
+    "DVS Form 1 completed",
+    "DD-214 (full, undeleted) or equivalent DoD document showing dates and character of service (NOAA 56-16 / PHS 1867 for those services)",
+    "VA finding of service-connected disability with rating percentage (disabled veteran exemption only)",
+    "Proof of NM residency: NM driver's license or ID, voter registration, or latest NM income tax return (NMDVS accepts only these)",
+    "Surviving spouse: marriage certificate and veteran's death certificate",
+    "At the assessor: the NMDVS Certificate of Eligibility plus the assessor's owner-occupancy certification form"
+  ],
+  "survivingSpouse": "Un-remarried surviving spouse of a veteran who qualified for the disabled veteran exemption is entitled to it (even if the veteran never applied), provided the spouse continuously occupies the property as principal residence after the veteran's death (7-37-5.1(C), as amended 2026). Un-remarried surviving spouse of any qualifying veteran gets the standard veteran exemption. Remarriage ends it, even if followed by divorce.",
+  "appeal": "If the assessor has not acted on a claim 30 days after the notice-of-value mailing, or denies it, the owner files a protest with the county assessor under NMSA 7-38-21 (county valuation protests board, 7-38-24); the assessor may hold an informal conference first.",
+  "statute": "NMSA 1978 7-37-5 (veteran exemption), 7-37-5.1 (disabled veteran exemption), 7-38-17 (claiming exemptions); as amended by Laws 2025 (HB 47) and Laws 2026, ch. 9 (HB 285, emergency, effective Feb 25, 2026); N.M. Const. art. VIII, secs. 5 and 15 (2024 amendments)",
+  "sourceUrls": [
+    { "url": "https://www.nmlegis.gov/Sessions/26%20Regular/final/HB0285.pdf", "title": "HB 285 (2026) final version: amends 7-37-5.1 and 7-38-17, claim procedure, portability, protest", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.nmlegis.gov/Sessions/25%20Regular/final/HB0047.pdf", "title": "HB 47 (2025) final version: implements 2024 constitutional amendments ($10,000 veteran exemption, proportional disabled veteran exemption)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.dvs.nm.gov/wp-content/uploads/2026/04/100023_DVS_DVS1_VeteransExemption_Fillable.pdf", "title": "NMDVS DVS Form 1 (Rev. March 2025) with eligibility, documents, mailing addresses", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.dvs.nm.gov/benefits/", "title": "NMDVS Benefits page (property tax exemption, links to DVS Form 1)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.newmexico.gov/wp-content/uploads/2026/08/20260813_New-Mexico-Veterans-Benefit-from-Expanded-Property-Tax-Exemptions.pdf", "title": "TRD/NMDVS joint release Aug 13, 2026: two-step process (NMDVS certificate, then county assessor)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.newmexico.gov/businesses/county-officials/", "title": "TRD County Officials directory (all 33 county assessors)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.newmexico.gov/governments/2020/10/21/property-tax/", "title": "TRD Property Tax Division page", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.dvs.nm.gov/state-benefits-offices/", "title": "NMDVS State Benefits field offices", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "Veterans Property Tax Exemption.survivingSpouse and Disabled Veteran Property Tax Exemption.survivingSpouse",
+      "issue": "Both rows show survivingSpouse false. DVS Form 1 and 7-37-5.1(C) as amended by HB 285 (2026) extend both exemptions to the un-remarried surviving spouse (disabled veteran exemption: spouse must continue to occupy the home).",
+      "source": "https://www.nmlegis.gov/Sessions/26%20Regular/final/HB0285.pdf"
+    }
+  ],
+  "notes": "The county assessor's owner-occupancy certification form is prescribed by TRD but no statewide PDF was found on tax.newmexico.gov; counties post their own copies (e.g. Santa Fe County '2027 Disabled Veteran certification form'), so number/url left null. The 'around April 1' notice-of-value timing comes from county assessor pages, not statute text (7-38-20 not opened). HB 285 chapter number (Laws 2026 ch. 9, signed Feb 25, 2026) comes from a legislative tracking site, not nmlegis.gov; the final bill text itself was read. Official NMSA compilation on nmonesource.com returned 403 to automated fetch."
+}

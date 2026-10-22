@@ -1,0 +1,85 @@
+{
+  "state": "ND",
+  "officeType": "county auditor / county director of tax equalization (local assessor)",
+  "officeTypeNote": "N.D.C.C. 57-02-08.8(3) and Form SFN 24770 say the first-time application is filed with the COUNTY AUDITOR; the Tax Commissioner's web page says to submit it to the local assessor or county director of tax equalization, who approves the application. In practice the city assessor (Fargo, Bismarck, Grand Forks, etc.) or county tax director processes it and forwards it; the county treasurer only collects. Either office will accept it.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://www.tax.nd.gov/sites/www/files/documents/misc-discuss-folder/directors-of-tax-equalization-and-city-assessors.pdf",
+    "label": "ND Office of State Tax Commissioner: Directors of Tax Equalization and City Assessors (name, email, phone, address for all 53 counties and assessing cities)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.tax.nd.gov/property-tax",
+    "note": "Single PDF, no per-county pages."
+  },
+  "forms": [
+    {
+      "programRef": "Disabled Veterans Property Tax Credit",
+      "name": "Application for Disabled Veterans Property Tax Credit",
+      "number": "SFN 24770",
+      "url": "https://www.tax.nd.gov/sites/www/files/documents/forms/property-tax/property-tax-general/application-for-disabled-veterans-property-tax-credit.pdf",
+      "revision": "2026 edition (12-2025)",
+      "filedWith": "county auditor (or local assessor / county director of tax equalization)"
+    },
+    {
+      "programRef": "Paraplegic Veterans Property Tax Exemption",
+      "name": "Application for Property Tax Exemption (check N.D.C.C. 57-02-08(20)(a): paraplegic disabled veteran or veteran awarded specially adapted housing)",
+      "number": null,
+      "url": "https://www.tax.nd.gov/sites/www/files/documents/forms/individual/property-tax/application-for-property-tax-exemption.pdf",
+      "revision": null,
+      "filedWith": "local assessor (form) / county auditor affidavit (guideline)"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "04-01",
+    "text": "SFN 24770 (2026): \"This application must be filed with the county auditor by April 1 of the first year for which the credit is claimed.\" Tax Commissioner page: due April 1 of the year the property is assessed. Paraplegic exemption form: \"must be filed with the assessor every year by February 1 of the year for which the exemption is claimed.\" Eligibility (ownership, occupancy, 50%+ rating) is measured on the February 1 assessment date."
+  },
+  "effective": "Credit applies to the taxable valuation for the assessment year in which it is timely claimed (taxes payable the following year). \"The percentage rating on the assessment date applies for the whole year.\" Credit is portable: if the veteran moves mid-year it follows to the new homestead, prorated by months (guideline examples 18, 26).",
+  "lateFiling": "No statutory late-filing window. The board of county commissioners \"may cancel the portion of unpaid taxes that represents the credit\" for any year the qualifying owner held title (57-02-08.8(7)), which is the only remedy for a missed year.",
+  "retroactivity": {
+    "type": "local-option",
+    "years": null,
+    "text": "57-02-08.8(7): county commissioners may cancel the credit portion of UNPAID taxes for any eligible year; discretionary, and applies to unpaid tax rather than refunds of tax already paid."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "First-time claimants file the affidavit, DD-214 and VA certificate; thereafter the applicant \"shall furnish to the assessor or other assessment officials, when requested to do so, any information which supports the claim for credit for any subsequent year\" (57-02-08.8(3)). Tax Commissioner: \"Credit is automatically applied for those that qualify.\" A new VA certificate is required when the paid rate changes. Paraplegic exemption form states annual filing by February 1."
+  },
+  "ratingChange": "Form SFN 24770: provide a VA certificate of the rate paid \"when claiming credit for the first time, or if the veteran receives a change in the rate paid.\" The credit percentage equals the rating (or 100% for TDIU/extra-schedular paid at the 100% rate) in effect on the February 1 assessment date.",
+  "move": "Guideline item 18: \"If a qualifying disabled veteran or surviving spouse moves to a different homestead, the credit is portable and may be applied to the person's new homestead\" (prorated between homesteads by month). File a new application for the new property with that county.",
+  "onlineFiling": {
+    "available": false,
+    "text": "Fillable PDF filed with the county/city office; no state portal."
+  },
+  "documents": [
+    "DD Form 214 showing honorable discharge (first-time claim; confidential under N.D.C.C. 37-18-11)",
+    "VA certificate/letter certifying the service-connected disability rating or the rate at which the veteran is paid (first claim and on any change)",
+    "Affidavit/application SFN 24770 describing the homestead and ownership type (deed, contract for deed, joint tenancy, life estate, revocable trust)",
+    "Surviving spouse: VA correspondence showing receipt of Dependency and Indemnity Compensation (for the 100% credit) or the deceased veteran's rating",
+    "Paraplegic exemption: VA evidence of specially adapted housing award, or physician's certification of paraplegia"
+  ],
+  "survivingSpouse": "Surviving spouse of a qualifying veteran receives the credit at the veteran's rating percentage; a spouse receiving VA DIC receives a 100% credit, and a posthumous DIC determination is presumed to precede the veteran's death (57-02-08.8(1)). Credit terminates at the end of the taxable year of the applicant's death. Paraplegic exemption: unremarried surviving spouse eligible.",
+  "appeal": "A disapproved application (noted on the form by the assessor or director of tax equalization) is appealed through the local board of equalization (city/township in April, county board in June, State Board of Equalization in August) under N.D.C.C. ch. 57-12, or by abatement application to the county commissioners under ch. 57-23; not re-verified for this record.",
+  "statute": "N.D.C.C. 57-02-08.8 (disabled veterans credit, first $9,000 of taxable valuation); N.D.C.C. 57-02-08(20)(a) (paraplegic / specially adapted housing exemption, first $120,000 of true and full valuation of buildings); N.D.C.C. 57-02-14.1 (certification); 37-18-11 (confidentiality)",
+  "sourceUrls": [
+    { "url": "https://www.tax.nd.gov/property-tax-exemptions-credits/property-tax-credits/disabled-veterans-property-tax-credit", "title": "ND Tax Commissioner: Disabled Veteran's Property Tax Credit (tax.nd.gov/veterans)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.nd.gov/sites/www/files/documents/forms/property-tax/property-tax-general/application-for-disabled-veterans-property-tax-credit.pdf", "title": "SFN 24770 Application for Disabled Veterans Property Tax Credit (2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.nd.gov/sites/www/files/documents/forms/property-tax/property-tax-general/guideline-property-tax-credit-for-disabled-veterans.pdf", "title": "Tax Commissioner Guideline: Property Tax Credit for Disabled Veterans", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://ndlegis.gov/cencode/t57c02.pdf", "title": "N.D.C.C. Title 57 Chapter 02 (57-02-08(20), 57-02-08.8)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.nd.gov/sites/www/files/documents/guidelines/property-tax/disabledvetsconfinedtowheelchair.pdf", "title": "Tax Commissioner Guideline: Exemption for Qualifying Veterans and Disabled Persons Confined to a Wheelchair (rev. 6-2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.nd.gov/sites/www/files/documents/forms/individual/property-tax/application-for-property-tax-exemption.pdf", "title": "Application for Property Tax Exemption (57-02-08 exemptions incl. paraplegic veterans)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.nd.gov/sites/www/files/documents/misc-discuss-folder/directors-of-tax-equalization-and-city-assessors.pdf", "title": "Directors of Tax Equalization and City Assessors directory", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.nd.gov/property-tax-exemptions-credits", "title": "ND Property Tax Exemptions and Credits index", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.tax.nd.gov/property-tax", "title": "ND Property Tax main page", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "Paraplegic Veterans Property Tax Exemption.summary",
+      "issue": "Statute 57-02-08(20)(a) exempts the first $120,000 of TRUE AND FULL valuation of fixtures, buildings and improvements only; land stays taxable (guideline items 2 and 9, max benefit $5,400 taxable value). The $120,000 figure in the row is right but it is a building-value cap, not a market-value shield including land.",
+      "source": "https://www.tax.nd.gov/sites/www/files/documents/guidelines/property-tax/disabledvetsconfinedtowheelchair.pdf"
+    }
+  ],
+  "notes": "Deadline conflict in state materials: the 2026 form and web page say April 1; older copies and some county pages say March 31. Filing office also differs (statute/form: county auditor; web page: assessor or director of tax equalization). Appeal paragraph is from general ND equalization procedure, not re-verified. Date 'every year by February 1' on the general exemption application may be aimed at institutional exemptions; the paraplegic guideline does not itself state an annual refiling requirement."
+}

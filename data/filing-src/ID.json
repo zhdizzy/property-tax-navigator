@@ -1,0 +1,93 @@
+{
+  "state": "ID",
+  "officeType": "county assessor",
+  "officeTypeNote": "Apply with the county assessor (paper) or online through the Idaho State Tax Commission's TAP portal; the Tax Commission administers the program statewide and reimburses counties. The county treasurer only bills; the assessor takes the application.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://tax.idaho.gov/contact-us/contact-property-tax/",
+    "label": "Idaho State Tax Commission: Contacting Property Tax (table of all 44 county assessors and treasurers with links)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://tax.idaho.gov/taxes/property/",
+    "note": "Links go to each county's own assessor site (e.g. https://adacounty.id.gov/Assessor), so there is no predictable state URL pattern. 'For questions about your property's assessed value, contact your county assessor.'"
+  },
+  "forms": [
+    {
+      "programRef": "Property Tax Benefit for Disabled Veterans (Idaho Code 63-705A)",
+      "name": "Disabled Veteran Property Tax Benefit Application (annual; the Tax Commission posts the new year's PDF on the Veteran Benefit page when the Jan 1 window opens, and county assessors hand it out). Online: TAP portal 'Property Tax Relief' link.",
+      "number": null,
+      "url": "https://idahotap.gentax.com/TAP?Link=PTR",
+      "revision": "2027 paper form not yet posted as of 2026-10-21 (page text: 'Download it here' link absent off-season); the online TAP application is the stable link",
+      "filedWith": "county assessor (mail or in person) or online via Tax Commission TAP"
+    },
+    {
+      "programRef": "General Reduction Program",
+      "name": "Property Tax Reduction (circuit breaker) Application plus Medical Expense Statement (EFO00119); application instructions EIN00038",
+      "number": "EFO00119 (medical expense statement); EIN00038 (instructions)",
+      "url": "https://tax.idaho.gov/wp-content/uploads/forms/EFO00119/EFO00119_09-23-2026.pdf",
+      "revision": "09-23-2026",
+      "filedWith": "county assessor or online via TAP; Jan 1 to Apr 15"
+    },
+    {
+      "programRef": "Deferral Program",
+      "name": "Property Tax Deferral Application (guide EBR00067); apply Jan 1 to Sept 7",
+      "number": "EBR00067 (guide)",
+      "url": "https://tax.idaho.gov/wp-content/uploads/pubs/EBR00067/EBR00067_09-22-2026.pdf",
+      "revision": "09-22-2026",
+      "filedWith": "county assessor or online via TAP"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "04-15",
+    "text": "Tax Commission: 'You must apply between January 1 and April 15, 2027, for a reduction to 2027 property taxes.' Pub 650: 'You must file the application with your assessor's office from January 1 through April 15.' The veteran must be rated 100%/IU 'as of January 1' and have owned and lived in the home 'before April 15.'"
+  },
+  "effective": "Same tax year as the application; 'If you're approved, your benefit will appear on your December 2027 property tax bill' (i.e. the bill issued in the year of application).",
+  "lateFiling": "No late-filing provision on the Tax Commission page or Pub 650; an application after April 15 waits for the next January 1 window. (In 2021 the legislature extended that year's deadline to June 15 by special act; not recurring.)",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "No refund of prior years; the benefit is an annual reduction applied to the current-year bill only."
+  },
+  "renewal": {
+    "type": "annual",
+    "text": "Tax Commission: 'You must apply and qualify for this program every year.' Exception: 'If your disability is permanent and total, you don't need to reapply each year. The benefit will renew automatically.' Pub 650: 'You must apply and qualify each year unless your disability is permanent and total.'"
+  },
+  "ratingChange": "Eligibility is tested 'as of January 1' each year with 'a current letter from the U.S. Department of Veterans Affairs confirming your 100% service-connected disability rating' (or 100% IU compensation). A veteran whose rating reaches 100% during a year applies in the next Jan 1 to Apr 15 window; a non-P&T veteran whose rating drops below 100% simply does not re-qualify. P&T veterans on auto-renewal should tell the assessor if status changes (Idaho Code 63-708 lets the state recover benefits paid in error).",
+  "move": "Idaho Code 63-705A allows transfer of the current-year benefit to a new qualifying homestead if the veteran moves after April 15 but before October 1 and notifies the Tax Commission before October 1 (per Tax Commission summary; statute text not opened). 'The benefit isn't transferable to a new property after the death of the veteran.'",
+  "onlineFiling": {
+    "available": true,
+    "text": "Yes: Idaho TAP 'Property Tax Relief' application at https://idahotap.gentax.com/TAP?Link=PTR (also reached via tax.idaho.gov/proptaxrelief). Paper applications go to the county assessor."
+  },
+  "documents": [
+    "Current VA letter 'confirming your 100% service-connected disability rating or individual unemployment, as of January 1' of the tax year (Pub 650)",
+    "Property must already carry a current Idaho homeowner's exemption (apply for that first with the assessor if new to the home)",
+    "Proof of ownership/occupancy as primary residence before April 15 (deed or title for first-time claimants, per county assessor instructions; mobile homes qualify)",
+    "Trust Affidavit (EFO00183) or LP/LLC/Corporation Affidavit (EFO00184) if title is held that way"
+  ],
+  "survivingSpouse": "Tax Commission: 'Once granted to a qualifying veteran, a surviving spouse can use this benefit' for the current property; 'The benefit isn't transferable to a new property after the death of the veteran.' Pub 650: 'If we grant this benefit to a qualifying veteran who then dies, the surviving spouse can use it for the current property.'",
+  "appeal": "Not stated on the Tax Commission pages read. Denials are issued by the Tax Commission after county review; contact the Tax Commission at (208) 334-7736 (property tax relief line).",
+  "statute": "Idaho Code 63-705A (veterans benefit); 63-701 to 63-710 (property tax reduction); 63-712 et seq. (deferral)",
+  "sourceUrls": [
+    { "url": "https://tax.idaho.gov/taxes/property/homeowners/veteran-benefit/", "title": "Idaho State Tax Commission: Property Tax Benefit for Veterans with 100% Service-Connected Disability", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.idaho.gov/wp-content/uploads/pubs/EBR00650/EBR00650_09-22-2026.pdf", "title": "Idaho Tax Commission Pub 650: Property Tax Benefit for Veterans with 100% Service-connected Disability (09-22-2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.idaho.gov/contact-us/contact-property-tax/", "title": "Idaho Tax Commission: Contacting Property Tax (county assessor/treasurer directory)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://idahotap.gentax.com/TAP?Link=PTR", "title": "Idaho TAP: Property Tax Relief online application", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.idaho.gov/taxes/property/homeowners/reduction/", "title": "Idaho Tax Commission: Property Tax Reduction program", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.idaho.gov/taxes/property/homeowners/deferral/", "title": "Idaho Tax Commission: Property Tax Deferral program", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.idaho.gov/taxes/property/homeowners/forms/", "title": "Idaho Tax Commission: Property Homeowners Forms", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.idaho.gov/wp-content/uploads/forms/EFO00119/EFO00119_09-23-2026.pdf", "title": "EFO00119 Property Tax Relief Medical Expense Statement (09-23-2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.idaho.gov/wp-content/uploads/pubs/EBR00067/EBR00067_09-22-2026.pdf", "title": "Idaho Tax Commission Pub 67: Property Tax Deferral guide (09-22-2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.idaho.gov/taxes/property/", "title": "Idaho Tax Commission: Property Tax (fallback)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "propertyTax.programs[1].incomeLimit",
+      "issue": "Tax Commission reduction page for the 2027 program now states the income limit as 'total 2026 income, after deducting medical expenses, must be $40,030 or less'; data file has $39,130 (the 2026-program figure).",
+      "source": "https://tax.idaho.gov/taxes/property/homeowners/reduction/"
+    }
+  ],
+  "notes": "The Tax Commission takes the veteran application PDF down between seasons: the 2026 form (seen in search results as EFO00301, tax.idaho.gov/document-mngr/forms_EFO00301, now 404) is gone and the 2027 form was not yet posted on 2026-10-21, so forms[0].url points to the TAP online application instead; re-check tax.idaho.gov/VeteransBenefit after Jan 1, 2027 for the paper PDF. legislature.idaho.gov (Idaho Code 63-705A) refused all connections from this environment (connection reset), so the moving-before-Oct-1 transfer rule is taken from the Tax Commission's summary rather than the statute text. Idaho's 2027-cycle pages are already live (deadline April 15, 2027), which is why quotes carry 2027 dates."
+}

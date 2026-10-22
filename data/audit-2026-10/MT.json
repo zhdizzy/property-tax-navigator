@@ -1,0 +1,100 @@
+{
+  "state": "MT",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0074,
+    "sourceValue": 0.0061,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Tax Foundation 'Property Taxes by State' table (Mar 2026): Montana 0.61% for 2024 (0.64% for 2023), total real taxes paid / total owner-occupied value (ACS B25082, B25090). File value 0.74% is 0.13 pp above."
+  },
+  "programs": [
+    {
+      "name": "Montana Disabled Veteran Assistance Program (MDV)",
+      "status": "corrected",
+      "fields": {
+        "incomeLimit": {
+          "current": 62598,
+          "correct": 64551,
+          "quote": "Income limits based on 2025 Federal Adjusted Gross Income: Single $64,551 or less; Married or Head of Household $74,482 or less; Unmarried Surviving Spouse $56,276 or less (Tax Year 2027)",
+          "source": "https://revenue.mt.gov/property/property-tax-help/mdv"
+        },
+        "summary": {
+          "current": "TY2026 income ceilings: single < $62,598, MFJ < $72,229, surviving spouse < $54,573 (indexed).",
+          "correct": "TY2027 (applications due April 15, 2027, using 2025 FAGI): single ≤ $64,551, married/HoH ≤ $74,482, unmarried surviving spouse ≤ $56,276. Tiers, single: 100% reduction to $49,654; 80% $49,655-$54,620; 70% $54,621-$59,584; 50% $59,585-$64,551. Married/HoH: 100% to $59,584; 80% $59,585-$64,551; 70% $64,552-$69,515; 50% $69,516-$74,482. Surviving spouse: 100% to $41,379; 80% $41,380-$46,344; 70% $46,345-$51,310; 50% $51,311-$56,276.",
+          "quote": "Single Filers: $0-$49,654 100%; $49,655-$54,620 80%; $54,621-$59,584 70%; $59,585-$64,551 50%",
+          "source": "https://revenue.mt.gov/property/property-tax-help/mdv"
+        },
+        "details": {
+          "current": "100% reduction (single ≤$48,152 / MFJ ≤$57,781 / surviving spouse ≤$40,127), 80% (single $48,153-$52,968 ...), 70% ..., 50% (single $57,782-$62,598 / MFJ $67,413-$72,229 / surviving spouse $49,759-$54,573).",
+          "correct": "Replace the TY2026 tier table with the TY2027 table above (DOR posts the next year's table each September).",
+          "quote": "Married Filers or Heads of Household: $0-$59,584 100%; $59,585-$64,551 80%; $64,552-$69,515 70%; $69,516-$74,482 50%",
+          "source": "https://revenue.mt.gov/property/property-tax-help/mdv"
+        },
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "quote": "The veteran must have 100% disability from an injury related to service.",
+          "source": "https://revenue.mt.gov/property/property-tax-help/mdv"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "Unmarried Surviving Spouses: $0-$41,379 100%; $41,380-$46,344 80%; $46,345-$51,310 70%; $51,311-$56,276 50%",
+          "source": "https://revenue.mt.gov/property/property-tax-help/mdv"
+        },
+        "fraction": {
+          "current": 0.7,
+          "correct": "unverified",
+          "quote": "Reduction is 100%, 80%, 70% or 50% of the tax rate by income tier; the blended 0.7 is a modeling choice, not a statutory figure",
+          "source": "https://revenue.mt.gov/property/property-tax-help/mdv"
+        }
+      },
+      "effectiveChanges": "TY2027 income tiers published (above); TY2026 figures in the row are now the prior year. Form MDV V1 9/2026 is the Tax Year 2027 application, due April 15, 2027. SB 274 (2025, 60-90% ratings) did not pass; its successor SB 424 (80-90% ratings) passed but was vetoed by the Governor, with override polling in progress as of the Legislature's July 2025 summary. DOR's TY2027 rules still require a 100% rating, so no rating-threshold change is in effect for TY2026 or TY2027.",
+      "note": "Lead resolved: SB 274 died in process and SB 424 was vetoed (Revenue Interim Committee 'Summary of Enacted Tax Legislation', July 2025, lists SB 424 under 'Vetoed bills with override polling in progress'). The final override-poll result was not confirmed from a primary source; the DOR TY2027 program page, which still says 100%, is treated as controlling. Form MDV accepts veterans 'rated or paid at the 100% disabled rate', so TDIU qualifies; the DOR web page says 'rated 100%'. The surviving-spouse table is a distinct income schedule, so survivingSpouse should be true."
+    },
+    {
+      "name": "Veterans Clubhouse",
+      "status": "confirmed",
+      "fields": {
+        "nonVeteran": {
+          "current": null,
+          "correct": true,
+          "quote": "Property owned by veteran organizations used primarily for educational, fraternal, benevolent, or public charitable purposes (organizational exemption, not a homeowner benefit)",
+          "source": "https://revenue.mt.gov/property/property-tax-help/mdv"
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Organizational exemption (MCA 15-6-203 family); no dollar value for a veteran's home. Should never be credited to a rated veteran. Not re-verified against statute text in this pass; row is value-less so no dollar risk."
+    },
+    {
+      "name": "Incompetent Veteran Trust",
+      "status": "confirmed",
+      "fields": {
+        "nonVeteran": {
+          "current": null,
+          "correct": true,
+          "quote": "Property under legal guardian control for an incompetent veteran or minor dependent, paid for with U.S. Government funds (guardianship exemption, not a homeowner benefit)",
+          "source": "https://revenue.mt.gov/property/property-tax-help/mdv"
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Guardianship exemption; no dollar value for a rated veteran's own home. Not re-verified against statute text in this pass."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "corrected",
+    "correct": "100% service-connected rating (or paid at the 100% rate) required. Tax reduction is income-based (not a flat exemption). TY2027 (2025 FAGI), single: 100% reduction if income ≤ $49,654, 80% if ≤ $54,620, 70% if ≤ $59,584, 50% if ≤ $64,551. Married/HoH caps at $74,482; unmarried surviving spouse at $56,276. Must occupy the home 7+ months/year; apply by April 15.",
+    "source": "https://revenue.mt.gov/property/property-tax-help/mdv"
+  },
+  "sources": [
+    { "url": "https://revenue.mt.gov/property/property-tax-help/mdv", "title": "Montana DOR: Montana Disabled Veteran Assistance Program (MDV), Tax Year 2027 income tables", "status": 200 },
+    { "url": "https://revenue.mt.gov/files/Forms/Montana_Disabled_Veteran_Property_Tax_Relief_Application_Form_MDV.pdf", "title": "Form MDV, Tax Year 2027 application (V1 9/2026)", "status": 200 },
+    { "url": "https://archive.legmt.gov/content/Committees/Interim/2025-2026/RIC/Meetings/July_11_2025/3.3.tax-legislation-2025.pdf", "title": "Montana Legislature Revenue Interim Committee, Summary of Enacted Tax Legislation (July 2025): SB 424 listed under vetoed bills", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation, Property Taxes by State and County, 2026 (2024 ACS data)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "The MDV row's TY2026 income tiers are one year stale: DOR has published TY2027 tiers (single cap $64,551, married $74,482, surviving spouse $56,276, 100% reduction to $49,654 / $59,584 / $41,379). The rating threshold stays at 100% because SB 274 died and SB 424 (80-90%) was vetoed, and the 0.74% tax rate is 0.13 pp above the Tax Foundation 2024 figure."
+}

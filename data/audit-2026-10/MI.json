@@ -1,0 +1,94 @@
+{
+  "state": "MI",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0154,
+    "sourceValue": 0.0119,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Tax Foundation 'Property Taxes by State' table (Mar 2026): Michigan 1.19% for 2024 (1.23% for 2023), total real taxes paid / total owner-occupied value (ACS B25082, B25090). File value 1.54% is 0.35 pp above, the largest gap in this batch."
+  },
+  "programs": [
+    {
+      "name": "Disabled Veteran Exemption",
+      "status": "corrected",
+      "fields": {
+        "ptRequired": {
+          "current": null,
+          "correct": true,
+          "quote": "permanently and totally disabled as a result of military service and entitled to veterans' benefits at the 100% rate",
+          "source": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-211-7b"
+        },
+        "summary": {
+          "current": "Full exemption (MCL 211.7b) at 100% rating, VA Individual Unemployability, OR receipt of VA Specially Adapted Housing assistance",
+          "correct": "Full exemption (MCL 211.7b) for a Michigan-resident veteran who is (i) permanently and totally disabled and paid at the 100% rate, OR (ii) rated individually unemployable, OR (iii) receiving/received SAH or SHA assistance. A 100% schedular rating that is not P&T is not one of the three routes.",
+          "quote": "(i) ... entitled to veterans' benefits at the 100% rate. (ii) ... pecuniary assistance due to disability for specially adapted housing. (iii) ... rated by the United States Department of Veterans Affairs as individually unemployable.",
+          "source": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-211-7b"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "A surviving spouse of a disabled veteran who, immediately before death, was eligible ... continues as long as the surviving spouse does not remarry",
+          "source": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-211-7b"
+        },
+        "type": {
+          "current": "full",
+          "correct": "full",
+          "quote": "Real property used and owned as a homestead by a disabled veteran ... is exempt from the collection of taxes under this act",
+          "source": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-211-7b"
+        }
+      },
+      "effectiveChanges": "No 2024, 2025 or 2026 Public Act amends MCL 211.7b or 211.7c (history lines end at 2023 PA 150 and 2023 PA 151; the MCL site is current through PA 114 of 2026). The 'January 1, 2025' date in the statute is the start of one-time filing under 211.7c, not a 2025 amendment. Form 5107 was re-issued Rev. 03-26 (approved April 7, 2026) with the same three eligibility routes.",
+      "note": "The lead about '2025 changes to MCL 211.7b/7c' resolves to: no statutory change; the only 2025-26 activity is the operational switch to no-reapplication filing and the April 2026 form revision. The IU route is the TDIU hook (a TDIU veteran with a sub-100% combined rating qualifies)."
+    },
+    {
+      "name": "Homestead Property Tax Credit",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": {
+          "current": 1900,
+          "correct": 1900,
+          "quote": "Homestead Property Tax Credit ... $165,400 ... $71,500 ... $1,900 ... $70,501 - $71,500 (Tax Year 2025 Information page)",
+          "source": "https://www.michigan.gov/taxes/iit/tax-guidance/tax-year-info/tax-year-2025-guidance"
+        },
+        "incomeLimit": {
+          "current": 71500,
+          "correct": 71500,
+          "quote": "Tax Year 2025: total household resources limit $71,500; taxable value limit $165,400; maximum credit $1,900",
+          "source": "https://www.michigan.gov/taxes/iit/tax-guidance/tax-year-info/tax-year-2025-guidance"
+        },
+        "details": {
+          "current": "Property tax credit up to $1,800 on Michigan primary residence ... Renters may also qualify for credit up to $1,800.",
+          "correct": "Refundable credit up to $1,900 (TY2025; indexed annually) for homeowners and renters; total household resources must be at or under $71,500 and homestead taxable value at or under $165,400. Veterans with a service-connected disability and surviving spouses file MI-1040CR-2 if it yields more.",
+          "quote": "MI-1040CR-2 (Homestead Property Tax Credit Claim for Veterans and Blind People)",
+          "source": "https://www.michigan.gov/taxes/iit/tax-guidance/tax-year-info/tax-year-2025-guidance"
+        },
+        "nonVeteran": {
+          "current": null,
+          "correct": true,
+          "quote": "You have Total Household Resources (THR) under a specified amount adjusted annually.",
+          "source": "https://www.michigan.gov/taxes/iit/tax-guidance/credits-exemptions/hptc"
+        }
+      },
+      "effectiveChanges": "TY2026 figures (max credit, THR and taxable-value caps) are indexed and will post with the 2026 MI-1040CR in January 2027; TY2025 values are the latest published.",
+      "note": "This is a general, income-tested income-tax credit, not a veteran exemption; it should carry nonVeteran:true (or be excluded from veteran savings) the way MN's general exclusion is. The stale '$1,800' in `details` should become $1,900."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "unverified",
+    "correct": "",
+    "source": ""
+  },
+  "sources": [
+    { "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-211-7b", "title": "MCL 211.7b Disabled veteran homestead exemption (history through 2023 PA 150)", "status": 200 },
+    { "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-211-7c", "title": "MCL 211.7c Continuation without reapplication, rescission, audit, denial (2023 PA 151)", "status": 200 },
+    { "url": "https://www.michigan.gov/treasury/-/media/Project/Websites/treasury/Forms/Local-Government/PSD/STC/5107.pdf", "title": "Form 5107, STC Affidavit for Disabled Veterans Exemption (Rev. 03-26)", "status": 200 },
+    { "url": "https://www.michigan.gov/taxes/iit/tax-guidance/tax-year-info/tax-year-2025-guidance", "title": "Michigan Treasury: Tax Year 2025 Information (homestead credit $1,900 / $71,500 / $165,400)", "status": 200 },
+    { "url": "https://www.michigan.gov/taxes/iit/tax-guidance/credits-exemptions/hptc", "title": "Michigan Treasury: Homestead Property Tax Credit Information", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation, Property Taxes by State and County, 2026 (2024 ACS data)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "MCL 211.7b/7c have not been amended since 2023; the exemption remains full, with P&T-at-100%, IU, or SAH/SHA as the three routes, so the row should set ptRequired:true with IU/SAH alternates rather than imply any 100% rating qualifies. The homestead credit figures ($1,900 / $71,500 / $165,400 for TY2025) are confirmed on michigan.gov but the row's `details` still says $1,800 and the credit should be flagged nonVeteran; the file's 1.54% tax rate is 0.35 pp above the Tax Foundation 2024 figure."
+}

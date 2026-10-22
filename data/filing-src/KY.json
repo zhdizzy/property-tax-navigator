@@ -1,0 +1,74 @@
+{
+  "state": "KY",
+  "officeType": "county Property Valuation Administrator (PVA)",
+  "officeTypeNote": "KRS 132.810(1): 'each person claiming the exemption shall file an application with the property valuation administrator of the county in which the applicant resides.' The county clerk and sheriff (who collects the bill) do not take homestead applications. Kentucky's veteran benefit is the general Section 170 disability homestead exemption; there is no separate veteran-only exemption or form.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://revenue.ky.gov/Property/Documents/PVA%20Directory%202022-2026.pdf",
+    "label": "Kentucky Department of Revenue: Property Valuation Administrators 2022-2026 Directory (all 120 PVAs with addresses and phones; the DOR homestead page's 'Find My PVA' link)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://revenue.ky.gov/Property/Residential-Farm-Commercial-Property/Pages/Homestead-Exemption.aspx",
+    "note": "PDF directory, no per-county web pages. revenue.ky.gov intermittently returned 503 'server is busy' during checks; retry if the PDF fails to load."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Application for Exemption Under the Homestead/Disability Amendment (Section 170, Kentucky Constitution); veterans check the disability provision (KRS 132.810(2))",
+      "number": "62A350",
+      "url": "https://revenue.ky.gov/Property/Residential-Farm-Commercial-Property/PublishingImages/Pages/Homestead-Exemption/62A350%20(10-22)%20updated%20Fillable.pdf",
+      "revision": "10-22 (fillable; the DOR Forms library copy at https://revenue.ky.gov/Forms/62A350.pdf is the older 3-16 edition)",
+      "filedWith": "Property Valuation Administrator of the county where the residence is located, by December 31"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "12-31",
+    "text": "Form 62A350: 'This application-affidavit must be submitted by December 31st of the year in which exemption is sought to the property valuation administrator of the county in which the residential unit is located. In addition, the applicant must own, occupy and maintain the subject property ... as of January 1' of that tax year. Disability verification 'must be submitted to the property valuation administrator by December 31 in the first year of eligibility.'"
+  },
+  "effective": "Tax year (January 1 to December 31) in which the application is filed, provided the owner was totally disabled and receiving disability payments for the entire taxation period and owned/occupied the home on January 1. Exemption amount is fixed for two-year periods ($49,100 for 2025-2026).",
+  "lateFiling": "The December 31 deadline is the end of the tax year itself, so an application filed any time in the year counts for that year: KRS 132.810(4)(c) gives 'a full or partial exoneration' of the bill if the application is approved before payment, and (4)(d) 'Any person making application and qualifying for the homestead exemption after property tax bills have been paid shall be entitled to a refund of the property taxes applicable to the value of the homestead exemption.' No statutory cure after December 31.",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "Refund applies only to the current tax year when the application is filed after the bill is paid (KRS 132.810(4)(d)). Nothing in KRS 132.810 allows claims for earlier years."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "KRS 132.810(2)(d): a totally disabled applicant under 65 'must apply for the homestead exemption on an annual basis, except' that 'a service-connected totally disabled veteran of the United States Armed Forces' (or a P&T SSA/KRS disability) 'shall document the disability at the time of application ... and shall not be required to apply for the homestead exemption on an annual basis.' DOR: the homeowner must apply annually 'unless: They are a veteran of the United States Armed Forces and have a service connected disability.' Form 62A350 item 6: the PVA 'may require an applicant to re-apply or submit proof of continuing disability.'"
+  },
+  "ratingChange": "Eligibility requires total disability classified by a federal program (VA 100% rating, including IU, qualifies) and receipt of disability payments for the ENTIRE taxation period (KRS 132.810(2)(c)); a veteran rated 100% mid-year first qualifies for the next full calendar year, and 'In no case shall the exemption be prorated' (4)(a). If the rating later drops below total, the exemption 'shall terminate' at the end of that year and the owner 'shall report any change in disability classification' to the PVA (4)(b); the form warns of supplemental bills 'for up to a period of five years' if unreported. At 65 the owner qualifies on age instead.",
+  "move": "File a new 62A350 with the PVA of the new county/residence; only one exemption per residential unit and per person, and the owner must report any title transfer of exempted property to the PVA (KRS 132.810(2)(h)). The form asks whether an exemption is claimed in another county or state.",
+  "onlineFiling": {
+    "available": null,
+    "text": "DOR provides the fillable PDF; filing method (mail, email, in person, PVA web portals) varies by PVA. Check the PVA directory."
+  },
+  "documents": [
+    "Form 62A350 affidavit signed by the owner (and spouse)",
+    "VA documentation showing classification as totally disabled under a federal program and that disability payments were received for the entire year (VA rating decision / benefit summary letter showing 100% or 100% IU); 'Verification documentation must be submitted to the PVA by December 31 in the first year of eligibility'",
+    "Proof of ownership and that the home is the primary residence as of January 1 (deed or other title evidence; PVA records)",
+    "If applying on age instead: birth certificate, driver's license, passport or other listed proof of age"
+  ],
+  "survivingSpouse": "No veteran-specific survivor benefit: the Section 170 exemption is personal to the owner who is 65+ or totally disabled. A surviving spouse keeps it only if they independently qualify (age 65+ or totally disabled). The data file's survivingSpouse: false is correct.",
+  "appeal": "Not addressed on the DOR page or form read; PVA determinations on exemptions can be taken to the Kentucky Board of Tax Appeals/Office of Claims and Appeals under KRS 131.340 after conference with the PVA (not verified here).",
+  "statute": "Ky. Const. §170; KRS 132.810 (application, qualification, annual-filing exemption for service-connected totally disabled veterans); KRS 132.220(1) (January 1 ownership)",
+  "sourceUrls": [
+    { "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=39641", "title": "KRS 132.810 Homestead exemption, Application, Qualification (Kentucky Legislature; served as PDF)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.ky.gov/Property/Residential-Farm-Commercial-Property/Pages/Homestead-Exemption.aspx", "title": "Kentucky Department of Revenue: Homestead Exemption (disability basis, annual filing exception for veterans, $49,100 for 2025-2026)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.ky.gov/Property/Residential-Farm-Commercial-Property/PublishingImages/Pages/Homestead-Exemption/62A350%20(10-22)%20updated%20Fillable.pdf", "title": "Form 62A350 (10-22) Application for Exemption Under the Homestead/Disability Amendment, fillable", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.ky.gov/Forms/62A350.pdf", "title": "Form 62A350 (3-16) DOR forms library copy with full Explanation page", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.ky.gov/Property/Documents/PVA%20Directory%202022-2026.pdf", "title": "Kentucky Property Valuation Administrators 2022-2026 Directory", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.ky.gov/News/Pages/DOR-Sets-2025-2026-Homestead-Exemption.aspx", "title": "DOR news: Homestead Exemption amount set for 2025-2026", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.ky.gov/Property/Pages/default.aspx", "title": "Kentucky DOR: Property Tax (landing)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "propertyTax.programs[0].details",
+      "issue": "Details say 'Must have been receiving disability compensation for entire assessment period' (correct per KRS 132.810(2)(c)). Add that service-connected totally disabled veterans are exempt from the annual re-application that other under-65 disabled owners face (132.810(2)(d)2.a), and that the exemption is per residential unit (one per home even if both spouses qualify).",
+      "source": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=39641"
+    }
+  ],
+  "notes": "Kentucky's statute page is an HTML URL that actually serves a PDF (statute.aspx?id=39641); curl saved it and pdftotext read it. The two 62A350 editions differ only in revision date (10-22 fillable vs 3-16); both carry the December 31 rule. 'Total disability' for veterans means the VA has classified the veteran as totally disabled (100% schedular or IU) with payments received all year; the data row's ratingRequired: 100 matches. The 2027-2028 exemption amount will be set by DOR in late 2026 (every two years per KRS 132.810(2)(e))."
+}

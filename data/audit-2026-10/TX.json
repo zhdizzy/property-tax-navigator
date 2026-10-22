@@ -1,0 +1,147 @@
+{
+  "propertyTaxRate": {
+    "fileValue": 0.0147,
+    "sourceValue": 0.014,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation Table 2 (ACS 2024): Texas 1.40% (1.47% in 2023; the file matches the 2023 figure). Within 0.1 pp. Expect further drift down after the Nov 2025 Prop 13 ($140,000 school homestead exemption) and Prop 11 ($60,000 65+/disabled) amendments, not verified here."
+  },
+  "programs": [
+    {
+      "name": "Homestead Tax Exemption for 100% Disabled or Unemployable Veterans",
+      "status": "corrected",
+      "fields": {
+        "ratingRequired": {
+          "current": 100,
+          "correct": "100% schedular OR individual unemployability; P&T not required",
+          "ptRequired": false,
+          "quote": "Tax Code Section 11.131 provides an exemption of the total appraised value of the residence homestead of Texas veterans awarded 100 percent compensation from the U.S. Department of Veterans Affairs due to a 100 percent disability rating or determination of individual unemployability",
+          "source": "https://comptroller.texas.gov/taxes/property-tax/exemptions/disabledvet-100-faq.php"
+        },
+        "details (stacking)": {
+          "current": "Only one exemption allowed — choose greatest.",
+          "correct": "The 11.131 homestead exemption and the 11.22 partial exemption can both be received (11.22 on any one property the veteran designates).",
+          "quote": "Disabled veterans owning property other than a residence homestead may qualify for a different exemption under Tax Code Section 11.22, which can be applied to any property the disabled veteran owns ... An eligible disabled veteran may receive both exemptions.",
+          "source": "https://comptroller.texas.gov/taxes/property-tax/exemptions/disabledvet-100-faq.php"
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "A surviving spouse can receive an exemption on a subsequent residence homestead if he or she has not remarried since the death of the disabled veteran. However, the amount of the exemption is the dollar amount of the exemption from taxation of the former residence homestead",
+          "source": "https://comptroller.texas.gov/taxes/property-tax/exemptions/disabledvet-100-faq.php"
+        }
+      },
+      "effectiveChanges": "No change to 11.131 for TY2026/TY2027. Related: Prop 7 (HJR 133, approved Nov 4 2025) + HB 2508 add new Tax Code 11.136 effective Jan 1 2026 for surviving spouses of veterans who died of a federally presumed service-connected condition (see missingPrograms).",
+      "note": "type full confirmed ('total appraised value'). 11.43(r) bars re-application demands only for P&T veterans, which is a filing nicety, not an eligibility gate."
+    },
+    {
+      "name": "Partial Exemption for Partially Disabled Veterans",
+      "status": "corrected",
+      "fields": {
+        "tiers": {
+          "current": "5000/7500/10000/12000 by 10-29/30-49/50-69/70-99",
+          "correct": "same amounts; top tier is 70-100%",
+          "quote": "A disability rating from 10-29 percent can have and exemption up to $5,000 from the property's assessed value, 30-49 percent up to $7,500, 50-69 percent up to $10,000 and 70-100 percent up to $12,000.",
+          "source": "https://comptroller.texas.gov/forms/50-135.pdf",
+          "note": "File's maxRating 99 on the top tier is fine in practice because 100% veterans use 11.131 on the homestead, but a 100% veteran may still take 11.22 ($12,000) on a second property."
+        },
+        "summary": {
+          "current": "Disabled Veterans 65+ can receive $12,000 exemption if they have at least 10% SC disability...",
+          "correct": "Lead with the general schedule ($5,000-$12,000 by rating on any ONE property the veteran designates, stackable with 11.131); the age-65/blind/limb-loss $12,000 rule is a secondary path.",
+          "quote": "A disabled veteran may also qualify for an exemption of $12,000 of the assessed value of the property if the veteran is age 65 or older with a disability rating of at least 10 percent; totally blind in one or both eyes; or has lost the use of one or more limbs.",
+          "source": "https://comptroller.texas.gov/forms/50-135.pdf"
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "The veteran's surviving spouse is entitled to an exemption from taxation of a portion of the assessed value of a property the spouse owns and designates for the exemption. The amount of the exemption is the amount of the veteran's exemption at the time of death.",
+          "source": "https://comptroller.texas.gov/forms/50-135.pdf",
+          "note": "Ends on remarriage; children under 18 take it if no spouse."
+        },
+        "exemptionValue": {
+          "current": 12000,
+          "correct": 12000,
+          "quote": "70-100 percent up to $12,000",
+          "source": "https://comptroller.texas.gov/forms/50-135.pdf"
+        }
+      },
+      "effectiveChanges": "None enacted. SJR 77 / HJR 119 (2025), which would have let the Legislature exempt a share of a partially disabled veteran's homestead by rating, died in committee (SJR 77 last action 3/25/2025, referred to Local Government).",
+      "note": "Eligibility for 11.22 is fixed on Jan 1 (11.42(a)); applies to assessed (appraised) value."
+    },
+    {
+      "name": "Surviving Spouse of SM Killed in Line of Duty",
+      "status": "confirmed",
+      "fields": {
+        "existence": {
+          "current": "full, 100% homestead",
+          "correct": true,
+          "quote": "Residence Homestead Exemption Application (Surviving Spouse of Member of Armed Services Killed in Line of Duty box, Tax Code 11.133)",
+          "source": "https://comptroller.texas.gov/forms/50-114.pdf"
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Survivor-only (Tax Code 11.133); must not be credited to a living rated veteran's home. Flag nonVeteran/survivor-only in the tool."
+    }
+  ],
+  "missingPrograms": [
+    {
+      "name": "Surviving spouse of veteran who died of a presumed service-connected condition (Tax Code 11.136)",
+      "what": "Total residence-homestead exemption for the unremarried surviving spouse of a veteran who died as a result of a condition or disease presumed under federal law (e.g. PACT Act) to be service-connected, even if the veteran was not rated 100% at death. Constitutional authority Prop 7 (HJR 133) approved Nov 4, 2025; enabling HB 2508 takes effect Jan 1, 2026. Survivor-only; not creditable to a living veteran.",
+      "statute": "Tex. Const. art. VIII, sec. 1-b(q)-(r); Tex. Tax Code 11.136 (HB 2508, 89R)",
+      "source": "https://capitol.texas.gov/tlodocs/89R/billtext/html/HB02508F.htm"
+    }
+  ],
+  "jurisdictionNote": {
+    "status": "unverified",
+    "correct": "",
+    "source": "",
+    "note": "No propertyTax.note in the file for TX."
+  },
+  "sources": [
+    {
+      "url": "https://comptroller.texas.gov/taxes/property-tax/exemptions/disabledvet-100-faq.php",
+      "title": "Texas Comptroller: 100 Percent Disabled Veteran and Surviving Spouse FAQ (11.131; 'may receive both exemptions')",
+      "status": 200
+    },
+    {
+      "url": "https://comptroller.texas.gov/forms/50-135.pdf",
+      "title": "Form 50-135 Disabled Veteran's or Survivor's Exemption Application (11.22 tiers, survivor rules)",
+      "status": 200
+    },
+    {
+      "url": "https://comptroller.texas.gov/forms/50-114.pdf",
+      "title": "Form 50-114 Residence Homestead Exemption Application (Rev. 02-26/39; 11.131, 11.132, 11.133 boxes)",
+      "status": 200
+    },
+    {
+      "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/HJ00133F.htm",
+      "title": "HJR 133 (89R) enrolled: Prop 7, surviving spouse of veteran who died of a presumed service-connected condition; effective Jan 1 2026",
+      "status": 200
+    },
+    {
+      "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/HB02508F.htm",
+      "title": "HB 2508 (89R) enrolled: adds Tax Code 11.136; takes effect Jan 1 2026 contingent on Prop 7",
+      "status": 200
+    },
+    {
+      "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SJR77",
+      "title": "SJR 77 (89R) history: partially disabled veteran homestead amendment, died in Senate Local Government (last action 3/25/2025)",
+      "status": 200
+    },
+    {
+      "url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-297-25.pdf",
+      "title": "Texas Property Tax Code 2025 (Comptroller pub. 96-297-25)",
+      "status": 200
+    },
+    {
+      "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+      "title": "Tax Foundation, Property Taxes by State and County, 2026 (Table 2: Property Taxes Paid as a Percentage of Owner-Occupied Housing Value, 2024, Census ACS)",
+      "status": 200
+    }
+  ],
+  "confidence": "verified",
+  "summary": "Texas: 11.131 (100% or IU, total homestead exemption) and 11.22 ($5,000-$12,000 by rating on any one designated property) are confirmed and, contrary to the file's 'only one exemption allowed', may both be received; the 11.22 row also wrongly denies the surviving spouse. New for TY2026: Prop 7/HB 2508 created Tax Code 11.136 (survivor-only total exemption for spouses of veterans who died of presumed service-connected conditions), which is missing from the file.",
+  "state": "TX",
+  "checkedDate": "2026-10-21"
+}

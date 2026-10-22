@@ -1,0 +1,82 @@
+{
+  "state": "MA",
+  "officeType": "city/town board of assessors",
+  "officeTypeNote": "Massachusetts property tax is assessed and collected by the 351 cities and towns, not the state. Every Clause 22-family exemption is applied for with the local Board of Assessors on the state-approved form; the Department of Revenue (Division of Local Services) only publishes the forms and guidance and cannot rule on eligibility. Appeals go to the state Appellate Tax Board.",
+  "officeLocator": {
+    "tier": 2,
+    "url": null,
+    "label": "MA Division of Local Services: Property Tax Forms and Guides",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.mass.gov/lists/property-tax-forms-and-guides",
+    "note": "DLS keeps a Local Officials Directory of every assessing office, but it lives inside the DLS Gateway behind a login (the old public report URL on dlsgateway.dor.state.ma.us now errors out), so there is no public state directory of assessors. Direct the user to '<town name> board of assessors' on the municipal website. mass.gov returns 403 to HEAD/plain curl requests; the fallback URL returns 200 to a browser-header GET."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Veteran: Application for Statutory Exemption, General Laws Chapter 59, § 5 (Clauses 22, 22A, 22B, 22C, 22D, 22E, 22F, 22H)",
+      "number": "State Tax Form 96-4",
+      "url": "https://www.mass.gov/doc/application-for-statutory-exemption-gl-c-59-s-5-veteran-state-tax-form-96-4/download",
+      "revision": "Revised 12/2022",
+      "filedWith": "Board of Assessors of the city or town where the domicile is located"
+    },
+    {
+      "programRef": "*",
+      "name": "Form 96-4 (older copy of the same form still posted by DLS)",
+      "number": "State Tax Form 96-4",
+      "url": "https://www.mass.gov/doc/form-96-4-application-for-personal-property-tax-exemptions-for-veterans/download",
+      "revision": "Revised 7/2017",
+      "filedWith": "Board of Assessors of the city or town where the domicile is located"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "04-01",
+    "text": "Form 96-4: 'Must be filed with assessors on or before April 1, or 3 months after actual (not preliminary) tax bills are mailed for fiscal year if later.' Timely if postmarked by USPS on or before the deadline. Some assessors accept applications before actual bills are mailed."
+  },
+  "effective": "Credited against the tax for the fiscal year (July 1 to June 30) in which the application is filed; all eligibility tests (ownership, domicile, residency, disability) must be met as of July 1 of that fiscal year. 'If you do not meet all requirements as of July 1, you cannot receive all or any portion of the exemption for that tax year.' A refund issues only if the full year's tax was already paid when the exemption is granted.",
+  "lateFiling": "Not accepted. Form 96-4: 'THIS DEADLINE CANNOT BE EXTENDED OR WAIVED BY THE ASSESSORS FOR ANY REASON. IF YOUR APPLICATION IS NOT TIMELY FILED, YOU LOSE ALL RIGHTS TO AN EXEMPTION AND THE ASSESSORS CANNOT BY LAW GRANT YOU ONE.'",
+  "retroactivity": {
+    "type": "none",
+    "years": 0,
+    "text": "No refund of prior fiscal years. Each fiscal year requires its own timely application; a missed year is lost (DOR veterans guide: 'the assessors may not waive this filing deadline, nor act on a late application, for any reason')."
+  },
+  "renewal": {
+    "type": "annual",
+    "text": "DOR guide: 'You must file an application for each fiscal year with the assessors in the city or town where your property is located.' Documentation is lighter after the first year: Form 96-4 says attach the VA Certificate of Disability only in the first year, or later only 'if disability rating is 100% or has changed'; M.G.L. c.59 §5 cl. 22E requires 'an annual statement certifying that the disability rating' has not fallen below 100%."
+  },
+  "ratingChange": "Report any rating change on the next annual Form 96-4 and attach a new VA certificate; the clause granted is the single most beneficial one the veteran qualifies for as of July 1 (only one c.59 §5 exemption per fiscal year). Clause 22E (100%) requires an annual certification that the rating is still 100%; a veteran who drops below 100% falls back to Clause 22 ($400 at 10%+).",
+  "move": "No transfer. Apply with the Board of Assessors in the new city or town for the next fiscal year in which you own and occupy the new domicile on July 1. When selling, the DOR guide says the exemption credit must be handled privately at closing: 'you are responsible for seeing that the exemption is properly credited at the closing'. Also report on Form 96-4 whether an exemption was granted in any other city or town for the year.",
+  "onlineFiling": {
+    "available": null,
+    "text": "Varies by municipality. The state form is a PDF returned to the local assessors by mail or in person; some cities and towns offer their own online portals."
+  },
+  "documents": [
+    "State Tax Form 96-4 completed for the fiscal year, signed under penalties of perjury",
+    "First year: copy of discharge papers (DD-214)",
+    "First year: Certificate of Disability from the U.S. Department of Veterans Affairs or branch of service (re-attach later only if the rating is 100% or has changed; Clause 22E requires an annual statement that the rating is still 100%)",
+    "Evidence of residency, ownership, domicile and occupancy as of July 1 (e.g., deed, driver's license; trust instrument with all schedules if the home is held in trust)",
+    "Proof of the residency test: domiciled in MA at least 6 months before entering service, or 2 consecutive years in MA before the tax year (1 year by local option); if not, list of addresses for the last 6 years",
+    "Surviving spouse, first year: death certificate and VA/branch documentation of service-connected death where applicable; written authorization if signed by an agent"
+  ],
+  "survivingSpouse": "Surviving spouses who have never remarried keep the veteran's clause (22, 22A, 22B, 22C, 22E, 22F) if they own and occupy the domicile; spouses who own the domicile while the veteran is alive also qualify. Clause 22D (full exemption) covers never-remarried surviving spouses of service members or veterans who died from active-duty injury or illness (or MIA presumed dead), with a 2-year MA residency test (1 year by local option) unless the member was domiciled in MA 6 months before service. Same Form 96-4; attach death certificate in the first year.",
+  "appeal": "Assessors have 3 months from filing to act or the application is deemed denied. Appeal to the Appellate Tax Board (or county commissioners where county government survives) within 3 months of the assessors' decision or deemed denial; if the tax on the domicile exceeds $5,000, all preliminary and actual installments must have been paid on time for the ATB to hear it. ATB: www.mass.gov/atb, 617-727-3100.",
+  "statute": "M.G.L. c. 59, § 5, Clauses 22, 22A-22H (exemptions); c. 59, § 59 (application deadline: April 1 or 3 months after bills); c. 59, § 60 (application not open to public inspection)",
+  "sourceUrls": [
+    { "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5", "title": "M.G.L. c. 59 § 5 (Clauses Twenty-second through Twenty-second H)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section59", "title": "M.G.L. c. 59 § 59 (exemption application deadline: April 1 or 3 months after bill)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.mass.gov/doc/application-for-statutory-exemption-gl-c-59-s-5-veteran-state-tax-form-96-4/download", "title": "State Tax Form 96-4, Veteran Application for Statutory Exemption (Rev. 12/2022)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.mass.gov/doc/form-96-4-application-for-personal-property-tax-exemptions-for-veterans/download", "title": "State Tax Form 96-4 (Rev. 7/2017 copy)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.mass.gov/doc/guide-to-real-estate-tax-exemptions-for-qualifying-veterans-0/download", "title": "DOR/DLS Taxpayer's Guide to Local Property Tax Exemptions: Veterans, Clauses 22-22H (Rev. 7/2019)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.mass.gov/lists/property-tax-forms-and-guides", "title": "DLS Property Tax Forms and Guides", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.mass.gov/orgs/division-of-local-services", "title": "MA Division of Local Services (DOR)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    "The per-clause `details` text says MA residency is '2-5 consecutive years before filing'; the DOR guide (Rev. 7/2019) gives 2 consecutive years before the tax year begins for veterans (1 year by local option), and the 5-year test applies only to Clause 22H surviving parents/guardians.",
+    "Clause 22C in the DOR guide is 'total disability in the line of duty' plus specially adapted housing assistance; it does not say '100% P&T' specifically. The row's `ptRequired: true` is a reasonable proxy but the statute wording is 'permanent and total service-connected disability'.",
+    "Clause 22E ($1,000) in the DOR guide has survivingSpouse eligibility (spouses who own the domicile and surviving spouses of veterans entitled under 22E); the row has survivingSpouse: false."
+  ],
+  "notes": "All mass.gov URLs return HTTP 403 to curl HEAD and to curl without browser headers (bot wall); each was verified 200 with a browser-header GET and the two PDFs were downloaded and read in full. The DOR veterans guide is dated Rev. 7/2019 and predates the 2024 HERO Act local options (22I/22J), so it does not mention doubled amounts. Statewide online filing does not exist; the state form is paper."
+}

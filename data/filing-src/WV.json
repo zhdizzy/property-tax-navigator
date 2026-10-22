@@ -1,0 +1,131 @@
+{
+  "state": "WV",
+  "officeType": "West Virginia Tax Division (state), claimed on the IT-140 personal income tax return",
+  "officeTypeNote": "This is a refundable STATE INCOME TAX CREDIT, not a county exemption. You pay the county sheriff's property tax bill on time, then claim the amount back on your annual WV personal income tax return (IT-140, line 21(B)) with Form DV-1 attached. Nothing is filed with the county assessor for the credit itself, but the property must already be on the county books as a Class II owner-occupied residential homestead (the DV-1 asks for the ticket number, district, map, parcel and tax class from the county tax ticket), and TSD-455 points you to the county assessor for that.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://tax.wv.gov/Individuals/Pages/Individuals.aspx",
+    "label": "West Virginia Tax Division, Personal Income Tax (single statewide filing office; Taxpayer Services 304-558-3333 / 800-982-8297, taxhelp@wv.gov)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://tax.wv.gov/Documents/TSD/tsd455.pdf",
+    "note": "For the county-side prerequisite (homestead classification and timely payment), the Tax Division publishes a directory of all 55 County Assessors (name, address, phone, fax, link): https://tax.wv.gov/Business/PropertyTax/Pages/PropertyTaxCountyAssessors.aspx (200). No per-county state URL pattern."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Disabled Veteran Real Property Tax Credit (schedule attached to the IT-140)",
+      "number": "DV-1",
+      "url": "https://tax.wv.gov/Documents/PropertyTax/2025/dv1.2025.pdf",
+      "revision": "Rev. 07/2025 (tax year 2025 version; the Tax Division reissues it each year under /Documents/PropertyTax/<year>/)",
+      "filedWith": "West Virginia Tax Division with Form IT-140 (paper or e-file), plus property tax receipt(s) and VA disability rating letter"
+    },
+    {
+      "programRef": "*",
+      "name": "DV-1 Instructions",
+      "number": "DV-1 Instructions (2025)",
+      "url": "https://tax.wv.gov/Documents/PropertyTax/2025/dv1.instructions.2025.pdf",
+      "revision": "2025",
+      "filedWith": "reference only"
+    }
+  ],
+  "deadline": {
+    "type": "calendar-year",
+    "date": null,
+    "text": "Claimed on the annual IT-140 for the personal income taxable year in which the property tax was paid (first return available: tax year 2024, filed in 2025). The real property tax itself must be paid ON TIME to count: TSD-455: \"the first half of the assessment must be paid before October 1 and the second half before April 1.\" W. Va. Code 11-13MM-4(b): \"in no case shall any credit be allowed ... for any untimely real property tax paid, or any payment of delinquent real property tax, or payment of 'back tax'.\" The IT-140 due date itself was not verified from a WV source for this block."
+  },
+  "effective": "Credit equals the WV ad valorem real property tax \"timely paid a county sheriff on a homestead which is used or occupied exclusively for residential purposes ... during the personal income taxable year\" (11-13MM-4(b)); refundable to the extent it exceeds income tax (11-13MM-4(d)). DV-1 Part II totals: second half of prior-year taxes paid before April 1, first half of current-year taxes paid before October 1, second half of current-year taxes paid in the current year. Homestead must have been used or occupied by the owner for at least 6 months (TSD-455).",
+  "lateFiling": "A late or delinquent property tax payment is permanently ineligible for the credit for that installment (11-13MM-4(b)). A late income tax return or amended IT-140 claiming the credit is governed by the general WV refund limitation period (W. Va. Code 11-10-14), not verified for this block.",
+  "retroactivity": {
+    "type": "unverified",
+    "years": null,
+    "text": "No program-specific lookback. Credit first available for tax year 2024 (returns filed in 2025). Amended-return refund window under W. Va. Code 11-10-14 (generally three years from the return due date) was not opened for this block; treat as unverified."
+  },
+  "renewal": {
+    "type": "annual",
+    "text": "File a new DV-1 with every year's IT-140 (the credit is computed from each year's timely payments). DV-1 instructions: include the VA disability rating letter \"if this is the first year you are claiming the credit\"; the DV-1 form itself says \"To claim this credit, you MUST include a copy of your disability rating letter from the VA along with a copy of your tax receipt\" (attach it every year to be safe). The form asks whether the property classification changed or the property was sold during the year."
+  },
+  "ratingChange": "W. Va. Code 11-13MM-2 (as amended 2025, HB 2121): \"disabled veteran taxpayer\" means an honorably discharged person \"rated as having a 90 percent or greater service-connected disability by the United States Department of Veterans Affairs or meets the eligibility requirements for individual unemployability.\" TSD-455 and the DV-1 describe this as 90-100% permanently and totally disabled. A rating drop below 90% (without IU) ends eligibility for later years; the credit terminates on \"a determination by the assessor that the property ... no longer qualifies\" (11-13MM-4(e)(3)).",
+  "move": "Credit terminates on \"the sale of the property for which the tax credit was approved\" (11-13MM-4(e)(2)); claim on the new homestead once it is owner-occupied for 6 months and the taxes are timely paid. Only one homestead (the primary residence) may be claimed.",
+  "onlineFiling": {
+    "available": true,
+    "text": "The IT-140 with DV-1 can be e-filed through MyTaxes/approved software or mailed; attachments (tax receipt and VA letter) accompany the return."
+  },
+  "documents": [
+    "Form IT-140 West Virginia Personal Income Tax Return with the credit entered on line 21(B) (TSD-455)",
+    "Form DV-1 completed in full (SSNs, property tax payments by installment, ticket number, tax year, county, district code, map, first 4 digits of parcel, tax class)",
+    "Copy of the county sheriff's property tax receipt(s) showing timely payment",
+    "Copy of the VA disability rating letter showing 90% or greater service-connected disability (or individual unemployability); required the first year per instructions, demanded on the form itself",
+    "Widowed spouse: evidence the veteran claimed the credit in a prior year, no remarriage, homestead not sold or reclassified"
+  ],
+  "survivingSpouse": "W. Va. Code 11-13MM-2(5): \"eligible widowed spouse\" is the unmarried surviving spouse of a disabled veteran taxpayer \"who had previously received the disabled veteran real property tax credit\"; 11-13MM-4(e)(1): the spouse \"may continue to receive the tax credit until his or her death or remarriage.\" TSD-455 adds that the homestead must not have been sold or reclassified. The DV-1 asks whether the claimant is the widowed spouse and whether they remarried during the year.",
+  "appeal": "Denied credits follow the WV personal income tax assessment/refund appeal process (W. Va. Office of Tax Appeals under W. Va. Code 11-10A); not verified in detail for this block.",
+  "statute": "W. Va. Code 11-13MM-1 et seq. (Property Tax Adjustment Act), esp. 11-13MM-2 (definitions) and 11-13MM-4 (disabled veteran and eligible widowed spouse real property tax credit); enacted 2023 HB 2526, amended 2025 HB 2121; Tax Division publication TSD-455 (Rev. January 2026)",
+  "sourceUrls": [
+    {
+      "url": "https://code.wvlegislature.gov/11-13MM-4/",
+      "title": "W. Va. Code 11-13MM-4 Disabled veteran and eligible widowed spouse real property tax credit",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://code.wvlegislature.gov/11-13MM-2/",
+      "title": "W. Va. Code 11-13MM-2 Definitions (disabled veteran taxpayer, eligible widowed spouse)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://tax.wv.gov/Documents/TSD/tsd455.pdf",
+      "title": "WV Tax Division TSD-455 Disabled Veteran Real Property Tax Credit (Rev. January 2026)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://tax.wv.gov/Documents/PropertyTax/2025/dv1.2025.pdf",
+      "title": "Form DV-1 Disabled Veteran Real Property Tax Credit (Rev. 07/2025)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://tax.wv.gov/Documents/PropertyTax/2025/dv1.instructions.2025.pdf",
+      "title": "Form DV-1 Instructions (2025)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://tax.wv.gov/Business/PropertyTax/Pages/PropertyTaxCountyAssessors.aspx",
+      "title": "WV Tax Division: County Assessors directory (55 counties)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://tax.wv.gov/Individuals/Pages/Individuals.aspx",
+      "title": "WV Tax Division: Individuals (personal income tax)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "programs[0].summary / ptRequired",
+      "note": "The statute as amended by 2025 HB 2121 (11-13MM-2) defines the taxpayer as rated '90 percent or greater service-connected disability ... or meets the eligibility requirements for individual unemployability'; it does not say permanent and total. TSD-455 and the DV-1 still use '90-100% permanently and totally disabled'. The summary's 'a 90%+ combined rating alone does not qualify' overstates the statute; IU also qualifies. Keep the P&T caution as administrative practice but cite the statute.",
+      "source": "https://code.wvlegislature.gov/11-13MM-2/"
+    },
+    {
+      "field": "programs[0].details",
+      "note": "Statute cite should be W. Va. Code 11-13MM-4 (Property Tax Adjustment Act), not an unnamed 'Form DV-1' authority; the credit is limited to taxes TIMELY paid (first half before Oct 1, second half before April 1), which is a hard gate worth surfacing. survivingSpouse should be true (eligible widowed spouse continues until death or remarriage).",
+      "source": "https://tax.wv.gov/Documents/TSD/tsd455.pdf"
+    }
+  ],
+  "notes": "The brief's lead was right: office is the state Tax Division and the 'form' is the DV-1 schedule to the IT-140. The 2025 enrolled HB 2121 PDF on wvlegislature.gov timed out (status 000) and was dropped; the codified text on code.wvlegislature.gov reflects it. Web search budget was exhausted before the IT-140 due date or the 11-10-14 refund window could be confirmed from a WV source, so those are flagged unverified rather than stated.",
+  "kind": "income-tax-credit"
+}

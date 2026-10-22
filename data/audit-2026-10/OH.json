@@ -1,0 +1,41 @@
+{
+  "state": "OH",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0157,
+    "sourceValue": 0.0136,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": false,
+    "note": "Tax Foundation Table 2 (Census ACS 2024 5-year): OH 1.36% (2023: 1.41%). File 1.57% is 0.21 pp high."
+  },
+  "programs": [
+    {
+      "name": "Disabled Veteran Homestead Exemption",
+      "status": "corrected",
+      "fields": {
+        "exemptionValue": { "current": 58000, "correct": 59400, "quote": "Reduction Amount for TY 2025 Real Property and TY 2026 Manufactured or Mobile Home ... Reduction Amount for TY 2026 Real Property and TY 2027 Manufactured or Mobile Home ... Disabled veteran or the surviving spouse of a public service officer killed in the line of duty $58,000 $59,400", "source": "https://tax.ohio.gov/help-center/faqs/real-property-tax-homestead-means-testing" },
+        "summary": { "current": "$58,000 of market value for TY2026", "correct": "$59,400 of market value for TY2026 real property (taxes payable 2027); $58,000 was TY2025 (payable 2026). Base $50,000 indexed annually to the GDP deflator, rounded to the nearest $100, certified by the Tax Commissioner to auditors by Dec 1 for the following tax year.", "quote": "The reduction shall equal the product obtained by multiplying fifty thousand dollars of the true value of the property in money, as adjusted under division (A)(1)(d) of this section", "source": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/3/323/323.152/9-23-2026/323.152-9-23-2026.pdf" },
+        "ratingRequired": { "current": 100, "correct": 100, "quote": "has received a total disability rating or a total disability rating for compensation based on individual unemployability", "source": "https://codes.ohio.gov/ohio-revised-code/section-323.151" },
+        "requiresSchedular100": { "current": null, "correct": false, "quote": "has received a total disability rating or a total disability rating for compensation based on individual unemployability", "source": "https://codes.ohio.gov/ohio-revised-code/section-323.151" },
+        "ptRequired": { "current": null, "correct": false, "quote": "has received a total disability rating or a total disability rating for compensation based on individual unemployability", "source": "https://codes.ohio.gov/ohio-revised-code/section-323.151" },
+        "incomeLimit": { "current": null, "correct": null, "quote": "There are no income requirements for those applying under the enhanced homestead exemption for service-connected disabled veterans and their surviving spouses", "source": "https://tax.ohio.gov/help-center/faqs/real-property-tax-homestead-means-testing" },
+        "survivingSpouse": { "current": true, "correct": true, "quote": "In either case, the reduction shall continue through the tax year in which the surviving spouse dies or remarries.", "source": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/3/323/323.152/9-23-2026/323.152-9-23-2026.pdf" }
+      },
+      "effectiveChanges": "TY2026 real property (payable 2027): $59,400. TY2027 amount will be certified by Dec 1, 2026 under the GDP-deflator formula (not yet published). The indexing step in R.C. 323.152(A)(1)(d) runs every September; no adjustment if it would lower the amount. R.C. 323.152 was re-codified effective Sept 23, 2026 with the same $50,000-as-adjusted language. H.B. 40 (136th G.A., would raise the veteran amount to $100,000 with a $125,000 income cap) was introduced Feb 2025; no evidence of enactment found (not independently verified on the legislature site).",
+      "note": "Resolves the lead: the file's $58,000 is the TY2025 figure, mislabeled as TY2026. Benefit is a credit equal to the taxes on $59,400 of true value (so it already nets through the 'reduction factors' and the 10% rollback), applied to one homestead. Standard (means-tested) homestead is $29,700 for TY2026 and is in lieu of, not stacked with, the veteran amount. The row's 'was $50,000 pre-2024' is right (indexing started with TY2024 amounts certified under HB 187). Form DTE 105I Rev. 10/19 still prints $50,000."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": { "status": "confirmed", "correct": "", "source": "" },
+  "sources": [
+    { "url": "https://tax.ohio.gov/help-center/faqs/real-property-tax-homestead-means-testing", "title": "Ohio Dept of Taxation FAQ: Homestead Means Testing (reduction amounts TY2025 $58,000 / TY2026 $59,400; standard $29,000 / $29,700)", "status": 200 },
+    { "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/3/323/323.152/9-23-2026/323.152-9-23-2026.pdf", "title": "R.C. 323.152 authenticated PDF (eff. 9/23/2026): $50,000 as adjusted, GDP-deflator indexing, Dec 1 certification, surviving spouse", "status": 200 },
+    { "url": "https://codes.ohio.gov/ohio-revised-code/section-323.152", "title": "R.C. 323.152 Reduction in taxes (HTML, eff. 9/23/2026)", "status": 200 },
+    { "url": "https://codes.ohio.gov/ohio-revised-code/section-323.151", "title": "R.C. 323.151 Definitions ('disabled veteran' = total rating or IU)", "status": 200 },
+    { "url": "https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/real_property/DTE_105I.pdf", "title": "Form DTE 105I (Rev. 10/19)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 data)", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "Ohio's enhanced veteran homestead amount is $59,400 of true value for TY2026 real property per the Department of Taxation; the file's $58,000 is the TY2025 figure, so the row's summary and exemptionValue need updating, while eligibility (100% rating or IU, no income test, surviving spouse until remarriage) is confirmed. Effective rate 1.57% is 0.21 pp above the Tax Foundation 2024 figure of 1.36%."
+}

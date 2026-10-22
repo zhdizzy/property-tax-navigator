@@ -1,0 +1,41 @@
+{
+  "state": "DE",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0057,
+    "sourceValue": 0.0054,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation 2024 effective rate (ACS 5-year) 0.54%. Delaware's 2024-2025 statewide reassessment reset county/school rates, so expect the ACS figure to move in the 2025 and 2026 vintages."
+  },
+  "programs": [
+    {
+      "name": "Disabled Veterans School + County Property Tax Credits",
+      "status": "corrected",
+      "fields": {
+        "type / credit amount": { "current": "full (school portion)", "correct": "confirmed: 100% of the school district tax on the principal residence", "quote": "there will be allowed a credit against taxation in the full amount of tax liability imposed by this chapter on the valuation of any qualified property.", "source": "https://delcode.delaware.gov/title14/title14.pdf" },
+        "ptRequired / IU": { "current": true, "correct": true, "quote": "100% disability compensation due to a service-connected, permanent and total disability based on individual unemployability or a 100% disability rating.", "source": "https://delcode.delaware.gov/title14/title14.pdf" },
+        "residency": { "current": "3-yr residency", "correct": "confirmed", "quote": "Is legally domiciled in this State for a period of at least 3 consecutive years.", "source": "https://delcode.delaware.gov/title14/title14.pdf" },
+        "survivingSpouse": { "current": false, "correct": true, "quote": "the credit must be allowed for a surviving spouse of a deceased qualified person if all of the following apply ... was a titled owner ... has not remarried ... owns and occupies the qualified property", "source": "https://delcode.delaware.gov/title14/title14.pdf" },
+        "school board opt-in": { "current": "not stated", "correct": "Credit exists only where the local school board has authorized it; all 16 non-vocational districts had approved it by Nov 2021", "quote": "Currently, all 16 Delaware non-vocational school districts have approved the school property tax credit.", "source": "https://news.delaware.gov/2021/11/17/eligible-disabled-veterans-may-now-apply-for-school-property-tax-credit/" },
+        "fraction (0.8 combined with county credits)": { "current": 0.8, "correct": "unverified", "quote": "County-level credits could not be re-read: newcastlede.gov and kentcountyde.gov return 403 to automated checks and Sussex Ordinance 2811 is an image-only PDF.", "source": "" }
+      },
+      "effectiveChanges": "None enacted for TY2026/TY2027. HB 349 (153rd GA, introduced 4/9/26) would lower the threshold to an 80%+ rating; its last action is referral to House Appropriations on 4/23/26 and it is not law. The credit is withdrawn for the following year if the prior year's bill is not paid in full (1917(d)(4)d). Vocational school district tax remains outside the credit ('non-vocational school district property tax', Department of Finance).",
+      "note": "survivingSpouse should be true (14 Del. C. 1917(d)(1)d, added by 83 Del. Laws c. 529, 2022; the Secretary of Finance must keep the credit in place 'without disruption' for an eligible spouse). The 'combined ~80% of a typical bill' fraction depends on the three county credits, which this pass could not verify on a primary source; the state school credit alone is verified. Delaware Code shows two versions of 1917 (one effective Aug 12, 2028) because of an unrelated amendment; the (d) credit text is identical in substance."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": { "status": "confirmed", "correct": "", "source": "" },
+  "sources": [
+    { "url": "https://delcode.delaware.gov/title14/title14.pdf", "title": "Delaware Code Title 14 (PDF), sec. 1917(d) Disabled Veterans School Tax Credit", "status": 200 },
+    { "url": "https://legis.delaware.gov/SessionLaws/Chapter?id=36249", "title": "83 Del. Laws c. 124 (HB 214, approved Aug 10, 2021): created the credit; school board majority-vote authorization", "status": 200 },
+    { "url": "https://legis.delaware.gov/SessionLaws/Chapter?id=41596", "title": "83 Del. Laws c. 529 (SB 241, approved Nov 2, 2022): surviving spouse continuation", "status": 200 },
+    { "url": "https://finance.delaware.gov/disabled-veterans/", "title": "Delaware Department of Finance: Disabled Veterans School Tax Credit (100% of non-vocational school district property tax; April 30 deadline)", "status": 200 },
+    { "url": "https://news.delaware.gov/2021/11/17/eligible-disabled-veterans-may-now-apply-for-school-property-tax-credit/", "title": "State of Delaware news release, Nov 17, 2021: all 16 non-vocational school districts approved the credit", "status": 200 },
+    { "url": "https://legis.delaware.gov/BillDetail/143046", "title": "HB 349 (153rd GA): 80% threshold proposal, in House Appropriations since 4/23/26", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 effective rates)", "status": 200 }
+  ],
+  "confidence": "partial",
+  "summary": "The state credit is confirmed as 100% of non-vocational school district tax for 100% P&T/IU veterans with three years' Delaware domicile, available in all 16 non-vocational districts, and it now continues for an unremarried titled surviving spouse, so survivingSpouse should be true. The 0.8 combined fraction that relies on New Castle, Kent and Sussex county credits could not be verified because the county sources are blocked or image-only, and HB 349's 80% threshold remains a committee bill."
+}

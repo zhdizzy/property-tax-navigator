@@ -1,0 +1,77 @@
+{
+  "propertyTaxRate": {
+    "fileValue": 0.008,
+    "sourceValue": null,
+    "source": "",
+    "sourceYear": null,
+    "withinTolerance": null,
+    "note": "unverified. No primary or Census ACS effective-rate figure for Puerto Rico was obtainable (Tax Foundation Table 2 covers states + DC only; the Census API requires a key). CRIM rates are municipal (roughly 8-12% of 1958-basis appraised value), so 'effective rate on market value' is structurally low; keep 0.008 flagged as an estimate."
+  },
+  "programs": [
+    {
+      "name": "Veteran Exemption",
+      "status": "corrected",
+      "fields": {
+        "tiers[0] ($5,000, all veterans)": {
+          "current": 5000,
+          "correct": 5000,
+          "quote": "Estará exenta de la imposición y pago de contribuciones sobre la propiedad, permanentemente y hasta cinco mil (5,000) dólares ... de su valor de tasación para fines contributivos, la vivienda que un veterano y/o cónyuges supérstites edificare o adquiriere de buena fe para residencia principal",
+          "source": "https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/Derechos%20Civiles/203-2007/203-2007.pdf",
+          "note": "The $50,000 enhanced amount applied only to fiscal years 2009-10 through 2018-19 and has lapsed."
+        },
+        "tiers[1] ($50,000 at 50%+)": {
+          "current": 50000,
+          "correct": 50000,
+          "quote": "Todo veterano que reciba compensación por conducto de la Administración de Veteranos (Veterans Affairs Department) por incapacidad de un cincuenta por ciento (50%) o más tendrá derecho a una exención de contribución sobre la propiedad sobre los primeros cincuenta mil (50,000) dólares",
+          "source": "https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/Derechos%20Civiles/203-2007/203-2007.pdf",
+          "note": "The $500,000 enhanced amount applied only to FY2009-10 through 2018-19. Granted 'en adición a la exención corriente de cinco mil (5,000) dólares', so the two tiers stack ($55,000 total at 50%+). Rating tested as of Jan 1 each year; one-time filing if VA certifies the grade as permanent."
+        },
+        "tiers[2] ('full' at 100%)": {
+          "current": "minRating 100 -> full",
+          "correct": "Full exemption is for a 'veterano incapacitado o impedido' documented by an SSA or Commonwealth/U.S. retirement-system disability determination, not by a 100% VA rating",
+          "quote": "Se exime totalmente del pago de contribuciones sobre la propiedad toda casa construida, adquirida o remodelada ... por un veterano incapacitado o impedido y el solar donde enclava la misma hasta un máximo de mil (1000) metros cuadrados en zonas urbanas o de una cuerda en zonas rurales",
+          "source": "https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/Derechos%20Civiles/203-2007/203-2007.pdf",
+          "note": "AS-38 document list for this tier: 'Determinación de incapacidad de la Administración del Seguro Social o Sistemas de Retiro del ELA o EUA.' Resolves the brief's lead: relabel the top tier as disabled/impaired veteran (SSA or retirement disability determination); a 100% VA rating alone is not the statutory key, though most 100% P&T veterans with SSDI will meet it."
+        },
+        "survivingSpouse": {
+          "current": false,
+          "correct": true,
+          "quote": "(a) Exención aplicable a todos los veteranos y/o a sus cónyuges supérstites",
+          "source": "https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/Derechos%20Civiles/203-2007/203-2007.pdf",
+          "note": "The 50%+ tier text also covers 'la vivienda que un veterano y/o cónyuge supérstite edificare o adquiere'; AS-38 lists 'Los veteranos y/o sus cónyuges supérstites (viudo/a)' for the regular tier and requires a death certificate. Art. 6 continues benefits to the surviving spouse until remarriage."
+        },
+        "ratingRequired": {
+          "current": null,
+          "correct": null,
+          "quote": "Exención aplicable a todos los veteranos",
+          "source": "https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/Derechos%20Civiles/203-2007/203-2007.pdf"
+        }
+      },
+      "effectiveChanges": "None for FY2026-27. OGP consolidated text revised 3 Aug 2026 (amendments through Ley 145-2026) shows the same $5,000 / $50,000 / total structure; the enhanced FY2009-2019 amounts remain lapsed.",
+      "note": "Values are on CRIM 'valor de tasación' (1958-basis appraisal), so the dollar tiers translate into modest but real savings; the lot limit for the disabled tiers is 1,000 m2 urban / one cuerda rural."
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "unverified",
+    "correct": "",
+    "source": "",
+    "note": "No propertyTax.note in the file for PR."
+  },
+  "sources": [
+    {
+      "url": "https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/Derechos%20Civiles/203-2007/203-2007.pdf",
+      "title": "OGP Biblioteca Virtual: Ley 203-2007 según enmendada (Rev. 3 Aug 2026), Art. 4 Sec. C Segundo",
+      "status": 200
+    },
+    {
+      "url": "https://portal.crim360.com/crimpr/CMS/DOCUMENTOS/download/166.pdf",
+      "title": "CRIM Modelo AS-38 Exoneración Contributiva / Veteranos (Rev. Abril 2018) with document checklist",
+      "status": 200
+    }
+  ],
+  "confidence": "partial",
+  "summary": "Puerto Rico's three tiers ($5,000 for all veterans and surviving spouses, +$50,000 at 50%+ VA compensation, full exemption for an 'incapacitado o impedido' veteran) are confirmed in the Aug 2026 OGP text, but the full tier is keyed to an SSA/retirement disability determination, not a 100% VA rating, and survivingSpouse should be true. The 0.8% effective rate could not be sourced and stays unverified.",
+  "state": "PR",
+  "checkedDate": "2026-10-21"
+}

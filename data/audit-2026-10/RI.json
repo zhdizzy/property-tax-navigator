@@ -1,0 +1,56 @@
+{
+  "state": "RI",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0121,
+    "sourceValue": 0.0112,
+    "source": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Tax Foundation Table 2 (Census ACS 2024 5-year): RI 1.12% (2023: 1.19%). File 1.21% is within 0.09 pp."
+  },
+  "programs": [
+    {
+      "name": "Veterans Exemption",
+      "status": "corrected",
+      "fields": {
+        "tiers[0] (0-99, $1,000)": { "current": 1000, "correct": 1000, "quote": "is exempted from taxation to the amount of one thousand dollars ($1,000), except in:", "source": "https://webserver.rilegislature.gov/Statutes/TITLE44/44-3/44-3-4.htm" },
+        "tiers[1] (100, $10,000)": { "current": 10000, "correct": "10000 ONLY where the city/town has adopted it by ordinance (local option, not a statutory baseline)", "quote": "may, by ordinance, passed in the city or town where the veteran's property is assessed ... receive a ten thousand dollar ($10,000) exemption from local taxation on his or her property", "source": "https://webserver.rilegislature.gov/Statutes/TITLE44/44-3/44-3-4.htm" },
+        "survivingSpouse": { "current": false, "correct": true, "quote": "or the property of the unmarried widow or widower of that person", "source": "https://webserver.rilegislature.gov/Statutes/TITLE44/44-3/44-3-4.htm" },
+        "wartimeRequired": { "current": null, "correct": true, "quote": "most veteran's conflict/metal qualifying events can be found under RI Gen Law 44-3-4.2 and 44-3-4.", "source": "https://municipalfinance.ri.gov/sites/g/files/xkgbur546/files/documents/data/exemptions/Veterans-Senior-Exemptions-Report.pdf" },
+        "localAmounts": { "current": "statutory baseline", "correct": "statute itself names dozens of town-specific amounts (e.g. Cumberland up to $47,544 and Cranston up to $250,000 for totally disabled; Westerly $39,000; North Kingstown $11,000); several towns use flat tax credits", "quote": "Cranston: up to $250,000, starting with the December 31, 2016 assessment", "source": "https://webserver.rilegislature.gov/Statutes/TITLE44/44-3/44-3-4.htm" }
+      },
+      "effectiveChanges": "44-3-4 was last amended by P.L. 2025 ch. 189 and ch. 220 (eff. July 1, 2025) and again in May 2026 (H 7662, Middletown additional exemptions/credits), both town-specific insertions; the $1,000 base and $10,000 local-option tiers are unchanged for TY2026. Assessment date Dec 31, 2026 governs the 2027 bills.",
+      "note": "Two corrections to the modeling note: (1) the $10,000 totally-disabled tier under 44-3-4(c) exists only 'by ordinance' of the city or town, so it is a local option, not a statewide floor; the only guaranteed statewide figure is the $1,000 wartime exemption; (2) the DMF report (self-reported, Dec 31, 2021 assessment, released Sept 2022) shows the totally-disabled benefit ranging from a $90 credit to $250,000 of assessed value across municipalities, so the file's 'median $10,000' and '36 municipalities' could not be verified from it (the report covers all 39). Remarriage ends the widow/widower benefit unless the remarriage was void, ended by death, or was annulled/dissolved (subsection (d))."
+    },
+    {
+      "name": "Gold Star Parents",
+      "status": "unverified",
+      "fields": {
+        "survivingSpouse": { "current": false, "correct": "n/a (parent benefit)", "quote": "", "source": "" }
+      },
+      "effectiveChanges": null,
+      "note": "RIGL 44-3-5 was not opened for this pass; the row only cites the section. It is a parent-of-deceased-servicemember benefit and should never be credited to a rated veteran's own home."
+    }
+  ],
+  "missingPrograms": [
+    {
+      "name": "Specially adapted housing exemption (RIGL 44-3-4(b))",
+      "what": "A $10,000 exemption (towns may set more: Cranston up to $30,000, Narragansett up to $50,000, Westerly up to $40,500) for totally disabled veterans, or their unmarried widow/widower, who received VA specially adapted housing assistance and occupy the home as their domicile. The file's note calls this a 'full exemption'; the statute gives $10,000 (DMF report shows some towns self-report 100%).",
+      "statute": "RIGL 44-3-4(b)",
+      "source": "https://webserver.rilegislature.gov/Statutes/TITLE44/44-3/44-3-4.htm"
+    }
+  ],
+  "jurisdictionNote": {
+    "status": "corrected",
+    "correct": "RIGL 44-3-4: a $1,000 statewide exemption for wartime veterans and their unmarried widows/widowers; everything above that is set town by town. The $10,000 totally-disabled (100% service-connected) exemption and the $10,000 specially-adapted-housing exemption apply only where the city or town has adopted them by ordinance, and the statute itself lists dozens of town-specific amounts (from flat credits of a few hundred dollars to $250,000 of assessed value in Cranston). Modeled at the statutory figures; check the RI Division of Municipal Finance Veterans/Senior Exemptions Report (self-reported, 12/31/21 assessment) or your assessor for your town's amount.",
+    "source": "https://webserver.rilegislature.gov/Statutes/TITLE44/44-3/44-3-4.htm"
+  },
+  "sources": [
+    { "url": "https://webserver.rilegislature.gov/Statutes/TITLE44/44-3/44-3-4.htm", "title": "RIGL 44-3-4 Veterans' exemptions (current text, history through P.L. 2025 ch. 220)", "status": 200 },
+    { "url": "https://municipalfinance.ri.gov/sites/g/files/xkgbur546/files/documents/data/exemptions/Veterans-Senior-Exemptions-Report.pdf", "title": "RI Division of Municipal Finance: Report on the Veteran, Senior, and Other Tax Exemption Programs (assessment date 12/31/21, released Sept 2022)", "status": 200 },
+    { "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/", "title": "Tax Foundation: Property Taxes by State and County (2024 data)", "status": 200 }
+  ],
+  "confidence": "partial",
+  "summary": "Rhode Island's only statewide floor is the $1,000 wartime exemption (surviving spouses included, so survivingSpouse must be true); the $10,000 totally-disabled tier and the $10,000 specially-adapted-housing exemption are local options adopted by ordinance, not baselines, and the file's 'full exemption for SAH' and 'median $10,000 across 36 municipalities' claims could not be verified. Effective rate 1.21% vs 1.12% is within tolerance; the DMF town-by-town report is still the Sept 2022 edition."
+}

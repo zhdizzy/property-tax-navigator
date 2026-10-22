@@ -1,0 +1,149 @@
+{
+  "state": "WI",
+  "officeType": "Wisconsin Department of Revenue (state), claimed on the Form 1 income tax return after a one-time Wisconsin Department of Veterans Affairs certification",
+  "officeTypeNote": "Two-step, both at state level: (1) get a one-time Certification of Eligibility from the Wisconsin Department of Veterans Affairs (WDVA) using Form WDVA 2097; (2) each year claim the credit on the Wisconsin income tax return (Form 1, line 34 for 2025) administered by the Department of Revenue, enclosing the property tax bill and proof of payment (and the WDVA certificate the first year). Nothing is filed with the county treasurer or local assessor; County/Tribal Veterans Service Offices help assemble the WDVA request. Note: Wisconsin's 'Schedule VC' is the Angel Investment Credit, NOT this credit; there is no separate schedule, the amount goes directly on Form 1.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://www.revenue.wi.gov/Pages/FAQS/ise-vetprop.aspx",
+    "label": "Wisconsin DOR: Veterans and Surviving Spouses Property Tax Credit FAQ (single statewide filing office; DOR 608-266-2486)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://dva.wi.gov/services/housing-and-financial-services/property-tax-credit/",
+    "note": "WDVA certification mail-in: Wisconsin Department of Veterans Affairs, Attn: VBRC-PTC Application, P.O. Box 7843, Madison, WI 53707 (B0106); 1-800-947-8387, WisVets@dva.wisconsin.gov. County/Tribal Veterans Service Office finder: https://dva.wi.gov/resources/find-my-cvso-tvso/ (200)."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Request for Certification for Wisconsin Disabled Veterans and Unremarried Surviving Spouses Property Tax Credit",
+      "number": "WDVA 2097",
+      "url": "https://dva.wi.gov/wp-content/uploads/2024/05/WDVA_2097_Request_Cert_Veterans_Property_Tax_Credit.pdf",
+      "revision": "WDVA 2097 (06/19); also included in brochure WDVA B0106 (10/25)",
+      "filedWith": "Wisconsin Department of Veterans Affairs (one time, by mail)"
+    },
+    {
+      "programRef": "*",
+      "name": "Wisconsin Disabled Veterans and Unremarried Surviving Spouses Property Tax Credit: Information, Instructions, and Request Forms (includes WDVA 2097 and the VA 'Tax Abatement Letter' request)",
+      "number": "WDVA B0106",
+      "url": "https://dva.wi.gov/wp-content/uploads/2025/10/WDVA_B0106_WI_Veterans_Property_Tax_Credit.pdf",
+      "revision": "10/25",
+      "filedWith": "reference / forms packet"
+    },
+    {
+      "programRef": "*",
+      "name": "Wisconsin Form 1 Income Tax Return, line 34 'Eligible Veterans and Surviving Spouses Property Tax Credit' (2025); see Form 1 Instructions",
+      "number": "Form 1 (2025)",
+      "url": "https://www.revenue.wi.gov/TaxForms2025/2025-Form1-Inst.pdf",
+      "revision": "2025 tax year instructions (line number changes year to year)",
+      "filedWith": "Wisconsin Department of Revenue, with the annual income tax return"
+    }
+  ],
+  "deadline": {
+    "type": "calendar-year",
+    "date": null,
+    "text": "Claimed on the Wisconsin income tax return for the year the property taxes were PAID (payment date = date received by the municipality). DOR Fact Sheet 1122: \"The credit must be claimed within four years of the unextended due date of the Wisconsin income tax return. For example, the 2022 Wisconsin income tax return was due April 15, 2023 ... the tax return must be filed by April 15, 2027.\" Wis. Stat. 71.07(6e)(c)1: \"No credit may be allowed ... unless it is claimed within the time period under s. 71.75 (2).\""
+  },
+  "effective": "Credit = 100% of real property taxes (excluding special assessments, delinquent interest, service charges) paid during the tax year on the principal dwelling and up to one acre; refundable (excess over income tax is paid to the claimant). Taxes paid in a year the claimant did not hold a qualifying 100%/IU rating for that part of the year are not eligible (B0106: no credit for any year in which the rating lapsed 'for any part of a given year'). Home sold mid-year: taxes prorated per the closing agreement or by months of ownership (71.07(6e)(a)5).",
+  "lateFiling": "A late original or amended Wisconsin return may claim the credit up to four years after the unextended due date (Fact Sheet 1122). If WDVA has not finished the eligibility review before that deadline, request an extension from DOR (name, SSN/ITIN, date certification was requested, tax years) BEFORE the four-year date; the credit for that year is otherwise lost.",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 4,
+    "text": "Fact Sheet 1122: claim \"within four years of the unextended due date of the Wisconsin income tax return\" (s. 71.75(2)); a veteran certified today can file or amend returns for the open years in which they held the 100%/IU rating and paid property taxes. The WDVA certificate must cover each year claimed (B0106: rating letter 'for the first year the property tax credit will be claimed, AND in each year in which credit is claimed')."
+  },
+  "renewal": {
+    "type": "annual",
+    "text": "Credit is claimed every year on the return; the WDVA certification is one-time. Form 1 instructions: \"You do not have to obtain certification from the WDVA for 2025 if you previously received certification for a prior year.\" DOR FAQ: the verification \"is not required to be submitted with the return in subsequent years unless your eligibility changes.\" B0106: \"the applicant need not reapply for certification for following years, unless the applicant's status changes.\""
+  },
+  "ratingChange": "Eligibility requires a 100% schedular service-connected rating (38 USC 1114/1134) or 100% based on individual unemployability (B0106 defines IU per 38 CFR); prestabilization, hospitalization, convalescent and 38 USC 1151 ratings do not count. If the rating is reduced so the veteran does not hold 100%/IU for any part of a year, no credit for that year; the veteran must notify WDVA (WDVA 2097 attestation). Returning to 100% requires a new VA letter to WDVA.",
+  "move": "The credit follows the claimant's principal dwelling in Wisconsin; no re-certification is needed for a move within Wisconsin unless status changes, but the veteran must remain a current Wisconsin resident (ch. 45). Moving out of state ends eligibility. Mid-year sale/purchase: taxes prorated by closing statement or months of ownership.",
+  "onlineFiling": {
+    "available": true,
+    "text": "The income tax return (with the credit on Form 1) may be e-filed through WisTax/approved software; required enclosures (tax bill, proof of payment, WDVA certificate in year one) are attached as PDFs or mailed. The WDVA 2097 certification request is paper by mail."
+  },
+  "documents": [
+    "WDVA step: Form WDVA 2097; DD Form 214 (and DD 215 if any); VA rating notification letter dated within 12 months showing a 100% combined schedular rating or 100% IU (or DIC award for spouses), obtained with the approved 'Tax Abatement Letter' request mailed to VA, Attn: Milw Public Contact Team, P.O. Box 4444, Janesville, WI 53547-4444",
+    "WDVA step: proof of Wisconsin residency at entry (Home of Record on DD-214) or any consecutive 5 years after entry (WI tax returns, driver license history, hunting/fishing licenses, voter record, UW/WTC resident status, or WDVA 1035 income tax release); Form WDVA 1805 residency affidavit / WDVA 0001 if the veteran never filed one",
+    "WDVA step, surviving spouse: certified death certificate (or casualty report if died on active duty) and certified marriage certificate",
+    "DOR step, every year: copy of the property tax bill and proof of payment made during the tax year (Form 1 instructions, 'What to Include'); Worksheet 1 if the parcel exceeds one acre",
+    "DOR step, first year only: copy of the WDVA Certification of Eligibility",
+    "Life estate holders: copy of the life estate, tax bill and proof of payment (DOR FAQ)"
+  ],
+  "survivingSpouse": "Wis. Stat. 71.07(6e)(a)2 / Form 1 instructions: an unremarried surviving spouse qualifies if the veteran (with the Wisconsin entry/5-year residency link) died on active duty while a Wisconsin resident; or was a Wisconsin resident at death with a 100% schedular or IU rating; or was a Guard/reserve member who died in the line of duty on active or inactive duty for training; or if the spouse began and continues to receive VA Dependency and Indemnity Compensation. Spouse must be certified by WDVA and loses the credit on remarriage.",
+  "appeal": "Eligibility disputes go to WDVA (certification decision); credit disallowances by DOR follow the normal Wisconsin income tax notice/appeal process (Wis. Stat. 71.88). Not verified in detail for this block.",
+  "statute": "Wis. Stat. 71.07(6e) (credit), 71.75(2) (four-year claim window), ch. 45 (WDVA residency/benefits); WDVA brochure B0106 (10/25); DOR Fact Sheet 1122",
+  "sourceUrls": [
+    {
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/71/i/07/6e",
+      "title": "Wis. Stat. 71.07(6e) Veterans and surviving spouses property tax credit",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://www.revenue.wi.gov/TaxForms2025/2025-Form1-Inst.pdf",
+      "title": "2025 Wisconsin Form 1 Instructions, Line 34 Eligible Veterans and Surviving Spouses Property Tax Credit (certification, what to include)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://www.revenue.wi.gov/DOR%20Publications/1122vptc-ext.pdf",
+      "title": "Wisconsin DOR Fact Sheet 1122: Veterans and Surviving Spouses Property Tax Credit, Verification of Eligibility and Extension of Time to Claim Credit (four-year rule)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://www.revenue.wi.gov/Pages/FAQS/ise-vetprop.aspx",
+      "title": "Wisconsin DOR FAQ: Veterans and Surviving Spouses Property Tax Credit (property questions)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://www.revenue.wi.gov/Pages/FAQS/ise-vetqual.aspx",
+      "title": "Wisconsin DOR FAQ: Veterans and Surviving Spouses Property Tax Credit (qualification, certification attachment)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://dva.wi.gov/wp-content/uploads/2025/10/WDVA_B0106_WI_Veterans_Property_Tax_Credit.pdf",
+      "title": "WDVA B0106 (10/25) Wisconsin Disabled Veterans and Unremarried Surviving Spouses Property Tax Credit: information, instructions, request forms",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://dva.wi.gov/wp-content/uploads/2024/05/WDVA_2097_Request_Cert_Veterans_Property_Tax_Credit.pdf",
+      "title": "Form WDVA 2097 Request for Certification (06/19)",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://dva.wi.gov/services/housing-and-financial-services/property-tax-credit/",
+      "title": "WDVA: Property Tax Credit program page",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    },
+    {
+      "url": "https://dva.wi.gov/resources/find-my-cvso-tvso/",
+      "title": "WDVA: Find my County/Tribal Veterans Service Office",
+      "status": 200,
+      "checked": "2026-10-21",
+      "primary": true
+    }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "programs[0].details",
+      "note": "'Requires 100% T&P or IU rating' is slightly off: the statute requires a 100% schedular service-connected rating OR 100% IU; permanence is not a statutory element (though a rating that lapses during a year disqualifies that year). Also 'Claimed on WI income tax return' should name Form 1 line 34 (2025) and the one-time WDVA 2097 certification, not a schedule.",
+      "source": "https://docs.legis.wisconsin.gov/statutes/statutes/71/i/07/6e"
+    }
+  ],
+  "notes": "The brief's lead that the credit is claimed on 'Schedule VC' is wrong: Wisconsin's Schedule VC is the Angel Investment / Early Stage Seed Investment Credit (its 2025 instructions were opened to confirm). The veterans credit is entered directly on Form 1 (line 34 in 2025; the line number moves year to year). The WDVA 2097 PDF is dated 06/19 and lists Attn: 'Wisconsin Veterans Property Tax Credit' at 2135 Rimrock Road; B0106 (10/25) says Attn: 'VBRC-PTC Application'; Form 1 instructions say 'BRC-PTC Application, 201 West Washington Ave.' All use P.O. Box 7843, Madison, WI 53707-7843.",
+  "kind": "income-tax-credit"
+}

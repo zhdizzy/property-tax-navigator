@@ -1,0 +1,106 @@
+{
+  "state": "KS",
+  "officeType": "Kansas Department of Revenue (state), not a county office",
+  "officeTypeNote": "Kansas has no assessor-level veteran exemption. The Homestead Refund (K-40H) and the Seniors and Disabled Veterans property tax freeze refund (K-40SVR) are REFUND claims filed with the Kansas Department of Revenue after year end, either online through Kansas WebFile or by mail to 'Homestead Claim, Kansas Department of Revenue, PO Box 750260, Topeka KS 66699-0260.' The county appraiser values the home and the county treasurer bills it; neither takes these claims. The deployment deferral for service members is a separate county-level program (data file says county clerk; not verified here).",
+  "officeLocator": {
+    "tier": 2,
+    "url": null,
+    "label": null,
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.ksrevenue.gov/perstaxtypeshs.html",
+    "note": "The filing office is KDOR itself (Homestead Refund Programs page). For county appraiser contacts (valuation questions only) KDOR's Property Valuation Division points to the Kansas County Appraisers Association list at https://www.kscaa.net/county-appraisers-2/county-appraisers/."
+  },
+  "forms": [
+    {
+      "programRef": "Homestead Refund for Disabled Veterans",
+      "name": "Kansas Homestead Claim (tax year 2025, filed Jan 1 to Apr 15, 2026); disabled veterans enclose the VA award letter instead of Schedule DIS",
+      "number": "K-40H",
+      "url": "https://www.ksrevenue.gov/pdf/k-40h25.pdf",
+      "revision": "2025 tax year",
+      "filedWith": "Kansas Department of Revenue (WebFile or mail to PO Box 750260, Topeka KS 66699-0260)"
+    },
+    {
+      "programRef": "Homestead Refund for Disabled Veterans",
+      "name": "Homestead Instructions booklet (K-40H, K-40PT, K-40SVR) with the April 15 deadline, late-claim and documentation rules",
+      "number": "K-40H instructions",
+      "url": "https://www.ksrevenue.gov/pdf/k-40hbook25.pdf",
+      "revision": "2025",
+      "filedWith": "n/a (instructions)"
+    },
+    {
+      "programRef": "SVR Property Tax Freeze (K-40SVR, SB 15)",
+      "name": "Property Tax Relief Claim for Seniors and Disabled Veterans (refund of the increase over the base-year tax); cannot be combined with K-40H or K-40PT for the same year",
+      "number": "K-40SVR",
+      "url": "https://www.ksrevenue.gov/pdf/k-40svr25.pdf",
+      "revision": "2025 tax year",
+      "filedWith": "Kansas Department of Revenue (WebFile or mail to PO Box 750260, Topeka KS 66699-0260)"
+    },
+    {
+      "programRef": "Property Tax Deferral for Service Members",
+      "name": "No KDOR form found; the data file says to apply through the county clerk. Not verified on a primary source.",
+      "number": null,
+      "url": null,
+      "revision": null,
+      "filedWith": "county clerk (unverified)"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "04-15",
+    "text": "K-40SVR (2025): 'FILE THIS CLAIM AFTER DECEMBER 31, 2025, BUT NO LATER THAN APRIL 15, 2026.' K-40H booklet: 'File your claim after December 31, 2025 but no later than April 15, 2026.' Claims are for the prior calendar year's property taxes."
+  },
+  "effective": "Refund of property tax paid for the prior calendar year (the claim year); the K-40SVR refunds the increase over the base-year tax. A Refund Advancement Program lets the refund be applied directly to the December 20 first-half tax bill.",
+  "lateFiling": "K-40H booklet / Homestead FAQ: 'Late claims filed after the due date, April 15, 2026, may be accepted whenever good cause exists, provided the claim is filed within four years of the original due date.' Enclose an explanation and documentation (examples: absence from the state or country, temporary illness).",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 4,
+    "text": "Prior-year claims are possible only as late claims accepted for good cause 'within four years of the original due date' (K-40H instructions). Amended claims use another K-40H marked 'amended.'"
+  },
+  "renewal": {
+    "type": "annual",
+    "text": "Both are annual refund claims: a new K-40H or K-40SVR must be filed each year between January 1 and April 15 for the prior tax year. The VA award letter is enclosed with each claim ('ENCLOSE your Veterans Affairs Award Letter'); KDOR keeps permanent-disability documentation on file for the Schedule DIS route but veterans still file the claim yearly."
+  },
+  "ratingChange": "Eligibility requires 'a service-connected evaluation percentage equal to or greater than 50%' as a disabled veteran for the entire claim year (and, for K-40SVR, the entire base year); the base year is the first year the claimant is 65 or a disabled veteran for the full year (deemed 2021 if earlier). A veteran who reaches 50% mid-year first qualifies for the following full calendar year; a drop below 50% ends eligibility.",
+  "move": "Refund follows the claimant, not the parcel: file for the homestead owned and occupied in Kansas during the claim year. For K-40SVR the base-year appraised value cap ($350,000) and the frozen base tax relate to the homestead; the SVR FAQ example assumes the claimant 'owned and occupied the same homestead in both 2025 and the base year.' Moving resets the base year.",
+  "onlineFiling": {
+    "available": true,
+    "text": "Kansas WebFile ('Homestead WebFile is a FREE way to file Homestead claims') at https://www.kansas.gov/webfile/ (the KDOR 'File your Homestead claim now' link). Paper claims by mail."
+  },
+  "documents": [
+    "VA award letter: K-40SVR instructions require 'an original Veterans Disability Determination letter or letter from your regional V.A. that includes the disability date and the percentage of disability being 50% or greater'; K-40H: enclose the Veterans Affairs award letter (Schedule DIS not needed for veterans)",
+    "Household income for the claim year (all sources; K-40H line 9 list of other income if applicable); K-40SVR household income limit $58,041 for 2025, K-40H $43,389",
+    "Property tax statement amounts (do NOT send copies to KDOR; keep them)",
+    "Surviving spouse: deceased veteran's name and qualifying information; eligible until remarriage",
+    "Base-year appraised value and taxes for K-40SVR (home not over $350,000 appraised in the base year)"
+  ],
+  "survivingSpouse": "K-40H: 'the surviving spouse of a disabled veteran ... eligible to receive benefits until you remarry' (also surviving spouses of members who died in the line of duty). K-40SVR: surviving spouse of a claimant who was receiving SVR benefits as a disabled veteran or 65+ at death may continue claiming until remarriage.",
+  "appeal": "KDOR denial notices may be protested under the Kansas Homestead Property Tax Refund Act (K.S.A. 79-4501 et seq.); not detailed on the pages read.",
+  "statute": "K.S.A. 79-4501 et seq. (Homestead Property Tax Refund Act); K.S.A. 79-4508a (SVR, 2021 SB 15); K.S.A. 79-4505 (filing deadline / late claims)",
+  "sourceUrls": [
+    { "url": "https://www.ksrevenue.gov/perstaxtypeshs.html", "title": "Kansas Department of Revenue: Homestead Refund Programs (K-40H, K-40PT, K-40SVR)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.ksrevenue.gov/forms-hs.html", "title": "KDOR: Homestead forms (2025 K-40H, K-40SVR, Schedule DIS, instructions)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.ksrevenue.gov/pdf/k-40svr25.pdf", "title": "Form K-40SVR 2025 Property Tax Relief Claim for Seniors and Disabled Veterans", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.ksrevenue.gov/pdf/k-40h25.pdf", "title": "Form K-40H 2025 Kansas Homestead Claim", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.ksrevenue.gov/pdf/k-40hbook25.pdf", "title": "2025 Homestead Instructions booklet (deadline, late claims, disabled veteran definition)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.ksrevenue.gov/faqs-SVR.html", "title": "KDOR FAQ: Property Tax Relief for Seniors and Disabled Veterans (K-40SVR)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.ksrevenue.gov/faqs-taxhomestead.html", "title": "KDOR FAQ: Homestead refund (late claims within four years for good cause)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.kansas.gov/webfile/", "title": "Kansas WebFile (Homestead claims online)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.kscaa.net/county-appraisers-2/county-appraisers/", "title": "Kansas County Appraisers Association: county appraiser list (linked from KDOR PVD page)", "status": 200, "checked": "2026-10-21", "primary": false }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "propertyTax.programs[2].incomeLimit / summary (SVR)",
+      "issue": "KDOR SVR FAQ for the 2025 claim year: 'household income of $58,041 or less for 2025'; data says income <= $53,600 (older figure).",
+      "source": "https://www.ksrevenue.gov/faqs-SVR.html"
+    },
+    {
+      "field": "propertyTax.programs[0].details",
+      "issue": "Details text says household income cannot exceed $56,450; the K-40H limit for TY2025 is $43,389 (summary already correct). The $56,450 figure does not match any current KDOR program.",
+      "source": "https://www.ksrevenue.gov/perstaxtypeshs.html"
+    }
+  ],
+  "notes": "Kansas is unusual: the veteran benefit is a state income-tax-style refund claim, so there is no county filing, no exemption on the tax roll, and the 'deadline' is the April 15 claim date for the prior year's taxes. The 2026 claim-year forms (K-40H/K-40SVR 2026) will post around January 2027; the 2025 forms linked here are the ones currently filed. The generic https://www.ksrevenue.gov/pdf/k-40svr.pdf is a stale 2022 edition still live on the site. The Service Member deferral row could not be verified on ksrevenue.gov in this pass (no WebSearch budget remained); its office and form are left null."
+}

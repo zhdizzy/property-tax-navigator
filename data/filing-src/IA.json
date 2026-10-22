@@ -1,0 +1,94 @@
+{
+  "state": "IA",
+  "officeType": "city or county assessor",
+  "officeTypeNote": "Both the Disabled Veteran Homestead Tax Credit (54-049, filed together with the Homestead Tax Exemption form 54-028) and the Military Service Property Tax Exemption (54-146) are filed with the city or county assessor where the home sits. The assessor recommends allowance and forwards claims to the county board of supervisors, which allows or disallows them. For the military exemption the DD-214 must first be recorded with the county recorder (Iowa Code 426A.13); for the disabled veteran credit recording is optional (DD-214 may be attached instead).",
+  "officeLocator": {
+    "tier": 2,
+    "url": "https://www.iowaassessors.com/",
+    "label": "Iowa State Association of Assessors: county/city assessor directory (the site the Iowa DOR forms 54-049 and 54-146 tell claimants to use: 'Contact information for all assessors can be found at the Iowa State Association of Assessors website')",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://revenue.iowa.gov/taxes/tax-guidance/tax-credits-deductions-exemption/tax-credits-and-exemptions",
+    "note": "Iowa DOR publishes no assessor directory of its own; the association site (iowa-assessors.org on the forms, which redirects to iowaassessors.com) links each county's assessor site or Beacon property page. Tier 2 because the directory is an association site, not a state agency page."
+  },
+  "forms": [
+    {
+      "programRef": "Disabled Veteran's Homestead Tax Credit",
+      "name": "Disabled Veteran Homestead Property Tax Credit application (Iowa Code 425.1(2)(b) / 425.15); must be submitted WITH the Homestead Tax Exemption form 54-028",
+      "number": "54-049",
+      "url": "https://revenue.iowa.gov/media/2347/download?inline",
+      "revision": "54-049a (07/14/2026)",
+      "filedWith": "city or county assessor, by July 1 of the assessment year"
+    },
+    {
+      "programRef": "Disabled Veteran's Homestead Tax Credit",
+      "name": "Homestead Tax Credit and Exemption application (required companion to 54-049)",
+      "number": "54-028",
+      "url": "https://revenue.iowa.gov/media/2359/download?inline",
+      "revision": "current DOR form (listed on the credits page)",
+      "filedWith": "city or county assessor, by July 1"
+    },
+    {
+      "programRef": "Military Property Tax Exemption",
+      "name": "Military Service Property Tax Exemption application (Iowa Code chapter 426A)",
+      "number": "54-146",
+      "url": "https://revenue.iowa.gov/media/2353/download?inline",
+      "revision": "54-146a (07/14/2025)",
+      "filedWith": "city or county assessor, filed or postmarked by July 1; DD-214 recorded with the county recorder first"
+    }
+  ],
+  "deadline": {
+    "type": "fixed-date",
+    "date": "07-01",
+    "text": "Form 54-049: 'This application must be filed with your city or county assessor by July 1 of the assessment year.' Form 54-146: 'filed or postmarked to your city or county assessor on or before July 1. An application received after July 1 will be considered an application for the following year.' Iowa Code 425.2(1): 'A claim filed after July 1 ... shall be considered as a claim filed for the following year.'"
+  },
+  "effective": "Assessment year of the timely claim; 'A claim timely filed by July 1 of the assessment year will apply to taxes due and payable in September of the following calendar year and March of the next' (54-049 fact sheet: a claim filed by July 1, 2026 covers taxes due Sept 2027 and March 2028). Veteran must own and occupy the homestead on July 1.",
+  "lateFiling": "A claim filed after July 1 is treated as a claim for the following assessment year (Iowa Code 425.2(1); forms 54-049/54-146). No late-filing cure.",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "No refund of prior years; the credit begins with the assessment year of the timely claim."
+  },
+  "renewal": {
+    "type": "none",
+    "text": "54-049: 'Reapplication is not required. Upon the filing and allowance of the claim, the claim is allowed on the homestead for successive years without further filing' while the owner stays eligible and uses it as a homestead on July 1. 426A.13(3) (military exemption): 'the claim shall be allowed to that person for successive years without further filing.' Owner must give 'written notification ... to the assessor if the circumstances change' or on conveyance."
+  },
+  "ratingChange": "Only a PERMANENT 100% service-connected rating, or permanent-and-total IU paid at 100%, qualifies (425.15(1)(b)); a temporary 100% does not. A veteran who reaches a qualifying rating files 54-049 with a Benefits Summary/'Benefits Paid' letter dated within 12 months by the next July 1. If the rating drops, written notice to the assessor is required; the veteran may instead claim the smaller military exemption (cannot hold both: 425.15(3)).",
+  "move": "425.15(4): 'If an owner acquires a different homestead, the credit allowed under this section may be claimed on the new homestead.' File a new 54-049 + 54-028 with the new assessor by July 1; the seller or estate must notify the old assessor. For the military exemption the owner must 'refile for the exemption' when designating different property (426A.13(3)).",
+  "onlineFiling": {
+    "available": null,
+    "text": "Iowa DOR provides fillable PDFs only; many assessors accept applications by email or through their county sites (e.g. Beacon or county portals). Check the assessor's page via the directory."
+  },
+  "documents": [
+    "Form 54-049 plus Form 54-028 Homestead Tax Exemption application",
+    "DD-214 or equivalent (attached, or recorded with the county recorder with book/page cited)",
+    "VA Benefits Summary Letter / 'current Benefits Paid letter issued within 12 months of your application date' showing permanent 100% service-connected rating or P&T IU at 100% (DOR: 'all supporting documentation must be within the last 12 months'; 'do not send any personal health information')",
+    "Surviving spouse or child claiming on DIC: current DIC or CPD (Compensation and Pension Death) letter",
+    "Military exemption (54-146): DD-214 or equivalent recorded with the county recorder (volume/page on the form); Iowa residency and domicile"
+  ],
+  "survivingSpouse": "425.15(2)(a): the credit 'shall be continued to the estate of an owner who is deceased or the surviving spouse and any child ... so long as the surviving spouse remains unmarried' (no new filing needed on the same homestead). Separately, a surviving spouse or child receiving DIC qualifies in their own right (425.15(1)(d)), 'even upon remarriage,' and may claim on a new homestead with a current DIC/CPD letter.",
+  "appeal": "Disallowed claims: the board of supervisors mails written reasons; appeal to district court within 20 days of mailing (426A.14(5) for the military exemption; homestead credit appeals follow Iowa Code 425.4-425.7 to the board of supervisors and district court).",
+  "statute": "Iowa Code 425.15 (disabled veteran tax credit); 425.1(2)(b), 425.2 (homestead credit filing); 426A.11-426A.14 (military service exemption); 2026 Iowa Acts SF 2472 (half-acre limit); IAC 701-110.1, 110.2",
+  "sourceUrls": [
+    { "url": "https://revenue.iowa.gov/media/2347/download?inline", "title": "Iowa DOR Form 54-049 Disabled Veteran Homestead Property Tax Credit (07/14/2026) with fact sheet", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.iowa.gov/media/2353/download?inline", "title": "Iowa DOR Form 54-146 Military Service Property Tax Exemption (07/14/2025)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.iowa.gov/media/2359/download?inline", "title": "Iowa DOR Form 54-028 Homestead Tax Credit and Exemption", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.iowa.gov/taxes/tax-guidance/tax-credits-deductions-exemption/disabled-veteran-homestead-property-tax-credit", "title": "Iowa DOR guidance: Disabled Veteran Homestead Property Tax Credit", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://revenue.iowa.gov/taxes/tax-guidance/tax-credits-deductions-exemption/tax-credits-and-exemptions", "title": "Iowa DOR: Tax Credits and Exemptions (property tax list)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.legis.iowa.gov/docs/code/425.15.pdf", "title": "Iowa Code 2026 §425.15 Disabled veteran tax credit", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.legis.iowa.gov/docs/code/425.2.pdf", "title": "Iowa Code 2026 §425.2 Qualifying for credit (July 1 filing, successive years)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.legis.iowa.gov/docs/code/426A.13.pdf", "title": "Iowa Code 2026 §426A.13 Claim for military tax exemption", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.legis.iowa.gov/docs/code/426A.14.pdf", "title": "Iowa Code 2026 §426A.14 Allowance, continuing effectiveness, appeal", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.iowaassessors.com/", "title": "Iowa State Association of Assessors: assessor directory (referenced on DOR forms)", "status": 200, "checked": "2026-10-21", "primary": false }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "propertyTax.programs[0].summary (Military Property Tax Exemption)",
+      "issue": "Form 54-028 (2026) notes that 'Beginning with assessment year 2026, the homestead credit has been replaced with a homestead exemption of 10% of the taxable value' (min $5,500, max $20,000); unrelated to the veteran rows but the tool's Iowa baseline homestead math may be stale.",
+      "source": "https://revenue.iowa.gov/media/2359/download?inline"
+    }
+  ],
+  "notes": "Iowa's disabled veteran credit is 'the entire amount of the tax levied on the homestead' and requires the homestead exemption to be in place, so first-time claimants file 54-028 and 54-049 together. The 07/14/2026 revision of 54-049 already carries the SF 2472 half-acre rule for applications on or after July 1, 2026. iowa-assessors.org (the domain printed on the forms) returned 403 to automated checks; iowaassessors.com (same association) is live and was used. The DOR credits page labels the 54-049/54-146 PDFs 'archived' in its markup but they are the current linked forms."
+}

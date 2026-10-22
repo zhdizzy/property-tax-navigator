@@ -1,0 +1,108 @@
+{
+  "state": "IL",
+  "officeType": "Chief County Assessment Officer (Supervisor of Assessments) of the county; Cook County Assessor in Cook",
+  "officeTypeNote": "File homestead exemption applications with the Chief County Assessment Office (CCAO), not the county clerk or treasurer. In Cook County the County Assessor runs the program online. The Specially Adapted Housing exemption (35 ILCS 200/15-165) is different: it is established and renewed each year by certification from the Illinois Department of Veterans' Affairs, which flows to IDOR and the local assessing officials.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://tax.illinois.gov/individuals/illinoiscounties.html",
+    "label": "Illinois Department of Revenue: county contact list (links each of the 102 counties to its assessment office or property lookup site; a few list phone numbers only)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://tax.illinois.gov/localgovernments/property/taxrelief.html",
+    "note": "IDOR does not publish a single CCAO directory with addresses; its county list links out to county sites of varying quality (Cook goes to cookcountyassessor.com, DuPage to a property lookup page). The forms themselves have a CCAO address block that each county fills in. Cook County: https://www.cookcountyassessoril.gov/veterans-disabilities-exemption."
+  },
+  "forms": [
+    {
+      "programRef": "Disabled Veterans' Standard Homestead Exemption (DVSHE)",
+      "name": "PTAX-342 Application for Standard Homestead Exemption for Veterans with Disabilities (SHEVD). IDOR form distributed through the CCAOs; IDOR no longer posts it on tax.illinois.gov, so the link is a county-hosted copy of the current IDOR revision.",
+      "number": "PTAX-342",
+      "url": "https://www.stclaircountyil.gov/webdocuments/departments/assessor/Disabled%20Veterans%20Initial.pdf",
+      "revision": "R-07/24",
+      "filedWith": "Chief County Assessment Officer of the county where the home is (Cook County Assessor in Cook)"
+    },
+    {
+      "programRef": "Disabled Veterans' Standard Homestead Exemption (DVSHE)",
+      "name": "PTAX-342-R Annual Verification of Eligibility for Standard Homestead Exemption for Veterans with Disabilities (annual renewal; CCAOs mail it to prior-year recipients). Not required for 100% P&T veterans or WWII veterans.",
+      "number": "PTAX-342-R",
+      "url": "https://marioncountyil.gov/wp-content/uploads/MC-PTAX-342-R.pdf",
+      "revision": "R-09/18 (county-hosted copy; the pre-2022 text still says every recipient must re-verify annually, which P.A. 102-895 changed for 100% P&T veterans)",
+      "filedWith": "Chief County Assessment Officer, by the county's renewal due date (e.g. DuPage: October 1 of the assessment year)"
+    },
+    {
+      "programRef": "Returning Veterans' Homestead Exemption (RVHE)",
+      "name": "PTAX-341 Application for Returning Veterans' Homestead Exemption (available from the CCAO; no verified statewide PDF link)",
+      "number": "PTAX-341",
+      "url": null,
+      "revision": null,
+      "filedWith": "Chief County Assessment Officer"
+    },
+    {
+      "programRef": "Specially Adapted Housing Exemption",
+      "name": "No taxpayer form: 35 ILCS 200/15-165 says the exemption 'must be reestablished on an annual basis by certification from the Illinois Department of Veterans Affairs to the Department, which shall forward a copy of the certification to local assessing officials.' Start with your IDVA Veteran Service Officer.",
+      "number": null,
+      "url": "https://veterans.illinois.gov/serviceoffices.html",
+      "revision": null,
+      "filedWith": "Illinois Department of Veterans' Affairs (certification), then IDOR and the CCAO"
+    }
+  ],
+  "deadline": {
+    "type": "varies-by-county",
+    "date": null,
+    "text": "35 ILCS 200/15-169(e): 'Application must be made during the application period in effect for the county of his or her residence.' Form PTAX-342: 'file your Form PTAX-342 with your CCAO by the due date'; the county board of review 'while in session for the assessment year, has the final authority to grant your SHEVD.' Each CCAO sets its own window (often tied to the board of review session); Cook County accepts applications during its spring filing period and processes later ones as Certificates of Error."
+  },
+  "effective": "Assessment year of application; the savings appear on the bill paid the following year ('your SHEVD will be applied to the property tax bill paid the year following the assessment year'). Prorated monthly if the veteran did not occupy the home on January 1: 15-169(e-1) 'prorated exemption shall apply beginning with the first complete month in which the person occupies the qualified residence.'",
+  "lateFiling": "After the county's application period, a late PTAX-342 is generally treated as an application for the next assessment year, unless the county issues a Certificate of Error for the missed year (Cook County does; downstate counties vary). Statute sets no late-filing cure.",
+  "retroactivity": {
+    "type": "local-option",
+    "years": null,
+    "text": "Property Tax Code 35 ILCS 200/14-15 and 14-20 let the CCAO/board of review issue certificates of error for erroneously omitted homestead exemptions in prior years; Cook County Assessor: 'Applications will be processed as Certificates of Error' and it lets veterans 'Redeem savings for tax years 2025, 2024, 2023, 2022, and 2021' (five prior years). Practice downstate varies; ask the CCAO."
+  },
+  "renewal": {
+    "type": "annual",
+    "text": "15-169(e): 'each taxpayer who has been granted an exemption under this Section must reapply on an annual basis, except that a veteran who qualifies as a result of his or her service in World War II need not reapply.' Since May 23, 2022 (P.A. 102-895): a veteran with 'a combined service connected disability rating of 100% and ... deemed to be permanently and totally disabled ... shall no longer be required to reapply ... on an annual basis.' Form PTAX-342: the P&T veteran 'must file a Summary of Benefits letter with the CCAO to verify the proper ratings.' Everyone else files PTAX-342-R each year."
+  },
+  "ratingChange": "Tier is set by the VA rating 'as of the date the application is submitted for the exemption ... for the applicable taxable year' (15-169(b-3.1)). A veteran whose rating rises files a new PTAX-342 with the new VA certification letter (the annual PTAX-342-R also asks for the current rating). A veteran dropping below 30% loses the exemption; a 100% P&T veteran on auto-renewal should notify the CCAO of any change (15-169(e) lets the CCAO verify eligibility by 'questionnaire, or other reasonable methods').",
+  "move": "Exemption follows the veteran to a new primary residence only by a new PTAX-342 in the new county/parcel; proration applies for the months of occupancy in the move year. The exemption continues on the old home while the veteran is in a nursing home or VA facility if the spouse occupies it or it stays unoccupied (15-169(b-5)). Surviving spouses may transfer the exemption to a new residence 'not to exceed the amount granted from the most recent ad valorem tax roll' (15-169(c)).",
+  "onlineFiling": {
+    "available": null,
+    "text": "Cook County Assessor accepts the Veterans with Disabilities Exemption online; most downstate CCAOs take paper (mail, in person, some by email). Check the county."
+  },
+  "documents": [
+    "Proof of service, one of: Form DD 214 (or War Department separation for pre-1950 service), Certification of Military Service form, or an Illinois driver's license/ID with the Veteran's Designation (PTAX-342 R-07/24)",
+    "VA documentation of the service-connected disability rating percentage for the assessment year (VA certification/Summary of Benefits letter; the form notes 'Any other rating is not valid')",
+    "Proof of ownership/occupancy of the primary residence (deed or trust; parcel/PIN from the tax bill)",
+    "100% P&T veterans claiming exemption from annual renewal: VA Summary of Benefits letter stating permanent and total status, filed with the CCAO",
+    "Surviving spouse: veteran's marriage certificate, death certificate (or DD Form 1300 Report of Casualty if killed in the line of duty), proof of ownership; DIC certification from VA if claiming under the service-connected-death category"
+  ],
+  "survivingSpouse": "15-169(c): exemption 'carries over to the benefit of the veteran's surviving spouse as long as the spouse holds the legal or beneficial title to the homestead, permanently resides thereon, and does not remarry'; it may transfer to a new residence up to the last amount granted. From TY2023 a spouse also qualifies if the veteran was killed in the line of duty, never applied but would have qualified (spouse an Illinois resident since the death), or died of a service-connected cause with the spouse receiving DIC (then the first $250,000 EAV is exempt). Spouse files PTAX-342 with marriage and death certificates.",
+  "appeal": "The county board of review 'has the final authority to grant your SHEVD' for the assessment year (PTAX-342); a denial can be contested at the board of review while in session and then the Illinois Property Tax Appeal Board or circuit court under the Property Tax Code.",
+  "statute": "35 ILCS 200/15-169 (SHEVD); 35 ILCS 200/15-167 (Returning Veterans); 35 ILCS 200/15-165 (Specially Adapted Housing); P.A. 102-895 (P&T auto-renewal); 35 ILCS 200/14-15, 14-20 (certificates of error)",
+  "sourceUrls": [
+    { "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K15-169.htm", "title": "35 ILCS 200/15-169 Homestead exemption for veterans with disabilities and veterans of WWII (ILGA)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K15-167.htm", "title": "35 ILCS 200/15-167 Returning Veterans' Homestead Exemption (ILGA)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K15-165.htm", "title": "35 ILCS 200/15-165 Veterans with disabilities (Specially Adapted Housing) (ILGA)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.illinois.gov/localgovernments/property/taxrelief.html", "title": "Illinois Department of Revenue: Property Tax Relief, Homestead Exemptions", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://tax.illinois.gov/individuals/illinoiscounties.html", "title": "Illinois Department of Revenue: county contact list", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.stclaircountyil.gov/webdocuments/departments/assessor/Disabled%20Veterans%20Initial.pdf", "title": "Form PTAX-342 (R-07/24), St. Clair County CCAO copy of the IDOR form", "status": 200, "checked": "2026-10-21", "primary": false },
+    { "url": "https://marioncountyil.gov/wp-content/uploads/MC-PTAX-342-R.pdf", "title": "Form PTAX-342-R (R-09/18), Marion County CCAO copy of the IDOR form", "status": 200, "checked": "2026-10-21", "primary": false },
+    { "url": "https://www.cookcountyassessoril.gov/veterans-disabilities-exemption", "title": "Cook County Assessor: Veterans with Disabilities Exemption (annual filing, certificates of error 2021-2025)", "status": 200, "checked": "2026-10-21", "primary": false },
+    { "url": "https://www.dupagecounty.gov/government/departments/supervisor_of_assessments/exemptions/veterans/standards_for_veterans_with_disability.php", "title": "DuPage County Supervisor of Assessments: SHEVD (PTAX-342-R due October 1; document list)", "status": 200, "checked": "2026-10-21", "primary": false },
+    { "url": "https://veterans.illinois.gov/content/dam/soi/en/web/veterans/services-benefits/documents/benefitsguide2025update.pdf", "title": "Illinois Department of Veterans' Affairs Benefits Guide (2025 update): tax exemptions", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://veterans.illinois.gov/serviceoffices.html", "title": "IDVA Veteran Service Offices (for SAH exemption certification)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    {
+      "field": "propertyTax.programs[1].tiers",
+      "issue": "Statute 15-169(b-3.1) and the R-07/24 form: at 70%+ 'the first $250,000 of EAV of the residential property is exempt' and since TY2023 there is no longer a $250,000 EAV cap on eligibility (homes above $250K EAV get the first $250K exempt). Data summary says 'TOTAL exemption of EAV up to $250,000', consistent, but the Marion PTAX-342-R (R-09/18) copy still says total EAV must be under $250,000, which is obsolete; the tool should not relay the old cap.",
+      "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K15-169.htm"
+    },
+    {
+      "field": "propertyTax.programs[1].survivingSpouse / summary",
+      "issue": "From TY2024 WWII veterans are fully exempt regardless of rating (15-169(b-4)); from TY2023 a DIC-receiving surviving spouse of a veteran who died of a service-connected cause gets the first $250,000 EAV exempt even if the veteran never held the exemption. Not reflected in the data layer.",
+      "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K15-169.htm"
+    }
+  ],
+  "notes": "IDOR removed PTAX-342/342-R/341 PDFs from tax.illinois.gov (old content/dam paths 404) and the taxrelief page only names them, so the form links are county-hosted copies of the IDOR forms; the St. Clair copy is the current R-07/24 revision and already reflects the 100% P&T auto-renewal and DIC-spouse rules. The Marion PTAX-342-R copy is the older R-09/18 revision. The old ILGA fulltext.asp URLs 404; the working pattern is https://www.ilga.gov/Documents/legislation/ilcs/documents/003502000K15-169.htm (WebFetch failed TLS verification on ilga.gov; curl verified 200). Lake County (lakecountyil.gov) and the Kane County form link were 403/404 and were not used. Cook County's deadline language is 'normal filing period has ended' (spring), with later applications handled as Certificates of Error."
+}

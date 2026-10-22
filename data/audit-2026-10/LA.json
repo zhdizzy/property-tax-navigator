@@ -1,0 +1,142 @@
+{
+  "state": "LA",
+  "checkedDate": "2026-10-21",
+  "propertyTaxRate": {
+    "fileValue": 0.0055,
+    "sourceValue": 0.0055,
+    "source": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat",
+    "sourceYear": 2024,
+    "withinTolerance": true,
+    "note": "Census ACS 2020-2024 5-year: median real estate taxes $1,180 / median value $216,500 (acsdt5y2024-b25077.dat) = 0.545%. Note the ACS median already nets out the $7,500 homestead exemption most owners receive."
+  },
+  "programs": [
+    {
+      "name": "Disabled Veteran Homestead Exemption",
+      "status": "confirmed",
+      "fields": {
+        "type": {
+          "current": "full",
+          "correct": "full",
+          "quote": "the remaining assessed valuation of property receiving the homestead exemption that is owned and occupied by a veteran with a service-connected disability rating of one hundred percent unemployability or totally disabled ... shall be exempt from ad valorem taxation.",
+          "source": "https://www.legis.la.gov/Legis/Law.aspx?d=206551"
+        },
+        "ratingRequired": {
+          "current": 100,
+          "correct": 100,
+          "quote": "one hundred percent unemployability or totally disabled by the United States Department of Veterans Affairs",
+          "source": "https://www.legis.la.gov/Legis/Law.aspx?d=206551",
+          "note": "IU at 100% qualifies."
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "The surviving spouse ... shall be eligible for this exemption if the surviving spouse occupies and remains the owner of the property, whether or not the exemption was in effect on the property prior to the death of the veteran.",
+          "source": "https://www.legis.la.gov/Legis/Law.aspx?d=206551"
+        }
+      },
+      "effectiveChanges": "Nov 3, 2026 ballot: Acts 2026 No. 39 (SB 180) would, effective Jan 1, 2027 for TY2027+, drop the 'occupies and remains the owner' wording for surviving spouses and add a one-time transfer of the exemption to a new homestead 'limited in value to the amount of the exemption claimed on the prior homestead in the last year'. Not law unless ratified.",
+      "note": "Art. VII §21(K)(1)(c). Exemption is of assessed value beyond the $7,500 standard homestead; parish-level millage and special assessments still apply where applicable."
+    },
+    {
+      "name": "Standard Homestead Exemption",
+      "status": "confirmed",
+      "fields": {
+        "exemptionValue": {
+          "current": 75000,
+          "correct": 75000,
+          "quote": "the homestead exemption which applies to the first $7,500 of the assessed valuation of property",
+          "source": "https://legis.la.gov/LEGIS/ViewDocument.aspx?d=1450775",
+          "note": "$7,500 assessed at the 10% residential ratio = $75,000 market (Art. VII §20)."
+        },
+        "nonVeteran": {
+          "current": true,
+          "correct": true,
+          "quote": "In addition to the homestead exemption authorized pursuant to the provisions of Section 20 of this Article",
+          "source": "https://www.legis.la.gov/Legis/Law.aspx?d=206551"
+        }
+      },
+      "effectiveChanges": null,
+      "note": ""
+    },
+    {
+      "name": "Surviving Spouse Of KIA",
+      "status": "confirmed",
+      "fields": {
+        "type": {
+          "current": "full",
+          "correct": "full",
+          "quote": "an exemption from ad valorem tax for the total assessed value of the homestead of the unmarried surviving spouse of a person who died ... A member of the armed forces of the United States or the Louisiana National Guard who died while on active duty.",
+          "source": "https://www.legis.la.gov/Legis/Law.aspx?d=206551",
+          "note": "Art. VII §21(M): 'died while on active duty' (broader than KIA); spouse must annually re-certify; exemption does not transfer with a cap as the file states, rather §21(M)(1)(c) requires the property to have been the decedent's residence at death. The 'transfers but capped' language in the row is unverified against §21(M)."
+        }
+      },
+      "effectiveChanges": null,
+      "note": "Not a rated-veteran benefit; exclude from a living veteran's estimate. Also covers state police, law enforcement, fire, EMS deaths on duty."
+    },
+    {
+      "name": "Special Assessment Level",
+      "status": "corrected",
+      "fields": {
+        "ratingRequired": {
+          "current": 50,
+          "correct": 50,
+          "quote": "People who have a service-connected disability rating of fifty percent or more by the United States Department of Veterans Affairs.",
+          "source": "https://www.legis.la.gov/Legis/Law.aspx?d=206545"
+        },
+        "incomeLimit": {
+          "current": 102700,
+          "correct": null,
+          "quote": "exceeds one hundred thousand dollars ... Beginning for the tax year 2026, and for each tax year thereafter, the one hundred thousand dollar limit shall be adjusted annually by the Consumer Price Index",
+          "source": "https://www.legis.la.gov/Legis/Law.aspx?d=206545",
+          "note": "unverified: the 2026 CPI-adjusted figure (~$102,700 in the file) was not found on a Louisiana Tax Commission or legislative page. The base is $100,000 indexed from TY2026."
+        },
+        "details": {
+          "current": "Income limits set by each Parish Tax Assessor.",
+          "correct": "Statewide constitutional AGI cap ($100,000 indexed to CPI from tax year 2026); owners under 65 who are not permanently totally disabled must re-certify income annually.",
+          "quote": "Any person or persons shall be prohibited from receiving the special assessment ... if such person's or persons' adjusted gross income ... exceeds one hundred thousand dollars.",
+          "source": "https://www.legis.la.gov/Legis/Law.aspx?d=206545"
+        }
+      },
+      "effectiveChanges": "Nov 3, 2026 ballot: Acts 2025 No. 220 (HB 300 of 2025) would raise the AGI cap to $150,000 effective Jan 1, 2027 (TY2027), with CPI indexing restarting for tax year 2028. Not law unless ratified. Surviving spouse of a 50%+ veteran keeps the freeze if 45+ or with minor children (§18(G)(2)(a)(ii)).",
+      "note": "Freeze of assessed value, not of the tax bill; millage changes still flow through."
+    },
+    {
+      "name": "Additional Disabled Veteran Exemption (Art. VII Sec. 21(K))",
+      "status": "confirmed",
+      "fields": {
+        "tiers": {
+          "current": [{"minRating":50,"maxRating":69,"value":25000},{"minRating":70,"maxRating":99,"value":45000}],
+          "correct": [{"minRating":50,"maxRating":69,"value":25000},{"minRating":70,"maxRating":99,"value":45000}],
+          "quote": "For a veteran with a disability rating of 50% or more but less than 70%, the next $2,500 of the assessed valuation ... 70% or more but less than 100%, the next $4,500 of the assessed valuation of the property shall be exempt.",
+          "source": "https://legis.la.gov/LEGIS/ViewDocument.aspx?d=1450775",
+          "note": "Caps: taxes apply to assessed value above $10,000 (50-69%) and above $12,000 (70-99%), i.e. $100,000 / $120,000 market-equivalent total exempt including the $7,500 standard homestead."
+        },
+        "survivingSpouse": {
+          "current": true,
+          "correct": true,
+          "quote": "The surviving spouse of a deceased veteran ... shall be eligible for this exemption if the surviving spouse occupies and remains the owner of the property, whether or not the exemption was in effect on the property prior to the death of the veteran.",
+          "source": "https://www.legis.la.gov/Legis/Law.aspx?d=206551"
+        }
+      },
+      "effectiveChanges": "Same Acts 2026 No. 39 (SB 180) amendment as the 100% row: surviving spouse occupancy wording removed and one-time capped transfer to a new homestead, effective Jan 1, 2027 if ratified Nov 3, 2026.",
+      "note": ""
+    }
+  ],
+  "missingPrograms": [],
+  "jurisdictionNote": {
+    "status": "confirmed",
+    "correct": "",
+    "source": ""
+  },
+  "sources": [
+    { "url": "https://www.legis.la.gov/Legis/Law.aspx?d=206551", "title": "La. Const. Art. VII §21 Other Property Exemptions, incl. (K) disabled veterans with pre/post Acts 2026 No. 39 text and (M) surviving spouses of active-duty deaths", "status": 200 },
+    { "url": "https://www.legis.la.gov/Legis/Law.aspx?d=206545", "title": "La. Const. Art. VII §18 Ad Valorem Taxes, incl. (G) Special Assessment Level with pre/post Acts 2025 No. 220 text", "status": 200 },
+    { "url": "https://www.legis.la.gov/Legis/Law.aspx?d=206550", "title": "La. Const. Art. VII §20 Homestead Exemption ($7,500 assessed)", "status": 200 },
+    { "url": "https://legis.la.gov/LEGIS/ViewDocument.aspx?d=1450775", "title": "SB 180 (2026 RS) engrossed digest: §21(K) tiers, caps, surviving-spouse transfer; Nov 3, 2026 election; effective Jan 1, 2027", "status": 200 },
+    { "url": "https://news.ballotpedia.org/2026/06/03/louisiana-voters-will-decide-on-10-legislatively-referred-ballot-measures-in-nov-2026/", "title": "Ballotpedia News: Louisiana's 10 Nov 2026 measures (SB 180 spouse transfer; HB 300 $150,000 special assessment level cap)", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25103.dat", "title": "Census ACS 2024 5-year summary file, table B25103", "status": 200 },
+    { "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25077.dat", "title": "Census ACS 2024 5-year summary file, table B25077", "status": 200 }
+  ],
+  "confidence": "verified",
+  "summary": "All five Louisiana rows match the constitution: $7,500 standard homestead, $2,500/$4,500 add-ons at 50-69%/70-99% with $10,000/$12,000 assessed caps, full exemption at 100%/IU, 50%+ assessment freeze under a statewide (not parish) AGI cap of $100,000 indexed from 2026 (the file's $102,700 for 2026 could not be sourced). Two Nov 3, 2026 amendments, effective Jan 1, 2027 if ratified, would let surviving spouses transfer the veteran exemption once to a new home (Acts 2026 No. 39) and raise the freeze income cap to $150,000 (Acts 2025 No. 220); the 0.55% rate matches ACS 2024."
+}

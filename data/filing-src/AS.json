@@ -1,0 +1,26 @@
+{
+  "state": "AS",
+  "noProgram": true,
+  "text": "American Samoa levies no territorial real property tax, so there is no veteran property tax exemption to claim. Title 11 (Revenue) of the American Samoa Code Annotated contains chapters for general provisions, federal tax liens, income tax, Internal Revenue Code amendments, miscellaneous taxes (machine and device tax, wage tax), hotel occupancy tax, excise taxes on imports and exports, secondhand imported items tax, and business incentive and financing chapters; none imposes a tax on real property or land. The American Samoa Government Tax Office (Department of the Treasury, tel. (684) 633-4181) administers the territorial income tax (Form 390) and posts no property tax forms. Most land is communal and held under matai title, which is a further reason no parcel-based tax exists.",
+  "officeLocator": {
+    "tier": 3,
+    "url": "https://www.americansamoa.gov/tax-office",
+    "label": "American Samoa Government: Tax Office (Department of the Treasury)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://www.americansamoa.gov/",
+    "note": "Listed only so the tool can point veterans to the territorial tax agency; it has no property tax function."
+  },
+  "sourceUrls": [
+    { "url": "https://asbar.org/legal-resources/code-annotated/code-annotated-by-title-and-chapter/", "title": "American Samoa Code Annotated by Title and Chapter (American Samoa Bar Association): Title 11 Revenue chapter list", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://asbar.org/section/title-11-revenue/chapter-06-miscellaneous-taxes/", "title": "A.S.C.A. Title 11, Chapter 06 Miscellaneous Taxes (machine and device tax, wage tax)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://asbar.org/section/title-11-revenue/chapter-01-general-provisions-title-11-revenue/", "title": "A.S.C.A. Title 11, Chapter 01 General Provisions", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.osas.as/copy-of-asac-2024-edition-5/all-titles-2023-ed.", "title": "Office of the Secretary of American Samoa: Title 11 Revenue chapter index (2023 ed.)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.americansamoa.gov/tax-office", "title": "American Samoa Government: Tax Office, Department of the Treasury (income tax forms, phone)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://asbar.org/taxation-d73/", "title": "ASBA case digest, Taxation (historic land-tax cases only; no current property tax statute)", "status": 200, "checked": "2026-10-21", "primary": false }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [],
+  "notes": "Absence is established from the structure of A.S.C.A. Title 11 (no real property tax chapter) and from the Tax Office page (income tax only); no statute states 'there is no property tax' in those words. The ASBA taxation case digest has a 'Property Taxes' heading that cites early High Court cases (Government v. Bird) on a since-superseded land tax; nothing current. PacLII's copy of Title 11 returned 403 and GAO's 1996 Insular Areas Update does not address property tax, so neither is cited. The existing normalized-data.js row (propertyTax.programs: []) is correct."
+}

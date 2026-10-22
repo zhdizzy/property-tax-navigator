@@ -1,0 +1,70 @@
+{
+  "state": "TN",
+  "officeType": "county trustee (collecting official); city collecting official for city taxes",
+  "officeTypeNote": "Tennessee's program is a STATE REIMBURSEMENT, not an exemption: you apply through the local tax collecting official (the county trustee for county taxes; the city collecting official if you also pay city taxes inside city limits), who makes a preliminary determination and forwards the application to the Comptroller's Division of Property Assessments for final approval (T.C.A. 67-5-701(c)). The county assessor is not involved. Approved applicants receive a voucher with each year's tax bill and present it to the collecting official with any balance due.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://www.ctas.tennessee.edu/trustees",
+    "label": "County Trustee directory (UT County Technical Assistance Service), linked from the Comptroller's Tax Relief page; all 95 counties with name, address, phone, email",
+    "countyUrlPattern": "https://www.ctas.tennessee.edu/county/{county}",
+    "slugRule": "County name lowercased with spaces replaced by hyphens (e.g. anderson, van-buren); the per-county page lists that county's officials including the trustee. City collecting officials: MTAS directory https://www.mtas.tennessee.edu/directories/municipal-staff-and-officials",
+    "fallbackUrl": "https://comptroller.tn.gov/office-functions/pa/property-taxes/property-tax-programs/tax-relief.html",
+    "note": "The Comptroller page itself links both directories ('search for a County Trustee or a city collecting official'). State Tax Relief office: 615-747-8871 / 1-800-221-9927, TRInfo@cot.tn.gov, Cordell Hull Building, 425 Rep. John Lewis Way N., Nashville 37243. Application status lookup: https://comptroller.tn.gov/office-functions/pa/tax-resources/tax-relief-application-status.html"
+  },
+  "forms": [
+    {
+      "programRef": "Disabled Veteran Exemption",
+      "name": "Property Tax Relief application (state-approved form, obtained from and filed with the collecting official) plus VA consent form F-16 (disabled veteran) or F-16S (widow/widower of disabled veteran)",
+      "number": "F-16 / F-16S (consent for release of VA disability and income information); the application itself is the trustee's annual Tax Relief application",
+      "url": null,
+      "revision": "Brochure is year-specific: '2026 F-16' / '2026 F-16S' for 2026 tax bills",
+      "filedWith": "county trustee (or city collecting official)"
+    }
+  ],
+  "deadline": {
+    "type": "varies-by-county",
+    "date": null,
+    "text": "T.C.A. 67-5-701(d)(1): taxpayers who \"fail to apply for a refund or present a credit voucher ... within thirty-five (35) days from the date taxes in the jurisdiction become delinquent for that year, shall be deemed ineligible for such relief for that tax year.\" Comptroller brochure (2026): \"You may apply when you receive your 2026 property tax bill(s). The deadline to apply is 35 days after the delinquency date. Taxes must also be paid by this date.\" Delinquency dates are set locally (commonly March 1, making the deadline about April 5), so confirm with the trustee."
+  },
+  "effective": "Tax-year basis: relief is a reimbursement of taxes paid for the tax year applied for; the veteran must own and use the home as a primary residence and have a qualifying VA determination for that tax year. No mid-year proration concept; the state pays or credits all or part of the tax on the first $175,000 of full market value.",
+  "lateFiling": "Deemed ineligible for that tax year after the 35-day window (67-5-701(d)(1)). The director of the Division of Property Assessments \"is authorized to waive application of any deadline ... upon determining that the failure to meet the deadline was excusable for good and reasonable cause ... No deadline may be extended hereunder beyond December 31 of the year following the tax year\" (67-5-701(k)). Applications must reach the Division by May 5 following the deadline or within 30 days of it, whichever is later (67-5-701(d)(2)).",
+  "retroactivity": {
+    "type": "none",
+    "years": null,
+    "text": "No refund right for prior years. The only backward reach is the discretionary good-cause waiver in 67-5-701(k), capped at December 31 of the year following the tax year (effectively one prior tax year at most). Unlike a true exemption, missing the window forfeits that year's reimbursement."
+  },
+  "renewal": {
+    "type": "annual",
+    "text": "Apply each year when the tax bill arrives; approved applicants receive a voucher with the property tax bill, which must be presented to the collecting official before the deadline along with any balance due (Comptroller Tax Relief page). The collecting official may credit the projected relief against the bill if the applicant appears eligible (67-5-701(c)). The F-16/F-16S consent form is year-specific."
+  },
+  "ratingChange": "Eligibility is binary: service-connected permanent and total disability as determined by VA (or paraplegia/legal blindness/loss of use of two or more limbs from a service-connected cause, or 100% P&T from POW service). \"The determination of the United States veterans' administration concerning the disability status of a veteran shall be conclusive\" (67-5-704(d)); the Comptroller pulls the rating from VA through the F-16 consent. Taxpayers who qualify on or before December 31 of the tax year qualify for that year.",
+  "move": "Relief attaches to the primary residence for the tax year; apply with the collecting official for the new home's jurisdiction with the next tax bill. A veteran temporarily relocated for health care keeps eligibility if intending to return (67-5-704(j)).",
+  "onlineFiling": {
+    "available": false,
+    "text": "Applications are obtained from and submitted to the county trustee or city collecting official (paper, in person or by mail per local practice). The Comptroller offers only an online application-status search (tncot.cc/taxrelief)."
+  },
+  "documents": [
+    "Completed Tax Relief application from the trustee/collecting official, using the form approved by the State Board of Equalization",
+    "F-16 (veteran) or F-16S (widow/widower): consent for the Comptroller to obtain disability and income information from the U.S. Department of Veterans Affairs; the Comptroller determines veteran eligibility from VA data, so no separate rating letter is required by the state",
+    "Proof the property is owned and used as the primary residence (property tax bill/receipt presented to the collecting official)",
+    "Widow(er): copy of the veteran's death certificate and a form of personal ID; must have been married to the veteran at death and not remarried",
+    "Veteran must not have been dishonorably discharged (67-5-704(c)); discharge documentation may be requested by the collecting official"
+  ],
+  "survivingSpouse": "T.C.A. 67-5-704(e)-(g): relief continues for the surviving spouse of a veteran who was eligible at death (or would be eligible under later amendments), of a veteran whose death resulted from a service-connected combat-related cause, or of a soldier who died while deployed; the spouse must not remarry, must solely or jointly own the home, and use it exclusively as a home. File with F-16S.",
+  "appeal": "Final eligibility is decided by the Comptroller's Division of Property Assessments; denied applicants may seek the good-cause deadline waiver from the director (67-5-701(k)) and may contact the Tax Relief office (615-747-8871). A formal appeal path beyond that was not verified.",
+  "statute": "T.C.A. 67-5-701 (administration, 35-day deadline, waiver), 67-5-704 (disabled veteran's residence, $175,000 cap, surviving spouse)",
+  "sourceUrls": [
+    { "url": "https://comptroller.tn.gov/office-functions/pa/property-taxes/property-tax-programs/tax-relief.html", "title": "TN Comptroller: Property Tax Relief program page (where to apply, vouchers, directories)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.comptroller.tn.gov/content/dam/cot/pa/documents/tax-relief/TaxReliefBrochure.pdf", "title": "TN Comptroller: 2026 Property Tax Relief Program brochure (deadline, F-16/F-16S, $175,000)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.comptroller.tn.gov/content/dam/cot/pa/documents/tax-relief/TCA%2067-5-701%20through%2067-5-704.pdf", "title": "T.C.A. 67-5-701 through 67-5-704 (Comptroller compilation, revised 2019)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.ctas.tennessee.edu/trustees", "title": "CTAS County Trustee directory (linked from the Comptroller's Tax Relief page)", "status": 200, "checked": "2026-10-21", "primary": false },
+    { "url": "https://www.mtas.tennessee.edu/directories/municipal-staff-and-officials", "title": "MTAS municipal officials directory (city collecting officials)", "status": 200, "checked": "2026-10-21", "primary": false },
+    { "url": "https://comptroller.tn.gov/office-functions/pa/tax-resources/tax-relief-application-status.html", "title": "TN Comptroller: Tax Relief application status search", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    { "field": "programs[0].type", "note": "Tennessee's program is a state reimbursement/credit (not an exemption) and must be re-applied for every year; the dollar layer's 'partial' type is fine but the annual-renewal gate and 35-day post-delinquency deadline should surface in the summary. 'Specially Adapted Housing' row has no Tennessee statutory basis in 67-5-701 to 704; the paraplegia path is simply one of the 67-5-704(b) eligibility routes.", "source": "https://www.comptroller.tn.gov/content/dam/cot/pa/documents/tax-relief/TCA%2067-5-701%20through%2067-5-704.pdf" }
+  ],
+  "notes": "No statewide form PDF exists online for the application itself; the Comptroller says forms are obtained at the trustee's office, and the F-16/F-16S are consent forms rather than the application. County trustee pages (e.g. Knox, Montgomery) publish county-specific application packets and dates (Montgomery County: April 5). The TCA compilation PDF is the Comptroller's 2019 revision; the $175,000 cap matches the 2026 brochure. tncot.cc/taxrelief redirects (200) to the Comptroller tax-relief page."
+}

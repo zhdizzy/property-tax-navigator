@@ -1,0 +1,75 @@
+{
+  "state": "SC",
+  "officeType": "South Carolina Department of Revenue (state agency), Government Services Division",
+  "officeTypeNote": "South Carolina is centralized: the veteran applies to the SC Department of Revenue (SCDOR), not the county. SCDOR determines eligibility and certifies the exemption to the county auditor, who voids the tax notice (S.C. Code 12-4-730). Two county touchpoints remain: (1) the county ASSESSOR must first grant the 4% owner-occupied legal-residence assessment ratio, and SCDOR requires proof of that approval with the application; (2) after approval, hand the SCDOR approval letter to the county assessor (real estate) or county auditor (vehicles) if nothing has changed, and to your mortgage servicer if you escrow.",
+  "officeLocator": {
+    "tier": 1,
+    "url": "https://dor.sc.gov/property/property-tax-exemptions",
+    "label": "SCDOR Property Tax Exemptions page (single statewide filing office; links to MyDORWAY online application)",
+    "countyUrlPattern": null,
+    "slugRule": null,
+    "fallbackUrl": "https://dor.sc.gov/property",
+    "note": "There is only one filing office, so no county lookup is needed for the exemption itself. Mail: SCDOR, Government Services Division, PO Box 125, Columbia, SC 29214-0720; phone 803-898-5700; email Property.Exemptions@dor.sc.gov. Online: MyDORWAY (https://mydorway.dor.sc.gov/, returns 200 on GET; HEAD returns 404) > Exempt Property Application > Request Individual Property Exemption. The 4% legal-residence prerequisite is filed with the county assessor; SCDOR publishes no assessor directory."
+  },
+  "forms": [
+    {
+      "programRef": "*",
+      "name": "Property Tax Exemption Application for Individuals",
+      "number": "PT-401-I",
+      "url": "https://dor.sc.gov/sites/dor/files/forms/PT401I.pdf",
+      "revision": "Rev. 6/18/24",
+      "filedWith": "SC Department of Revenue (paper by mail/in person, or online via MyDORWAY; online filers do not submit the paper form). Check exemption section B(1)(A) for the 100% P&T veteran dwelling, B(3) for vehicles, B(43) for Medal of Honor/POW."
+    }
+  ],
+  "deadline": {
+    "type": "rolling",
+    "date": null,
+    "text": "No fixed annual deadline. S.C. Code 12-4-720(A)(1): the owner \"shall file an application for exemption with the department within the period provided in Section 12-54-85(F) for claims for refund\" (generally two years from the date the tax was paid). SCDOR: apply after you have purchased the home; processing currently 10-12 weeks."
+  },
+  "effective": "Beginning with the tax year in which the disability occurs, based on the date the veteran acquired the property (2024 Act No. 116, effective March 11, 2024, applies to tax years beginning after 2023 \"and any open period less than three years\"; SCDVA/SCDOR describe it as retroactive to 2022). SCDOR: \"Real property: you may qualify the year of purchase, but you must apply after buying the home.\"",
+  "lateFiling": "No late penalty concept; a late application is simply a refund claim limited by the 12-54-85(F) window (see retroactivity). Vehicles: the exemption applies to the year of the rating only if the vehicle tax came due on or after the rating date.",
+  "retroactivity": {
+    "type": "fixed",
+    "years": 2,
+    "text": "S.C. Code 12-54-85(F)(1): \"claims for credit or refund must be filed within three years from the time the return was filed, or two years from the date the tax was paid, whichever is later.\" Homeowners file no property tax return, so the two-years-from-payment limb applies. 2024 Act No. 116 opened \"any open period less than three years\" but not earlier than tax year 2022 (law applies to tax years after 2021 per SCDOR/SCDVA). Medal of Honor/POW (B)(43) owners were excluded from the 2024 retroactivity change."
+  },
+  "renewal": {
+    "type": "on-change",
+    "text": "SCDOR: \"Property Tax Exemptions do not expire or discontinue, unless\" a change occurs (deed transfer, owner added/removed, no longer primary residence, new property, move); after any such change \"you are required to submit a new application.\" S.C. Code 12-4-720(D): the owner is not required to file more than one application per exemption absent a change in status."
+  },
+  "ratingChange": "Eligibility is binary (permanent and total service-connected disability). A veteran newly rated P&T applies once; the exemption runs from the year the disability occurs. The VA certificate must show the effective date of the P&T rating.",
+  "move": "A new application is required for a newly acquired home (SCDOR). Surviving spouses who move must inform SCDOR of the address of the subsequent house (12-37-220(B)(1)(b)). Notify SCDOR when exempt property is sold or the applicant dies.",
+  "onlineFiling": {
+    "available": true,
+    "text": "MyDORWAY (mydorway.dor.sc.gov) is the recommended channel: Exempt Property Application > Request Individual Property Exemption, with document upload. An account is not required (veterans who do not file an SC income tax return may apply without one). Status check: Exempt Property Application > Check Property Exemption Status."
+  },
+  "documents": [
+    "Certificate from the VA or the county veterans service officer certifying total and permanent service-connected disability, with the effective date (SCDOR: \"VA Rating decision letters do not meet requirements of law\")",
+    "Recorded deed",
+    "Documentation that the county assessor has granted the 4% special assessment ratio (owner-occupied legal residence), solely or jointly with spouse",
+    "Marriage certificate if the home is jointly titled with a spouse",
+    "Title, bond for title, or bill of sale if the property is a mobile home",
+    "Trust-held property: signed trust agreement showing the applicant is the income beneficiary",
+    "Vehicles (up to two): SC registration card, SC bill of sale, or SC title",
+    "Surviving spouse: VA documentation of survivor status, veteran's death certificate, recorded deed of distribution or will, 4% legal-residence approval in the spouse's sole name, DD 1300 if KIA"
+  ],
+  "survivingSpouse": "Unremarried surviving spouse who resides in the house and owns it in fee or for life keeps or claims the exemption, and must reapply with documentation. Since 2024 Act No. 116 the spouse qualifies \"regardless of whether the deceased spouse applied, filed for, or claimed the exemption.\" Also covers the spouse of a service member killed in action. Spouse keeps one vehicle exemption for life or until remarriage.",
+  "appeal": "Denials are handled by SCDOR under the Revenue Procedures Act (S.C. Code Title 12, Chapter 60); specific protest form and window not verified for this block.",
+  "statute": "S.C. Code Ann. 12-37-220(B)(1) (P&T disabled veteran dwelling), 12-37-220(B)(3) (vehicles), 12-37-220(B)(43) (Medal of Honor/POW dwelling); filing: 12-4-720, 12-4-730; refund window: 12-54-85(F)",
+  "sourceUrls": [
+    { "url": "https://dor.sc.gov/property/property-tax-exemptions", "title": "SCDOR: Property Tax Exemptions (individuals: how to apply, documents, renewal, surviving spouse, after approval)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dor.sc.gov/sites/dor/files/forms/PT401I.pdf", "title": "Form PT-401-I Property Tax Exemption Application for Individuals (Rev. 6/18/24) with instructions", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://dor.sc.gov/sites/dor/files/Documents/Flyers%20%2B%20Brochures/Veterans_Card.pdf", "title": "SCDOR: Tax Tips for Veterans (property tax exemption card)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.scstatehouse.gov/code/t12c037.php", "title": "S.C. Code Title 12 Chapter 37 (12-37-220 and amendment history incl. 2024 Act No. 116)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.scstatehouse.gov/code/t12c004.php", "title": "S.C. Code Title 12 Chapter 4 (12-4-720 filing of applications, 12-4-730 certification to county auditor)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://www.scstatehouse.gov/code/t12c054.php", "title": "S.C. Code 12-54-85(F) refund claim limitation period", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://scdva.sc.gov/news/property-tax-exemption-disabled-south-carolina-veterans-expanded", "title": "SC Dept of Veterans' Affairs: Property tax exemption for disabled SC veterans expanded (June 2024)", "status": 200, "checked": "2026-10-21", "primary": true },
+    { "url": "https://mydorway.dor.sc.gov/", "title": "MyDORWAY online portal (200 on GET; HEAD returns 404)", "status": 200, "checked": "2026-10-21", "primary": true }
+  ],
+  "verifiedDate": "2026-10-21",
+  "confidence": "verified",
+  "dataCorrections": [
+    { "field": "programs[0].ratingRequired", "note": "Statute keys on 'permanently and totally disabled as a result of a service-connected disability', certified by VA or the county service officer; a 100% schedular rating that is not permanent does not by itself qualify. Consider ptRequired: true.", "source": "https://www.scstatehouse.gov/code/t12c037.php" }
+  ],
+  "notes": "SCDOR's old URL dor.sc.gov/tax/exempt-property now redirects to dor.sc.gov/property/property-tax-exemptions; the news page at dor.sc.gov/resources-site/media-site/... is a 404 and was dropped. The PT-401-I PDF was read in full (pdftotext). The two-year refund window is the statutory default read together with 12-4-720(A)(1); SCDOR's exemptions page does not itself state a lookback for individuals, so county treasurers may apply it differently in practice. 12-4-720(A)(2) (file before the first penalty date) applies only to (A)(8) property, not to veterans."
+}
