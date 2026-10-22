@@ -472,7 +472,7 @@ $('faq-items').innerHTML = FAQ.map(([q, a]) => `<details class="faq-item"><summa
 
 /* ─── Share URL ────────────────────────────────────────────────────────── */
 const URL_FIELDS = [['st', stateEl], ['r', ratingEl], ['hv', valueEl], ['own', ownsEl], ['z', zipEl], ['ry', ratingYearEl], ['ty', titleYearEl], ['age', ageEl], ['inc', incomeEl], ['war', wartimeEl], ['rm', remarriedEl], ['dic', dicEl]];
-const SHARE_KEYS = new Set(['m', ...URL_FIELDS.map(([k]) => k), 'pt', 'iu', 'sah', 'cty', 'docs', 'done']);
+const SHARE_KEYS = new Set(['m', ...URL_FIELDS.map(([k]) => k), 'pt', 'iu', 'sah', 'cty', 'docs', 'done', 'open']);
 function buildShareUrl() {
   const p = new URLSearchParams();
   p.set('m', state.mode);
@@ -496,9 +496,14 @@ async function loadFromUrl() {
   syncConditionalFields();
   if (p.has('ry') || p.has('ty') || p.has('age') || p.has('inc')) $('assumptions-drawer').open = true;
   const cty = p.get('cty');
+  const openCard = p.get('open'); // deep link straight to one card (newsletter links, screenshots): value|file|deadline|missed|keep|denied|checklist
   history.replaceState(null, '', location.pathname);
   if (zipEl.value) { await onZip(); if (cty && state.counties.some(c => c.fips === cty)) { state.county = state.counties.find(c => c.fips === cty); countyEl.value = cty; } }
   reveal();
+  if (openCard) {
+    const card = $('card-' + openCard);
+    if (card) { card.open = true; setTimeout(() => card.scrollIntoView({ behavior: 'auto', block: 'start' }), 350); }
+  }
   return true;
 }
 
